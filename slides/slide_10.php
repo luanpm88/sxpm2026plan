@@ -1,172 +1,358 @@
 <?php require_once '../config.php'; ?>
 <?php include '../includes/head.php'; ?>
+    <!-- Load ECharts -->
+    <script src="https://cdn.jsdelivr.net/npm/echarts@5.4.3/dist/echarts.min.js"></script>
+    
     <style>
+        .slide-subtitle {
+            font-size: 1.5rem;
+            font-weight: 400;
+            margin-top: 10px;
+            opacity: 0.9;
+        }
+        
         .slide-content {
-                    flex: 1;
-                    display: flex;
-                    flex-direction: column;
-                    gap: 25px;
-                    animation: fadeInUp 0.8s ease-out;
-                }
-                .objective-section {
-                    background: rgba(255,255,255,0.15);
-                    backdrop-filter: blur(10px);
-                    border: 2px solid rgba(255,255,255,0.2);
-                    border-radius: 20px;
-                    padding: 25px;
-                }
-                .section-title {
-                    font-size: 1.8rem;
-                    font-weight: 600;
-                    margin-bottom: 15px;
-                    display: flex;
-                    align-items: center;
-                    gap: 10px;
-                }
-                .section-title .material-symbols-rounded {
-                    font-size: 2rem;
-                }
-                .objective-list {
-                    display: flex;
-                    gap: 20px;
-                }
-                .objective-item {
-                    flex: 1;
-                    padding: 15px;
-                    background: rgba(255,255,255,0.1);
-                    border-radius: 10px;
-                    text-align: center;
-                    font-size: 1.05rem;
-                }
-                .packages-container {
-                    display: grid;
-                    grid-template-columns: repeat(3, 1fr);
-                    gap: 20px;
-                    flex: 1;
-                }
-                .package-card {
-                    background: rgba(255,255,255,0.15);
-                    backdrop-filter: blur(10px);
-                    border: 2px solid rgba(255,255,255,0.2);
-                    border-radius: 20px;
-                    padding: 30px;
-                    transition: all 0.3s ease;
-                    display: flex;
-                    flex-direction: column;
-                }
-                .package-card:hover {
-                    transform: scale(1.05);
-                    background: rgba(255,255,255,0.25);
-                    border-color: rgba(255,255,255,0.4);
-                }
-                .package-name {
-                    font-size: 1.8rem;
-                    font-weight: 700;
-                    margin-bottom: 20px;
-                    text-align: center;
-                }
-                .package-name .material-symbols-rounded {
-                    font-size: 2.5rem;
-                    vertical-align: middle;
-                    margin-right: 8px;
-                }
-                .package-features {
-                    list-style: none;
-                    padding: 0;
-                    flex: 1;
-                }
-                .package-features li {
-                    padding: 10px 0;
-                    padding-left: 30px;
-                    position: relative;
-                    line-height: 1.5;
-                }
-                .package-features li:before {
-                    content: "✓";
-                    position: absolute;
-                    left: 0;
-                    font-size: 1.6rem;
-                    color: #4ade80;
-                }
-                .note-box {
-                    background: rgba(255,193,7,0.2);
-                    border: 2px solid rgba(255,193,7,0.4);
-                    border-radius: 15px;
-                    padding: 20px;
-                    text-align: center;
-                    font-size: 1.6rem;
-                    font-weight: 500;
-                }
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            animation: fadeInUp 0.8s ease-out;
+        }
+        
+        .allocation-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 18px;
+        }
+        
+        .allocation-card {
+            background: rgba(255,255,255,0.12);
+            backdrop-filter: blur(10px);
+            border: 2px solid rgba(255,255,255,0.25);
+            border-radius: 16px;
+            padding: 20px;
+            transition: all 0.3s ease;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+        
+        .allocation-card:hover {
+            transform: translateY(-5px);
+            background: rgba(255,255,255,0.18);
+            border-color: rgba(255,255,255,0.4);
+        }
+        
+        .allocation-card .material-symbols-rounded {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+        
+        .allocation-label {
+            font-size: 1.05rem;
+            font-weight: 600;
+            margin-bottom: 8px;
+            line-height: 1.3;
+        }
+        
+        .allocation-percent {
+            font-size: 1.9rem;
+            font-weight: 700;
+        }
+        
+        .card-outsourcing {
+            background: linear-gradient(135deg, rgba(76, 175, 80, 0.15) 0%, rgba(56, 142, 60, 0.15) 100%);
+            border-color: rgba(76, 175, 80, 0.4);
+        }
+        
+        .card-outsourcing .material-symbols-rounded {
+            color: #4ade80;
+        }
+        
+        .card-saas {
+            background: linear-gradient(135deg, rgba(33, 150, 243, 0.15) 0%, rgba(21, 101, 192, 0.15) 100%);
+            border-color: rgba(33, 150, 243, 0.4);
+        }
+        
+        .card-saas .material-symbols-rounded {
+            color: #60a5fa;
+        }
+        
+        .card-ai {
+            background: linear-gradient(135deg, rgba(168, 85, 247, 0.15) 0%, rgba(139, 92, 246, 0.15) 100%);
+            border-color: rgba(168, 85, 247, 0.4);
+        }
+        
+        .card-ai .material-symbols-rounded {
+            color: #c084fc;
+        }
+        
+        .card-website {
+            background: linear-gradient(135deg, rgba(251, 146, 60, 0.15) 0%, rgba(249, 115, 22, 0.15) 100%);
+            border-color: rgba(251, 146, 60, 0.4);
+        }
+        
+        .card-website .material-symbols-rounded {
+            color: #fb923c;
+        }
+        
+        .charts-section {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+            flex: 1;
+            min-height: 0;
+        }
+        
+        .chart-box {
+            background: rgba(255,255,255,0.12);
+            backdrop-filter: blur(10px);
+            border: 2px solid rgba(255,255,255,0.25);
+            border-radius: 18px;
+            padding: 25px;
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .chart-header {
+            font-size: 1.4rem;
+            font-weight: 600;
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        .chart-header .material-symbols-rounded {
+            font-size: 1.8rem;
+        }
+        
+        #allocationPieChart {
+            flex: 1;
+            min-height: 0;
+        }
+        
+        #teamGrowthChart {
+            flex: 1;
+            min-height: 0;
+        }
+        
+        .bottom-section {
+            display: grid;
+            grid-template-columns: 1.5fr 1fr;
+            gap: 20px;
+        }
+        
+        .timeline-compact {
+            background: rgba(255,255,255,0.12);
+            backdrop-filter: blur(10px);
+            border: 2px solid rgba(255,255,255,0.25);
+            border-radius: 18px;
+            padding: 25px;
+        }
+        
+        .timeline-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 15px;
+        }
+        
+        .timeline-item {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+        
+        .timeline-period {
+            font-size: 1.05rem;
+            font-weight: 600;
+            background: rgba(255,255,255,0.15);
+            padding: 8px 12px;
+            border-radius: 8px;
+            min-width: 85px;
+            text-align: center;
+            flex-shrink: 0;
+        }
+        
+        .timeline-info {
+            flex: 1;
+        }
+        
+        .team-size {
+            font-size: 1.6rem;
+            font-weight: 700;
+            color: #fbbf24;
+            margin-bottom: 2px;
+        }
+        
+        .team-note {
+            font-size: 0.95rem;
+            opacity: 0.85;
+            line-height: 1.3;
+        }
+        
+        .warning-box {
+            background: linear-gradient(135deg, rgba(239, 68, 68, 0.2) 0%, rgba(220, 38, 38, 0.2) 100%);
+            border: 3px solid rgba(239, 68, 68, 0.5);
+            border-radius: 18px;
+            padding: 25px;
+        }
+        
+        .warning-header {
+            font-size: 1.4rem;
+            font-weight: 700;
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            color: #fca5a5;
+        }
+        
+        .warning-header .material-symbols-rounded {
+            font-size: 1.8rem;
+        }
+        
+        .warning-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        
+        .warning-list li {
+            padding: 8px 0;
+            padding-left: 30px;
+            position: relative;
+            line-height: 1.5;
+            font-size: 1.05rem;
+        }
+        
+        .warning-list li:before {
+            content: "priority_high";
+            font-family: 'Material Symbols Rounded';
+            position: absolute;
+            left: 0;
+            top: 8px;
+            font-size: 1.4rem;
+            color: #fb923c;
+            line-height: 1;
+        }
     </style>
 </head>
 <body>
 <div class="slide-container">
         <div class="slide-header">
             <div class="slide-title">
-                <span class="material-symbols-rounded">language</span>
-                Hướng 3 – Website / Domain Packages
+                <span class="material-symbols-rounded">analytics</span>
+                Phân bổ nguồn lực & Tăng trưởng đội ngũ
+            </div>
+            <div class="slide-subtitle">
+                Chiến lược cân đối 4 hướng phát triển và kế hoạch mở rộng 2026
             </div>
         </div>
         
         <div class="slide-content">
-            <div class="objective-section">
-                <div class="section-title">
-                    <span class="material-symbols-rounded">emoji_objects</span>
-                    Mục tiêu
+            <div class="allocation-grid">
+                <div class="allocation-card card-outsourcing">
+                    <span class="material-symbols-rounded">handshake</span>
+                    <div class="allocation-label">Outsourcing &<br>Maintenance</div>
+                    <div class="allocation-percent">40–50%</div>
                 </div>
-                <div class="objective-list">
-                    <div class="objective-item"><span class="material-symbols-rounded">payments</span> Tạo doanh thu nhanh, tiêu chuẩn hóa quy trình</div>
-                    <div class="objective-item"><span class="material-symbols-rounded">campaign</span> Hỗ trợ marketing và bán chéo dịch vụ</div>
+                
+                <div class="allocation-card card-saas">
+                    <span class="material-symbols-rounded">rocket_launch</span>
+                    <div class="allocation-label">SaaS<br>HKSpace</div>
+                    <div class="allocation-percent">30–40%</div>
+                </div>
+                
+                <div class="allocation-card card-ai">
+                    <span class="material-symbols-rounded">psychology</span>
+                    <div class="allocation-label">AI Knowledge<br>Platform</div>
+                    <div class="allocation-percent">10–15%</div>
+                </div>
+                
+                <div class="allocation-card card-website">
+                    <span class="material-symbols-rounded">language</span>
+                    <div class="allocation-label">Website &<br>Others</div>
+                    <div class="allocation-percent">5–10%</div>
                 </div>
             </div>
             
-            <div class="packages-container">
-                <div class="package-card">
-                    <div class="package-name"><span class="material-symbols-rounded">eco</span> Basic</div>
-                    <ul class="package-features">
-                        <li>Landing page</li>
-                        <li>Responsive design</li>
-                        <li>Domain + Hosting 1 năm</li>
-                        <li>SEO cơ bản</li>
-                        <li>Form liên hệ</li>
-                    </ul>
+            <div class="charts-section">
+                <div class="chart-box">
+                    <div class="chart-header">
+                        <span class="material-symbols-rounded">pie_chart</span>
+                        Tỉ trọng phân bổ nguồn lực
+                    </div>
+                    <div id="allocationPieChart" style="width:100%;height:300px;"></div>
                 </div>
                 
-                <div class="package-card">
-                    <div class="package-name"><span class="material-symbols-rounded">star</span> Standard</div>
-                    <ul class="package-features">
-                        <li>Multi-page website</li>
-                        <li>CMS tích hợp</li>
-                        <li>Blog system</li>
-                        <li>Analytics</li>
-                        <li>Email marketing</li>
-                        <li>Support 3 tháng</li>
-                    </ul>
-                </div>
-                
-                <div class="package-card">
-                    <div class="package-name"><span class="material-symbols-rounded">rocket_launch</span> Business</div>
-                    <ul class="package-features">
-                        <li>E-commerce</li>
-                        <li>Payment gateway</li>
-                        <li>Member system</li>
-                        <li>API integration</li>
-                        <li>Advanced SEO</li>
-                        <li>Support 6 tháng</li>
-                    </ul>
+                <div class="chart-box">
+                    <div class="chart-header">
+                        <span class="material-symbols-rounded">show_chart</span>
+                        Lộ trình tăng trưởng đội ngũ 2025-2027
+                    </div>
+                    <div id="teamGrowthChart"></div>
                 </div>
             </div>
             
-            <div class="note-box">
-                <span class="material-symbols-rounded" style="font-size: 1.5em; vertical-align: middle;">balance</span> Phạm vi: Không ảnh hưởng nguồn lực phát triển SaaS
+            <div class="bottom-section">
+                <div class="timeline-compact">
+                    <div class="chart-header">
+                        <span class="material-symbols-rounded">schedule</span>
+                        Kế hoạch chi tiết
+                    </div>
+                    
+                    <div class="timeline-grid">
+                        <div class="timeline-item">
+                            <div class="timeline-period">Q4 2025</div>
+                            <div class="timeline-info">
+                                <div class="team-size">7–9</div>
+                                <div class="team-note">Duy trì Outsourcing + MVP</div>
+                            </div>
+                        </div>
+                        
+                        <div class="timeline-item">
+                            <div class="timeline-period">Q1–Q2<br>2026</div>
+                            <div class="timeline-info">
+                                <div class="team-size">12–15</div>
+                                <div class="team-note">Tăng cường SaaS, AI research</div>
+                            </div>
+                        </div>
+                        
+                        <div class="timeline-item">
+                            <div class="timeline-period">Q3–Q4<br>2026</div>
+                            <div class="timeline-info">
+                                <div class="team-size">18–20</div>
+                                <div class="team-note">SaaS team riêng 6-8 người</div>
+                            </div>
+                        </div>
+                        
+                        <div class="timeline-item">
+                            <div class="timeline-period">2027+</div>
+                            <div class="timeline-info">
+                                <div class="team-size">25+</div>
+                                <div class="team-note">Scale theo doanh thu</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="warning-box">
+                    <div class="warning-header">
+                        <span class="material-symbols-rounded">warning</span>
+                        Điểm cần lưu ý
+                    </div>
+                    <ul class="warning-list">
+                        <li><strong>SaaS &lt; 30%</strong> → Không thể thành công</li>
+                        <li><strong>Team &lt; 12</strong> → Khó cân đối</li>
+                        <li><strong>Không tăng trưởng</strong> → Bỏ lỡ cơ hội</li>
+                        <li><strong>Tăng quá nhanh</strong> → Rủi ro cash flow</li>
+                    </ul>
+                </div>
             </div>
         </div>
     </div>
-    
-        
-    </div>
-    
-    
     
     <div class="navigation">
         <button class="nav-btn" onclick="previousSlide()">
@@ -179,5 +365,220 @@
     
     <?php include '../includes/navigation.php'; ?>
     <?php include '../includes/scripts.php'; ?>
+    
+    <script>
+        // Initialize Allocation Pie Chart
+        const pieChartDom = document.getElementById('allocationPieChart');
+        const pieChart = echarts.init(pieChartDom);
+        
+        const pieOption = {
+            backgroundColor: 'transparent',
+            tooltip: {
+                trigger: 'item',
+                backgroundColor: 'rgba(0, 0, 0, 0.8)',
+                borderColor: 'rgba(255, 255, 255, 0.2)',
+                textStyle: {
+                    color: '#fff',
+                    fontSize: 14
+                },
+                formatter: '{b}: <strong>{c}%</strong>'
+            },
+            legend: {
+                orient: 'vertical',
+                right: '10%',
+                top: 'center',
+                textStyle: {
+                    color: 'rgba(255, 255, 255, 0.9)',
+                    fontSize: 13
+                },
+                itemGap: 15
+            },
+            series: [
+                {
+                    name: 'Phân bổ',
+                    type: 'pie',
+                    radius: ['40%', '70%'],
+                    center: ['35%', '50%'],
+                    avoidLabelOverlap: false,
+                    itemStyle: {
+                        borderRadius: 8,
+                        borderColor: 'rgba(255, 255, 255, 0.2)',
+                        borderWidth: 2
+                    },
+                    label: {
+                        show: true,
+                        position: 'inside',
+                        formatter: '{c}%',
+                        fontSize: 14,
+                        fontWeight: 'bold',
+                        color: '#fff'
+                    },
+                    emphasis: {
+                        label: {
+                            show: true,
+                            fontSize: 16,
+                            fontWeight: 'bold'
+                        },
+                        itemStyle: {
+                            shadowBlur: 10,
+                            shadowOffsetX: 0,
+                            shadowColor: 'rgba(0, 0, 0, 0.5)'
+                        }
+                    },
+                    data: [
+                        { 
+                            value: 45, 
+                            name: 'Outsourcing & Maintenance',
+                            itemStyle: { color: '#4ade80' }
+                        },
+                        { 
+                            value: 35, 
+                            name: 'SaaS HKSpace',
+                            itemStyle: { color: '#60a5fa' }
+                        },
+                        { 
+                            value: 12, 
+                            name: 'AI Knowledge Platform',
+                            itemStyle: { color: '#c084fc' }
+                        },
+                        { 
+                            value: 8, 
+                            name: 'Website & Others',
+                            itemStyle: { color: '#fb923c' }
+                        }
+                    ]
+                }
+            ]
+        };
+        
+        pieChart.setOption(pieOption);
+        
+        // Initialize Team Growth Line Chart
+        const lineChartDom = document.getElementById('teamGrowthChart');
+        const lineChart = echarts.init(lineChartDom);
+        
+        const lineOption = {
+            backgroundColor: 'transparent',
+            tooltip: {
+                trigger: 'axis',
+                backgroundColor: 'rgba(0, 0, 0, 0.8)',
+                borderColor: 'rgba(255, 255, 255, 0.2)',
+                textStyle: {
+                    color: '#fff',
+                    fontSize: 14
+                }
+            },
+            grid: {
+                left: '12%',
+                right: '8%',
+                top: '12%',
+                bottom: '12%'
+            },
+            xAxis: {
+                type: 'category',
+                data: ['Q4 2025', 'Q1 2026', 'Q2 2026', 'Q3 2026', 'Q4 2026', '2027'],
+                axisLine: {
+                    lineStyle: {
+                        color: 'rgba(255, 255, 255, 0.3)'
+                    }
+                },
+                axisLabel: {
+                    color: 'rgba(255, 255, 255, 0.8)',
+                    fontSize: 12
+                }
+            },
+            yAxis: {
+                type: 'value',
+                name: 'Số người',
+                nameTextStyle: {
+                    color: 'rgba(255, 255, 255, 0.8)',
+                    fontSize: 13
+                },
+                min: 0,
+                max: 30,
+                interval: 5,
+                axisLine: {
+                    lineStyle: {
+                        color: 'rgba(255, 255, 255, 0.3)'
+                    }
+                },
+                axisLabel: {
+                    color: 'rgba(255, 255, 255, 0.8)',
+                    fontSize: 12
+                },
+                splitLine: {
+                    lineStyle: {
+                        color: 'rgba(255, 255, 255, 0.1)'
+                    }
+                }
+            },
+            series: [
+                {
+                    name: 'Số lượng team',
+                    type: 'line',
+                    data: [8, 12, 15, 18, 20, 25],
+                    smooth: true,
+                    lineStyle: {
+                        width: 3,
+                        color: {
+                            type: 'linear',
+                            x: 0,
+                            y: 0,
+                            x2: 1,
+                            y2: 0,
+                            colorStops: [
+                                { offset: 0, color: '#4ade80' },
+                                { offset: 0.5, color: '#60a5fa' },
+                                { offset: 1, color: '#c084fc' }
+                            ]
+                        }
+                    },
+                    itemStyle: {
+                        color: '#fbbf24',
+                        borderWidth: 2,
+                        borderColor: '#fff'
+                    },
+                    areaStyle: {
+                        color: {
+                            type: 'linear',
+                            x: 0,
+                            y: 0,
+                            x2: 0,
+                            y2: 1,
+                            colorStops: [
+                                { offset: 0, color: 'rgba(96, 165, 250, 0.3)' },
+                                { offset: 1, color: 'rgba(96, 165, 250, 0.05)' }
+                            ]
+                        }
+                    },
+                    emphasis: {
+                        focus: 'series',
+                        itemStyle: {
+                            color: '#fbbf24',
+                            borderWidth: 3,
+                            shadowBlur: 10,
+                            shadowColor: 'rgba(251, 191, 36, 0.5)'
+                        }
+                    },
+                    label: {
+                        show: true,
+                        position: 'top',
+                        color: '#fbbf24',
+                        fontSize: 14,
+                        fontWeight: 'bold',
+                        formatter: '{c}'
+                    }
+                }
+            ]
+        };
+        
+        lineChart.setOption(lineOption);
+        
+        // Responsive charts
+        window.addEventListener('resize', function() {
+            pieChart.resize();
+            lineChart.resize();
+        });
+    </script>
 </body>
 </html>

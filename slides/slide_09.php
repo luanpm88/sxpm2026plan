@@ -1,147 +1,248 @@
 <?php require_once '../config.php'; ?>
 <?php include '../includes/head.php'; ?>
     <style>
+        .slide-subtitle {
+            font-size: 1.5rem;
+            font-weight: 400;
+            margin-top: 10px;
+            opacity: 0.9;
+        }
+        
         .slide-content {
-                    flex: 1;
-                    display: flex;
-                    flex-direction: column;
-                    gap: 25px;
-                    animation: fadeInUp 0.8s ease-out;
-                }
-                .roadmap-container {
-                    display: flex;
-                    gap: 25px;
-                    flex: 1;
-                }
-                .version-card {
-                    flex: 1;
-                    background: rgba(255,255,255,0.15);
-                    backdrop-filter: blur(10px);
-                    border: 2px solid rgba(255,255,255,0.2);
-                    border-radius: 20px;
-                    padding: 30px;
-                    transition: all 0.3s ease;
-                    display: flex;
-                    flex-direction: column;
-                }
-                .version-card:hover {
-                    transform: translateY(-10px);
-                    background: rgba(255,255,255,0.2);
-                    border-color: rgba(255,255,255,0.4);
-                }
-                .version-header {
-                    display: flex;
-                    align-items: center;
-                    justify-content: space-between;
-                    margin-bottom: 20px;
-                }
-                .version-title {
-                    font-size: 2rem;
-                    font-weight: 700;
-                }
-                .version-badge {
-                    padding: 8px 16px;
-                    border-radius: 20px;
-                    font-size: 0.85rem;
-                    font-weight: 600;
-                }
-                .badge-complete {
-                    background: rgba(76, 175, 80, 0.4);
-                }
-                .badge-inprogress {
-                    background: rgba(33, 150, 243, 0.4);
-                }
-                .badge-planned {
-                    background: rgba(156, 39, 176, 0.4);
-                }
-                .version-period {
-                    font-size: 1.6rem;
-                    opacity: 0.9;
-                    margin-bottom: 20px;
-                }
-                .feature-list {
-                    list-style: none;
-                    padding: 0;
-                    flex: 1;
-                }
-                .feature-list li {
-                    padding: 12px 0;
-                    padding-left: 30px;
-                    position: relative;
-                    line-height: 1.5;
-                }
-                .feature-list li:before {
-                    content: "▸";
-                    position: absolute;
-                    left: 0;
-                    font-size: 1.8rem;
-                }
-                .principle-box {
-                    background: rgba(255,215,0,0.2);
-                    border: 2px solid rgba(255,215,0,0.4);
-                    border-radius: 15px;
-                    padding: 20px;
-                    text-align: center;
-                    font-size: 1.6rem;
-                    font-weight: 600;
-                }
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+            animation: fadeInUp 0.8s ease-out;
+        }
+        
+        .roadmap-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 25px;
+            flex: 1;
+        }
+        
+        .version-card {
+            background: rgba(255,255,255,0.12);
+            backdrop-filter: blur(10px);
+            border: 2px solid rgba(255,255,255,0.25);
+            border-radius: 18px;
+            padding: 35px 30px;
+            transition: all 0.3s ease;
+            display: flex;
+            flex-direction: column;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .version-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+        }
+        
+        .version-card.v1::before {
+            background: linear-gradient(90deg, #4ade80, #22c55e);
+        }
+        
+        .version-card.v2::before {
+            background: linear-gradient(90deg, #60a5fa, #3b82f6);
+        }
+        
+        .version-card.v3::before {
+            background: linear-gradient(90deg, #c084fc, #a855f7);
+        }
+        
+        .version-card:hover {
+            transform: translateY(-8px);
+            background: rgba(255,255,255,0.18);
+            border-color: rgba(255,255,255,0.4);
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+        }
+        
+        .version-header {
+            margin-bottom: 25px;
+        }
+        
+        .version-title {
+            font-size: 3rem;
+            font-weight: 700;
+            margin-bottom: 8px;
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+        
+        .version-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 8px 18px;
+            border-radius: 25px;
+            font-size: 1rem;
+            font-weight: 600;
+        }
+        
+        .version-badge .material-symbols-rounded {
+            font-size: 1.3rem;
+        }
+        
+        .badge-complete {
+            background: rgba(76, 175, 80, 0.3);
+            border: 1px solid rgba(76, 175, 80, 0.5);
+        }
+        
+        .badge-priority {
+            background: rgba(33, 150, 243, 0.3);
+            border: 1px solid rgba(33, 150, 243, 0.5);
+        }
+        
+        .badge-planned {
+            background: rgba(168, 85, 247, 0.3);
+            border: 1px solid rgba(168, 85, 247, 0.5);
+        }
+        
+        .version-period {
+            font-size: 1.4rem;
+            opacity: 0.85;
+            margin-bottom: 20px;
+            font-weight: 500;
+        }
+        
+        .feature-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            flex: 1;
+        }
+        
+        .feature-list li {
+            padding: 10px 0;
+            padding-left: 35px;
+            position: relative;
+            line-height: 1.6;
+            font-size: 1.2rem;
+        }
+        
+        .feature-list li:before {
+            content: "arrow_right";
+            font-family: 'Material Symbols Rounded';
+            position: absolute;
+            left: 0;
+            top: 10px;
+            font-size: 1.6rem;
+            color: #60a5fa;
+            line-height: 1;
+        }
+        
+        .highlight-text {
+            background: rgba(255,255,255,0.15);
+            padding: 2px 8px;
+            border-radius: 6px;
+            font-weight: 600;
+        }
+        
+        .target-box {
+            background: linear-gradient(135deg, rgba(251, 146, 60, 0.2) 0%, rgba(249, 115, 22, 0.2) 100%);
+            border: 2px solid rgba(251, 146, 60, 0.4);
+            border-radius: 15px;
+            padding: 25px 35px;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 15px;
+        }
+        
+        .target-box .material-symbols-rounded {
+            font-size: 2.5rem;
+            color: #fb923c;
+        }
+        
+        .target-text {
+            font-size: 1.6rem;
+            font-weight: 600;
+            line-height: 1.5;
+        }
     </style>
 </head>
 <body>
 <div class="slide-container">
         <div class="slide-header">
             <div class="slide-title">
-                <span class="material-symbols-rounded">map</span>
+                <span class="material-symbols-rounded">rocket_launch</span>
                 Lộ trình phát triển HKSpace
+            </div>
+            <div class="slide-subtitle">
+                Từ MVP nội bộ đến sản phẩm SaaS có doanh thu cuối 2026
             </div>
         </div>
         
         <div class="slide-content">
             <div class="roadmap-container">
-                <div class="version-card">
+                <div class="version-card v1">
                     <div class="version-header">
                         <div class="version-title">v1</div>
-                        <div class="version-badge badge-complete">✓ Hoàn thành</div>
+                        <div class="version-badge badge-complete">
+                            <span class="material-symbols-rounded">check_circle</span>
+                            Hoàn thành
+                        </div>
                     </div>
-                    <div class="version-period">2025</div>
+                    <div class="version-period">2025 – Đã triển khai</div>
                     <ul class="feature-list">
-                        <li>Validate ý tưởng</li>
-                        <li>MVP đầu tiên</li>
-                        <li>Kiến trúc nền tảng</li>
+                        <li>Bộ phận <span class="highlight-text">đã sử dụng thực tế</span></li>
+                        <li>Thay thế phần mềm thuê <span class="highlight-text">xTeam</span></li>
+                        <li>Hệ thống quản lý task & phân quyền hoàn thiện</li>
+                        <li>Validate ý tưởng và kiến trúc nền tảng</li>
                     </ul>
                 </div>
                 
-                <div class="version-card">
+                <div class="version-card v2">
                     <div class="version-header">
                         <div class="version-title">v2</div>
-                        <div class="version-badge badge-inprogress">⚡ Ưu tiên</div>
+                        <div class="version-badge badge-priority">
+                            <span class="material-symbols-rounded">bolt</span>
+                            Ưu tiên 2026
+                        </div>
                     </div>
-                    <div class="version-period">2026 Q1–Q2</div>
+                    <div class="version-period">Q1–Q2 2026</div>
                     <ul class="feature-list">
-                        <li>Hoàn thiện UI/UX</li>
-                        <li>Core features phục vụ nhu cầu thực tế</li>
-                        <li>Triển khai subscription</li>
-                        <li>Thu thập feedback người dùng</li>
+                        <li>Hoàn thiện <span class="highlight-text">UI/UX</span> chuyên nghiệp</li>
+                        <li>Tính năng core phục vụ <span class="highlight-text">khách hàng trả phí</span></li>
+                        <li>Triển khai <span class="highlight-text">subscription model</span></li>
+                        <li>Onboarding 5-10 khách hàng đầu tiên</li>
+                        <li>Thu thập feedback & cải thiện</li>
                     </ul>
                 </div>
                 
-                <div class="version-card">
+                <div class="version-card v3">
                     <div class="version-header">
                         <div class="version-title">v3</div>
-                        <div class="version-badge badge-planned"><span class="material-symbols-rounded">task_alt</span> Kế hoạch</div>
+                        <div class="version-badge badge-planned">
+                            <span class="material-symbols-rounded">event</span>
+                            Kế hoạch
+                        </div>
                     </div>
-                    <div class="version-period">2026 Q3–Q4</div>
+                    <div class="version-period">Q3–Q4 2026</div>
                     <ul class="feature-list">
-                        <li>Automation nâng cao</li>
-                        <li>Tích hợp AI Knowledge Base</li>
-                        <li>Tối ưu hiệu năng</li>
-                        <li>Sẵn sàng mở rộng người dùng</li>
+                        <li>Tích hợp <span class="highlight-text">AI Knowledge Base</span></li>
+                        <li>Automation nâng cao & API mở</li>
+                        <li>Tối ưu hiệu năng & scalability</li>
+                        <li>Mở rộng user base & marketing</li>
+                        <li><span class="highlight-text">Đạt mốc có doanh thu</span> thực tế</li>
                     </ul>
                 </div>
             </div>
             
-            <div class="principle-box">
-                <span class="material-symbols-rounded">pie_chart</span> Làm từng bước – đo lường – điều chỉnh
+            <div class="target-box">
+                <span class="material-symbols-rounded">flag</span>
+                <div class="target-text">
+                    Mục tiêu cuối 2026: <strong>Có doanh thu từ khách hàng trả phí đầu tiên</strong>, chứng minh và khẳng định định hướng SaaS
+                </div>
             </div>
         </div>
     </div>

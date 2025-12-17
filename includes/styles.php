@@ -130,13 +130,14 @@
             position: fixed;
             bottom: 80px;
             left: 30px;
-            background: rgba(255,255,255,0.95);
-            backdrop-filter: blur(10px);
+            background: rgba(30, 30, 60, 0.98);
+            backdrop-filter: blur(20px);
             border-radius: 15px;
             padding: 20px;
-            box-shadow: 0 8px 32px rgba(0,0,0,0.3);
+            box-shadow: 0 8px 32px rgba(0,0,0,0.5);
             z-index: 2000;
-            max-height: 400px;
+            max-height: 70vh;
+            max-width: 500px;
             overflow-y: auto;
         }
         
@@ -150,29 +151,50 @@
             to { opacity: 1; transform: translateY(0); }
         }
         
-        .nav-grid {
-            display: grid;
-            grid-template-columns: repeat(4, 1fr);
-            gap: 10px;
+        .nav-list {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
         }
         
-        .nav-item {
-            padding: 12px;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            color: white;
-            border-radius: 10px;
-            text-align: center;
+        .nav-list-item {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            padding: 12px 18px;
+            background: rgba(255,255,255,0.08);
+            border-radius: 12px;
             cursor: pointer;
             transition: all 0.2s ease;
-            font-weight: 600;
+            border: 2px solid transparent;
         }
         
-        .nav-item:hover {
-            transform: scale(1.1);
-            box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+        .nav-list-item:hover {
+            background: rgba(255,255,255,0.15);
+            transform: translateX(5px);
         }
         
-        .nav-item.current {
-            background: linear-gradient(135deg, #ffd700 0%, #ffa500 100%);
+        .nav-list-item.current {
+            background: rgba(139, 92, 246, 0.3);
+            border-color: rgba(139, 92, 246, 0.6);
+        }
+        
+        .nav-item-number {
+            font-size: 1.3rem;
+            font-weight: 700;
+            color: #fbbf24;
+            min-width: 35px;
+            text-align: center;
+            background: rgba(251, 191, 36, 0.15);
+            padding: 6px 10px;
+            border-radius: 8px;
+        }
+        
+        .nav-item-title {
+            flex: 1;
+            font-size: 1.1rem;
+            font-weight: 500;
+            line-height: 1.4;
+            color: rgba(255, 255, 255, 0.95);
         }
     </style>

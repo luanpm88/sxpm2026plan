@@ -5,8 +5,8 @@ define('TOTAL_SLIDES', 13);
 
 // Slide titles
 $slide_titles = [
-    0 => 'Bìa',
-    1 => 'Tóm tắt điều hành',
+    0 => 'Giới thiệu',
+    1 => 'Nội dung trình bày',
     2 => 'Hiện trạng Bộ phận Sản xuất Phần mềm',
     3 => 'Vấn đề cốt lõi hiện tại',
     4 => 'Định hướng tổng thể',

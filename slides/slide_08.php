@@ -45,7 +45,7 @@
         }
         
         .card-header {
-            font-size: 2rem;
+            font-size: 1.6rem;
             font-weight: 700;
             margin-bottom: 20px;
             display: flex;
@@ -170,11 +170,11 @@
             <div class="info-card full-width">
                 <div class="card-header">
                     <span class="material-symbols-rounded">lightbulb</span>
-                    Sản phẩm đột phá - Nền tảng huấn luyện AI từ dữ liệu
+                    Nền tảng huấn luyện AI từ dữ liệu nội bộ
                 </div>
                 <div class="card-content">
-                    Team đã phát triển <strong>AI Knowledge Platform</strong> - một nền tảng mở chuyên <strong>huấn luyện AI dựa trên dữ liệu</strong> với mô hình linh hoạt phục vụ mọi loại nhu cầu. 
-                    Đây là <strong>công nghệ nền tảng</strong> có thể tạo ra giá trị cho cả nội bộ, khách hàng và thị trường.
+                    Bộ phận đã phát triển <strong>AI Knowledge Platform</strong> - nền tảng mở chuyên <strong>huấn luyện AI dựa trên dữ liệu</strong> với mô hình linh hoạt phục vụ nhiều nhu cầu. 
+                    Platform có thể tạo giá trị cho nội bộ, khách hàng và thị trường.
                 </div>
             </div>
             
@@ -200,14 +200,16 @@
                         Trạng thái & Định hướng
                     </div>
                     <ul class="card-list">
-                        <li><strong>Đã có thiết kế chuẩn</strong> và kiến trúc scale được</li>
-                        <li><strong>Kỹ sư đầu tư</strong> phát triển với chất lượng cao</li>
-                        <li><strong>Giai đoạn research:</strong> Đã có demo cụ thể, đang hoàn thiện</li>
-                        <li><strong>Sẵn sàng scale mạnh:</strong> Kiến trúc cho phép áp dụng rộng</li>
-                        <li><strong>Định hướng 2026:</strong> Biến thành điểm nhấn công nghệ của bộ phận</li>
+                        <li><strong>Kiến trúc hệ thống:</strong> Đã thiết kế kiến trúc có khả năng mở rộng</li>
+                        <li><strong>Giai đoạn hiện tại:</strong> Research & Development, có demo minh họa</li>
+                        <li><strong>Khả năng tích hợp:</strong> Linh hoạt tích hợp với các hệ thống hiện tại</li>
+                        <li><strong>Roadmap 2026:</strong> Hoàn thiện tính năng core, áp dụng vào sản phẩm</li>
+                        <li><strong>Deployment:</strong> Chuẩn bị triển khai môi trường production</li>
                     </ul>
                 </div>
             </div>
+            
+            
             
             <div class="assessment-section">
                 <div class="info-card full-width">
@@ -234,17 +236,38 @@
                         </div>
                     </div>
                 </div>
+                <div class="assessment-section">
+                <div class="info-card full-width" style="background: linear-gradient(135deg, rgba(99, 102, 241, 0.2) 0%, rgba(79, 70, 229, 0.2) 100%); border: 2px solid rgba(99, 102, 241, 0.4);">
+                    <div class="card-header">
+                        <span class="material-symbols-rounded">precision_manufacturing</span>
+                        Technology Stack & Kỹ thuật áp dụng
+                    </div>
+                    <ul class="card-list" style="column-count: 2; column-gap: 40px;">
+                        <li><strong>Foundation Models:</strong> GPT-4, DeepSeek, Claude 3, Llama 3</li>
+                        <li><strong>Fine-tuning:</strong> Custom model training trên dữ liệu domain-specific</li>
+                        <li><strong>RAG Architecture:</strong> Retrieval-Augmented Generation với hybrid search</li>
+                        <li><strong>Vector Database:</strong> Embedding storage, semantic search optimization</li>
+                        <li><strong>SQL Integration:</strong> Natural language to SQL query generation</li>
+                        <li><strong>Prompt Engineering:</strong> Template system, dynamic context injection</li>
+                        <li><strong>Context Management:</strong> Conversation history, multi-turn dialogue</li>
+                        <li><strong>Multi-modal Support:</strong> Text, document, structured data processing</li>
+                        <li><strong>API Integration:</strong> RESTful API, webhook, real-time streaming</li>
+                        <li><strong>Monitoring & Analytics:</strong> Usage tracking, performance metrics, cost optimization</li>
+                    </ul>
+                </div>
             </div>
+            </div>
+            
             
             <div class="info-card target-card full-width">
                 <div class="card-header">
                     <span class="material-symbols-rounded">stars</span>
-                    Tại sao đây là điểm nhấn đột phá?
+                    Đánh giá tiềm năng ứng dụng
                 </div>
                 <div class="card-content" style="font-size: 1.35rem; line-height: 1.8;">
-                    <strong>AI Knowledge Platform</strong> không chỉ là một sản phẩm - đây là <strong>công nghệ nền tảng</strong> có thể áp dụng vào mọi hướng phát triển của bộ phận. 
-                    Với khả năng <strong>tự phát triển</strong> và <strong>linh hoạt tích hợp</strong>, platform này tạo ra <strong>lợi thế cạnh tranh</strong> cho cả SaaS, Outsourcing và các dự án tương lai. 
-                    Đây là <strong>tài sản công nghệ</strong> dài hạn, thể hiện <strong>năng lực đổi mới</strong> và là <strong>chìa khóa</strong> để bộ phận dẫn đầu trong kỷ nguyên AI.
+                    <strong>AI Knowledge Platform</strong> là công nghệ nền tảng có thể áp dụng vào nhiều hướng phát triển của bộ phận. 
+                    Với khả năng tự phát triển và tích hợp linh hoạt, platform này có thể hỗ trợ cho cả SaaS, Outsourcing và các dự án tương lai. 
+                    Đây là tài sản công nghệ dài hạn giúp bộ phận tận dụng xu hướng AI trong giai đoạn tới.
                 </div>
             </div>
         </div>

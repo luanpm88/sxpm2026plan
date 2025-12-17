@@ -13,7 +13,7 @@ import os
 # Comprehensive Vietnamese translations
 translations = {
     # Slide titles
-    'Executive Summary': 'Tóm tắt điều hành',
+    'Executive Summary': 'Nội dung trình bày',
     'Current Status - Software Development Department': 'Hiện trạng Bộ phận Sản xuất Phần mềm',
     'Current Status': 'Hiện trạng',
     'Core Issues': 'Vấn đề cốt lõi hiện tại',

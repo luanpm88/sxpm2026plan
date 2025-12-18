@@ -99,24 +99,24 @@
         }
         
         .badge-cashflow { 
-            background: #3b82f6;
-            border-color: #3b82f6;
-            color: #ffffff;
+            background: rgba(59, 130, 246, 0.1);
+            border-color: rgba(59, 130, 246, 0.3);
+            color: #1f2937;
         }
         .badge-strategic { 
-            background: #10b981;
-            border-color: #10b981;
-            color: #ffffff;
+            background: rgba(16, 185, 129, 0.1);
+            border-color: rgba(16, 185, 129, 0.3);
+            color: #1f2937;
         }
         .badge-shortterm { 
-            background: #fb923c;
-            border-color: #fb923c;
-            color: #ffffff;
+            background: rgba(251, 146, 60, 0.1);
+            border-color: rgba(251, 146, 60, 0.3);
+            color: #1f2937;
         }
         .badge-future { 
-            background: #8b5cf6;
-            border-color: #8b5cf6;
-            color: #ffffff;
+            background: rgba(139, 92, 246, 0.1);
+            border-color: rgba(139, 92, 246, 0.3);
+            color: #1f2937;
         }
     </style>
 </head>

@@ -2,8 +2,8 @@
 <?php include '../includes/head.php'; ?>
     <style>
         .objective-box {
-            background: linear-gradient(135deg, rgba(255,215,0,0.25) 0%, rgba(255,165,0,0.25) 100%);
-            border: 3px solid rgba(255,215,0,0.5);
+            background: #ffffff;
+            border: 2px solid #2672cd;
             border-radius: 15px;
             padding: 20px 30px;
             margin-bottom: 25px;
@@ -15,11 +15,14 @@
             align-items: center;
             justify-content: center;
             gap: 12px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+            color: #1f2937;
         }
         
         .objective-box .material-symbols-rounded {
             font-size: 2rem;
             font-weight: 600;
+            color: #2672cd;
         }
         
         .slide-content {
@@ -31,9 +34,8 @@
         }
         
         .direction-card {
-            background: rgba(255,255,255,0.15);
-            backdrop-filter: blur(10px);
-            border: 2px solid rgba(255,255,255,0.25);
+            background: #ffffff;
+            border: 2px solid #e5e7eb;
             border-radius: 18px;
             padding: 25px;
             transition: all 0.3s ease;
@@ -42,13 +44,13 @@
             gap: 12px;
             position: relative;
             overflow: hidden;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
         }
         
         .direction-card:hover {
             transform: translateY(-5px);
-            background: rgba(255,255,255,0.22);
-            border-color: rgba(255,255,255,0.4);
-            box-shadow: 0 8px 25px rgba(0,0,0,0.2);
+            border-color: #2672cd;
+            box-shadow: 0 4px 12px rgba(59,130,246,0.15);
         }
         
         .card-header {
@@ -61,7 +63,7 @@
         .card-number {
             font-size: 4rem;
             font-weight: 700;
-            opacity: 0.3;
+            color: #e5e7eb;
             line-height: 1;
         }
         
@@ -69,7 +71,7 @@
             font-size: 5rem;
             line-height: 1;
             font-weight: 600;
-            opacity: 0.15;
+            color: #f3f4f6;
             position: absolute;
             right: 15px;
             bottom: 15px;
@@ -80,39 +82,41 @@
             font-weight: 700;
             line-height: 1.3;
             flex: 1;
+            color: #1f2937;
         }
         
         .card-badge {
             display: inline-block;
             padding: 8px 18px;
-            background: rgba(255,255,255,0.3);
+            background: #f3f4f6;
             border-radius: 25px;
             font-size: 1.1rem;
             font-weight: 700;
             margin-top: 5px;
             align-self: flex-start;
-            border: 2px solid rgba(255,255,255,0.4);
+            border: 2px solid #e5e7eb;
+            color: #1f2937;
         }
         
         .badge-cashflow { 
-            background: rgba(76, 175, 80, 0.4);
-            border-color: rgba(76, 175, 80, 0.6);
-            color: #e8f5e9;
+            background: #2672cd;
+            border-color: #2672cd;
+            color: #ffffff;
         }
         .badge-strategic { 
-            background: rgba(33, 150, 243, 0.4);
-            border-color: rgba(33, 150, 243, 0.6);
-            color: #e3f2fd;
+            background: #2672cd;
+            border-color: #2672cd;
+            color: #ffffff;
         }
         .badge-shortterm { 
-            background: rgba(255, 193, 7, 0.4);
-            border-color: rgba(255, 193, 7, 0.6);
-            color: #fffde7;
+            background: #6b7280;
+            border-color: #6b7280;
+            color: #ffffff;
         }
         .badge-future { 
-            background: rgba(156, 39, 176, 0.4);
-            border-color: rgba(156, 39, 176, 0.6);
-            color: #f3e5f5;
+            background: #6b7280;
+            border-color: #6b7280;
+            color: #ffffff;
         }
     </style>
 </head>

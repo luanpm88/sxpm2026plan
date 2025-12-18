@@ -5,7 +5,7 @@
             font-size: 1.5rem;
             font-weight: 400;
             margin-top: 10px;
-            opacity: 0.9;
+            color: #6b7280;
         }
         
         .slide-content {
@@ -24,27 +24,26 @@
         }
         
         .agenda-card {
-            background: rgba(255,255,255,0.12);
-            backdrop-filter: blur(10px);
-            border: 2px solid rgba(255,255,255,0.25);
-            border-radius: 18px;
+            background: #ffffff;
+            border: 2px solid #e5e7eb;
+            border-radius: 12px;
             padding: 25px 30px;
             transition: all 0.3s ease;
             display: flex;
             flex-direction: column;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
         }
         
         .agenda-card:hover {
-            background: rgba(255,255,255,0.18);
-            transform: translateY(-5px);
-            border-color: rgba(255,255,255,0.4);
+            border-color: #2672cd;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(59,130,246,0.15);
         }
         
         .agenda-number {
             font-size: 3rem;
             font-weight: 700;
-            color: #fbbf24;
-            opacity: 0.3;
+            color: #e5e7eb;
             line-height: 1;
             margin-bottom: 10px;
         }
@@ -56,11 +55,12 @@
             display: flex;
             align-items: center;
             gap: 12px;
+            color: #000000;
         }
         
         .agenda-title .material-symbols-rounded {
             font-size: 2rem;
-            color: #60a5fa;
+            color: #2672cd;
         }
         
         .agenda-items {
@@ -75,7 +75,7 @@
             position: relative;
             line-height: 1.5;
             font-size: 1.1rem;
-            opacity: 0.9;
+            color: #4b5563;
         }
         
         .agenda-items li:before {
@@ -85,7 +85,7 @@
             left: 0;
             top: 8px;
             font-size: 1.4rem;
-            color: #4ade80;
+            color: #2672cd;
             line-height: 1;
         }
     </style>

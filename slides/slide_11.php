@@ -5,7 +5,7 @@
             font-size: 1.5rem;
             font-weight: 400;
             margin-top: 10px;
-            opacity: 0.9;
+            color: #6b7280;
         }
         
         .slide-content {
@@ -23,20 +23,20 @@
         }
         
         .quarter-card {
-            background: rgba(255,255,255,0.12);
-            backdrop-filter: blur(10px);
-            border: 2px solid rgba(255,255,255,0.25);
+            background: #ffffff;
+            border: 2px solid #e5e7eb;
             border-radius: 16px;
             padding: 20px;
             transition: all 0.3s ease;
             display: flex;
             flex-direction: column;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
         }
         
         .quarter-card:hover {
             transform: translateY(-5px);
-            background: rgba(255,255,255,0.18);
-            border-color: rgba(255,255,255,0.4);
+            border-color: #2672cd;
+            box-shadow: 0 4px 12px rgba(59,130,246,0.15);
         }
         
         .quarter-header {
@@ -45,8 +45,9 @@
             margin-bottom: 12px;
             text-align: center;
             padding: 8px;
-            background: rgba(255,255,255,0.15);
+            background: #f9fafb;
             border-radius: 10px;
+            color: #1f2937;
         }
         
         .task-section {
@@ -64,10 +65,12 @@
             display: flex;
             align-items: center;
             gap: 8px;
+            color: #1f2937;
         }
         
         .task-title .material-symbols-rounded {
             font-size: 1.3rem;
+            color: #2672cd;
         }
         
         .task-list {
@@ -82,7 +85,7 @@
             position: relative;
             line-height: 1.4;
             font-size: 0.95rem;
-            opacity: 0.9;
+            color: #4b5563;
         }
         
         .task-list li:before {
@@ -92,7 +95,7 @@
             left: 0;
             top: 5px;
             font-size: 1.2rem;
-            color: #60a5fa;
+            color: #2672cd;
             line-height: 1;
         }
         
@@ -103,11 +106,11 @@
         }
         
         .swot-box {
-            background: rgba(255,255,255,0.12);
-            backdrop-filter: blur(10px);
-            border: 2px solid rgba(255,255,255,0.25);
+            background: #ffffff;
+            border: 2px solid #e5e7eb;
             border-radius: 16px;
             padding: 20px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
         }
         
         .swot-header {
@@ -117,10 +120,12 @@
             display: flex;
             align-items: center;
             gap: 10px;
+            color: #1f2937;
         }
         
         .swot-header .material-symbols-rounded {
             font-size: 1.6rem;
+            color: #2672cd;
         }
         
         .swot-grid {
@@ -130,9 +135,10 @@
         }
         
         .swot-item {
-            background: rgba(255,255,255,0.08);
+            background: #f9fafb;
             border-radius: 10px;
             padding: 12px;
+            border: 1px solid #e5e7eb;
         }
         
         .swot-label {
@@ -151,51 +157,51 @@
         .swot-content {
             font-size: 0.9rem;
             line-height: 1.4;
-            opacity: 0.9;
+            color: #4b5563;
         }
         
         .swot-item.strength {
-            background: rgba(76, 175, 80, 0.15);
-            border: 1px solid rgba(76, 175, 80, 0.3);
+            background: #ffffff;
+            border: 1px solid #2672cd;
         }
         
         .swot-item.strength .swot-label {
-            color: #4ade80;
+            color: #2672cd;
         }
         
         .swot-item.weakness {
-            background: rgba(251, 146, 60, 0.15);
-            border: 1px solid rgba(251, 146, 60, 0.3);
+            background: #f9fafb;
+            border: 1px solid #e5e7eb;
         }
         
         .swot-item.weakness .swot-label {
-            color: #fb923c;
+            color: #6b7280;
         }
         
         .swot-item.opportunity {
-            background: rgba(33, 150, 243, 0.15);
-            border: 1px solid rgba(33, 150, 243, 0.3);
+            background: #ffffff;
+            border: 1px solid #2672cd;
         }
         
         .swot-item.opportunity .swot-label {
-            color: #60a5fa;
+            color: #2672cd;
         }
         
         .swot-item.threat {
-            background: rgba(239, 68, 68, 0.15);
-            border: 1px solid rgba(239, 68, 68, 0.3);
+            background: #f9fafb;
+            border: 1px solid #e5e7eb;
         }
         
         .swot-item.threat .swot-label {
-            color: #f87171;
+            color: #6b7280;
         }
         
         .support-box {
-            background: rgba(255,255,255,0.12);
-            backdrop-filter: blur(10px);
-            border: 2px solid rgba(255,255,255,0.25);
+            background: #ffffff;
+            border: 2px solid #e5e7eb;
             border-radius: 16px;
             padding: 20px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
         }
         
         .support-list {
@@ -210,7 +216,8 @@
             position: relative;
             line-height: 1.5;
             font-size: 1rem;
-            border-bottom: 1px solid rgba(255,255,255,0.1);
+            border-bottom: 1px solid #e5e7eb;
+            color: #4b5563;
         }
         
         .support-list li:last-child {
@@ -224,13 +231,13 @@
             left: 0;
             top: 10px;
             font-size: 1.5rem;
-            color: #c084fc;
+            color: #2672cd;
             line-height: 1;
         }
         
         .support-dept {
             font-weight: 700;
-            color: #fbbf24;
+            color: #2672cd;
         }
     </style>
 </head>

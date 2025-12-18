@@ -5,7 +5,7 @@
             font-size: 1.3rem;
             font-weight: 400;
             margin-top: 8px;
-            opacity: 0.85;
+            color: #6b7280;
         }
         
         .slide-content {
@@ -23,17 +23,18 @@
         }
         
         .proposal-card {
-            background: rgba(255,255,255,0.12);
-            backdrop-filter: blur(10px);
-            border: 2px solid rgba(255,255,255,0.25);
+            background: #ffffff;
+            border: 2px solid #e5e7eb;
             border-radius: 18px;
             padding: 30px;
             transition: all 0.3s ease;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
         }
         
         .proposal-card:hover {
-            background: rgba(255,255,255,0.18);
+            border-color: #2672cd;
             transform: translateY(-5px);
+            box-shadow: 0 4px 12px rgba(59,130,246,0.15);
         }
         
         .card-title {
@@ -43,7 +44,7 @@
             display: flex;
             align-items: center;
             gap: 12px;
-            color: #fbbf24;
+            color: #2672cd;
         }
         
         .card-title .material-symbols-rounded {
@@ -58,13 +59,14 @@
         
         .proposal-list li {
             padding: 15px 20px;
-            background: rgba(255,255,255,0.08);
-            border-left: 4px solid #60a5fa;
+            background: #f9fafb;
+            border-left: 4px solid #2672cd;
             border-radius: 10px;
             margin-bottom: 12px;
             line-height: 1.6;
             font-size: 1.1rem;
             position: relative;
+            color: #4b5563;
         }
         
         .proposal-list li:before {
@@ -75,18 +77,18 @@
             transform: translateY(-50%);
             width: 32px;
             height: 32px;
-            background: #60a5fa;
+            background: #2672cd;
             border-radius: 50%;
             display: flex;
             align-items: center;
             justify-content: center;
             font-weight: 700;
             font-size: 0.95rem;
-            color: #000;
+            color: #ffffff;
         }
 
         .proposal-list li:last-child::before {
-            background: #fb923c;
+            background: #6b7280;
         }
         
         .commitment-list {
@@ -97,8 +99,8 @@
         
         .commitment-list li {
             padding: 15px 20px;
-            background: rgba(255,255,255,0.08);
-            border-left: 4px solid #4ade80;
+            background: #f9fafb;
+            border-left: 4px solid #2672cd;
             border-radius: 10px;
             margin-bottom: 12px;
             line-height: 1.6;
@@ -106,10 +108,11 @@
             display: flex;
             align-items: flex-start;
             gap: 12px;
+            color: #4b5563;
         }
         
         .commitment-list li .material-symbols-rounded {
-            color: #4ade80;
+            color: #2672cd;
             font-size: 1.6rem;
             flex-shrink: 0;
         }
@@ -121,28 +124,30 @@
         }
         
         .shared-responsibility {
-            background: linear-gradient(135deg, rgba(168,85,247,0.15) 0%, rgba(139,92,246,0.15) 100%);
-            border: 2px solid rgba(168,85,247,0.4);
+            background: #ffffff;
+            border: 2px solid #2672cd;
             border-radius: 18px;
             padding: 30px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
         }
         
         .responsibility-text {
             font-size: 1.05rem;
             line-height: 1.7;
-            opacity: 0.95;
+            color: #4b5563;
         }
         
         .responsibility-text strong {
-            color: #c084fc;
+            color: #1f2937;
             font-weight: 600;
         }
         
         .next-steps {
-            background: linear-gradient(135deg, rgba(251,146,60,0.15) 0%, rgba(249,115,22,0.15) 100%);
-            border: 2px solid rgba(251,146,60,0.4);
+            background: #ffffff;
+            border: 2px solid #2672cd;
             border-radius: 18px;
             padding: 30px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
         }
         
         .steps-list {
@@ -157,6 +162,7 @@
             position: relative;
             line-height: 1.6;
             font-size: 1.05rem;
+            color: #4b5563;
         }
         
         .steps-list li:before {
@@ -166,7 +172,7 @@
             left: 0;
             top: 12px;
             font-size: 1.5rem;
-            color: #fb923c;
+            color: #2672cd;
             line-height: 1;
         }
     </style>
@@ -196,12 +202,12 @@
                         <li data-number="3">Xin BOD <strong>hướng dẫn cơ chế phối hợp</strong> liên phòng ban để hỗ trợ các sản phẩm, mức độ cam kết và trách nhiệm từng bên?</li>
                         <li data-number="4">Xin BOD <strong>chỉ đạo phương thức quản lý</strong> nguồn lực giữa các dự án, quyền quyết định và cơ chế linh hoạt điều phối?</li>
                         <li data-number="5">Xin BOD <strong>xác định kỳ vọng và timeline</strong> cho từng hướng, thiết lập checkpoint đánh giá phù hợp với thực tế?</li>
-                        <li data-number="6" style="background: linear-gradient(135deg, rgba(251,146,60,0.25) 0%, rgba(249,115,22,0.25) 100%); border-left-color: #fb923c; border-width: 5px; padding: 20px 25px; font-size: 1.15rem; line-height: 1.7; font-weight: 600; margin-top: 15px;">
-                            <strong style="color: #faa864ff; font-size: 1.2rem;">Ý kiến và định hướng khác từ phía BOD:</strong> Dựa trên năng lực và chủ quan của bộ phận, rất cần được chỉ đạo lại về các vấn đề chưa được đề cập hoặc góc nhìn khác
+                        <li data-number="6" style="background: #ffffff; border-left-color: #2672cd; border-width: 5px; padding: 20px 25px; font-size: 1.15rem; line-height: 1.7; font-weight: 600; margin-top: 15px; border: 2px solid #2672cd; border-left-width: 5px;">
+                            <strong style="color: #2672cd; font-size: 1.2rem;">Ý kiến và định hướng khác từ phía BOD:</strong> Dựa trên năng lực và chủ quan của bộ phận, rất cần được chỉ đạo lại về các vấn đề chưa được đề cập hoặc góc nhìn khác
                         </li>
                     </ul>
-                    <div style="font-size: 0.95rem; opacity: 0.9; margin-top: 20px; padding: 15px 20px; background: rgba(251,146,60,0.1); border-left: 3px solid #fb923c; border-radius: 8px; font-style: italic; line-height: 1.6;">
-                        <strong style="color: #fb923c;">* Lưu ý:</strong> Các nội dung trên là đánh giá và đề xuất của bộ phận dựa trên năng lực hiện có. Rất mong nhận được sự hướng dẫn và điều chỉnh từ BOD cũng như các phòng ban.
+                    <div style="font-size: 0.95rem; color: #4b5563; margin-top: 20px; padding: 15px 20px; background: #f9fafb; border-left: 3px solid #2672cd; border-radius: 8px; font-style: italic; line-height: 1.6;">
+                        <strong style="color: #2672cd;">* Lưu ý:</strong> Các nội dung trên là đánh giá và đề xuất của bộ phận dựa trên năng lực hiện có. Rất mong nhận được sự hướng dẫn và điều chỉnh từ BOD cũng như các phòng ban.
                     </div>
                 </div>
                 

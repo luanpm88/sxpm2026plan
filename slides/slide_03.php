@@ -16,19 +16,18 @@
         }
         
         .problem-section {
-            background: rgba(255,255,255,0.12);
-            backdrop-filter: blur(10px);
-            border: 2px solid rgba(255,255,255,0.25);
+            background: #ffffff;
+            border: 2px solid #e5e7eb;
             border-radius: 20px;
             padding: 35px;
             transition: all 0.3s ease;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
         }
         
         .problem-section:hover {
             transform: translateY(-5px);
-            background: rgba(255,255,255,0.18);
-            border-color: rgba(255,255,255,0.4);
-            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+            border-color: #2672cd;
+            box-shadow: 0 4px 12px rgba(59,130,246,0.15);
         }
         
         .section-header {
@@ -38,7 +37,7 @@
             display: flex;
             align-items: center;
             gap: 12px;
-            color: #ffd700;
+            color: #2672cd;
         }
         
         .section-header .material-symbols-rounded {
@@ -58,6 +57,7 @@
             position: relative;
             line-height: 1.7;
             font-size: 1.35rem;
+            color: #4b5563;
         }
         
         .problem-list li:before {
@@ -67,18 +67,18 @@
             left: 0;
             top: 15px;
             font-size: 2rem;
-            color: #fbbf24;
+            color: #2672cd;
             line-height: 1;
         }
         
         .consequence-list li:before {
             content: "dangerous";
-            color: #ef4444;
+            color: #6b7280;
         }
         
         .warning-box {
-            background: linear-gradient(135deg, rgba(239, 68, 68, 0.3) 0%, rgba(220, 38, 38, 0.3) 100%);
-            border: 3px solid rgba(239, 68, 68, 0.6);
+            background: #ffffff;
+            border: 2px solid #2672cd;
             border-radius: 15px;
             padding: 30px 40px;
             font-size: 1.7rem;
@@ -88,7 +88,8 @@
             align-items: center;
             justify-content: center;
             gap: 15px;
-            box-shadow: 0 8px 25px rgba(239, 68, 68, 0.3);
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+            color: #1f2937;
         }
         
         .warning-box .material-symbols-rounded {

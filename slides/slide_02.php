@@ -9,28 +9,29 @@
                     animation: fadeInUp 0.8s ease-out;
                 }
                 .info-card {
-                    background: rgba(255,255,255,0.15);
-                    backdrop-filter: blur(10px);
-                    border: 2px solid rgba(255,255,255,0.2);
+                    background: #ffffff;
+                    border: 2px solid #e5e7eb;
                     border-radius: 20px;
                     padding: 30px;
                     transition: all 0.3s ease;
+                    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
                 }
                 .info-card:hover {
                     transform: translateY(-5px);
-                    background: rgba(255,255,255,0.2);
-                    border-color: rgba(255,255,255,0.4);
+                    border-color: #2672cd;
+                    box-shadow: 0 4px 12px rgba(59,130,246,0.15);
                 }
                 .card-icon span {
                     font-size: 4.5rem;
                     margin-bottom: 20px;
-                    opacity: 0.9;
+                    color: #2672cd;
                     font-weight: 600;
                 }
                 .card-title {
                     font-size: 1.8rem;
                     font-weight: 700;
                     margin-bottom: 20px;
+                    color: #1f2937;
                 }
                 .card-list {
                     list-style: none;
@@ -42,6 +43,7 @@
                     position: relative;
                     line-height: 1.6;
                     font-size: 1.25rem;
+                    color: #4b5563;
                 }
                 .card-list li:before {
                     content: "•";
@@ -51,19 +53,19 @@
                     line-height: 1.2;
                 }
                 .highlight-box {
-                    background: linear-gradient(135deg, rgba(76, 175, 80, 0.25) 0%, rgba(56, 142, 60, 0.25) 100%);
-                    border: 3px solid rgba(76, 175, 80, 0.5);
+                    background: #ffffff;
+                    border: 2px solid #2672cd;
                     border-radius: 12px;
                     padding: 25px;
                     font-weight: 600;
                     font-size: 1.35rem;
                     line-height: 1.8;
-                    box-shadow: 0 4px 15px rgba(76, 175, 80, 0.2);
+                    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
                 }
                 .strength-label {
                     display: inline-block;
-                    background: rgba(76, 175, 80, 0.3);
-                    border: 2px solid rgba(76, 175, 80, 0.6);
+                    background: #2672cd;
+                    border: 2px solid #2672cd;
                     color: #fff;
                     padding: 6px 16px;
                     border-radius: 20px;
@@ -75,8 +77,8 @@
                 }
                 .weakness-label {
                     display: inline-block;
-                    background: rgba(251, 146, 60, 0.3);
-                    border: 2px solid rgba(251, 146, 60, 0.6);
+                    background: #6b7280;
+                    border: 2px solid #6b7280;
                     color: #fff;
                     padding: 6px 16px;
                     border-radius: 20px;
@@ -87,21 +89,21 @@
                     letter-spacing: 0.5px;
                 }
                 .weakness-box {
-                    background: linear-gradient(135deg, rgba(251, 146, 60, 0.25) 0%, rgba(249, 115, 22, 0.25) 100%);
-                    border: 3px solid rgba(251, 146, 60, 0.5);
+                    background: #f9fafb;
+                    border: 2px solid #e5e7eb;
                     border-radius: 12px;
                     padding: 25px;
                     font-weight: 600;
                     font-size: 1.35rem;
                     line-height: 1.8;
-                    box-shadow: 0 4px 15px rgba(251, 146, 60, 0.2);
+                    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
                     margin-top: 15px;
                 }
                 .highlight-box .assessment-points p:before {
-                    color: #4ade80;
+                    color: #2672cd;
                 }
                 .weakness-box .assessment-points p:before {
-                    color: #fb923c;
+                    color: #6b7280;
                 }
                 .assessment-points {
                     margin-top: 15px;
@@ -115,7 +117,7 @@
                     content: "•";
                     position: absolute;
                     left: 0;
-                    color: #ffd700;
+                    color: #2672cd;
                     font-size: 1.5rem;
                     line-height: 1.5;
                 }

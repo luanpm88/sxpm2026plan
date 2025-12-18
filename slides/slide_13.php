@@ -20,6 +20,7 @@
         .thank-icon .material-symbols-rounded {
             font-size: 5rem;
             animation: pulse 2s ease-in-out infinite;
+            color: #2672cd;
         }
         
         @keyframes pulse {
@@ -37,24 +38,25 @@
             margin-bottom: 25px;
             line-height: 1.2;
             text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+            color: #1f2937;
         }
         
         .subtitle {
             font-size: 1.8rem;
             font-weight: 300;
             margin-bottom: 40px;
-            opacity: 0.95;
+            color: #6b7280;
             line-height: 1.6;
         }
         
         .contact-info {
-            background: rgba(255,255,255,0.15);
-            backdrop-filter: blur(10px);
-            border: 2px solid rgba(255,255,255,0.2);
+            background: #ffffff;
+            border: 2px solid #e5e7eb;
             border-radius: 20px;
             padding: 35px 40px;
             display: inline-block;
             margin: 0 auto;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
         }
         
         .contact-item {
@@ -64,16 +66,18 @@
             gap: 12px;
             font-size: 1.8rem;
             margin: 15px 0;
+            color: #1f2937;
         }
         
         .contact-item .material-symbols-rounded {
             font-size: 2rem;
+            color: #2672cd;
         }
         
         .closing-message {
             margin-top: 40px;
             font-size: 1.6rem;
-            opacity: 0.8;
+            color: #6b7280;
             display: flex;
             align-items: center;
             justify-content: center;
@@ -82,6 +86,7 @@
         
         .closing-message .material-symbols-rounded {
             font-size: 2rem;
+            color: #2672cd;
         }
     </style>
 </head>

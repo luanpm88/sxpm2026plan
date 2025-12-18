@@ -8,7 +8,7 @@
             font-size: 1.5rem;
             font-weight: 400;
             margin-top: 10px;
-            opacity: 0.9;
+            color: #6b7280;
         }
         
         .slide-content {
@@ -26,9 +26,8 @@
         }
         
         .allocation-card {
-            background: rgba(255,255,255,0.12);
-            backdrop-filter: blur(10px);
-            border: 2px solid rgba(255,255,255,0.25);
+            background: #ffffff;
+            border: 2px solid #e5e7eb;
             border-radius: 16px;
             padding: 20px;
             transition: all 0.3s ease;
@@ -36,17 +35,19 @@
             flex-direction: column;
             align-items: center;
             text-align: center;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
         }
         
         .allocation-card:hover {
             transform: translateY(-5px);
-            background: rgba(255,255,255,0.18);
-            border-color: rgba(255,255,255,0.4);
+            border-color: #2672cd;
+            box-shadow: 0 4px 12px rgba(59,130,246,0.15);
         }
         
         .allocation-card .material-symbols-rounded {
             font-size: 2.5rem;
             margin-bottom: 10px;
+            color: #2672cd;
         }
         
         .allocation-label {
@@ -54,47 +55,45 @@
             font-weight: 600;
             margin-bottom: 8px;
             line-height: 1.3;
+            color: #1f2937;
         }
         
         .allocation-percent {
             font-size: 1.9rem;
             font-weight: 700;
+            color: #1f2937;
         }
         
         .card-outsourcing {
-            background: linear-gradient(135deg, rgba(76, 175, 80, 0.15) 0%, rgba(56, 142, 60, 0.15) 100%);
-            border-color: rgba(76, 175, 80, 0.4);
+            border-color: #2672cd;
         }
         
         .card-outsourcing .material-symbols-rounded {
-            color: #4ade80;
+            color: #2672cd;
         }
         
         .card-saas {
-            background: linear-gradient(135deg, rgba(33, 150, 243, 0.15) 0%, rgba(21, 101, 192, 0.15) 100%);
-            border-color: rgba(33, 150, 243, 0.4);
+            border-color: #2672cd;
         }
         
         .card-saas .material-symbols-rounded {
-            color: #60a5fa;
+            color: #2672cd;
         }
         
         .card-ai {
-            background: linear-gradient(135deg, rgba(168, 85, 247, 0.15) 0%, rgba(139, 92, 246, 0.15) 100%);
-            border-color: rgba(168, 85, 247, 0.4);
+            border-color: #6b7280;
         }
         
         .card-ai .material-symbols-rounded {
-            color: #c084fc;
+            color: #6b7280;
         }
         
         .card-website {
-            background: linear-gradient(135deg, rgba(251, 146, 60, 0.15) 0%, rgba(249, 115, 22, 0.15) 100%);
-            border-color: rgba(251, 146, 60, 0.4);
+            border-color: #e5e7eb;
         }
         
         .card-website .material-symbols-rounded {
-            color: #fb923c;
+            color: #6b7280;
         }
         
         .charts-section {
@@ -106,13 +105,13 @@
         }
         
         .chart-box {
-            background: rgba(255,255,255,0.12);
-            backdrop-filter: blur(10px);
-            border: 2px solid rgba(255,255,255,0.25);
+            background: #ffffff;
+            border: 2px solid #e5e7eb;
             border-radius: 18px;
             padding: 25px;
             display: flex;
             flex-direction: column;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
         }
         
         .chart-header {
@@ -122,10 +121,12 @@
             display: flex;
             align-items: center;
             gap: 10px;
+            color: #1f2937;
         }
         
         .chart-header .material-symbols-rounded {
             font-size: 1.8rem;
+            color: #2672cd;
         }
         
         #allocationPieChart {
@@ -145,11 +146,11 @@
         }
         
         .timeline-compact {
-            background: rgba(255,255,255,0.12);
-            backdrop-filter: blur(10px);
-            border: 2px solid rgba(255,255,255,0.25);
+            background: #ffffff;
+            border: 2px solid #e5e7eb;
             border-radius: 18px;
             padding: 25px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
         }
         
         .timeline-grid {
@@ -167,12 +168,13 @@
         .timeline-period {
             font-size: 1.05rem;
             font-weight: 600;
-            background: rgba(255,255,255,0.15);
+            background: #f3f4f6;
             padding: 8px 12px;
             border-radius: 8px;
             min-width: 85px;
             text-align: center;
             flex-shrink: 0;
+            color: #1f2937;
         }
         
         .timeline-info {
@@ -182,21 +184,22 @@
         .team-size {
             font-size: 1.6rem;
             font-weight: 700;
-            color: #fbbf24;
+            color: #2672cd;
             margin-bottom: 2px;
         }
         
         .team-note {
             font-size: 0.95rem;
-            opacity: 0.85;
+            color: #6b7280;
             line-height: 1.3;
         }
         
         .warning-box {
-            background: linear-gradient(135deg, rgba(239, 68, 68, 0.2) 0%, rgba(220, 38, 38, 0.2) 100%);
-            border: 3px solid rgba(239, 68, 68, 0.5);
+            background: #ffffff;
+            border: 2px solid #2672cd;
             border-radius: 18px;
             padding: 25px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
         }
         
         .warning-header {
@@ -206,11 +209,12 @@
             display: flex;
             align-items: center;
             gap: 10px;
-            color: #fca5a5;
+            color: #1f2937;
         }
         
         .warning-header .material-symbols-rounded {
             font-size: 1.8rem;
+            color: #2672cd;
         }
         
         .warning-list {
@@ -225,6 +229,7 @@
             position: relative;
             line-height: 1.5;
             font-size: 1.05rem;
+            color: #4b5563;
         }
         
         .warning-list li:before {
@@ -234,7 +239,7 @@
             left: 0;
             top: 8px;
             font-size: 1.4rem;
-            color: #fb923c;
+            color: #6b7280;
             line-height: 1;
         }
     </style>

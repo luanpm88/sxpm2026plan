@@ -5,7 +5,7 @@
             font-size: 1.5rem;
             font-weight: 400;
             margin-top: 10px;
-            opacity: 0.9;
+            color: #6b7280;
         }
         
         .slide-content {
@@ -24,9 +24,8 @@
         }
         
         .version-card {
-            background: rgba(255,255,255,0.12);
-            backdrop-filter: blur(10px);
-            border: 2px solid rgba(255,255,255,0.25);
+            background: #ffffff;
+            border: 2px solid #e5e7eb;
             border-radius: 18px;
             padding: 35px 30px;
             transition: all 0.3s ease;
@@ -34,6 +33,7 @@
             flex-direction: column;
             position: relative;
             overflow: hidden;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
         }
         
         .version-card::before {
@@ -43,25 +43,25 @@
             left: 0;
             right: 0;
             height: 4px;
+            background: #2672cd;
         }
         
         .version-card.v1::before {
-            background: linear-gradient(90deg, #4ade80, #22c55e);
+            background: #2672cd;
         }
         
         .version-card.v2::before {
-            background: linear-gradient(90deg, #60a5fa, #3b82f6);
+            background: #2672cd;
         }
         
         .version-card.v3::before {
-            background: linear-gradient(90deg, #c084fc, #a855f7);
+            background: #6b7280;
         }
         
         .version-card:hover {
             transform: translateY(-8px);
-            background: rgba(255,255,255,0.18);
-            border-color: rgba(255,255,255,0.4);
-            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+            border-color: #2672cd;
+            box-shadow: 0 4px 12px rgba(59,130,246,0.15);
         }
         
         .version-header {
@@ -75,6 +75,7 @@
             display: flex;
             align-items: center;
             gap: 15px;
+            color: #1f2937;
         }
         
         .version-badge {
@@ -92,23 +93,26 @@
         }
         
         .badge-complete {
-            background: rgba(76, 175, 80, 0.3);
-            border: 1px solid rgba(76, 175, 80, 0.5);
+            background: #2672cd;
+            border: 1px solid #2672cd;
+            color: #ffffff;
         }
         
         .badge-priority {
-            background: rgba(33, 150, 243, 0.3);
-            border: 1px solid rgba(33, 150, 243, 0.5);
+            background: #2672cd;
+            border: 1px solid #2672cd;
+            color: #ffffff;
         }
         
         .badge-planned {
-            background: rgba(168, 85, 247, 0.3);
-            border: 1px solid rgba(168, 85, 247, 0.5);
+            background: #6b7280;
+            border: 1px solid #6b7280;
+            color: #ffffff;
         }
         
         .version-period {
             font-size: 1.4rem;
-            opacity: 0.85;
+            color: #6b7280;
             margin-bottom: 20px;
             font-weight: 500;
         }
@@ -126,6 +130,7 @@
             position: relative;
             line-height: 1.6;
             font-size: 1.2rem;
+            color: #4b5563;
         }
         
         .feature-list li:before {
@@ -135,20 +140,21 @@
             left: 0;
             top: 10px;
             font-size: 1.6rem;
-            color: #60a5fa;
+            color: #2672cd;
             line-height: 1;
         }
         
         .highlight-text {
-            background: rgba(255,255,255,0.15);
+            background: #f3f4f6;
             padding: 2px 8px;
             border-radius: 6px;
             font-weight: 600;
+            color: #1f2937;
         }
         
         .target-box {
-            background: linear-gradient(135deg, rgba(251, 146, 60, 0.2) 0%, rgba(249, 115, 22, 0.2) 100%);
-            border: 2px solid rgba(251, 146, 60, 0.4);
+            background: #ffffff;
+            border: 2px solid #2672cd;
             border-radius: 15px;
             padding: 25px 35px;
             text-align: center;
@@ -156,17 +162,19 @@
             align-items: center;
             justify-content: center;
             gap: 15px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
         }
         
         .target-box .material-symbols-rounded {
             font-size: 2.5rem;
-            color: #fb923c;
+            color: #2672cd;
         }
         
         .target-text {
             font-size: 1.6rem;
             font-weight: 600;
             line-height: 1.5;
+            color: #1f2937;
         }
     </style>
 </head>

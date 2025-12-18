@@ -5,7 +5,7 @@
             font-size: 1.8rem;
             font-weight: 400;
             margin-top: 10px;
-            opacity: 0.95;
+            color: #6b7280;
             display: flex;
             align-items: center;
             gap: 10px;
@@ -14,6 +14,7 @@
         .slide-subtitle .material-symbols-rounded {
             font-size: 2rem;
             font-weight: 600;
+            color: #2672cd;
         }
         
         .slide-content {
@@ -31,17 +32,17 @@
         }
         
         .info-card {
-            background: rgba(255,255,255,0.15);
-            backdrop-filter: blur(10px);
-            border: 2px solid rgba(255,255,255,0.25);
+            background: #ffffff;
+            border: 2px solid #e5e7eb;
             border-radius: 18px;
             padding: 30px;
             transition: all 0.3s ease;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
         }
         
         .info-card:hover {
-            background: rgba(255,255,255,0.2);
-            border-color: rgba(255,255,255,0.4);
+            border-color: #2672cd;
+            box-shadow: 0 4px 12px rgba(59,130,246,0.15);
         }
         
         .card-header {
@@ -51,7 +52,7 @@
             display: flex;
             align-items: center;
             gap: 12px;
-            color: #ffd700;
+            color: #2672cd;
         }
         
         .card-header .material-symbols-rounded {
@@ -62,6 +63,7 @@
         .card-content {
             font-size: 1.3rem;
             line-height: 1.8;
+            color: #4b5563;
         }
         
         .card-list {
@@ -76,6 +78,7 @@
             position: relative;
             line-height: 1.7;
             font-size: 1.25rem;
+            color: #4b5563;
         }
         
         .card-list li:before {
@@ -85,30 +88,31 @@
             left: 0;
             top: 12px;
             font-size: 1.8rem;
-            color: #4ade80;
+            color: #2672cd;
             line-height: 1;
         }
         
         .pros-card {
-            background: linear-gradient(135deg, rgba(76, 175, 80, 0.2) 0%, rgba(56, 142, 60, 0.2) 100%);
-            border: 2px solid rgba(76, 175, 80, 0.4);
+            background: #ffffff;
+            border: 2px solid #2672cd;
         }
         
         .cons-card {
-            background: linear-gradient(135deg, rgba(251, 146, 60, 0.2) 0%, rgba(249, 115, 22, 0.2) 100%);
-            border: 2px solid rgba(251, 146, 60, 0.4);
+            background: #f9fafb;
+            border: 2px solid #e5e7eb;
         }
         
         .cons-card .card-list li:before {
             content: "close";
-            color: #fb923c;
+            color: #6b7280;
         }
         
         .warning-card {
-            background: linear-gradient(135deg, rgba(239, 68, 68, 0.25) 0%, rgba(220, 38, 38, 0.25) 100%);
-            border: 3px solid rgba(239, 68, 68, 0.5);
+            background: #ffffff;
+            border: 2px solid #2672cd;
             grid-column: 1 / -1;
             padding: 25px 35px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
         }
         
         .warning-content {
@@ -119,11 +123,13 @@
             align-items: center;
             justify-content: center;
             gap: 15px;
+            color: #1f2937;
         }
         
         .warning-content .material-symbols-rounded {
             font-size: 2.5rem;
             font-weight: 600;
+            color: #2672cd;
         }
         
         .full-width {

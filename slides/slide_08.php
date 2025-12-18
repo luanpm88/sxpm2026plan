@@ -5,7 +5,7 @@
             font-size: 1.8rem;
             font-weight: 400;
             margin-top: 10px;
-            opacity: 0.95;
+            color: #6b7280;
             display: flex;
             align-items: center;
             gap: 10px;
@@ -14,6 +14,7 @@
         .slide-subtitle .material-symbols-rounded {
             font-size: 2rem;
             font-weight: 600;
+            color: #2672cd;
         }
         
         .slide-content {
@@ -31,17 +32,17 @@
         }
         
         .info-card {
-            background: rgba(255,255,255,0.15);
-            backdrop-filter: blur(10px);
-            border: 2px solid rgba(255,255,255,0.25);
+            background: #ffffff;
+            border: 2px solid #e5e7eb;
             border-radius: 18px;
             padding: 30px;
             transition: all 0.3s ease;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
         }
         
         .info-card:hover {
-            background: rgba(255,255,255,0.2);
-            border-color: rgba(255,255,255,0.4);
+            border-color: #2672cd;
+            box-shadow: 0 4px 12px rgba(59,130,246,0.15);
         }
         
         .card-header {
@@ -51,7 +52,7 @@
             display: flex;
             align-items: center;
             gap: 12px;
-            color: #ffd700;
+            color: #2672cd;
         }
         
         .card-header .material-symbols-rounded {
@@ -62,6 +63,7 @@
         .card-content {
             font-size: 1.3rem;
             line-height: 1.8;
+            color: #4b5563;
         }
         
         .card-list {
@@ -76,6 +78,7 @@
             position: relative;
             line-height: 1.7;
             font-size: 1.25rem;
+            color: #4b5563;
         }
         
         .card-list li:before {
@@ -85,33 +88,33 @@
             left: 0;
             top: 12px;
             font-size: 1.8rem;
-            color: #4ade80;
+            color: #2672cd;
             line-height: 1;
         }
         
         .status-card {
-            background: linear-gradient(135deg, rgba(33, 150, 243, 0.2) 0%, rgba(21, 101, 192, 0.2) 100%);
-            border: 2px solid rgba(33, 150, 243, 0.4);
+            background: #ffffff;
+            border: 2px solid #2672cd;
         }
         
         .status-card .card-list li:before {
             content: "check_circle";
-            color: #60a5fa;
+            color: #2672cd;
         }
         
         .potential-card {
-            background: linear-gradient(135deg, rgba(76, 175, 80, 0.2) 0%, rgba(56, 142, 60, 0.2) 100%);
-            border: 2px solid rgba(76, 175, 80, 0.4);
+            background: #f9fafb;
+            border: 2px solid #e5e7eb;
         }
         
         .challenge-card {
-            background: linear-gradient(135deg, rgba(251, 146, 60, 0.2) 0%, rgba(249, 115, 22, 0.2) 100%);
-            border: 2px solid rgba(251, 146, 60, 0.4);
+            background: #f9fafb;
+            border: 2px solid #e5e7eb;
         }
         
         .challenge-card .card-list li:before {
             content: "priority_high";
-            color: #fb923c;
+            color: #6b7280;
         }
         
         .full-width {
@@ -119,8 +122,9 @@
         }
         
         .target-card {
-            background: linear-gradient(135deg, rgba(139, 92, 246, 0.25) 0%, rgba(109, 40, 217, 0.25) 100%);
-            border: 3px solid rgba(139, 92, 246, 0.5);
+            background: #ffffff;
+            border: 2px solid #2672cd;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
         }
         
         .objective-list {
@@ -131,18 +135,19 @@
         }
         
         .objective-item {
-            background: rgba(255,255,255,0.15);
+            background: #f9fafb;
             border-radius: 12px;
             padding: 20px;
             display: flex;
             align-items: flex-start;
             gap: 15px;
+            border: 2px solid #e5e7eb;
         }
         
         .objective-number {
             font-size: 2.5rem;
             font-weight: 700;
-            opacity: 0.4;
+            color: #e5e7eb;
             line-height: 1;
         }
         
@@ -150,6 +155,7 @@
             font-size: 1.35rem;
             line-height: 1.6;
             font-weight: 600;
+            color: #1f2937;
         }
     </style>
 </head>
@@ -237,7 +243,7 @@
                     </div>
                 </div>
                 <div class="assessment-section">
-                <div class="info-card full-width" style="background: linear-gradient(135deg, rgba(99, 102, 241, 0.2) 0%, rgba(79, 70, 229, 0.2) 100%); border: 2px solid rgba(99, 102, 241, 0.4);">
+                <div class="info-card full-width" style="background: #ffffff; border: 2px solid #2672cd; box-shadow: 0 1px 3px rgba(0,0,0,0.1);">
                     <div class="card-header">
                         <span class="material-symbols-rounded">precision_manufacturing</span>
                         Technology Stack & Kỹ thuật áp dụng

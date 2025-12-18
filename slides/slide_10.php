@@ -40,14 +40,14 @@
         
         .allocation-card:hover {
             transform: translateY(-5px);
-            border-color: #2672cd;
+            border-color: #1f2937;
             box-shadow: 0 4px 12px rgba(59,130,246,0.15);
         }
         
         .allocation-card .material-symbols-rounded {
             font-size: 2.5rem;
             margin-bottom: 10px;
-            color: #2672cd;
+            color: #1f2937;
         }
         
         .allocation-label {
@@ -65,19 +65,19 @@
         }
         
         .card-outsourcing {
-            border-color: #2672cd;
+            border-color: #1f2937;
         }
         
         .card-outsourcing .material-symbols-rounded {
-            color: #2672cd;
+            color: #1f2937;
         }
         
         .card-saas {
-            border-color: #2672cd;
+            border-color: #1f2937;
         }
         
         .card-saas .material-symbols-rounded {
-            color: #2672cd;
+            color: #1f2937;
         }
         
         .card-ai {
@@ -126,11 +126,11 @@
         
         .chart-header .material-symbols-rounded {
             font-size: 1.8rem;
-            color: #2672cd;
+            color: #1f2937;
         }
         
         #allocationPieChart {
-            flex: 1;
+            /* flex: 1; */
             min-height: 0;
         }
         
@@ -184,7 +184,7 @@
         .team-size {
             font-size: 1.6rem;
             font-weight: 700;
-            color: #2672cd;
+            color: #1f2937;
             margin-bottom: 2px;
         }
         
@@ -196,7 +196,7 @@
         
         .warning-box {
             background: #ffffff;
-            border: 2px solid #2672cd;
+            border: 2px solid #e5e7eb;
             border-radius: 18px;
             padding: 25px;
             box-shadow: 0 1px 3px rgba(0,0,0,0.1);
@@ -214,7 +214,7 @@
         
         .warning-header .material-symbols-rounded {
             font-size: 1.8rem;
-            color: #2672cd;
+            color: #fb923c;
         }
         
         .warning-list {
@@ -230,6 +230,7 @@
             line-height: 1.5;
             font-size: 1.05rem;
             color: #4b5563;
+            text-align: left;
         }
         
         .warning-list li:before {
@@ -239,7 +240,7 @@
             left: 0;
             top: 8px;
             font-size: 1.4rem;
-            color: #6b7280;
+            color: #fb923c;
             line-height: 1;
         }
     </style>
@@ -297,7 +298,7 @@
                         <span class="material-symbols-rounded">show_chart</span>
                         Lộ trình tăng trưởng đội ngũ 2025-2027
                     </div>
-                    <div id="teamGrowthChart"></div>
+                    <div id="teamGrowthChart" style="width:100%;height:300px;"></div>
                 </div>
             </div>
             
@@ -380,12 +381,12 @@
             backgroundColor: 'transparent',
             tooltip: {
                 trigger: 'item',
-                backgroundColor: 'rgba(0, 0, 0, 0.8)',
-                borderColor: 'rgba(255, 255, 255, 0.2)',
-                textStyle: {
-                    color: '#fff',
-                    fontSize: 14
-                },
+                // backgroundColor: 'rgba(0, 0, 0, 0.8)',
+                // borderColor: 'rgba(255, 255, 255, 0.2)',
+                // textStyle: {
+                //     color: '#fff',
+                //     fontSize: 14
+                // },
                 formatter: '{b}: <strong>{c}%</strong>'
             },
             legend: {
@@ -393,7 +394,7 @@
                 right: '10%',
                 top: 'center',
                 textStyle: {
-                    color: 'rgba(255, 255, 255, 0.9)',
+                    // color: 'rgba(255, 255, 255, 0.9)',
                     fontSize: 13
                 },
                 itemGap: 15
@@ -407,7 +408,7 @@
                     avoidLabelOverlap: false,
                     itemStyle: {
                         borderRadius: 8,
-                        borderColor: 'rgba(255, 255, 255, 0.2)',
+                        // borderColor: 'rgba(255, 255, 255, 0.2)',
                         borderWidth: 2
                     },
                     label: {
@@ -427,7 +428,7 @@
                         itemStyle: {
                             shadowBlur: 10,
                             shadowOffsetX: 0,
-                            shadowColor: 'rgba(0, 0, 0, 0.5)'
+                            // shadowColor: 'rgba(0, 0, 0, 0.5)'
                         }
                     },
                     data: [
@@ -466,12 +467,12 @@
             backgroundColor: 'transparent',
             tooltip: {
                 trigger: 'axis',
-                backgroundColor: 'rgba(0, 0, 0, 0.8)',
-                borderColor: 'rgba(255, 255, 255, 0.2)',
-                textStyle: {
-                    color: '#fff',
-                    fontSize: 14
-                }
+                // backgroundColor: 'rgba(0, 0, 0, 0.8)',
+                // borderColor: 'rgba(255, 255, 255, 0.2)',
+                // textStyle: {
+                //     color: '#fff',
+                //     fontSize: 14
+                // }
             },
             grid: {
                 left: '12%',
@@ -484,11 +485,11 @@
                 data: ['Q4 2025', 'Q1 2026', 'Q2 2026', 'Q3 2026', 'Q4 2026', '2027'],
                 axisLine: {
                     lineStyle: {
-                        color: 'rgba(255, 255, 255, 0.3)'
+                        // color: 'rgba(255, 255, 255, 0.3)'
                     }
                 },
                 axisLabel: {
-                    color: 'rgba(255, 255, 255, 0.8)',
+                    // color: 'rgba(255, 255, 255, 0.8)',
                     fontSize: 12
                 }
             },
@@ -496,7 +497,7 @@
                 type: 'value',
                 name: 'Số người',
                 nameTextStyle: {
-                    color: 'rgba(255, 255, 255, 0.8)',
+                    // color: 'rgba(255, 255, 255, 0.8)',
                     fontSize: 13
                 },
                 min: 0,
@@ -504,16 +505,16 @@
                 interval: 5,
                 axisLine: {
                     lineStyle: {
-                        color: 'rgba(255, 255, 255, 0.3)'
+                        // color: 'rgba(255, 255, 255, 0.3)'
                     }
                 },
                 axisLabel: {
-                    color: 'rgba(255, 255, 255, 0.8)',
+                    // color: 'rgba(255, 255, 255, 0.8)',
                     fontSize: 12
                 },
                 splitLine: {
                     lineStyle: {
-                        color: 'rgba(255, 255, 255, 0.1)'
+                        // color: 'rgba(255, 255, 255, 0.1)'
                     }
                 }
             },
@@ -539,9 +540,9 @@
                         }
                     },
                     itemStyle: {
-                        color: '#fbbf24',
+                        // color: '#fbbf24',
                         borderWidth: 2,
-                        borderColor: '#fff'
+                        // borderColor: '#fff'
                     },
                     areaStyle: {
                         color: {

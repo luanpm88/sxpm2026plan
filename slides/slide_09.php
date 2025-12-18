@@ -60,7 +60,7 @@
         
         .version-card:hover {
             transform: translateY(-8px);
-            border-color: #2672cd;
+            border-color: #1f2937;
             box-shadow: 0 4px 12px rgba(59,130,246,0.15);
         }
         
@@ -93,14 +93,14 @@
         }
         
         .badge-complete {
-            background: #2672cd;
-            border: 1px solid #2672cd;
+            background: #3b82f6;
+            border: 1px solid #3b82f6;
             color: #ffffff;
         }
         
         .badge-priority {
-            background: #2672cd;
-            border: 1px solid #2672cd;
+            background: #1f2937;
+            border: 1px solid #1f2937;
             color: #ffffff;
         }
         
@@ -140,7 +140,7 @@
             left: 0;
             top: 10px;
             font-size: 1.6rem;
-            color: #2672cd;
+            color: #1f2937;
             line-height: 1;
         }
         
@@ -154,7 +154,7 @@
         
         .target-box {
             background: #ffffff;
-            border: 2px solid #2672cd;
+            border: 2px solid #e5e7eb;
             border-radius: 15px;
             padding: 25px 35px;
             text-align: center;
@@ -167,12 +167,11 @@
         
         .target-box .material-symbols-rounded {
             font-size: 2.5rem;
-            color: #2672cd;
+            color: #1f2937;
         }
         
         .target-text {
             font-size: 1.6rem;
-            font-weight: 600;
             line-height: 1.5;
             color: #1f2937;
         }

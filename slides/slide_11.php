@@ -35,7 +35,7 @@
         
         .quarter-card:hover {
             transform: translateY(-5px);
-            border-color: #2672cd;
+            border-color: #1f2937;
             box-shadow: 0 4px 12px rgba(59,130,246,0.15);
         }
         
@@ -70,7 +70,7 @@
         
         .task-title .material-symbols-rounded {
             font-size: 1.3rem;
-            color: #2672cd;
+            color: #1f2937;
         }
         
         .task-list {
@@ -95,7 +95,7 @@
             left: 0;
             top: 5px;
             font-size: 1.2rem;
-            color: #2672cd;
+            color: #1f2937;
             line-height: 1;
         }
         
@@ -125,7 +125,7 @@
         
         .swot-header .material-symbols-rounded {
             font-size: 1.6rem;
-            color: #2672cd;
+            color: #1f2937;
         }
         
         .swot-grid {
@@ -162,11 +162,11 @@
         
         .swot-item.strength {
             background: #ffffff;
-            border: 1px solid #2672cd;
+            border: 1px solid #e5e7eb;
         }
         
         .swot-item.strength .swot-label {
-            color: #2672cd;
+            color: #3b82f6;
         }
         
         .swot-item.weakness {
@@ -175,16 +175,16 @@
         }
         
         .swot-item.weakness .swot-label {
-            color: #6b7280;
+            color: #fb923c;
         }
         
         .swot-item.opportunity {
             background: #ffffff;
-            border: 1px solid #2672cd;
+            border: 1px solid #e5e7eb;
         }
         
         .swot-item.opportunity .swot-label {
-            color: #2672cd;
+            color: #10b981;
         }
         
         .swot-item.threat {
@@ -231,13 +231,13 @@
             left: 0;
             top: 10px;
             font-size: 1.5rem;
-            color: #2672cd;
+            color: #1f2937;
             line-height: 1;
         }
         
         .support-dept {
             font-weight: 700;
-            color: #2672cd;
+            color: #1f2937;
         }
     </style>
 </head>
@@ -452,7 +452,7 @@
                 
                 <div class="support-box">
                     <div class="swot-header">
-                        <span class="material-symbols-rounded">support_agent</span>
+                        <span class="material-symbols-rounded">handshake</span>
                         Hỗ trợ cần thiết từ các bộ phận
                     </div>
                     

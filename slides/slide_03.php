@@ -26,8 +26,8 @@
         
         .problem-section:hover {
             transform: translateY(-5px);
-            border-color: #2672cd;
-            box-shadow: 0 4px 12px rgba(59,130,246,0.15);
+            border-color: #d1d5db;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
         }
         
         .section-header {
@@ -37,12 +37,13 @@
             display: flex;
             align-items: center;
             gap: 12px;
-            color: #2672cd;
+            color: #1f2937;
         }
         
         .section-header .material-symbols-rounded {
             font-size: 2.5rem;
             font-weight: 600;
+            color: #fb923c;
         }
         
         .problem-list {
@@ -67,18 +68,18 @@
             left: 0;
             top: 15px;
             font-size: 2rem;
-            color: #2672cd;
+            color: #fb923c;
             line-height: 1;
         }
         
         .consequence-list li:before {
             content: "dangerous";
-            color: #6b7280;
+            color: #fb923c;
         }
         
         .warning-box {
             background: #ffffff;
-            border: 2px solid #2672cd;
+            border: 2px solid #e5e7eb;
             border-radius: 15px;
             padding: 30px 40px;
             font-size: 1.7rem;
@@ -95,6 +96,7 @@
         .warning-box .material-symbols-rounded {
             font-size: 2.5rem;
             font-weight: 600;
+            color: #fb923c;
         }
     </style>
 </head>
@@ -102,7 +104,7 @@
 <div class="slide-container">
         <div class="slide-header">
             <div class="slide-title">
-                <span class="material-symbols-rounded">warning</span>
+                <span class="material-symbols-rounded" style="color: #fb923c;">warning</span>
                 Vấn đề cốt lõi hiện tại
             </div>
         </div>

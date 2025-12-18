@@ -35,15 +35,15 @@
         }
         
         .agenda-card:hover {
-            border-color: #2672cd;
+            border-color: #6b7280;
             transform: translateY(-2px);
-            box-shadow: 0 4px 12px rgba(59,130,246,0.15);
+            box-shadow: 0 4px 12px rgba(107,114,128,0.15);
         }
         
         .agenda-number {
             font-size: 3rem;
             font-weight: 700;
-            color: #e5e7eb;
+            color: #7c9ee3;
             line-height: 1;
             margin-bottom: 10px;
         }
@@ -60,7 +60,7 @@
         
         .agenda-title .material-symbols-rounded {
             font-size: 2rem;
-            color: #2672cd;
+            color: #1f2937;
         }
         
         .agenda-items {
@@ -85,7 +85,7 @@
             left: 0;
             top: 8px;
             font-size: 1.4rem;
-            color: #2672cd;
+            color: #6b7280;
             line-height: 1;
         }
     </style>

@@ -14,7 +14,7 @@
         .slide-subtitle .material-symbols-rounded {
             font-size: 2rem;
             font-weight: 600;
-            color: #2672cd;
+            color: #10b981;
         }
         
         .slide-content {
@@ -29,107 +29,6 @@
             display: flex;
             flex-direction: column;
             gap: 20px;
-        }
-        
-        .info-card {
-            background: #ffffff;
-            border: 2px solid #e5e7eb;
-            border-radius: 18px;
-            padding: 30px;
-            transition: all 0.3s ease;
-            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
-        }
-        
-        .info-card:hover {
-            border-color: #2672cd;
-            box-shadow: 0 4px 12px rgba(59,130,246,0.15);
-        }
-        
-        .card-header {
-            font-size: 2rem;
-            font-weight: 700;
-            margin-bottom: 20px;
-            display: flex;
-            align-items: center;
-            gap: 12px;
-            color: #2672cd;
-        }
-        
-        .card-header .material-symbols-rounded {
-            font-size: 2.5rem;
-            font-weight: 600;
-        }
-        
-        .card-content {
-            font-size: 1.3rem;
-            line-height: 1.8;
-            color: #4b5563;
-        }
-        
-        .card-list {
-            list-style: none;
-            padding: 0;
-            margin: 0;
-        }
-        
-        .card-list li {
-            padding: 12px 0;
-            padding-left: 35px;
-            position: relative;
-            line-height: 1.7;
-            font-size: 1.25rem;
-            color: #4b5563;
-        }
-        
-        .card-list li:before {
-            content: "check";
-            font-family: 'Material Symbols Rounded';
-            position: absolute;
-            left: 0;
-            top: 12px;
-            font-size: 1.8rem;
-            color: #2672cd;
-            line-height: 1;
-        }
-        
-        .pros-card {
-            background: #ffffff;
-            border: 2px solid #2672cd;
-        }
-        
-        .cons-card {
-            background: #f9fafb;
-            border: 2px solid #e5e7eb;
-        }
-        
-        .cons-card .card-list li:before {
-            content: "close";
-            color: #6b7280;
-        }
-        
-        .warning-card {
-            background: #ffffff;
-            border: 2px solid #2672cd;
-            grid-column: 1 / -1;
-            padding: 25px 35px;
-            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
-        }
-        
-        .warning-content {
-            font-size: 1.6rem;
-            font-weight: 700;
-            text-align: center;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            gap: 15px;
-            color: #1f2937;
-        }
-        
-        .warning-content .material-symbols-rounded {
-            font-size: 2.5rem;
-            font-weight: 600;
-            color: #2672cd;
         }
         
         .full-width {
@@ -163,12 +62,12 @@
             </div>
             
             <div class="assessment-section">
-                <div class="info-card pros-card">
-                    <div class="card-header">
+                <div class="info-card">
+                    <div class="card-header positive">
                         <span class="material-symbols-rounded">thumb_up</span>
                         Lợi ích
                     </div>
-                    <ul class="card-list">
+                    <ul class="card-list positive">
                         <li><strong>Dòng tiền ổn định</strong> để vận hành</li>
                         <li><strong>Nuôi team</strong> trong giai đoạn xây sản phẩm</li>
                         <li>Tích lũy <strong>case thực tế</strong> đa dạng</li>
@@ -177,11 +76,11 @@
                 </div>
                 
                 <div class="info-card">
-                    <div class="card-header">
+                    <div class="card-header info">
                         <span class="material-symbols-rounded">target</span>
                         Định hướng 2026
                     </div>
-                    <ul class="card-list">
+                    <ul class="card-list neutral">
                         <li>Mini projects <strong>(< 100 triệu)</strong></li>
                         <li><strong>Nâng cấp</strong> hệ thống khách cũ</li>
                         <li><strong>Bảo trì</strong> theo tháng/năm</li>
@@ -191,12 +90,12 @@
             </div>
             
             <div class="assessment-section">
-                <div class="info-card cons-card">
-                    <div class="card-header">
+                <div class="info-card">
+                    <div class="card-header warning">
                         <span class="material-symbols-rounded">report_problem</span>
                         Hạn chế cần lưu ý
                     </div>
-                    <ul class="card-list">
+                    <ul class="card-list warning">
                         <li>Năng lực <strong>phân tán</strong> theo từng dự án</li>
                         <li>Thiếu <strong>tài sản</strong> tích lũy dài hạn</li>
                         <li>Khó <strong>scale</strong> và tăng giá trị</li>
@@ -205,11 +104,9 @@
                 </div>
             </div>
             
-            <div class="info-card warning-card">
-                <div class="warning-content">
-                    <span class="material-symbols-rounded">warning</span>
-                    <span>KHÔNG theo đuổi dự án lớn, dài hạn, rủi ro cao</span>
-                </div>
+            <div class="warning-box full-width">
+                <span class="material-symbols-rounded">warning</span>
+                <span class="warning-text">KHÔNG theo đuổi dự án lớn, dài hạn, rủi ro cao</span>
             </div>
         </div>
     </div>

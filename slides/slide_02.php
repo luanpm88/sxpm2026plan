@@ -18,13 +18,13 @@
                 }
                 .info-card:hover {
                     transform: translateY(-5px);
-                    border-color: #2672cd;
+                    border-color: #6b7280;
                     box-shadow: 0 4px 12px rgba(59,130,246,0.15);
                 }
                 .card-icon span {
                     font-size: 4.5rem;
                     margin-bottom: 20px;
-                    color: #2672cd;
+                    color: #1f2937;
                     font-weight: 600;
                 }
                 .card-title {
@@ -39,22 +39,24 @@
                 }
                 .card-list li {
                     padding: 8px 0;
-                    padding-left: 25px;
+                    padding-left: 40px;
                     position: relative;
                     line-height: 1.6;
                     font-size: 1.25rem;
                     color: #4b5563;
                 }
                 .card-list li:before {
-                    content: "•";
+                    content: "check_circle";
+                    font-family: 'Material Symbols Rounded';
                     position: absolute;
                     left: 0;
-                    font-size: 1.8rem;
+                    font-size: 1.6rem;
                     line-height: 1.2;
+                    color: #3b82f6;
                 }
                 .highlight-box {
                     background: #ffffff;
-                    border: 2px solid #2672cd;
+                    border: 2px solid #e5e7eb;
                     border-radius: 12px;
                     padding: 25px;
                     font-weight: 600;
@@ -64,8 +66,8 @@
                 }
                 .strength-label {
                     display: inline-block;
-                    background: #2672cd;
-                    border: 2px solid #2672cd;
+                    background: #3b82f6;
+                    border: 2px solid #3b82f6;
                     color: #fff;
                     padding: 6px 16px;
                     border-radius: 20px;
@@ -77,8 +79,8 @@
                 }
                 .weakness-label {
                     display: inline-block;
-                    background: #6b7280;
-                    border: 2px solid #6b7280;
+                    background: #fb923c;
+                    border: 2px solid #fb923c;
                     color: #fff;
                     padding: 6px 16px;
                     border-radius: 20px;
@@ -89,7 +91,7 @@
                     letter-spacing: 0.5px;
                 }
                 .weakness-box {
-                    background: #f9fafb;
+                    background: #ffffff;
                     border: 2px solid #e5e7eb;
                     border-radius: 12px;
                     padding: 25px;
@@ -100,10 +102,10 @@
                     margin-top: 15px;
                 }
                 .highlight-box .assessment-points p:before {
-                    color: #2672cd;
+                    color: #10b981;
                 }
                 .weakness-box .assessment-points p:before {
-                    color: #6b7280;
+                    color: #fb923c;
                 }
                 .assessment-points {
                     margin-top: 15px;
@@ -117,7 +119,7 @@
                     content: "•";
                     position: absolute;
                     left: 0;
-                    color: #2672cd;
+                    color: #6b7280;
                     font-size: 1.5rem;
                     line-height: 1.5;
                 }

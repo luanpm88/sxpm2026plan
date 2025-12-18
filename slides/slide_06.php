@@ -14,7 +14,7 @@
         .slide-subtitle .material-symbols-rounded {
             font-size: 2rem;
             font-weight: 600;
-            color: #2672cd;
+            color: #1f2937;
         }
         
         .slide-content {
@@ -41,8 +41,8 @@
         }
         
         .info-card:hover {
-            border-color: #2672cd;
-            box-shadow: 0 4px 12px rgba(59,130,246,0.15);
+            border-color: #d1d5db;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
         }
         
         .card-header {
@@ -52,7 +52,7 @@
             display: flex;
             align-items: center;
             gap: 12px;
-            color: #2672cd;
+            color: #1f2937;
         }
         
         .card-header .material-symbols-rounded {
@@ -88,33 +88,38 @@
             left: 0;
             top: 12px;
             font-size: 1.8rem;
-            color: #2672cd;
+            color: #1f2937;
             line-height: 1;
         }
         
         .status-card {
             background: #ffffff;
-            border: 2px solid #2672cd;
+            border: 2px solid #e5e7eb;
         }
         
         .status-card .card-list li:before {
             content: "check_circle";
-            color: #2672cd;
+            color: #1f2937;
         }
         
         .potential-card {
-            background: #f9fafb;
+            background: #ffffff;
             border: 2px solid #e5e7eb;
         }
         
+        .potential-card .card-header .material-symbols-rounded {
+            color: #3b82f6;
+        }
+        
         .challenge-card {
-            background: #f9fafb;
+            background: #ffffff;
+            background: #ffffff;
             border: 2px solid #e5e7eb;
         }
         
         .challenge-card .card-list li:before {
             content: "priority_high";
-            color: #6b7280;
+            color: #fb923c;
         }
         
         .full-width {
@@ -123,7 +128,7 @@
         
         .target-card {
             background: #ffffff;
-            border: 2px solid #2672cd;
+            border: 2px solid #e5e7eb;
             box-shadow: 0 1px 3px rgba(0,0,0,0.1);
         }
         
@@ -135,7 +140,7 @@
         }
         
         .objective-item {
-            background: #f9fafb;
+            background: #ffffff;
             border-radius: 12px;
             padding: 20px;
             display: flex;
@@ -147,7 +152,7 @@
         .objective-number {
             font-size: 2.5rem;
             font-weight: 700;
-            color: #e5e7eb;
+            color: #7c9ee3;
             line-height: 1;
         }
         
@@ -186,12 +191,12 @@
             </div>
             
             <div class="assessment-section">
-                <div class="info-card status-card">
+                <div class="info-card">
                     <div class="card-header">
                         <span class="material-symbols-rounded">fact_check</span>
                         Trạng thái hiện tại
                     </div>
-                    <ul class="card-list">
+                    <ul class="card-list positive">
                         <li>Đã hoàn thành <strong>phiên bản v1</strong></li>
                         <li>Kiến trúc <strong>SaaS</strong> gần hoàn chỉnh</li>
                         <li>Sẵn sàng <strong>thương mại hóa</strong></li>
@@ -219,7 +224,7 @@
                         <span class="material-symbols-rounded">trending_up</span>
                         Tiềm năng lớn
                     </div>
-                    <ul class="card-list">
+                    <ul class="card-list positive">
                         <li>Tạo <strong>tài sản công nghệ</strong> dài hạn</li>
                         <li><strong>Thu nhập thụ động</strong> từ subscription</li>
                         <li><strong>Giá trị tăng</strong> theo user base</li>

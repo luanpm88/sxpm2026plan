@@ -3,7 +3,7 @@
     <style>
         .objective-box {
             background: #ffffff;
-            border: 2px solid #2672cd;
+            border: 2px solid #e5e7eb;
             border-radius: 15px;
             padding: 20px 30px;
             margin-bottom: 25px;
@@ -22,7 +22,7 @@
         .objective-box .material-symbols-rounded {
             font-size: 2rem;
             font-weight: 600;
-            color: #2672cd;
+            color: #3b82f6;
         }
         
         .slide-content {
@@ -49,7 +49,7 @@
         
         .direction-card:hover {
             transform: translateY(-5px);
-            border-color: #2672cd;
+            border-color: #1f2937;
             box-shadow: 0 4px 12px rgba(59,130,246,0.15);
         }
         
@@ -63,7 +63,7 @@
         .card-number {
             font-size: 4rem;
             font-weight: 700;
-            color: #e5e7eb;
+            color: #9ca3af;
             line-height: 1;
         }
         
@@ -99,23 +99,23 @@
         }
         
         .badge-cashflow { 
-            background: #2672cd;
-            border-color: #2672cd;
+            background: #3b82f6;
+            border-color: #3b82f6;
             color: #ffffff;
         }
         .badge-strategic { 
-            background: #2672cd;
-            border-color: #2672cd;
+            background: #10b981;
+            border-color: #10b981;
             color: #ffffff;
         }
         .badge-shortterm { 
-            background: #6b7280;
-            border-color: #6b7280;
+            background: #fb923c;
+            border-color: #fb923c;
             color: #ffffff;
         }
         .badge-future { 
-            background: #6b7280;
-            border-color: #6b7280;
+            background: #8b5cf6;
+            border-color: #8b5cf6;
             color: #ffffff;
         }
     </style>

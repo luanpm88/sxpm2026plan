@@ -32,7 +32,7 @@
         }
         
         .proposal-card:hover {
-            border-color: #2672cd;
+            border-color: #1f2937;
             transform: translateY(-5px);
             box-shadow: 0 4px 12px rgba(59,130,246,0.15);
         }
@@ -44,11 +44,19 @@
             display: flex;
             align-items: center;
             gap: 12px;
-            color: #2672cd;
+            color: #1f2937;
         }
         
         .card-title .material-symbols-rounded {
             font-size: 2.2rem;
+        }
+        
+        .proposal-card .card-title .material-symbols-rounded {
+            color: #3b82f6;
+        }
+        
+        .proposal-card:nth-child(2) .card-title .material-symbols-rounded {
+            color: #10b981;
         }
         
         .proposal-list {
@@ -59,8 +67,8 @@
         
         .proposal-list li {
             padding: 15px 20px;
-            background: #f9fafb;
-            border-left: 4px solid #2672cd;
+            background: #ffffff;
+            border-left: 4px solid #e5e7eb;
             border-radius: 10px;
             margin-bottom: 12px;
             line-height: 1.6;
@@ -77,7 +85,7 @@
             transform: translateY(-50%);
             width: 32px;
             height: 32px;
-            background: #2672cd;
+            background: #3b82f6;
             border-radius: 50%;
             display: flex;
             align-items: center;
@@ -99,8 +107,8 @@
         
         .commitment-list li {
             padding: 15px 20px;
-            background: #f9fafb;
-            border-left: 4px solid #2672cd;
+            background: #ffffff;
+            border-left: 4px solid #10b981;
             border-radius: 10px;
             margin-bottom: 12px;
             line-height: 1.6;
@@ -112,11 +120,13 @@
         }
         
         .commitment-list li .material-symbols-rounded {
-            color: #2672cd;
+            color: #10b981;
             font-size: 1.6rem;
             flex-shrink: 0;
-        }
-        
+        }        
+        .proposal-card:nth-child(2) .card-title .material-symbols-rounded {
+            color: #10b981;
+        }        
         .bottom-section {
             display: grid;
             grid-template-columns: 1fr 1fr;
@@ -125,10 +135,18 @@
         
         .shared-responsibility {
             background: #ffffff;
-            border: 2px solid #2672cd;
+            border: 2px solid #e5e7eb;
             border-radius: 18px;
             padding: 30px;
             box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+        }
+        
+        .shared-responsibility .card-title .material-symbols-rounded {
+            color: #6b7280;
+        }
+        
+        .shared-responsibility .card-title .material-symbols-rounded {
+            color: #6b7280;
         }
         
         .responsibility-text {
@@ -144,10 +162,14 @@
         
         .next-steps {
             background: #ffffff;
-            border: 2px solid #2672cd;
+            border: 2px solid #e5e7eb;
             border-radius: 18px;
             padding: 30px;
             box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+        }
+        
+        .next-steps .card-title .material-symbols-rounded {
+            color: #3b82f6;
         }
         
         .steps-list {
@@ -172,7 +194,7 @@
             left: 0;
             top: 12px;
             font-size: 1.5rem;
-            color: #2672cd;
+            color: #3b82f6;
             line-height: 1;
         }
     </style>
@@ -202,12 +224,12 @@
                         <li data-number="3">Xin BOD <strong>hướng dẫn cơ chế phối hợp</strong> liên phòng ban để hỗ trợ các sản phẩm, mức độ cam kết và trách nhiệm từng bên?</li>
                         <li data-number="4">Xin BOD <strong>chỉ đạo phương thức quản lý</strong> nguồn lực giữa các dự án, quyền quyết định và cơ chế linh hoạt điều phối?</li>
                         <li data-number="5">Xin BOD <strong>xác định kỳ vọng và timeline</strong> cho từng hướng, thiết lập checkpoint đánh giá phù hợp với thực tế?</li>
-                        <li data-number="6" style="background: #ffffff; border-left-color: #2672cd; border-width: 5px; padding: 20px 25px; font-size: 1.15rem; line-height: 1.7; font-weight: 600; margin-top: 15px; border: 2px solid #2672cd; border-left-width: 5px;">
-                            <strong style="color: #2672cd; font-size: 1.2rem;">Ý kiến và định hướng khác từ phía BOD:</strong> Dựa trên năng lực và chủ quan của bộ phận, rất cần được chỉ đạo lại về các vấn đề chưa được đề cập hoặc góc nhìn khác
+                        <li data-number="6" style="background: #ffffff; border-left-color: #1f2937; border-width: 5px; padding: 20px 25px; font-size: 1.15rem; line-height: 1.7; font-weight: 600; margin-top: 15px; border: 2px solid #e5e7eb; border-left-width: 5px;">
+                            <strong style="color: #1f2937; font-size: 1.2rem;">Ý kiến và định hướng khác từ phía BOD:</strong> Dựa trên năng lực và chủ quan của bộ phận, rất cần được chỉ đạo lại về các vấn đề chưa được đề cập hoặc góc nhìn khác
                         </li>
                     </ul>
-                    <div style="font-size: 0.95rem; color: #4b5563; margin-top: 20px; padding: 15px 20px; background: #f9fafb; border-left: 3px solid #2672cd; border-radius: 8px; font-style: italic; line-height: 1.6;">
-                        <strong style="color: #2672cd;">* Lưu ý:</strong> Các nội dung trên là đánh giá và đề xuất của bộ phận dựa trên năng lực hiện có. Rất mong nhận được sự hướng dẫn và điều chỉnh từ BOD cũng như các phòng ban.
+                    <div style="font-size: 0.95rem; color: #4b5563; margin-top: 20px; padding: 15px 20px; background: #ffffff; border-left: 3px solid #e5e7eb; border-radius: 8px; font-style: italic; line-height: 1.6;">
+                        <strong style="color: #1f2937;">* Lưu ý:</strong> Các nội dung trên là đánh giá và đề xuất của bộ phận dựa trên năng lực hiện có. Rất mong nhận được sự hướng dẫn và điều chỉnh từ BOD cũng như các phòng ban.
                     </div>
                 </div>
                 

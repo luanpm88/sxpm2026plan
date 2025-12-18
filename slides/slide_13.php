@@ -71,7 +71,7 @@
         
         .contact-item .material-symbols-rounded {
             font-size: 2rem;
-            color: #2672cd;
+            color: #1f2937;
         }
         
         .closing-message {
@@ -86,7 +86,7 @@
         
         .closing-message .material-symbols-rounded {
             font-size: 2rem;
-            color: #2672cd;
+            color: #1f2937;
         }
     </style>
 </head>

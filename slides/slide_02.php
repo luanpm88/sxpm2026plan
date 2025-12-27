@@ -59,7 +59,6 @@
                     border: 2px solid #e5e7eb;
                     border-radius: 12px;
                     padding: 25px;
-                    font-weight: 600;
                     font-size: 1.35rem;
                     line-height: 1.8;
                     box-shadow: 0 1px 3px rgba(0,0,0,0.1);
@@ -95,7 +94,6 @@
                     border: 2px solid #e5e7eb;
                     border-radius: 12px;
                     padding: 25px;
-                    font-weight: 600;
                     font-size: 1.35rem;
                     line-height: 1.8;
                     box-shadow: 0 1px 3px rgba(0,0,0,0.1);

@@ -6,7 +6,7 @@
         <div class="slide-content" style="display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; min-height: 80vh;">
             <div style="max-width: 1000px;">
                 <div style="font-size: 5rem; margin-bottom: 2rem;">
-                    <span class="material-symbols-rounded" style="font-size: 6rem; color: #1f2937;">rocket_launch</span>
+                    <img width="200" src="https://hoangkhang.com.vn/wp-content/uploads/2022/06/Asset-1.png" alt="">
                 </div>
                 <h1 style="font-size: 4.5rem; font-weight: 700; margin-bottom: 1.5rem; line-height: 1.2; color: #000000;">
                     Định hướng phát triển<br>Bộ phận Sản xuất Phần mềm
@@ -23,9 +23,9 @@
                         Đề xuất lần đầu từ bộ phận, chưa qua review
                     </div>
                 </div>
-                <div style="font-size: 1.6rem; color: #6b7280; margin-top: 3rem;">
-                    <div style="margin: 0.5rem 0;"><strong style="color: #000000;">Thời gian:</strong> Tháng 12, 2025</div>
-                    <div style="margin: 0.5rem 0;"><strong style="color: #000000;">Trình bày:</strong> Bộ phận Sản xuất Phần mềm</div>
+                <div style="font-size: 1.4rem; color: #6b7280; margin-top: 3rem;">
+                    <div>Người soạn & thuyết minh: <span style="font-weight: 800;">Luân Phạm</span></div>
+                    <div style="margin: 0.5rem 0;"><span style="">Thời gian:</span> <span style="">Tháng 12, 2025</span></div>
                 </div>
             </div>
         </div>

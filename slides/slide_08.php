@@ -268,6 +268,39 @@
             </div>
             
             
+            <div class="info-card target-card full-width" style="background: #f0f9ff; border: 2px solid #bfdbfe;">
+                <div class="card-header" style="background: #dbeafe; color: #1e40af;">
+                    <span class="material-symbols-rounded">flag</span>
+                    Mục tiêu cụ thể 2026-2027
+                </div>
+                <div class="objective-list" style="display: grid; grid-template-columns: 1fr 1fr; gap: 15px; margin-top: 15px;">
+                    <div class="objective-item" style="display: flex; gap: 15px; align-items: flex-start; padding: 15px; background: #ffffff; border-radius: 12px;">
+                        <div class="objective-number" style="background: #3b82f6; color: white; width: 45px; height: 45px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 1.3rem; flex-shrink: 0;">01</div>
+                        <div class="objective-text" style="font-size: 1.05rem; line-height: 1.6; color: #1f2937;">
+                            <strong>Tích hợp HKSpace:</strong> Đưa AI vào HKSpace v2 (Q2-Q3 2026) - chatbot, automation, smart features
+                        </div>
+                    </div>
+                    <div class="objective-item" style="display: flex; gap: 15px; align-items: flex-start; padding: 15px; background: #ffffff; border-radius: 12px;">
+                        <div class="objective-number" style="background: #3b82f6; color: white; width: 45px; height: 45px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 1.3rem; flex-shrink: 0;">02</div>
+                        <div class="objective-text" style="font-size: 1.05rem; line-height: 1.6; color: #1f2937;">
+                            <strong>Ứng dụng nội bộ:</strong> Deploy chatbot nội bộ (Q1 2026), hỗ trợ training nhân sự và tra cứu quy trình
+                        </div>
+                    </div>
+                    <div class="objective-item" style="display: flex; gap: 15px; align-items: flex-start; padding: 15px; background: #ffffff; border-radius: 12px;">
+                        <div class="objective-number" style="background: #3b82f6; color: white; width: 45px; height: 45px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 1.3rem; flex-shrink: 0;">03</div>
+                        <div class="objective-text" style="font-size: 1.05rem; line-height: 1.6; color: #1f2937;">
+                            <strong>Dev Services:</strong> Reuse platform cho các dự án khách hàng có nhu cầu AI integration
+                        </div>
+                    </div>
+                    <div class="objective-item" style="display: flex; gap: 15px; align-items: flex-start; padding: 15px; background: #ffffff; border-radius: 12px;">
+                        <div class="objective-number" style="background: #3b82f6; color: white; width: 45px; height: 45px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 1.3rem; flex-shrink: 0;">04</div>
+                        <div class="objective-text" style="font-size: 1.05rem; line-height: 1.6; color: #1f2937;">
+                            <strong>Technology:</strong> Hoàn thiện RAG pipeline, vector DB, fine-tuning workflow (2026-2027)
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
             <div class="info-card target-card full-width">
                 <div class="card-header">
                     <span class="material-symbols-rounded">stars</span>
@@ -275,7 +308,7 @@
                 </div>
                 <div class="card-content" style="font-size: 1.35rem; line-height: 1.8;">
                     <strong>AI Knowledge Platform</strong> là công nghệ nền tảng có thể áp dụng vào nhiều hướng phát triển của bộ phận. 
-                    Với khả năng tự phát triển và tích hợp linh hoạt, platform này có thể hỗ trợ cho cả SaaS, Outsourcing và các dự án tương lai. 
+                    Với khả năng tự phát triển và tích hợp linh hoạt, platform này có thể hỗ trợ cho cả SaaS, Software Development và các dự án tương lai. 
                     Đây là tài sản công nghệ dài hạn giúp bộ phận tận dụng xu hướng AI trong giai đoạn tới.
                 </div>
             </div>

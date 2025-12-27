@@ -140,7 +140,7 @@
                     <div class="card-number">01</div>
                     <span class="material-symbols-rounded card-icon">code</span>
                 </div>
-                <div class="card-title">Outsourcing / Sản xuất phần mềm</div>
+                <div class="card-title">Software Development / Sản xuất phần mềm</div>
                 <div class="card-badge badge-cashflow">Dòng tiền ngắn hạn</div>
             </div>
             

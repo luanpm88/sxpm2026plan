@@ -203,6 +203,7 @@
                     <ul class="feature-list">
                         <li>Bộ phận <span class="highlight-text">đã sử dụng thực tế</span></li>
                         <li>Thay thế phần mềm thuê <span class="highlight-text">xTeam</span></li>
+                        <li><span class="highlight-text">Mobile app đã lên store</span> với basic functions</li>
                         <li>Hệ thống quản lý task & phân quyền hoàn thiện</li>
                         <li>Validate ý tưởng và kiến trúc nền tảng</li>
                     </ul>
@@ -216,13 +217,13 @@
                             Ưu tiên 2026
                         </div>
                     </div>
-                    <div class="version-period">Q1–Q2 2026</div>
+                    <div class="version-period">Q1–Q4 2026</div>
                     <ul class="feature-list">
-                        <li>Hoàn thiện <span class="highlight-text">UI/UX</span> chuyên nghiệp</li>
+                        <li>Hoàn thiện <span class="highlight-text">UI/UX</span> chuyên nghiệp (Web + Mobile)</li>
+                        <li><span class="highlight-text">Đẩy mạnh mobile app</span> song song với web</li>
                         <li>Tính năng core phục vụ <span class="highlight-text">khách hàng trả phí</span></li>
                         <li>Triển khai <span class="highlight-text">subscription model</span></li>
-                        <li>Onboarding 5-10 khách hàng đầu tiên</li>
-                        <li>Thu thập feedback & cải thiện</li>
+                        <li>Onboarding 50-100 users, thu thập feedback</li>
                     </ul>
                 </div>
                 
@@ -234,13 +235,13 @@
                             Kế hoạch
                         </div>
                     </div>
-                    <div class="version-period">Q3–Q4 2026</div>
+                    <div class="version-period">2027+</div>
                     <ul class="feature-list">
-                        <li>Tích hợp <span class="highlight-text">AI Knowledge Base</span></li>
+                        <li>Tích hợp <span class="highlight-text">AI Knowledge Base</span> sâu</li>
                         <li>Automation nâng cao & API mở</li>
-                        <li>Tối ưu hiệu năng & scalability</li>
-                        <li>Mở rộng user base & marketing</li>
-                        <li><span class="highlight-text">Đạt mốc có doanh thu</span> thực tế</li>
+                        <li>Tối ưu hiệu năng & scalability cho enterprise</li>
+                        <li>Mở rộng marketing & user base (200+ users)</li>
+                        <li><span class="highlight-text">Scale doanh thu</span> bền vững</li>
                     </ul>
                 </div>
             </div>

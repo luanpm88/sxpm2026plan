@@ -1,7 +1,7 @@
 <?php
 // Configuration for the presentation
 define('PRESENTATION_TITLE', 'Định hướng phát triển Bộ phận Sản xuất Phần mềm 2026');
-define('TOTAL_SLIDES', 13);
+define('TOTAL_SLIDES', 14);
 
 // Slide titles
 $slide_titles = [
@@ -10,7 +10,7 @@ $slide_titles = [
     2 => 'Hiện trạng Bộ phận Sản xuất Phần mềm',
     3 => 'Vấn đề cốt lõi hiện tại',
     4 => 'Định hướng tổng thể',
-    5 => 'Hướng 1 – Outsourcing',
+    5 => 'Hướng 1 – Software Development',
     6 => 'Hướng 2 – SaaS Product: HKSpace',
     7 => 'Lộ trình phát triển HKSpace',
     8 => 'Hướng 3 – Website / Domain Packages',
@@ -18,7 +18,8 @@ $slide_titles = [
     10 => 'Phân bổ nguồn lực đề xuất',
     11 => 'Lộ trình triển khai 2026',
     12 => 'Đề xuất với BOD & Cam kết',
-    13 => 'Cảm ơn'
+    13 => 'Tổng hợp Danh mục Sản phẩm',
+    14 => 'Cảm ơn'
 ];
 
 // Get current slide number from URL

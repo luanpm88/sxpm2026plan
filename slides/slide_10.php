@@ -261,7 +261,7 @@
             <div class="allocation-grid">
                 <div class="allocation-card card-outsourcing">
                     <span class="material-symbols-rounded">handshake</span>
-                    <div class="allocation-label">Outsourcing &<br>Maintenance</div>
+                    <div class="allocation-label">Dev Services &<br>Maintenance</div>
                     <div class="allocation-percent">40–50%</div>
                 </div>
                 
@@ -314,7 +314,7 @@
                             <div class="timeline-period">Q4 2025</div>
                             <div class="timeline-info">
                                 <div class="team-size">7–9</div>
-                                <div class="team-note">Duy trì Outsourcing + MVP</div>
+                                <div class="team-note">Duy trì Dev Services + MVP</div>
                             </div>
                         </div>
                         
@@ -434,7 +434,7 @@
                     data: [
                         { 
                             value: 45, 
-                            name: 'Outsourcing & Maintenance',
+                            name: 'Dev Services & Maintenance',
                             itemStyle: { color: '#4ade80' }
                         },
                         { 

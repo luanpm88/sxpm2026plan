@@ -219,7 +219,7 @@
                         Đề xuất sơ bộ - Xin ý kiến BOD
                     </div>
                     <ul class="proposal-list">
-                        <li data-number="1">Xin BOD <strong>đánh giá 4 định hướng</strong> phát triển (Outsourcing, SaaS, AI, Website) có phù hợp với chiến lược tổng thể của công ty hay cần điều chỉnh?</li>
+                        <li data-number="1">Xin BOD <strong>đánh giá 4 định hướng</strong> phát triển (Software Development, SaaS, AI, Website) có phù hợp với chiến lược tổng thể của công ty hay cần điều chỉnh?</li>
                         <li data-number="2">Xin BOD <strong>góp ý về tỉ trọng phân bổ</strong> nguồn lực giữa các hướng, xem xét tính khả thi và cân đối với ưu tiên chung?</li>
                         <li data-number="3">Xin BOD <strong>hướng dẫn cơ chế phối hợp</strong> liên phòng ban để hỗ trợ các sản phẩm, mức độ cam kết và trách nhiệm từng bên?</li>
                         <li data-number="4">Xin BOD <strong>chỉ đạo phương thức quản lý</strong> nguồn lực giữa các dự án, quyền quyết định và cơ chế linh hoạt điều phối?</li>
@@ -249,7 +249,7 @@
                         </li>
                         <li>
                             <span class="material-symbols-rounded">handshake</span>
-                            <div>Duy trì <strong>Outsourcing ổn định</strong>, đảm bảo dòng tiền không ảnh hưởng hoạt động công ty</div>
+                            <div>Duy trì <strong>Dev Services ổn định</strong>, đảm bảo dòng tiền không ảnh hưởng hoạt động công ty</div>
                         </li>
                         <li>
                             <span class="material-symbols-rounded">autorenew</span>

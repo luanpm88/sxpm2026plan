@@ -272,7 +272,7 @@
                     <div class="task-section">
                         <div class="task-title">
                             <span class="material-symbols-rounded" style="color: #4ade80;">handshake</span>
-                            Outsourcing
+                            Dev Services
                         </div>
                         <ul class="task-list">
                             <li>Chuẩn hóa hồ sơ năng lực</li>
@@ -309,7 +309,7 @@
                     <div class="task-section">
                         <div class="task-title">
                             <span class="material-symbols-rounded" style="color: #4ade80;">handshake</span>
-                            Outsourcing
+                            Dev Services
                         </div>
                         <ul class="task-list">
                             <li>Duy trì dự án hiện tại</li>
@@ -408,7 +408,7 @@
                             <div class="swot-content">
                                 • HKSpace MVP đã hoàn thiện<br>
                                 • Team có năng lực kỹ thuật<br>
-                                • Có khách hàng Outsourcing ổn định
+                                • Có khách hàng Dev Services ổn định
                             </div>
                         </div>
                         
@@ -443,7 +443,7 @@
                             </div>
                             <div class="swot-content">
                                 • Cạnh tranh SaaS quốc tế<br>
-                                • Nguồn lực bị kéo bởi Outsourcing<br>
+                                • Nguồn lực bị kéo bởi Dev Services<br>
                                 • Rủi ro không đạt product-market fit
                             </div>
                         </div>

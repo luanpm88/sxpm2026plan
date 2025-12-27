@@ -197,7 +197,8 @@
                         Trạng thái hiện tại
                     </div>
                     <ul class="card-list positive">
-                        <li>Đã hoàn thành <strong>phiên bản v1</strong></li>
+                        <li>Đã hoàn thành <strong>phiên bản v1</strong> (Web + Mobile)</li>
+                        <li><strong>Mobile app đã lên store</strong> với basic functions</li>
                         <li>Kiến trúc <strong>SaaS</strong> gần hoàn chỉnh</li>
                         <li>Sẵn sàng <strong>thương mại hóa</strong></li>
                         <li>Team có <strong>ownership</strong> cao với sản phẩm</li>
@@ -233,27 +234,35 @@
                 </div>
             </div>
             
-            <div class="info-card target-card full-width">
-                <div class="card-header">
+            <div class="info-card target-card full-width" style="background: #f0f9ff; border: 2px solid #bfdbfe;">
+                <div class="card-header" style="background: #dbeafe; color: #1e40af;">
                     <span class="material-symbols-rounded">flag</span>
-                    Mục tiêu chiến lược 2026
+                    Mục tiêu cụ thể 2026-2027
                 </div>
-                <div class="objective-list">
-                    <div class="objective-item">
-                        <div class="objective-number">01</div>
-                        <div class="objective-text">Chuyển từ MVP sang sản phẩm có <strong>người dùng trả phí</strong></div>
+                <div class="objective-list" style="display: grid; grid-template-columns: 1fr 1fr; gap: 15px; margin-top: 15px;">
+                    <div class="objective-item" style="display: flex; gap: 15px; align-items: flex-start; padding: 15px; background: #ffffff; border-radius: 12px;">
+                        <div class="objective-number" style="background: #3b82f6; color: white; width: 45px; height: 45px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 1.3rem; flex-shrink: 0;">01</div>
+                        <div class="objective-text" style="font-size: 1.05rem; line-height: 1.6; color: #1f2937;">
+                            <strong>Khách hàng:</strong> 50-100 users trả phí (2026) → 200+ users (2027) với retention rate cao
+                        </div>
                     </div>
-                    <div class="objective-item">
-                        <div class="objective-number">02</div>
-                        <div class="objective-text">Xây dựng <strong>tài sản công nghệ</strong> dài hạn cho công ty</div>
+                    <div class="objective-item" style="display: flex; gap: 15px; align-items: flex-start; padding: 15px; background: #ffffff; border-radius: 12px;">
+                        <div class="objective-number" style="background: #3b82f6; color: white; width: 45px; height: 45px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 1.3rem; flex-shrink: 0;">02</div>
+                        <div class="objective-text" style="font-size: 1.05rem; line-height: 1.6; color: #1f2937;">
+                            <strong>Doanh thu:</strong> Break-even hoặc positive cash flow từ subscription (2027)
+                        </div>
                     </div>
-                    <div class="objective-item">
-                        <div class="objective-number">03</div>
-                        <div class="objective-text">Tạo <strong>brand</strong> sản phẩm trong thị trường mục tiêu</div>
+                    <div class="objective-item" style="display: flex; gap: 15px; align-items: flex-start; padding: 15px; background: #ffffff; border-radius: 12px;">
+                        <div class="objective-number" style="background: #3b82f6; color: white; width: 45px; height: 45px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 1.3rem; flex-shrink: 0;">03</div>
+                        <div class="objective-text" style="font-size: 1.05rem; line-height: 1.6; color: #1f2937;">
+                            <strong>Sản phẩm:</strong> Hoàn thiện v2 (web + mobile), tích hợp AI, UI/UX chuyên nghiệp
+                        </div>
                     </div>
-                    <div class="objective-item">
-                        <div class="objective-number">04</div>
-                        <div class="objective-text">Đạt <strong>milestone</strong> về số lượng khách hàng/doanh thu</div>
+                    <div class="objective-item" style="display: flex; gap: 15px; align-items: flex-start; padding: 15px; background: #ffffff; border-radius: 12px;">
+                        <div class="objective-number" style="background: #3b82f6; color: white; width: 45px; height: 45px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 1.3rem; flex-shrink: 0;">04</div>
+                        <div class="objective-text" style="font-size: 1.05rem; line-height: 1.6; color: #1f2937;">
+                            <strong>Brand:</strong> Xây dựng reputation trong thị trường mục tiêu, case study thực tế
+                        </div>
                     </div>
                 </div>
             </div>

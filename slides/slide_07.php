@@ -239,27 +239,35 @@
                 </div>
             </div>
             
-            <div class="info-card warning-card full-width">
-                <div class="card-header">
-                    <span class="material-symbols-rounded">report</span>
-                    Kết luận và khuyến nghị
+            <div class="info-card target-card full-width" style="background: #f0f9ff; border: 2px solid #bfdbfe;">
+                <div class="card-header" style="background: #dbeafe; color: #1e40af;">
+                    <span class="material-symbols-rounded">flag</span>
+                    Mục tiêu thăm dò 2026-2027 (nguồn lực giới hạn)
                 </div>
-                <div class="objective-list">
-                    <div class="objective-item">
-                        <div class="objective-number">01</div>
-                        <div class="objective-text"><strong>KHÔNG NÊN</strong> đầu tư nguồn lực chính - thị trường đã bão hòa</div>
+                <div class="objective-list" style="display: grid; grid-template-columns: 1fr 1fr; gap: 15px; margin-top: 15px;">
+                    <div class="objective-item" style="display: flex; gap: 15px; align-items: flex-start; padding: 15px; background: #ffffff; border-radius: 12px;">
+                        <div class="objective-number" style="background: #3b82f6; color: white; width: 45px; height: 45px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 1.3rem; flex-shrink: 0;">01</div>
+                        <div class="objective-text" style="font-size: 1.05rem; line-height: 1.6; color: #1f2937;">
+                            <strong>Thăm dò hạn chế:</strong> 4-6 website/năm, chỉ nhận khách quen/referral, không chạy marketing
+                        </div>
                     </div>
-                    <div class="objective-item">
-                        <div class="objective-number">02</div>
-                        <div class="objective-text">Nếu làm: chỉ nhận <strong>dự án từ khách quen</strong>, không marketing</div>
+                    <div class="objective-item" style="display: flex; gap: 15px; align-items: flex-start; padding: 15px; background: #ffffff; border-radius: 12px;">
+                        <div class="objective-number" style="background: #3b82f6; color: white; width: 45px; height: 45px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 1.3rem; flex-shrink: 0;">02</div>
+                        <div class="objective-text" style="font-size: 1.05rem; line-height: 1.6; color: #1f2937;">
+                            <strong>Không đua giá:</strong> Chỉ nhận gói >30-50 triệu, tránh cạnh tranh giá thấp
+                        </div>
                     </div>
-                    <div class="objective-item">
-                        <div class="objective-number">03</div>
-                        <div class="objective-text"><strong>Ưu tiên tuyệt đối</strong>: Outsourcing + SaaS (HKSpace)</div>
+                    <div class="objective-item" style="display: flex; gap: 15px; align-items: flex-start; padding: 15px; background: #ffffff; border-radius: 12px;">
+                        <div class="objective-number" style="background: #3b82f6; color: white; width: 45px; height: 45px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 1.3rem; flex-shrink: 0;">03</div>
+                        <div class="objective-text" style="font-size: 1.05rem; line-height: 1.6; color: #1f2937;">
+                            <strong>Tận dụng template:</strong> Chuẩn hóa 1-2 bộ giao diện + quy trình triển khai nhanh để giảm effort
+                        </div>
                     </div>
-                    <div class="objective-item">
-                        <div class="objective-number">04</div>
-                        <div class="objective-text">Tránh <strong>cạnh tranh giá</strong> với freelancer/công ty nhỏ lẻ</div>
+                    <div class="objective-item" style="display: flex; gap: 15px; align-items: flex-start; padding: 15px; background: #ffffff; border-radius: 12px;">
+                        <div class="objective-number" style="background: #3b82f6; color: white; width: 45px; height: 45px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 1.3rem; flex-shrink: 0;">04</div>
+                        <div class="objective-text" style="font-size: 1.05rem; line-height: 1.6; color: #1f2937;">
+                            <strong>Liên kết hướng khác:</strong> Dùng website như kênh bổ trợ cho Dev Services/HKSpace (lead/hosting/domain)
+                        </div>
                     </div>
                 </div>
             </div>

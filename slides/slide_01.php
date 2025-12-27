@@ -136,7 +136,7 @@
                         Định hướng tổng thể
                     </div>
                     <ul class="agenda-items">
-                        <li>Outsourcing / Sản xuất phần mềm</li>
+                        <li>Software Development / Sản xuất phần mềm</li>
                         <li>SaaS Product: HKSpace</li>
                         <li>AI Knowledge Platform</li>
                         <li>Website / Domain Hosting packages</li>

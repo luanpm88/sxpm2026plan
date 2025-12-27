@@ -29,7 +29,7 @@
 | Lộ trình phát triển | Development Roadmap |
 | Phân bổ nguồn lực | Resource Allocation |
 | Lộ trình triển khai | Implementation Roadmap |
-| Đề xuất với BOD | Proposal to BOD |
+| Đề xuất | Proposal |
 | Cam kết | Commitment |
 
 ## Icon Replacements:
@@ -77,7 +77,7 @@ slide_08.html - Website/Domain Packages
 slide_09.html - AI/Knowledge Platform
 slide_10.html - Resource Allocation (with ECharts)
 slide_11.html - 2026 Implementation Roadmap
-slide_12.html - BOD Proposal & Commitment
+slide_12.html - Proposal & Commitment
 slide_13.html - Thank You page
 ```
 

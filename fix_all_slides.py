@@ -26,8 +26,8 @@ translations = {
     'AI / Open Knowledge Platform': 'AI / Open Knowledge Platform',
     'Resource Allocation': 'Phân bổ nguồn lực đề xuất',
     'Implementation Roadmap': 'Lộ trình triển khai 2026',
-    'BOD Proposal & Commitment': 'Đề xuất với BOD & Cam kết',
-    'Proposal to BOD': 'Đề xuất với BOD',
+    'Proposal & Commitment': 'Đề xuất & Cam kết',
+    'Proposal': 'Đề xuất',
     
     # Common phrases
     'Presentation Objectives': 'Mục tiêu trình bày',

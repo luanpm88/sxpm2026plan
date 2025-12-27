@@ -189,7 +189,7 @@
                         Đề xuất & Cam kết
                     </div>
                     <ul class="agenda-items">
-                        <li>Đề nghị BOD phê duyệt</li>
+                        <li>Đề nghị BĐH phê duyệt</li>
                         <li>Cam kết thực hiện</li>
                         <li>Chỉ số đánh giá thành công</li>
                     </ul>

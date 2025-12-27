@@ -49,7 +49,7 @@
 | **09** | AI Platform | Integration strategy |
 | **10** | Resource Allocation | Interactive ECharts pie chart |
 | **11** | 2026 Roadmap | Quarterly breakdown Q1-Q4 |
-| **12** | BOD Proposal | Commitments and approvals |
+| **12** | Proposal | Commitments and approvals |
 | **13** | Thank You | Professional closing |
 
 ---

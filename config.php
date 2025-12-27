@@ -17,7 +17,7 @@ $slide_titles = [
     9 => 'Hướng 4 – AI / Open Knowledge Platform',
     10 => 'Phân bổ nguồn lực đề xuất',
     11 => 'Lộ trình triển khai 2026',
-    12 => 'Đề xuất với BOD & Cam kết',
+    12 => 'Đề xuất & Cam kết',
     13 => 'Tổng hợp Danh mục Sản phẩm',
     14 => 'Cảm ơn'
 ];

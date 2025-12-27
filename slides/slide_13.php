@@ -221,7 +221,7 @@
                 Tổng hợp Danh mục Sản phẩm 2026-2027
             </div>
             <div class="slide-subtitle">
-                Portfolio đầy đủ của Phòng Sản xuất Phần mềm - Báo cáo BOD
+                Portfolio đầy đủ của Phòng Sản xuất Phần mềm
             </div>
         </div>
         
@@ -444,10 +444,10 @@
                 </div>
                 <div class="note-content">
                     <strong>• Ưu tiên:</strong> HKSpace (50-60%) > Dev Services (30-40%) > AI Platform (20-30%) > Website (10-15% nếu có capacity)<br>
-                    <strong>• Linh hoạt:</strong> Phân bổ nguồn lực có thể điều chỉnh theo tình hình thực tế và chỉ đạo BOD<br>
+                    <strong>• Linh hoạt:</strong> Phân bổ nguồn lực có thể điều chỉnh theo tình hình thực tế và chỉ đạo từ BĐH<br>
                     <strong>• Đánh giá:</strong> Quarterly review để điều chỉnh kịp thời, báo cáo minh bạch progress<br>
                     <strong>• Phối hợp:</strong> Cần sự hỗ trợ từ các phòng ban (Sales, Marketing, Support) để thành công<br>
-                    <strong>• Risk:</strong> Tất cả là đề xuất sơ bộ, chờ góp ý và phê duyệt từ BOD
+                    <strong>• Risk:</strong> Tất cả là đề xuất sơ bộ, chờ góp ý và phê duyệt từ BĐH
                 </div>
             </div>
         </div>

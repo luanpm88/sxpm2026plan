@@ -204,10 +204,10 @@
         <div class="slide-header">
             <div class="slide-title">
                 <span class="material-symbols-rounded">handshake</span>
-                Đề xuất với BOD & Cam kết thực hiện
+                Đề xuất & Cam kết thực hiện
             </div>
             <div class="slide-subtitle">
-                Trình bày định hướng - Xin ý kiến BOD - Cam kết kết quả - Bước đầu cho kế hoạch chi tiết
+                Trình bày định hướng - Xin ý kiến - Cam kết kết quả - Bước đầu cho kế hoạch chi tiết
             </div>
         </div>
         
@@ -216,20 +216,20 @@
                 <div class="proposal-card">
                     <div class="card-title">
                         <span class="material-symbols-rounded">forum</span>
-                        Đề xuất sơ bộ - Xin ý kiến BOD
+                        Đề xuất sơ bộ - Xin ý kiến
                     </div>
                     <ul class="proposal-list">
-                        <li data-number="1">Xin BOD <strong>đánh giá 4 định hướng</strong> phát triển (Software Development, SaaS, AI, Website) có phù hợp với chiến lược tổng thể của công ty hay cần điều chỉnh?</li>
-                        <li data-number="2">Xin BOD <strong>góp ý về tỉ trọng phân bổ</strong> nguồn lực giữa các hướng, xem xét tính khả thi và cân đối với ưu tiên chung?</li>
-                        <li data-number="3">Xin BOD <strong>hướng dẫn cơ chế phối hợp</strong> liên phòng ban để hỗ trợ các sản phẩm, mức độ cam kết và trách nhiệm từng bên?</li>
-                        <li data-number="4">Xin BOD <strong>chỉ đạo phương thức quản lý</strong> nguồn lực giữa các dự án, quyền quyết định và cơ chế linh hoạt điều phối?</li>
-                        <li data-number="5">Xin BOD <strong>xác định kỳ vọng và timeline</strong> cho từng hướng, thiết lập checkpoint đánh giá phù hợp với thực tế?</li>
+                        <li data-number="1"><strong>Đánh giá 4 định hướng</strong> phát triển (Software Development, SaaS, AI, Website) có phù hợp với chiến lược tổng thể của công ty hay cần điều chỉnh?</li>
+                        <li data-number="2"><strong>Góp ý về tỉ trọng phân bổ</strong> nguồn lực giữa các hướng, xem xét tính khả thi và cân đối với ưu tiên chung?</li>
+                        <li data-number="3"><strong>Hướng dẫn cơ chế phối hợp</strong> liên phòng ban để hỗ trợ các sản phẩm, mức độ cam kết và trách nhiệm từng bên?</li>
+                        <li data-number="4"><strong>Chỉ đạo phương thức quản lý</strong> nguồn lực giữa các dự án, quyền quyết định và cơ chế linh hoạt điều phối?</li>
+                        <li data-number="5"><strong>Xác định kỳ vọng và timeline</strong> cho từng hướng, thiết lập checkpoint đánh giá phù hợp với thực tế?</li>
                         <li data-number="6" style="background: #ffffff; border-left-color: #1f2937; border-width: 5px; padding: 20px 25px; font-size: 1.15rem; line-height: 1.7; font-weight: 600; margin-top: 15px; border: 2px solid #e5e7eb; border-left-width: 5px;">
-                            <strong style="color: #1f2937; font-size: 1.2rem;">Ý kiến và định hướng khác từ phía BOD:</strong> Dựa trên năng lực và chủ quan của bộ phận, rất cần được chỉ đạo lại về các vấn đề chưa được đề cập hoặc góc nhìn khác
+                            <strong style="color: #1f2937; font-size: 1.2rem;">Ý kiến và định hướng khác:</strong> Dựa trên năng lực và chủ quan của bộ phận, rất cần được chỉ đạo lại về các vấn đề chưa được đề cập hoặc góc nhìn khác
                         </li>
                     </ul>
                     <div style="font-size: 0.95rem; color: #4b5563; margin-top: 20px; padding: 15px 20px; background: #ffffff; border-left: 3px solid #e5e7eb; border-radius: 8px; font-style: italic; line-height: 1.6;">
-                        <strong style="color: #1f2937;">* Lưu ý:</strong> Các nội dung trên là đánh giá và đề xuất của bộ phận dựa trên năng lực hiện có. Rất mong nhận được sự hướng dẫn và điều chỉnh từ BOD cũng như các phòng ban.
+                        <strong style="color: #1f2937;">* Lưu ý:</strong> Các nội dung trên là đánh giá và đề xuất của bộ phận dựa trên năng lực hiện có. Rất mong nhận được sự hướng dẫn và điều chỉnh từ BĐH cũng như các phòng ban.
                     </div>
                 </div>
                 
@@ -241,11 +241,11 @@
                     <ul class="commitment-list">
                         <li>
                             <span class="material-symbols-rounded">summarize</span>
-                            <div>Báo cáo tiến độ <strong>định kỳ</strong> theo format mà BOD và các phòng ban thống nhất (hàng tháng/quý)</div>
+                            <div>Báo cáo tiến độ <strong>định kỳ</strong> theo format mà BĐH và các phòng ban thống nhất (hàng tháng/quý)</div>
                         </li>
                         <li>
                             <span class="material-symbols-rounded">analytics</span>
-                            <div>Đo lường bằng <strong>KPIs</strong> cụ thể, sẵn sàng điều chỉnh chỉ số theo góp ý của BOD</div>
+                            <div>Đo lường bằng <strong>KPIs</strong> cụ thể, sẵn sàng điều chỉnh chỉ số theo góp ý của BĐH</div>
                         </li>
                         <li>
                             <span class="material-symbols-rounded">handshake</span>
@@ -253,7 +253,7 @@
                         </li>
                         <li>
                             <span class="material-symbols-rounded">autorenew</span>
-                            <div>Linh hoạt <strong>điều chỉnh kế hoạch</strong> theo hướng dẫn của BOD và thực tế thị trường</div>
+                            <div>Linh hoạt <strong>điều chỉnh kế hoạch</strong> theo hướng dẫn của BĐH và thực tế thị trường</div>
                         </li>
                         <li>
                             <span class="material-symbols-rounded">visibility</span>
@@ -276,13 +276,13 @@
                     <div class="responsibility-text">
                         Tất cả nội dung trình bày là <strong>đề xuất sơ bộ</strong> của bộ phận dựa trên năng lực và đánh giá chủ quan hiện tại. Chúng tôi không tự cho là đã chốt phương án tốt nhất.
                         <br><br>
-                        <strong>• Mong BOD:</strong> Đánh giá toàn diện, điều chỉnh cho phù hợp chiến lược công ty, quyết định nguồn lực và ưu tiên
+                        <strong>• Mong BĐH:</strong> Đánh giá toàn diện, điều chỉnh cho phù hợp chiến lược công ty, quyết định nguồn lực và ưu tiên
                         <br>
-                        <strong>• Mong các phòng ban:</strong> Góp ý về tính khả thi, hỗ trợ và phối hợp theo hướng BOD quyết định
+                        <strong>• Mong các phòng ban:</strong> Góp ý về tính khả thi, hỗ trợ và phối hợp theo hướng BĐH quyết định
                         <br>
                         <strong>• Bộ phận cam kết:</strong> Thực hiện tốt theo hướng đã thống nhất, báo cáo minh bạch, sẵn sàng điều chỉnh
                         <br><br>
-                        Thành công hay thất bại là <strong>trách nhiệm chung</strong>: định hướng đúng (BOD), thực thi tốt (bộ phận), hỗ trợ hiệu quả (liên phòng ban). Cần đánh giá toàn diện, không quy kết một bên.
+                        Thành công hay thất bại là <strong>trách nhiệm chung</strong>: định hướng đúng (BĐH), thực thi tốt (bộ phận), hỗ trợ hiệu quả (liên phòng ban). Cần đánh giá toàn diện, không quy kết một bên.
                     </div>
                 </div>
                 
@@ -292,10 +292,10 @@
                         Bước tiếp theo
                     </div>
                     <ul class="steps-list">
-                        <li>BOD <strong>xem xét và góp ý</strong> về đề xuất, chỉ ra những điểm cần điều chỉnh</li>
+                        <li>BĐH <strong>xem xét và góp ý</strong> về đề xuất, chỉ ra những điểm cần điều chỉnh</li>
                         <li>Họp chung với <strong>các phòng ban</strong> để nghe ý kiến về tính khả thi và mức độ hỗ trợ</li>
                         <li>Bộ phận <strong>điều chỉnh lại kế hoạch</strong> dựa trên feedback, trình lại phương án chi tiết</li>
-                        <li>Sau khi BOD phê duyệt, xây dựng <strong>kế hoạch Q1 2026</strong> với OKRs, KPIs, budget cụ thể</li>
+                        <li>Sau khi BĐH phê duyệt, xây dựng <strong>kế hoạch Q1 2026</strong> với OKRs, KPIs, budget cụ thể</li>
                         <li>Thống nhất <strong>checkpoint đánh giá</strong> và cơ chế báo cáo định kỳ</li>
                         <li>Kickoff chính thức sau khi hoàn tất <strong>thống nhất và chuẩn bị</strong></li>
                     </ul>

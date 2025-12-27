@@ -464,7 +464,7 @@
                             <span class="support-dept">Kinh doanh:</span> Tìm khách hàng tiềm năng, close deal, hỗ trợ onboarding
                         </li>
                         <li>
-                            <span class="support-dept">BOD:</span> Phê duyệt chiến lược, nguồn lực, kiên nhẫn với timeline dài hạn
+                            <span class="support-dept">BĐH:</span> Phê duyệt chiến lược, nguồn lực, kiên nhẫn với timeline dài hạn
                         </li>
                         <li>
                             <span class="support-dept">Tài chính:</span> Budget cho R&D, tuyển dụng, marketing SaaS

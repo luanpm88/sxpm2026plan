@@ -1,1 +1,1 @@
-php -S localhost:8004 -t .
+php -S 0.0.0.0:8004 -t .

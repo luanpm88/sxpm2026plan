@@ -269,12 +269,12 @@
                             </td>
                             <td>
                                 <ul class="key-points">
-                                    <li>Tài sản công nghệ dài hạn, thu nhập thụ động từ subscription</li>
-                                    <li><strong>v1 có mobile app đã lên store</strong> với basic functions</li>
-                                    <li>v2 đẩy mạnh song song cả web lẫn mobile</li>
-                                    <li>Mục tiêu: 50-100 users (2026), 200+ users (2027+)</li>
-                                    <li>Tích hợp AI, tự động hóa workflow, expand enterprise</li>
-                                    <li>Nguồn lực: 50-60% team (2-3 người fulltime)</li>
+                                    <li>Tài sản công nghệ dài hạn, doanh thu định kỳ từ gói thuê bao</li>
+                                    <li><strong>v1 đã có app mobile trên cả iOS & Android</strong></li>
+                                    <li>v2 đẩy mạnh song song cả web lẫn mobile trong năm 2026</li>
+                                    <li>Mục tiêu: 50-100 khách hàng trả phí (2026), 200+ (2027+)</li>
+                                    <li>Tích hợp AI, tự động hóa workflow, mở rộng thị trường doanh nghiệp</li>
+                                    <li>Nguồn lực: 50-60% team (3-5 người fulltime, bao gồm AI development)</li>
                                 </ul>
                             </td>
                         </tr>
@@ -301,12 +301,12 @@
                             </td>
                             <td>
                                 <ul class="key-points">
-                                    <li><strong>Đã triển khai các dự án lớn:</strong> ASMS (tỷ doanh thu) - cơ sở năng lực thực tế</li>
-                                    <li><strong>Full projects:</strong> Dự án tỷ/trăm triệu với SCRUM team full-cycle A-Z</li>
-                                    <li><strong>Mini projects:</strong> Dự án < 100 triệu, thu nhập nhanh gọn</li>
-                                    <li>Dòng tiền ổn định để vận hành và nuôi team</li>
-                                    <li>Tích lũy case thực tế, học nghiệp vụ đa dạng, xây portfolio</li>
-                                    <li>Nguồn lực: 30-40% team (SCRUM team linh hoạt)</li>
+                                    <li><strong>Đã triển khai các dự án quy mô lớn:</strong> ASMS, ERP, CRM - chứng minh năng lực thực chiến</li>
+                                    <li><strong>Dự án full-cycle:</strong> Từ trăm triệu trở lên, SCRUM team handle từ A-Z</li>
+                                    <li><strong>Dự án nhỏ:</strong> Dưới 100 triệu, triển khai nhanh, thu tiền ngay</li>
+                                    <li>Đảm bảo dòng tiền ổn định, nuôi team trong lúc phát triển sản phẩm</li>
+                                    <li>Tích lũy kinh nghiệm thực tế, học nghiệp vụ đa ngành, xây dựng portfolio</li>
+                                    <li>Nguồn lực: 30-40% team (2-3 người, tùy quy mô dự án)</li>
                                 </ul>
                             </td>
                         </tr>
@@ -333,11 +333,11 @@
                             </td>
                             <td>
                                 <ul class="key-points">
-                                    <li>Hỗ trợ Q&A nội bộ, chatbot khách hàng, query/report tự nhiên</li>
-                                    <li>Tích hợp sâu vào HKSpace, tự động hóa workflow</li>
-                                    <li>Công nghệ: RAG, Vector DB, GPT-4/DeepSeek, Fine-tuning</li>
-                                    <li>Có thể bán độc lập hoặc tích hợp vào các sản phẩm</li>
-                                    <li>Nguồn lực: 20-30% team (chia sẻ với HKSpace)</li>
+                                    <li>Hỗ trợ Q&A nội bộ, chatbot tự động cho khách hàng, truy vấn dữ liệu bằng ngôn ngữ tự nhiên</li>
+                                    <li>Tích hợp trực tiếp vào HKSpace, nâng cao tính năng tự động hóa</li>
+                                    <li>Công nghệ: RAG, Vector Database, GPT-4/DeepSeek, Fine-tuning model</li>
+                                    <li>Có thể bán cho khách hàng dev services hoặc đóng gói thành module độc lập</li>
+                                    <li>Nguồn lực: Đã tính trong HKSpace (50-60%) - không tách riêng</li>
                                 </ul>
                             </td>
                         </tr>
@@ -364,11 +364,11 @@
                             </td>
                             <td>
                                 <ul class="key-points">
-                                    <li>Dịch vụ làm website cho SME/startup địa phương</li>
-                                    <li>Dòng tiền nhanh từ dự án nhỏ, dễ tiếp cận khách</li>
-                                    <li><strong>Có thể triển khai ngay</strong> nhưng nguồn lực có hạn</li>
-                                    <li>Cạnh tranh cao, margin thấp, cần thận trọng</li>
-                                    <li>Nguồn lực: 10-15% team (flexible, khi có thời gian)</li>
+                                    <li>Làm website cho doanh nghiệp nhỏ, startup trong khu vực</li>
+                                    <li>Dự án nhỏ 30-80 triệu, thu tiền nhanh, ít rủi ro</li>
+                                    <li><strong>Chỉ nhận từ khách quen hoặc giới thiệu</strong> - không chạy marketing</li>
+                                    <li>Thị trường cạnh tranh khốc liệt, lợi nhuận thấp, cân nhắc kỹ</li>
+                                    <li>Nguồn lực: 5-10% team (làm khi rảnh, không ưu tiên)</li>
                                 </ul>
                             </td>
                         </tr>
@@ -437,18 +437,136 @@
                 </table>
             </div>
             
+            <div class="summary-card" style="background: #f0f9ff; border: 2px solid #bfdbfe; margin-top: 30px;">
+                
+                <div class="summary-text" style="color: #1e3a8a;">
+                    <div class="d-flex mb-2">
+                        <span class="material-symbols-rounded me-3" style="color: #3b82f6;">strategy</span>
+                        <strong style="font-size: 1.4rem; display: block;">Mục tiêu cụ thể cuối 2026</strong>
+                    </div>
+                    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 25px; margin-top: 20px;">
+                        <div style="background: #ffffff; padding: 25px; border-radius: 12px; border: 2px solid #e5e7eb;">
+                            <div style="font-size: 1.2rem; font-weight: 700; color: #1f2937; margin-bottom: 18px; display: flex; align-items: center; gap: 10px;">
+                                <span class="material-symbols-rounded" style="font-size: 1.6rem; color: #10b981;">cloud</span>
+                                HKSpace SaaS
+                            </div>
+                            <ul style="list-style: none; padding: 0; margin: 0; font-size: 1.05rem; color: #4b5563; line-height: 1.6;">
+                                <li style="padding: 8px 0; padding-left: 22px; position: relative;">
+                                    <span style="position: absolute; left: 0; color: #3b82f6;">•</span>
+                                    <strong>Khách hàng:</strong> 50-100 khách trả phí (từ 3-5 nội bộ)
+                                </li>
+                                <li style="padding: 8px 0; padding-left: 22px; position: relative;">
+                                    <span style="position: absolute; left: 0; color: #3b82f6;">•</span>
+                                    <strong>Sản phẩm:</strong> Release v2 với UI/UX chuyên nghiệp + AI chatbot
+                                </li>
+                                <li style="padding: 8px 0; padding-left: 22px; position: relative;">
+                                    <span style="position: absolute; left: 0; color: #3b82f6;">•</span>
+                                    <strong>Mobile:</strong> Hoàn thiện app iOS/Android với đầy đủ tính năng v2
+                                </li>
+                                <li style="padding: 8px 0; padding-left: 22px; position: relative;">
+                                    <span style="position: absolute; left: 0; color: #3b82f6;">•</span>
+                                    <strong>Doanh thu:</strong> Tiến gần hòa vốn hoặc có lãi nhỏ
+                                </li>
+                            </ul>
+                        </div>
+                        
+                        <div style="background: #ffffff; padding: 25px; border-radius: 12px; border: 2px solid #e5e7eb;">
+                            <div style="font-size: 1.2rem; font-weight: 700; color: #1f2937; margin-bottom: 18px; display: flex; align-items: center; gap: 10px;">
+                                <span class="material-symbols-rounded" style="font-size: 1.6rem; color: #3b82f6;">code</span>
+                                Software Development
+                            </div>
+                            <ul style="list-style: none; padding: 0; margin: 0; font-size: 1.05rem; color: #4b5563; line-height: 1.6;">
+                                <li style="padding: 8px 0; padding-left: 22px; position: relative;">
+                                    <span style="position: absolute; left: 0; color: #3b82f6;">•</span>
+                                    <strong>Doanh thu:</strong> 3-5 tỷ từ dự án (nuôi team + hỗ trợ HKSpace)
+                                </li>
+                                <li style="padding: 8px 0; padding-left: 22px; position: relative;">
+                                    <span style="position: absolute; left: 0; color: #3b82f6;">•</span>
+                                    <strong>Dự án:</strong> 2-3 dự án lớn (>100tr) + 8-12 dự án nhỏ (< 100tr)
+                                </li>
+                                <li style="padding: 8px 0; padding-left: 22px; position: relative;">
+                                    <span style="position: absolute; left: 0; color: #3b82f6;">•</span>
+                                    <strong>Team:</strong> Tăng 7-9 người cho full SCRUM cycle
+                                </li>
+                                <li style="padding: 8px 0; padding-left: 22px; position: relative;">
+                                    <span style="position: absolute; left: 0; color: #3b82f6;">•</span>
+                                    <strong>Portfolio:</strong> Chuẩn hóa quy trình, xây case study
+                                </li>
+                            </ul>
+                        </div>
+                        
+                        <div style="background: #ffffff; padding: 25px; border-radius: 12px; border: 2px solid #e5e7eb;">
+                            <div style="font-size: 1.2rem; font-weight: 700; color: #1f2937; margin-bottom: 18px; display: flex; align-items: center; gap: 10px;">
+                                <span class="material-symbols-rounded" style="font-size: 1.6rem; color: #8b5cf6;">psychology</span>
+                                AI Platform
+                            </div>
+                            <ul style="list-style: none; padding: 0; margin: 0; font-size: 1.05rem; color: #4b5563; line-height: 1.6;">
+                                <li style="padding: 8px 0; padding-left: 22px; position: relative;">
+                                    <span style="position: absolute; left: 0; color: #3b82f6;">•</span>
+                                    <strong>Tích hợp:</strong> Đưa vào HKSpace v2 (Q2-Q3) - chatbot, automation
+                                </li>
+                                <li style="padding: 8px 0; padding-left: 22px; position: relative;">
+                                    <span style="position: absolute; left: 0; color: #3b82f6;">•</span>
+                                    <strong>Nội bộ:</strong> Deploy chatbot nội bộ Q1 cho training nhân sự
+                                </li>
+                                <li style="padding: 8px 0; padding-left: 22px; position: relative;">
+                                    <span style="position: absolute; left: 0; color: #3b82f6;">•</span>
+                                    <strong>Tech:</strong> Hoàn thiện RAG pipeline, vector DB, fine-tuning
+                                </li>
+                            </ul>
+                        </div>
+                        
+                        <div style="background: #ffffff; padding: 25px; border-radius: 12px; border: 2px solid #e5e7eb;">
+                            <div style="font-size: 1.2rem; font-weight: 700; color: #1f2937; margin-bottom: 18px; display: flex; align-items: center; gap: 10px;">
+                                <span class="material-symbols-rounded" style="font-size: 1.6rem; color: #fb923c;">language</span>
+                                Website Development
+                            </div>
+                            <ul style="list-style: none; padding: 0; margin: 0; font-size: 1.05rem; color: #4b5563; line-height: 1.6;">
+                                <li style="padding: 8px 0; padding-left: 22px; position: relative;">
+                                    <span style="position: absolute; left: 0; color: #fb923c;">•</span>
+                                    <strong>Thăm dò:</strong> 4-6 website/năm, chỉ khách quen/referral
+                                </li>
+                                <li style="padding: 8px 0; padding-left: 22px; position: relative;">
+                                    <span style="position: absolute; left: 0; color: #fb923c;">•</span>
+                                    <strong>Giá:</strong> Chỉ nhận gói >30-50 triệu, không đua giá
+                                </li>
+                                <li style="padding: 8px 0; padding-left: 22px; position: relative;">
+                                    <span style="position: absolute; left: 0; color: #fb923c;">•</span>
+                                    <strong>Template:</strong> Chuẩn hóa 1-2 bộ để triển khai nhanh
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
             <div class="note-section">
-                <div class="note-title">
-                    <span class="material-symbols-rounded">info</span>
+                <div style="font-size: 1.2rem; font-weight: 700; color: #1f2937; margin-bottom: 18px; display: flex; align-items: center; gap: 10px;">
+                    <span class="material-symbols-rounded" style="font-size: 1.6rem; color: #fb923c;">info</span>
                     Lưu ý quan trọng
                 </div>
-                <div class="note-content">
-                    <strong>• Ưu tiên:</strong> HKSpace (50-60%) > Dev Services (30-40%) > AI Platform (20-30%) > Website (10-15% nếu có capacity)<br>
-                    <strong>• Linh hoạt:</strong> Phân bổ nguồn lực có thể điều chỉnh theo tình hình thực tế và chỉ đạo từ BĐH<br>
-                    <strong>• Đánh giá:</strong> Quarterly review để điều chỉnh kịp thời, báo cáo minh bạch progress<br>
-                    <strong>• Phối hợp:</strong> Cần sự hỗ trợ từ các phòng ban (Sales, Marketing, Support) để thành công<br>
-                    <strong>• Risk:</strong> Tất cả là đề xuất sơ bộ, chờ góp ý và phê duyệt từ BĐH
-                </div>
+                <ul style="list-style: none; padding: 0; margin: 0; font-size: 1.05rem; color: #4b5563; line-height: 1.6;">
+                    <li style="padding: 8px 0; padding-left: 22px; position: relative;">
+                        <span style="position: absolute; left: 0; color: #fb923c;">•</span>
+                        <strong>Ưu tiên:</strong> HKSpace (50-60%, bao gồm AI) > Dev Services (30-40%) > Website (5-10% nếu rảnh) = Tổng 85-110%
+                    </li>
+                    <li style="padding: 8px 0; padding-left: 22px; position: relative;">
+                        <span style="position: absolute; left: 0; color: #fb923c;">•</span>
+                        <strong>Linh hoạt:</strong> Phân bổ nguồn lực có thể điều chỉnh theo tình hình thực tế và chỉ đạo từ BĐH
+                    </li>
+                    <li style="padding: 8px 0; padding-left: 22px; position: relative;">
+                        <span style="position: absolute; left: 0; color: #fb923c;">•</span>
+                        <strong>Đánh giá:</strong> Quarterly review để điều chỉnh kịp thời, báo cáo minh bạch progress
+                    </li>
+                    <li style="padding: 8px 0; padding-left: 22px; position: relative;">
+                        <span style="position: absolute; left: 0; color: #fb923c;">•</span>
+                        <strong>Phối hợp:</strong> Cần sự hỗ trợ từ các phòng ban (Sales, Marketing, Support) để thành công
+                    </li>
+                    <li style="padding: 8px 0; padding-left: 22px; position: relative;">
+                        <span style="position: absolute; left: 0; color: #fb923c;">•</span>
+                        <strong>Risk:</strong> Tất cả là đề xuất sơ bộ, chờ góp ý và phê duyệt từ BĐH
+                    </li>
+                </ul>
             </div>
         </div>
     </div>

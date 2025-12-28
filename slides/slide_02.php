@@ -170,7 +170,7 @@
                         <p><strong>Đủ năng lực</strong> xây dựng sản phẩm hoàn chỉnh</p>
                         <p>Không chỉ <strong>gia công</strong> theo yêu cầu</p>
                         <p>Có thể <strong>sáng tạo & tự chủ</strong></p>
-                        <p>Sẵn sàng <strong>tư duy Product Owner</strong></p>
+                        <p>Có <strong>tư duy chủ sản phẩm</strong>: tự định hướng, ưu tiên feature, quyết lộ trình</p>
                     </div>
                 </div>
             </div>

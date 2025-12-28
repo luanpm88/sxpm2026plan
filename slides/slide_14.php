@@ -100,7 +100,7 @@
             <h1>Cảm ơn!</h1>
             
             <div class="subtitle">
-                Cảm ơn đã dành thời gian lắng nghe<br>
+                Cảm ơn mọi người đã dành thời gian lắng nghe<br>
                 Rất mong nhận được sự ủng hộ và phản hồi
             </div>
             

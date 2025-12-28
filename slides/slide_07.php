@@ -240,8 +240,8 @@
             </div>
             
             <div class="info-card target-card full-width" style="background: #f0f9ff; border: 2px solid #bfdbfe;">
-                <div class="card-header" style="background: #dbeafe; color: #1e40af;">
-                    <span class="material-symbols-rounded">flag</span>
+                <div class="card-header" style="color: #1e40af;">
+                    <span class="material-symbols-rounded">strategy</span>
                     Mục tiêu thăm dò 2026-2027 (nguồn lực giới hạn)
                 </div>
                 <div class="objective-list" style="display: grid; grid-template-columns: 1fr 1fr; gap: 15px; margin-top: 15px;">

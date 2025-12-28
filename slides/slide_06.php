@@ -235,21 +235,21 @@
             </div>
             
             <div class="info-card target-card full-width" style="background: #f0f9ff; border: 2px solid #bfdbfe;">
-                <div class="card-header" style="background: #dbeafe; color: #1e40af;">
-                    <span class="material-symbols-rounded">flag</span>
+                <div class="card-header" style="color: #1e40af;">
+                    <span class="material-symbols-rounded">strategy</span>
                     Mục tiêu cụ thể 2026-2027
                 </div>
                 <div class="objective-list" style="display: grid; grid-template-columns: 1fr 1fr; gap: 15px; margin-top: 15px;">
                     <div class="objective-item" style="display: flex; gap: 15px; align-items: flex-start; padding: 15px; background: #ffffff; border-radius: 12px;">
                         <div class="objective-number" style="background: #3b82f6; color: white; width: 45px; height: 45px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 1.3rem; flex-shrink: 0;">01</div>
                         <div class="objective-text" style="font-size: 1.05rem; line-height: 1.6; color: #1f2937;">
-                            <strong>Khách hàng:</strong> 50-100 users trả phí (2026) → 200+ users (2027) với retention rate cao
+                            <strong>Khách hàng:</strong> 50-100 khách trả phí (2026) → 200+ (2027), retention >70%, ARPU 500k-1tr/tháng
                         </div>
                     </div>
                     <div class="objective-item" style="display: flex; gap: 15px; align-items: flex-start; padding: 15px; background: #ffffff; border-radius: 12px;">
                         <div class="objective-number" style="background: #3b82f6; color: white; width: 45px; height: 45px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 1.3rem; flex-shrink: 0;">02</div>
                         <div class="objective-text" style="font-size: 1.05rem; line-height: 1.6; color: #1f2937;">
-                            <strong>Doanh thu:</strong> Break-even hoặc positive cash flow từ subscription (2027)
+                            <strong>Doanh thu:</strong> Hòa vốn hoặc có lãi từ gói thuê bao (cuối 2026 hoặc 2027)
                         </div>
                     </div>
                     <div class="objective-item" style="display: flex; gap: 15px; align-items: flex-start; padding: 15px; background: #ffffff; border-radius: 12px;">

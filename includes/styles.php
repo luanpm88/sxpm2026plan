@@ -235,7 +235,6 @@
         
         .card-header .material-symbols-rounded {
             font-size: 2.2rem;
-            color: #1f2937;
         }
         
         /* Positive/Success styles - blue accent */

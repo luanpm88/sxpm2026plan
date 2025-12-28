@@ -199,13 +199,13 @@
                             Hoàn thành
                         </div>
                     </div>
-                    <div class="version-period">2025 – Đã triển khai</div>
+                    <div class="version-period">2025 – Đã triển khai thực tế</div>
                     <ul class="feature-list">
-                        <li>Bộ phận <span class="highlight-text">đã sử dụng thực tế</span></li>
-                        <li>Thay thế phần mềm thuê <span class="highlight-text">xTeam</span></li>
-                        <li><span class="highlight-text">Mobile app đã lên store</span> với basic functions</li>
-                        <li>Hệ thống quản lý task & phân quyền hoàn thiện</li>
-                        <li>Validate ý tưởng và kiến trúc nền tảng</li>
+                        <li>Bộ phận <span class="highlight-text">đang dùng thực tế</span> hàng ngày</li>
+                        <li>Đã thay thế <span class="highlight-text">xTeam</span> (thuê ngoài trước đây)</li>
+                        <li><span class="highlight-text">App mobile đã lên cả iOS & Android</span> với chức năng cơ bản</li>
+                        <li>Quản lý task, phân quyền user đầy đủ</li>
+                        <li>Kiểm chứng ý tưởng và kiến trúc kỹ thuật</li>
                     </ul>
                 </div>
                 
@@ -217,13 +217,13 @@
                             Ưu tiên 2026
                         </div>
                     </div>
-                    <div class="version-period">Q1–Q4 2026</div>
+                    <div class="version-period">2026 (cả năm)</div>
                     <ul class="feature-list">
-                        <li>Hoàn thiện <span class="highlight-text">UI/UX</span> chuyên nghiệp (Web + Mobile)</li>
-                        <li><span class="highlight-text">Đẩy mạnh mobile app</span> song song với web</li>
-                        <li>Tính năng core phục vụ <span class="highlight-text">khách hàng trả phí</span></li>
-                        <li>Triển khai <span class="highlight-text">subscription model</span></li>
-                        <li>Onboarding 50-100 users, thu thập feedback</li>
+                        <li>Làm lại <span class="highlight-text">giao diện chuyên nghiệp</span> cả web và mobile</li>
+                        <li><span class="highlight-text">Đẩy mạnh phát triển app mobile</span> song song với web</li>
+                        <li>Chức năng nối bật cho <span class="highlight-text">khách hàng trả tiền</span></li>
+                        <li>Thử nghiệm <span class="highlight-text">gói thuê bao</span> hàng tháng/năm</li>
+                        <li>Mời 50-100 khách đầu tiên, học từ phản hồi thực tế</li>
                     </ul>
                 </div>
                 
@@ -235,13 +235,13 @@
                             Kế hoạch
                         </div>
                     </div>
-                    <div class="version-period">2027+</div>
+                    <div class="version-period">2027 trở đi</div>
                     <ul class="feature-list">
-                        <li>Tích hợp <span class="highlight-text">AI Knowledge Base</span> sâu</li>
-                        <li>Automation nâng cao & API mở</li>
-                        <li>Tối ưu hiệu năng & scalability cho enterprise</li>
-                        <li>Mở rộng marketing & user base (200+ users)</li>
-                        <li><span class="highlight-text">Scale doanh thu</span> bền vững</li>
+                        <li>Tích hợp <span class="highlight-text">AI chatbot & tự động hóa</span> sâu hơn</li>
+                        <li>Mở API cho bên ngoài kết nối, tự động hóa nhiều hơn</li>
+                        <li>Nâng cấp hạ tầng cho <span class="highlight-text">doanh nghiệp lớn</span> (>500 users)</li>
+                        <li>Mở rộng marketing, tăng số khách (mục tiêu 200+ users)</li>
+                        <li><span class="highlight-text">Tăng trưởng doanh thu</span> bền vững</li>
                     </ul>
                 </div>
             </div>

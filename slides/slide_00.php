@@ -24,7 +24,7 @@
                     </div>
                 </div>
                 <div style="font-size: 1.4rem; color: #6b7280; margin-top: 3rem;">
-                    <div>Người soạn & thuyết minh: <span style="font-weight: 800;">Luân Phạm</span></div>
+                    <div>Người soạn & thuyết minh: <span style="font-weight: 800;">Luan Pham</span></div>
                     <div style="margin: 0.5rem 0;"><span style="">Thời gian:</span> <span style="">Tháng 12, 2025</span></div>
                 </div>
             </div>

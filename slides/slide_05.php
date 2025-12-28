@@ -56,8 +56,8 @@
                     Cơ sở năng lực & Thành tích
                 </div>
                 <div class="card-content">
-                    Bộ phận đã triển khai <strong>các dự án lớn như ASMS</strong> (tỷ doanh thu), chứng minh năng lực <strong>full-cycle development từ A-Z</strong>.
-                    Với quy mô <strong>7-9 nhân sự</strong> và SCRUM team linh hoạt, có thể handle cả <strong>dự án full</strong> lẫn <strong>mini projects</strong> (<100 triệu) thu nhập nhanh gọn.
+                    Bộ phận đã triển khai <strong>các dự án quy mô lớn như ASMS, ERP, CRM</strong>, chứng minh năng lực <strong>full-cycle development từ A-Z</strong>.
+                    Với quy mô <strong>7-9 người</strong> và SCRUM team linh hoạt, có thể handle cả <strong>dự án lớn</strong> (từ 100 triệu) lẫn <strong>dự án nhỏ</strong> (dưới 100 triệu), thu tiền nhanh.
                 </div>
             </div>
             
@@ -68,10 +68,10 @@
                         Năng lực thực tế
                     </div>
                     <ul class="card-list positive">
-                        <li><strong>Dự án full-cycle</strong> như ASMS (tỷ doanh thu)</li>
-                        <li><strong>Tư vấn khách hàng từ A-Z</strong> (phân tích, thiết kế, triển khai)</li>
-                        <li><strong>SCRUM team</strong> linh hoạt cho dự án lớn nhỏ</li>
-                        <li>Năng lực <strong>kỹ thuật đa dạng</strong> (web, mobile, backend)</li>
+                        <li>Triển khai thành công <strong>ASMS, ERP, CRM</strong> - dự án quy mô lớn</li>
+                        <li><strong>Tư vấn từ đầu đến cuối:</strong> Phân tích, thiết kế, lập trình, triển khai</li>
+                        <li><strong>SCRUM team</strong> linh hoạt, xử lý được cả dự án lớn nhỏ</li>
+                        <li>Kỹ thuật <strong>đa dạng</strong>: Web, Mobile, Backend, Database</li>
                     </ul>
                 </div>
                 
@@ -96,10 +96,10 @@
                         Định hướng 2026-2027
                     </div>
                     <ul class="card-list neutral">
-                        <li><strong>Full projects:</strong> Dự án tỷ/trăm triệu với SCRUM team</li>
-                        <li><strong>Mini projects:</strong> Dự án < 100 triệu, thu nhập nhanh</li>
-                        <li><strong>Nâng cấp & bảo trì:</strong> Hệ thống khách cũ</li>
-                        <li><strong>Tư vấn kỹ thuật:</strong> Phân tích, thiết kế, review</li>
+                        <li><strong>Dự án lớn:</strong> Từ 100 triệu trở lên, cần SCRUM team full-time</li>
+                        <li><strong>Dự án nhỏ:</strong> Dưới 100 triệu, triển khai nhanh, thu tiền ngay</li>
+                        <li><strong>Nâng cấp & bảo trì:</strong> Giữ chân khách cũ, doanh thu ổn định</li>
+                        <li><strong>Tư vấn kỹ thuật:</strong> Phân tích yêu cầu, thiết kế kiến trúc, review code</li>
                     </ul>
                 </div>
                 
@@ -118,21 +118,21 @@
             </div>
             
             <div class="info-card target-card full-width" style="background: #f0f9ff; border: 2px solid #bfdbfe;">
-                <div class="card-header" style="background: #dbeafe; color: #1e40af;">
-                    <span class="material-symbols-rounded">flag</span>
+                <div class="card-header" style="color: #1e40af;">
+                    <span class="material-symbols-rounded">strategy</span>
                     Mục tiêu cụ thể 2026-2027
                 </div>
                 <div class="objective-list" style="display: grid; grid-template-columns: 1fr 1fr; gap: 15px; margin-top: 15px;">
                     <div class="objective-item" style="display: flex; gap: 15px; align-items: flex-start; padding: 15px; background: #ffffff; border-radius: 12px;">
                         <div class="objective-number" style="background: #3b82f6; color: white; width: 45px; height: 45px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 1.3rem; flex-shrink: 0;">01</div>
                         <div class="objective-text" style="font-size: 1.05rem; line-height: 1.6; color: #1f2937;">
-                            <strong>Doanh thu:</strong> 3-5 tỷ/năm từ dev services để nuôi team và hỗ trợ HKSpace
+                            <strong>Doanh thu:</strong> 3-5 tỷ/năm - đủ nuôi team 7-9 người và hỗ trợ phát triển HKSpace
                         </div>
                     </div>
                     <div class="objective-item" style="display: flex; gap: 15px; align-items: flex-start; padding: 15px; background: #ffffff; border-radius: 12px;">
                         <div class="objective-number" style="background: #3b82f6; color: white; width: 45px; height: 45px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 1.3rem; flex-shrink: 0;">02</div>
                         <div class="objective-text" style="font-size: 1.05rem; line-height: 1.6; color: #1f2937;">
-                            <strong>Dự án:</strong> 2-3 full projects (trăm triệu+) + 8-12 mini projects (<100 triệu)
+                            <strong>Dự án:</strong> 2-3 dự án lớn (từ 100 triệu trở lên) + 8-12 dự án nhỏ (dưới 100 triệu)
                         </div>
                     </div>
                     <div class="objective-item" style="display: flex; gap: 15px; align-items: flex-start; padding: 15px; background: #ffffff; border-radius: 12px;">

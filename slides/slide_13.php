@@ -117,6 +117,13 @@ require_once '../config.php';
             font-size: 0.9rem;
             font-weight: 600;
             margin-right: 8px;
+            margin-bottom: 10px;
+        }
+        
+        .status-timeline-cell {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
         }
         
         .status-active {
@@ -135,7 +142,6 @@ require_once '../config.php';
         }
         
         .timeline {
-            font-weight: 600;
             color: #1f2937;
         }
         
@@ -242,11 +248,10 @@ require_once '../config.php';
                 <table>
                     <thead>
                         <tr>
-                            <th style="width: 20%;">Sản phẩm</th>
+                            <th style="width: 25%;">Sản phẩm</th>
                             <th style="width: 15%;">Phân loại</th>
-                            <th style="width: 12%;">Trạng thái</th>
-                            <th style="width: 15%;">Timeline</th>
-                            <th style="width: 38%;">Mục tiêu & Đặc điểm</th>
+                            <th style="width: 20%;">Trạng thái & Timeline</th>
+                            <th style="width: 40%;">Mục tiêu & Đặc điểm</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -264,12 +269,16 @@ require_once '../config.php';
                                 <span style="font-size: 0.95rem; color: #6b7280;">Platform quản lý dự án</span>
                             </td>
                             <td>
-                                <span class="status-badge status-active">Đang triển khai</span>
-                            </td>
-                            <td>
-                                <div class="timeline">v1: 2025 (Web + Mobile đã lên store)</div>
-                                <div class="timeline">v2: 2026 (Đẩy mạnh cả mobile)</div>
-                                <div class="timeline">v3: 2027+ (Scale & AI)</div>
+                                <div class="status-timeline-cell">
+                                    <div style="">
+                                        <span class="status-badge status-active">Đang triển khai</span>
+                                    </div>
+                                    <div style="border-top: 1px solid #e5e7eb; padding-top: 12px;">
+                                        <div class="timeline" style="margin-bottom: 6px;"><strong>v1:</strong> 2025 (Web + Mobile đã lên store)</div>
+                                        <div class="timeline" style="margin-bottom: 6px;"><strong>v2:</strong> 2026 (Đẩy mạnh cả mobile)</div>
+                                        <div class="timeline"><strong>v3:</strong> 2027+ (Scale & AI)</div>
+                                    </div>
+                                </div>
                             </td>
                             <td>
                                 <ul class="key-points">
@@ -297,11 +306,15 @@ require_once '../config.php';
                                 <span style="font-size: 0.95rem; color: #6b7280;">Full-cycle & Mini projects</span>
                             </td>
                             <td>
-                                <span class="status-badge status-active">Đang hoạt động</span>
-                            </td>
-                            <td>
-                                <div class="timeline">Liên tục 2026-2027</div>
-                                <div style="font-size: 0.95rem; color: #6b7280; margin-top: 5px;">Theo từng project</div>
+                                <div class="status-timeline-cell">
+                                    <div style="">
+                                        <span class="status-badge status-active">Đang hoạt động</span>
+                                    </div>
+                                    <div style="border-top: 1px solid #e5e7eb; padding-top: 12px;">
+                                        <div class="timeline" style="margin-bottom: 6px;">Liên tục 2026-2027</div>
+                                        <div class="timeline" style="font-size: 0.95rem; color: #6b7280;">Theo từng project</div>
+                                    </div>
+                                </div>
                             </td>
                             <td>
                                 <ul class="key-points">
@@ -329,11 +342,15 @@ require_once '../config.php';
                                 <span style="font-size: 0.95rem; color: #6b7280;">Nền tảng tri thức AI</span>
                             </td>
                             <td>
-                                <span class="status-badge status-planning">Đang phát triển</span>
-                            </td>
-                            <td>
-                                <div class="timeline">2026-2027</div>
-                                <div style="font-size: 0.95rem; color: #6b7280; margin-top: 5px;">Phase triển khai dần</div>
+                                <div class="status-timeline-cell">
+                                    <div style="">
+                                        <span class="status-badge status-planning">Đang phát triển</span>
+                                    </div>
+                                    <div style="border-top: 1px solid #e5e7eb; padding-top: 12px;">
+                                        <div class="timeline" style="margin-bottom: 6px;">2026-2027</div>
+                                        <div class="timeline" style="font-size: 0.95rem; color: #6b7280;">Phase triển khai dần</div>
+                                    </div>
+                                </div>
                             </td>
                             <td>
                                 <ul class="key-points">
@@ -360,11 +377,15 @@ require_once '../config.php';
                                 <span style="font-size: 0.95rem; color: #6b7280;">Phát triển website</span>
                             </td>
                             <td>
-                                <span class="status-badge status-planning">Sẵn sàng</span>
-                            </td>
-                            <td>
-                                <div class="timeline">Có thể ngay</div>
-                                <div style="font-size: 0.95rem; color: #6b7280; margin-top: 5px;">Nguồn lực có hạn</div>
+                                <div class="status-timeline-cell">
+                                    <div style="">
+                                        <span class="status-badge status-planning">Sẵn sàng</span>
+                                    </div>
+                                    <div style="border-top: 1px solid #e5e7eb; padding-top: 12px;">
+                                        <div class="timeline" style="margin-bottom: 6px;">Có thể triển khai</div>
+                                        <div class="timeline" style="font-size: 0.95rem; color: #6b7280;">Tùy theo nhu cầu</div>
+                                    </div>
+                                </div>
                             </td>
                             <td>
                                 <ul class="key-points">
@@ -391,11 +412,15 @@ require_once '../config.php';
                                 <span style="font-size: 0.95rem; color: #6b7280;">Gói domain + hosting</span>
                             </td>
                             <td>
-                                <span class="status-badge status-active">Đang hoạt động</span>
-                            </td>
-                            <td>
-                                <div class="timeline">Hiện tại</div>
-                                <div style="font-size: 0.95rem; color: #6b7280; margin-top: 5px;">Đại lý reseller</div>
+                                <div class="status-timeline-cell">
+                                    <div style="">
+                                        <span class="status-badge status-active">Đang hoạt động</span>
+                                    </div>
+                                    <div style="border-top: 1px solid #e5e7eb; padding-top: 12px;">
+                                        <div class="timeline" style="margin-bottom: 6px;">Hiện tại</div>
+                                        <div class="timeline" style="font-size: 0.95rem; color: #6b7280;">Đại lý reseller</div>
+                                    </div>
+                                </div>
                             </td>
                             <td>
                                 <ul class="key-points">
@@ -422,11 +447,15 @@ require_once '../config.php';
                                 <span style="font-size: 0.95rem; color: #6b7280;">Công cụ hỗ trợ nội bộ</span>
                             </td>
                             <td>
-                                <span class="status-badge status-active">Liên tục</span>
-                            </td>
-                            <td>
-                                <div class="timeline">Ongoing</div>
-                                <div style="font-size: 0.95rem; color: #6b7280; margin-top: 5px;">Theo nhu cầu</div>
+                                <div class="status-timeline-cell">
+                                    <div style="">
+                                        <span class="status-badge status-active">Liên tục</span>
+                                    </div>
+                                    <div style="border-top: 1px solid #e5e7eb; padding-top: 12px;">
+                                        <div class="timeline" style="margin-bottom: 6px;">Ongoing</div>
+                                        <div class="timeline" style="font-size: 0.95rem; color: #6b7280;">Theo nhu cầu</div>
+                                    </div>
+                                </div>
                             </td>
                             <td>
                                 <ul class="key-points">
@@ -443,7 +472,7 @@ require_once '../config.php';
             
             <div class="summary-card" style="background: #f0f9ff; border: 2px solid #bfdbfe; margin-top: 30px;">
                 
-                <div class="summary-text" style="color: #1e3a8a;">
+                <div class="summary-text w-100" style="color: #1e3a8a;">
                     <div class="d-flex mb-2">
                         <span class="material-symbols-rounded me-3" style="color: #3b82f6;">strategy</span>
                         <strong style="font-size: 1.4rem; display: block;">Mục tiêu cụ thể cuối 2026</strong>

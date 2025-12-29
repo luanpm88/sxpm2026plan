@@ -112,6 +112,40 @@
             cursor: not-allowed;
         }
         
+        /* Tooltip for navigation buttons */
+        .nav-tooltip {
+            position: absolute;
+            bottom: 100%;
+            left: 50%;
+            transform: translateX(-50%);
+            background: #1f2937;
+            color: #ffffff;
+            padding: 6px 12px;
+            border-radius: 6px;
+            white-space: nowrap;
+            font-size: 12px;
+            font-weight: 600;
+            opacity: 0;
+            pointer-events: none;
+            transition: opacity 0.3s ease;
+            margin-bottom: 8px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+        }
+        
+        .nav-btn:hover .nav-tooltip {
+            opacity: 1;
+        }
+        
+        .nav-tooltip::after {
+            content: '';
+            position: absolute;
+            top: 100%;
+            left: 50%;
+            transform: translateX(-50%);
+            border: 5px solid transparent;
+            border-top-color: #1f2937;
+        }
+        
         .slide-number {
             position: fixed;
             bottom: 30px;

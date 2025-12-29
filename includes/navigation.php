@@ -39,4 +39,15 @@ $next = getNextSlide($current);
     <button class="nav-btn" onclick="nextSlide()" <?php echo $next ? '' : 'disabled'; ?>>
         <span class="material-symbols-rounded">arrow_forward</span>
     </button>
+    <button class="nav-btn" onclick="exportPDF()" title="Export to PDF">
+        <span class="material-symbols-rounded">picture_as_pdf</span>
+        <span class="nav-tooltip">Export PDF</span>
+    </button>
 </div>
+
+<script>
+function exportPDF() {
+    // Use browser's print function to save as PDF
+    window.print();
+}
+</script>

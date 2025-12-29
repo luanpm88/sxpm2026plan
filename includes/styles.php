@@ -134,6 +134,67 @@
             box-shadow: 0 4px 12px rgba(107,114,128,0.2);
         }
         
+        /* Logout button as circular icon */
+        .logout-btn {
+            position: fixed;
+            bottom: 34px;
+            left: 130px;
+            background: #ffffff;
+            border: 2px solid #dc3545;
+            color: #dc3545;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            text-decoration: none;
+        }
+        
+        .logout-btn:hover {
+            background: #dc3545;
+            color: #ffffff;
+            transform: scale(1.1);
+            box-shadow: 0 4px 12px rgba(220, 53, 69, 0.3);
+        }
+        
+        /* Logout tooltip */
+        .logout-tooltip {
+            position: absolute;
+            bottom: 100%;
+            left: 50%;
+            transform: translateX(-50%);
+            background: #dc3545;
+            color: #ffffff;
+            padding: 6px 12px;
+            border-radius: 6px;
+            white-space: nowrap;
+            font-size: 12px;
+            font-weight: 600;
+            opacity: 0;
+            pointer-events: none;
+            transition: opacity 0.3s ease;
+            margin-bottom: 8px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+        }
+        
+        .logout-btn:hover .logout-tooltip {
+            opacity: 1;
+        }
+        
+        .logout-tooltip::after {
+            content: '';
+            position: absolute;
+            top: 100%;
+            left: 50%;
+            transform: translateX(-50%);
+            border: 5px solid transparent;
+            border-top-color: #dc3545;
+        }
+        
         .nav-modal {
             display: none;
             position: fixed;

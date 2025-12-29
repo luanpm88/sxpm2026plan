@@ -1,4 +1,8 @@
-<?php require_once '../config.php'; ?>
+<?php 
+require_once '../includes/auth.php';
+requireAuth(); // Check authentication
+require_once '../config.php'; 
+?>
 <?php include '../includes/head.php'; ?>
     <style>
         .slide-subtitle {

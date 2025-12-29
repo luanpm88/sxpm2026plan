@@ -1,4 +1,8 @@
-<?php require_once '../config.php'; ?>
+<?php 
+require_once '../includes/auth.php';
+requireAuth(); // Check authentication
+require_once '../config.php'; 
+?>
 <?php include '../includes/head.php'; ?>
     <!-- Load ECharts -->
     <script src="https://cdn.jsdelivr.net/npm/echarts@5.4.3/dist/echarts.min.js"></script>

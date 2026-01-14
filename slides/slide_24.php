@@ -231,6 +231,11 @@ require_once '../config.php';
     .tree-example .preview img {
         max-width: 100%;
         border-radius: 8px;
+        cursor: pointer;
+        transition: opacity 0.2s ease;
+    }
+    .tree-example .preview img:hover {
+        opacity: 0.85;
     }
 
     .tree-example .caption {
@@ -241,6 +246,25 @@ require_once '../config.php';
 
     .tree-example .caption .material-symbols-rounded {
         color: #475569;
+    }
+
+    /* Bootstrap 5 Modal Customization */
+    #treeImageModal .modal-header {
+        background: #f8fafc;
+        border-bottom: 2px solid #e5e7eb;
+    }
+    #treeImageModal .btn-close {
+        padding: 0.5rem;
+    }
+    #treeImageModal .modal-body {
+        background: #ffffff;
+        padding: 2rem;
+        overflow: auto;
+    }
+    #treeImageModal .modal-body img {
+        width: 100%;
+        height: auto;
+        border-radius: 8px;
     }
 </style>
 </head>
@@ -371,6 +395,21 @@ require_once '../config.php';
         </div>
     </div>
 
+    <!-- Bootstrap 5 Modal for Tree Image -->
+    <div class="modal fade" id="treeImageModal" tabindex="-1" role="dialog" aria-labelledby="treeImageLabel" aria-hidden="true">
+        <div class="modal-dialog modal-fullscreen" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="treeImageLabel">Cấu trúc dự án Automation</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="../tree.jpg" alt="Automation project structure" />
+                </div>
+            </div>
+        </div>
+    </div>
+
     <div class="navigation">
         <button class="nav-btn" onclick="previousSlide()">
             <span class="material-symbols-rounded">arrow_back</span>
@@ -382,6 +421,20 @@ require_once '../config.php';
 
     <?php include '../includes/navigation.php'; ?>
     <?php include '../includes/scripts.php'; ?>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Trigger modal on tree image click (Bootstrap 5)
+        document.addEventListener('DOMContentLoaded', function() {
+            const treeImage = document.querySelector('.tree-example .preview img');
+            if (treeImage) {
+                treeImage.addEventListener('click', function() {
+                    const modal = new bootstrap.Modal(document.getElementById('treeImageModal'));
+                    modal.show();
+                });
+            }
+        });
+    </script>
 </body>
 
 </html>

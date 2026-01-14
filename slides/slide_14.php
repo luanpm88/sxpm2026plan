@@ -127,7 +127,7 @@ require_once '../config.php';
         <button class="nav-btn" onclick="previousSlide()">
             <span class="material-symbols-rounded">arrow_back</span>
         </button>
-        <button class="nav-btn" onclick="nextSlide()" disabled>
+        <button class="nav-btn" onclick="nextSlide()">
             <span class="material-symbols-rounded">arrow_forward</span>
         </button>
     </div>

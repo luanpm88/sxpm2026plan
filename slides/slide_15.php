@@ -78,10 +78,10 @@ require_once '../config.php';
                         <div class="box-title"><span class="material-symbols-rounded">web</span>Web App</div>
                         <div class="box-desc">React SPA + PWA</div>
                     </div>
-                    <div class="box primary">
+                    <!-- <div class="box primary">
                         <div class="box-title"><span class="material-symbols-rounded">mic</span>Voice Interface</div>
                         <div class="box-desc">Speech-to-text → AI command</div>
-                    </div>
+                    </div> -->
                     <div class="box primary">
                         <div class="box-title"><span class="material-symbols-rounded">terminal</span>Admin Console</div>
                         <div class="box-desc">Tenant management, analytics</div>
@@ -176,7 +176,7 @@ require_once '../config.php';
                     </div>
                     <div class="box infra">
                         <div class="box-title"><span class="material-symbols-rounded">deployed_code</span>CI/CD</div>
-                        <div class="box-desc">GitHub Actions, Docker, K8s</div>
+                        <div class="box-desc">GitHub Actions</div>
                     </div>
                 </div>
             </div>

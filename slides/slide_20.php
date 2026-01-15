@@ -1,4 +1,4 @@
-<?php 
+<?php
 require_once '../includes/auth.php';
 requireAuth();
 require_once '../config.php';
@@ -36,24 +36,20 @@ require_once '../config.php';
 
         <div class="content-grid">
             <div class="card">
-                <h3><span class="material-symbols-rounded">account_circle</span>Identity & Auth</h3>
+                <h3><span class="material-symbols-rounded">account_circle</span>Identity & Authentication</h3>
                 <ul>
-                    <li><strong>Authentication:</strong> Email/password, OAuth2 (Google/Microsoft/GitHub), SSO (SAML/OIDC).</li>
-                    <li><strong>Multi-tenant:</strong> Tenant context từ subdomain/header, org hierarchy (workspace → team → user).</li>
-                    <li><strong>RBAC:</strong> Role-based với permission matrix (Owner/Admin/Member/Guest).</li>
-                    <li><strong>ABAC:</strong> Attribute-based policy (plan tier, feature flag, resource quota).</li>
-                    <li><strong>Session:</strong> JWT + refresh token, Redis session store, logout broadcast.</li>
+                    <li><strong>JWT & OAuth2:</strong> Secure authentication cho multi-tenant users.</li>
+                    <li><strong>SSO Integration:</strong> SAML support cho enterprise customers.</li>
+                    <li><strong>RBAC:</strong> Role-based permissions cho teams và projects.</li>
                 </ul>
             </div>
 
             <div class="card">
-                <h3><span class="material-symbols-rounded">payments</span>Billing & Metering</h3>
+                <h3><span class="material-symbols-rounded">payments</span>Billing & Subscription</h3>
                 <ul>
-                    <li><strong>Plan management:</strong> Free/Pro/Enterprise tier, quota (tasks, automations, AI calls).</li>
-                    <li><strong>Metering:</strong> Usage tracking (API calls, storage, automation runs), daily/monthly aggregation.</li>
-                    <li><strong>Payment gateway:</strong> Stripe/Paddle integration, webhook handle payment events.</li>
-                    <li><strong>Invoicing:</strong> Auto-generate invoice, email notification, payment reminder.</li>
-                    <li><strong>Quota enforcement:</strong> Hard/soft limit, grace period, upgrade prompt.</li>
+                    <li><strong>Usage Metering:</strong> Track API calls, storage, automation runs.</li>
+                    <li><strong>Subscription Tiers:</strong> Freemium, Pro, Enterprise plans.</li>
+                    <li><strong>Payment Integration:</strong> Stripe webhooks, auto-invoicing.</li>
                 </ul>
             </div>
         </div>
@@ -62,63 +58,56 @@ require_once '../config.php';
             <div class="card">
                 <h3><span class="material-symbols-rounded">notifications</span>Notification & Messaging</h3>
                 <ul>
-                    <li><strong>Channels:</strong> In-app, email (SendGrid/SES), push (Firebase/APNs), Slack/Teams webhook.</li>
-                    <li><strong>Preferences:</strong> Per-user preference (mute, frequency, channel).</li>
-                    <li><strong>Template:</strong> Email/notification template với variable substitution.</li>
-                    <li><strong>Batching:</strong> Group multiple notifications → digest email.</li>
-                    <li><strong>Delivery tracking:</strong> Sent/opened/clicked metrics.</li>
+                    <li><strong>Real-time Updates:</strong> WebSocket cho task changes, team notifications.</li>
+                    <li><strong>Email & Push:</strong> SMTP integration, FCM/APNs cho mobile alerts.</li>
+                    <li><strong>Webhook Events:</strong> Automation triggers, external integrations.</li>
                 </ul>
             </div>
 
             <div class="card">
-                <h3><span class="material-symbols-rounded">toggle_on</span>Feature Flag & Rollout</h3>
+                <h3><span class="material-symbols-rounded">toggle_on</span>Feature Flags</h3>
                 <ul>
-                    <li><strong>Feature toggle:</strong> Enable/disable feature per tenant/user/percentage.</li>
-                    <li><strong>Gradual rollout:</strong> 5% → 25% → 50% → 100% deployment.</li>
-                    <li><strong>A/B testing:</strong> Variant A vs B, track conversion/retention.</li>
-                    <li><strong>Kill switch:</strong> Emergency disable feature nếu có bug critical.</li>
-                    <li><strong>SDK:</strong> Client/server SDK check flag real-time hoặc cache.</li>
+                    <li><strong>Gradual Rollout:</strong> A/B testing cho new features.</li>
+                    <li><strong>User Segmentation:</strong> Enable features per tenant hoặc user group.</li>
+                    <li><strong>Safe Deployment:</strong> Rollback capability, monitoring.</li>
                 </ul>
             </div>
         </div>
 
         <div class="content-grid">
             <div class="card">
-                <h3><span class="material-symbols-rounded">key</span>Secret & Config Management</h3>
+                <h3><span class="material-symbols-rounded">key</span>Secret Management</h3>
                 <ul>
-                    <li><strong>Secret vault:</strong> HashiCorp Vault/AWS Secrets Manager, encrypt at rest.</li>
-                    <li><strong>API keys:</strong> Per-tenant API key cho connector (Slack, email, DB).</li>
-                    <li><strong>Config store:</strong> Feature config, integration credentials, environment vars.</li>
-                    <li><strong>Rotation:</strong> Auto-rotate secrets, notify trước khi expire.</li>
+                    <li><strong>API Keys:</strong> Secure storage cho integrations (Slack, GitHub, etc.).</li>
+                    <li><strong>Encryption:</strong> Vault/KMS cho sensitive credentials.</li>
+                    <li><strong>Auto-rotation:</strong> Automatic key refresh cho security.</li>
                 </ul>
             </div>
 
             <div class="card">
                 <h3><span class="material-symbols-rounded">monitoring</span>Observability & DevOps</h3>
                 <ul>
-                    <li><strong>Logging:</strong> Structured JSON log (Winston/Pino), centralized (ELK/Loki).</li>
-                    <li><strong>Metrics:</strong> Prometheus + Grafana, application/business metrics.</li>
-                    <li><strong>Tracing:</strong> OpenTelemetry, Jaeger/Tempo, distributed trace.</li>
-                    <li><strong>Alerting:</strong> PagerDuty/Opsgenie, Slack alert, runbook.</li>
-                    <li><strong>CI/CD:</strong> GitHub Actions, Docker, Kubernetes, GitOps (ArgoCD).</li>
+                    <li><strong>Logging:</strong> Structured logs cho debugging automation workflows.</li>
+                    <li><strong>Metrics:</strong> Prometheus monitoring cho performance tracking.</li>
+                    <li><strong>CI/CD:</strong> GitHub Actions, Docker, Kubernetes deployment.</li>
                 </ul>
             </div>
         </div>
 
         <div class="tech-stack">
             <strong>Infrastructure stack đề xuất:</strong>
-            Compute: Kubernetes (GKE/EKS/AKS) hoặc serverless (Cloud Run, Lambda). Database: PostgreSQL (RDS/Cloud SQL), Redis (ElastiCache/Memorystore). Storage: S3/GCS. Message bus: Kafka (MSK/Confluent) hoặc NATS. Monitoring: Prometheus, Grafana, Jaeger. Vault: HashiCorp Vault hoặc cloud KMS.
+            Compute: Kubernetes (GKE/EKS/AKS) hoặc serverless (Cloud Run, Lambda). Database: MySQL (RDS/Cloud SQL), Redis (ElastiCache/Memorystore). Storage: S3/GCS. Message bus: Kafka (MSK/Confluent) hoặc NATS. Monitoring: Prometheus, Grafana, Jaeger. Vault: HashiCorp Vault hoặc cloud KMS.
         </div>
 
         <div class="summary-box">
-            <h4><span class="material-symbols-rounded">check_circle</span>Tổng kết kiến trúc kỹ thuật</h4>
+            <h4><span class="material-symbols-rounded">check_circle</span>HKSpace Platform Foundation</h4>
             <ul>
-                <li>Layer architecture rõ ràng: UI → API Gateway → App Services → Data → Infra.</li>
-                <li>HKSpace Core: task/folder/project với real-time sync, offline-first.</li>
-                <li>Automation Engine: DAG workflow, trigger/action không giới hạn, AI-powered prompt-to-code.</li>
-                <li>AI Knowledge Platform: RAG, vector search, LLM routing, multi-tenant context.</li>
-                <li>SaaS Foundation: identity, billing, notification, feature flag, secret vault, observability.</li>
-                <li>Thiết kế theo best practice: modularity, event-driven, observability, security.</li>
+                <li>Multi-tenant architecture với tenant isolation và RBAC permissions.</li>
+                <li>HKSpace Core: Task management, folders, projects, teams với real-time collaboration.</li>
+                <li>Automation Engine: DAG workflows, triggers, actions cho business process automation.</li>
+                <li>AI Platform: LLM integration, RAG, knowledge base, prompt-to-code capabilities.</li>
+                <li>SaaS Services: Billing, notifications, webhooks, feature flags, secret management.</li>
+                <li>DevOps: CI/CD pipelines, observability, monitoring cho reliable operations.</li>
             </ul>
         </div>
     </div>

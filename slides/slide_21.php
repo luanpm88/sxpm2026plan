@@ -1,4 +1,4 @@
-<?php 
+<?php
 require_once '../includes/auth.php';
 requireAuth();
 require_once '../config.php';
@@ -38,71 +38,60 @@ require_once '../config.php';
 <div class="slide-container">
         <div class="slide-title">
             <span class="material-symbols-rounded">settings_input_component</span>
-            Core Enabling Technologies & Academic Foundations
+            Core Enabling Technologies
         </div>
         <div class="slide-subtitle">
-            Công nghệ lõi hỗ trợ: AI, Distributed Systems, Data Science, Performance, Architecture, Security. Nền tảng lý thuyết từ computer science & mathematics.
+            Công nghệ lõi hỗ trợ: Core features, Automation Engine, AI Platform, và infrastructure.
         </div>
 
         <div class="tech-grid">
-            <!-- AI & ML -->
+            <!-- HKSpace Core -->
             <div class="tech-card ai">
-                <h3><span class="material-symbols-rounded">psychology</span>AI & Generative AI</h3>
+                <h3><span class="material-symbols-rounded">checklist</span>HKSpace Core</h3>
                 <ul>
-                    <li><strong>LLMs:</strong> GPT-4, DeepSeek, Llama, Claude cho reasoning & generation.</li>
-                    <li><strong>RAG (Retrieval-Augmented):</strong> Inject domain knowledge vào AI output.</li>
-                    <li><strong>Fine-tuning:</strong> Domain-specific model, RLHF from user feedback.</li>
-                    <li><strong>Agents & Orchestration:</strong> Multi-step planning, tool use, self-correction.</li>
-                    <li><strong>Multimodal:</strong> Vision, voice, text, sensor fusion.</li>
-                    <li><strong>Academic:</strong> Transformer, attention mechanism, prompt engineering theory.</li>
+                    <li><strong>Task Management:</strong> Todo, folders, projects với real-time sync.</li>
+                    <li><strong>Team Collaboration:</strong> Comments, mentions, team workspaces.</li>
+                    <li><strong>Offline-first:</strong> Local storage, sync khi online.</li>
                 </ul>
             </div>
 
-            <!-- Distributed Systems -->
+            <!-- Automation Engine -->
             <div class="tech-card distrib">
-                <h3><span class="material-symbols-rounded">hub</span>Distributed Systems</h3>
+                <h3><span class="material-symbols-rounded">account_tree</span>Automation Engine</h3>
                 <ul>
-                    <li><strong>Event-driven architecture:</strong> Message bus (Kafka, NATS), async processing.</li>
-                    <li><strong>Microservices:</strong> Decoupled services, independent scaling, fault isolation.</li>
-                    <li><strong>Consistency models:</strong> Eventual consistency, consensus (Raft, PBFT).</li>
-                    <li><strong>Coordination:</strong> Distributed lock, leader election, service discovery.</li>
-                    <li><strong>Academic:</strong> CAP theorem, Byzantine fault tolerance, consensus algorithms.</li>
+                    <li><strong>DAG Workflows:</strong> Directed acyclic graphs cho complex automation.</li>
+                    <li><strong>Triggers & Actions:</strong> Event-driven execution, custom actions.</li>
+                    <li><strong>Scheduler:</strong> Cron jobs, time-based automation.</li>
                 </ul>
             </div>
 
-            <!-- Data Systems & Analytics -->
+            <!-- AI Platform -->
             <div class="tech-card data">
-                <h3><span class="material-symbols-rounded">database</span>Data Systems & Analytics</h3>
+                <h3><span class="material-symbols-rounded">psychology</span>AI Platform</h3>
                 <ul>
-                    <li><strong>Vector DB:</strong> Weaviate, Pinecone, PGVector for semantic search.</li>
-                    <li><strong>Time-series:</strong> Prometheus, InfluxDB, TimescaleDB for metrics.</li>
-                    <li><strong>Data warehouse:</strong> Snowflake, BigQuery for analytics, OLAP.</li>
-                    <li><strong>Stream processing:</strong> Kafka Streams, Flink, Spark Streaming.</li>
-                    <li><strong>Academic:</strong> Distributed query optimization, columnar storage, approximate query.</li>
+                    <li><strong>LLM Router:</strong> Multi-model support (GPT, Claude, local models).</li>
+                    <li><strong>RAG System:</strong> Knowledge base với vector search.</li>
+                    <li><strong>Prompt-to-Code:</strong> AI-generated automation scripts.</li>
                 </ul>
             </div>
 
-            <!-- Performance & Optimization -->
+            <!-- Data Infrastructure -->
             <div class="tech-card perf">
-                <h3><span class="material-symbols-rounded">speed</span>Performance & Optimization</h3>
+                <h3><span class="material-symbols-rounded">database</span>Data Infrastructure</h3>
                 <ul>
-                    <li><strong>Caching:</strong> Redis, Memcached, cache-aside/write-through strategies.</li>
-                    <li><strong>Indexing:</strong> B-tree, hash, bitmap index, full-text search.</li>
-                    <li><strong>Query optimization:</strong> EXPLAIN, cost-based planner, vectorization.</li>
-                    <li><strong>Async/concurrency:</strong> Thread pools, async/await, lock-free structures.</li>
-                    <li><strong>Academic:</strong> Complexity theory, algorithmic optimization, profiling techniques.</li>
+                    <li><strong>MySQL:</strong> Primary DB cho tasks, users, automation data.</li>
+                    <li><strong>Vector DB:</strong> Embeddings cho semantic search (Weaviate/MySQL Vector).</li>
+                    <li><strong>Redis:</strong> Cache, sessions, pub/sub messaging.</li>
                 </ul>
             </div>
 
-            <!-- System Architecture -->
+            <!-- Message Bus -->
             <div class="tech-card arch">
-                <h3><span class="material-symbols-rounded">construction</span>System Architecture</h3>
+                <h3><span class="material-symbols-rounded">hub</span>Message Bus & Streaming</h3>
                 <ul>
-                    <li><strong>Design patterns:</strong> CQRS, event sourcing, saga, outbox pattern.</li>
-                    <li><strong>Workflow engines:</strong> DAG orchestration, state machines, saga compensation.</li>
-                    <li><strong>GraphQL/REST API:</strong> Schema design, versioning, rate limiting.</li>
-                    <li><strong>Observability:</strong> Distributed tracing (Jaeger), metrics (Prometheus), logs (ELK).</li>
-                    <li><strong>Academic:</strong> Domain-driven design, clean architecture, SOLID principles.</li>
+                    <li><strong>Kafka/NATS:</strong> Event streaming cho real-time updates.</li>
+                    <li><strong>Async Processing:</strong> Decoupled services, fault tolerance.</li>
+                    <li><strong>Webhooks:</strong> External integrations, API callbacks.</li>
                 </ul>
             </div>
 
@@ -110,26 +99,14 @@ require_once '../config.php';
             <div class="tech-card security">
                 <h3><span class="material-symbols-rounded">security</span>Security & Privacy</h3>
                 <ul>
-                    <li><strong>Cryptography:</strong> TLS, encryption at rest/transit, key management (Vault).</li>
-                    <li><strong>Auth:</strong> OAuth2, OIDC, RBAC/ABAC, MFA.</li>
-                    <li><strong>Data privacy:</strong> PII scrubbing, differential privacy, federated learning.</li>
-                    <li><strong>Zero-trust:</strong> Micro-segmentation, service-to-service auth (mTLS).</li>
-                    <li><strong>Academic:</strong> Formal verification, cryptographic protocols, threat modeling.</li>
+                    <li><strong>Encryption:</strong> End-to-end encryption cho user data.</li>
+                    <li><strong>Access Control:</strong> RBAC, multi-tenant isolation.</li>
+                    <li><strong>Compliance:</strong> GDPR, data privacy standards.</li>
                 </ul>
             </div>
         </div>
 
-        <div class="academic-foundation">
-            <h3><span class="material-symbols-rounded">school</span>Mathematical & Computer Science Foundations</h3>
-            <ul>
-                <li><strong>Algorithms & Complexity:</strong> Big-O analysis, NP-completeness, approximation algorithms cho workflow optimization.</li>
-                <li><strong>Graph Theory:</strong> DAG, topological sort, cycle detection, shortest path cho workflow scheduling.</li>
-                <li><strong>Linear Algebra:</strong> Matrix operations, embeddings, dimensionality reduction cho AI & analytics.</li>
-                <li><strong>Probability & Statistics:</strong> Bayesian inference, statistical testing, anomaly detection cho predictive automation.</li>
-                <li><strong>Formal Methods:</strong> Model checking, theorem proving cho correctness verification (critical workflows).</li>
-                <li><strong>Information Theory:</strong> Entropy, compression, error correction cho reliable data transmission.</li>
-            </ul>
-        </div>
+
     </div>
 
     <div class="navigation">

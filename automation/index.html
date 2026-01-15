@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Decision Tree</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="stylesheet" href="tree.css" />
+</head>
+
+<body>
+    <div id="tree-container" class=" pb-5"></div>
+
+    <script src="tree.js"></script>
+
+    <script>
+        // ========================================
+        // EXAMPLE 1: User Authentication Flow
+        // ========================================
+        /*
+        const root = new Node({
+            id: 1,
+            title: "User Logged In?",
+            description: "Check authentication status"
+        });
+
+        const dashboard = new Node({
+            id: 2,
+            title: "Go to Dashboard",
+            description: "Show user dashboard",
+            type: "action"
+        });
+
+        const login = new Node({
+            id: 3,
+            title: "Redirect to Login",
+            description: "Ask user to sign in",
+            type: "action"
+        });
+
+        root.setYes(dashboard);
+        root.setNo(login);
+        */
+
+        // ========================================
+        // EXAMPLE 2: Complex Decision Flow
+        // ========================================
+        /*
+        const node1 = new Node({
+            id: 1,
+            title: "Start Process",
+            description: "Initialize workflow",
+            type: "action"
+        });
+
+        const node2 = new Node({
+            id: 2,
+            title: "Validate Input",
+            description: "Check data validity",
+            type: "action"
+        });
+
+        const node3 = new Node({
+            id: 3,
+            title: "Data Valid?",
+            description: "Verify all requirements met"
+        });
+
+        const node4 = new Node({
+            id: 4,
+            title: "Process Data",
+            description: "Execute main logic",
+            type: "action"
+        });
+
+        const node5 = new Node({
+            id: 5,
+            title: "Show Error",
+            description: "Display validation errors",
+            type: "action"
+        });
+
+        const node6 = new Node({
+            id: 6,
+            title: "Save Results",
+            description: "Persist to database",
+            type: "action"
+        });
+
+        const node7 = new Node({
+            id: 7,
+            title: "Send Notification",
+            description: "Notify user of completion",
+            type: "action"
+        });
+
+        node1.setNext(node2);
+        node2.setNext(node3);
+        node3.setYes(node4);
+        node3.setNo(node5);
+        node4.setNext(node6);
+        node6.setNext(node7);
+        */
+
+        // ========================================
+        // EXAMPLE 3: Multi-Branch Decision Tree
+        // ========================================
+        // const checkAccess = new Node({
+        //     id: 1,
+        //     title: "User Role?",
+        //     description: "Check user permission level"
+        // });
+
+        // const adminPanel = new Node({
+        //     id: 2,
+        //     title: "Admin Dashboard",
+        //     description: "Full system access",
+        //     type: "action"
+        // });
+
+        // const checkSubscription = new Node({
+        //     id: 3,
+        //     title: "Subscription Active?",
+        //     description: "Verify user subscription status"
+        // });
+
+        // const premiumDashboard = new Node({
+        //     id: 4,
+        //     title: "Premium Dashboard",
+        //     description: "Access premium features",
+        //     type: "action"
+        // });
+
+        // const upgradePrompt = new Node({
+        //     id: 5,
+        //     title: "Show Upgrade",
+        //     description: "Prompt to upgrade subscription",
+        //     type: "action"
+        // });
+
+        // const checkTrial = new Node({
+        //     id: 6,
+        //     title: "Trial Available?",
+        //     description: "Check if user can start trial"
+        // });
+
+        // const startTrial = new Node({
+        //     id: 7,
+        //     title: "Start Trial",
+        //     description: "Initialize 14-day trial",
+        //     type: "action"
+        // });
+
+        // const basicDashboard = new Node({
+        //     id: 8,
+        //     title: "Basic Dashboard",
+        //     description: "Limited feature access",
+        //     type: "action"
+        // });
+
+        // // Build multi-branch tree
+        // checkAccess.setYes(adminPanel);
+        // checkAccess.setNo(checkSubscription);
+        // checkSubscription.setYes(premiumDashboard);
+        // checkSubscription.setNo(upgradePrompt);
+        // upgradePrompt.setNext(checkTrial);
+        // checkTrial.setYes(startTrial);
+        // checkTrial.setNo(basicDashboard);
+
+        // // Render the tree
+        // const tree = new Tree(checkAccess);
+        // tree.render(document.getElementById("tree-container"));
+
+        // ========================================
+        // EXAMPLE 4: Todo App Workflow with Conditions (disabled)
+        // ========================================
+        /*
+        const trigger = new Node({
+            id: 1,
+            title: "task_added",
+            description: "Trigger: New task added to folder X",
+            type: "wait"
+        });
+
+        const sendEmail1 = new Node({
+            id: 2,
+            title: "send_email",
+            description: "Action: Send email with task info",
+            type: "action"
+        });
+
+        const waitCompleted = new Node({
+            id: 3,
+            title: "task_status_changed",
+            description: "Wait: Same task status = completed",
+            type: "wait"
+        });
+
+        const checkPriority = new Node({
+            id: 4,
+            title: "High Priority?",
+            description: "Check if task priority is high"
+        });
+
+        const createTaskZ = new Node({
+            id: 5,
+            title: "create_task_Z",
+            description: "Action: Create follow-up task Z",
+            type: "action"
+        });
+
+        const createTaskY = new Node({
+            id: 6,
+            title: "create_task_Y",
+            description: "Action: Create standard task Y",
+            type: "action"
+        });
+
+        const waitTaskZCompleted = new Node({
+            id: 7,
+            title: "task_status_changed",
+            description: "Wait: Task Z status = completed",
+            type: "wait"
+        });
+
+        const waitTaskYCompleted = new Node({
+            id: 8,
+            title: "task_status_changed",
+            description: "Wait: Task Y status = completed",
+            type: "wait"
+        });
+
+        const sendFinalEmail = new Node({
+            id: 9,
+            title: "send_email",
+            description: "Action: Send completion email",
+            type: "action"
+        });
+
+        const logCompletion = new Node({
+            id: 10,
+            title: "log_completion",
+            description: "Action: Log workflow completion",
+            type: "action"
+        });
+
+        trigger.setNext(sendEmail1);
+        sendEmail1.setNext(waitCompleted);
+        waitCompleted.setNext(checkPriority);
+        checkPriority.setYes(createTaskZ);
+        checkPriority.setNo(createTaskY);
+        createTaskZ.setNext(waitTaskZCompleted);
+        createTaskY.setNext(waitTaskYCompleted);
+        waitTaskZCompleted.setNext(sendFinalEmail);
+        waitTaskYCompleted.setNext(sendFinalEmail);
+        sendFinalEmail.setNext(logCompletion);
+
+        const tree = new Tree(trigger);
+        tree.render(document.getElementById("tree-container"));
+        */
+
+        // ========================================
+        // EXAMPLE 5: SOP Quy trình bán hàng (có cycles)
+        // ========================================
+
+        const sopLead = new Node({
+            id: 101,
+            title: "Nhận yêu cầu khách hàng",
+            description: "Khách hàng gửi yêu cầu báo giá",
+            type: "wait"
+        });
+
+        const sopOpportunity = new Node({
+            id: 102,
+            title: "Tạo cơ hội bán hàng",
+            description: "Khởi tạo cơ hội và liên hệ khách",
+            type: "action"
+        });
+
+        const sopBudgetCheck = new Node({
+            id: 103,
+            title: "Ngân sách được duyệt?",
+            description: "Xác nhận phê duyệt ngân sách"
+        });
+
+        const sopPrepareQuote = new Node({
+            id: 104,
+            title: "Lập báo giá",
+            description: "Chuẩn bị và gửi báo giá cho khách",
+            type: "action"
+        });
+
+        const sopRequestBudget = new Node({
+            id: 105,
+            title: "Yêu cầu duyệt ngân sách",
+            description: "Gửi yêu cầu phê duyệt nội bộ",
+            type: "action"
+        });
+
+        const sopWaitBudget = new Node({
+            id: 106,
+            title: "Chờ duyệt ngân sách",
+            description: "Chờ phê duyệt ngân sách",
+            type: "wait"
+        });
+
+        const sopQuoteCheck = new Node({
+            id: 107,
+            title: "Khách chấp nhận?",
+            description: "Khách hàng đồng ý với báo giá"
+        });
+
+        const sopFollowUp = new Node({
+            id: 108,
+            title: "Gửi nhắc nhở",
+            description: "Nhắc khách xem/duyệt báo giá",
+            type: "action"
+        });
+
+        const sopWaitReply = new Node({
+            id: 109,
+            title: "Chờ phản hồi khách",
+            description: "Chờ khách hàng phản hồi",
+            type: "wait"
+        });
+
+        const sopCreateOrder = new Node({
+            id: 110,
+            title: "Tạo đơn hàng",
+            description: "Khởi tạo Sales Order",
+            type: "action"
+        });
+
+        const sopStockCheck = new Node({
+            id: 111,
+            title: "Tồn kho đủ?",
+            description: "Kiểm tra tồn kho"
+        });
+
+        const sopReplenish = new Node({
+            id: 112,
+            title: "Bổ sung hàng",
+            description: "Đặt hàng bổ sung",
+            type: "action"
+        });
+
+        const sopWaitStock = new Node({
+            id: 113,
+            title: "Chờ nhập hàng",
+            description: "Chờ tồn kho cập nhật",
+            type: "wait"
+        });
+
+        const sopProcessPayment = new Node({
+            id: 114,
+            title: "Xử lý thanh toán",
+            description: "Tạo hóa đơn và thu tiền",
+            type: "action"
+        });
+
+        const sopScheduleDelivery = new Node({
+            id: 115,
+            title: "Lên lịch giao hàng",
+            description: "Sắp xếp vận chuyển/giao hàng",
+            type: "action"
+        });
+
+        const sopComplete = new Node({
+            id: 116,
+            title: "Hoàn tất đơn hàng",
+            description: "Gửi email xác nhận hoàn tất",
+            type: "action"
+        });
+
+        // Build SOP workflow with cycles
+        sopLead.setNext(sopOpportunity);
+        sopOpportunity.setNext(sopBudgetCheck);
+        
+        // Budget cycle: No → Request → Wait → back to Check
+        sopBudgetCheck.setYes(sopPrepareQuote);
+        sopBudgetCheck.setNo(sopRequestBudget);
+        sopRequestBudget.setNext(sopWaitBudget);
+        sopWaitBudget.setNext(sopBudgetCheck);
+        
+        sopPrepareQuote.setNext(sopQuoteCheck);
+        
+        // Quote cycle: No → Follow-up → Wait → back to Check
+        sopQuoteCheck.setYes(sopCreateOrder);
+        sopQuoteCheck.setNo(sopFollowUp);
+        sopFollowUp.setNext(sopWaitReply);
+        sopWaitReply.setNext(sopQuoteCheck);
+        
+        // Stock cycle: No → Replenish → Wait → back to Check
+        sopCreateOrder.setNext(sopStockCheck);
+        sopStockCheck.setYes(sopProcessPayment);
+        sopStockCheck.setNo(sopReplenish);
+        sopReplenish.setNext(sopWaitStock);
+        sopWaitStock.setNext(sopStockCheck);
+        
+        sopProcessPayment.setNext(sopScheduleDelivery);
+        sopScheduleDelivery.setNext(sopComplete);
+
+        // Render SOP tree
+        const tree = new Tree(sopLead);
+        tree.render(document.getElementById("tree-container"));
+        
+    </script>
+</body>
+
+</html>

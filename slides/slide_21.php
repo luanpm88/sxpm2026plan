@@ -30,7 +30,7 @@ require_once '../config.php';
         .academic-foundation h3 { margin: 0 0 8px 0; font-size: 1.1rem; color: #0369a1; display: flex; align-items: center; gap: 8px; }
         .academic-foundation h3 .material-symbols-rounded { font-size: 1.3rem; }
         .academic-foundation ul { margin: 0; padding: 0; list-style: none; color: #0369a1; font-size: 0.92rem; line-height: 1.5; }
-        .academic-foundation ul li { padding: 3px 0; padding-left: 14px; position: relative; }
+        .academic-foundation ul li { padding: 3px 0; padding-left: 24px; position: relative; }
         .academic-foundation ul li:before { content: '◆'; position: absolute; left: 2px; color: #0284c7; }
     </style>
 </head>

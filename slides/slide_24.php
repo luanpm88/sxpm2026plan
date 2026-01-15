@@ -206,6 +206,35 @@ require_once '../config.php';
         margin-top: 10px;
     }
 
+    .example-link-wrapper {
+        margin-top: 14px;
+        display: flex;
+        justify-content: flex-start;
+    }
+    .example-link-btn {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        padding: 8px 14px;
+        border-radius: 999px;
+        border: 1px solid #0ea5e9;
+        background: #ecfeff;
+        color: #0369a1;
+        font-size: 0.9rem;
+        font-weight: 600;
+        text-decoration: none;
+        box-shadow: 0 1px 2px rgba(15, 23, 42, 0.08);
+        transition: background 0.15s ease, transform 0.15s ease, box-shadow 0.15s ease;
+    }
+    .example-link-btn:hover {
+        background: #e0f2fe;
+        transform: translateY(-1px);
+        box-shadow: 0 4px 8px rgba(15, 23, 42, 0.15);
+    }
+    .example-link-btn .material-symbols-rounded {
+        font-size: 1.1rem;
+    }
+
     /* Removed arrow connectors for a cleaner layout */
 
     .tree-example {
@@ -370,7 +399,8 @@ require_once '../config.php';
             </div>
             <div class="caption">
                 <div class="example-panel">
-                    <!-- <h3><span class="material-symbols-rounded">route</span>Ví dụ SOP: Quy trình bán hàng</h3> -->
+                    <h3 class="fw-semibold"><span class="material-symbols-rounded">route</span>Ví dụ SOP: Quy trình bán hàng</h3>
+                    <hr>
                     <ol>
                         <li><strong>Nhận yêu cầu</strong> (wait): Khách gửi yêu cầu/đặt vấn đề.</li>
                         <li><strong>Tạo cơ hội bán hàng</strong> (action): Khởi tạo cơ hội, liên hệ khách.</li>
@@ -389,6 +419,12 @@ require_once '../config.php';
                     </ol>
                     <div class="example-note">
                         Vòng lặp: Nếu khách chưa chấp nhận báo giá → <em>Gửi nhắc nhở</em> → <em>Khách phản hồi</em> → quay lại bước <em>Khách chấp nhận báo giá?</em> cho đến khi Yes hoặc kết thúc theo chính sách.
+                    </div>
+                    <div class="example-link-wrapper">
+                        <a href="/automation/index.html" target="_blank" class="example-link-btn">
+                            <span class="material-symbols-rounded">open_in_new</span>
+                            Xem full automation tree (demo kỹ thuật)
+                        </a>
                     </div>
                 </div>
             </div>
@@ -436,5 +472,4 @@ require_once '../config.php';
         });
     </script>
 </body>
-
 </html>

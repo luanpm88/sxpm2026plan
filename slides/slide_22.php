@@ -27,98 +27,99 @@ require_once '../config.php';
 </head>
 <body>
 <div class="slide-container">
-        <div class="slide-title">
-            <span class="material-symbols-rounded">timeline</span>
-            Vision 10 năm: Technology Evolution (2026-2036)
-        </div>
-        <div class="slide-subtitle">
-            Lộ trình phát triển công nghệ dài hạn: từ SaaS platform hiện tại → hyper-automation + AI integration gradual.
-        </div>
+    <div class="slide-title">
+        <span class="material-symbols-rounded">timeline</span>
+        Vision 10 năm: Technology Evolution (2026-2036)
+    </div>
+    <div class="slide-subtitle">
+        Lộ trình phát triển công nghệ dài hạn: từ SaaS vững chắc → tự động hóa sâu → tích hợp AI theo từng bước kiểm soát.
+    </div>
 
-        <div class="timeline">
-            <div class="timeline-row">
-                <div class="timeline-year"><span class="material-symbols-rounded">looks_one</span>2026-2027</div>
-                <div class="timeline-content">
-                    <h4>Phase 1: Complete Platform & Core Automation (Execute Foundation)</h4>
-                    <ul>
-                        <li><strong>HKSpace core complete:</strong> Task/folder/project hierarchy, team collaboration, real-time sync (Web + Mobile).</li>
-                        <li><strong>SaaS foundation production:</strong> Multi-tenant, billing, RBAC, observability, backup/restore, SLA guaranteed.</li>
-                        <li><strong>Automation engine deployed:</strong> DAG workflow engine với 30+ pre-built SOP templates (invoice, HR, support, sales).</li>
-                        <li><strong>Visual no-code builder:</strong> Drag-drop workflow nodes, condition logic, action mapping (không cần code).</li>
-                        <li><strong>Core integrations:</strong> Email, SMS, Slack, Teams, webhook, basic database query, file operations.</li>
-                        <li><strong>Target: 500-1000 paying customers,</strong> retention >70%, ARPU 500k-1.5tr/tháng. Product-market fit achieved.</li>
-                    </ul>
-                </div>
-            </div>
-
-            <div class="timeline-row">
-                <div class="timeline-year"><span class="material-symbols-rounded">looks_two</span>2028-2029</div>
-                <div class="timeline-content">
-                    <h4>Phase 2: Automation Expansion & AI Enhancement (Gradual)</h4>
-                    <ul>
-                        <li><strong>Extended action library:</strong> 50+ actions (PDF generation, spreadsheet ops, image processing, API chaining, DB transactions).</li>
-                        <li><strong>SOP enrichment:</strong> Workflow templates cho phức tạp hơn (purchase-to-pay, order-to-cash, case management).</li>
-                        <li><strong>AI Knowledge Platform integration:</strong> Workflows can retrieve context từ knowledge base, suggest condition/action based on pattern.</li>
-                        <li><strong>Workflow analytics:</strong> Dashboard show execution metrics, bottleneck detection, optimization suggestion (still need human approval).</li>
-                        <li><strong>Custom connector framework:</strong> 3rd-party developers build adapter cho proprietary system.</li>
-                        <li><strong>Target: 1500-2500 customers,</strong> ASEAN expansion (Thailand, Vietnam, Indonesia), vertical market focus (accounting, HR, manufacturing).</li>
-                    </ul>
-                </div>
-            </div>
-
-            <div class="timeline-row">
-                <div class="timeline-year"><span class="material-symbols-rounded">looks_3</span>2030-2032</div>
-                <div class="timeline-content">
-                    <h4>Phase 3: Intelligent Automation & Agent Workflows</h4>
-                    <ul>
-                        <li><strong>Multi-step agent workflows:</strong> Agents handle complex logic, validation, decision-making dengan AI reasoning (nhưng human review critical step).</li>
-                        <li><strong>Predictive automation:</strong> AI analyze historical data → predict business event → proactive trigger workflow (low-confidence suggest only, high-confidence auto-execute).</li>
-                        <li><strong>Workflow self-optimization:</strong> Continuous learning từ execution logs, auto-tune parameters, suggest variant improve performance.</li>
-                        <li><strong>Cross-org workflow federation:</strong> Companies share workflow (supplier order, customer delivery notification, B2B integration).</li>
-                        <li><strong>Voice-enabled automation:</strong> Voice command trigger workflow, conversational status check (Whisper + LLM).</li>
-                        <li><strong>Target: 3000-5000 customers,</strong> enterprise tier (SSO, on-premise, custom SLA), $5-10M ARR.</li>
-                    </ul>
-                </div>
-            </div>
-
-            <div class="timeline-row">
-                <div class="timeline-year"><span class="material-symbols-rounded">looks_4</span>2032-2036</div>
-                <div class="timeline-content">
-                    <h4>Phase 4: Autonomous Enterprise Platform</h4>
-                    <ul>
-                        <li><strong>Hyper-automation:</strong> 80%+ routine process fully autonomous, AI handle exception, human review only critical decisions.</li>
-                        <li><strong>Multimodal AI integration:</strong> Vision (invoice scanning), voice (command), text (email), sensor data all feed automation.</li>
-                        <li><strong>Regional operating system:</strong> HKSpace = de facto business process standard cho Southeast Asia (like SAP/Salesforce globally).</li>
-                        <li><strong>Edge AI capability:</strong> Local model inference for latency-sensitive process, on-device learning, privacy-preserved federation.</li>
-                        <li><strong>Marketplace ecosystem:</strong> Pre-built workflow templates, AI agents, data enrichment service (community + enterprise vendors).</li>
-                        <li><strong>Vision: 5000+ customers,</strong> $20-50M ARR, become essential infrastructure company Southeast Asia.</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-
-        <div class="vision-grid">
-            <div class="vision-card">
-                <h3><span class="material-symbols-rounded">insights</span>Realistic Execution Strategy</h3>
+    <div class="timeline">
+        <div class="timeline-row">
+            <div class="timeline-year"><span class="material-symbols-rounded">looks_one</span>2026-2027</div>
+            <div class="timeline-content">
+                <h4>Phase 1: Platform Foundation & Core Automation</h4>
                 <ul>
-                    <li><strong>2026-27:</strong> Execute flawlessly. Complete HKSpace, SaaS solid, automation engine stable. Focus on 500-1000 customers.</li>
-                    <li><strong>2028-29:</strong> Expand carefully. More actions, more templates, start AI enhancement (gradual, proven ROI only).</li>
-                    <li><strong>2030-32:</strong> Scale with confidence. Agent workflow mature, predictive decent accuracy, cross-org possible.</li>
-                    <li><strong>2032+:</strong> Market leadership. Platform ecosystem, regional standard, hard to beat (data lock-in, workflow inertia, domain expertise).</li>
+                    <li><strong>HKSpace core hoàn thiện:</strong> Quản lý task/project, cộng tác nhóm, realtime sync (Web & Mobile).</li>
+                    <li><strong>Nền tảng SaaS sẵn sàng scale:</strong> Multi-tenant, billing, RBAC, monitoring, backup, SLA.</li>
+                    <li><strong>Automation engine cốt lõi:</strong> Workflow engine + SOP chuẩn cho các nghiệp vụ phổ biến.</li>
+                    <li><strong>No-code workflow builder:</strong> Kéo–thả, logic điều kiện, mapping hành động, không cần code.</li>
+                    <li><strong>Tích hợp nền tảng:</strong> Email, chat, webhook, dữ liệu, file.</li>
+                    <li><strong>Mục tiêu:</strong> 500–1000 khách hàng trả phí, retention >70%, đạt product–market fit.</li>
                 </ul>
             </div>
+        </div>
 
-            <div class="vision-card">
-                <h3><span class="material-symbols-rounded">explore</span>Key Risks & Mitigation</h3>
+        <div class="timeline-row">
+            <div class="timeline-year"><span class="material-symbols-rounded">looks_two</span>2028-2029</div>
+            <div class="timeline-content">
+                <h4>Phase 2: Automation Scale & AI Assistance</h4>
                 <ul>
-                    <li><strong>Execution risk (high):</strong> Shipping quality product hard, over-engineer or under-deliver → hire strong team.</li>
-                    <li><strong>Competition:</strong> Big Tech might enter → move fast, build moat (domain data), build community.</li>
-                    <li><strong>Customer adoption:</strong> SME fear complexity → education, support, freemium model, migration help.</li>
-                    <li><strong>Regulation:</strong> Data privacy law (GDPR), automation liability → compliance team, transparent audit log.</li>
+                    <li><strong>Mở rộng automation:</strong> Nhiều action hơn, xử lý quy trình phức tạp hơn.</li>
+                    <li><strong>SOP nâng cao:</strong> Workflow cho các chuỗi nghiệp vụ end-to-end.</li>
+                    <li><strong>AI hỗ trợ ngữ cảnh:</strong> Gợi ý điều kiện, hành động dựa trên dữ liệu & pattern.</li>
+                    <li><strong>Workflow analytics:</strong> Đo hiệu suất, phát hiện bottleneck, đề xuất cải tiến.</li>
+                    <li><strong>Custom connector:</strong> Cho phép bên thứ ba tích hợp hệ thống riêng.</li>
+                    <li><strong>Mục tiêu:</strong> 1.500–2.500 khách hàng, mở rộng ASEAN, tập trung theo ngành.</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="timeline-row">
+            <div class="timeline-year"><span class="material-symbols-rounded">looks_3</span>2030-2032</div>
+            <div class="timeline-content">
+                <h4>Phase 3: Intelligent Automation & AI Agents</h4>
+                <ul>
+                    <li><strong>AI Agent workflows:</strong> Xử lý logic phức tạp, con người duyệt bước quan trọng.</li>
+                    <li><strong>Predictive automation:</strong> AI dự đoán sự kiện và chủ động kích hoạt workflow.</li>
+                    <li><strong>Tự tối ưu workflow:</strong> Học từ lịch sử chạy để cải thiện hiệu suất.</li>
+                    <li><strong>Kết nối liên doanh nghiệp:</strong> Chia sẻ workflow giữa các tổ chức (B2B).</li>
+                    <li><strong>Voice-enabled automation:</strong> Điều khiển và kiểm tra trạng thái bằng giọng nói.</li>
+                    <li><strong>Mục tiêu:</strong> 3.000–5.000 khách hàng, phân khúc enterprise, $5–10M ARR.</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="timeline-row">
+            <div class="timeline-year"><span class="material-symbols-rounded">looks_4</span>2032-2036</div>
+            <div class="timeline-content">
+                <h4>Phase 4: Autonomous Enterprise Platform</h4>
+                <ul>
+                    <li><strong>Hyper-automation:</strong> Phần lớn quy trình vận hành tự động, AI xử lý ngoại lệ.</li>
+                    <li><strong>Multimodal AI:</strong> Kết hợp text, voice, vision và dữ liệu vận hành.</li>
+                    <li><strong>Regional operating system:</strong> HKSpace trở thành chuẩn vận hành doanh nghiệp khu vực.</li>
+                    <li><strong>Edge AI:</strong> Xử lý cục bộ cho các quy trình yêu cầu độ trễ thấp và bảo mật.</li>
+                    <li><strong>Marketplace ecosystem:</strong> Hệ sinh thái workflow, AI agent và dịch vụ dữ liệu.</li>
+                    <li><strong>Tầm nhìn:</strong> 5.000+ khách hàng, $20–50M ARR, hạ tầng thiết yếu tại Đông Nam Á.</li>
                 </ul>
             </div>
         </div>
     </div>
+
+    <div class="vision-grid">
+        <div class="vision-card">
+            <h3><span class="material-symbols-rounded">insights</span>Realistic Execution Strategy</h3>
+            <ul>
+                <li><strong>2026-27:</strong> Làm chắc nền tảng, tập trung khách hàng đầu tiên.</li>
+                <li><strong>2028-29:</strong> Mở rộng có kiểm soát, AI chỉ áp dụng khi chứng minh ROI.</li>
+                <li><strong>2030-32:</strong> Scale tự tin, AI agent và predictive automation trưởng thành.</li>
+                <li><strong>2032+:</strong> Dẫn đầu thị trường, tạo lợi thế khó thay thế.</li>
+            </ul>
+        </div>
+
+        <div class="vision-card">
+            <h3><span class="material-symbols-rounded">explore</span>Key Risks & Mitigation</h3>
+            <ul>
+                <li><strong>Execution risk:</strong> Độ phức tạp cao → đội ngũ mạnh, ưu tiên chất lượng.</li>
+                <li><strong>Competition:</strong> Big Tech → đi nhanh, tích lũy dữ liệu & domain knowledge.</li>
+                <li><strong>Customer adoption:</strong> SME ngại phức tạp → đào tạo, hỗ trợ, onboarding tốt.</li>
+                <li><strong>Regulation:</strong> Tuân thủ bảo mật & pháp lý, audit log minh bạch.</li>
+            </ul>
+        </div>
+    </div>
+</div>
+
 
     <div class="navigation">
         <button class="nav-btn" onclick="previousSlide()">

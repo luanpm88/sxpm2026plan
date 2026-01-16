@@ -1,7 +1,7 @@
 <?php
 // Configuration for the presentation
 define('PRESENTATION_TITLE', 'Định hướng phát triển Bộ phận Sản xuất Phần mềm 2026');
-define('TOTAL_SLIDES', 24);
+define('TOTAL_SLIDES', 25);
 
 // Slide titles
 $slide_titles = [
@@ -29,7 +29,8 @@ $slide_titles = [
     21 => 'Advanced AI & Generative AI Integration',
     22 => 'Vision 10 năm: Technology Evolution',
     23 => 'Emerging Tech & R&D Roadmap',
-    24 => 'Phụ lục: Tổng quan Automation (Visual)'
+    24 => 'Thiết kế: Tổng quan Automation (Visual)',
+    25 => 'Thiết kế: AI Knowledge Base Platform'
 ];
 
 // Get current slide number from URL

@@ -33,13 +33,14 @@ require_once '../config.php';
             Nền tảng tri thức mở với RAG, vector search, LLM routing, multi-tenant context – hỗ trợ Q&A, chatbot, prompt-to-automation.
         </div>
 
+        <!-- INGESTION PIPELINE -->
         <div class="card">
             <h3><span class="material-symbols-rounded">input</span>Knowledge Ingestion Pipeline</h3>
             <div class="diagram-box">
-                <div class="item"><strong>Connectors</strong>Files (PDF/Doc/Txt), databases (MySQL/Postgres), APIs (REST/GraphQL), web crawler, email.</div>
-                <div class="item"><strong>Extraction</strong>Text extraction, OCR (Tesseract), table parsing, metadata (author, date, tags).</div>
-                <div class="item"><strong>Chunking</strong>Semantic chunking (sentence/paragraph), overlap 10-20%, max 512-1024 tokens per chunk.</div>
-                <div class="item"><strong>Embedding</strong>OpenAI text-embedding-3, Sentence-BERT, multilingual model (Vietnamese support).</div>
+                <div class="item"><strong>Connectors</strong>Files (PDF/Doc/Txt), databases, APIs, web crawler, email.</div>
+                <div class="item"><strong>Extraction</strong>Text extraction, OCR, table parsing, metadata extraction.</div>
+                <div class="item"><strong>Chunking</strong>Semantic chunking, overlap 10-20%, max 512-1024 tokens.</div>
+                <div class="item"><strong>Embedding</strong>OpenAI text-embedding-3, Sentence-BERT, multilingual (Vietnamese).</div>
             </div>
         </div>
 
@@ -47,43 +48,42 @@ require_once '../config.php';
             <div class="card">
                 <h3><span class="material-symbols-rounded">database</span>Vector DB & Search</h3>
                 <ul>
-                    <li><strong>Vector DB:</strong> Weaviate, Pinecone, Qdrant, hoặc PGVector (PostgreSQL extension).</li>
+                    <li><strong>Vector DB:</strong> Weaviate, Pinecone, Qdrant, hoặc PGVector (PostgreSQL).</li>
                     <li><strong>Hybrid search:</strong> Semantic (vector) + keyword (BM25), re-rank với cross-encoder.</li>
-                    <li><strong>Metadata filter:</strong> Filter by tenant, source, date, tag trước khi vector search.</li>
-                    <li><strong>Multi-tenant isolation:</strong> Tenant ID trong metadata, query filter enforce strict.</li>
-                    <li><strong>Versioning:</strong> Version chunks khi document update, hỗ trợ time-travel query.</li>
+                    <li><strong>Metadata filter:</strong> Filter by tenant, source, date, tag trước khi search.</li>
+                    <li><strong>Multi-tenant isolation:</strong> Tenant ID trong metadata, strict query filter.</li>
+                    <li><strong>Versioning:</strong> Version chunks khi document update, time-travel query.</li>
                 </ul>
             </div>
 
             <div class="card">
                 <h3><span class="material-symbols-rounded">smart_toy</span>LLM Routing & Serving</h3>
                 <ul>
-                    <li><strong>LLM providers:</strong> OpenAI (GPT-4), DeepSeek, Anthropic Claude, local model (Llama).</li>
+                    <li><strong>LLM providers:</strong> OpenAI (GPT-4), DeepSeek, Claude, local model (Llama).</li>
                     <li><strong>Router logic:</strong> Route by cost/speed/capability, fallback khi provider down.</li>
-                    <li><strong>Prompt hub:</strong> Version control prompt template, A/B test, evaluate output quality.</li>
+                    <li><strong>Prompt hub:</strong> Version control template, A/B test, evaluate quality.</li>
                     <li><strong>Function calling:</strong> LLM gọi function (search DB, call API, trigger automation).</li>
-                    <li><strong>Streaming response:</strong> SSE/WebSocket stream token, improve UX.</li>
+                    <li><strong>Streaming:</strong> SSE/WebSocket stream token, improve UX.</li>
                 </ul>
             </div>
         </div>
 
         <div class="content-grid">
             <div class="card">
-                <h3><span class="material-symbols-rounded">build_circle</span>RAG (Retrieval-Augmented Generation)</h3>
+                <h3><span class="material-symbols-rounded">build_circle</span>RAG Pipeline</h3>
                 <ul>
                     <li><strong>Query expansion:</strong> Rewrite/expand user query để tăng recall.</li>
                     <li><strong>Retrieval:</strong> Top-K chunks từ vector DB + keyword search.</li>
                     <li><strong>Context assembly:</strong> Rank chunks, inject vào prompt với token budget.</li>
                     <li><strong>Response generation:</strong> LLM sinh câu trả lời dựa context + query.</li>
-                    <li><strong>Citation & source:</strong> Trả về source document/chunk reference.</li>
-                    <li><strong>Feedback loop:</strong> User thumbs up/down → fine-tune retrieval/ranking.</li>
+                    <li><strong>Citation:</strong> Trả về source document/chunk reference.</li>
                 </ul>
             </div>
 
             <div class="card">
-                <h3><span class="material-symbols-rounded">security</span>Policy & Guardrails</h3>
+                <h3><span class="material-symbols-rounded">security</span>Security & Policy</h3>
                 <ul>
-                    <li><strong>RBAC/ABAC:</strong> Kiểm tra user có quyền truy cập knowledge source không.</li>
+                    <li><strong>RBAC/ABAC:</strong> Kiểm tra quyền truy cập knowledge source.</li>
                     <li><strong>PII scrubbing:</strong> Detect & mask PII (email, phone, SSN) trước khi embed.</li>
                     <li><strong>Toxicity filter:</strong> Detect toxic/harmful content, block hoặc warn.</li>
                     <li><strong>Cost control:</strong> Token budget per user/tenant, rate limit, quota.</li>
@@ -94,11 +94,11 @@ require_once '../config.php';
 
         <div class="tech-stack">
             <strong>Tech stack đề xuất:</strong>
-            Ingestion: Python (Langchain/LlamaIndex), Celery worker. Vector DB: Weaviate/PGVector. LLM: OpenAI/DeepSeek API, Ollama (local). Backend: Node.js/Python FastAPI. Observability: Langfuse/LangSmith (LLM tracing), Prometheus.
+            Ingestion: Python (Langchain/LlamaIndex), Celery worker. Vector DB: Weaviate/PGVector. LLM: OpenAI/DeepSeek API, Ollama (local). Backend: Node.js/Python FastAPI. Observability: Langfuse/LangSmith, Prometheus.
         </div>
 
         <div class="flow-line">
-            <strong>RAG Flow:</strong> User query → Query expansion → Vector search + keyword → Re-rank top-K → Inject context → LLM generate → Return response + citations
+            <strong>RAG Flow:</strong> User query → Query expansion → Vector + keyword search → Re-rank → Inject context → LLM generate → Response + citations
         </div>
     </div>
 

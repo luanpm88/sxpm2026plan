@@ -51,12 +51,26 @@ landing_page/
 
 ### 3. home.php
 **Sections:**
-- Hero (gradient, CTA buttons, stats) - từ LP 1-5
-- About (mission, vision) - từ LP 3, 5
-- Services Preview (4 cards) - từ LP 1, 5
-- Quick Stats - từ LP 1, 4
-- Featured Case Study
-- CTA Banner
+1. **Hero** (gradient, CTA buttons, 3 stats) - từ LP 1-5
+2. **Services/Capabilities** (4 cards với bullet points chi tiết) - từ LP 1, 5
+3. **Technology Stack Preview** (4 categories grid) - từ tech-stack.php
+4. **SCRUM Process Preview** (6 steps overview) - từ scrum.php
+5. **Scaling Journey** (6 phases compact timeline) - từ scaling.php
+6. **Why Choose Us** (6 value propositions) - từ about.php
+7. **Featured Case Study** (1 success story highlight) - từ case-studies.php
+8. **Client Testimonials** (3 testimonial cards) - từ case-studies.php
+9. **CTA Banner** (Contact + Pricing links)
+
+**Flow Story:**
+- Hero → Grab attention với value proposition
+- Services → Show WHAT we do (4 core offerings)
+- Tech Stack → Show HOW we build (technology)
+- SCRUM → Show HOW we work (process)
+- Scaling → Show HOW we grow (infrastructure journey)
+- Why Choose → Show WHY us (competitive advantages)
+- Case Study → Show PROOF (real results)
+- Testimonials → Show TRUST (client voices)
+- CTA → Drive ACTION (contact/pricing)
 
 ### 4. services.php
 **Sections:**

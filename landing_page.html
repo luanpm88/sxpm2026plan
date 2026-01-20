@@ -1,0 +1,1670 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Link Tech - Công ty phát triển phần mềm cao cấp, giải pháp công nghệ tiên tiến, đội ngũ chuyên nghiệp">
+    <title>Link Tech - Giải pháp Phần mềm Doanh nghiệp</title>
+    
+    <!-- Bootstrap 5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Material Symbols Rounded -->
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            --primary-color: #0a4d8f;
+            --secondary-color: #0ea5e9;
+            --accent-color: #10b981;
+            --dark-blue: #1e3a5f;
+            --light-blue: #e0f2fe;
+            --text-primary: #0f172a;
+            --text-secondary: #475569;
+            --bg-light: #f8fafc;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            color: var(--text-primary);
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+        
+        .material-symbols-rounded {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 48;
+            vertical-align: middle;
+        }
+        
+        /* Navbar */
+        .navbar {
+            background: rgba(255, 255, 255, 0.98);
+            backdrop-filter: blur(10px);
+            box-shadow: 0 2px 20px rgba(0, 0, 0, 0.08);
+            padding: 1rem 0;
+            transition: all 0.3s ease;
+        }
+        
+        .navbar.scrolled {
+            padding: 0.5rem 0;
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.12);
+        }
+        
+        .navbar-brand {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            font-weight: 800;
+            font-size: 1.5rem;
+            color: var(--primary-color);
+        }
+        
+        .navbar-brand img {
+            height: 50px;
+            width: auto;
+        }
+        
+        .nav-link {
+            color: var(--text-secondary);
+            font-weight: 600;
+            padding: 0.5rem 1rem;
+            transition: all 0.3s ease;
+            position: relative;
+        }
+        
+        .nav-link:hover, .nav-link.active {
+            color: var(--primary-color);
+        }
+        
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 0;
+            height: 3px;
+            background: var(--secondary-color);
+            transition: width 0.3s ease;
+        }
+        
+        .nav-link:hover::after, .nav-link.active::after {
+            width: 80%;
+        }
+        
+        /* Hero Section */
+        .hero {
+            min-height: 100vh;
+            background: linear-gradient(135deg, #0a4d8f 0%, #1e3a5f 50%, #0ea5e9 100%);
+            position: relative;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            padding: 120px 0 80px;
+        }
+        
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('data:image/svg+xml,<svg width="100" height="100" xmlns="http://www.w3.org/2000/svg"><defs><pattern id="grid" width="100" height="100" patternUnits="userSpaceOnUse"><path d="M 100 0 L 0 0 0 100" fill="none" stroke="rgba(255,255,255,0.05)" stroke-width="1"/></pattern></defs><rect width="100%" height="100%" fill="url(%23grid)"/></svg>');
+            opacity: 0.3;
+        }
+        
+        .hero-content {
+            position: relative;
+            z-index: 2;
+            color: white;
+        }
+        
+        .hero h1 {
+            font-family: 'Poppins', sans-serif;
+            font-size: 3.5rem;
+            font-weight: 800;
+            margin-bottom: 1.5rem;
+            line-height: 1.2;
+        }
+        
+        .hero .lead {
+            font-size: 1.4rem;
+            margin-bottom: 2rem;
+            opacity: 0.95;
+            font-weight: 400;
+        }
+        
+        .hero-buttons {
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+        }
+        
+        .btn-hero {
+            padding: 1rem 2.5rem;
+            font-size: 1.1rem;
+            font-weight: 700;
+            border-radius: 50px;
+            transition: all 0.3s ease;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+        
+        .btn-hero-primary {
+            background: white;
+            color: var(--primary-color);
+            border: none;
+        }
+        
+        .btn-hero-primary:hover {
+            background: var(--light-blue);
+            transform: translateY(-3px);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+        }
+        
+        .btn-hero-secondary {
+            background: transparent;
+            color: white;
+            border: 2px solid white;
+        }
+        
+        .btn-hero-secondary:hover {
+            background: white;
+            color: var(--primary-color);
+            transform: translateY(-3px);
+        }
+        
+        .hero-stats {
+            margin-top: 4rem;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 2rem;
+        }
+        
+        .stat-item {
+            text-align: center;
+            padding: 1.5rem;
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border-radius: 16px;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+        
+        .stat-number {
+            font-size: 2.5rem;
+            font-weight: 800;
+            font-family: 'Poppins', sans-serif;
+        }
+        
+        .stat-label {
+            font-size: 1rem;
+            opacity: 0.9;
+        }
+        
+        /* Section Styles */
+        section {
+            padding: 100px 0;
+            position: relative;
+        }
+        
+        .section-title {
+            text-align: center;
+            margin-bottom: 4rem;
+        }
+        
+        .section-title h2 {
+            font-family: 'Poppins', sans-serif;
+            font-size: 2.8rem;
+            font-weight: 800;
+            color: var(--primary-color);
+            margin-bottom: 1rem;
+            position: relative;
+            display: inline-block;
+        }
+        
+        .section-title h2::after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80px;
+            height: 4px;
+            background: linear-gradient(90deg, var(--secondary-color), var(--accent-color));
+            border-radius: 2px;
+        }
+        
+        .section-title p {
+            font-size: 1.2rem;
+            color: var(--text-secondary);
+            max-width: 700px;
+            margin: 0 auto;
+        }
+        
+        /* About Section */
+        #about {
+            background: var(--bg-light);
+        }
+        
+        .about-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: center;
+            margin-top: 3rem;
+        }
+        
+        .about-content h3 {
+            font-size: 2rem;
+            font-weight: 700;
+            color: var(--primary-color);
+            margin-bottom: 1.5rem;
+        }
+        
+        .about-content p {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            color: var(--text-secondary);
+            margin-bottom: 1.5rem;
+        }
+        
+        .about-features {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1.5rem;
+            margin-top: 2rem;
+        }
+        
+        .feature-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 1rem;
+            padding: 1.5rem;
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+            transition: all 0.3s ease;
+        }
+        
+        .feature-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+        }
+        
+        .feature-icon {
+            width: 50px;
+            height: 50px;
+            border-radius: 12px;
+            background: linear-gradient(135deg, var(--secondary-color), var(--accent-color));
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 1.5rem;
+            flex-shrink: 0;
+        }
+        
+        .feature-text h4 {
+            font-size: 1.1rem;
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+            color: var(--text-primary);
+        }
+        
+        .feature-text p {
+            font-size: 0.95rem;
+            color: var(--text-secondary);
+            margin: 0;
+        }
+        
+        /* Services Section */
+        .service-cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+        
+        .service-card {
+            background: white;
+            border-radius: 20px;
+            padding: 2.5rem;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
+            transition: all 0.4s ease;
+            border: 2px solid transparent;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .service-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 5px;
+            background: linear-gradient(90deg, var(--secondary-color), var(--accent-color));
+            transform: scaleX(0);
+            transition: transform 0.3s ease;
+        }
+        
+        .service-card:hover::before {
+            transform: scaleX(1);
+        }
+        
+        .service-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15);
+            border-color: var(--secondary-color);
+        }
+        
+        .service-icon {
+            width: 80px;
+            height: 80px;
+            border-radius: 20px;
+            background: linear-gradient(135deg, var(--light-blue), #bfdbfe);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 1.5rem;
+            transition: all 0.3s ease;
+        }
+        
+        .service-card:hover .service-icon {
+            background: linear-gradient(135deg, var(--secondary-color), var(--accent-color));
+        }
+        
+        .service-icon .material-symbols-rounded {
+            font-size: 2.5rem;
+            color: var(--primary-color);
+        }
+        
+        .service-card:hover .service-icon .material-symbols-rounded {
+            color: white;
+        }
+        
+        .service-card h3 {
+            font-size: 1.5rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            color: var(--primary-color);
+        }
+        
+        .service-card p {
+            color: var(--text-secondary);
+            margin-bottom: 1.5rem;
+            line-height: 1.7;
+        }
+        
+        .service-card ul {
+            list-style: none;
+            padding: 0;
+            margin-bottom: 1.5rem;
+        }
+        
+        .service-card ul li {
+            padding: 0.5rem 0;
+            color: var(--text-secondary);
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+        
+        .service-card ul li::before {
+            content: 'check_circle';
+            font-family: 'Material Symbols Rounded';
+            color: var(--accent-color);
+            font-size: 1.2rem;
+        }
+        
+        /* Technology Stack */
+        #technology {
+            background: var(--bg-light);
+        }
+        
+        .tech-categories {
+            margin-top: 3rem;
+        }
+        
+        .tech-category {
+            background: white;
+            border-radius: 16px;
+            padding: 2rem;
+            margin-bottom: 2rem;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+        }
+        
+        .tech-category h3 {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--primary-color);
+            margin-bottom: 1.5rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+        
+        .tech-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+        
+        .tech-tag {
+            padding: 0.7rem 1.5rem;
+            background: var(--light-blue);
+            border: 2px solid transparent;
+            border-radius: 50px;
+            font-weight: 600;
+            color: var(--primary-color);
+            transition: all 0.3s ease;
+            cursor: default;
+        }
+        
+        .tech-tag:hover {
+            background: var(--primary-color);
+            color: white;
+            border-color: var(--primary-color);
+            transform: translateY(-2px);
+        }
+        
+        /* Team Section */
+        .team-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+        
+        .team-member {
+            background: white;
+            border-radius: 16px;
+            overflow: hidden;
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+            transition: all 0.3s ease;
+        }
+        
+        .team-member:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 50px rgba(0, 0, 0, 0.15);
+        }
+        
+        .team-photo {
+            width: 100%;
+            height: 300px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .team-photo img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        
+        .team-photo .material-symbols-rounded {
+            font-size: 8rem;
+            color: rgba(255, 255, 255, 0.8);
+        }
+        
+        .team-info {
+            padding: 1.5rem;
+            text-align: center;
+        }
+        
+        .team-info h4 {
+            font-size: 1.3rem;
+            font-weight: 700;
+            color: var(--primary-color);
+            margin-bottom: 0.5rem;
+        }
+        
+        .team-info .role {
+            color: var(--secondary-color);
+            font-weight: 600;
+            margin-bottom: 1rem;
+        }
+        
+        .team-info p {
+            font-size: 0.95rem;
+            color: var(--text-secondary);
+        }
+        
+        /* Infrastructure Section */
+        .infra-timeline {
+            margin-top: 3rem;
+            position: relative;
+        }
+        
+        .timeline-item {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 3rem;
+            margin-bottom: 3rem;
+            position: relative;
+        }
+        
+        .timeline-content {
+            background: white;
+            padding: 2rem;
+            border-radius: 16px;
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+            border-left: 4px solid var(--secondary-color);
+        }
+        
+        .timeline-content h3 {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--primary-color);
+            margin-bottom: 1rem;
+        }
+        
+        .timeline-content ul {
+            list-style: none;
+            padding: 0;
+        }
+        
+        .timeline-content ul li {
+            padding: 0.5rem 0;
+            color: var(--text-secondary);
+            display: flex;
+            align-items: flex-start;
+            gap: 0.5rem;
+        }
+        
+        .timeline-content ul li::before {
+            content: '•';
+            color: var(--accent-color);
+            font-weight: bold;
+            font-size: 1.5rem;
+            line-height: 1;
+        }
+        
+        /* Security Section */
+        #security {
+            background: var(--bg-light);
+        }
+        
+        .security-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+        
+        .security-card {
+            background: white;
+            padding: 2rem;
+            border-radius: 16px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+            border-top: 4px solid var(--accent-color);
+        }
+        
+        .security-card h4 {
+            font-size: 1.3rem;
+            font-weight: 700;
+            color: var(--primary-color);
+            margin-bottom: 1rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+        
+        .security-card p {
+            color: var(--text-secondary);
+            line-height: 1.7;
+        }
+        
+        /* Contact Section */
+        #contact {
+            background: linear-gradient(135deg, var(--primary-color) 0%, var(--dark-blue) 100%);
+            color: white;
+        }
+        
+        #contact .section-title h2,
+        #contact .section-title p {
+            color: white;
+        }
+        
+        .contact-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            margin-top: 3rem;
+        }
+        
+        .contact-info {
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+        }
+        
+        .contact-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 1.5rem;
+        }
+        
+        .contact-icon {
+            width: 60px;
+            height: 60px;
+            border-radius: 12px;
+            background: rgba(255, 255, 255, 0.1);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+        }
+        
+        .contact-icon .material-symbols-rounded {
+            font-size: 2rem;
+        }
+        
+        .contact-text h4 {
+            font-size: 1.2rem;
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+        }
+        
+        .contact-text p {
+            opacity: 0.9;
+            font-size: 1.1rem;
+        }
+        
+        .contact-form {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            padding: 2.5rem;
+            border-radius: 16px;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+        
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+        
+        .form-group label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: 600;
+        }
+        
+        .form-control {
+            width: 100%;
+            padding: 1rem;
+            border: 2px solid rgba(255, 255, 255, 0.2);
+            border-radius: 8px;
+            background: rgba(255, 255, 255, 0.1);
+            color: white;
+            font-size: 1rem;
+            transition: all 0.3s ease;
+        }
+        
+        .form-control::placeholder {
+            color: rgba(255, 255, 255, 0.6);
+        }
+        
+        .form-control:focus {
+            outline: none;
+            border-color: white;
+            background: rgba(255, 255, 255, 0.15);
+        }
+        
+        textarea.form-control {
+            resize: vertical;
+            min-height: 150px;
+        }
+        
+        .btn-submit {
+            width: 100%;
+            padding: 1rem 2rem;
+            background: white;
+            color: var(--primary-color);
+            border: none;
+            border-radius: 50px;
+            font-size: 1.1rem;
+            font-weight: 700;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        
+        .btn-submit:hover {
+            background: var(--light-blue);
+            transform: translateY(-2px);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+        }
+        
+        /* Footer */
+        footer {
+            background: var(--dark-blue);
+            color: white;
+            padding: 3rem 0 1.5rem;
+            text-align: center;
+        }
+        
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 3rem;
+            margin-bottom: 2rem;
+            text-align: left;
+        }
+        
+        .footer-section h3 {
+            font-size: 1.3rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+        }
+        
+        .footer-section p,
+        .footer-section a {
+            color: rgba(255, 255, 255, 0.8);
+            text-decoration: none;
+            display: block;
+            margin-bottom: 0.5rem;
+            transition: all 0.3s ease;
+        }
+        
+        .footer-section a:hover {
+            color: white;
+            padding-left: 5px;
+        }
+        
+        .footer-bottom {
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            padding-top: 1.5rem;
+            margin-top: 2rem;
+        }
+        
+        /* Responsive */
+        @media (max-width: 991px) {
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+            
+            .hero .lead {
+                font-size: 1.2rem;
+            }
+            
+            .about-grid,
+            .contact-grid,
+            .timeline-item {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+            
+            .section-title h2 {
+                font-size: 2.2rem;
+            }
+            
+            .about-features {
+                grid-template-columns: 1fr;
+            }
+        }
+        
+        @media (max-width: 767px) {
+            .hero h1 {
+                font-size: 2rem;
+            }
+            
+            section {
+                padding: 60px 0;
+            }
+            
+            .hero-buttons {
+                flex-direction: column;
+            }
+            
+            .btn-hero {
+                width: 100%;
+                justify-content: center;
+            }
+            
+            .navbar-brand img {
+                height: 40px;
+            }
+        }
+        
+        /* Scroll behavior */
+        html {
+            scroll-behavior: smooth;
+        }
+        
+        /* Animation */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        .animate-in {
+            animation: fadeInUp 0.8s ease-out;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#home">
+                <img src="logo-HK-1024x810.png" alt="Link Tech Logo">
+                <span>Link Tech</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#home">Trang chủ</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">Giới thiệu</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#services">Dịch vụ</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#technology">Công nghệ</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#team">Đội ngũ</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#infrastructure">Hạ tầng</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#security">Bảo mật</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Liên hệ</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-7 hero-content">
+                    <h1 class="animate-in">Giải pháp Phần mềm<br>Doanh nghiệp Tiên tiến</h1>
+                    <p class="lead animate-in">
+                        Chúng tôi xây dựng nền tảng công nghệ đẳng cấp thế giới, giúp doanh nghiệp chuyển đổi số toàn diện với kiến trúc SaaS hiện đại, AI tiên tiến và bảo mật tuyệt đối.
+                    </p>
+                    <div class="hero-buttons animate-in">
+                        <a href="#contact" class="btn btn-hero btn-hero-primary">
+                            <span>Bắt đầu ngay</span>
+                            <span class="material-symbols-rounded">arrow_forward</span>
+                        </a>
+                        <a href="#about" class="btn btn-hero btn-hero-secondary">
+                            <span>Tìm hiểu thêm</span>
+                            <span class="material-symbols-rounded">info</span>
+                        </a>
+                    </div>
+                    
+                    <div class="hero-stats">
+                        <div class="stat-item">
+                            <div class="stat-number">10+</div>
+                            <div class="stat-label">Năm kinh nghiệm</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">100+</div>
+                            <div class="stat-label">Dự án hoàn thành</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">50+</div>
+                            <div class="stat-label">Khách hàng tin tưởng</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">99.9%</div>
+                            <div class="stat-label">Uptime SLA</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <div class="container">
+            <div class="section-title">
+                <h2>Về chúng tôi</h2>
+                <p>Link Tech - Đối tác công nghệ đáng tin cậy cho doanh nghiệp hiện đại</p>
+            </div>
+            
+            <div class="about-grid">
+                <div class="about-content">
+                    <h3>Sứ mệnh & Tầm nhìn</h3>
+                    <p>
+                        Link Tech được thành lập với sứ mệnh mang công nghệ đẳng cấp quốc tế đến với doanh nghiệp Việt Nam. Chúng tôi tin rằng mọi doanh nghiệp đều xứng đáng có được hạ tầng công nghệ mạnh mẽ, bảo mật và có khả năng mở rộng như các tập đoàn lớn trên thế giới.
+                    </p>
+                    <p>
+                        Với đội ngũ chuyên gia dày dặn kinh nghiệm từ các tập đoàn công nghệ hàng đầu, chúng tôi áp dụng best practices từ Google, Amazon, Microsoft vào từng dự án, đảm bảo chất lượng cao nhất cho khách hàng.
+                    </p>
+                    <p>
+                        Tầm nhìn của chúng tôi là trở thành nhà cung cấp giải pháp phần mềm SaaS hàng đầu Việt Nam trong 10 năm tới, góp phần thúc đẩy chuyển đổi số quốc gia.
+                    </p>
+                </div>
+                
+                <div class="about-features">
+                    <div class="feature-item">
+                        <div class="feature-icon">
+                            <span class="material-symbols-rounded">rocket_launch</span>
+                        </div>
+                        <div class="feature-text">
+                            <h4>Đổi mới sáng tạo</h4>
+                            <p>Ứng dụng công nghệ AI, Machine Learning, Automation tiên tiến nhất</p>
+                        </div>
+                    </div>
+                    
+                    <div class="feature-item">
+                        <div class="feature-icon">
+                            <span class="material-symbols-rounded">verified</span>
+                        </div>
+                        <div class="feature-text">
+                            <h4>Chất lượng đảm bảo</h4>
+                            <p>Quy trình DevOps chuẩn quốc tế, kiểm thử tự động 100%</p>
+                        </div>
+                    </div>
+                    
+                    <div class="feature-item">
+                        <div class="feature-icon">
+                            <span class="material-symbols-rounded">security</span>
+                        </div>
+                        <div class="feature-text">
+                            <h4>Bảo mật tuyệt đối</h4>
+                            <p>Tuân thủ chuẩn OWASP, ISO 27001, SOC 2</p>
+                        </div>
+                    </div>
+                    
+                    <div class="feature-item">
+                        <div class="feature-icon">
+                            <span class="material-symbols-rounded">support_agent</span>
+                        </div>
+                        <div class="feature-text">
+                            <h4>Hỗ trợ 24/7</h4>
+                            <p>Đội ngũ kỹ thuật sẵn sàng hỗ trợ mọi lúc mọi nơi</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services">
+        <div class="container">
+            <div class="section-title">
+                <h2>Dịch vụ & Giải pháp</h2>
+                <p>4 hướng phát triển chiến lược đáp ứng mọi nhu cầu doanh nghiệp</p>
+            </div>
+            
+            <div class="service-cards">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <span class="material-symbols-rounded">code</span>
+                    </div>
+                    <h3>Phát triển Phần mềm</h3>
+                    <p>Phát triển ứng dụng custom theo yêu cầu với công nghệ hiện đại nhất</p>
+                    <ul>
+                        <li>Web Application (React, Vue, Angular)</li>
+                        <li>Mobile App (iOS, Android, Flutter)</li>
+                        <li>Backend API (Node.js, Python, Java)</li>
+                        <li>Microservices Architecture</li>
+                        <li>Cloud Native Development</li>
+                    </ul>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <span class="material-symbols-rounded">workspace_premium</span>
+                    </div>
+                    <h3>SaaS Platform: HKSpace</h3>
+                    <p>Nền tảng quản lý doanh nghiệp toàn diện, linh hoạt và có khả năng mở rộng</p>
+                    <ul>
+                        <li>Todo & Task Management Engine</li>
+                        <li>Workflow Automation (SOP)</li>
+                        <li>Multi-tenant Architecture</li>
+                        <li>Real-time Collaboration</li>
+                        <li>Advanced Analytics Dashboard</li>
+                    </ul>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <span class="material-symbols-rounded">web</span>
+                    </div>
+                    <h3>Website Development</h3>
+                    <p>Thiết kế và phát triển website chuyên nghiệp, chuẩn SEO</p>
+                    <ul>
+                        <li>Corporate Website</li>
+                        <li>E-commerce Platform</li>
+                        <li>Landing Page Optimization</li>
+                        <li>CMS Integration (WordPress, Strapi)</li>
+                        <li>Performance & SEO Optimization</li>
+                    </ul>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <span class="material-symbols-rounded">psychology</span>
+                    </div>
+                    <h3>AI Knowledge Platform</h3>
+                    <p>Nền tảng tri thức thông minh với AI, RAG và Machine Learning</p>
+                    <ul>
+                        <li>Natural Language Processing (NLP)</li>
+                        <li>Retrieval-Augmented Generation (RAG)</li>
+                        <li>Vector Database & Semantic Search</li>
+                        <li>Custom LLM Integration</li>
+                        <li>Knowledge Graph & Analytics</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Technology Stack -->
+    <section id="technology">
+        <div class="container">
+            <div class="section-title">
+                <h2>Công nghệ & Nền tảng</h2>
+                <p>Stack công nghệ hiện đại, đáp ứng mọi yêu cầu về hiệu năng và bảo mật</p>
+            </div>
+            
+            <div class="tech-categories">
+                <div class="tech-category">
+                    <h3><span class="material-symbols-rounded">devices</span> Frontend & UI/UX</h3>
+                    <div class="tech-tags">
+                        <span class="tech-tag">React.js</span>
+                        <span class="tech-tag">Vue.js</span>
+                        <span class="tech-tag">Next.js</span>
+                        <span class="tech-tag">TypeScript</span>
+                        <span class="tech-tag">TailwindCSS</span>
+                        <span class="tech-tag">Material UI</span>
+                        <span class="tech-tag">Figma</span>
+                        <span class="tech-tag">Responsive Design</span>
+                    </div>
+                </div>
+                
+                <div class="tech-category">
+                    <h3><span class="material-symbols-rounded">storage</span> Backend & API</h3>
+                    <div class="tech-tags">
+                        <span class="tech-tag">Node.js</span>
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">FastAPI</span>
+                        <span class="tech-tag">NestJS</span>
+                        <span class="tech-tag">GraphQL</span>
+                        <span class="tech-tag">gRPC</span>
+                        <span class="tech-tag">RESTful API</span>
+                        <span class="tech-tag">Microservices</span>
+                    </div>
+                </div>
+                
+                <div class="tech-category">
+                    <h3><span class="material-symbols-rounded">database</span> Database & Storage</h3>
+                    <div class="tech-tags">
+                        <span class="tech-tag">PostgreSQL</span>
+                        <span class="tech-tag">MongoDB</span>
+                        <span class="tech-tag">Redis</span>
+                        <span class="tech-tag">Elasticsearch</span>
+                        <span class="tech-tag">DynamoDB</span>
+                        <span class="tech-tag">Vector DB (Pinecone)</span>
+                        <span class="tech-tag">TimescaleDB</span>
+                        <span class="tech-tag">S3</span>
+                    </div>
+                </div>
+                
+                <div class="tech-category">
+                    <h3><span class="material-symbols-rounded">cloud</span> Cloud & Infrastructure</h3>
+                    <div class="tech-tags">
+                        <span class="tech-tag">AWS</span>
+                        <span class="tech-tag">Google Cloud</span>
+                        <span class="tech-tag">Azure</span>
+                        <span class="tech-tag">Kubernetes</span>
+                        <span class="tech-tag">Docker</span>
+                        <span class="tech-tag">Terraform</span>
+                        <span class="tech-tag">CI/CD (GitHub Actions)</span>
+                        <span class="tech-tag">CloudFlare</span>
+                    </div>
+                </div>
+                
+                <div class="tech-category">
+                    <h3><span class="material-symbols-rounded">smart_toy</span> AI & Machine Learning</h3>
+                    <div class="tech-tags">
+                        <span class="tech-tag">OpenAI GPT-4</span>
+                        <span class="tech-tag">LangChain</span>
+                        <span class="tech-tag">HuggingFace</span>
+                        <span class="tech-tag">TensorFlow</span>
+                        <span class="tech-tag">PyTorch</span>
+                        <span class="tech-tag">RAG Systems</span>
+                        <span class="tech-tag">Embedding Models</span>
+                        <span class="tech-tag">Prompt Engineering</span>
+                    </div>
+                </div>
+                
+                <div class="tech-category">
+                    <h3><span class="material-symbols-rounded">monitor_heart</span> DevOps & Monitoring</h3>
+                    <div class="tech-tags">
+                        <span class="tech-tag">Prometheus</span>
+                        <span class="tech-tag">Grafana</span>
+                        <span class="tech-tag">DataDog</span>
+                        <span class="tech-tag">ELK Stack</span>
+                        <span class="tech-tag">Jaeger Tracing</span>
+                        <span class="tech-tag">SonarQube</span>
+                        <span class="tech-tag">GitOps</span>
+                        <span class="tech-tag">Chaos Engineering</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <section id="team">
+        <div class="container">
+            <div class="section-title">
+                <h2>Đội ngũ chuyên gia</h2>
+                <p>Những con người tài năng, tận tâm và đam mê công nghệ</p>
+            </div>
+            
+            <div class="team-grid">
+                <div class="team-member">
+                    <div class="team-photo">
+                        <span class="material-symbols-rounded">person</span>
+                    </div>
+                    <div class="team-info">
+                        <h4>Nguyễn Văn A</h4>
+                        <div class="role">Chief Technology Officer</div>
+                        <p>15+ năm kinh nghiệm kiến trúc hệ thống quy mô lớn, từng làm việc tại các công ty Fortune 500.</p>
+                    </div>
+                </div>
+                
+                <div class="team-member">
+                    <div class="team-photo" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);">
+                        <span class="material-symbols-rounded">person</span>
+                    </div>
+                    <div class="team-info">
+                        <h4>Trần Thị B</h4>
+                        <div class="role">Lead AI Engineer</div>
+                        <p>Chuyên gia AI với 10+ năm nghiên cứu NLP, Machine Learning và Deep Learning.</p>
+                    </div>
+                </div>
+                
+                <div class="team-member">
+                    <div class="team-photo" style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);">
+                        <span class="material-symbols-rounded">person</span>
+                    </div>
+                    <div class="team-info">
+                        <h4>Lê Văn C</h4>
+                        <div class="role">Senior DevOps Architect</div>
+                        <p>Chuyên gia DevOps với kinh nghiệm triển khai hệ thống cho 10M+ users, AWS Certified Solutions Architect.</p>
+                    </div>
+                </div>
+                
+                <div class="team-member">
+                    <div class="team-photo" style="background: linear-gradient(135deg, #fa709a 0%, #fee140 100%);">
+                        <span class="material-symbols-rounded">person</span>
+                    </div>
+                    <div class="team-info">
+                        <h4>Phạm Thị D</h4>
+                        <div class="role">Lead Security Engineer</div>
+                        <p>Chuyên gia bảo mật với chứng chỉ CISSP, CEH, từng làm việc tại các công ty fintech hàng đầu.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Infrastructure Section -->
+    <section id="infrastructure">
+        <div class="container">
+            <div class="section-title">
+                <h2>Hạ tầng & Khả năng mở rộng</h2>
+                <p>Kiến trúc hạ tầng chuẩn enterprise, sẵn sàng scale từ 0 đến 10M+ users</p>
+            </div>
+            
+            <div class="infra-timeline">
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <h3>0-100 Users (MVP Phase)</h3>
+                        <ul>
+                            <li>Single VM deployment với auto-backup</li>
+                            <li>PostgreSQL monolithic database</li>
+                            <li>Cost: $50-200/tháng</li>
+                            <li>Thời gian deploy: 1-2 tuần</li>
+                        </ul>
+                    </div>
+                    <div class="timeline-content">
+                        <h3>100-2K Users (Growth)</h3>
+                        <ul>
+                            <li>Load balancer + 2-4 app servers</li>
+                            <li>Database replication (Primary + Read Replica)</li>
+                            <li>Auto-scaling, health checks</li>
+                            <li>Cost: $300-800/tháng</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <h3>2K-10K Users (Scale Phase)</h3>
+                        <ul>
+                            <li>Multi-AZ deployment (8-16 servers)</li>
+                            <li>Redis cache layer cho session/hot data</li>
+                            <li>PITR backup, RTO 1-2 phút</li>
+                            <li>Cost: $2K-5K/tháng</li>
+                        </ul>
+                    </div>
+                    <div class="timeline-content">
+                        <h3>10K-100K Users (Enterprise)</h3>
+                        <ul>
+                            <li>Kubernetes cluster multi-region</li>
+                            <li>Microservices architecture</li>
+                            <li>Database sharding, message queue (Kafka)</li>
+                            <li>Cost: $15K-40K/tháng</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <h3>100K-1M Users (Global Scale)</h3>
+                        <ul>
+                            <li>CDN global (CloudFront/Akamai)</li>
+                            <li>Active-active multi-region setup</li>
+                            <li>Geo-sharding, event sourcing</li>
+                            <li>99.99% SLA, Cost: $100K-300K/tháng</li>
+                        </ul>
+                    </div>
+                    <div class="timeline-content">
+                        <h3>1M+ Users (Hyperscale)</h3>
+                        <ul>
+                            <li>Service mesh (Istio), gRPC communication</li>
+                            <li>Distributed SQL (CockroachDB/Vitess)</li>
+                            <li>99.999% SLA (5-nines uptime)</li>
+                            <li>Cost: $500K-2M/tháng</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="mt-5 text-center">
+                <h3 style="color: var(--primary-color); margin-bottom: 1.5rem;">Best Practices từ Big Tech</h3>
+                <div class="row g-4">
+                    <div class="col-md-4">
+                        <div class="timeline-content">
+                            <h4>Google Cloud Platform</h4>
+                            <p>Kubernetes-first, multi-region active-active, BigTable scaling, 99.99% SLA by design</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="timeline-content">
+                            <h4>Amazon Web Services</h4>
+                            <p>Well-architected framework, auto-scaling groups, RDS enhanced monitoring, elasticity</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="timeline-content">
+                            <h4>Microsoft Azure</h4>
+                            <p>Traffic Manager routing, Cosmos DB multi-master, App Service auto-heal capabilities</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Security Section -->
+    <section id="security">
+        <div class="container">
+            <div class="section-title">
+                <h2>Bảo mật & Tuân thủ</h2>
+                <p>An toàn thông tin ở mức độ cao nhất, tuân thủ các chuẩn quốc tế</p>
+            </div>
+            
+            <div class="security-grid">
+                <div class="security-card">
+                    <h4>
+                        <span class="material-symbols-rounded">shield</span>
+                        Authentication & Authorization
+                    </h4>
+                    <p>
+                        <strong>MFA/WebAuthn:</strong> Multi-factor authentication, passwordless login<br>
+                        <strong>RBAC/ABAC:</strong> Role & Attribute-based access control<br>
+                        <strong>SSO:</strong> SAML, OIDC, OAuth2 integration<br>
+                        <strong>Session:</strong> Short-lived tokens, rotation, revocation
+                    </p>
+                </div>
+                
+                <div class="security-card">
+                    <h4>
+                        <span class="material-symbols-rounded">encrypted</span>
+                        Data Protection
+                    </h4>
+                    <p>
+                        <strong>Encryption:</strong> TLS 1.3, AES-256 at rest<br>
+                        <strong>Key Management:</strong> AWS KMS, key rotation<br>
+                        <strong>Field-level:</strong> Tokenization cho PII data<br>
+                        <strong>Backup:</strong> Encrypted backups, isolated storage
+                    </p>
+                </div>
+                
+                <div class="security-card">
+                    <h4>
+                        <span class="material-symbols-rounded">security</span>
+                        Application Security
+                    </h4>
+                    <p>
+                        <strong>Input Validation:</strong> OWASP ASVS compliance<br>
+                        <strong>SQL Injection:</strong> Prepared statements, ORM<br>
+                        <strong>XSS/CSRF:</strong> CSP, SameSite cookies, tokens<br>
+                        <strong>WAF:</strong> Web Application Firewall, rate limiting
+                    </p>
+                </div>
+                
+                <div class="security-card">
+                    <h4>
+                        <span class="material-symbols-rounded">router</span>
+                        Network Security
+                    </h4>
+                    <p>
+                        <strong>Zero Trust:</strong> BeyondCorp model, private subnets<br>
+                        <strong>VPC:</strong> Security groups, NACLs, peering<br>
+                        <strong>DDoS Protection:</strong> CloudFlare, AWS Shield<br>
+                        <strong>Firewall:</strong> Next-gen firewall, IDS/IPS
+                    </p>
+                </div>
+                
+                <div class="security-card">
+                    <h4>
+                        <span class="material-symbols-rounded">monitor_heart</span>
+                        Detection & Response
+                    </h4>
+                    <p>
+                        <strong>SIEM:</strong> Centralized logging, 90+ days retention<br>
+                        <strong>UEBA:</strong> User behavior analytics, anomaly detection<br>
+                        <strong>Incident:</strong> 24/7 on-call, runbooks, playbooks<br>
+                        <strong>Drills:</strong> Tabletop exercises, chaos testing
+                    </p>
+                </div>
+                
+                <div class="security-card">
+                    <h4>
+                        <span class="material-symbols-rounded">gavel</span>
+                        Compliance & Privacy
+                    </h4>
+                    <p>
+                        <strong>Standards:</strong> ISO 27001, SOC 2, PCI DSS<br>
+                        <strong>GDPR/CCPA:</strong> Data privacy, consent management<br>
+                        <strong>Audit:</strong> Complete audit trails, evidence automation<br>
+                        <strong>DPIA:</strong> Data protection impact assessments
+                    </p>
+                </div>
+            </div>
+            
+            <div class="mt-5 text-center">
+                <h3 style="color: var(--primary-color); margin-bottom: 1.5rem;">Security Best Practices</h3>
+                <div class="row g-4">
+                    <div class="col-md-3">
+                        <div class="security-card">
+                            <h5>Google</h5>
+                            <p>BeyondCorp Zero Trust, Binary Authorization, VPC-SC, Cloud Armor</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="security-card">
+                            <h5>AWS</h5>
+                            <p>IAM least privilege, GuardDuty, Security Hub, WAF + Shield</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="security-card">
+                            <h5>Microsoft</h5>
+                            <p>Defender XDR, Azure Policy, Key Vault, Conditional Access</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="security-card">
+                            <h5>Netflix</h5>
+                            <p>Security Monkey, Chaos engineering, risk-based authz</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <div class="container">
+            <div class="section-title">
+                <h2>Liên hệ với chúng tôi</h2>
+                <p>Hãy để chúng tôi giúp bạn hiện thực hóa ý tưởng công nghệ</p>
+            </div>
+            
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <span class="material-symbols-rounded">location_on</span>
+                        </div>
+                        <div class="contact-text">
+                            <h4>Địa chỉ</h4>
+                            <p>Tầng 12, Tòa nhà A, Đường ABC<br>Quận 1, TP. Hồ Chí Minh</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <span class="material-symbols-rounded">phone</span>
+                        </div>
+                        <div class="contact-text">
+                            <h4>Điện thoại</h4>
+                            <p>+84 (028) 1234 5678<br>+84 901 234 567</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <span class="material-symbols-rounded">email</span>
+                        </div>
+                        <div class="contact-text">
+                            <h4>Email</h4>
+                            <p>info@linktech.vn<br>sales@linktech.vn</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <span class="material-symbols-rounded">schedule</span>
+                        </div>
+                        <div class="contact-text">
+                            <h4>Giờ làm việc</h4>
+                            <p>Thứ 2 - Thứ 6: 8:00 - 18:00<br>Thứ 7: 8:00 - 12:00</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <form class="contact-form" id="contactForm">
+                    <div class="form-group">
+                        <label for="name">Họ và tên *</label>
+                        <input type="text" id="name" class="form-control" placeholder="Nguyễn Văn A" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">Email *</label>
+                        <input type="email" id="email" class="form-control" placeholder="email@example.com" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="phone">Số điện thoại</label>
+                        <input type="tel" id="phone" class="form-control" placeholder="0901234567">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="message">Nội dung *</label>
+                        <textarea id="message" class="form-control" placeholder="Mô tả dự án hoặc yêu cầu của bạn..." required></textarea>
+                    </div>
+                    
+                    <button type="submit" class="btn-submit">
+                        Gửi yêu cầu
+                        <span class="material-symbols-rounded" style="vertical-align: middle;">send</span>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Về Link Tech</h3>
+                    <p>
+                        Công ty công nghệ hàng đầu chuyên cung cấp giải pháp phần mềm doanh nghiệp, 
+                        SaaS platform và AI knowledge systems.
+                    </p>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Dịch vụ</h3>
+                    <a href="#services">Phát triển Phần mềm</a>
+                    <a href="#services">SaaS Platform</a>
+                    <a href="#services">Website Development</a>
+                    <a href="#services">AI Knowledge Platform</a>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Công nghệ</h3>
+                    <a href="#technology">Cloud Infrastructure</a>
+                    <a href="#technology">AI & Machine Learning</a>
+                    <a href="#technology">DevOps & Security</a>
+                    <a href="#technology">Microservices</a>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Liên kết</h3>
+                    <a href="#about">Giới thiệu</a>
+                    <a href="#team">Đội ngũ</a>
+                    <a href="#contact">Liên hệ</a>
+                    <a href="#">Tuyển dụng</a>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2026 Link Tech. All rights reserved. | Designed with passion for technology excellence.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- Custom JS -->
+    <script>
+        // Navbar scroll effect
+        window.addEventListener('scroll', function() {
+            const navbar = document.querySelector('.navbar');
+            if (window.scrollY > 50) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+        });
+        
+        // Active nav link on scroll
+        const sections = document.querySelectorAll('section[id]');
+        const navLinks = document.querySelectorAll('.nav-link');
+        
+        window.addEventListener('scroll', () => {
+            let current = '';
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                const sectionHeight = section.clientHeight;
+                if (pageYOffset >= sectionTop - 200) {
+                    current = section.getAttribute('id');
+                }
+            });
+            
+            navLinks.forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href').slice(1) === current) {
+                    link.classList.add('active');
+                }
+            });
+        });
+        
+        // Smooth scroll for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                    
+                    // Close mobile menu if open
+                    const navbarCollapse = document.querySelector('.navbar-collapse');
+                    if (navbarCollapse.classList.contains('show')) {
+                        const bsCollapse = new bootstrap.Collapse(navbarCollapse);
+                        bsCollapse.hide();
+                    }
+                }
+            });
+        });
+        
+        // Form submission
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // Get form data
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const phone = document.getElementById('phone').value;
+            const message = document.getElementById('message').value;
+            
+            // Here you would typically send this to your backend
+            console.log('Form submitted:', { name, email, phone, message });
+            
+            // Show success message
+            alert('Cảm ơn bạn đã liên hệ! Chúng tôi sẽ phản hồi trong thời gian sớm nhất.');
+            
+            // Reset form
+            this.reset();
+        });
+        
+        // Animate elements on scroll
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -100px 0px'
+        };
+        
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, observerOptions);
+        
+        // Observe all sections
+        document.querySelectorAll('section').forEach(section => {
+            section.style.opacity = '0';
+            section.style.transform = 'translateY(30px)';
+            section.style.transition = 'opacity 0.8s ease, transform 0.8s ease';
+            observer.observe(section);
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,1480 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="HKIncotech - Phát triển phần mềm doanh nghiệp theo quy trình SCRUM">
+    <title>HKIncotech - Scrum-based Software Development</title>
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            --primary: #0f6b9e;
+            --primary-light: #1a8fb8;
+            --primary-dark: #0a4a6b;
+            --secondary: #f0f4f8;
+            --text-dark: #1a202c;
+            --text-gray: #4a5568;
+            --text-light: #718096;
+            --border: #e2e8f0;
+            --accent: #059669;
+            --accent-light: #d1fae5;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        html {
+            scroll-behavior: smooth;
+        }
+        
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            background: #ffffff;
+            color: var(--text-dark);
+            line-height: 1.6;
+        }
+        
+        .material-symbols-rounded {
+            font-variation-settings: 'FILL' 0, 'wght' 500, 'GRAD' 0, 'opsz' 48;
+        }
+        
+        /* Header */
+        header {
+            background: #ffffff;
+            border-bottom: 1px solid var(--border);
+            padding: 1.25rem 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        
+        .header-container {
+            max-width: 1280px;
+            margin: 0 auto;
+            padding: 0 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            font-weight: 700;
+            font-size: 1.25rem;
+            color: var(--primary);
+        }
+        
+        .logo img {
+            height: 45px;
+            width: auto;
+        }
+        
+        nav {
+            display: flex;
+            gap: 2rem;
+            align-items: center;
+        }
+        
+        nav a {
+            color: var(--text-gray);
+            text-decoration: none;
+            font-size: 0.95rem;
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+        
+        nav a:hover {
+            color: var(--primary);
+        }
+        
+        nav a.active {
+            color: var(--primary);
+            border-bottom: 2px solid var(--primary);
+            padding-bottom: 0.5rem;
+        }
+        
+        .btn-header {
+            background: var(--primary);
+            color: white;
+            padding: 0.625rem 1.5rem;
+            border-radius: 6px;
+            border: none;
+            cursor: pointer;
+            font-weight: 600;
+            transition: background 0.3s ease;
+            text-decoration: none;
+        }
+        
+        .btn-header:hover {
+            background: var(--primary-dark);
+            color: white;
+        }
+        
+        /* Hero */
+        .hero {
+            min-height: 85vh;
+            display: flex;
+            align-items: center;
+            padding: 6rem 2rem;
+            background: linear-gradient(135deg, #ffffff 0%, var(--secondary) 100%);
+        }
+        
+        .hero-container {
+            max-width: 1280px;
+            margin: 0 auto;
+            width: 100%;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: center;
+        }
+        
+        .hero-content h1 {
+            font-size: 3.5rem;
+            font-weight: 800;
+            line-height: 1.15;
+            margin-bottom: 1.5rem;
+            color: var(--text-dark);
+        }
+        
+        .hero-content h1 .highlight {
+            color: var(--primary);
+        }
+        
+        .hero-content p {
+            font-size: 1.125rem;
+            color: var(--text-gray);
+            margin-bottom: 2rem;
+            line-height: 1.8;
+        }
+        
+        .hero-buttons {
+            display: flex;
+            gap: 1rem;
+            margin-bottom: 3rem;
+        }
+        
+        .btn-primary-v4 {
+            background: var(--primary);
+            color: white;
+            padding: 0.875rem 2.5rem;
+            border-radius: 6px;
+            border: none;
+            cursor: pointer;
+            font-weight: 600;
+            font-size: 1rem;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+        
+        .btn-primary-v4:hover {
+            background: var(--primary-dark);
+            transform: translateY(-2px);
+            box-shadow: 0 10px 20px rgba(15, 107, 158, 0.15);
+        }
+        
+        .btn-secondary-v4 {
+            background: white;
+            color: var(--primary);
+            padding: 0.875rem 2.5rem;
+            border-radius: 6px;
+            border: 2px solid var(--primary);
+            cursor: pointer;
+            font-weight: 600;
+            font-size: 1rem;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+        
+        .btn-secondary-v4:hover {
+            background: var(--primary);
+            color: white;
+        }
+        
+        .hero-stats {
+            display: flex;
+            gap: 2.5rem;
+            margin-top: 3rem;
+            padding-top: 2rem;
+            border-top: 1px solid var(--border);
+        }
+        
+        .stat {
+            flex: 1;
+        }
+        
+        .stat-number {
+            font-size: 2rem;
+            font-weight: 800;
+            color: var(--primary);
+        }
+        
+        .stat-label {
+            font-size: 0.9rem;
+            color: var(--text-gray);
+            margin-top: 0.25rem;
+        }
+        
+        .hero-visual {
+            background: white;
+            border-radius: 12px;
+            padding: 2rem;
+            border: 1px solid var(--border);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 400px;
+        }
+        
+        .hero-visual svg {
+            max-width: 100%;
+            height: auto;
+        }
+        
+        /* Container */
+        .container-v4 {
+            max-width: 1280px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+        
+        section {
+            padding: 5rem 0;
+        }
+        
+        .section-header {
+            margin-bottom: 3rem;
+            text-align: center;
+        }
+        
+        .section-title {
+            font-size: 2.75rem;
+            font-weight: 800;
+            color: var(--text-dark);
+            margin-bottom: 1rem;
+        }
+        
+        .section-subtitle {
+            font-size: 1.1rem;
+            color: var(--text-gray);
+            max-width: 700px;
+            margin: 0 auto;
+        }
+        
+        /* SCRUM Process */
+        .scrum-process {
+            background: var(--secondary);
+        }
+        
+        .process-flow {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 1.5rem;
+            margin-top: 3rem;
+        }
+        
+        .process-step {
+            background: white;
+            border-radius: 12px;
+            padding: 2.5rem 2rem;
+            border: 2px solid transparent;
+            transition: all 0.3s ease;
+            position: relative;
+            text-align: center;
+        }
+        
+        .process-step::before {
+            content: '';
+            position: absolute;
+            top: -2px;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: var(--primary);
+            border-radius: 12px 12px 0 0;
+            transform: scaleX(0);
+            transform-origin: left;
+            transition: transform 0.3s ease;
+        }
+        
+        .process-step:hover::before {
+            transform: scaleX(1);
+        }
+        
+        .process-step:hover {
+            border-color: var(--border);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+        }
+        
+        .step-number {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 50px;
+            height: 50px;
+            background: var(--primary);
+            color: white;
+            border-radius: 50%;
+            font-weight: 800;
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+        }
+        
+        .step-icon {
+            font-size: 2.5rem;
+            color: var(--primary);
+            margin: 1rem 0;
+        }
+        
+        .process-step h3 {
+            font-size: 1.2rem;
+            font-weight: 700;
+            color: var(--text-dark);
+            margin-bottom: 0.75rem;
+        }
+        
+        .process-step p {
+            font-size: 0.95rem;
+            color: var(--text-gray);
+            line-height: 1.6;
+        }
+        
+        /* Scrum Details */
+        .scrum-details {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: center;
+            margin-top: 3rem;
+        }
+        
+        .scrum-visual {
+            background: var(--secondary);
+            border-radius: 12px;
+            padding: 2rem;
+            border: 1px solid var(--border);
+        }
+        
+        .scrum-list {
+            list-style: none;
+        }
+        
+        .scrum-list li {
+            padding: 1.25rem 0;
+            border-bottom: 1px solid var(--border);
+            display: flex;
+            gap: 1rem;
+            align-items: flex-start;
+        }
+        
+        .scrum-list li:last-child {
+            border-bottom: none;
+        }
+        
+        .scrum-list li::before {
+            content: '✓';
+            color: var(--accent);
+            font-weight: 800;
+            font-size: 1.5rem;
+            flex-shrink: 0;
+        }
+        
+        .scrum-list li strong {
+            color: var(--text-dark);
+            display: block;
+            margin-bottom: 0.25rem;
+        }
+        
+        .scrum-list li span {
+            color: var(--text-gray);
+            font-size: 0.95rem;
+        }
+        
+        /* Client Journey */
+        .client-journey {
+            background: white;
+        }
+        
+        .journey-timeline {
+            position: relative;
+            margin-top: 3rem;
+        }
+        
+        .journey-timeline::before {
+            content: '';
+            position: absolute;
+            left: 50%;
+            top: 0;
+            bottom: 0;
+            width: 2px;
+            background: var(--border);
+            transform: translateX(-50%);
+        }
+        
+        .journey-item {
+            margin-bottom: 3rem;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2rem;
+            align-items: center;
+        }
+        
+        .journey-item:nth-child(even) {
+            direction: rtl;
+        }
+        
+        .journey-item:nth-child(even) > div {
+            direction: ltr;
+        }
+        
+        .journey-dot {
+            position: relative;
+            z-index: 2;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .journey-dot::before {
+            content: '';
+            width: 24px;
+            height: 24px;
+            background: var(--primary);
+            border: 4px solid white;
+            border-radius: 50%;
+            box-shadow: 0 0 0 2px var(--border);
+        }
+        
+        .journey-content {
+            background: var(--secondary);
+            padding: 2rem;
+            border-radius: 12px;
+            border: 1px solid var(--border);
+        }
+        
+        .journey-content h3 {
+            font-size: 1.3rem;
+            font-weight: 700;
+            color: var(--text-dark);
+            margin-bottom: 0.75rem;
+        }
+        
+        .journey-content p {
+            color: var(--text-gray);
+            font-size: 0.95rem;
+            line-height: 1.7;
+            margin-bottom: 1rem;
+        }
+        
+        .journey-features {
+            list-style: none;
+            font-size: 0.9rem;
+            color: var(--text-gray);
+        }
+        
+        .journey-features li {
+            padding: 0.5rem 0;
+            padding-left: 1.5rem;
+            position: relative;
+        }
+        
+        .journey-features li::before {
+            content: '→';
+            position: absolute;
+            left: 0;
+            color: var(--primary);
+            font-weight: bold;
+        }
+        
+        /* Why HKIncotech */
+        .why-section {
+            background: var(--secondary);
+        }
+        
+        .why-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+        
+        .why-card {
+            background: white;
+            padding: 2rem;
+            border-radius: 12px;
+            border: 1px solid var(--border);
+            transition: all 0.3s ease;
+        }
+        
+        .why-card:hover {
+            border-color: var(--primary);
+            box-shadow: 0 10px 25px rgba(15, 107, 158, 0.1);
+            transform: translateY(-4px);
+        }
+        
+        .why-card-icon {
+            font-size: 2.5rem;
+            color: var(--primary);
+            margin-bottom: 1rem;
+        }
+        
+        .why-card h3 {
+            font-size: 1.1rem;
+            font-weight: 700;
+            color: var(--text-dark);
+            margin-bottom: 0.75rem;
+        }
+        
+        .why-card p {
+            color: var(--text-gray);
+            font-size: 0.95rem;
+            line-height: 1.6;
+        }
+        
+        /* Pricing Section */
+        .pricing-section {
+            background: white;
+        }
+        
+        .pricing-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+        
+        .pricing-card {
+            background: white;
+            border: 2px solid var(--border);
+            border-radius: 12px;
+            padding: 2.5rem;
+            transition: all 0.3s ease;
+            position: relative;
+        }
+        
+        .pricing-card.featured {
+            border-color: var(--primary);
+            transform: scale(1.05);
+            box-shadow: 0 20px 40px rgba(15, 107, 158, 0.15);
+        }
+        
+        .pricing-badge {
+            position: absolute;
+            top: -12px;
+            right: 1rem;
+            background: var(--primary);
+            color: white;
+            padding: 0.5rem 1rem;
+            border-radius: 50px;
+            font-size: 0.8rem;
+            font-weight: 700;
+        }
+        
+        .pricing-card:hover {
+            border-color: var(--primary);
+            box-shadow: 0 15px 35px rgba(15, 107, 158, 0.1);
+        }
+        
+        .pricing-name {
+            font-size: 1.3rem;
+            font-weight: 700;
+            color: var(--text-dark);
+            margin-bottom: 0.5rem;
+        }
+        
+        .pricing-desc {
+            color: var(--text-gray);
+            font-size: 0.9rem;
+            margin-bottom: 1.5rem;
+        }
+        
+        .pricing-feature {
+            list-style: none;
+            margin: 1.5rem 0;
+        }
+        
+        .pricing-feature li {
+            padding: 0.75rem 0;
+            color: var(--text-gray);
+            font-size: 0.95rem;
+            padding-left: 1.75rem;
+            position: relative;
+        }
+        
+        .pricing-feature li::before {
+            content: '✓';
+            position: absolute;
+            left: 0;
+            color: var(--accent);
+            font-weight: 800;
+        }
+        
+        .pricing-cta {
+            background: var(--primary);
+            color: white;
+            padding: 1rem;
+            border-radius: 6px;
+            border: none;
+            cursor: pointer;
+            font-weight: 600;
+            width: 100%;
+            margin-top: 1.5rem;
+            transition: background 0.3s ease;
+        }
+        
+        .pricing-cta:hover {
+            background: var(--primary-dark);
+        }
+        
+        .pricing-card.featured .pricing-cta {
+            background: var(--primary);
+        }
+        
+        /* CTA Final */
+        .final-cta {
+            background: linear-gradient(135deg, var(--primary) 0%, var(--primary-light) 100%);
+            border-radius: 12px;
+            padding: 3.5rem 2rem;
+            text-align: center;
+            margin-top: 3rem;
+            color: white;
+        }
+        
+        .final-cta h2 {
+            font-size: 2.5rem;
+            font-weight: 800;
+            margin-bottom: 1rem;
+        }
+        
+        .final-cta p {
+            font-size: 1.1rem;
+            margin-bottom: 2rem;
+            opacity: 0.95;
+        }
+        
+        .final-cta .btn-primary-v4 {
+            background: white;
+            color: var(--primary);
+        }
+        
+        .final-cta .btn-primary-v4:hover {
+            background: var(--secondary);
+        }
+        
+        /* Contact */
+        .contact-section {
+            background: var(--secondary);
+            border-radius: 12px;
+            padding: 3rem;
+            margin-top: 3rem;
+        }
+        
+        .contact-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 3rem;
+            margin-top: 2rem;
+        }
+        
+        .contact-info {
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+        }
+        
+        .contact-item {
+            display: flex;
+            gap: 1.5rem;
+            align-items: flex-start;
+        }
+        
+        .contact-icon {
+            font-size: 1.5rem;
+            color: var(--primary);
+            flex-shrink: 0;
+            margin-top: 0.25rem;
+        }
+        
+        .contact-text h4 {
+            font-size: 1rem;
+            font-weight: 700;
+            color: var(--text-dark);
+            margin-bottom: 0.25rem;
+        }
+        
+        .contact-text p {
+            color: var(--text-gray);
+            font-size: 0.95rem;
+        }
+        
+        .contact-form {
+            display: flex;
+            flex-direction: column;
+            gap: 1.25rem;
+        }
+        
+        .form-group {
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .form-group label {
+            font-size: 0.95rem;
+            font-weight: 600;
+            color: var(--text-dark);
+            margin-bottom: 0.5rem;
+        }
+        
+        .form-group input,
+        .form-group textarea {
+            background: white;
+            border: 1px solid var(--border);
+            border-radius: 6px;
+            padding: 0.75rem 1rem;
+            color: var(--text-dark);
+            font-family: inherit;
+            font-size: 0.95rem;
+            transition: all 0.3s ease;
+        }
+        
+        .form-group input::placeholder,
+        .form-group textarea::placeholder {
+            color: var(--text-light);
+        }
+        
+        .form-group input:focus,
+        .form-group textarea:focus {
+            outline: none;
+            border-color: var(--primary);
+            box-shadow: 0 0 0 3px rgba(15, 107, 158, 0.1);
+        }
+        
+        .form-group textarea {
+            resize: vertical;
+            min-height: 120px;
+        }
+        
+        .btn-submit {
+            background: var(--primary);
+            color: white;
+            border: none;
+            padding: 1rem;
+            border-radius: 6px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: background 0.3s ease;
+        }
+        
+        .btn-submit:hover {
+            background: var(--primary-dark);
+        }
+        
+        /* Footer */
+        footer {
+            background: var(--text-dark);
+            color: white;
+            padding: 3rem 0 1.5rem;
+            margin-top: 4rem;
+        }
+        
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-bottom: 2rem;
+        }
+        
+        .footer-section h3 {
+            font-size: 0.95rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            color: white;
+        }
+        
+        .footer-section a,
+        .footer-section p {
+            color: rgba(255, 255, 255, 0.7);
+            text-decoration: none;
+            font-size: 0.9rem;
+            margin-bottom: 0.75rem;
+            transition: color 0.3s ease;
+        }
+        
+        .footer-section a:hover {
+            color: white;
+        }
+        
+        .footer-bottom {
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            padding-top: 1.5rem;
+            text-align: center;
+            color: rgba(255, 255, 255, 0.7);
+            font-size: 0.9rem;
+        }
+        
+        /* Responsive */
+        @media (max-width: 991px) {
+            .hero-container {
+                grid-template-columns: 1fr;
+            }
+            
+            .hero-content h1 {
+                font-size: 2.5rem;
+            }
+            
+            .journey-timeline::before {
+                display: none;
+            }
+            
+            .journey-item,
+            .journey-item:nth-child(even) {
+                grid-template-columns: 1fr;
+                direction: ltr;
+            }
+            
+            .scrum-details {
+                grid-template-columns: 1fr;
+            }
+            
+            .contact-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .pricing-card.featured {
+                transform: scale(1);
+            }
+        }
+        
+        @media (max-width: 767px) {
+            header {
+                padding: 1rem 0;
+            }
+            
+            .header-container {
+                flex-direction: column;
+                gap: 1rem;
+            }
+            
+            nav {
+                flex-direction: column;
+                gap: 0.5rem;
+                width: 100%;
+                text-align: center;
+            }
+            
+            nav a {
+                display: inline-block;
+                margin: 0.5rem;
+            }
+            
+            .hero {
+                min-height: auto;
+                padding: 3rem 1.5rem;
+            }
+            
+            .hero-content h1 {
+                font-size: 2rem;
+            }
+            
+            .hero-buttons {
+                flex-direction: column;
+            }
+            
+            .hero-stats {
+                flex-direction: column;
+                gap: 1.5rem;
+            }
+            
+            .section-title {
+                font-size: 2rem;
+            }
+            
+            section {
+                padding: 3rem 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <img src="logo-HK-1024x810.png" alt="HKIncotech">
+                <span>HKIncotech</span>
+            </div>
+            <nav>
+                <a href="#process">Quy Trình</a>
+                <a href="#journey">Hành Trình</a>
+                <a href="#why">Vì Sao</a>
+                <a href="#pricing">Gói Dịch Vụ</a>
+                <a href="#contact">Liên Hệ</a>
+            </nav>
+            <a href="#contact" class="btn-header">Bắt Đầu</a>
+        </div>
+    </header>
+
+    <!-- Hero -->
+    <section class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1>Phát Triển Phần Mềm<br><span class="highlight">Quy Trình Chuẩn SCRUM</span></h1>
+                <p>Hơn 12 năm kinh nghiệm xây dựng hệ thống phần mềm enterprise-grade theo Agile methodology. Chúng tôi đảm bảo sự minh bạch, chất lượng, và thành công dự án của bạn.</p>
+                <div class="hero-buttons">
+                    <a href="#contact" class="btn-primary-v4">
+                        <span>Tư Vấn Miễn Phí</span>
+                        <span class="material-symbols-rounded">arrow_forward</span>
+                    </a>
+                    <a href="#process" class="btn-secondary-v4">
+                        <span>Xem Quy Trình</span>
+                        <span class="material-symbols-rounded">info</span>
+                    </a>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat">
+                        <div class="stat-number">150+</div>
+                        <div class="stat-label">Dự án hoàn thành</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-number">80+</div>
+                        <div class="stat-label">Khách hàng hài lòng</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-number">99.99%</div>
+                        <div class="stat-label">Uptime SLA</div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="hero-visual">
+                <svg viewBox="0 0 300 300" style="width: 100%; max-width: 300px;">
+                    <circle cx="150" cy="150" r="140" fill="none" stroke="#0f6b9e" stroke-width="2" opacity="0.2"/>
+                    <circle cx="150" cy="150" r="100" fill="none" stroke="#0f6b9e" stroke-width="2" opacity="0.4"/>
+                    <circle cx="150" cy="150" r="60" fill="none" stroke="#0f6b9e" stroke-width="2" opacity="0.6"/>
+                    <circle cx="150" cy="150" r="20" fill="#0f6b9e"/>
+                    <text x="150" y="155" text-anchor="middle" font-size="12" fill="white" font-weight="bold">SCRUM</text>
+                </svg>
+            </div>
+        </div>
+    </section>
+
+    <!-- SCRUM Process -->
+    <section id="process" class="scrum-process">
+        <div class="container-v4">
+            <div class="section-header">
+                <h2 class="section-title">Quy Trình SCRUM Của HKIncotech</h2>
+                <p class="section-subtitle">Từ khám phá ý tưởng đến triển khai sản phẩm - mỗi bước đều có kế hoạch cụ thể</p>
+            </div>
+            
+            <div class="process-flow">
+                <div class="process-step">
+                    <div class="step-number">1</div>
+                    <div class="step-icon">
+                        <span class="material-symbols-rounded">lightbulb</span>
+                    </div>
+                    <h3>Khám Phá & Tư Vấn</h3>
+                    <p>Chúng tôi tiếp cận dự án của bạn từ góc độ chiến lược. Phân tích nhu cầu, thị trường, cạnh tranh và xây dựng roadmap chi tiết.</p>
+                </div>
+                
+                <div class="process-step">
+                    <div class="step-number">2</div>
+                    <div class="step-icon">
+                        <span class="material-symbols-rounded">architecture</span>
+                    </div>
+                    <h3>Thiết Kế & Lập Kế Hoạch</h3>
+                    <p>Xây dựng kiến trúc hệ thống, wireframe UI/UX, và lập kế hoạch chi tiết cho từng sprint 2-4 tuần.</p>
+                </div>
+                
+                <div class="process-step">
+                    <div class="step-number">3</div>
+                    <div class="step-icon">
+                        <span class="material-symbols-rounded">code</span>
+                    </div>
+                    <h3>Phát Triển Sprint</h3>
+                    <p>Team phát triển làm việc theo sprint. Mỗi sprint kết thúc với demo sản phẩm và demo có thể deploy.</p>
+                </div>
+                
+                <div class="process-step">
+                    <div class="step-number">4</div>
+                    <div class="step-icon">
+                        <span class="material-symbols-rounded">verified</span>
+                    </div>
+                    <h3>QA & Testing</h3>
+                    <p>Kiểm thử toàn diện: unit tests, integration tests, UAT. Đảm bảo chất lượng cao trước khi deploy.</p>
+                </div>
+                
+                <div class="process-step">
+                    <div class="step-number">5</div>
+                    <div class="step-icon">
+                        <span class="material-symbols-rounded">cloud_upload</span>
+                    </div>
+                    <h3>Triển Khai & Launch</h3>
+                    <p>Deployment tự động (CI/CD), monitoring, incident response. Đảm bảo smooth launch và 99.99% uptime.</p>
+                </div>
+                
+                <div class="process-step">
+                    <div class="step-number">6</div>
+                    <div class="step-icon">
+                        <span class="material-symbols-rounded">support_agent</span>
+                    </div>
+                    <h3>Hỗ Trợ & Phát Triển</h3>
+                    <p>Support 24/7, optimization liên tục, thêm tính năng mới. Chúng tôi là partner lâu dài của bạn.</p>
+                </div>
+            </div>
+            
+            <div class="scrum-details">
+                <div class="scrum-visual">
+                    <h3 style="color: var(--text-dark); margin-bottom: 1.5rem; font-weight: 700;">Sprint Cycle (2-4 Tuần)</h3>
+                    <ul style="list-style: none;">
+                        <li style="padding: 1rem; background: var(--secondary); margin-bottom: 0.75rem; border-radius: 6px; border-left: 4px solid var(--primary);">
+                            <strong>Sprint Planning</strong> - Xác định mục tiêu, chia task
+                        </li>
+                        <li style="padding: 1rem; background: var(--secondary); margin-bottom: 0.75rem; border-radius: 6px; border-left: 4px solid var(--primary);">
+                            <strong>Daily Standup</strong> - Sync 15 phút mỗi ngày
+                        </li>
+                        <li style="padding: 1rem; background: var(--secondary); margin-bottom: 0.75rem; border-radius: 6px; border-left: 4px solid var(--primary);">
+                            <strong>Development</strong> - Code review & CI/CD
+                        </li>
+                        <li style="padding: 1rem; background: var(--secondary); margin-bottom: 0.75rem; border-radius: 6px; border-left: 4px solid var(--primary);">
+                            <strong>Sprint Review</strong> - Demo sản phẩm
+                        </li>
+                        <li style="padding: 1rem; background: var(--secondary); border-radius: 6px; border-left: 4px solid var(--primary);">
+                            <strong>Sprint Retro</strong> - Tổng kết, cải thiện
+                        </li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 style="color: var(--text-dark); font-weight: 700; margin-bottom: 1.5rem;">Lợi Ích Quy Trình SCRUM</h3>
+                    <ul class="scrum-list">
+                        <li>
+                            <strong>Minh Bạch & Kiểm Soát</strong>
+                            <span>Demo mỗi sprint, bạn thấy tiến độ real-time. Không có bất ngờ cuối dự án.</span>
+                        </li>
+                        <li>
+                            <strong>Linh Hoạt & Thích Ứng</strong>
+                            <span>Feedback sau mỗi sprint, pivot hoặc điều chỉnh dễ dàng. Giảm rủi ro.</span>
+                        </li>
+                        <li>
+                            <strong>Chất Lượng Cao</strong>
+                            <span>Code review, testing liên tục. Phát hiện bug sớm, chi phí fix thấp.</span>
+                        </li>
+                        <li>
+                            <strong>Team Hiệu Quả</strong>
+                            <span>Standup hàng ngày, clear priorities. Tốc độ delivery nhanh hơn 30-50%.</span>
+                        </li>
+                        <li>
+                            <strong>Giảm Rủi Ro</strong>
+                            <span>Deploy từng sprint, phát hiện vấn đề sớm. Không có all-or-nothing risk.</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Client Journey -->
+    <section id="journey" class="client-journey">
+        <div class="container-v4">
+            <div class="section-header">
+                <h2 class="section-title">Hành Trình Làm Việc Cùng HKIncotech</h2>
+                <p class="section-subtitle">6 giai đoạn từ lúc bạn liên hệ đến khi sản phẩm sống trên production</p>
+            </div>
+            
+            <div class="journey-timeline">
+                <div class="journey-item">
+                    <div class="journey-content">
+                        <h3>Giai Đoạn 1: Tư Vấn Ban Đầu (1 Tuần)</h3>
+                        <p>Chúng tôi lắng nghe ý tưởng của bạn, hiểu rõ business goals, thị trường, đối thủ cạnh tranh. Lập kế hoạch chi tiết và đưa ra estimate.</p>
+                        <ul class="journey-features">
+                            <li>Kick-off meeting với stakeholders</li>
+                            <li>Market research & competitor analysis</li>
+                            <li>Tech stack recommendation</li>
+                            <li>Project timeline & budget estimate</li>
+                            <li>Sign contract & project commencement</li>
+                        </ul>
+                    </div>
+                    <div class="journey-dot"></div>
+                </div>
+                
+                <div class="journey-item">
+                    <div class="journey-dot"></div>
+                    <div class="journey-content">
+                        <h3>Giai Đoạn 2: Discovery & Design (2-3 Tuần)</h3>
+                        <p>Thiết kế chi tiết. Wireframes → mockups → prototypes. Bạn review feedback trước khi code.</p>
+                        <ul class="journey-features">
+                            <li>Wireframes & user flows</li>
+                            <li>High-fidelity mockups</li>
+                            <li>UI/UX design system</li>
+                            <li>Tech architecture document</li>
+                            <li>Database schema design</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="journey-item">
+                    <div class="journey-content">
+                        <h3>Giai Đoạn 3: Sprint Development (6-12 Tuần)</h3>
+                        <p>Phát triển theo sprint. Mỗi sprint kết thúc, bạn nhận MVP/feature hoàn chỉnh và deploy được.</p>
+                        <ul class="journey-features">
+                            <li>Sprint 1: Core features</li>
+                            <li>Sprint 2-3: Advanced features</li>
+                            <li>Sprint 4+: Optimization & refinement</li>
+                            <li>Weekly demo & feedback</li>
+                            <li>Continuous deployment</li>
+                        </ul>
+                    </div>
+                    <div class="journey-dot"></div>
+                </div>
+                
+                <div class="journey-item">
+                    <div class="journey-dot"></div>
+                    <div class="journey-content">
+                        <h3>Giai Đoạn 4: QA & Testing (2-3 Tuần)</h3>
+                        <p>Kiểm thử toàn diện: functional, performance, security, UAT. Fix bugs, optimize.</p>
+                        <ul class="journey-features">
+                            <li>Functional testing</li>
+                            <li>Performance & load testing</li>
+                            <li>Security audit & penetration test</li>
+                            <li>User acceptance testing (UAT)</li>
+                            <li>Bug fix & optimization</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="journey-item">
+                    <div class="journey-content">
+                        <h3>Giai Đoạn 5: Launch & Deployment (1 Tuần)</h3>
+                        <p>Chuẩn bị production. Deploy, monitoring, incident response setup. Soft launch → full launch.</p>
+                        <ul class="journey-features">
+                            <li>Production environment setup</li>
+                            <li>Database migration & backup</li>
+                            <li>Monitoring & alerting</li>
+                            <li>Load balancer & auto-scaling</li>
+                            <li>Soft launch & full launch</li>
+                        </ul>
+                    </div>
+                    <div class="journey-dot"></div>
+                </div>
+                
+                <div class="journey-item">
+                    <div class="journey-dot"></div>
+                    <div class="journey-content">
+                        <h3>Giai Đoạn 6: Support & Growth (Ongoing)</h3>
+                        <p>Hỗ trợ 24/7. Monitoring, optimization, thêm features, scaling. Chúng tôi là partner lâu dài.</p>
+                        <ul class="journey-features">
+                            <li>24/7 technical support</li>
+                            <li>Performance monitoring</li>
+                            <li>Regular optimization</li>
+                            <li>Feature development</li>
+                            <li>Infrastructure scaling</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why HKIncotech -->
+    <section id="why" class="why-section">
+        <div class="container-v4">
+            <div class="section-header">
+                <h2 class="section-title">Tại Sao Chọn HKIncotech?</h2>
+                <p class="section-subtitle">Chúng tôi không chỉ xây dựng phần mềm, mà xây dựng doanh nghiệp của bạn</p>
+            </div>
+            
+            <div class="why-grid">
+                <div class="why-card">
+                    <div class="why-card-icon">
+                        <span class="material-symbols-rounded">verified_user</span>
+                    </div>
+                    <h3>12+ Năm Kinh Nghiệm</h3>
+                    <p>Xây dựng hệ thống từ startup đến enterprise. Kinh nghiệm thực tế với hàng trăm dự án.</p>
+                </div>
+                
+                <div class="why-card">
+                    <div class="why-card-icon">
+                        <span class="material-symbols-rounded">groups</span>
+                    </div>
+                    <h3>Team Giỏi Giang</h3>
+                    <p>100+ engineers & architects. Chuyên gia Backend, Frontend, DevOps, AI/ML. Chứng chỉ international.</p>
+                </div>
+                
+                <div class="why-card">
+                    <div class="why-card-icon">
+                        <span class="material-symbols-rounded">speed</span>
+                    </div>
+                    <h3>Delivery Nhanh</h3>
+                    <p>SCRUM methodology, DevOps practices. MVP trong 4-8 tuần. Scale từ 0 → millions users.</p>
+                </div>
+                
+                <div class="why-card">
+                    <div class="why-card-icon">
+                        <span class="material-symbols-rounded">shield_lock</span>
+                    </div>
+                    <h3>Bảo Mật & Compliance</h3>
+                    <p>ISO 27001, SOC 2, OWASP ASVS Level 3. Zero-trust architecture, encryption, monitoring 24/7.</p>
+                </div>
+                
+                <div class="why-card">
+                    <div class="why-card-icon">
+                        <span class="material-symbols-rounded">trending_up</span>
+                    </div>
+                    <h3>Kiến Trúc Scalable</h3>
+                    <p>Microservices, Kubernetes, cloud-native. Xử lý từ 100 → 10M concurrent users.</p>
+                </div>
+                
+                <div class="why-card">
+                    <div class="why-card-icon">
+                        <span class="material-symbols-rounded">handshake</span>
+                    </div>
+                    <h3>Partnership Approach</h3>
+                    <p>Không chỉ vendor. Chúng tôi là strategic partner của bạn. Support lâu dài, cùng grow.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing -->
+    <section id="pricing" class="pricing-section">
+        <div class="container-v4">
+            <div class="section-header">
+                <h2 class="section-title">Gói Dịch Vụ</h2>
+                <p class="section-subtitle">Linh hoạt, transparent pricing. Không có hidden fees.</p>
+            </div>
+            
+            <div class="pricing-grid">
+                <div class="pricing-card">
+                    <h3 class="pricing-name">MVP Starter</h3>
+                    <p class="pricing-desc">Hoàn hảo cho startup muốn validate idea</p>
+                    <ul class="pricing-feature">
+                        <li>4-8 tuần development</li>
+                        <li>2-3 engineers</li>
+                        <li>Core features MVP</li>
+                        <li>Basic infrastructure</li>
+                        <li>Launch support</li>
+                    </ul>
+                    <button class="pricing-cta">Bắt Đầu</button>
+                </div>
+                
+                <div class="pricing-card featured">
+                    <div class="pricing-badge">PHỔ BIẾN NHẤT</div>
+                    <h3 class="pricing-name">Growth Accelerator</h3>
+                    <p class="pricing-desc">Cho những công ty muốn scale nhanh</p>
+                    <ul class="pricing-feature">
+                        <li>8-16 tuần development</li>
+                        <li>4-6 engineers</li>
+                        <li>Full-featured platform</li>
+                        <li>Enterprise infrastructure</li>
+                        <li>3 tháng support & optimization</li>
+                    </ul>
+                    <button class="pricing-cta">Đặt Ngay</button>
+                </div>
+                
+                <div class="pricing-card">
+                    <h3 class="pricing-name">Enterprise Custom</h3>
+                    <p class="pricing-desc">Cho dự án phức tạp, quy mô lớn</p>
+                    <ul class="pricing-feature">
+                        <li>16+ tuần development</li>
+                        <li>8+ engineers</li>
+                        <li>Custom architecture</li>
+                        <li>Global infrastructure</li>
+                        <li>12 tháng support & scaling</li>
+                    </ul>
+                    <button class="pricing-cta">Liên Hệ</button>
+                </div>
+            </div>
+            
+            <div class="final-cta">
+                <h2>Sẵn Sàng Bắt Đầu Hành Trình Của Bạn?</h2>
+                <p>Đặt 30 phút tư vấn miễn phí để thảo luận về dự án và chiến lược của bạn</p>
+                <a href="#contact" class="btn-primary-v4">
+                    <span>Đặt Tư Vấn Miễn Phí</span>
+                    <span class="material-symbols-rounded">calendar_today</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact">
+        <div class="container-v4">
+            <h2 class="section-title" style="margin-bottom: 1rem;">Liên Hệ HKIncotech</h2>
+            <p class="section-subtitle" style="margin-bottom: 2rem;">Hãy cho chúng tôi biết về dự án của bạn</p>
+            
+            <div class="contact-section">
+                <div class="contact-grid">
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <span class="material-symbols-rounded">location_on</span>
+                            </div>
+                            <div class="contact-text">
+                                <h4>Văn Phòng Chính</h4>
+                                <p>Tầng 15, Tòa Nhà Sunshine<br>Đường Nguyễn Hữu Cảnh<br>Quận Bình Thạnh, TP.HCM</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <span class="material-symbols-rounded">phone</span>
+                            </div>
+                            <div class="contact-text">
+                                <h4>Điện Thoại</h4>
+                                <p>+84 (028) 3825-5555<br>+84 901 234 567 (Sales)</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <span class="material-symbols-rounded">mail</span>
+                            </div>
+                            <div class="contact-text">
+                                <h4>Email</h4>
+                                <p>info@hkincotech.vn<br>sales@hkincotech.vn</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <span class="material-symbols-rounded">schedule</span>
+                            </div>
+                            <div class="contact-text">
+                                <h4>Giờ Làm Việc</h4>
+                                <p>Thứ Hai - Thứ Sáu: 9:00 - 18:00<br>Thứ Bảy: 9:00 - 12:00</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Họ và Tên *</label>
+                            <input type="text" id="name" placeholder="Nguyễn Văn A" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">Email *</label>
+                            <input type="email" id="email" placeholder="email@company.com" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="phone">Số Điện Thoại</label>
+                            <input type="tel" id="phone" placeholder="+84 901 234 567">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="company">Công Ty</label>
+                            <input type="text" id="company" placeholder="Tên công ty">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">Mô Tả Dự Án *</label>
+                            <textarea id="message" placeholder="Mô tả chi tiết dự án của bạn..." required></textarea>
+                        </div>
+                        
+                        <button type="submit" class="btn-submit">Gửi Yêu Cầu</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container-v4">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Về HKIncotech</h3>
+                    <p>Công ty phát triển phần mềm doanh nghiệp hàng đầu Đông Nam Á. Chuyên cung cấp giải pháp software engineering theo SCRUM methodology với 12+ năm kinh nghiệm.</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Dịch Vụ</h3>
+                    <a href="#process">SCRUM Development</a>
+                    <a href="#process">Custom Software</a>
+                    <a href="#journey">SaaS Platform</a>
+                    <a href="#why">Consulting</a>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Công Nghệ</h3>
+                    <a href="#process">Cloud & DevOps</a>
+                    <a href="#process">AI & Machine Learning</a>
+                    <a href="#process">Microservices</a>
+                    <a href="#process">Security & Compliance</a>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Liên Kết</h3>
+                    <a href="#process">Quy Trình</a>
+                    <a href="#journey">Hành Trình</a>
+                    <a href="#contact">Liên Hệ</a>
+                    <a href="#">Blog</a>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2026 HKIncotech. All rights reserved. | Professional Software Engineering</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Active nav on scroll
+        window.addEventListener('scroll', () => {
+            const sections = document.querySelectorAll('section[id]');
+            const navLinks = document.querySelectorAll('nav a');
+            
+            let current = '';
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                const sectionHeight = section.clientHeight;
+                if (pageYOffset >= sectionTop - 200) {
+                    current = section.getAttribute('id');
+                }
+            });
+            
+            navLinks.forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href').slice(1) === current) {
+                    link.classList.add('active');
+                }
+            });
+        });
+        
+        // Smooth scroll for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                }
+            });
+        });
+        
+        // Form submission
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('Cảm ơn bạn! Chúng tôi sẽ liên hệ trong thời gian sớm nhất.');
+            this.reset();
+        });
+    </script>
+</body>
+</html>

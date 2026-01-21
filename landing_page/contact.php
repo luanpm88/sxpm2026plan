@@ -122,8 +122,8 @@ include '_header.php';
                             <div>
                                 <h3 style="font-weight: 700; color: var(--text-dark); margin-bottom: 0.5rem;">Văn Phòng Chính</h3>
                                 <p style="color: var(--text-gray); font-size: 0.95rem;">
-                                    123 Đường Tây Sơn, Phường Trường Chinh<br/>
-                                    Quận Đống Đa, Hà Nội, Việt Nam
+                                    188 Đường số 1, Phường An Hội Đông<br/>
+                                    Quận Gò Vấp, Thành phố Hồ Chí Minh, Việt Nam
                                 </p>
                             </div>
                         </div>
@@ -138,9 +138,9 @@ include '_header.php';
                             <div>
                                 <h3 style="font-weight: 700; color: var(--text-dark); margin-bottom: 0.5rem;">Điện Thoại</h3>
                                 <p style="color: var(--text-gray); font-size: 0.95rem;">
-                                    <strong>Toll Free:</strong> 1-800-HKINCO (1-800-454-6266)<br/>
-                                    <strong>Direct:</strong> +84 243 999 0123<br/>
-                                    <strong>Support:</strong> support@hkincotech.com
+                                    <strong>Hotline:</strong> +84 (28) 6297 1234<br/>
+                                    <strong>Support:</strong> support@hkincotech.com<br/>
+                                    <strong>Fax:</strong> +84 (28) 6297 1235
                                 </p>
                             </div>
                         </div>
@@ -192,7 +192,7 @@ include '_header.php';
             </h2>
             
             <div style="background: white; border-radius: 12px; overflow: hidden; height: 400px;">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3724.4567890123456!2d105.8269!3d21.0073!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135abc81234!2sHanoi!5e0!3m2!1svi!2svn!4v1234567890" style="width: 100%; height: 100%; border: none;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.6047467284906!2d106.6576869!3d10.8475931!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x317529bc96bc31d5%3A0xb45cb7e22ebf8fda!2z188IEvSG0bEgU8OzLCBQaOG7nW5nIEFuIEjhu5lpIMSQ8O0gbiwgVHAuIEjhu5kgQ2jDrSBNaW5o!5e0!3m2!1svi!2svn!4v1705816000000" style="width: 100%; height: 100%; border: none;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
         </div>
     </section>

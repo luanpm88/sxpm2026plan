@@ -1,8 +1,6 @@
-<?php
-$page_title = "Dịch Vụ - HKIncotech";
-$page_description = "Custom Software Development, SaaS Platform, AI Knowledge Platform, Security & Compliance";
-include '_header.php';
-?>
+@extends('layouts.main')
+
+@section('content')
 
     <!-- Hero -->
     <section style="min-height: 70vh; display: flex; align-items: center; padding: 6rem 2rem; background: linear-gradient(135deg, #ffffff 0%, var(--secondary-bg) 100%);">
@@ -30,30 +28,30 @@ include '_header.php';
             </div>
             
             <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2rem;">
-                <?php
+                @php
                 $service_overview = [
                     ['num' => 1, 'icon' => 'code', 'title' => 'Custom Software Development', 'desc' => 'Xây dựng ứng dụng từ đầu với kiến trúc cloud-native, microservices, hiệu năng tối ưu'],
                     ['num' => 2, 'icon' => 'workspace_premium', 'title' => 'SaaS Platform', 'desc' => 'Nền tảng multi-tenant production-ready. HKSpace có 50K+ users đang hoạt động'],
                     ['num' => 3, 'icon' => 'psychology', 'title' => 'AI Knowledge Platform', 'desc' => 'NLP, RAG, LLM integration. Xây dựng AI-powered solutions thông minh'],
                     ['num' => 4, 'icon' => 'shield', 'title' => 'Security & Compliance', 'desc' => 'Kiến trúc bảo mật enterprise. ISO 27001, SOC 2, GDPR, PCI DSS compliant'],
                 ];
-                foreach ($service_overview as $s):
-                ?>
+                @endphp
+                @foreach($service_overview as $s)
                 <div style="background: white; border: 1px solid var(--border); border-radius: 12px; padding: 2rem; text-align: center; transition: all 0.3s ease;" onmouseover="this.style.borderColor='var(--primary)'; this.style.boxShadow='0 12px 30px rgba(15, 107, 158, 0.12)'; this.style.transform='translateY(-4px)';" onmouseout="this.style.borderColor='var(--border)'; this.style.boxShadow=''; this.style.transform='';">
                     <div style="display: inline-flex; align-items: center; justify-content: center; width: 50px; height: 50px; background: var(--primary); color: white; border-radius: 50%; font-weight: 800; font-size: 1.3rem; margin-bottom: 1rem;">
-                        <?php echo $s['num']; ?>
+                        {{ $s['num'] }}
                     </div>
                     <div style="font-size: 2.5rem; color: var(--primary); margin-bottom: 1rem;">
-                        <span class="material-symbols-rounded"><?php echo $s['icon']; ?></span>
+                        <span class="material-symbols-rounded">{{ $s['icon'] }}</span>
                     </div>
                     <h3 style="font-size: 1.15rem; font-weight: 700; color: var(--text-dark); margin-bottom: 0.75rem;">
-                        <?php echo $s['title']; ?>
+                        {{ $s['title'] }}
                     </h3>
                     <p style="color: var(--text-gray); font-size: 0.95rem; line-height: 1.6;">
-                        <?php echo $s['desc']; ?>
+                        {{ $s['desc'] }}
                     </p>
                 </div>
-                <?php endforeach; ?>
+                @endforeach
             </div>
         </div>
     </section>
@@ -73,7 +71,7 @@ include '_header.php';
                         Từ MVP nhanh chóng đến production-grade systems. Chúng tôi chuyên phát triển:
                     </p>
                     <ul style="list-style: none; margin-bottom: 1.5rem;">
-                        <?php
+                        @php
                         $dev_services = [
                             'Web & Mobile Applications (React, Vue, React Native, Flutter)',
                             'Distributed Systems (Microservices, Event-driven architecture)',
@@ -82,13 +80,13 @@ include '_header.php';
                             'Enterprise Integrations (API, webhooks, third-party systems)',
                             'Cloud-native Architecture (Kubernetes, serverless, Docker)'
                         ];
-                        foreach ($dev_services as $item):
-                        ?>
+                        @endphp
+                        @foreach($dev_services as $item)
                         <li style="padding: 0.6rem 0; color: var(--text-gray); font-size: 0.95rem; padding-left: 1.75rem; position: relative;">
                             <span style="position: absolute; left: 0; color: var(--primary); font-weight: 800;">✓</span>
-                            <?php echo $item; ?>
+                            {{ $item }}
                         </li>
-                        <?php endforeach; ?>
+                        @endforeach
                     </ul>
                 </div>
                 
@@ -174,7 +172,7 @@ include '_header.php';
                         Nền tảng collaboration & task management hiện có 50K+ users đang sử dụng. Proof of concept cho khả năng xây dựng SaaS thành công.
                     </p>
                     <ul style="list-style: none; margin-bottom: 1.5rem;">
-                        <?php
+                        @php
                         $saas_features = [
                             'Multi-tenant Architecture (Data isolation, tenant customization)',
                             'Real-time Collaboration (WebSocket, live updates)',
@@ -184,13 +182,13 @@ include '_header.php';
                             'Auto-scaling Infrastructure',
                             'SLA 99.99% Uptime Guarantee'
                         ];
-                        foreach ($saas_features as $item):
-                        ?>
+                        @endphp
+                        @foreach($saas_features as $item)
                         <li style="padding: 0.6rem 0; color: var(--text-gray); font-size: 0.95rem; padding-left: 1.75rem; position: relative;">
                             <span style="position: absolute; left: 0; color: var(--accent); font-weight: 800;">✓</span>
-                            <?php echo $item; ?>
+                            {{ $item }}
                         </li>
-                        <?php endforeach; ?>
+                        @endforeach
                     </ul>
                 </div>
             </div>
@@ -212,7 +210,7 @@ include '_header.php';
                         Tích hợp các công nghệ AI mới nhất để xây dựng intelligent systems:
                     </p>
                     <ul style="list-style: none; margin-bottom: 1.5rem;">
-                        <?php
+                        @php
                         $ai_features = [
                             'Natural Language Processing (NLP) - Text analysis, sentiment',
                             'Retrieval-Augmented Generation (RAG) - Semantic search',
@@ -222,13 +220,13 @@ include '_header.php';
                             'Document Processing - OCR, extraction, summarization',
                             'Fine-tuning & Custom Models - Domain-specific AI'
                         ];
-                        foreach ($ai_features as $item):
-                        ?>
+                        @endphp
+                        @foreach($ai_features as $item)
                         <li style="padding: 0.6rem 0; color: var(--text-gray); font-size: 0.95rem; padding-left: 1.75rem; position: relative;">
                             <span style="position: absolute; left: 0; color: var(--primary); font-weight: 800;">✓</span>
-                            <?php echo $item; ?>
+                            {{ $item }}
                         </li>
-                        <?php endforeach; ?>
+                        @endforeach
                     </ul>
                 </div>
                 
@@ -321,7 +319,7 @@ include '_header.php';
                         </div>
                     </div>
                     <ul style="list-style: none;">
-                        <?php
+                        @php
                         $security_features = [
                             'Zero Trust Architecture - Verify everything',
                             'End-to-end Encryption - Data in transit & at rest',
@@ -330,13 +328,13 @@ include '_header.php';
                             'Vulnerability Scanning - Automated & manual testing',
                             'Compliance Audits - Regular security assessments'
                         ];
-                        foreach ($security_features as $item):
-                        ?>
+                        @endphp
+                        @foreach($security_features as $item)
                         <li style="padding: 0.6rem 0; color: var(--text-gray); font-size: 0.95rem; padding-left: 1.75rem; position: relative;">
                             <span style="position: absolute; left: 0; color: var(--accent); font-weight: 800;">✓</span>
-                            <?php echo $item; ?>
+                            {{ $item }}
                         </li>
-                        <?php endforeach; ?>
+                        @endforeach
                     </ul>
                 </div>
             </div>
@@ -352,7 +350,7 @@ include '_header.php';
             </div>
             
             <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2rem; margin-bottom: 2rem;">
-                <?php
+                @php
                 $capabilities = [
                     [
                         'title' => 'Frontend & UI/UX',
@@ -403,28 +401,27 @@ include '_header.php';
                         ]
                     ]
                 ];
-                
-                foreach ($capabilities as $cap):
-                ?>
+                @endphp
+                @foreach($capabilities as $cap)
                 <div style="background: white; border: 1px solid var(--border); border-radius: 12px; padding: 2rem; transition: all 0.3s ease;" onmouseover="this.style.borderColor='var(--primary)'; this.style.boxShadow='0 12px 30px rgba(15, 107, 158, 0.12)';" onmouseout="this.style.borderColor='var(--border)'; this.style.boxShadow='';">
                     <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1.5rem;">
                         <div style="font-size: 2rem; color: var(--primary);">
-                            <span class="material-symbols-rounded"><?php echo $cap['icon']; ?></span>
+                            <span class="material-symbols-rounded">{{ $cap['icon'] }}</span>
                         </div>
                         <h3 style="font-size: 1.1rem; font-weight: 700; color: var(--text-dark); margin: 0;">
-                            <?php echo $cap['title']; ?>
+                            {{ $cap['title'] }}
                         </h3>
                     </div>
                     <ul style="list-style: none;">
-                        <?php foreach ($cap['items'] as $item): ?>
+                        @foreach($cap['items'] as $item)
                         <li style="padding: 0.6rem 0; color: var(--text-gray); font-size: 0.9rem; padding-left: 1.5rem; position: relative;">
                             <span style="position: absolute; left: 0; color: var(--primary); font-weight: 600;">▸</span>
-                            <?php echo $item; ?>
+                            {{ $item }}
                         </li>
-                        <?php endforeach; ?>
+                        @endforeach
                     </ul>
                 </div>
-                <?php endforeach; ?>
+                @endforeach
             </div>
         </div>
     </section>
@@ -438,7 +435,7 @@ include '_header.php';
             </div>
             
             <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2rem;">
-                <?php
+                @php
                 $models = [
                     ['title' => 'Fixed Project', 'desc' => 'Dự án với scope, timeline, giá cố định. Phù hợp với well-defined requirements.', 'timeline' => '4-16 tuần'],
                     ['title' => 'MVP Development', 'desc' => 'MVP nhanh chóng trong 4-8 tuần. Test market assumptions, gather user feedback.', 'timeline' => '4-8 tuần'],
@@ -447,21 +444,21 @@ include '_header.php';
                     ['title' => 'Consulting', 'desc' => 'Architecture, strategy, technology guidance. CTO-as-a-service.', 'timeline' => 'Flexible'],
                     ['title' => 'Support & Scaling', 'desc' => 'Post-launch support, optimization, maintenance, thêm features.', 'timeline' => 'Ongoing'],
                 ];
-                foreach ($models as $m):
-                ?>
+                @endphp
+                @foreach($models as $m)
                 <div style="background: var(--secondary-bg); border-radius: 12px; padding: 2rem; border: 1px solid var(--border); transition: all 0.3s ease;" onmouseover="this.style.borderColor='var(--primary)'; this.style.backgroundColor='white';" onmouseout="this.style.borderColor='var(--border)'; this.style.backgroundColor='var(--secondary-bg)';">
                     <h3 style="font-size: 1.1rem; font-weight: 700; color: var(--text-dark); margin-bottom: 0.75rem;">
-                        <?php echo $m['title']; ?>
+                        {{ $m['title'] }}
                     </h3>
                     <p style="color: var(--text-gray); font-size: 0.95rem; line-height: 1.6; margin-bottom: 1rem;">
-                        <?php echo $m['desc']; ?>
+                        {{ $m['desc'] }}
                     </p>
                     <div style="display: flex; align-items: center; gap: 0.5rem; color: var(--primary); font-weight: 600; font-size: 0.9rem;">
                         <span class="material-symbols-rounded" style="font-size: 1.2rem;">schedule</span>
-                        <?php echo $m['timeline']; ?>
+                        {{ $m['timeline'] }}
                     </div>
                 </div>
-                <?php endforeach; ?>
+                @endforeach
             </div>
         </div>
     </section>
@@ -475,7 +472,7 @@ include '_header.php';
             </div>
             
             <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 2rem;">
-                <?php
+                @php
                 $process = [
                     ['icon' => 'search', 'title' => 'Discovery', 'desc' => 'Hiểu rõ goals, analyze requirements, market research'],
                     ['icon' => 'design_services', 'title' => 'Design', 'desc' => 'Architecture, wireframes, data models, tech planning'],
@@ -484,38 +481,22 @@ include '_header.php';
                     ['icon' => 'cloud_upload', 'title' => 'Deployment', 'desc' => 'Production release, monitoring setup'],
                     ['icon' => 'support_agent', 'title' => 'Support', 'desc' => '24/7 support, optimization, scaling'],
                 ];
-                foreach ($process as $p):
-                ?>
+                @endphp
+                @foreach($process as $p)
                 <div style="background: white; border-radius: 12px; padding: 2rem; border: 1px solid var(--border); text-align: center;">
                     <div style="font-size: 3rem; color: var(--primary); margin-bottom: 1rem;">
-                        <span class="material-symbols-rounded"><?php echo $p['icon']; ?></span>
+                        <span class="material-symbols-rounded">{{ $p['icon'] }}</span>
                     </div>
                     <h3 style="font-size: 1.1rem; font-weight: 700; color: var(--text-dark); margin-bottom: 0.75rem;">
-                        <?php echo $p['title']; ?>
+                        {{ $p['title'] }}
                     </h3>
                     <p style="color: var(--text-gray); font-size: 0.95rem;">
-                        <?php echo $p['desc']; ?>
+                        {{ $p['desc'] }}
                     </p>
                 </div>
-                <?php endforeach; ?>
+                @endforeach
             </div>
         </div>
     </section>
 
-    <!-- CTA -->
-    <section style="background: white;">
-        <div class="container-v5">
-            <div style="background: linear-gradient(135deg, var(--primary) 0%, var(--primary-light) 100%); border-radius: 12px; padding: 4rem 2rem; text-align: center; color: white;">
-                <h2 style="font-size: 2.5rem; font-weight: 800; margin-bottom: 1rem;">Khám Phá Dịch Vụ Phù Hợp Với Bạn</h2>
-                <p style="font-size: 1.1rem; margin-bottom: 2rem; opacity: 0.95;">
-                    Tư vấn miễn phí 30 phút để tìm giải pháp tối ưu. Không có cam kết, chỉ là cuộc trò chuyện sáng suốt.
-                </p>
-                <a href="contact.php" style="background: white; color: var(--primary); padding: 1rem 2.5rem; border-radius: 8px; font-weight: 600; text-decoration: none; display: inline-flex; align-items: center; gap: 0.75rem; transition: all 0.3s ease;" onmouseover="this.style.backgroundColor='var(--secondary-bg)'; this.style.transform='translateY(-2px)'; this.style.boxShadow='0 8px 20px rgba(0,0,0,0.15)';" onmouseout="this.style.backgroundColor='white'; this.style.transform=''; this.style.boxShadow='';">
-                    <span>Bắt Đầu Tư Vấn Ngay</span>
-                    <span class="material-symbols-rounded">arrow_forward</span>
-                </a>
-            </div>
-        </div>
-    </section>
-
-<?php include '_footer.php'; ?>
+@endsection

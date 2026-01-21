@@ -1,8 +1,6 @@
-<?php
-$page_title = "Quy Trình SCRUM - HKIncotech";
-$page_description = "Phương pháp phát triển Agile SCRUM: 6 bước từ khám phá đến triển khai sản phẩm thành công";
-include '_header.php';
-?>
+@extends('layouts.main')
+
+@section('content')
 
     <!-- Hero -->
     <section style="min-height: 70vh; display: flex; align-items: center; padding: 6rem 2rem; background: linear-gradient(135deg, #ffffff 0%, var(--secondary-bg) 100%);">
@@ -14,7 +12,7 @@ include '_header.php';
                 <p style="font-size: 1.15rem; color: var(--text-gray); line-height: 1.8; margin-bottom: 2rem;">
                     Phương pháp Agile giúp bạn thấy tiến độ real-time, linh hoạt điều chỉnh, và deliver sản phẩm nhanh hơn 30-50%
                 </p>
-                <a href="contact.php" class="btn-primary-v5">
+                <a href="{{ route('landing.contact') }}" class="btn-primary-v5">
                     <span>Tư Vấn Quy Trình SCRUM</span>
                     <span class="material-symbols-rounded">arrow_forward</span>
                 </a>
@@ -31,7 +29,7 @@ include '_header.php';
             </div>
             
             <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 1.5rem;">
-                <?php
+                @php
                 $steps = [
                     ['num' => 1, 'icon' => 'lightbulb', 'title' => 'Khám Phá & Tư Vấn', 'desc' => 'Tiếp cận dự án từ góc độ chiến lược. Phân tích nhu cầu, lập kế hoạch chi tiết'],
                     ['num' => 2, 'icon' => 'architecture', 'title' => 'Thiết Kế & Lập Kế Hoạch', 'desc' => 'Xây dựng kiến trúc hệ thống, wireframe UI/UX, kế hoạch sprint'],
@@ -40,23 +38,23 @@ include '_header.php';
                     ['num' => 5, 'icon' => 'cloud_upload', 'title' => 'Triển Khai & Launch', 'desc' => 'Deployment tự động CI/CD, monitoring, incident response'],
                     ['num' => 6, 'icon' => 'support_agent', 'title' => 'Hỗ Trợ & Phát Triển', 'desc' => 'Support 24/7, optimization, thêm features, scaling'],
                 ];
-                foreach ($steps as $step):
-                ?>
+                @endphp
+                @foreach($steps as $step)
                 <div style="background: white; border-radius: 12px; padding: 2.5rem 2rem; border: 1px solid var(--border); transition: all 0.3s ease; text-align: center; position: relative;" onmouseover="this.style.borderColor='var(--primary)'; this.style.boxShadow='0 10px 30px rgba(15, 107, 158, 0.1)'; this.style.transform='translateY(-4px)';" onmouseout="this.style.borderColor='var(--border)'; this.style.boxShadow=''; this.style.transform='';">
                     <div style="display: inline-flex; align-items: center; justify-content: center; width: 50px; height: 50px; background: var(--primary); color: white; border-radius: 50%; font-weight: 800; font-size: 1.5rem; margin-bottom: 1rem;">
-                        <?php echo $step['num']; ?>
+                        {{ $step['num'] }}
                     </div>
                     <div style="font-size: 2.5rem; color: var(--primary); margin: 1rem 0;">
-                        <span class="material-symbols-rounded"><?php echo $step['icon']; ?></span>
+                        <span class="material-symbols-rounded">{{ $step['icon'] }}</span>
                     </div>
                     <h3 style="font-size: 1.1rem; font-weight: 700; color: var(--text-dark); margin-bottom: 0.75rem;">
-                        <?php echo $step['title']; ?>
+                        {{ $step['title'] }}
                     </h3>
                     <p style="font-size: 0.9rem; color: var(--text-gray); line-height: 1.6;">
-                        <?php echo $step['desc']; ?>
+                        {{ $step['desc'] }}
                     </p>
                 </div>
-                <?php endforeach; ?>
+                @endforeach
             </div>
         </div>
     </section>
@@ -72,7 +70,7 @@ include '_header.php';
             <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: center;">
                 <div>
                     <ul style="list-style: none;">
-                        <?php
+                        @php
                         $cycles = [
                             ['title' => 'Sprint Planning', 'desc' => 'Xác định mục tiêu, chia task, estimate effort'],
                             ['title' => 'Daily Standup', 'desc' => 'Sync 15 phút mỗi ngày với team'],
@@ -80,17 +78,17 @@ include '_header.php';
                             ['title' => 'Sprint Review', 'desc' => 'Demo sản phẩm cho stakeholders'],
                             ['title' => 'Sprint Retrospective', 'desc' => 'Tổng kết, identify improvements'],
                         ];
-                        foreach ($cycles as $cycle):
-                        ?>
+                        @endphp
+                        @foreach($cycles as $cycle)
                         <li style="padding: 1.5rem; background: white; margin-bottom: 1rem; border-radius: 12px; border-left: 4px solid var(--primary);">
                             <strong style="display: block; color: var(--text-dark); font-weight: 700; margin-bottom: 0.5rem;">
-                                <?php echo $cycle['title']; ?>
+                                {{ $cycle['title'] }}
                             </strong>
                             <span style="color: var(--text-gray); font-size: 0.9rem;">
-                                <?php echo $cycle['desc']; ?>
+                                {{ $cycle['desc'] }}
                             </span>
                         </li>
-                        <?php endforeach; ?>
+                        @endforeach
                     </ul>
                 </div>
                 
@@ -144,7 +142,7 @@ include '_header.php';
             </div>
             
             <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2rem;">
-                <?php
+                @php
                 $benefits = [
                     ['icon' => 'visibility', 'title' => 'Minh Bạch & Kiểm Soát', 'desc' => 'Demo mỗi sprint, bạn thấy tiến độ real-time. Không có bất ngờ cuối dự án.'],
                     ['icon' => 'tune', 'title' => 'Linh Hoạt & Thích Ứng', 'desc' => 'Feedback sau mỗi sprint, pivot dễ dàng. Giảm rủi ro từ changing requirements.'],
@@ -153,20 +151,20 @@ include '_header.php';
                     ['icon' => 'shield', 'title' => 'Giảm Rủi Ro', 'desc' => 'Deploy từng sprint, phát hiện vấn đề sớm. Không all-or-nothing risk.'],
                     ['icon' => 'trending_up', 'title' => 'ROI Tối Ưu', 'desc' => 'Prioritize features theo value. Maximize return on investment.'],
                 ];
-                foreach ($benefits as $b):
-                ?>
+                @endphp
+                @foreach($benefits as $b)
                 <div style="background: white; border: 1px solid var(--border); border-radius: 12px; padding: 2rem; transition: all 0.3s ease;" onmouseover="this.style.borderColor='var(--primary)'; this.style.boxShadow='0 12px 30px rgba(15, 107, 158, 0.12)';" onmouseout="this.style.borderColor='var(--border)'; this.style.boxShadow='';">
                     <div style="font-size: 2.5rem; color: var(--primary); margin-bottom: 1rem;">
-                        <span class="material-symbols-rounded"><?php echo $b['icon']; ?></span>
+                        <span class="material-symbols-rounded">{{ $b['icon'] }}</span>
                     </div>
                     <h3 style="font-size: 1.1rem; font-weight: 700; color: var(--text-dark); margin-bottom: 0.75rem;">
-                        <?php echo $b['title']; ?>
+                        {{ $b['title'] }}
                     </h3>
                     <p style="color: var(--text-gray); font-size: 0.95rem; line-height: 1.6;">
-                        <?php echo $b['desc']; ?>
+                        {{ $b['desc'] }}
                     </p>
                 </div>
-                <?php endforeach; ?>
+                @endforeach
             </div>
         </div>
     </section>
@@ -180,7 +178,7 @@ include '_header.php';
             </div>
             
             <div style="max-width: 900px; margin: 0 auto; position: relative;">
-                <?php
+                @php
                 $journey = [
                     ['phase' => 'Giai Đoạn 1: Tư Vấn Ban Đầu (1 Tuần)', 'content' => 'Chúng tôi lắng nghe ý tưởng, hiểu business goals, phân tích thị trường, đối thủ. Lập kế hoạch chi tiết và đưa ra estimate.'],
                     ['phase' => 'Giai Đoạn 2: Discovery & Design (2-3 Tuần)', 'content' => 'Thiết kế chi tiết: wireframes → mockups → prototypes. Bạn review feedback trước khi code bắt đầu.'],
@@ -189,33 +187,32 @@ include '_header.php';
                     ['phase' => 'Giai Đoạn 5: Launch & Deployment (1 Tuần)', 'content' => 'Chuẩn bị production. Deploy, monitoring, incident response setup. Soft launch → full launch.'],
                     ['phase' => 'Giai Đoạn 6: Support & Growth (Ongoing)', 'content' => 'Hỗ trợ 24/7. Monitoring, optimization, thêm features, scaling. Chúng tôi là partner lâu dài.'],
                 ];
-                
-                foreach ($journey as $index => $j):
-                ?>
-                <div style="display: flex; gap: 2rem; align-items: flex-start; margin-bottom: <?php echo $index < count($journey) - 1 ? '3rem' : '0'; ?>;">
+                @endphp
+                @foreach($journey as $index => $j)
+                <div style="display: flex; gap: 2rem; align-items: flex-start; margin-bottom: {{ $index < count($journey) - 1 ? '3rem' : '0' }};">
                     <!-- Left side: Circle with connecting line -->
                     <div style="position: relative; flex-shrink: 0;">
                         <div style="width: 110px; height: 110px; background: white; border: 3px solid var(--primary); border-radius: 50%; display: flex; align-items: center; justify-content: center; text-align: center; box-shadow: 0 4px 15px rgba(15, 107, 158, 0.15); position: relative; z-index: 2;">
-                            <div style="font-size: 1.1rem; font-weight: 700; color: var(--primary); line-height: 1.2;">Phase <?php echo $index + 1; ?></div>
+                            <div style="font-size: 1.1rem; font-weight: 700; color: var(--primary); line-height: 1.2;">Phase {{ $index + 1 }}</div>
                         </div>
                         
                         <!-- Vertical connecting line -->
-                        <?php if ($index < count($journey) - 1): ?>
+                        @if($index < count($journey) - 1)
                         <div style="position: absolute; top: 110px; left: 50%; width: 3px; height: 80px; background: linear-gradient(180deg, var(--primary) 0%, rgba(15, 107, 158, 0.3) 100%); transform: translateX(-50%); z-index: 1;"></div>
-                        <?php endif; ?>
+                        @endif
                     </div>
                     
                     <!-- Right side: Content box -->
                     <div style="flex: 1; background: white; border-radius: 12px; padding: 2rem; border: 1px solid #e2e8f0; box-shadow: 0 2px 8px rgba(0,0,0,0.05); transition: all 0.3s ease;" onmouseover="this.style.borderColor='var(--primary)'; this.style.boxShadow='0 8px 20px rgba(15, 107, 158, 0.1)'; this.style.transform='translateX(5px)';" onmouseout="this.style.borderColor='#e2e8f0'; this.style.boxShadow='0 2px 8px rgba(0,0,0,0.05)'; this.style.transform='translateX(0)';">
                         <h3 style="font-size: 1.15rem; font-weight: 700; color: var(--text-dark); margin-bottom: 0.75rem; line-height: 1.4;">
-                            <?php echo $j['phase']; ?>
+                            {{ $j['phase'] }}
                         </h3>
                         <p style="color: var(--text-gray); font-size: 0.95rem; line-height: 1.7; margin: 0;">
-                            <?php echo $j['content']; ?>
+                            {{ $j['content'] }}
                         </p>
                     </div>
                 </div>
-                <?php endforeach; ?>
+                @endforeach
             </div>
         </div>
     </section>
@@ -229,7 +226,7 @@ include '_header.php';
             </div>
             
             <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2rem;">
-                <?php
+                @php
                 $why = [
                     ['title' => 'Scrum Experts', 'desc' => 'Certified Scrum Masters (CSM), 12+ năm agile experience, best practices từ tech giants.'],
                     ['title' => 'Transparent Process', 'desc' => 'Real-time dashboard, daily standups, weekly demos. Bạn luôn biết tiến độ dự án.'],
@@ -238,17 +235,17 @@ include '_header.php';
                     ['title' => 'Fast Delivery', 'desc' => 'Deploy frequently, reduce time-to-market. MVP in 4-8 weeks.'],
                     ['title' => 'Long-term Partnership', 'desc' => 'Support & scaling beyond launch. Chúng tôi invest vào success của bạn.'],
                 ];
-                foreach ($why as $w):
-                ?>
+                @endphp
+                @foreach($why as $w)
                 <div style="background: white; border: 1px solid var(--border); border-radius: 12px; padding: 2rem; text-align: center; transition: all 0.3s ease;" onmouseover="this.style.borderColor='var(--primary)'; this.style.boxShadow='0 12px 30px rgba(15, 107, 158, 0.12)'; this.style.transform='translateY(-5px)';" onmouseout="this.style.borderColor='var(--border)'; this.style.boxShadow=''; this.style.transform='';">
                     <h3 style="font-size: 1.1rem; font-weight: 700; color: var(--text-dark); margin-bottom: 0.75rem;">
-                        <?php echo $w['title']; ?>
+                        {{ $w['title'] }}
                     </h3>
                     <p style="color: var(--text-gray); font-size: 0.95rem;">
-                        <?php echo $w['desc']; ?>
+                        {{ $w['desc'] }}
                     </p>
                 </div>
-                <?php endforeach; ?>
+                @endforeach
             </div>
         </div>
     </section>
@@ -261,11 +258,11 @@ include '_header.php';
                 <p style="font-size: 1.1rem; margin-bottom: 2rem; opacity: 0.95;">
                     Tư vấn miễn phí 30 phút để lập kế hoạch dự án SCRUM của bạn
                 </p>
-                <a href="contact.php" style="background: white; color: var(--primary); padding: 1rem 2.5rem; border-radius: 8px; font-weight: 600; text-decoration: none; display: inline-block; transition: all 0.3s ease;" onmouseover="this.style.backgroundColor='var(--secondary-bg)';" onmouseout="this.style.backgroundColor='white';">
+                <a href="{{ route('landing.contact') }}" style="background: white; color: var(--primary); padding: 1rem 2.5rem; border-radius: 8px; font-weight: 600; text-decoration: none; display: inline-block; transition: all 0.3s ease;" onmouseover="this.style.backgroundColor='var(--secondary-bg)';" onmouseout="this.style.backgroundColor='white';">
                     <span>Đặt Tư Vấn Ngay</span>
                 </a>
             </div>
         </div>
     </section>
 
-<?php include '_footer.php'; ?>
+@endsection

@@ -99,6 +99,30 @@
                             'Performance profiling & debugging'
                         ]
                     ],
+                    [
+                        'title' => 'Mobile & Cross-Platform',
+                        'icon' => 'smartphone',
+                        'technologies' => [
+                            'React Native, Flutter',
+                            'iOS (Swift) & Android (Kotlin)',
+                            'Progressive Web Apps (PWA)',
+                            'Offline-first architecture',
+                            'Push notifications & deep linking',
+                            'App Store & Play Store deployment'
+                        ]
+                    ],
+                    [
+                        'title' => 'AI & Machine Learning',
+                        'icon' => 'psychology',
+                        'technologies' => [
+                            'OpenAI GPT, Claude, Gemini APIs',
+                            'Custom ML models (TensorFlow, PyTorch)',
+                            'Computer Vision & NLP',
+                            'RAG & Vector databases (Pinecone)',
+                            'Model training & fine-tuning',
+                            'AI ethics & responsible AI'
+                        ]
+                    ],
                 ];
                 @endphp
                 @foreach($tech_categories as $cat)
@@ -165,6 +189,69 @@
 
     <!-- Best Practices -->
     <section style="background: var(--secondary-bg);">
+        <div class="container-v5">
+            <div class="section-header">
+                <h2 class="section-title">Đa Nền Tảng - Phủ Sóng Mọi Thiết Bị</h2>
+                <p class="section-subtitle">Web, Mobile, Desktop - Build once, deploy everywhere</p>
+            </div>
+            
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2.5rem; margin-bottom: 4rem;">
+                @php
+                $platforms = [
+                    [
+                        'icon' => 'web',
+                        'title' => 'Web Applications',
+                        'desc' => 'Responsive web apps chạy trên mọi browser: Chrome, Safari, Firefox, Edge.',
+                        'tech' => 'React, Vue, Angular, TypeScript',
+                        'features' => ['PWA support', 'Offline mode', 'Cross-browser compatible', 'SEO optimized']
+                    ],
+                    [
+                        'icon' => 'smartphone',
+                        'title' => 'Mobile Apps',
+                        'desc' => 'Native iOS & Android, hoặc cross-platform với React Native / Flutter.',
+                        'tech' => 'React Native, Flutter, Swift, Kotlin',
+                        'features' => ['Native performance', 'Push notifications', 'Biometric auth', 'App Store ready']
+                    ],
+                    [
+                        'icon' => 'desktop_windows',
+                        'title' => 'Desktop Applications',
+                        'desc' => 'Cross-platform desktop apps cho Windows, macOS, Linux.',
+                        'tech' => 'Electron, Tauri, .NET MAUI',
+                        'features' => ['Native OS integration', 'Auto-update', 'Offline support', 'System tray']
+                    ],
+                ];
+                @endphp
+                @foreach($platforms as $platform)
+                <div style="background: white; border-radius: 12px; padding: 2.5rem; transition: all 0.3s ease; border: 1px solid var(--border);" onmouseover="this.style.transform='translateY(-8px)'; this.style.boxShadow='0 20px 40px rgba(15, 107, 158, 0.15)';" onmouseout="this.style.transform=''; this.style.boxShadow='';">
+                    <div style="font-size: 3rem; color: var(--primary); margin-bottom: 1.5rem;">
+                        <span class="material-symbols-rounded" style="font-size: 3rem;">{{ $platform['icon'] }}</span>
+                    </div>
+                    <h3 style="font-size: 1.4rem; font-weight: 700; color: var(--text-dark); margin-bottom: 1rem;">
+                        {{ $platform['title'] }}
+                    </h3>
+                    <p style="color: var(--text-gray); font-size: 0.95rem; line-height: 1.7; margin-bottom: 1.5rem;">
+                        {{ $platform['desc'] }}
+                    </p>
+                    <div style="background: var(--secondary-bg); padding: 0.75rem 1rem; border-radius: 6px; margin-bottom: 1.5rem;">
+                        <div style="font-size: 0.85rem; font-weight: 600; color: var(--primary); margin-bottom: 0.3rem;">TECH STACK</div>
+                        <div style="font-size: 0.9rem; color: var(--text-dark);">{{ $platform['tech'] }}</div>
+                    </div>
+                    <ul style="list-style: none; padding: 0; margin: 0;">
+                        @foreach($platform['features'] as $feature)
+                        <li style="padding: 0.5rem 0; color: var(--text-gray); display: flex; align-items: center; gap: 0.75rem; font-size: 0.9rem;">
+                            <span class="material-symbols-rounded" style="color: var(--accent); font-size: 1.25rem;">check_circle</span>
+                            {{ $feature }}
+                        </li>
+                        @endforeach
+                    </ul>
+                </div>
+                @endforeach
+            </div>
+        </div>
+    </section>
+
+    <!-- Best Practices -->
+    <section style="background: white;">
         <div class="container-v5">
             <div class="section-header">
                 <h2 class="section-title">Best Practices Từ Tech Giants</h2>

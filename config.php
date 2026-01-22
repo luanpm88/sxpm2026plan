@@ -1,7 +1,7 @@
 <?php
 // Configuration for the presentation
 define('PRESENTATION_TITLE', 'Định hướng phát triển Bộ phận Sản xuất Phần mềm 2026');
-define('TOTAL_SLIDES', 27);
+define('TOTAL_SLIDES', 28);
 
 // Slide titles
 $slide_titles = [
@@ -32,7 +32,8 @@ $slide_titles = [
     24 => 'Thiết kế: Tổng quan Automation (Visual)',
     25 => 'Thiết kế: AI Knowledge Base Platform',
     26 => 'Thiết kế: Scaling Infrastructure (10-Year Roadmap)',
-    27 => 'Thiết kế: Security Posture & Risk Mitigation'
+    27 => 'Thiết kế: Security Posture & Risk Mitigation',
+    28 => 'HKIncotech Landing Page - Nội dung Website'
 ];
 
 // Get current slide number from URL

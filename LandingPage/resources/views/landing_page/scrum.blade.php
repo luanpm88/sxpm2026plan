@@ -7,13 +7,13 @@
         <div class="container-v5">
             <div style="text-align: center; max-width: 900px; margin: 0 auto;">
                 <h1 style="font-size: 3.5rem; font-weight: 800; line-height: 1.15; margin-bottom: 1.5rem; color: var(--text-dark);">
-                    Quy Trình Phát Triển <span style="color: var(--primary);">SCRUM</span>
+                    SCRUM Development <span style="color: var(--primary);">Process</span>
                 </h1>
                 <p style="font-size: 1.15rem; color: var(--text-gray); line-height: 1.8; margin-bottom: 2rem;">
-                    Phương pháp Agile giúp bạn thấy tiến độ real-time, linh hoạt điều chỉnh, và deliver sản phẩm nhanh hơn 30-50%
+                    Agile methodology enabling real-time progress visibility, flexible adjustments, and 30-50% faster product delivery
                 </p>
                 <a href="{{ route('landing.contact') }}" class="btn-primary-v5">
-                    <span>Tư Vấn Quy Trình SCRUM</span>
+                    <span>Consult on SCRUM Process</span>
                     <span class="material-symbols-rounded">arrow_forward</span>
                 </a>
             </div>
@@ -24,19 +24,19 @@
     <section id="process">
         <div class="container-v5">
             <div class="section-header">
-                <h2 class="section-title">6 Bước SCRUM Process</h2>
-                <p class="section-subtitle">Từ khám phá ý tưởng đến triển khai sản phẩm thành công</p>
+                <h2 class="section-title">6 Steps in SCRUM Process</h2>
+                <p class="section-subtitle">From idea discovery to successful product deployment</p>
             </div>
             
             <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 1.5rem;">
                 @php
                 $steps = [
-                    ['num' => 1, 'icon' => 'lightbulb', 'title' => 'Khám Phá & Tư Vấn', 'desc' => 'Tiếp cận dự án từ góc độ chiến lược. Phân tích nhu cầu, lập kế hoạch chi tiết'],
-                    ['num' => 2, 'icon' => 'architecture', 'title' => 'Thiết Kế & Lập Kế Hoạch', 'desc' => 'Xây dựng kiến trúc hệ thống, wireframe UI/UX, kế hoạch sprint'],
-                    ['num' => 3, 'icon' => 'code', 'title' => 'Phát Triển Sprint', 'desc' => 'Team phát triển theo sprint 2-4 tuần, demo sản phẩm mỗi sprint'],
-                    ['num' => 4, 'icon' => 'verified', 'title' => 'QA & Testing', 'desc' => 'Kiểm thử toàn diện: unit, integration, UAT, performance'],
-                    ['num' => 5, 'icon' => 'cloud_upload', 'title' => 'Triển Khai & Launch', 'desc' => 'Deployment tự động CI/CD, monitoring, incident response'],
-                    ['num' => 6, 'icon' => 'support_agent', 'title' => 'Hỗ Trợ & Phát Triển', 'desc' => 'Support 24/7, optimization, thêm features, scaling'],
+                    ['num' => 1, 'icon' => 'lightbulb', 'title' => 'Discovery & Consulting', 'desc' => 'Strategic approach to project. Requirements analysis, detailed planning'],
+                    ['num' => 2, 'icon' => 'architecture', 'title' => 'Design & Planning', 'desc' => 'System architecture, UI/UX wireframes, sprint planning'],
+                    ['num' => 3, 'icon' => 'code', 'title' => 'Sprint Development', 'desc' => 'Team development across 2-4 week sprints, product demo each sprint'],
+                    ['num' => 4, 'icon' => 'verified', 'title' => 'QA & Testing', 'desc' => 'Comprehensive testing: unit, integration, UAT, performance'],
+                    ['num' => 5, 'icon' => 'cloud_upload', 'title' => 'Deployment & Launch', 'desc' => 'Automated CI/CD deployment, monitoring, incident response'],
+                    ['num' => 6, 'icon' => 'support_agent', 'title' => 'Support & Development', 'desc' => '24/7 support, optimization, feature additions, scaling'],
                 ];
                 @endphp
                 @foreach($steps as $step)
@@ -63,8 +63,8 @@
     <section style="background: var(--secondary-bg);">
         <div class="container-v5">
             <div class="section-header">
-                <h2 class="section-title">Sprint Cycle Chi Tiết</h2>
-                <p class="section-subtitle">Mỗi sprint 2-4 tuần: Plan → Execute → Review → Improve</p>
+                <h2 class="section-title">Sprint Cycle Details</h2>
+                <p class="section-subtitle">Each sprint 2–4 weeks: Plan > Execute > Review > Improve</p>
             </div>
             
             <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: center;">
@@ -72,11 +72,11 @@
                     <ul style="list-style: none;">
                         @php
                         $cycles = [
-                            ['title' => 'Sprint Planning', 'desc' => 'Xác định mục tiêu, chia task, estimate effort'],
-                            ['title' => 'Daily Standup', 'desc' => 'Sync 15 phút mỗi ngày với team'],
+                            ['title' => 'Sprint Planning', 'desc' => 'Define goals, break down tasks, estimate effort'],
+                            ['title' => 'Daily Standup', 'desc' => '15-minute daily sync with the team'],
                             ['title' => 'Development', 'desc' => 'Coding, code review, CI/CD'],
-                            ['title' => 'Sprint Review', 'desc' => 'Demo sản phẩm cho stakeholders'],
-                            ['title' => 'Sprint Retrospective', 'desc' => 'Tổng kết, identify improvements'],
+                            ['title' => 'Sprint Review', 'desc' => 'Demo the product to stakeholders'],
+                            ['title' => 'Sprint Retrospective', 'desc' => 'Reflect and identify improvements'],
                         ];
                         @endphp
                         @foreach($cycles as $cycle)
@@ -137,19 +137,19 @@
     <section id="benefits">
         <div class="container-v5">
             <div class="section-header">
-                <h2 class="section-title">Lợi Ích Quy Trình SCRUM</h2>
-                <p class="section-subtitle">Tại sao SCRUM là phương pháp phát triển tối ưu</p>
+                <h2 class="section-title">SCRUM Process Benefits</h2>
+                <p class="section-subtitle">Why SCRUM is the optimal development methodology</p>
             </div>
             
             <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2rem;">
                 @php
                 $benefits = [
-                    ['icon' => 'visibility', 'title' => 'Minh Bạch & Kiểm Soát', 'desc' => 'Demo mỗi sprint, bạn thấy tiến độ real-time. Không có bất ngờ cuối dự án.'],
-                    ['icon' => 'tune', 'title' => 'Linh Hoạt & Thích Ứng', 'desc' => 'Feedback sau mỗi sprint, pivot dễ dàng. Giảm rủi ro từ changing requirements.'],
-                    ['icon' => 'check_circle', 'title' => 'Chất Lượng Cao', 'desc' => 'Code review, testing liên tục. Phát hiện bug sớm, chi phí fix thấp.'],
-                    ['icon' => 'speed', 'title' => 'Team Hiệu Quả', 'desc' => 'Standup hàng ngày, clear priorities. Tốc độ delivery nhanh hơn 30-50%.'],
-                    ['icon' => 'shield', 'title' => 'Giảm Rủi Ro', 'desc' => 'Deploy từng sprint, phát hiện vấn đề sớm. Không all-or-nothing risk.'],
-                    ['icon' => 'trending_up', 'title' => 'ROI Tối Ưu', 'desc' => 'Prioritize features theo value. Maximize return on investment.'],
+                    ['icon' => 'visibility', 'title' => 'Transparency & Control', 'desc' => 'Sprint demos show real-time progress. No project surprises. You control priorities.'],
+                    ['icon' => 'tune', 'title' => 'Flexible & Adaptive', 'desc' => 'Feedback after each sprint, easy pivots. Reduced risk from changing requirements.'],
+                    ['icon' => 'check_circle', 'title' => 'High Quality', 'desc' => 'Continuous code review, testing. Early bug detection, low fix costs.'],
+                    ['icon' => 'speed', 'title' => 'Efficient Team', 'desc' => 'Daily standups, clear priorities. 30-50% faster delivery speed.'],
+                    ['icon' => 'shield', 'title' => 'Risk Reduction', 'desc' => 'Deploy each sprint, identify issues early. No all-or-nothing risk.'],
+                    ['icon' => 'trending_up', 'title' => 'Optimal ROI', 'desc' => 'Prioritize features by value. Maximize return on investment.'],
                 ];
                 @endphp
                 @foreach($benefits as $b)
@@ -173,19 +173,19 @@
     <section style="background: var(--secondary-bg);">
         <div class="container-v5">
             <div class="section-header">
-                <h2 class="section-title">Hành Trình Làm Việc Cùng HKIncotech</h2>
-                <p class="section-subtitle">6 giai đoạn từ lúc bạn liên hệ đến khi sản phẩm sống trên production</p>
+                <h2 class="section-title">Your Journey with HKIncotech</h2>
+                <p class="section-subtitle">6 phases from first contact to product live in production</p>
             </div>
             
             <div style="max-width: 900px; margin: 0 auto; position: relative;">
                 @php
                 $journey = [
-                    ['phase' => 'Giai Đoạn 1: Tư Vấn Ban Đầu (1 Tuần)', 'content' => 'Chúng tôi lắng nghe ý tưởng, hiểu business goals, phân tích thị trường, đối thủ. Lập kế hoạch chi tiết và đưa ra estimate.'],
-                    ['phase' => 'Giai Đoạn 2: Discovery & Design (2-3 Tuần)', 'content' => 'Thiết kế chi tiết: wireframes → mockups → prototypes. Bạn review feedback trước khi code bắt đầu.'],
-                    ['phase' => 'Giai Đoạn 3: Sprint Development (6-12 Tuần)', 'content' => 'Phát triển theo sprint 2-4 tuần. Mỗi sprint kết thúc, bạn nhận feature hoàn chỉnh và deploy được.'],
-                    ['phase' => 'Giai Đoạn 4: QA & Testing (2-3 Tuần)', 'content' => 'Kiểm thử toàn diện: functional, performance, security, UAT. Fix bugs, optimize, đảm bảo quality.'],
-                    ['phase' => 'Giai Đoạn 5: Launch & Deployment (1 Tuần)', 'content' => 'Chuẩn bị production. Deploy, monitoring, incident response setup. Soft launch → full launch.'],
-                    ['phase' => 'Giai Đoạn 6: Support & Growth (Ongoing)', 'content' => 'Hỗ trợ 24/7. Monitoring, optimization, thêm features, scaling. Chúng tôi là partner lâu dài.'],
+                    ['phase' => 'Phase 1: Initial Consultation (1 Week)', 'content' => 'We listen to your idea, understand business goals, analyze market, competitors. Provide detailed plan and estimate.'],
+                    ['phase' => 'Phase 2: Discovery & Design (2-3 Weeks)', 'content' => 'Detailed design: wireframes > mockups > prototypes. You review and provide feedback before coding starts.'],
+                    ['phase' => 'Phase 3: Sprint Development (6-12 Weeks)', 'content' => 'Development across 2-4 week sprints. Each sprint ends with completed, deployable features.'],
+                    ['phase' => 'Phase 4: QA & Testing (2-3 Weeks)', 'content' => 'Comprehensive testing: functional, performance, security, UAT. Fix bugs, optimize, ensure quality.'],
+                    ['phase' => 'Phase 5: Launch & Deployment (1 Week)', 'content' => 'Prepare production. Deploy, monitoring setup, incident response. Soft launch to full launch.'],
+                    ['phase' => 'Phase 6: Support & Growth (Ongoing)', 'content' => '24/7 support. Monitoring, optimization, adding features, scaling. We are your long-term partner.'],
                 ];
                 @endphp
                 @foreach($journey as $index => $j)
@@ -221,19 +221,19 @@
     <section id="why">
         <div class="container-v5">
             <div class="section-header">
-                <h2 class="section-title">Tại Sao Chọn HKIncotech cho SCRUM Development?</h2>
-                <p class="section-subtitle">Chúng tôi là Certified Scrum Masters với track record thành công</p>
+                <h2 class="section-title">Why Choose HKIncotech for SCRUM Development?</h2>
+                <p class="section-subtitle">Certified Scrum Masters with proven track record</p>
             </div>
             
             <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2rem;">
                 @php
                 $why = [
-                    ['title' => 'Scrum Experts', 'desc' => 'Certified Scrum Masters (CSM), 12+ năm agile experience, best practices từ tech giants.'],
-                    ['title' => 'Transparent Process', 'desc' => 'Real-time dashboard, daily standups, weekly demos. Bạn luôn biết tiến độ dự án.'],
-                    ['title' => 'Flexible & Adaptive', 'desc' => 'Dễ dàng pivot, thêm/bớt features, điều chỉnh scope theo feedback.'],
-                    ['title' => 'Quality First', 'desc' => 'Automated testing, code review, CI/CD. Defect detection early & often.'],
-                    ['title' => 'Fast Delivery', 'desc' => 'Deploy frequently, reduce time-to-market. MVP in 4-8 weeks.'],
-                    ['title' => 'Long-term Partnership', 'desc' => 'Support & scaling beyond launch. Chúng tôi invest vào success của bạn.'],
+                    ['title' => 'Scrum Experts', 'desc' => 'Certified Scrum Masters (CSM), 12+ years agile experience, best practices from tech giants.'],
+                    ['title' => 'Transparent Process', 'desc' => 'Real-time dashboard, daily standups, weekly demos. You always know project status.'],
+                    ['title' => 'Flexible & Adaptive', 'desc' => 'Easy pivots, add/remove features, adjust scope based on feedback.'],
+                    ['title' => 'Quality First', 'desc' => 'Automated testing, code review, CI/CD. Early & frequent defect detection.'],
+                    ['title' => 'Fast Delivery', 'desc' => 'Frequent deployments, reduced time-to-market. MVP in 4-8 weeks.'],
+                    ['title' => 'Long-term Partnership', 'desc' => 'Support & scaling beyond launch. We invest in your success.'],
                 ];
                 @endphp
                 @foreach($why as $w)
@@ -254,12 +254,12 @@
     <section style="background: var(--secondary-bg);">
         <div class="container-v5">
             <div style="background: linear-gradient(135deg, var(--primary) 0%, var(--primary-light) 100%); border-radius: 12px; padding: 3.5rem 2rem; text-align: center; color: white;">
-                <h2 style="font-size: 2.5rem; font-weight: 800; margin-bottom: 1rem;">Bắt Đầu SCRUM Development Ngay</h2>
+                <h2 style="font-size: 2.5rem; font-weight: 800; margin-bottom: 1rem;">Start SCRUM Development Today</h2>
                 <p style="font-size: 1.1rem; margin-bottom: 2rem; opacity: 0.95;">
-                    Tư vấn miễn phí 30 phút để lập kế hoạch dự án SCRUM của bạn
+                    Free 30-minute consultation to plan your SCRUM project
                 </p>
                 <a href="{{ route('landing.contact') }}" style="background: white; color: var(--primary); padding: 1rem 2.5rem; border-radius: 8px; font-weight: 600; text-decoration: none; display: inline-block; transition: all 0.3s ease;" onmouseover="this.style.backgroundColor='var(--secondary-bg)';" onmouseout="this.style.backgroundColor='white';">
-                    <span>Đặt Tư Vấn Ngay</span>
+                    <span>Schedule Consultation</span>
                 </a>
             </div>
         </div>

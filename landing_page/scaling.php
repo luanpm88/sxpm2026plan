@@ -1,6 +1,6 @@
 <?php
-$page_title = "Mở Rộng & Infrastructure - HKIncotech";
-$page_description = "6 giai đoạn scaling từ MVP đến enterprise. Performance metrics, SLA 99.99%, auto-scaling infrastructure.";
+$page_title = "Scaling & Infrastructure - HKIncotech";
+$page_description = "Six scaling phases from MVP to enterprise. Performance metrics, 99.99% SLA, auto-scaling infrastructure.";
 include '_header.php';
 ?>
 
@@ -9,13 +9,13 @@ include '_header.php';
         <div class="container-v5">
             <div style="text-align: center; max-width: 900px; margin: 0 auto;">
                 <h1 style="font-size: 3.5rem; font-weight: 800; line-height: 1.15; margin-bottom: 1.5rem; color: var(--text-dark);">
-                    Mở Rộng & <span style="color: var(--primary);">Infrastructure</span>
+                    Scaling & <span style="color: var(--primary);">Infrastructure</span>
                 </h1>
                 <p style="font-size: 1.15rem; color: var(--text-gray); line-height: 1.8; margin-bottom: 1.5rem;">
-                    Từ MVP nhỏ đến 10 triệu users. 6 giai đoạn scaling với SLA 99.99%, auto-scaling, monitoring 24/7.
+                    From MVP to millions of users. Six scaling phases with 99.99% SLA, auto-scaling, and 24/7 monitoring.
                 </p>
                 <p style="font-size: 1rem; color: var(--text-gray); margin-bottom: 2rem;">
-                    Chúng tôi đã scale 150+ projects từ 0 → millions of users. Kinh nghiệm từ early startup đến unicorn.
+                    Experience scaling 150+ projects from zero to high traffic across startups and enterprises.
                 </p>
             </div>
         </div>
@@ -25,8 +25,8 @@ include '_header.php';
     <section style="background: var(--secondary-bg);">
         <div class="container-v5">
             <div class="section-header">
-                <h2 class="section-title">6 Giai Đoạn Scaling</h2>
-                <p class="section-subtitle">Roadmap từ MVP đến enterprise-scale infrastructure</p>
+                <h2 class="section-title">Six Scaling Phases</h2>
+                <p class="section-subtitle">Roadmap from MVP to enterprise-scale infrastructure</p>
             </div>
             
             <div style="display: grid; gap: 2rem;">
@@ -133,14 +133,14 @@ include '_header.php';
     <section style="background: white;">
         <div class="container-v5">
             <div class="section-header">
-                <h2 class="section-title">Tiêu Chí Hiệu Năng</h2>
-                <p class="section-subtitle">Enterprise-grade SLA và performance benchmarks</p>
+                <h2 class="section-title">Performance Metrics</h2>
+                <p class="section-subtitle">Enterprise-grade SLA and performance benchmarks</p>
             </div>
             
             <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 2rem;">
                 <?php
                 $metrics = [
-                    ['metric' => '99.99%', 'label' => 'Uptime SLA', 'desc' => '~4.26 phút downtime/năm'],
+                    ['metric' => '99.99%', 'label' => 'Uptime SLA', 'desc' => '~4.26 minutes downtime/year'],
                     ['metric' => '<100ms', 'label' => 'API Response Time', 'desc' => 'P99 latency'],
                     ['metric' => '<3s', 'label' => 'Page Load Time', 'desc' => 'On 3G network'],
                     ['metric' => '>95', 'label' => 'Lighthouse Score', 'desc' => 'Performance metric'],
@@ -172,7 +172,7 @@ include '_header.php';
         <div class="container-v5">
             <div class="section-header">
                 <h2 class="section-title">Case Study: Scaling Story</h2>
-                <p class="section-subtitle">HKSpace: 0 → 50K users trong 18 tháng</p>
+                <p class="section-subtitle">HKSpace: 0 → 50K users in 18 months</p>
             </div>
             
             <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; align-items: center;">
@@ -240,8 +240,8 @@ include '_header.php';
     <section style="background: white;">
         <div class="container-v5">
             <div class="section-header">
-                <h2 class="section-title">Bảo Mật & Compliance at Scale</h2>
-                <p class="section-subtitle">Enterprise security standards từ day 1</p>
+                <h2 class="section-title">Security & Compliance at Scale</h2>
+                <p class="section-subtitle">Enterprise security standards from day one</p>
             </div>
             
             <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2rem;">
@@ -321,12 +321,12 @@ include '_header.php';
     <section style="background: white;">
         <div class="container-v5">
             <div style="background: linear-gradient(135deg, var(--primary) 0%, var(--primary-light) 100%); border-radius: 12px; padding: 4rem 2rem; text-align: center; color: white;">
-                <h2 style="font-size: 2.5rem; font-weight: 800; margin-bottom: 1rem;">Sẵn Sàng Để Scale?</h2>
+                <h2 style="font-size: 2.5rem; font-weight: 800; margin-bottom: 1rem;">Ready to Scale?</h2>
                 <p style="font-size: 1.1rem; margin-bottom: 2rem; opacity: 0.95;">
-                    Chúng tôi có kinh nghiệm scale từ 0 đến 100 triệu users. Hãy cùng nhau xây dựng infrastructure vững chắc cho tương lai.
+                    We design stable, scalable infrastructure for growth.
                 </p>
                 <a href="contact.php" style="background: white; color: var(--primary); padding: 1rem 2.5rem; border-radius: 8px; font-weight: 600; text-decoration: none; display: inline-flex; align-items: center; gap: 0.75rem; transition: all 0.3s ease;" onmouseover="this.style.backgroundColor='var(--secondary-bg)'; this.style.transform='translateY(-2px)'; this.style.boxShadow='0 8px 20px rgba(0,0,0,0.15)';" onmouseout="this.style.backgroundColor='white'; this.style.transform=''; this.style.boxShadow='';">
-                    <span>Tư Vấn Scaling</span>
+                    <span>Scaling Consultation</span>
                     <span class="material-symbols-rounded">arrow_forward</span>
                 </a>
             </div>

@@ -34,15 +34,15 @@
             <nav>
                 @php
                     $navLinks = [
-                        'landing.index' => 'Trang Chủ',
-                        'landing.services' => 'Dịch Vụ',
+                        'landing.index' => 'Home',
+                        'landing.about-us' => 'About Us',
+                        'landing.services' => 'Services',
                         'landing.scrum' => 'SCRUM',
-                        'landing.tech-stack' => 'Công Nghệ',
-                        'landing.scaling' => 'Mở Rộng',
-                        'landing.about-us' => 'Về Chúng Tôi',
+                        'landing.tech-stack' => 'Technology',
+                        'landing.scaling' => 'Scaling',
                         'landing.case-studies' => 'Case Studies',
-                        'landing.pricing' => 'Giá',
-                        'landing.contact' => 'Liên Hệ'
+                        'landing.pricing' => 'Cost & Plans',
+                        'landing.contact' => 'Contact'
                     ];
                 @endphp
                 @foreach($navLinks as $route => $label)
@@ -53,7 +53,7 @@
                     </a>
                 @endforeach
             </nav>
-            <a href="{{ route('landing.contact') }}" class="btn-header">Bắt Đầu</a>
+            <a href="{{ route('landing.contact') }}" class="btn-header">Get Started</a>
         </div>
     </header>
 
@@ -66,15 +66,15 @@
             <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem; margin-bottom: 2rem;">
                 <!-- Company Info -->
                 <div class="footer-section">
-                    <h3>Về HKIncotech</h3>
+                    <h3>About HKIncotech</h3>
                     <p style="color: rgba(255, 255, 255, 0.7); font-size: 0.9rem; line-height: 1.6;">
-                        Công ty phát triển phần mềm doanh nghiệp hàng đầu Đông Nam Á. Chuyên cung cấp giải pháp custom software, SaaS platform, AI solutions với 12+ năm kinh nghiệm.
+                        Leading enterprise software development company in Southeast Asia. Specializing in custom software solutions, SaaS platforms, and AI solutions with 12+ years of experience.
                     </p>
                 </div>
                 
                 <!-- Services -->
                 <div class="footer-section">
-                    <h3>Dịch Vụ</h3>
+                    <h3>Services</h3>
                     <ul>
                         <li><a href="{{ route('landing.services') }}">Custom Software Development</a></li>
                         <li><a href="{{ route('landing.services') }}">SaaS Platform</a></li>
@@ -85,7 +85,7 @@
                 
                 <!-- Technology -->
                 <div class="footer-section">
-                    <h3>Công Nghệ</h3>
+                    <h3>Technology</h3>
                     <ul>
                         <li><a href="{{ route('landing.tech-stack') }}">Cloud & DevOps</a></li>
                         <li><a href="{{ route('landing.tech-stack') }}">Frontend Technologies</a></li>
@@ -96,12 +96,12 @@
                 
                 <!-- Company -->
                 <div class="footer-section">
-                    <h3>Công Ty</h3>
+                    <h3>Company</h3>
                     <ul>
-                        <li><a href="{{ route('landing.about-us') }}">Về Chúng Tôi</a></li>
+                        <li><a href="{{ route('landing.about-us') }}">About Us</a></li>
                         <li><a href="{{ route('landing.case-studies') }}">Case Studies</a></li>
-                        <li><a href="{{ route('landing.contact') }}">Liên Hệ</a></li>
-                        <li><a href="{{ route('landing.pricing') }}">Bảng Giá</a></li>
+                        <li><a href="{{ route('landing.contact') }}">Contact</a></li>
+                        <li><a href="{{ route('landing.pricing') }}">Pricing</a></li>
                     </ul>
                 </div>
             </div>

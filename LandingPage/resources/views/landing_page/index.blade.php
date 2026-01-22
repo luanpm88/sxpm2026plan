@@ -51,29 +51,29 @@
             <div class="hero-grid" style="display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: center;">
                 <div class="hero-content">
                     <h1 style="font-size: 4rem; font-weight: 800; line-height: 1.15; margin-bottom: 1.5rem; color: var(--text-dark);">
-                        Xây Dựng Phần Mềm<br><span style="color: var(--primary);">Doanh Nghiệp Quy Mô Toàn Cầu</span>
+                        Enterprise Software<br><span style="color: var(--primary);">Development Partner</span>
                     </h1>
                     <p style="font-size: 1.15rem; color: var(--text-gray); margin-bottom: 2.5rem; line-height: 1.8;">
-                        HKIncotech là partner phát triển phần mềm hàng đầu Đông Nam Á. Chúng tôi xây dựng hệ thống phức tạp, AI platform, SaaS solutions theo SCRUM methodology với 12+ năm kinh nghiệm.
+                        HKIncotech is a software development partner in Southeast Asia. We build complex systems, AI platforms, and SaaS solutions using SCRUM methodology with 12+ years of experience.
                     </p>
                     <div style="display: flex; gap: 1.25rem; margin-bottom: 3rem; flex-wrap: wrap;">
                         <a href="{{ route('landing.contact') }}" class="btn-primary-v5">
-                            <span>Tư Vấn Miễn Phí</span>
+                            <span>Free Consultation</span>
                             <span class="material-symbols-rounded">arrow_forward</span>
                         </a>
                         <a href="{{ route('landing.services') }}" class="btn-secondary-v5">
-                            <span>Khám Phá Dịch Vụ</span>
+                            <span>View Services</span>
                             <span class="material-symbols-rounded">explore</span>
                         </a>
                     </div>
                     <div class="hero-stats" style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 2rem; margin-top: 3rem; padding-top: 2.5rem; border-top: 1px solid var(--border);">
                         <div>
                             <div style="font-size: 2.25rem; font-weight: 800; color: var(--primary);">12+</div>
-                            <div style="font-size: 0.95rem; color: var(--text-gray); margin-top: 0.5rem;">Năm Kinh Nghiệm</div>
+                            <div style="font-size: 0.95rem; color: var(--text-gray); margin-top: 0.5rem;">Years Experience</div>
                         </div>
                         <div>
-                            <div style="font-size: 2.25rem; font-weight: 800; color: var(--primary);">150+</div>
-                            <div style="font-size: 0.95rem; color: var(--text-gray); margin-top: 0.5rem;">Dự Án Hoàn Thành</div>
+                            <div style="font-size: 2.25rem; font-weight: 800; color: var(--primary);">50+</div>
+                            <div style="font-size: 0.95rem; color: var(--text-gray); margin-top: 0.5rem;">Projects Completed</div>
                         </div>
                         <div>
                             <div style="font-size: 2.25rem; font-weight: 800; color: var(--primary);">99.99%</div>
@@ -133,8 +133,8 @@
     <section id="services" style="background: var(--secondary-bg);">
         <div class="container-v5">
             <div class="section-header">
-                <h2 class="section-title">Khả Năng Toàn Diện</h2>
-                <p class="section-subtitle">Cung cấp giải pháp phần mềm enterprise-grade từ phát triển custom đến SaaS platform</p>
+                <h2 class="section-title">Complete Capabilities</h2>
+                <p class="section-subtitle">Enterprise-grade software solutions from custom development to SaaS platforms</p>
             </div>
             
             <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem;">
@@ -144,7 +144,7 @@
                     </div>
                     <h3 style="font-size: 1.3rem; font-weight: 700; color: var(--text-dark); margin-bottom: 1rem;">Custom Software Development</h3>
                     <p style="color: var(--text-gray); font-size: 0.95rem; line-height: 1.7; margin-bottom: 1.5rem;">
-                        Phát triển ứng dụng từ đầu với kiến trúc cloud-native, microservices, và DevOps automation
+                        Application development from scratch with cloud-native architecture, microservices, and DevOps automation
                     </p>
                     <ul style="list-style: none; padding: 0; margin-bottom: 1.5rem;">
                         <li style="padding: 0.5rem 0; color: var(--text-gray); display: flex; align-items: center; gap: 0.75rem; font-size: 0.9rem;">
@@ -164,7 +164,7 @@
                             Data Pipelines
                         </li>
                     </ul>
-                    <a href="{{ route('landing.services') }}" style="color: var(--primary); font-weight: 600; text-decoration: none;">Xem Chi Tiết →</a>
+                    <a href="{{ route('landing.services') }}" style="color: var(--primary); font-weight: 600; text-decoration: none;">View Details</a>
                 </div>
                 
                 <div style="background: white; border: 1px solid var(--border); border-radius: 12px; padding: 2.5rem 2rem; transition: all 0.3s ease;" onmouseover="this.style.borderColor='var(--primary)'; this.style.boxShadow='0 12px 30px rgba(15, 107, 158, 0.12)';" onmouseout="this.style.borderColor='var(--border)'; this.style.boxShadow='';">
@@ -173,7 +173,7 @@
                     </div>
                     <h3 style="font-size: 1.3rem; font-weight: 700; color: var(--text-dark); margin-bottom: 1rem;">SaaS Platform: HKSpace</h3>
                     <p style="color: var(--text-gray); font-size: 0.95rem; line-height: 1.7; margin-bottom: 1.5rem;">
-                        Nền tảng quản lý doanh nghiệp multi-tenant với khả năng mở rộng vô hạn
+                        Multi-tenant enterprise management platform with unlimited scalability
                     </p>
                     <ul style="list-style: none; padding: 0; margin-bottom: 1.5rem;">
                         <li style="padding: 0.5rem 0; color: var(--text-gray); display: flex; align-items: center; gap: 0.75rem; font-size: 0.9rem;">
@@ -193,7 +193,7 @@
                             Advanced Analytics
                         </li>
                     </ul>
-                    <a href="{{ route('landing.services') }}" style="color: var(--primary); font-weight: 600; text-decoration: none;">Xem Chi Tiết →</a>
+                    <a href="{{ route('landing.services') }}" style="color: var(--primary); font-weight: 600; text-decoration: none;">View Details</a>
                 </div>
                 
                 <div style="background: white; border: 1px solid var(--border); border-radius: 12px; padding: 2.5rem 2rem; transition: all 0.3s ease;" onmouseover="this.style.borderColor='var(--primary)'; this.style.boxShadow='0 12px 30px rgba(15, 107, 158, 0.12)';" onmouseout="this.style.borderColor='var(--border)'; this.style.boxShadow='';">
@@ -202,7 +202,7 @@
                     </div>
                     <h3 style="font-size: 1.3rem; font-weight: 700; color: var(--text-dark); margin-bottom: 1rem;">AI Knowledge Platform</h3>
                     <p style="color: var(--text-gray); font-size: 0.95rem; line-height: 1.7; margin-bottom: 1.5rem;">
-                        Nền tảng AI tích hợp NLP, RAG, vector databases, và custom LLM
+                        AI platform integrating NLP, RAG, vector databases, and custom LLM
                     </p>
                     <ul style="list-style: none; padding: 0; margin-bottom: 1.5rem;">
                         <li style="padding: 0.5rem 0; color: var(--text-gray); display: flex; align-items: center; gap: 0.75rem; font-size: 0.9rem;">
@@ -222,7 +222,7 @@
                             LLM Integration
                         </li>
                     </ul>
-                    <a href="{{ route('landing.services') }}" style="color: var(--primary); font-weight: 600; text-decoration: none;">Xem Chi Tiết →</a>
+                    <a href="{{ route('landing.services') }}" style="color: var(--primary); font-weight: 600; text-decoration: none;">View Details</a>
                 </div>
                 
                 <div style="background: white; border: 1px solid var(--border); border-radius: 12px; padding: 2.5rem 2rem; transition: all 0.3s ease;" onmouseover="this.style.borderColor='var(--primary)'; this.style.boxShadow='0 12px 30px rgba(15, 107, 158, 0.12)';" onmouseout="this.style.borderColor='var(--border)'; this.style.boxShadow='';">
@@ -231,7 +231,7 @@
                     </div>
                     <h3 style="font-size: 1.3rem; font-weight: 700; color: var(--text-dark); margin-bottom: 1rem;">Security & Compliance</h3>
                     <p style="color: var(--text-gray); font-size: 0.95rem; line-height: 1.7; margin-bottom: 1.5rem;">
-                        Kiến trúc bảo mật enterprise-grade tuân thủ OWASP, ISO 27001, SOC 2
+                        Enterprise-grade security architecture complying with OWASP, ISO 27001, SOC 2
                     </p>
                     <ul style="list-style: none; padding: 0; margin-bottom: 1.5rem;">
                         <li style="padding: 0.5rem 0; color: var(--text-gray); display: flex; align-items: center; gap: 0.75rem; font-size: 0.9rem;">
@@ -251,7 +251,7 @@
                             Incident Response
                         </li>
                     </ul>
-                    <a href="{{ route('landing.services') }}" style="color: var(--primary); font-weight: 600; text-decoration: none;">Xem Chi Tiết →</a>
+                    <a href="{{ route('landing.services') }}" style="color: var(--primary); font-weight: 600; text-decoration: none;">View Details</a>
                 </div>
             </div>
         </div>
@@ -261,19 +261,19 @@
     <section id="process">
         <div class="container-v5">
             <div class="section-header">
-                <h2 class="section-title">Quy Trình SCRUM</h2>
-                <p class="section-subtitle">Phương pháp phát triển agile giúp bạn thấy tiến độ real-time</p>
+                <h2 class="section-title">SCRUM Process</h2>
+                <p class="section-subtitle">Agile development methodology for real-time progress visibility</p>
             </div>
             
             <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 1.5rem;">
                 @php
                 $processes = [
-                    ['icon' => 'lightbulb', 'title' => 'Khám Phá', 'desc' => 'Tư vấn, lập kế hoạch'],
-                    ['icon' => 'architecture', 'title' => 'Thiết Kế', 'desc' => 'Wireframe, kiến trúc'],
-                    ['icon' => 'code', 'title' => 'Phát Triển', 'desc' => 'Sprint cycles'],
-                    ['icon' => 'verified', 'title' => 'QA Testing', 'desc' => 'Kiểm thử toàn diện'],
-                    ['icon' => 'cloud_upload', 'title' => 'Deploy', 'desc' => 'Launch sản phẩm'],
-                    ['icon' => 'support_agent', 'title' => 'Support', 'desc' => '24/7 hỗ trợ'],
+                    ['icon' => 'lightbulb', 'title' => 'Discovery', 'desc' => 'Consulting, planning'],
+                    ['icon' => 'architecture', 'title' => 'Design', 'desc' => 'Wireframe, architecture'],
+                    ['icon' => 'code', 'title' => 'Development', 'desc' => 'Sprint cycles'],
+                    ['icon' => 'verified', 'title' => 'QA Testing', 'desc' => 'Comprehensive testing'],
+                    ['icon' => 'cloud_upload', 'title' => 'Deploy', 'desc' => 'Product launch'],
+                    ['icon' => 'support_agent', 'title' => 'Support', 'desc' => '24/7 support'],
                 ];
                 @endphp
                 @foreach($processes as $p)
@@ -289,7 +289,7 @@
             
             <div style="text-align: center; margin-top: 3rem;">
                 <a href="{{ route('landing.scrum') }}" class="btn-primary-v5">
-                    <span>Tìm Hiểu Quy Trình Chi Tiết</span>
+                    <span>Learn Detailed Process</span>
                     <span class="material-symbols-rounded">arrow_forward</span>
                 </a>
             </div>
@@ -301,55 +301,110 @@
         <div class="container-v5">
             <div class="section-header">
                 <h2 class="section-title">Technology Stack</h2>
-                <p class="section-subtitle">Công nghệ hiện đại được sử dụng bởi các công ty hàng đầu thế giới</p>
+                <p class="section-subtitle">Enterprise-grade technologies across 8 categories, 50+ frameworks & tools</p>
             </div>
             
-            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2rem;">
+            <!-- Tech Stack Grid -->
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 2rem; margin-bottom: 3rem;">
                 @php
                 $tech_categories = [
                     [
-                        'icon' => 'devices',
+                        'icon' => 'web',
                         'title' => 'Frontend & UI',
-                        'techs' => ['React.js / Vue.js / Next.js', 'TypeScript', 'TailwindCSS', 'Material Design', 'Responsive Architecture']
+                        'techs' => ['React, Vue, Angular', 'TypeScript, Next.js', 'TailwindCSS, Material Design', 'PWA & Performance'],
+                        'color' => 'rgb(59, 130, 246)'
                     ],
                     [
                         'icon' => 'storage',
                         'title' => 'Backend & API',
-                        'techs' => ['Node.js / Python / Java', 'FastAPI / NestJS', 'GraphQL / REST API', 'Microservices', 'Message Queues']
+                        'techs' => ['Node.js, Python, Java, Go', 'FastAPI, NestJS', 'GraphQL, REST APIs', 'Microservices'],
+                        'color' => 'rgb(15, 107, 158)'
                     ],
                     [
                         'icon' => 'database',
-                        'title' => 'Data & Storage',
-                        'techs' => ['PostgreSQL / MongoDB', 'Redis / Elasticsearch', 'Vector Databases', 'Data Warehousing', 'Cloud Object Storage']
+                        'title' => 'Data & Database',
+                        'techs' => ['PostgreSQL, MongoDB, MySQL', 'Redis, Elasticsearch', 'Vector Databases', 'BigQuery Data Warehouse'],
+                        'color' => 'rgb(34, 197, 94)'
                     ],
                     [
                         'icon' => 'cloud',
-                        'title' => 'Cloud & DevOps',
-                        'techs' => ['AWS / GCP / Azure', 'Kubernetes / Docker', 'Terraform / IaC', 'CI/CD Automation', 'Monitoring & Logging']
+                        'title' => 'Cloud & Infrastructure',
+                        'techs' => ['AWS, GCP, Azure', 'Kubernetes, Docker', 'CI/CD Automation', 'Infrastructure as Code'],
+                        'color' => 'rgb(168, 85, 247)'
+                    ],
+                    [
+                        'icon' => 'shield',
+                        'title' => 'Security & Compliance',
+                        'techs' => ['SSL/TLS Encryption', 'OWASP Standards', 'GDPR Compliance', 'Penetration Testing'],
+                        'color' => 'rgb(239, 68, 68)'
+                    ],
+                    [
+                        'icon' => 'smartphone',
+                        'title' => 'Mobile Development',
+                        'techs' => ['React Native, Flutter', 'iOS (Swift), Android (Kotlin)', 'Progressive Web Apps', 'App Store Deployment'],
+                        'color' => 'rgb(249, 115, 22)'
+                    ],
+                    [
+                        'icon' => 'psychology',
+                        'title' => 'AI & Machine Learning',
+                        'techs' => ['OpenAI APIs', 'Custom ML Models', 'Computer Vision & NLP', 'RAG & Vector Search'],
+                        'color' => 'rgb(14, 165, 233)'
+                    ],
+                    [
+                        'icon' => 'settings',
+                        'title' => 'DevOps & Tools',
+                        'techs' => ['Git, GitHub, GitLab', 'Docker, Terraform', 'Monitoring & Logging', 'Performance Tools'],
+                        'color' => 'rgb(236, 72, 153)'
                     ],
                 ];
                 @endphp
                 @foreach($tech_categories as $cat)
-                <div style="background: white; border: 1px solid var(--border); border-radius: 12px; padding: 2rem; transition: all 0.3s ease;" onmouseover="this.style.borderColor='var(--primary)'; this.style.boxShadow='0 12px 30px rgba(15, 107, 158, 0.12)';" onmouseout="this.style.borderColor='var(--border)'; this.style.boxShadow='';">
-                    <div style="display: flex; align-items: center; gap: 0.75rem; margin-bottom: 1.5rem;">
-                        <span class="material-symbols-rounded" style="font-size: 2rem; color: var(--primary);">{{ $cat['icon'] }}</span>
-                        <h3 style="font-size: 1.2rem; font-weight: 700; color: var(--text-dark); margin: 0;">{{ $cat['title'] }}</h3>
+                <div style="background: white; border: 1px solid var(--border); border-radius: 12px; padding: 1.75rem; transition: all 0.3s ease;" 
+                     onmouseover="this.style.borderColor='{{ $cat['color'] }}'; this.style.boxShadow='0 8px 20px rgba(15, 107, 158, 0.1)'; this.style.transform='translateY(-2px)';" 
+                     onmouseout="this.style.borderColor='var(--border)'; this.style.boxShadow=''; this.style.transform='';">
+                    <div style="display: flex; align-items: center; gap: 0.75rem; margin-bottom: 1rem;">
+                        <div style="font-size: 1.75rem; color: {{ $cat['color'] }}; line-height: 1;">
+                            <span class="material-symbols-rounded">{{ $cat['icon'] }}</span>
+                        </div>
+                        <h3 style="font-size: 1rem; font-weight: 700; color: var(--text-dark); margin: 0;">{{ $cat['title'] }}</h3>
                     </div>
-                    <ul style="list-style: none; padding: 0; margin: 0;">
+                    <div style="display: flex; flex-direction: column; gap: 0.5rem;">
                         @foreach($cat['techs'] as $tech)
-                        <li style="padding: 0.5rem 0; color: var(--text-gray); display: flex; align-items: center; gap: 0.75rem; font-size: 0.9rem; border-bottom: 1px solid var(--border);">
-                            <span style="width: 4px; height: 4px; background: var(--primary); border-radius: 50%; flex-shrink: 0;"></span>
+                        <div style="font-size: 0.85rem; color: var(--text-gray); display: flex; align-items: center; gap: 0.5rem;">
+                            <span style="width: 3px; height: 3px; background: {{ $cat['color'] }}; border-radius: 50%; flex-shrink: 0;"></span>
                             {{ $tech }}
-                        </li>
+                        </div>
                         @endforeach
-                    </ul>
+                    </div>
                 </div>
                 @endforeach
             </div>
             
-            <div style="text-align: center; margin-top: 3rem;">
-                <a href="{{ route('landing.tech-stack') }}" class="btn-secondary-v5">
-                    <span>Xem Tech Stack Đầy Đủ</span>
+            <!-- Summary Stats -->
+            <div style="background: white; border-radius: 12px; padding: 2.5rem; border: 1px solid var(--border); margin-bottom: 2.5rem;">
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 2rem; text-align: center;">
+                    <div>
+                        <div style="font-size: 2.5rem; font-weight: 800; color: var(--primary); margin-bottom: 0.5rem;">8</div>
+                        <div style="color: var(--text-gray); font-size: 0.9rem;">Tech Categories</div>
+                    </div>
+                    <div>
+                        <div style="font-size: 2.5rem; font-weight: 800; color: var(--primary); margin-bottom: 0.5rem;">50+</div>
+                        <div style="color: var(--text-gray); font-size: 0.9rem;">Frameworks & Tools</div>
+                    </div>
+                    <div>
+                        <div style="font-size: 2.5rem; font-weight: 800; color: var(--primary); margin-bottom: 0.5rem;">99.99%</div>
+                        <div style="color: var(--text-gray); font-size: 0.9rem;">Uptime SLA</div>
+                    </div>
+                    <div>
+                        <div style="font-size: 2.5rem; font-weight: 800; color: var(--primary); margin-bottom: 0.5rem;"><100ms</div>
+                        <div style="color: var(--text-gray); font-size: 0.9rem;">API Response Time</div>
+                    </div>
+                </div>
+            </div>
+            
+            <div style="text-align: center;">
+                <a href="{{ route('landing.tech-stack') }}" class="btn-secondary-v5" style="display: inline-flex; align-items: center; gap: 0.75rem;">
+                    <span>View Complete Tech Stack with Details</span>
                     <span class="material-symbols-rounded">arrow_forward</span>
                 </a>
             </div>
@@ -360,8 +415,8 @@
     <section>
         <div class="container-v5">
             <div class="section-header">
-                <h2 class="section-title">Kiến Trúc Mở Rộng</h2>
-                <p class="section-subtitle">Từ MVP đến 10M+ concurrent users - 6 giai đoạn scaling chuẩn enterprise</p>
+                <h2 class="section-title">Scaling Architecture</h2>
+                <p class="section-subtitle">From MVP to 10M+ concurrent users - 6 enterprise-grade scaling phases</p>
             </div>
             
             <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 2rem;">
@@ -391,7 +446,7 @@
             
             <div style="text-align: center; margin-top: 3rem;">
                 <a href="{{ route('landing.scaling') }}" class="btn-primary-v5">
-                    <span>Khám Phá Chi Tiết Scaling</span>
+                    <span>Explore Scaling Details</span>
                     <span class="material-symbols-rounded">arrow_forward</span>
                 </a>
             </div>
@@ -402,19 +457,19 @@
     <section style="background: var(--secondary-bg);">
         <div class="container-v5">
             <div class="section-header">
-                <h2 class="section-title">Tại Sao Chọn HKIncotech?</h2>
-                <p class="section-subtitle">Partner phát triển phần mềm đáng tin cậy</p>
+                <h2 class="section-title">Why Choose HKIncotech?</h2>
+                <p class="section-subtitle">Reliable software development partner</p>
             </div>
             
             <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2rem;">
                 @php
                 $features = [
-                    ['icon' => 'verified_user', 'title' => 'Kinh Nghiệm Sâu', 'desc' => '12+ năm xây dựng hệ thống enterprise-grade'],
-                    ['icon' => 'groups', 'title' => 'Team Giỏi Giang', 'desc' => '100+ engineers & architects chuyên gia'],
-                    ['icon' => 'speed', 'title' => 'Delivery Nhanh', 'desc' => 'MVP trong 4-8 tuần, scale linh hoạt'],
-                    ['icon' => 'shield_lock', 'title' => 'Bảo Mật Cao', 'desc' => 'ISO 27001, SOC 2, OWASP Level 3'],
-                    ['icon' => 'trending_up', 'title' => 'Kiến Trúc Scalable', 'desc' => 'Từ 100 → 10M+ concurrent users'],
-                    ['icon' => 'handshake', 'title' => 'Partnership', 'desc' => 'Strategic partner, không chỉ vendor'],
+                    ['icon' => 'verified_user', 'title' => 'Deep Expertise', 'desc' => '12+ years building enterprise-grade systems'],
+                    ['icon' => 'groups', 'title' => 'Expert Team', 'desc' => '100+ specialized engineers & architects'],
+                    ['icon' => 'speed', 'title' => 'Fast Delivery', 'desc' => 'MVP in 4-8 weeks, flexible scaling'],
+                    ['icon' => 'shield_lock', 'title' => 'High Security', 'desc' => 'ISO 27001, SOC 2, OWASP Level 3'],
+                    ['icon' => 'trending_up', 'title' => 'Scalable Architecture', 'desc' => 'From 100 to 10M+ concurrent users'],
+                    ['icon' => 'handshake', 'title' => 'True Partnership', 'desc' => 'Strategic partner, not just a vendor'],
                 ];
                 @endphp
                 @foreach($features as $f)
@@ -435,7 +490,7 @@
         <div class="container-v5">
             <div class="section-header">
                 <h2 class="section-title">Success Story</h2>
-                <p class="section-subtitle">Case study nổi bật từ portfolio của chúng tôi</p>
+                <p class="section-subtitle">Featured case study from our portfolio</p>
             </div>
             
             <div style="background: white; border: 1px solid var(--border); border-radius: 12px; overflow: hidden; box-shadow: 0 10px 40px rgba(15, 107, 158, 0.08);">
@@ -448,7 +503,7 @@
                             HKSpace: Scaling to 50K+ Active Users
                         </h3>
                         <p style="color: var(--text-gray); font-size: 1rem; line-height: 1.8; margin-bottom: 2rem;">
-                            Nền tảng quản lý doanh nghiệp multi-tenant được xây dựng từ đầu. Từ MVP đến production với 50,000+ active users trong 18 tháng.
+                            Multi-tenant enterprise management platform built from scratch. From MVP to production with 50,000+ active users in 18 months.
                         </p>
                         
                         <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; margin-bottom: 2rem;">
@@ -461,13 +516,13 @@
                                 <div style="font-size: 0.85rem; color: var(--text-gray); margin-top: 0.25rem;">Uptime</div>
                             </div>
                             <div>
-                                <div style="font-size: 1.8rem; font-weight: 800; color: var(--primary);">18 tháng</div>
+                                <div style="font-size: 1.8rem; font-weight: 800; color: var(--primary);">18 months</div>
                                 <div style="font-size: 0.85rem; color: var(--text-gray); margin-top: 0.25rem;">Timeline</div>
                             </div>
                         </div>
                         
                         <a href="{{ route('landing.case-studies') }}" style="color: var(--primary); font-weight: 600; text-decoration: none; display: inline-flex; align-items: center; gap: 0.5rem;">
-                            <span>Đọc Case Study Đầy Đủ</span>
+                            <span>Read Full Case Study</span>
                             <span class="material-symbols-rounded">arrow_forward</span>
                         </a>
                     </div>
@@ -491,6 +546,95 @@
                             <text x="180" y="95" text-anchor="middle" font-size="10" fill="white" opacity="0.8">30K</text>
                             <text x="280" y="35" text-anchor="middle" font-size="10" fill="white">50K+</text>
                         </svg>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Client Testimonials -->
+    <section style="background: var(--secondary-bg);">
+        <div class="container-v5">
+            <div class="section-header">
+                <h2 class="section-title">What Our Clients Say</h2>
+                <p class="section-subtitle">Feedback from our partners and clients</p>
+            </div>
+            
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem;">
+                <?php
+                $testimonials = [
+                    [
+                        'name' => 'Nguyễn Văn A',
+                        'title' => 'CTO, FinTech Startup',
+                        'quote' => 'HKIncotech đã giúp chúng tôi scale từ 0 đến 100K users trong 12 tháng. Team rất pro, delivery đúng hẹn.',
+                        'rating' => 5
+                    ],
+                    [
+                        'name' => 'Sarah Johnson',
+                        'title' => 'CEO, E-commerce Platform',
+                        'quote' => 'Best development partner we\'ve worked with. Their SCRUM process is transparent and efficient.',
+                        'rating' => 5
+                    ],
+                    [
+                        'name' => 'Trần Thị B',
+                        'title' => 'Product Manager, Healthcare',
+                        'quote' => 'Kiến trúc bảo mật enterprise-grade, compliance đầy đủ. Tin cậy 100% cho healthcare data.',
+                        'rating' => 5
+                    ],
+                ];
+                foreach ($testimonials as $t):
+                ?>
+                <div style="background: white; border: 1px solid var(--border); border-radius: 12px; padding: 2rem; position: relative; transition: all 0.3s ease;" onmouseover="this.style.borderColor='var(--primary)'; this.style.boxShadow='0 12px 30px rgba(15, 107, 158, 0.12)';" onmouseout="this.style.borderColor='var(--border)'; this.style.boxShadow='';">
+                    <div style="color: var(--primary); font-size: 3rem; line-height: 1; margin-bottom: 1rem; opacity: 0.3;">"</div>
+                    <p style="color: var(--text-gray); font-size: 0.95rem; line-height: 1.7; margin-bottom: 1.5rem; font-style: italic;">
+                        <?php echo $t['quote']; ?>
+                    </p>
+                    <div style="display: flex; align-items: center; gap: 1rem;">
+                        <div style="width: 50px; height: 50px; background: linear-gradient(135deg, var(--primary), var(--accent)); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white; font-weight: 700; font-size: 1.2rem;">
+                            <?php echo substr($t['name'], 0, 1); ?>
+                        </div>
+                        <div>
+                            <div style="font-weight: 700; color: var(--text-dark);"><?php echo $t['name']; ?></div>
+                            <div style="font-size: 0.85rem; color: var(--text-gray);"><?php echo $t['title']; ?></div>
+                            <div style="color: #fbbf24; margin-top: 0.25rem;">
+                                <?php for($i = 0; $i < $t['rating']; $i++): ?>★<?php endfor; ?>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <?php endforeach; ?>
+            </div>
+            
+            <div style="text-align: center; margin-top: 3rem;">
+                <a href="{{ route('landing.case-studies') }}" style="color: var(--primary); font-weight: 600; text-decoration: none; display: inline-flex; align-items: center; gap: 0.5rem;">
+                    <span>View More Case Studies & Testimonials</span>
+                    <span class="material-symbols-rounded">arrow_forward</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Banner -->
+    <section>
+        <div class="container-v5">
+            <div style="background: linear-gradient(135deg, var(--primary) 0%, var(--primary-light) 100%); border-radius: 12px; padding: 4rem 2rem; text-align: center; color: white; position: relative; overflow: hidden;">
+                <div style="position: absolute; top: 0; right: 0; width: 300px; height: 300px; background: rgba(255,255,255,0.05); border-radius: 50%; transform: translate(30%, -30%);"></div>
+                <div style="position: absolute; bottom: 0; left: 0; width: 200px; height: 200px; background: rgba(255,255,255,0.05); border-radius: 50%; transform: translate(-30%, 30%);"></div>
+                
+                <div style="position: relative; z-index: 1;">
+                    <h2 style="font-size: 2.5rem; font-weight: 800; margin-bottom: 1rem;">Ready to Start Your Project?</h2>
+                    <p style="font-size: 1.1rem; margin-bottom: 2.5rem; opacity: 0.95; max-width: 600px; margin-left: auto; margin-right: auto;">
+                        Schedule a free 30-minute consultation to discuss your project. We'll provide optimal solutions and detailed pricing.
+                    </p>
+                    <div style="display: flex; gap: 1.5rem; justify-content: center; flex-wrap: wrap;">
+                        <a href="{{ route('landing.contact') }}" style="background: white; color: var(--primary); padding: 1rem 2.5rem; border-radius: 8px; font-weight: 600; text-decoration: none; display: inline-flex; align-items: center; gap: 0.75rem; transition: all 0.3s ease; box-shadow: 0 4px 12px rgba(0,0,0,0.1);" onmouseover="this.style.backgroundColor='var(--secondary-bg)'; this.style.transform='translateY(-2px)'; this.style.boxShadow='0 8px 20px rgba(0,0,0,0.15)';" onmouseout="this.style.backgroundColor='white'; this.style.transform=''; this.style.boxShadow='0 4px 12px rgba(0,0,0,0.1)';">
+                            <span>Schedule Consultation</span>
+                            <span class="material-symbols-rounded">arrow_forward</span>
+                        </a>
+                        <a href="{{ route('landing.pricing') }}" style="background: transparent; color: white; padding: 1rem 2.5rem; border-radius: 8px; font-weight: 600; text-decoration: none; display: inline-flex; align-items: center; gap: 0.75rem; border: 2px solid white; transition: all 0.3s ease;" onmouseover="this.style.backgroundColor='rgba(255,255,255,0.1)';" onmouseout="this.style.backgroundColor='transparent';">
+                            <span>View Pricing</span>
+                            <span class="material-symbols-rounded">receipt_long</span>
+                        </a>
                     </div>
                 </div>
             </div>

@@ -63,73 +63,100 @@ include '_header.php';
         <div class="container-v5">
             <div class="section-header">
                 <h2 class="section-title">1. Custom Software Development</h2>
-                <p class="section-subtitle">Xây dựng ứng dụng từ khái niệm đến production</p>
+                <p class="section-subtitle">Professional software development with transparent SCRUM process</p>
             </div>
             
             <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; align-items: center; margin-bottom: 4rem;">
                 <div style="background: white; border-radius: 12px; padding: 2.5rem; border: 1px solid var(--border);">
-                    <h3 style="font-size: 1.3rem; font-weight: 700; color: var(--text-dark); margin-bottom: 1.5rem;">Phát Triển Toàn Diện</h3>
+                    <h3 style="font-size: 1.3rem; font-weight: 700; color: var(--text-dark); margin-bottom: 1.5rem;">Quy Trình Rõ Ràng, Chuẩn Chỉnh</h3>
                     <p style="color: var(--text-gray); line-height: 1.8; margin-bottom: 1.5rem;">
-                        Từ MVP nhanh chóng đến production-grade systems. Chúng tôi chuyên phát triển:
+                        Chúng tôi phát triển phần mềm theo quy trình SCRUM chuẩn quốc tế. Khách hàng luôn được cập nhật tiến độ, tham gia review định kỳ, và kiểm soát từng bước phát triển.
                     </p>
-                    <ul style="list-style: none; margin-bottom: 1.5rem;">
-                        <?php
-                        $dev_services = [
-                            'Web & Mobile Applications (React, Vue, React Native, Flutter)',
-                            'Distributed Systems (Microservices, Event-driven architecture)',
-                            'Real-time Processing (WebSockets, message queues)',
-                            'Data Pipelines & Analytics (ETL, data warehousing)',
-                            'Enterprise Integrations (API, webhooks, third-party systems)',
-                            'Cloud-native Architecture (Kubernetes, serverless, Docker)'
-                        ];
-                        foreach ($dev_services as $item):
-                        ?>
-                        <li style="padding: 0.6rem 0; color: var(--text-gray); font-size: 0.95rem; padding-left: 1.75rem; position: relative;">
-                            <span style="position: absolute; left: 0; color: var(--primary); font-weight: 800;">✓</span>
-                            <?php echo $item; ?>
-                        </li>
-                        <?php endforeach; ?>
-                    </ul>
+                    <div style="background: var(--secondary-bg); padding: 1.5rem; border-radius: 8px; margin-bottom: 1.5rem;">
+                        <h4 style="font-size: 1.1rem; font-weight: 700; color: var(--primary); margin-bottom: 1rem;">Cam Kết Minh Bạch</h4>
+                        <ul style="list-style: none; margin: 0;">
+                            <li style="padding: 0.5rem 0; color: var(--text-gray); display: flex; align-items: flex-start; gap: 0.75rem;">
+                                <span class="material-symbols-rounded" style="color: var(--primary); font-size: 1.2rem; flex-shrink: 0;">verified</span>
+                                <span><strong>Sprint Planning:</strong> Họp đầu sprint, xác định công việc cụ thể</span>
+                            </li>
+                            <li style="padding: 0.5rem 0; color: var(--text-gray); display: flex; align-items: flex-start; gap: 0.75rem;">
+                                <span class="material-symbols-rounded" style="color: var(--primary); font-size: 1.2rem; flex-shrink: 0;">visibility</span>
+                                <span><strong>Daily Updates:</strong> Báo cáo tiến độ hằng ngày qua tools</span>
+                            </li>
+                            <li style="padding: 0.5rem 0; color: var(--text-gray); display: flex; align-items: flex-start; gap: 0.75rem;">
+                                <span class="material-symbols-rounded" style="color: var(--primary); font-size: 1.2rem; flex-shrink: 0;">preview</span>
+                                <span><strong>Sprint Demo:</strong> Khách hàng xem & test tính năng mới mỗi 2 tuần</span>
+                            </li>
+                            <li style="padding: 0.5rem 0; color: var(--text-gray); display: flex; align-items: flex-start; gap: 0.75rem;">
+                                <span class="material-symbols-rounded" style="color: var(--primary); font-size: 1.2rem; flex-shrink: 0;">code</span>
+                                <span><strong>Code Quality:</strong> Review code, testing tự động, CI/CD</span>
+                            </li>
+                            <li style="padding: 0.5rem 0; color: var(--text-gray); display: flex; align-items: flex-start; gap: 0.75rem;">
+                                <span class="material-symbols-rounded" style="color: var(--primary); font-size: 1.2rem; flex-shrink: 0;">track_changes</span>
+                                <span><strong>Full Visibility:</strong> Truy cập Jira/Git để theo dõi realtime</span>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
                 
-                <div style="background: white; border-radius: 12px; padding: 2.5rem; border: 1px solid var(--border); text-align: center;">
-                    <svg viewBox="0 0 280 280" style="width: 100%; max-width: 280px;">
-                        <!-- Frontend -->
-                        <rect x="40" y="30" width="70" height="50" fill="#0f6b9e" rx="6"/>
-                        <text x="75" y="65" text-anchor="middle" font-size="11" fill="white" font-weight="bold">Frontend</text>
+                <div style="background: white; border-radius: 12px; padding: 2.5rem; border: 1px solid var(--border);">
+                    <h3 style="font-size: 1.3rem; font-weight: 700; color: var(--text-dark); margin-bottom: 1.5rem;">SCRUM Development Cycle</h3>
+                    <svg viewBox="0 0 300 280" style="width: 100%; max-width: 300px; margin: 0 auto; display: block;">
+                        <!-- Sprint Cycle Circle -->
+                        <circle cx="150" cy="140" r="90" fill="none" stroke="#e5e7eb" stroke-width="3"/>
                         
-                        <!-- API -->
-                        <rect x="155" y="30" width="70" height="50" fill="#0f6b9e" rx="6"/>
-                        <text x="190" y="65" text-anchor="middle" font-size="11" fill="white" font-weight="bold">API</text>
+                        <!-- Planning -->
+                        <circle cx="150" cy="50" r="25" fill="#0f6b9e"/>
+                        <text x="150" y="50" text-anchor="middle" font-size="10" fill="white" font-weight="bold" dy="5">Planning</text>
                         
-                        <!-- Database -->
-                        <rect x="40" y="130" width="70" height="50" fill="#059669" rx="6"/>
-                        <text x="75" y="165" text-anchor="middle" font-size="11" fill="white" font-weight="bold">Database</text>
+                        <!-- Development -->
+                        <circle cx="235" cy="100" r="25" fill="#10b981"/>
+                        <text x="235" y="100" text-anchor="middle" font-size="10" fill="white" font-weight="bold" dy="5">Dev</text>
                         
-                        <!-- Cache/Queue -->
-                        <rect x="155" y="130" width="70" height="50" fill="#10b981" rx="6"/>
-                        <text x="190" y="165" text-anchor="middle" font-size="11" fill="white" font-weight="bold">Cache/Queue</text>
+                        <!-- Testing -->
+                        <circle cx="235" cy="180" r="25" fill="#f59e0b"/>
+                        <text x="235" y="180" text-anchor="middle" font-size="10" fill="white" font-weight="bold" dy="5">Testing</text>
                         
-                        <!-- Mobile -->
-                        <rect x="97" y="230" width="70" height="30" fill="#f59e0b" rx="6"/>
-                        <text x="132" y="251" text-anchor="middle" font-size="10" fill="white" font-weight="bold">Mobile</text>
+                        <!-- Demo/Review -->
+                        <circle cx="150" cy="230" r="25" fill="#7c3aed"/>
+                        <text x="150" y="230" text-anchor="middle" font-size="10" fill="white" font-weight="bold" dy="5">Demo</text>
                         
-                        <!-- Connections -->
-                        <line x1="75" y1="80" x2="75" y2="130" stroke="#0f6b9e" stroke-width="2"/>
-                        <line x1="190" y1="80" x2="190" y2="130" stroke="#0f6b9e" stroke-width="2"/>
-                        <line x1="110" y1="155" x2="155" y2="155" stroke="#059669" stroke-width="2"/>
-                        <line x1="132" y1="180" x2="132" y2="230" stroke="#f59e0b" stroke-width="2"/>
+                        <!-- Deploy -->
+                        <circle cx="65" cy="180" r="25" fill="#059669"/>
+                        <text x="65" y="180" text-anchor="middle" font-size="10" fill="white" font-weight="bold" dy="5">Deploy</text>
+                        
+                        <!-- Retrospective -->
+                        <circle cx="65" cy="100" r="25" fill="#0f6b9e" opacity="0.7"/>
+                        <text x="65" y="100" text-anchor="middle" font-size="10" fill="white" font-weight="bold" dy="5">Retro</text>
+                        
+                        <!-- Center: 2 weeks -->
+                        <text x="150" y="135" text-anchor="middle" font-size="14" fill="#0f6b9e" font-weight="bold">2-Week</text>
+                        <text x="150" y="152" text-anchor="middle" font-size="13" fill="#059669" font-weight="bold">Sprint</text>
+                        
+                        <!-- Arrows -->
+                        <path d="M 150 75 L 150 85" stroke="#0f6b9e" stroke-width="2" marker-end="url(#arrowhead)"/>
+                        <defs>
+                            <marker id="arrowhead" markerWidth="10" markerHeight="10" refX="5" refY="3" orient="auto">
+                                <polygon points="0 0, 5 3, 0 6" fill="#0f6b9e" />
+                            </marker>
+                        </defs>
                     </svg>
+                    <p style="text-align: center; color: var(--text-gray); font-size: 0.9rem; margin-top: 1rem; line-height: 1.6;">
+                        Chu kỳ 2 tuần, khách hàng tham gia từng giai đoạn, đảm bảo sản phẩm đúng hướng
+                    </p>
                 </div>
             </div>
             
             <div style="background: white; border-radius: 12px; padding: 2rem; border: 1px solid var(--border);">
-                <h4 style="font-weight: 700; color: var(--text-dark); margin-bottom: 1rem;">Tech Stack Sử Dụng</h4>
+                <h4 style="font-weight: 700; color: var(--text-dark); margin-bottom: 1rem;">Công Nghệ & Nền Tảng</h4>
+                <p style="color: var(--text-gray); margin-bottom: 1rem; font-size: 0.95rem;">
+                    Full-stack development với tech stack hiện đại, phù hợp cho mọi loại dự án từ MVP đến Enterprise.
+                </p>
                 <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1.5rem;">
                     <div><strong style="color: var(--primary);">Frontend:</strong> React, Vue, Next.js, TypeScript</div>
                     <div><strong style="color: var(--primary);">Backend:</strong> Node.js, Python, Java, Go</div>
                     <div><strong style="color: var(--primary);">Database:</strong> PostgreSQL, MongoDB, Redis</div>
-                    <div><strong style="color: var(--primary);">DevOps:</strong> AWS, GCP, Kubernetes, Terraform</div>
+                    <div><strong style="color: var(--primary);">Cloud & DevOps:</strong> AWS, GCP, Kubernetes, Docker</div>
                 </div>
             </div>
         </div>

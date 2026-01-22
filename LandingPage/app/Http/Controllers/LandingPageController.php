@@ -38,7 +38,7 @@ class LandingPageController extends Controller
             ],
             'case-studies' => [
                 'title' => 'Case Studies - HKIncotech',
-                'description' => 'Portfolio: 150+ projects, diverse industries, proven results'
+                'description' => 'Portfolio: 50+ projects, diverse industries, proven results'
             ],
             'pricing' => [
                 'title' => 'Giá - HKIncotech',

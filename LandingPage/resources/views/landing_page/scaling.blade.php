@@ -7,13 +7,13 @@
         <div class="container-v5">
             <div style="text-align: center; max-width: 900px; margin: 0 auto;">
                 <h1 style="font-size: 3.5rem; font-weight: 800; line-height: 1.15; margin-bottom: 1.5rem; color: var(--text-dark);">
-                    Mở Rộng & <span style="color: var(--primary);">Infrastructure</span>
+                    Scaling & <span style="color: var(--primary);">Infrastructure</span>
                 </h1>
                 <p style="font-size: 1.15rem; color: var(--text-gray); line-height: 1.8; margin-bottom: 1.5rem;">
-                    Từ MVP nhỏ đến 10 triệu users. 6 giai đoạn scaling với SLA 99.99%, auto-scaling, monitoring 24/7.
+                    From small MVP to 10 million users. 6 scaling phases with 99.99% SLA, auto-scaling, 24/7 monitoring.
                 </p>
                 <p style="font-size: 1rem; color: var(--text-gray); margin-bottom: 2rem;">
-                    Chúng tôi đã scale 150+ projects từ 0 → millions of users. Kinh nghiệm từ early startup đến unicorn.
+                    We have scaled 50+ projects from 0 to millions of users. Experience from early startup to unicorn scale.
                 </p>
             </div>
         </div>
@@ -23,8 +23,8 @@
     <section style="background: var(--secondary-bg);">
         <div class="container-v5">
             <div class="section-header">
-                <h2 class="section-title">6 Giai Đoạn Scaling</h2>
-                <p class="section-subtitle">Roadmap từ MVP đến enterprise-scale infrastructure</p>
+                <h2 class="section-title">6 Scaling Phases</h2>
+                <p class="section-subtitle">Roadmap from MVP to enterprise-scale infrastructure</p>
             </div>
             
             <div style="display: grid; gap: 2rem;">

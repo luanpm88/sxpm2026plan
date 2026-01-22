@@ -7,10 +7,10 @@
         <div class="container-v5">
             <div style="text-align: center; max-width: 900px; margin: 0 auto;">
                 <h1 style="font-size: 3.5rem; font-weight: 800; line-height: 1.15; margin-bottom: 1.5rem; color: var(--text-dark);">
-                    Định Giá Linh Hoạt <span style="color: var(--primary);">Theo Nhu Cầu</span>
+                    Flexible Pricing <span style="color: var(--primary);">Based on Needs</span>
                 </h1>
                 <p style="font-size: 1.15rem; color: var(--text-gray); line-height: 1.8;">
-                    Mỗi dự án là duy nhất. Chúng tôi tùy chỉnh giá dựa trên scope, complexity, và timeline của bạn. Không có gói cố định, chỉ có giải pháp phù hợp.
+                    Every project is unique. We customize pricing based on your scope, complexity, and timeline. No fixed packages, only solutions that fit.
                 </p>
             </div>
         </div>
@@ -20,8 +20,8 @@
     <section style="background: white;">
         <div class="container-v5">
             <div class="section-header">
-                <h2 class="section-title">Khoảng Giá Tham Khảo</h2>
-                <p class="section-subtitle">Giá dưới đây là tham khảo. Giá thực tế phụ thuộc vào requirements cụ thể của dự án</p>
+                <h2 class="section-title">Price Reference Guide</h2>
+                <p class="section-subtitle">Prices below are reference only. Actual pricing depends on project-specific requirements</p>
             </div>
             
             <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; margin-bottom: 4rem;">
@@ -29,9 +29,10 @@
                 $pricing_plans = [
                     [
                         'name' => 'MVP / Startup',
-                        'price' => '$6,300 - $12,000',
-                        'period' => 'per month',
-                        'desc' => 'Dự án MVP, prototype, web app nhỏ',
+                        'price_from' => '$6,300',
+                        'price_to' => '$12,000',
+                        'period' => 'Typical monthly investment',
+                        'desc' => 'MVP projects, prototypes, small web apps',
                         'highlighted' => false,
                         'features' => [
                             '1-2 Full Stack Developer',
@@ -45,9 +46,10 @@
                     ],
                     [
                         'name' => 'Growth / Scale-up',
-                        'price' => '$12,000 - $25,000',
-                        'period' => 'per month',
-                        'desc' => 'Ứng dụng trung bình, SaaS, nền tảng',
+                        'price_from' => '$12,000',
+                        'price_to' => '$25,000',
+                        'period' => 'Typical monthly investment',
+                        'desc' => 'Medium-sized apps, SaaS, platforms',
                         'highlighted' => true,
                         'features' => [
                             '2-4 Full Stack Developers',
@@ -63,9 +65,10 @@
                     ],
                     [
                         'name' => 'Enterprise / Complex',
-                        'price' => '$25,000+',
-                        'period' => 'per month',
-                        'desc' => 'Hệ thống phức tạp, ERP, multi-module',
+                        'price_from' => '$25,000+',
+                        'price_to' => null,
+                        'period' => 'Typical monthly investment',
+                        'desc' => 'Complex systems, ERP, multi-module platforms',
                         'highlighted' => false,
                         'features' => [
                             '4-8+ Full Stack Developers',
@@ -89,7 +92,7 @@
                     
                     @if($plan['highlighted'])
                     <div style="position: absolute; top: -15px; left: 50%; transform: translateX(-50%); background: var(--primary); color: white; padding: 0.4rem 1rem; border-radius: 20px; font-size: 0.8rem; font-weight: 700; text-transform: uppercase;">
-                        Phổ Biến Nhất
+                        Most Popular
                     </div>
                     @endif
                     
@@ -101,11 +104,22 @@
                     </p>
                     
                     <div style="margin-bottom: 2rem;">
-                        <div style="font-size: 2.5rem; font-weight: 800; color: {{ $plan['highlighted'] ? 'white' : 'var(--primary)' }};">
-                            {{ $plan['price'] }}
-                        </div>
-                        <div style="font-size: 0.9rem; color: {{ $plan['highlighted'] ? 'rgba(255,255,255,0.8)' : 'var(--text-gray)' }};">
+                        <div style="font-size: 0.9rem; letter-spacing: 0.5px; text-transform: uppercase; font-weight: 700; color: {{ $plan['highlighted'] ? 'rgba(255,255,255,0.85)' : 'var(--text-gray)' }}; margin-bottom: 0.35rem;">
                             {{ $plan['period'] }}
+                        </div>
+                        <div style="display: flex; align-items: baseline; gap: 0.5rem; flex-wrap: wrap; margin-bottom: 0.35rem;">
+                            <span style="font-size: 2.4rem; font-weight: 800; color: {{ $plan['highlighted'] ? 'white' : 'var(--primary)' }};">
+                                {{ $plan['price_from'] }}
+                            </span>
+                            @if($plan['price_to'])
+                            <span style="font-size: 0.95rem; font-weight: 600; color: {{ $plan['highlighted'] ? 'rgba(255,255,255,0.85)' : 'var(--text-gray)' }};">to</span>
+                            <span style="font-size: 2.05rem; font-weight: 700; color: {{ $plan['highlighted'] ? 'white' : 'var(--primary)' }};">
+                                {{ $plan['price_to'] }}
+                            </span>
+                            @endif
+                        </div>
+                        <div style="font-size: 0.95rem; color: {{ $plan['highlighted'] ? 'rgba(255,255,255,0.85)' : 'var(--text-gray)' }};">
+                            per month, varies by scope
                         </div>
                     </div>
                     
@@ -121,7 +135,7 @@
                     <a href="{{ route('landing.contact') }}" style="background: {{ $plan['highlighted'] ? 'white' : 'var(--primary)' }}; color: {{ $plan['highlighted'] ? 'var(--primary)' : 'white' }}; padding: 0.75rem 1.5rem; border-radius: 8px; font-weight: 600; text-decoration: none; display: block; text-align: center; transition: all 0.3s ease;" 
                        onmouseover="this.style.opacity='0.85';" 
                        onmouseout="this.style.opacity='1';">
-                        Tư Vấn Giá
+                        Get Pricing Consultation
                     </a>
                 </div>
                 @endforeach
@@ -133,15 +147,15 @@
     <section style="background: var(--secondary-bg);">
         <div class="container-v5">
             <div class="section-header">
-                <h2 class="section-title">Cơ Bản Của Mỗi Dự Án</h2>
-                <p class="section-subtitle">Những dịch vụ core có trong tất cả các dự án</p>
+                <h2 class="section-title">Included in Every Project</h2>
+                <p class="section-subtitle">Core services included in all projects</p>
             </div>
             
             <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem;">
                 @php
                 $core_services = [
-                    ['icon' => 'computer', 'title' => 'Tech Stack Hiện Đại', 'desc' => 'React, Node.js, AWS, TypeScript, Python, các công nghệ latest.'],
-                    ['icon' => 'security', 'title' => 'Bảo Mật First', 'desc' => 'SSL, encryption, security audit, compliance standards tuân thủ.'],
+                    ['icon' => 'computer', 'title' => 'Modern Tech Stack', 'desc' => 'React, Node.js, AWS, TypeScript, Python, latest technologies.'],
+                    ['icon' => 'security', 'title' => 'Security First', 'desc' => 'SSL, encryption, security audit, compliance standards.'],
                     ['icon' => 'api', 'title' => 'Clean APIs', 'desc' => 'RESTful APIs, well-documented, scalable, production-ready.'],
                     ['icon' => 'storage', 'title' => 'Cloud Infrastructure', 'desc' => 'AWS/GCP deployment, CDN, auto-scaling, automated backups.'],
                     ['icon' => 'analytics', 'title' => 'Performance Tracking', 'desc' => 'Real-time monitoring, alert systems, performance analytics.'],
@@ -170,15 +184,15 @@
     <section style="background: white;">
         <div class="container-v5">
             <div class="section-header">
-                <h2 class="section-title">So Sánh Chi Tiết</h2>
-                <p class="section-subtitle">Mô tả từng scope project</p>
+                <h2 class="section-title">Detailed Comparison</h2>
+                <p class="section-subtitle">Plan-by-plan scope breakdown</p>
             </div>
             
             <div style="overflow-x: auto;">
                 <table style="width: 100%; border-collapse: collapse;">
                     <thead>
                         <tr style="background: var(--secondary-bg);">
-                            <th style="padding: 1rem; text-align: left; font-weight: 700; color: var(--text-dark); border-bottom: 2px solid var(--border);">Tính Năng</th>
+                            <th style="padding: 1rem; text-align: left; font-weight: 700; color: var(--text-dark); border-bottom: 2px solid var(--border);">Feature</th>
                             <th style="padding: 1rem; text-align: center; font-weight: 700; color: var(--text-dark); border-bottom: 2px solid var(--border);">MVP</th>
                             <th style="padding: 1rem; text-align: center; font-weight: 700; color: var(--text-dark); border-bottom: 2px solid var(--border);">Growth</th>
                             <th style="padding: 1rem; text-align: center; font-weight: 700; color: var(--text-dark); border-bottom: 2px solid var(--border);">Enterprise</th>
@@ -218,21 +232,21 @@
     <section style="background: var(--secondary-bg);">
         <div class="container-v5">
             <div class="section-header">
-                <h2 class="section-title">Các Câu Hỏi Thường Gặp</h2>
-                <p class="section-subtitle">Mọi thứ bạn cần biết về pricing</p>
+                <h2 class="section-title">Frequently Asked Questions</h2>
+                <p class="section-subtitle">Everything you need to know about pricing</p>
             </div>
             
             <div style="max-width: 800px; margin: 0 auto;">
                 @php
                 $faqs = [
-                    ['q' => 'Làm sao để tôi biết dự án của tôi thuộc phạm vi nào?', 'a' => 'Chúng tôi sẽ có cuộc tư vấn chi tiết 30 phút miễn phí để đánh giá scope, complexity, timeline. Từ đó sẽ có recommendation giá và timeline chính xác.'],
-                    ['q' => 'Giá hiển thị có thể thay đổi không?', 'a' => 'Có. Giá là tham khảo. Giá thực tế dựa vào: scope detail, technology choices, timeline, team size, post-launch support.'],
-                    ['q' => 'Có thể fixed-price project không?', 'a' => 'Có thể, nhưng chỉ khi scope được define rõ 100%. Chúng tôi recommend time & materials cho projects exploratory hoặc requirements chưa stable.'],
-                    ['q' => 'Có hidden fees không?', 'a' => 'Không có hidden fees. Chi phí infrastructure riêng (AWS, hosting, domains) sẽ listed rõ ràng. Tất cả costs disclosed upfront.'],
-                    ['q' => 'Hình thức thanh toán như thế nào?', 'a' => 'Thường là monthly invoicing. Net-30 payment terms. Có thể negotiate custom arrangements cho enterprise clients.'],
-                    ['q' => 'Có thể scale up/down team trong project không?', 'a' => 'Hoàn toàn có thể. Bạn có thể increase hoặc decrease team size based on needs với thông báo trước.'],
-                    ['q' => 'Giá có bao gồm post-launch không?', 'a' => 'Bao gồm. Post-launch support duration tùy theo plan: 30 days (MVP), 90 days (Growth), 6-12 months (Enterprise).'],
-                    ['q' => 'Ai sở hữu code sau khi project xong?', 'a' => 'Bạn 100% sở hữu code. Chúng tôi provide full source code, documentation, deploy guides. Không có licensing fees hay royalties.'],
+                    ['q' => 'How do I know what scope my project falls into?', 'a' => 'We conduct a detailed 30-minute free consultation to assess scope, complexity, timeline. From this we provide accurate pricing and timeline recommendations.'],
+                    ['q' => 'Can the displayed prices change?', 'a' => 'Yes. Prices are reference only. Actual pricing depends on: detailed scope, technology choices, timeline, team size, post-launch support.'],
+                    ['q' => 'Can we do fixed-price projects?', 'a' => 'Yes, but only when scope is 100% defined. We recommend time & materials for exploratory projects or those with evolving requirements.'],
+                    ['q' => 'Are there hidden fees?', 'a' => 'No hidden fees. Infrastructure costs (AWS, hosting, domains) are listed separately. All costs disclosed upfront.'],
+                    ['q' => 'What is the payment structure?', 'a' => 'Typically monthly invoicing with Net-30 payment terms. Custom arrangements negotiable for enterprise clients.'],
+                    ['q' => 'Can we scale the team up/down during the project?', 'a' => 'Absolutely. You can increase or decrease team size based on needs with advance notice.'],
+                    ['q' => 'Does pricing include post-launch support?', 'a' => 'Yes. Post-launch support duration varies by plan: 30 days (MVP), 90 days (Growth), 6-12 months (Enterprise).'],
+                    ['q' => 'Who owns the code after the project?', 'a' => 'You own 100% of the code. We provide full source code, documentation, deployment guides. No licensing fees or royalties.'],
                 ];
                 @endphp
                 
@@ -255,12 +269,12 @@
     <section style="background: white;">
         <div class="container-v5">
             <div style="background: linear-gradient(135deg, var(--primary) 0%, var(--primary-light) 100%); border-radius: 12px; padding: 3.5rem 2rem; text-align: center; color: white;">
-                <h2 style="font-size: 2.5rem; font-weight: 800; margin-bottom: 1rem;">Dự Án Của Bạn Khác Biệt Với Các Gòi Trên?</h2>
+                <h2 style="font-size: 2.5rem; font-weight: 800; margin-bottom: 1rem;">Your Project Different from Above Plans?</h2>
                 <p style="font-size: 1.1rem; margin-bottom: 2rem; opacity: 0.95;">
-                    Không sao. Chúng tôi customize giá dựa trên requirements cụ thể của bạn. Hãy tế tế nói chuyện cùng chúng tôi.
+                    That's fine. We customize pricing based on your specific requirements. Let's discuss your needs.
                 </p>
                 <a href="{{ route('landing.contact') }}" style="background: white; color: var(--primary); padding: 1rem 2.5rem; border-radius: 8px; font-weight: 600; text-decoration: none; display: inline-block; transition: all 0.3s ease;" onmouseover="this.style.backgroundColor='var(--secondary-bg)';" onmouseout="this.style.backgroundColor='white';">
-                    <span>Tư Vấn Miễn Phí</span>
+                    <span>Free Consultation</span>
                 </a>
             </div>
         </div>

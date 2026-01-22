@@ -103,7 +103,7 @@
                     </div>
                     
                     <!-- Singapore Office -->
-                    <div style="background: var(--secondary-bg); border-radius: 8px; padding: 2rem;">
+                    <div class="d-none" style="background: var(--secondary-bg); border-radius: 8px; padding: 2rem;">
                         <div style="display: flex; gap: 1.5rem; align-items: flex-start;">
                             <div style="font-size: 2rem; color: var(--primary); flex-shrink: 0;">
                                 <span class="material-symbols-rounded">business</span>
@@ -158,11 +158,11 @@
         </div>
     </section>
 
-    <!-- Google Map Embed -->
+    <!-- Map -->
     <section style="background: var(--secondary-bg);">
         <div class="container-v5">
-            <div style="border-radius: 12px; overflow: hidden; height: 400px; box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.5265525620427!2d106.7008!3d10.7769!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1sHo%20Chi%20Minh%20City!2sVietnam!5e0!3m2!1sen!2s!4v1234567890" width="100%" height="100%" style="border: none;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <div style="background: white; border-radius: 12px; overflow: hidden; height: 400px;">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.6047467284906!2d106.6576869!3d10.8475931!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x317529bc96bc31d5%3A0xb45cb7e22ebf8fda!2z188IEvSG0bEgU8OzLCBQaOG7nW5nIEFuIEjhu5lpIMSQ8O0gbiwgVHAuIEjhu5kgQ2jDrSBNaW5o!5e0!3m2!1svi!2svn!4v1705816000000" style="width: 100%; height: 100%; border: none;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
         </div>
     </section>

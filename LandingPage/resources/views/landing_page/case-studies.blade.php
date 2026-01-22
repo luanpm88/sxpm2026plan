@@ -24,7 +24,7 @@
                 $portfolio_stats = [
                     ['num' => '50+', 'label' => 'Projects Delivered'],
                     ['num' => '10+', 'label' => 'Industries Served'],
-                    ['num' => '$2M', 'label' => 'Project Value'],
+                    ['num' => '$1M', 'label' => 'Project Value'],
                     ['num' => '99.99%', 'label' => 'Client Satisfaction'],
                     ['num' => '12+', 'label' => 'Years Expertise'],
                     ['num' => '10+', 'label' => 'Countries Reach'],

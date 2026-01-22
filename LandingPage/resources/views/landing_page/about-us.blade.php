@@ -31,21 +31,28 @@
                         Start (2012)
                     </h3>
                     <p style="color: var(--text-gray); line-height: 1.8; margin-bottom: 1.25rem;">
-                        Began as a 5-person engineering team focused on building reliable software that moves the business needle.
+                        Founded with 5 engineers focused on delivering reliable software that moves business forward.
                     </p>
                     
                     <h3 style="font-size: 1.25rem; font-weight: 700; color: var(--text-dark); margin-bottom: 0.75rem;">
-                        Growth (2015-2018)
+                        Growth (2015)
                     </h3>
                     <p style="color: var(--text-gray); line-height: 1.8; margin-bottom: 1.25rem;">
-                        Delivered 100+ projects; expanded to Singapore and Thailand; grew to 30+ engineers serving startups and Fortune 500 clients.
+                        Delivered 40+ projects and expanded into enterprise clients. Established presence in Singapore and Thailand serving startups and Fortune 500 companies.
+                    </p>
+                    
+                    <h3 style="font-size: 1.25rem; font-weight: 700; color: var(--text-dark); margin-bottom: 0.75rem;">
+                        Expansion (2020)
+                    </h3>
+                    <p style="color: var(--text-gray); line-height: 1.8; margin-bottom: 1.25rem;">
+                        Grew to 30+ lead engineers with global operations. Deepened expertise in SaaS, AI, and enterprise solutions across multiple regions.
                     </p>
                     
                     <h3 style="font-size: 1.25rem; font-weight: 700; color: var(--text-dark); margin-bottom: 0.75rem;">
                         Today (2026)
                     </h3>
                     <p style="color: var(--text-gray); line-height: 1.8;">
-                        50+ senior engineers, 50+ delivered projects. Focus: SaaS, AI, Enterprise Solutions, Custom Software Development. Mission: help 20+ companies achieve digital transformation with measurable results.
+                        50+ senior engineers, 100+ projects delivered, and own SaaS platforms (HKSpace). Mission: Help 20+ companies achieve measurable digital transformation.
                     </p>
                 </div>
                 
@@ -54,9 +61,9 @@
                         @php
                         $milestones = [
                             ['year' => '2012', 'title' => 'Start', 'desc' => '5 developers', 'highlight' => false],
-                            ['year' => '2015', 'title' => 'Growth', 'desc' => '100+ projects, Singapore & Thailand', 'highlight' => false],
-                            ['year' => '2018', 'title' => 'Expansion', 'desc' => '30+ engineers, enterprise clients', 'highlight' => false],
-                            ['year' => '2026', 'title' => 'Lead', 'desc' => '50+ engineers, 50+ projects, industry leader', 'highlight' => true],
+                            ['year' => '2015', 'title' => 'Growth', 'desc' => '40+ projects, enterprise clients', 'highlight' => false],
+                            ['year' => '2020', 'title' => 'Expansion', 'desc' => '30+ lead engineers, expanded globally', 'highlight' => false],
+                            ['year' => '2026', 'title' => 'Lead', 'desc' => '50+ engineers, 100+ projects, own SaaS platforms', 'highlight' => true],
                         ];
                         @endphp
                         
@@ -209,7 +216,7 @@
                     ['num' => '20+', 'title' => 'Senior Engineers', 'desc' => 'Certified and experienced team'],
                     ['num' => '99.99%', 'title' => 'Uptime Record', 'desc' => 'Reliability focus'],
                     ['num' => '12+', 'title' => 'Years of Delivery', 'desc' => 'Proven track record'],
-                    ['num' => '$2M', 'title' => 'Project Value', 'desc' => 'Solutions delivered'],
+                    ['num' => '$1M', 'title' => 'Project Value', 'desc' => 'Solutions delivered'],
                     ['num' => '10+', 'title' => 'Industries Served', 'desc' => 'Cross-industry expertise'],
                 ];
                 @endphp

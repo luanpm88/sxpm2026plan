@@ -641,9 +641,9 @@
                                     @elseif ($case['badge'] === 'Education')
                                         <img src="{{ asset('img/edu_book.svg') }}" width="100" />
                                     @elseif ($case['badge'] === 'Logistics & Retail')
-                                        <img src="{{ asset('img/store_warehouse.svg') }}" width="70" />
-                                        <img src="{{ asset('img/store_barcode.svg') }}" width="70" class="mx-3" />
-                                        <img src="{{ asset('img/store_trolley.svg') }}" width="70" />
+                                        <img src="{{ asset('img/store_warehouse.svg') }}" width="100" />
+                                        <img src="{{ asset('img/store_barcode.svg') }}" width="100" class="mx-3" />
+                                        <img src="{{ asset('img/store_trolley.svg') }}" width="100" />
                                     @else
                                         <svg viewBox="0 0 300 200" style="width: 100%; max-width: 300px;">
                                             <!-- Growth Curve -->

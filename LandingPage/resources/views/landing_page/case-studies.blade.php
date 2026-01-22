@@ -82,14 +82,14 @@
                     'tech' => 'OpenAI, Pinecone, Python, FastAPI, React, TypeScript'
                 ],
                 [
-                    'title' => 'Education Management System',
+                    'title' => 'Education Platform: Scheduling Automation',
                     'industry' => 'Education',
                     'challenge' => 'Manage schedules, class assignments, learning reports, and attendance for 10,000+ students. Manual scheduling took 3 weeks per semester with frequent conflicts.',
                     'solution' => 'Built an AI-powered scheduling engine, analytics dashboard, and automated attendance. Applied ML to reduce conflicts and balance workloads. Added real-time transcripts, parent portal, and mobile notifications.',
                     'results' => [
                         'Scheduling time: 3 weeks → 2 days',
-                        'Schedule conflicts reduced by 95%',
                         'Data accuracy 99.9%',
+                        '10K+ students managed',
                         'Adoption 98%',
                         '500+ hours/semester saved'
                     ],

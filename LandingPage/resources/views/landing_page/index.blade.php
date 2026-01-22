@@ -551,12 +551,12 @@
                             [
                                 'badge' => 'Education',
                                 'badge_bg' => '#8b5cf6',
-                                'title' => 'Education Platform: 95% Efficiency Gain',
+                                'title' => 'Education Platform: Scheduling Automation',
                                 'description' => 'AI-powered scheduling engine for 10,000+ students. Reduced scheduling time from 3 weeks to 2 days, achieved 99.9% data accuracy, and saved 500+ hours per semester.',
                                 'metrics' => [
-                                    ['value' => '95%', 'label' => 'Efficiency'],
-                                    ['value' => '10K+', 'label' => 'Students'],
-                                    ['value' => '500+', 'label' => 'Hours Saved']
+                                    ['value' => '21d → 2d', 'label' => 'Scheduling'],
+                                    ['value' => '99.9%', 'label' => 'Accuracy'],
+                                    ['value' => '10K+', 'label' => 'Students']
                                 ],
                                 'svg_path' => 'M 30 150 Q 90 130, 150 90 Q 210 60, 270 30',
                                 'svg_points' => [

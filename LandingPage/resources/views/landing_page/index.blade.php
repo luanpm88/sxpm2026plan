@@ -632,7 +632,7 @@
                             <span class="material-symbols-rounded">arrow_forward</span>
                         </a>
                         <a href="{{ route('landing.pricing') }}" style="background: transparent; color: white; padding: 1rem 2.5rem; border-radius: 8px; font-weight: 600; text-decoration: none; display: inline-flex; align-items: center; gap: 0.75rem; border: 2px solid white; transition: all 0.3s ease;" onmouseover="this.style.backgroundColor='rgba(255,255,255,0.1)';" onmouseout="this.style.backgroundColor='transparent';">
-                            <span>View Pricing</span>
+                            <span>View Cost & Plans</span>
                             <span class="material-symbols-rounded">receipt_long</span>
                         </a>
                     </div>

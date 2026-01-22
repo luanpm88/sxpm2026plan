@@ -7,7 +7,7 @@
         <div class="container-v5">
             <div style="text-align: center; max-width: 900px; margin: 0 auto;">
                 <h1 style="font-size: 3.5rem; font-weight: 800; line-height: 1.15; margin-bottom: 1.5rem; color: var(--text-dark);">
-                    Flexible Pricing <span style="color: var(--primary);">Based on Needs</span>
+                    Flexible Plans <span style="color: var(--primary);">Based on Needs</span>
                 </h1>
                 <p style="font-size: 1.15rem; color: var(--text-gray); line-height: 1.8;">
                     Every project is unique. We customize pricing based on your scope, complexity, and timeline. No fixed packages, only solutions that fit.

@@ -509,7 +509,7 @@
                         $featured_cases = [
                             [
                                 'badge' => 'Enterprise SaaS',
-                                'badge_bg' => '#10b981',
+                                'badge_bg' => '#3b82f6',
                                 'title' => 'HKSpace: Scaling to 50K+ Active Users',
                                 'description' => 'Multi-tenant enterprise management platform built from scratch. From MVP to production with 50,000+ active users in 18 months.',
                                 'metrics' => [
@@ -523,11 +523,13 @@
                                     ['cx' => 100, 'cy' => 140, 'r' => 6, 'label' => '10K', 'x' => 100, 'y' => 155],
                                     ['cx' => 180, 'cy' => 80, 'r' => 6, 'label' => '30K', 'x' => 180, 'y' => 95],
                                     ['cx' => 280, 'cy' => 20, 'r' => 8, 'label' => '50K+', 'x' => 280, 'y' => 35]
-                                ]
+                                ],
+                                'image_url' => null,
+                                'ongoing' => false,
                             ],
                             [
                                 'badge' => 'Artificial Intelligence',
-                                'badge_bg' => '#3b82f6',
+                                'badge_bg' => '#10b981',
                                 'title' => 'AI Knowledge Platform: 90% Time Saved',
                                 'description' => 'AI-powered knowledge management with OpenAI APIs, custom RAG pipeline, and Pinecone vector database. Processing 1,000+ documents daily with 95%+ accuracy.',
                                 'metrics' => [
@@ -542,7 +544,9 @@
                                     ['cx' => 150, 'cy' => 100, 'r' => 6, 'label' => 'Q2', 'x' => 150, 'y' => 115],
                                     ['cx' => 210, 'cy' => 80, 'r' => 6, 'label' => 'Q3', 'x' => 210, 'y' => 95],
                                     ['cx' => 270, 'cy' => 30, 'r' => 8, 'label' => '$5M', 'x' => 270, 'y' => 45]
-                                ]
+                                ],
+                                'image_url' => null,
+                                'ongoing' => true,
                             ],
                             [
                                 'badge' => 'Education',
@@ -559,7 +563,9 @@
                                     ['cx' => 30, 'cy' => 150, 'r' => 6, 'label' => 'Before', 'x' => 30, 'y' => 165],
                                     ['cx' => 150, 'cy' => 90, 'r' => 6, 'label' => 'Phase 1', 'x' => 150, 'y' => 105],
                                     ['cx' => 270, 'cy' => 30, 'r' => 8, 'label' => 'Result', 'x' => 270, 'y' => 45]
-                                ]
+                                ],
+                                'image_url' => null,
+                                'ongoing' => true,
                             ],
                             [
                                 'badge' => 'Logistics & Retail',
@@ -577,7 +583,9 @@
                                     ['cx' => 130, 'cy' => 110, 'r' => 6, 'label' => 'Q2', 'x' => 130, 'y' => 125],
                                     ['cx' => 230, 'cy' => 50, 'r' => 6, 'label' => 'Q3', 'x' => 230, 'y' => 65],
                                     ['cx' => 270, 'cy' => 25, 'r' => 8, 'label' => '1M+', 'x' => 270, 'y' => 40]
-                                ]
+                                ],
+                                'image_url' => null,
+                                'ongoing' => true,
                             ]
                         ];
                         @endphp
@@ -611,26 +619,34 @@
                                     </a>
                                 </div>
                                 
-                                <div class="position-relative opacity-75" style="background: linear-gradient(135deg, {{ $case['badge_bg'] }} 0%, {{ $case['badge_bg'] }}dd 100%); padding: 3rem; display: flex; align-items: center; justify-content: center; min-height: 400px;">
-                                    <span class="badge  rounded-pill bg-warning position-absolute fs-6 top-0 mt-3 start-0 ms-3">
-                                        <span class="spinner-border spinner-border-sm me-1" role="status">
-                                            <span class="visually-hidden">Loading...</span>
+                                <div class="position-relative @if($case['ongoing']) opacity-75 @endif" style="background: linear-gradient(135deg, {{ $case['badge_bg'] }} 0%, {{ $case['badge_bg'] }}dd 100%); padding: 5rem; display: flex; align-items: center; justify-content: center; min-height: 400px;">
+                                    @if($case['ongoing'])
+                                        <span class="badge  rounded-pill bg-warning position-absolute fs-6 top-0 mt-3 start-0 ms-3">
+                                            <span class="spinner-border spinner-border-sm me-1" role="status">
+                                                <span class="visually-hidden">Loading...</span>
+                                            </span>
+                                            Update Diagram
                                         </span>
-                                        Update Diagram
-                                    </span>
-                                    <svg viewBox="0 0 300 200" style="width: 100%; max-width: 300px;">
-                                        <!-- Growth Curve -->
-                                        <path d="{{ $case['svg_path'] }}" 
-                                              fill="none" 
-                                              stroke="white" 
-                                              stroke-width="3" 
-                                              opacity="0.8"/>
-                                        
-                                        @foreach($case['svg_points'] as $point)
-                                        <circle cx="{{ $point['cx'] }}" cy="{{ $point['cy'] }}" r="{{ $point['r'] }}" fill="white" opacity="{{ $point['r'] > 6 ? '1' : '0.9' }}"/>
-                                        <text x="{{ $point['x'] }}" y="{{ $point['y'] }}" text-anchor="middle" font-size="10" fill="white" opacity="{{ $point['r'] > 6 ? '1' : '0.8' }}">{{ $point['label'] }}</text>
-                                        @endforeach
-                                    </svg>
+                                    @endif
+
+                                    @if ($case['badge'] === 'Enterprise SaaS')
+                                        <img src="{{ asset('img/hkspace.png') }}" alt="HKSpace Dashboard Mockup" style="width: 100%; border-radius: 12px; box-shadow: 0 8px 20px rgba(0,0,0,0.1);"/>
+                                        <img class="position-absolute start-0 bottom-0 mb-4 ms-4" src="{{ asset('img/hkspace_2.png') }}" alt="HKSpace Dashboard Mockup" style="width: 200px; border-radius: 12px; box-shadow: 0 8px 20px rgba(0,0,0,0.1);"/>
+                                    @else
+                                        <svg viewBox="0 0 300 200" style="width: 100%; max-width: 300px;">
+                                            <!-- Growth Curve -->
+                                            <path d="{{ $case['svg_path'] }}" 
+                                                fill="none" 
+                                                stroke="white" 
+                                                stroke-width="3" 
+                                                opacity="0.8"/>
+                                            
+                                            @foreach($case['svg_points'] as $point)
+                                            <circle cx="{{ $point['cx'] }}" cy="{{ $point['cy'] }}" r="{{ $point['r'] }}" fill="white" opacity="{{ $point['r'] > 6 ? '1' : '0.9' }}"/>
+                                            <text x="{{ $point['x'] }}" y="{{ $point['y'] }}" text-anchor="middle" font-size="10" fill="white" opacity="{{ $point['r'] > 6 ? '1' : '0.8' }}">{{ $point['label'] }}</text>
+                                            @endforeach
+                                        </svg>
+                                    @endif
                                 </div>
                             </div>
                         </div>

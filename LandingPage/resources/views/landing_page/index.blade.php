@@ -491,72 +491,245 @@
         </div>
     </section>
 
-    <!-- Featured Case Study -->
-    <section class="opacity-75">
+    <!-- Success Stories Carousel -->
+    <section>
         <div class="container-v5">
             <div class="section-header">
-                <h2 class="section-title">Success Story <span class="badge  rounded-pill bg-warning">Draft</span></h2>
-                <p class="section-subtitle">Featured case study from our portfolio</p>
+                <h2 class="section-title">Success Stories</h2>
+                <p class="section-subtitle">Featured case studies from our portfolio - Real results, real impact</p>
             </div>
             
-            <div style="background: white; border: 1px solid var(--border); border-radius: 12px; overflow: hidden; box-shadow: 0 10px 40px rgba(15, 107, 158, 0.08);">
-                <div class="case-study-grid" style="display: grid; grid-template-columns: 1fr 1fr; gap: 0;">
-                    <div style="padding: 3rem;">
-                        <div style="display: inline-block; background: var(--accent-light); color: var(--accent); padding: 0.4rem 1rem; border-radius: 20px; font-size: 0.85rem; font-weight: 700; margin-bottom: 1.5rem;">
-                            SaaS Platform
-                        </div>
-                        <h3 style="font-size: 2rem; font-weight: 800; color: var(--text-dark); margin-bottom: 1rem; line-height: 1.3;">
-                            HKSpace: Scaling to 50K+ Active Users
-                        </h3>
-                        <p style="color: var(--text-gray); font-size: 1rem; line-height: 1.8; margin-bottom: 2rem;">
-                            Multi-tenant enterprise management platform built from scratch. From MVP to production with 50,000+ active users in 18 months.
-                        </p>
+            <!-- Carousel Container -->
+            <div style="position: relative;">
+                <!-- Slides Wrapper -->
+                <div id="casesCarousel" style="overflow: hidden; border-radius: 12px; background: white; border: 1px solid var(--border); box-shadow: 0 10px 40px rgba(15, 107, 158, 0.08);">
+                    <div id="carouselInner" style="display: flex; transition: transform 0.5s ease-in-out;">
                         
-                        <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; margin-bottom: 2rem;">
-                            <div>
-                                <div style="font-size: 1.8rem; font-weight: 800; color: var(--primary);">50K+</div>
-                                <div style="font-size: 0.85rem; color: var(--text-gray); margin-top: 0.25rem;">Active Users</div>
-                            </div>
-                            <div>
-                                <div style="font-size: 1.8rem; font-weight: 800; color: var(--primary);">99.9%</div>
-                                <div style="font-size: 0.85rem; color: var(--text-gray); margin-top: 0.25rem;">Uptime</div>
-                            </div>
-                            <div>
-                                <div style="font-size: 1.8rem; font-weight: 800; color: var(--primary);">18 months</div>
-                                <div style="font-size: 0.85rem; color: var(--text-gray); margin-top: 0.25rem;">Timeline</div>
+                        @php
+                        $featured_cases = [
+                            [
+                                'badge' => 'Enterprise SaaS',
+                                'badge_bg' => '#10b981',
+                                'title' => 'HKSpace: Scaling to 50K+ Active Users',
+                                'description' => 'Multi-tenant enterprise management platform built from scratch. From MVP to production with 50,000+ active users in 18 months.',
+                                'metrics' => [
+                                    ['value' => '50K+', 'label' => 'Active Users'],
+                                    ['value' => '99.9%', 'label' => 'Uptime'],
+                                    ['value' => '18 months', 'label' => 'Timeline']
+                                ],
+                                'svg_path' => 'M 20 180 Q 80 160, 100 140 T 180 80 T 280 20',
+                                'svg_points' => [
+                                    ['cx' => 20, 'cy' => 180, 'r' => 6, 'label' => 'MVP', 'x' => 20, 'y' => 195],
+                                    ['cx' => 100, 'cy' => 140, 'r' => 6, 'label' => '10K', 'x' => 100, 'y' => 155],
+                                    ['cx' => 180, 'cy' => 80, 'r' => 6, 'label' => '30K', 'x' => 180, 'y' => 95],
+                                    ['cx' => 280, 'cy' => 20, 'r' => 8, 'label' => '50K+', 'x' => 280, 'y' => 35]
+                                ]
+                            ],
+                            [
+                                'badge' => 'Artificial Intelligence',
+                                'badge_bg' => '#3b82f6',
+                                'title' => 'AI Knowledge Platform: $5M ARR',
+                                'description' => 'AI-powered knowledge management with OpenAI APIs, custom RAG pipeline, and Pinecone vector database. Processing 1,000+ documents daily with 95%+ accuracy.',
+                                'metrics' => [
+                                    ['value' => '1K+', 'label' => 'Docs/Day'],
+                                    ['value' => '95%+', 'label' => 'Accuracy'],
+                                    ['value' => '$5M', 'label' => 'ARR']
+                                ],
+                                'svg_path' => 'M 30 160 L 90 140 L 150 100 L 210 80 L 270 30',
+                                'svg_points' => [
+                                    ['cx' => 30, 'cy' => 160, 'r' => 6, 'label' => 'Start', 'x' => 30, 'y' => 175],
+                                    ['cx' => 90, 'cy' => 140, 'r' => 6, 'label' => 'Q1', 'x' => 90, 'y' => 155],
+                                    ['cx' => 150, 'cy' => 100, 'r' => 6, 'label' => 'Q2', 'x' => 150, 'y' => 115],
+                                    ['cx' => 210, 'cy' => 80, 'r' => 6, 'label' => 'Q3', 'x' => 210, 'y' => 95],
+                                    ['cx' => 270, 'cy' => 30, 'r' => 8, 'label' => '$5M', 'x' => 270, 'y' => 45]
+                                ]
+                            ],
+                            [
+                                'badge' => 'Education',
+                                'badge_bg' => '#8b5cf6',
+                                'title' => 'Education Platform: 95% Efficiency Gain',
+                                'description' => 'AI-powered scheduling engine for 10,000+ students. Reduced scheduling time from 3 weeks to 2 days, achieved 99.9% data accuracy, and saved 500+ hours per semester.',
+                                'metrics' => [
+                                    ['value' => '95%', 'label' => 'Efficiency'],
+                                    ['value' => '10K+', 'label' => 'Students'],
+                                    ['value' => '500+', 'label' => 'Hours Saved']
+                                ],
+                                'svg_path' => 'M 30 150 Q 90 130, 150 90 Q 210 60, 270 30',
+                                'svg_points' => [
+                                    ['cx' => 30, 'cy' => 150, 'r' => 6, 'label' => 'Before', 'x' => 30, 'y' => 165],
+                                    ['cx' => 150, 'cy' => 90, 'r' => 6, 'label' => 'Phase 1', 'x' => 150, 'y' => 105],
+                                    ['cx' => 270, 'cy' => 30, 'r' => 8, 'label' => 'Result', 'x' => 270, 'y' => 45]
+                                ]
+                            ],
+                            [
+                                'badge' => 'Logistics & Retail',
+                                'badge_bg' => '#f59e0b',
+                                'title' => 'Storage System: $15M Annual Savings',
+                                'description' => 'Comprehensive WMS managing 10M SKUs across 50+ branches. Increased inventory accuracy to 99.8%, achieved 94% forecasting accuracy, and saved $15M/year.',
+                                'metrics' => [
+                                    ['value' => '99.8%', 'label' => 'Accuracy'],
+                                    ['value' => '10M', 'label' => 'SKUs'],
+                                    ['value' => '$15M', 'label' => 'Savings/Year']
+                                ],
+                                'svg_path' => 'M 30 170 L 80 140 L 130 110 L 180 80 L 230 50 L 270 25',
+                                'svg_points' => [
+                                    ['cx' => 30, 'cy' => 170, 'r' => 6, 'label' => 'Q1', 'x' => 30, 'y' => 185],
+                                    ['cx' => 130, 'cy' => 110, 'r' => 6, 'label' => 'Q2', 'x' => 130, 'y' => 125],
+                                    ['cx' => 230, 'cy' => 50, 'r' => 6, 'label' => 'Q3', 'x' => 230, 'y' => 65],
+                                    ['cx' => 270, 'cy' => 25, 'r' => 8, 'label' => '$15M', 'x' => 270, 'y' => 40]
+                                ]
+                            ]
+                        ];
+                        @endphp
+                        
+                        @foreach($featured_cases as $case)
+                        <div class="carousel-slide" style="min-width: 100%; box-sizing: border-box;">
+                            <div class="case-study-grid" style="display: grid; grid-template-columns: 1fr 1fr; gap: 0;">
+                                <div style="padding: 3rem;">
+                                    <div style="display: inline-block; background: {{ $case['badge_bg'] }}15; color: {{ $case['badge_bg'] }}; padding: 0.4rem 1rem; border-radius: 20px; font-size: 0.85rem; font-weight: 700; margin-bottom: 1.5rem;">
+                                        {{ $case['badge'] }}
+                                    </div>
+                                    <h3 style="font-size: 2rem; font-weight: 800; color: var(--text-dark); margin-bottom: 1rem; line-height: 1.3;">
+                                        {{ $case['title'] }}
+                                    </h3>
+                                    <p style="color: var(--text-gray); font-size: 1rem; line-height: 1.8; margin-bottom: 2rem;">
+                                        {{ $case['description'] }}
+                                    </p>
+                                    
+                                    <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; margin-bottom: 2rem;">
+                                        @foreach($case['metrics'] as $metric)
+                                        <div>
+                                            <div style="font-size: 1.8rem; font-weight: 800; color: var(--primary);">{{ $metric['value'] }}</div>
+                                            <div style="font-size: 0.85rem; color: var(--text-gray); margin-top: 0.25rem;">{{ $metric['label'] }}</div>
+                                        </div>
+                                        @endforeach
+                                    </div>
+                                    
+                                    <a href="{{ route('landing.case-studies') }}" style="color: var(--primary); font-weight: 600; text-decoration: none; display: inline-flex; align-items: center; gap: 0.5rem;">
+                                        <span>Read Full Case Study</span>
+                                        <span class="material-symbols-rounded">arrow_forward</span>
+                                    </a>
+                                </div>
+                                
+                                <div style="background: linear-gradient(135deg, {{ $case['badge_bg'] }} 0%, {{ $case['badge_bg'] }}dd 100%); padding: 3rem; display: flex; align-items: center; justify-content: center; min-height: 400px;">
+                                    <svg viewBox="0 0 300 200" style="width: 100%; max-width: 300px;">
+                                        <!-- Growth Curve -->
+                                        <path d="{{ $case['svg_path'] }}" 
+                                              fill="none" 
+                                              stroke="white" 
+                                              stroke-width="3" 
+                                              opacity="0.8"/>
+                                        
+                                        @foreach($case['svg_points'] as $point)
+                                        <circle cx="{{ $point['cx'] }}" cy="{{ $point['cy'] }}" r="{{ $point['r'] }}" fill="white" opacity="{{ $point['r'] > 6 ? '1' : '0.9' }}"/>
+                                        <text x="{{ $point['x'] }}" y="{{ $point['y'] }}" text-anchor="middle" font-size="10" fill="white" opacity="{{ $point['r'] > 6 ? '1' : '0.8' }}">{{ $point['label'] }}</text>
+                                        @endforeach
+                                    </svg>
+                                </div>
                             </div>
                         </div>
+                        @endforeach
                         
-                        <a href="{{ route('landing.case-studies') }}" style="color: var(--primary); font-weight: 600; text-decoration: none; display: inline-flex; align-items: center; gap: 0.5rem;">
-                            <span>Read Full Case Study</span>
-                            <span class="material-symbols-rounded">arrow_forward</span>
-                        </a>
                     </div>
-                    
-                    <div style="background: linear-gradient(135deg, var(--primary) 0%, var(--accent) 100%); padding: 3rem; display: flex; align-items: center; justify-content: center;">
-                        <svg viewBox="0 0 300 200" style="width: 100%; max-width: 300px;">
-                            <!-- Growth Curve -->
-                            <path d="M 20 180 Q 80 160, 100 140 T 180 80 T 280 20" 
-                                  fill="none" 
-                                  stroke="white" 
-                                  stroke-width="3" 
-                                  opacity="0.8"/>
-                            <circle cx="20" cy="180" r="6" fill="white" opacity="0.9"/>
-                            <circle cx="100" cy="140" r="6" fill="white" opacity="0.9"/>
-                            <circle cx="180" cy="80" r="6" fill="white" opacity="0.9"/>
-                            <circle cx="280" cy="20" r="8" fill="white"/>
-                            
-                            <!-- Labels -->
-                            <text x="20" y="195" text-anchor="middle" font-size="10" fill="white" opacity="0.8">MVP</text>
-                            <text x="100" y="155" text-anchor="middle" font-size="10" fill="white" opacity="0.8">10K</text>
-                            <text x="180" y="95" text-anchor="middle" font-size="10" fill="white" opacity="0.8">30K</text>
-                            <text x="280" y="35" text-anchor="middle" font-size="10" fill="white">50K+</text>
-                        </svg>
-                    </div>
+                </div>
+                
+                <!-- Navigation Arrows -->
+                <button id="prevBtn" style="position: absolute; left: -20px; top: 50%; transform: translateY(-50%); background: white; border: 1px solid var(--border); width: 48px; height: 48px; border-radius: 50%; display: flex; align-items: center; justify-content: center; cursor: pointer; box-shadow: 0 4px 12px rgba(0,0,0,0.1); transition: all 0.3s ease; z-index: 10;" onmouseover="this.style.background='var(--primary)'; this.style.borderColor='var(--primary)'; this.querySelector('.material-symbols-rounded').style.color='white';" onmouseout="this.style.background='white'; this.style.borderColor='var(--border)'; this.querySelector('.material-symbols-rounded').style.color='var(--primary)';">
+                    <span class="material-symbols-rounded" style="color: var(--primary); transition: color 0.3s ease;">chevron_left</span>
+                </button>
+                
+                <button id="nextBtn" style="position: absolute; right: -20px; top: 50%; transform: translateY(-50%); background: white; border: 1px solid var(--border); width: 48px; height: 48px; border-radius: 50%; display: flex; align-items: center; justify-content: center; cursor: pointer; box-shadow: 0 4px 12px rgba(0,0,0,0.1); transition: all 0.3s ease; z-index: 10;" onmouseover="this.style.background='var(--primary)'; this.style.borderColor='var(--primary)'; this.querySelector('.material-symbols-rounded').style.color='white';" onmouseout="this.style.background='white'; this.style.borderColor='var(--border)'; this.querySelector('.material-symbols-rounded').style.color='var(--primary)';">
+                    <span class="material-symbols-rounded" style="color: var(--primary); transition: color 0.3s ease;">chevron_right</span>
+                </button>
+                
+                <!-- Dots Navigation -->
+                <div id="dotsContainer" style="display: flex; justify-content: center; gap: 0.75rem; margin-top: 2rem;">
+                    @for($i = 0; $i < count($featured_cases); $i++)
+                    <button class="carousel-dot" data-index="{{ $i }}" style="width: 12px; height: 12px; border-radius: 50%; border: 2px solid var(--primary); background: {{ $i === 0 ? 'var(--primary)' : 'transparent' }}; cursor: pointer; transition: all 0.3s ease;" onmouseover="if(this.style.background !== 'var(--primary)') this.style.background='#0f6b9e33';" onmouseout="if(this.style.background !== 'var(--primary)') this.style.background='transparent';"></button>
+                    @endfor
                 </div>
             </div>
         </div>
     </section>
+    
+    <script>
+    (function() {
+        const carouselInner = document.getElementById('carouselInner');
+        const slides = document.querySelectorAll('.carousel-slide');
+        const dots = document.querySelectorAll('.carousel-dot');
+        const prevBtn = document.getElementById('prevBtn');
+        const nextBtn = document.getElementById('nextBtn');
+        
+        let currentIndex = 0;
+        const totalSlides = slides.length;
+        
+        function updateCarousel(index) {
+            currentIndex = index;
+            if (currentIndex < 0) currentIndex = totalSlides - 1;
+            if (currentIndex >= totalSlides) currentIndex = 0;
+            
+            const offset = -currentIndex * 100;
+            carouselInner.style.transform = `translateX(${offset}%)`;
+            
+            // Update dots
+            dots.forEach((dot, i) => {
+                if (i === currentIndex) {
+                    dot.style.background = 'var(--primary)';
+                    dot.style.width = '32px';
+                    dot.style.borderRadius = '6px';
+                } else {
+                    dot.style.background = 'transparent';
+                    dot.style.width = '12px';
+                    dot.style.borderRadius = '50%';
+                }
+            });
+        }
+        
+        // Previous button
+        prevBtn.addEventListener('click', () => {
+            updateCarousel(currentIndex - 1);
+        });
+        
+        // Next button
+        nextBtn.addEventListener('click', () => {
+            updateCarousel(currentIndex + 1);
+        });
+        
+        // Dots navigation
+        dots.forEach(dot => {
+            dot.addEventListener('click', () => {
+                const index = parseInt(dot.dataset.index);
+                updateCarousel(index);
+            });
+        });
+        
+        // Auto-play (optional)
+        let autoPlayInterval = setInterval(() => {
+            updateCarousel(currentIndex + 1);
+        }, 5000);
+        
+        // Pause on hover
+        const carousel = document.getElementById('casesCarousel');
+        carousel.addEventListener('mouseenter', () => {
+            clearInterval(autoPlayInterval);
+        });
+        
+        carousel.addEventListener('mouseleave', () => {
+            autoPlayInterval = setInterval(() => {
+                updateCarousel(currentIndex + 1);
+            }, 5000);
+        });
+        
+        // Keyboard navigation
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'ArrowLeft') {
+                updateCarousel(currentIndex - 1);
+            } else if (e.key === 'ArrowRight') {
+                updateCarousel(currentIndex + 1);
+            }
+        });
+    })();
+    </script>
 
     <!-- Client Testimonials -->
     <section class="opacity-75" style="background: var(--secondary-bg);">

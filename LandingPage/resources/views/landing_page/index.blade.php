@@ -528,12 +528,12 @@
                             [
                                 'badge' => 'Artificial Intelligence',
                                 'badge_bg' => '#3b82f6',
-                                'title' => 'AI Knowledge Platform: $5M ARR',
+                                'title' => 'AI Knowledge Platform: 90% Time Saved',
                                 'description' => 'AI-powered knowledge management with OpenAI APIs, custom RAG pipeline, and Pinecone vector database. Processing 1,000+ documents daily with 95%+ accuracy.',
                                 'metrics' => [
                                     ['value' => '1K+', 'label' => 'Docs/Day'],
                                     ['value' => '95%+', 'label' => 'Accuracy'],
-                                    ['value' => '$5M', 'label' => 'ARR']
+                                    ['value' => '90%', 'label' => 'Time Saved']
                                 ],
                                 'svg_path' => 'M 30 160 L 90 140 L 150 100 L 210 80 L 270 30',
                                 'svg_points' => [
@@ -564,19 +564,19 @@
                             [
                                 'badge' => 'Logistics & Retail',
                                 'badge_bg' => '#f59e0b',
-                                'title' => 'Storage System: $15M Annual Savings',
-                                'description' => 'Comprehensive WMS managing 10M SKUs across 50+ branches. Increased inventory accuracy to 99.8%, achieved 94% forecasting accuracy, and saved $15M/year.',
+                                'title' => 'Storage System: 1M+ Daily Transactions',
+                                'description' => 'Comprehensive WMS managing 10M SKUs across 50+ branches. Increased inventory accuracy to 99.8%, achieved 94% forecasting accuracy, handling 1M+ transactions daily.',
                                 'metrics' => [
                                     ['value' => '99.8%', 'label' => 'Accuracy'],
                                     ['value' => '10M', 'label' => 'SKUs'],
-                                    ['value' => '$15M', 'label' => 'Savings/Year']
+                                    ['value' => '1M+', 'label' => 'Trans/Day']
                                 ],
                                 'svg_path' => 'M 30 170 L 80 140 L 130 110 L 180 80 L 230 50 L 270 25',
                                 'svg_points' => [
                                     ['cx' => 30, 'cy' => 170, 'r' => 6, 'label' => 'Q1', 'x' => 30, 'y' => 185],
                                     ['cx' => 130, 'cy' => 110, 'r' => 6, 'label' => 'Q2', 'x' => 130, 'y' => 125],
                                     ['cx' => 230, 'cy' => 50, 'r' => 6, 'label' => 'Q3', 'x' => 230, 'y' => 65],
-                                    ['cx' => 270, 'cy' => 25, 'r' => 8, 'label' => '$15M', 'x' => 270, 'y' => 40]
+                                    ['cx' => 270, 'cy' => 25, 'r' => 8, 'label' => '1M+', 'x' => 270, 'y' => 40]
                                 ]
                             ]
                         ];
@@ -611,7 +611,13 @@
                                     </a>
                                 </div>
                                 
-                                <div style="background: linear-gradient(135deg, {{ $case['badge_bg'] }} 0%, {{ $case['badge_bg'] }}dd 100%); padding: 3rem; display: flex; align-items: center; justify-content: center; min-height: 400px;">
+                                <div class="position-relative opacity-75" style="background: linear-gradient(135deg, {{ $case['badge_bg'] }} 0%, {{ $case['badge_bg'] }}dd 100%); padding: 3rem; display: flex; align-items: center; justify-content: center; min-height: 400px;">
+                                    <span class="badge  rounded-pill bg-warning position-absolute fs-6 top-0 mt-3 start-0 ms-3">
+                                        <span class="spinner-border spinner-border-sm me-1" role="status">
+                                            <span class="visually-hidden">Loading...</span>
+                                        </span>
+                                        Update Diagram
+                                    </span>
                                     <svg viewBox="0 0 300 200" style="width: 100%; max-width: 300px;">
                                         <!-- Growth Curve -->
                                         <path d="{{ $case['svg_path'] }}" 

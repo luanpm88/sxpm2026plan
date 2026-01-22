@@ -77,7 +77,7 @@
                         'Accuracy 95%+',
                         'Response time <500ms',
                         'Adopted by 50+ enterprises',
-                        'Revenue: $5M ARR'
+                        '90% reduction in research time'
                     ],
                     'tech' => 'OpenAI, Pinecone, Python, FastAPI, React, TypeScript'
                 ],

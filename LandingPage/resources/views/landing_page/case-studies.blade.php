@@ -73,7 +73,7 @@
                     'challenge' => 'Build AI-powered knowledge management platform. Ingest 100,000+ documents, extract insights, provide semantic search.',
                     'solution' => 'Leverage OpenAI APIs, build custom RAG pipeline with Pinecone vector DB, develop intuitive UI. Implement document parsing pipeline, semantic indexing, chat interface.',
                     'results' => [
-                        '10M+ enterprise queries answered daily',
+                        '100k+ enterprise queries answered daily',
                         'Accuracy 95%+',
                         'Response time <500ms',
                         'Adopted by enterprises',

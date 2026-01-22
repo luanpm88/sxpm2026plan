@@ -533,7 +533,7 @@
                                 'title' => 'AI Knowledge Platform: 90% Time Saved',
                                 'description' => 'AI-powered knowledge management with OpenAI APIs, custom RAG pipeline, and Pinecone vector database. Processing 1,000+ documents daily with 95%+ accuracy.',
                                 'metrics' => [
-                                    ['value' => '10M+', 'label' => 'Queries/Day'],
+                                    ['value' => '100k+', 'label' => 'Queries/Day'],
                                     ['value' => '95%+', 'label' => 'Accuracy'],
                                     ['value' => '90%', 'label' => 'Time Saved']
                                 ],
@@ -634,6 +634,16 @@
                                         <div class="position-absolute start-0 bottom-0 mb-4 ms-4 p-1">
                                             <img src="{{ asset('img/hkspace_2.png') }}" alt="HKSpace Dashboard Mockup" style="width: 200px; border-radius: 12px; box-shadow: 0 8px 20px rgba(0,0,0,0.1);"/>
                                         </div>
+                                    @elseif ($case['badge'] === 'Artificial Intelligence')
+                                        <img src="{{ asset('img/ai_face.svg') }}" width="100" />
+                                        <img src="{{ asset('img/ai_snow.svg') }}" width="100" class="mx-3" />
+                                        <img src="{{ asset('img/ai_robot.svg') }}" width="100" class="mx-3" />
+                                    @elseif ($case['badge'] === 'Education')
+                                        <img src="{{ asset('img/edu_book.svg') }}" width="100" />
+                                    @elseif ($case['badge'] === 'Logistics & Retail')
+                                        <img src="{{ asset('img/store_warehouse.svg') }}" width="70" />
+                                        <img src="{{ asset('img/store_barcode.svg') }}" width="70" class="mx-3" />
+                                        <img src="{{ asset('img/store_trolley.svg') }}" width="70" />
                                     @else
                                         <svg viewBox="0 0 300 200" style="width: 100%; max-width: 300px;">
                                             <!-- Growth Curve -->

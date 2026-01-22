@@ -42,7 +42,7 @@
                     </p>
                     
                     <h3 style="font-size: 1.25rem; font-weight: 700; color: var(--text-dark); margin-bottom: 0.75rem;">
-                        Today (2024)
+                        Today (2026)
                     </h3>
                     <p style="color: var(--text-gray); line-height: 1.8;">
                         50+ senior engineers, 50+ delivered projects. Focus: SaaS, AI, Enterprise Solutions, Custom Software Development. Mission: help 20+ companies achieve digital transformation with measurable results.
@@ -56,7 +56,7 @@
                             ['year' => '2012', 'title' => 'Start', 'desc' => '5 developers', 'highlight' => false],
                             ['year' => '2015', 'title' => 'Growth', 'desc' => '100+ projects, Singapore & Thailand', 'highlight' => false],
                             ['year' => '2018', 'title' => 'Expansion', 'desc' => '30+ engineers, enterprise clients', 'highlight' => false],
-                            ['year' => '2024', 'title' => 'Lead', 'desc' => '50+ engineers, 50+ projects, industry leader', 'highlight' => true],
+                            ['year' => '2026', 'title' => 'Lead', 'desc' => '50+ engineers, 50+ projects, industry leader', 'highlight' => true],
                         ];
                         @endphp
                         

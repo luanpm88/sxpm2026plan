@@ -109,7 +109,7 @@
             </div>
 
             <div class="footer-divider">
-                &copy; 2024 HKIncotech. All rights reserved.
+                &copy; 2026 HKIncotech. All rights reserved.
             </div>
         </div>
     </footer>

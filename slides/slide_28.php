@@ -373,6 +373,11 @@ require_once '../config.php';
         </div>
     </div>
     
+    <!-- Landing page demo link for SXPM internal showcase -->
+    <div style="text-align: center; margin: 18px 0 50px; font-size: 0.95rem; color: #1f2937; font-weight: 700;">
+        Link chi tiết nội dung (SXPM): <a href="http://hoangkhang.com.vn:8003" target="_blank" style="color: #0f6b9e; font-weight: 800; text-decoration: underline;">hoangkhang.com.vn:8003</a>
+    </div>
+
     <?php include '../includes/navigation.php'; ?>
     <?php include '../includes/scripts.php'; ?>
 </body>

@@ -47,7 +47,7 @@
                         
                         <div>
                             <label style="display: block; font-weight: 600; color: var(--text-dark); margin-bottom: 0.5rem;">Project Type</label>
-                            <select style="width: 100%; padding: 0.75rem 1rem; border: 1px solid var(--border); border-radius: 8px; font-size: 1rem; font-family: inherit;">
+                            <select style="width: 100%; height: 56px; padding: 0 1rem; border: 1px solid var(--border); border-radius: 8px; font-size: 1rem; font-family: inherit; line-height: 1.4; appearance: none; background-color: white;">
                                 <option>Select project type...</option>
                                 <option>Custom Software Development</option>
                                 <option>SaaS Platform</option>
@@ -60,7 +60,7 @@
                         
                         <div>
                             <label style="display: block; font-weight: 600; color: var(--text-dark); margin-bottom: 0.5rem;">Project Budget</label>
-                            <select style="width: 100%; padding: 0.75rem 1rem; border: 1px solid var(--border); border-radius: 8px; font-size: 1rem; font-family: inherit;">
+                            <select style="width: 100%; height: 56px; padding: 0 1rem; border: 1px solid var(--border); border-radius: 8px; font-size: 1rem; font-family: inherit; line-height: 1.4; appearance: none; background-color: white;">
                                 <option>Select budget range...</option>
                                 <option>&lt; $50,000</option>
                                 <option>$50,000 - $100,000</option>
@@ -103,13 +103,13 @@
                     </div>
                     
                     <!-- Singapore Office -->
-                    <div class="d-none" style="background: var(--secondary-bg); border-radius: 8px; padding: 2rem;">
+                    <div class="opacity-75" style="background: var(--secondary-bg); border-radius: 8px; padding: 2rem;">
                         <div style="display: flex; gap: 1.5rem; align-items: flex-start;">
                             <div style="font-size: 2rem; color: var(--primary); flex-shrink: 0;">
                                 <span class="material-symbols-rounded">business</span>
                             </div>
                             <div>
-                                <h3 style="font-weight: 700; color: var(--text-dark); margin-bottom: 0.5rem;">Singapore Office</h3>
+                                <h3 style="font-weight: 700; color: var(--text-dark); margin-bottom: 0.5rem;"> Singapore Office <span class="badge  rounded-pill bg-warning">Draft</span></h3>
                                 <p style="color: var(--text-gray); line-height: 1.6;">
                                     Marina Bay, Singapore<br>
                                     Address: Central Business District<br>

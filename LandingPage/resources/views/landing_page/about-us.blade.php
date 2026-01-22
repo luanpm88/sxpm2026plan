@@ -119,10 +119,10 @@
     </section>
 
     <!-- Leadership Team -->
-    <section>
+    <section class="opacity-75">
         <div class="container-v5">
             <div class="section-header">
-                <h2 class="section-title">Leadership Team</h2>
+                <h2 class="section-title">Leadership Team  <span class="badge  rounded-pill bg-warning">Draft</span></h2>
                 <p class="section-subtitle">Experienced leaders with delivery track records</p>
             </div>
             

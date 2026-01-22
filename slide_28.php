@@ -626,6 +626,9 @@
                     Xem Website Ngay →
                 </a>
             </div>
+            <p style="margin-top: 12px; font-size: 0.95em; color: #0f6b9e; font-weight: 600;">
+                Link demo (SXPM nội bộ): <a href="http://hoangkhang.com.vn:8003" target="_blank" style="color: #0f6b9e; text-decoration: underline;">hoangkhang.com.vn:8003</a>
+            </p>
             <p style="margin-top: 15px; font-size: 0.9em; color: #666;">
                 Bấm vào nút trên để xem demo thực tế tất cả nội dung được trình bày
             </p>

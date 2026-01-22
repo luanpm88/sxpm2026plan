@@ -486,10 +486,10 @@
     </section>
 
     <!-- Featured Case Study -->
-    <section>
+    <section class="opacity-75">
         <div class="container-v5">
             <div class="section-header">
-                <h2 class="section-title">Success Story</h2>
+                <h2 class="section-title">Success Story <span class="badge  rounded-pill bg-warning">Draft</span></h2>
                 <p class="section-subtitle">Featured case study from our portfolio</p>
             </div>
             
@@ -553,10 +553,10 @@
     </section>
 
     <!-- Client Testimonials -->
-    <section style="background: var(--secondary-bg);">
+    <section class="opacity-75" style="background: var(--secondary-bg);">
         <div class="container-v5">
             <div class="section-header">
-                <h2 class="section-title">What Our Clients Say</h2>
+                <h2 class="section-title">What Our Clients Say <span class="badge  rounded-pill bg-warning">Draft</span></h2>
                 <p class="section-subtitle">Feedback from our partners and clients</p>
             </div>
             

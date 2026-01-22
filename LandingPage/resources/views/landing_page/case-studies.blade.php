@@ -259,10 +259,10 @@
     </section>
 
     <!-- Client Testimonials -->
-    <section style="background: white;">
+    <section class="opacity-75" style="background: white;">
         <div class="container-v5">
             <div class="section-header">
-                <h2 class="section-title">Client Testimonials</h2>
+                <h2 class="section-title">Client Testimonials  <span class="badge  rounded-pill bg-warning">Draft</span></h2>
                 <p class="section-subtitle">Feedback from our clients</p>
             </div>
             

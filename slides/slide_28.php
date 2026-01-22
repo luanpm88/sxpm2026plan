@@ -221,11 +221,54 @@ require_once '../config.php';
                     <span class="material-symbols-rounded">settings</span>
                     Phần 3: Quy Trình phát triển phần mềm (Agile - SCRUM)
                 </div>
-                <ul class="section-items">
-                    <li><strong>7 Phases:</strong> Discovery → Design → Development → Testing → Demo → Deployment → Support</li>
-                    <li><strong>Cách Hoạt Động:</strong> 2-week sprints • Daily standups • Real-time transparency • Code reviews</li>
-                    <li><strong>Kết Quả:</strong> 30-50% faster • 99.99% client satisfaction</li>
-                </ul>
+                
+                <div style="display: flex; flex-direction: column; gap: 20px;">
+                    <!-- Item 1 -->
+                    <div style="background: #f9fafb; border-left: 4px solid #0f6b9e; padding: 15px; border-radius: 4px;">
+                        <h5 style="margin: 0 0 10px 0; color: #1f2937; font-weight: 700;">1. Steps in SCRUM Process</h5>
+                        <p style="margin: 0; color: #4b5563; font-size: 0.9rem; line-height: 1.6;">
+                            <strong>Discovery & Consulting → Design & Planning → Sprint Development → QA & Testing → Deployment & Launch → Support & Development</strong><br>
+                            6 bước từ khám phá ý tưởng đến hỗ trợ dài hạn, mỗi bước có timeline & deliverables rõ ràng
+                        </p>
+                    </div>
+                    
+                    <!-- Item 2 -->
+                    <div style="background: #f9fafb; border-left: 4px solid #0f6b9e; padding: 15px; border-radius: 4px;">
+                        <h5 style="margin: 0 0 10px 0; color: #1f2937; font-weight: 700;">2. Sprint Cycle Details (2-4 tuần)</h5>
+                        <p style="margin: 0; color: #4b5563; font-size: 0.9rem; line-height: 1.6;">
+                            <strong>Sprint Planning → Daily Standup (15 min) → Development (coding, code review) → Sprint Review (demo) → Sprint Retrospective (improve)</strong>
+                        </p>
+                    </div>
+                    
+                    <!-- Item 3 -->
+                    <div style="background: #f9fafb; border-left: 4px solid #0f6b9e; padding: 15px; border-radius: 4px;">
+                        <h5 style="margin: 0 0 10px 0; color: #1f2937; font-weight: 700;">3. SCRUM Process Benefits</h5>
+                        <p style="margin: 0; color: #4b5563; font-size: 0.9rem; line-height: 1.6;">
+                            Transparency & Control • Flexible & Adaptive • High Quality (early defect detection) • 30-50% faster delivery • Optimal ROI • Risk reduction through frequent deployment
+                        </p>
+                    </div>
+                    
+                    <!-- Item 4 -->
+                    <div style="background: #f9fafb; border-left: 4px solid #0f6b9e; padding: 15px; border-radius: 4px;">
+                        <h5 style="margin: 0 0 10px 0; color: #1f2937; font-weight: 700;">4. Your Journey with HKIncotech (6 Phases)</h5>
+                        <ul style="margin: 0; padding-left: 20px; color: #4b5563; font-size: 0.9rem; line-height: 1.6;">
+                            <li>Phase 1 (1w): Consultation - Lắng nghe ý tưởng, phân tích mục tiêu, kế hoạch & estimate</li>
+                            <li>Phase 2 (2-3w): Discovery & Design - Wireframes → Mockups → Prototypes, khách hàng review trước coding</li>
+                            <li>Phase 3 (6-12w): Development - 2-4 week sprints, mỗi sprint có features hoàn chỉnh, deployable</li>
+                            <li>Phase 4 (2-3w): QA & Testing - Functional, performance, security, UAT, fix bugs & optimize</li>
+                            <li>Phase 5 (1w): Launch & Deployment - Deploy production, monitoring setup, incident response</li>
+                            <li>Phase 6 (Ongoing): Support & Growth - 24/7 support, optimization, features mới, scaling</li>
+                        </ul>
+                    </div>
+                    
+                    <!-- Item 5 -->
+                    <div style="background: #f9fafb; border-left: 4px solid #0f6b9e; padding: 15px; border-radius: 4px;">
+                        <h5 style="margin: 0 0 10px 0; color: #1f2937; font-weight: 700;">5. Why Choose HKIncotech for SCRUM?</h5>
+                        <p style="margin: 0; color: #4b5563; font-size: 0.9rem; line-height: 1.6;">
+                            Certified Scrum Masters • 12+ years agile experience • Transparent process (dashboard, demos) • Fast delivery (MVP 4-8 weeks) • Long-term partnership & support
+                        </p>
+                    </div>
+                </div>
             </div>
 
             <!-- Section 4: Tech Stack -->
@@ -337,15 +380,15 @@ require_once '../config.php';
             <div class="content-section">
                 <div class="section-header">
                     <span class="material-symbols-rounded">verified</span>
-                    Phần 9: Best Practices từ Tech Giants
+                    Section 9: Engineering Best Practices
                 </div>
                 <ul class="section-items">
-                    <li><strong>Microservices:</strong> Netflix Model</li>
-                    <li><strong>CI/CD Automation:</strong> Amazon Practice</li>
-                    <li><strong>Security by Design:</strong> Google Standards</li>
-                    <li><strong>Data-Driven:</strong> Facebook Model</li>
-                    <li><strong>Infrastructure as Code:</strong> AWS Practice</li>
-                    <li><strong>Team Collaboration:</strong> Google Culture</li>
+                    <li><strong>Microservices Architecture:</strong> Decompose into independent services for scale and isolated deployments.</li>
+                    <li><strong>CI/CD Automation:</strong> Automated testing before deploy; high deployment frequency for rapid feedback.</li>
+                    <li><strong>Security by Design:</strong> Security checks from development stage; avoid post-production patching.</li>
+                    <li><strong>Data-Driven Decisions:</strong> A/B testing, metrics tracking, centralized analytics for informed decisions.</li>
+                    <li><strong>Infrastructure as Code:</strong> Terraform/CloudFormation for versionable, reproducible infrastructure.</li>
+                    <li><strong>Team Collaboration:</strong> Async communication, clear documentation, knowledge sharing across teams.</li>
                 </ul>
             </div>
 
@@ -367,6 +410,63 @@ require_once '../config.php';
                     <div class="highlight-title">Bảo Mật Enterprise-Grade</div>
                     <div class="highlight-content">
                         Tất cả dự án được xây dựng với security first mindset • Regular security audits & compliance reviews • Certified security engineers & architects • Comprehensive risk mitigation strategy
+                    </div>
+                </div>
+            </div>
+
+            <!-- Section 11: Certifications & Standards -->
+            <div class="content-section">
+                <div class="section-header">
+                    <span class="material-symbols-rounded">card_membership</span>
+                    Phần 11: Chứng chỉ & Tiêu chuẩn Ngành
+                </div>
+                
+                <div style="display: flex; flex-direction: column; gap: 20px;">
+                    <!-- Item 1 -->
+                    <div style="background: #f9fafb; border-left: 4px solid #0f6b9e; padding: 15px; border-radius: 4px;">
+                        <h4 style="margin: 0 0 10px 0; color: #1f2937; font-weight: 700;">1. Compliance & Security Certifications</h4>
+                        <p style="margin: 0; color: #4b5563; font-size: 0.9rem; line-height: 1.6;">
+                            <strong>ISO 27001</strong> (Information Security Management) • <strong>SOC 2 Type II</strong> (Service Organization Control) • <strong>GDPR Compliant</strong> • <strong>PCI DSS</strong> (Payment Security) • <strong>HIPAA</strong> (Healthcare Data) • <strong>OWASP</strong> (Security Standards)
+                        </p>
+                    </div>
+                    
+                    <!-- Item 2 -->
+                    <div style="background: #f9fafb; border-left: 4px solid #0f6b9e; padding: 15px; border-radius: 4px;">
+                        <h4 style="margin: 0 0 10px 0; color: #1f2937; font-weight: 700;">2. Cloud Provider Certifications</h4>
+                        <p style="margin: 0; color: #4b5563; font-size: 0.9rem; line-height: 1.6;">
+                            <strong>AWS Certified Solutions Architect</strong> • <strong>AWS Certified DevOps Engineer</strong> • <strong>Google Cloud Professional Cloud Architect</strong> • <strong>Microsoft Azure Solutions Architect</strong> • <strong>Kubernetes Certified Application Developer (CKAD)</strong>
+                        </p>
+                    </div>
+                    
+                    <!-- Item 3 -->
+                    <div style="background: #f9fafb; border-left: 4px solid #0f6b9e; padding: 15px; border-radius: 4px;">
+                        <h4 style="margin: 0 0 10px 0; color: #1f2937; font-weight: 700;">3. Agile & Development Certifications</h4>
+                        <p style="margin: 0; color: #4b5563; font-size: 0.9rem; line-height: 1.6;">
+                            <strong>Certified Scrum Master (CSM)</strong> • <strong>Certified Scrum Product Owner (CSPO)</strong> • <strong>Professional Scrum Developer (PSD)</strong> • <strong>SAFe Agilist</strong> (Scaled Agile) • <strong>Continuous Delivery & DevOps</strong> expertise
+                        </p>
+                    </div>
+                    
+                    <!-- Item 4 -->
+                    <div style="background: #f9fafb; border-left: 4px solid #0f6b9e; padding: 15px; border-radius: 4px;">
+                        <h4 style="margin: 0 0 10px 0; color: #1f2937; font-weight: 700;">4. Technology & Framework Expertise</h4>
+                        <p style="margin: 0; color: #4b5563; font-size: 0.9rem; line-height: 1.6;">
+                            <strong>React/Vue/Angular</strong> certified developers • <strong>Node.js/Python/Java</strong> backend specialists • <strong>MongoDB/PostgreSQL</strong> database experts • <strong>OpenAI/LLM</strong> AI integration specialists • <strong>Microservices & Domain-Driven Design</strong> practitioners
+                        </p>
+                    </div>
+                    
+                    <!-- Item 5 -->
+                    <div style="background: #f9fafb; border-left: 4px solid #0f6b9e; padding: 15px; border-radius: 4px;">
+                        <h4 style="margin: 0 0 10px 0; color: #1f2937; font-weight: 700;">5. Team Expertise & Experience</h4>
+                        <p style="margin: 0; color: #4b5563; font-size: 0.9rem; line-height: 1.6;">
+                            50+ senior engineers (10+ years experience average) • Certified security architects & penetration testers • AI/ML specialists với research background • Enterprise solution architects • Team leaders with P&L responsibility
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="highlight-box" style="margin-top: 20px;">
+                    <div class="highlight-title">Continuous Learning Culture</div>
+                    <div class="highlight-content">
+                        Tất cả engineers được khuyến khích cập nhật certifications hàng năm • Regular tech talks & knowledge sharing • Investment trong R&D & emerging technologies (AI, Blockchain, WebAssembly) • Mentorship program cho junior developers
                     </div>
                 </div>
             </div>

@@ -39,8 +39,9 @@
                         'landing.services' => 'Services',
                         'landing.scrum' => 'SCRUM',
                         'landing.tech-stack' => 'Technology',
-                        'landing.scaling' => 'Scaling',
+                        // 'landing.scaling' => 'Scaling',
                         'landing.case-studies' => 'Case Studies',
+                        'landing.certifications' => 'Certifications',
                         'landing.pricing' => 'Cost & Plans',
                         'landing.contact' => 'Contact'
                     ];
@@ -100,6 +101,7 @@
                     <ul>
                         <li><a href="{{ route('landing.about-us') }}">About Us</a></li>
                         <li><a href="{{ route('landing.case-studies') }}">Case Studies</a></li>
+                        <li><a href="{{ route('landing.certifications') }}">Certifications</a></li>
                         <li><a href="{{ route('landing.contact') }}">Contact</a></li>
                         <li><a href="{{ route('landing.pricing') }}">Pricing</a></li>
                     </ul>

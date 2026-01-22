@@ -32,6 +32,9 @@ Route::controller(LandingPageController::class)->group(function () {
     // Pricing
     Route::get('/pricing', 'pricing')->name('landing.pricing');
 
+    // Certifications & Standards
+    Route::get('/certifications', 'certifications')->name('landing.certifications');
+
     // Contact
     Route::get('/contact', 'contact')->name('landing.contact');
 });

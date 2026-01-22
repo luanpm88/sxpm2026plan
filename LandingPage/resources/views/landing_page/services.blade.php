@@ -97,8 +97,16 @@
                     </div>
                 </div>
                 
-                <div style="background: white; border-radius: 12px; padding: 2.5rem; border: 1px solid var(--border);">
-                    <h3 style="font-size: 1.3rem; font-weight: 700; color: var(--text-dark); margin-bottom: 1.5rem;">SCRUM Development Cycle</h3>
+                <div class="opacity-75" style="background: white; border-radius: 12px; padding: 2.5rem; border: 1px solid var(--border);">
+                    <h3 style="font-size: 1.3rem; font-weight: 700; color: var(--text-dark); margin-bottom: 1.5rem;">SCRUM Development Cycle
+                        <span class="badge  rounded-pill bg-warning">
+                            <span class="spinner-border spinner-border-sm me-1" role="status">
+                                <span class="visually-hidden">Loading...</span>
+                            </span>
+                            Update Diagram
+                        </span>
+                        
+                    </h3>
                     <svg viewBox="0 0 300 280" style="width: 100%; max-width: 300px; margin: 0 auto; display: block;">
                         <!-- Sprint Cycle Circle -->
                         <circle cx="150" cy="140" r="90" fill="none" stroke="#e5e7eb" stroke-width="3"/>
@@ -240,6 +248,7 @@
 
                 <!-- Foundation Overview -->
                 <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; align-items: center; margin-bottom: 3rem;">
+                    
                     <div style="background: white; border-radius: 12px; padding: 2.5rem; border: 1px solid var(--border);">
                         <h3 style="font-size: 1.3rem; font-weight: 700; color: var(--text-dark); margin-bottom: 1rem;">Modern AI Foundation</h3>
                         <p style="color: var(--text-gray); line-height: 1.8; margin-bottom: 1rem;">
@@ -265,7 +274,13 @@
                         </ul>
                     </div>
 
-                    <div style="background: white; border-radius: 12px; padding: 2.5rem; border: 1px solid var(--border); text-align: center;">
+                    <div class="position-relative opacity-75" style="background: white; border-radius: 12px; padding: 2.5rem; border: 1px solid var(--border); text-align: center;">
+                        <span class="badge  rounded-pill bg-warning position-absolute fs-6 top-0 mt-3 start-0 ms-3">
+                            <span class="spinner-border spinner-border-sm me-1" role="status">
+                                <span class="visually-hidden">Loading...</span>
+                            </span>
+                            Update Diagram
+                        </span>
                         <svg viewBox="0 0 280 280" style="width: 100%; max-width: 280px;">
                             <!-- Query -->
                             <rect x="120" y="40" width="40" height="25" fill="#0ea5e9" rx="6"/>
@@ -373,7 +388,13 @@
             </div>
             
             <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; align-items: center; margin-bottom: 4rem;">
-                <div style="background: white; border-radius: 12px; padding: 2.5rem; border: 2px solid var(--primary); box-shadow: 0 8px 32px rgba(15, 107, 158, 0.15);">
+                <div class="position-relative opacity-75" style="background: white; border-radius: 12px; padding: 2.5rem; border: 2px solid var(--primary); box-shadow: 0 8px 32px rgba(15, 107, 158, 0.15);">
+                    <span class="badge  rounded-pill bg-warning position-absolute fs-6 top-0 mt-3 start-0 ms-3">
+                        <span class="spinner-border spinner-border-sm me-1" role="status">
+                            <span class="visually-hidden">Loading...</span>
+                        </span>
+                        Update Diagram
+                    </span>
                     <svg viewBox="0 0 280 280" style="width: 100%; max-width: 280px;">
                         <!-- Multiple users -->
                         <circle cx="70" cy="60" r="20" fill="#0f6b9e"/>

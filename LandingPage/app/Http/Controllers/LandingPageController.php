@@ -44,6 +44,10 @@ class LandingPageController extends Controller
                 'title' => 'Giá - HKIncotech',
                 'description' => '3 pricing tiers: Startup, Growth, Enterprise'
             ],
+            'certifications' => [
+                'title' => 'Chứng chỉ & Tiêu chuẩn - HKIncotech',
+                'description' => 'Compliance, Security certifications, Cloud certifications, Agile certifications'
+            ],
             'contact' => [
                 'title' => 'Liên Hệ - HKIncotech',
                 'description' => 'Liên hệ với chúng tôi để tư vấn free về giải pháp phần mềm'
@@ -64,6 +68,7 @@ class LandingPageController extends Controller
             'scaling' => 'Mở Rộng',
             'about-us' => 'Về Chúng Tôi',
             'case-studies' => 'Case Studies',
+            'certifications' => 'Chứng chỉ',
             'pricing' => 'Giá',
             'contact' => 'Liên Hệ'
         ];
@@ -82,6 +87,7 @@ class LandingPageController extends Controller
             'landing.tech-stack' => 'tech-stack',
             'landing.scaling' => 'scaling',
             'landing.about-us' => 'about-us',
+            'landing.certifications' => 'certifications',
             'landing.case-studies' => 'case-studies',
             'landing.pricing' => 'pricing',
             'landing.contact' => 'contact'
@@ -221,6 +227,23 @@ class LandingPageController extends Controller
         return view('landing_page.pricing', [
             'pageTitle' => $metadata['pricing']['title'],
             'pageDescription' => $metadata['pricing']['description'],
+            'navMenu' => $navMenu,
+            'currentPage' => $currentPage
+        ]);
+    }
+
+    /**
+     * Certifications & Standards page
+     */
+    public function certifications(): View
+    {
+        $metadata = $this->getPageMetadata();
+        $navMenu = $this->getNavMenu();
+        $currentPage = $this->getCurrentPage();
+
+        return view('landing_page.certifications', [
+            'pageTitle' => $metadata['certifications']['title'],
+            'pageDescription' => $metadata['certifications']['description'],
             'navMenu' => $navMenu,
             'currentPage' => $currentPage
         ]);

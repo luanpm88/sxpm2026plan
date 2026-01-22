@@ -82,7 +82,13 @@
                     </div>
                 </div>
                 
-                <div class="hero-svg-box" style="background: white; border-radius: 12px; padding: 2.5rem; border: 1px solid var(--border); display: flex; align-items: center; justify-content: center; min-height: 450px;">
+                <div class="hero-svg-box opacity-75 position-relative" style="background: white; border-radius: 12px; padding: 2.5rem; border: 1px solid var(--border); display: flex; align-items: center; justify-content: center; min-height: 450px;">
+                    <span class="badge  rounded-pill bg-warning position-absolute fs-6 top-0 mt-3">
+                        <span class="spinner-border spinner-border-sm me-1" role="status">
+                            <span class="visually-hidden">Loading...</span>
+                        </span>
+                        Update banner
+                    </span>
                     <svg viewBox="0 0 350 350" style="width: 100%; max-width: 350px;">
                         <!-- Background circles -->
                         <circle cx="175" cy="175" r="160" fill="none" stroke="#0f6b9e" stroke-width="1" opacity="0.1"/>
@@ -556,7 +562,7 @@
     <section class="opacity-75" style="background: var(--secondary-bg);">
         <div class="container-v5">
             <div class="section-header">
-                <h2 class="section-title">What Our Clients Say <span class="badge  rounded-pill bg-warning">Draft</span></h2>
+                <h2 class="section-title">What Our Clients Say <span class="badge  rounded-pill bg-warning">Demo data</span></h2>
                 <p class="section-subtitle">Feedback from our partners and clients</p>
             </div>
             

@@ -92,7 +92,13 @@
                     </ul>
                 </div>
                 
-                <div style="background: white; border-radius: 12px; padding: 2rem; border: 1px solid var(--border); text-align: center; min-height: 400px; display: flex; align-items: center; justify-content: center;">
+                <div class="position-relative opacity-75" style="background: white; border-radius: 12px; padding: 2rem; border: 1px solid var(--border); text-align: center; min-height: 400px; display: flex; align-items: center; justify-content: center;">
+                    <span class="badge  rounded-pill bg-warning position-absolute fs-6 top-0 mt-3 start-0 ms-3">
+                        <span class="spinner-border spinner-border-sm me-1" role="status">
+                            <span class="visually-hidden">Loading...</span>
+                        </span>
+                        Update Diagram
+                    </span>
                     <svg viewBox="0 0 300 300" style="width: 100%; max-width: 300px;">
                         <!-- Sprint cycle circle -->
                         <circle cx="150" cy="150" r="120" fill="none" stroke="#0f6b9e" stroke-width="2" opacity="0.2"/>

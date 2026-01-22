@@ -25,6 +25,7 @@
             </div>
             
             <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: center;">
+                
                 <div>
                     <h3 style="font-size: 1.25rem; font-weight: 700; color: var(--text-dark); margin-bottom: 0.75rem;">
                         Start (2012)
@@ -48,35 +49,41 @@
                     </p>
                 </div>
                 
-                <div style="background: white; border-radius: 12px; padding: 2rem; border: 1px solid var(--border); text-align: center;">
-                    <svg viewBox="0 0 300 300" style="width: 100%; max-width: 300px;">
-                        <!-- Timeline -->
-                        <line x1="150" y1="30" x2="150" y2="270" stroke="#0f6b9e" stroke-width="2"/>
+                <div style="background: white; border-radius: 12px; padding: 2rem; border: 1px solid var(--border);">
+                    <div style="position: relative; max-width: 500px; margin: 0 auto;">
+                        @php
+                        $milestones = [
+                            ['year' => '2012', 'title' => 'Start', 'desc' => '5 developers', 'highlight' => false],
+                            ['year' => '2015', 'title' => 'Growth', 'desc' => '100+ projects, Singapore & Thailand', 'highlight' => false],
+                            ['year' => '2018', 'title' => 'Expansion', 'desc' => '30+ engineers, enterprise clients', 'highlight' => false],
+                            ['year' => '2024', 'title' => 'Lead', 'desc' => '50+ engineers, 50+ projects, industry leader', 'highlight' => true],
+                        ];
+                        @endphp
                         
-                        <!-- 2012 -->
-                        <circle cx="150" cy="50" r="12" fill="#0f6b9e"/>
-                        <circle cx="150" cy="50" r="8" fill="white"/>
-                        <text x="180" y="55" font-size="13" fill="#0f6b9e" font-weight="bold">2012: Start</text>
-                        <text x="180" y="68" font-size="11" fill="#666">5 developers</text>
-                        
-                        <!-- 2015 -->
-                        <circle cx="150" cy="110" r="12" fill="#059669"/>
-                        <circle cx="150" cy="110" r="8" fill="white"/>
-                        <text x="180" y="115" font-size="13" fill="#059669" font-weight="bold">2015: Growth</text>
-                        <text x="180" y="128" font-size="11" fill="#666">15 projects/year</text>
-                        
-                        <!-- 2018 -->
-                        <circle cx="150" cy="170" r="12" fill="#f59e0b"/>
-                        <circle cx="150" cy="170" r="8" fill="white"/>
-                        <text x="180" y="175" font-size="13" fill="#f59e0b" font-weight="bold">2018: Expansion</text>
-                        <text x="180" y="188" font-size="11" fill="#666">30+ developers</text>
-                        
-                        <!-- 2024 -->
-                        <circle cx="150" cy="250" r="12" fill="#10b981"/>
-                        <circle cx="150" cy="250" r="8" fill="white"/>
-                        <text x="180" y="255" font-size="13" fill="#10b981" font-weight="bold">2024: Lead</text>
-                        <text x="180" y="268" font-size="11" fill="#666">50+ team, 50+ projects</text>
-                    </svg>
+                        @foreach($milestones as $index => $milestone)
+                        <div class="d-flex align-items-start position-relative" style="margin-bottom: {{ $index < count($milestones) - 1 ? '2rem' : '0' }};">
+                            <!-- Timeline Line -->
+                            @if($index < count($milestones) - 1)
+                            <div style="position: absolute; left: 22px; top: 48px; width: 3px; height: calc(100% + 2rem); background: linear-gradient(180deg, var(--primary) 0%, rgba(15, 107, 158, 0.2) 100%);"></div>
+                            @endif
+                            
+                            <!-- Circle Number -->
+                            <div class="flex-shrink-0" style="width: 48px; height: 48px; border-radius: 50%; background: {{ $milestone['highlight'] ? 'var(--primary)' : 'white' }}; border: 3px solid var(--primary); display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 1.1rem; color: {{ $milestone['highlight'] ? 'white' : 'var(--primary)' }}; box-shadow: 0 2px 8px rgba(15, 107, 158, 0.15); position: relative; z-index: 1;">
+                                {{ $index + 1 }}
+                            </div>
+                            
+                            <!-- Content Card -->
+                            <div class="flex-grow-1 ms-3" style="background: {{ $milestone['highlight'] ? 'rgba(15, 107, 158, 0.05)' : '#f9fafb' }}; border: {{ $milestone['highlight'] ? '2px solid var(--primary)' : '1px solid #e5e7eb' }}; border-radius: 8px; padding: 1rem 1.25rem;">
+                                <h5 class="mb-1" style="color: var(--primary); font-weight: 700; font-size: 1rem;">
+                                    {{ $milestone['year'] }}: {{ $milestone['title'] }}
+                                </h5>
+                                <p class="mb-0" style="color: {{ $milestone['highlight'] ? 'var(--primary)' : '#6b7280' }}; font-size: 0.9rem; {{ $milestone['highlight'] ? 'font-weight: 600;' : '' }}">
+                                    {{ $milestone['desc'] }}
+                                </p>
+                            </div>
+                        </div>
+                        @endforeach
+                    </div>
                 </div>
             </div>
         </div>

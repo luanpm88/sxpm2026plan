@@ -60,10 +60,10 @@
                     'challenge' => 'Build a SaaS platform for 10,000+ users with multi-tenancy, real-time collaboration, and analytics.',
                     'solution' => 'Microservices on AWS, React frontend, Node.js backend, PostgreSQL database. Real-time updates with WebSocket, caching, and CDN optimization.',
                     'results' => [
-                        'Time to market: 6 months',
+                        'Real-time sync: 100% of tasks',
                         'Latency <100ms; uptime 99.99%',
-                        'Revenue: $2M in first year',
-                        'Scaled to 50,000+ users'
+                        'Multi-tenant architecture',
+                        'Enterprise adoption in 4 months'
                     ],
                     'tech' => 'React, Node.js, PostgreSQL, AWS, Redis, Docker'
                 ],
@@ -73,10 +73,10 @@
                     'challenge' => 'Build AI-powered knowledge management platform. Ingest 100,000+ documents, extract insights, provide semantic search.',
                     'solution' => 'Leverage OpenAI APIs, build custom RAG pipeline with Pinecone vector DB, develop intuitive UI. Implement document parsing pipeline, semantic indexing, chat interface.',
                     'results' => [
-                        '1,000+ documents processed per day',
+                        '10M+ enterprise queries answered daily',
                         'Accuracy 95%+',
                         'Response time <500ms',
-                        'Adopted by 50+ enterprises',
+                        'Adopted by enterprises',
                         '90% reduction in research time'
                     ],
                     'tech' => 'OpenAI, Pinecone, Python, FastAPI, React, TypeScript'

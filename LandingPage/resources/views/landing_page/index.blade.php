@@ -509,20 +509,20 @@
                         $featured_cases = [
                             [
                                 'badge' => 'Enterprise SaaS',
-                                'badge_bg' => '#3b82f6',
-                                'title' => 'HKSpace: Scaling to 50K+ Active Users',
-                                'description' => 'Multi-tenant enterprise management platform built from scratch. From MVP to production with 50,000+ active users in 18 months.',
+                                'badge_bg' => '#30699A',
+                                'title' => 'HKSpace: 100% Real-time Task Collaboration',
+                                'description' => 'Multi-tenant enterprise management platform with real-time collaboration. 100% of company tasks uploaded and synchronized instantly. From MVP to enterprise deployment with full data availability in 18 months.',
                                 'metrics' => [
-                                    ['value' => '50K+', 'label' => 'Active Users'],
+                                    ['value' => '100%', 'label' => 'Real-time Sync'],
                                     ['value' => '99.9%', 'label' => 'Uptime'],
-                                    ['value' => '18 months', 'label' => 'Timeline']
+                                    ['value' => '4 months', 'label' => 'Timeline']
                                 ],
                                 'svg_path' => 'M 20 180 Q 80 160, 100 140 T 180 80 T 280 20',
                                 'svg_points' => [
                                     ['cx' => 20, 'cy' => 180, 'r' => 6, 'label' => 'MVP', 'x' => 20, 'y' => 195],
-                                    ['cx' => 100, 'cy' => 140, 'r' => 6, 'label' => '10K', 'x' => 100, 'y' => 155],
-                                    ['cx' => 180, 'cy' => 80, 'r' => 6, 'label' => '30K', 'x' => 180, 'y' => 95],
-                                    ['cx' => 280, 'cy' => 20, 'r' => 8, 'label' => '50K+', 'x' => 280, 'y' => 35]
+                                    ['cx' => 100, 'cy' => 140, 'r' => 6, 'label' => '50%', 'x' => 100, 'y' => 155],
+                                    ['cx' => 180, 'cy' => 80, 'r' => 6, 'label' => '75%', 'x' => 180, 'y' => 95],
+                                    ['cx' => 280, 'cy' => 20, 'r' => 8, 'label' => '100%', 'x' => 280, 'y' => 35]
                                 ],
                                 'image_url' => null,
                                 'ongoing' => false,
@@ -533,7 +533,7 @@
                                 'title' => 'AI Knowledge Platform: 90% Time Saved',
                                 'description' => 'AI-powered knowledge management with OpenAI APIs, custom RAG pipeline, and Pinecone vector database. Processing 1,000+ documents daily with 95%+ accuracy.',
                                 'metrics' => [
-                                    ['value' => '1K+', 'label' => 'Docs/Day'],
+                                    ['value' => '10M+', 'label' => 'Queries/Day'],
                                     ['value' => '95%+', 'label' => 'Accuracy'],
                                     ['value' => '90%', 'label' => 'Time Saved']
                                 ],
@@ -619,7 +619,7 @@
                                     </a>
                                 </div>
                                 
-                                <div class="position-relative @if($case['ongoing']) opacity-75 @endif" style="background: linear-gradient(135deg, {{ $case['badge_bg'] }} 0%, {{ $case['badge_bg'] }}dd 100%); padding: 5rem; display: flex; align-items: center; justify-content: center; min-height: 400px;">
+                                <div class="position-relative @if($case['ongoing']) opacity-75 @endif" style="background: linear-gradient(135deg, {{ $case['badge_bg'] }} 0%, {{ $case['badge_bg'] }}dd 0%); padding: 5rem; display: flex; align-items: center; justify-content: center; min-height: 400px;">
                                     @if($case['ongoing'])
                                         <span class="badge  rounded-pill bg-warning position-absolute fs-6 top-0 mt-3 start-0 ms-3">
                                             <span class="spinner-border spinner-border-sm me-1" role="status">
@@ -631,7 +631,9 @@
 
                                     @if ($case['badge'] === 'Enterprise SaaS')
                                         <img src="{{ asset('img/hkspace.png') }}" alt="HKSpace Dashboard Mockup" style="width: 100%; border-radius: 12px; box-shadow: 0 8px 20px rgba(0,0,0,0.1);"/>
-                                        <img class="position-absolute start-0 bottom-0 mb-4 ms-4" src="{{ asset('img/hkspace_2.png') }}" alt="HKSpace Dashboard Mockup" style="width: 200px; border-radius: 12px; box-shadow: 0 8px 20px rgba(0,0,0,0.1);"/>
+                                        <div class="position-absolute start-0 bottom-0 mb-4 ms-4 p-1">
+                                            <img src="{{ asset('img/hkspace_2.png') }}" alt="HKSpace Dashboard Mockup" style="width: 200px; border-radius: 12px; box-shadow: 0 8px 20px rgba(0,0,0,0.1);"/>
+                                        </div>
                                     @else
                                         <svg viewBox="0 0 300 200" style="width: 100%; max-width: 300px;">
                                             <!-- Growth Curve -->

@@ -25,8 +25,8 @@
     <header>
         <div class="header-container">
             <a href="{{ route('landing.index') }}" class="logo">
-                <img src="{{ asset('img/logo-HK-1024x810.png') }}" alt="HKIncotech">
-                <span>HKIncotech</span>
+                <img src="{{ asset('img/logo.svg') }}" alt="HKIncotech">
+                <span style="transform: translateY(5px)">INCOTECH</span>
             </a>
             <button class="mobile-menu-toggle" onclick="document.querySelector('nav').classList.toggle('mobile-open')">
                 <span class="material-symbols-rounded">menu</span>

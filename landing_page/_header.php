@@ -431,7 +431,7 @@ $page_description = isset($page_description) ? $page_description : 'Phát triể
         <div class="header-container">
             <a href="home.php" class="logo">
                 <img src="logo-HK-1024x810.png" alt="HKIncotech">
-                <span>HKIncotech</span>
+                <span>Incotech</span>
             </a>
             <button class="mobile-menu-toggle" onclick="document.querySelector('nav').classList.toggle('mobile-open')">
                 <span class="material-symbols-rounded">menu</span>

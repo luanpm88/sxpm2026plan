@@ -110,6 +110,152 @@
             });
         });
     </script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const HEADER_OFFSET = 70;
+            const navLinks = document.querySelectorAll('header nav a[href^="#"]');
+
+            const sections = Array.from(navLinks)
+                .map(link => document.querySelector(link.getAttribute('href')))
+                .filter(Boolean);
+
+            let isProgrammaticScroll = false;
+            let observerEnabled = false;
+            let hasUserInteracted = false; // ⭐ KEY FIX
+
+            // -----------------------------
+            // Helpers
+            // -----------------------------
+            function setActiveById(id) {
+                navLinks.forEach(link => {
+                    link.classList.toggle(
+                        'active',
+                        link.getAttribute('href') === `#${id}`
+                    );
+                });
+            }
+
+            function updateHash(id) {
+                if (!hasUserInteracted) return; // ⛔ block auto hash
+                if (window.location.hash !== `#${id}`) {
+                    history.pushState(null, '', `#${id}`);
+                }
+            }
+
+            function scrollToSection(section, callback) {
+                isProgrammaticScroll = true;
+
+                window.scrollTo({
+                    top: section.offsetTop - HEADER_OFFSET,
+                    behavior: 'smooth'
+                });
+
+                setTimeout(() => {
+                    isProgrammaticScroll = false;
+                    callback?.();
+                }, 700);
+            }
+
+            // -----------------------------
+            // Menu click (explicit intent)
+            // -----------------------------
+            navLinks.forEach(link => {
+                link.addEventListener('click', e => {
+                    const target = document.querySelector(link.getAttribute('href'));
+                    if (!target) return;
+
+                    e.preventDefault();
+
+                    hasUserInteracted = true;
+                    observerEnabled = false;
+
+                    setActiveById(target.id);
+                    history.pushState(null, '', `#${target.id}`);
+
+                    scrollToSection(target, () => {
+                        observerEnabled = true;
+                    });
+
+                    document.querySelector('nav')?.classList.remove('mobile-open');
+                });
+            });
+
+            // -----------------------------
+            // Detect real user scroll
+            // -----------------------------
+            let scrollTimeout;
+            window.addEventListener('scroll', () => {
+                if (isProgrammaticScroll) return;
+
+                hasUserInteracted = true;
+
+                clearTimeout(scrollTimeout);
+                scrollTimeout = setTimeout(() => {
+                    observerEnabled = true;
+                }, 50);
+            }, { passive: true });
+
+            // -----------------------------
+            // Scroll spy
+            // -----------------------------
+            const observer = new IntersectionObserver(
+                entries => {
+                    if (!observerEnabled || isProgrammaticScroll) return;
+
+                    entries.forEach(entry => {
+                        if (entry.isIntersecting) {
+                            setActiveById(entry.target.id);
+                            updateHash(entry.target.id);
+                        }
+                    });
+                },
+                {
+                    root: null,
+                    rootMargin: `-${HEADER_OFFSET}px 0px -50% 0px`,
+                    threshold: 0
+                }
+            );
+
+            sections.forEach(section => observer.observe(section));
+
+            // -----------------------------
+            // Initial load
+            // -----------------------------
+            if (window.location.hash) {
+                const target = document.querySelector(window.location.hash);
+                if (target) {
+                    observerEnabled = false;
+                    setActiveById(target.id);
+
+                    setTimeout(() => {
+                        scrollToSection(target, () => {
+                            observerEnabled = true;
+                        });
+                    }, 80);
+                }
+            } else {
+                // ✅ No hash → NO scroll, NO hash update
+                observerEnabled = false;
+            }
+
+            // -----------------------------
+            // Back / Forward buttons
+            // -----------------------------
+            window.addEventListener('popstate', () => {
+                if (!window.location.hash) return;
+
+                hasUserInteracted = true;
+                const target = document.querySelector(window.location.hash);
+                if (target) {
+                    observerEnabled = false;
+                    scrollToSection(target, () => {
+                        observerEnabled = true;
+                    });
+                }
+            });
+        });
+    </script>
+
     @stack('scripts')
     @yield('custom_scripts')
 </body>

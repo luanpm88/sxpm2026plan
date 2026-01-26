@@ -265,4 +265,13 @@ class LandingPageController extends Controller
             'currentPage' => $currentPage
         ]);
     }
+
+    /**
+     * One-page landing page
+     */
+    public function onePage(): View
+    {
+        // No need for metadata/nav, one-page is self-contained
+        return view('landing_page.one-page');
+    }
 }

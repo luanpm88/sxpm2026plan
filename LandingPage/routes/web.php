@@ -37,4 +37,7 @@ Route::controller(LandingPageController::class)->group(function () {
 
     // Contact
     Route::get('/contact', 'contact')->name('landing.contact');
+
+    // One-page landing page route
+    Route::get('/one-page', 'onePage')->name('landing.one-page');
 });

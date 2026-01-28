@@ -8,7 +8,7 @@ $roles = [
         'icon' => 'analytics',
         'role_template' => 'Business Analyst / Product Owner',
         'level_target' => 'BA → PO (PSPO)',
-        'note' => 'Phong map vào lộ trình BA/PO ở slide 29; ưu tiên backlog health và stakeholder alignment. Bổ sung: SQL/Data Analysis, Facilitation, Product Metrics để đủ năng lực PO thực chiến.',
+        'note' => 'Phong map vào lộ trình BA/PO ở ; ưu tiên backlog health và stakeholder alignment. Bổ sung: SQL/Data Analysis, Facilitation, Product Metrics để đủ năng lực PO thực chiến.',
         'timeline' => [
             ['m' => '0-3', 'milestone' => 'Requirements Engineering, BPMN, user story mapping + SQL basics, Excel nâng cao, Jira mastery, API/REST basics, Presentation skills'],
             ['m' => '3-6', 'milestone' => 'CCBA prep, stakeholder workshops, RTM + Financial literacy (ROI/business case), customer research methods, facilitation & workshop design, market analysis, data visualization (Power BI/Tableau)'],
@@ -46,26 +46,92 @@ $roles = [
         'name' => 'Hoàng Anh — Senior Dev → Tech Lead',
         'icon' => 'code',
         'role_template' => 'Developer',
-        'level_target' => 'Senior → Tech Lead (slide 29)',
-        'note' => 'Hoàng Anh theo track Developer thuần kỹ thuật: system design, scalability, mentoring. Vai trò Tech Lead chủ chốt trong bộ phận.',
+        'level_target' => 'Senior → Tech Lead',
+        'note' => 'Track: Developer thuần kỹ thuật (không đi theo EM/PM/Product). Thiên hướng: System Design, DevOps, AI integration (RAG/Agents/internal tools), Technical Analyst. Tập trung ownership kiến trúc + tiêu chuẩn review & reliability.',
         'timeline' => [
-            ['m' => '0-3', 'milestone' => 'System Design patterns, distributed systems, code review standards, AI/ML integration basics'],
-            ['m' => '3-6', 'milestone' => 'Cloud Architecture (AWS/GCP), microservices, observability, trending tech (AI agents, RAG)'],
-            ['m' => '6-12', 'milestone' => 'TOGAF/Architecture patterns, GenAI best practices, technical strategy, mentoring 2-3 devs']
+            [
+                'm' => '0-3',
+                'milestone' => [
+                    'Nền móng Tech Lead: thoát mindset “senior coder”, bắt đầu ownership kiến trúc, chuẩn hóa review & design',
+                    'System Design & scalability: cache/indexing/sharding, sync vs async (queue/event-driven)',
+                    'Code review standards: review vì maintainability (không sa đà style)',
+                    'Distributed systems: idempotency, retry/timeout/circuit breaker',
+                    'AI integration (cơ bản): RAG, embedding + vector DB cho internal tools',
+                    'Deliverables: ≥6 design reviews; ≥1 system design doc; ≥1 POC nhỏ; checklist code review cho team'
+                ]
+            ],
+            [
+                'm' => '3-6',
+                'milestone' => [
+                    'Kiến trúc & Cloud: cloud architecture AWS/GCP (compute/DB/network/security/cost awareness)',
+                    'Microservices: khi nào không dùng, data ownership, versioning/backward compatibility',
+                    'Observability: logs/metrics/tracing, SLI/SLO, alerting không spam',
+                    'Automation: AI agents + RAG cho knowledge base/internal automation',
+                    'Deliverables: ≥2 architecture proposal; ≥1 migration monolith → modular; ≥1 observability setup; mentor active ≥2 junior'
+                ]
+            ],
+            [
+                'm' => '6-12',
+                'milestone' => [
+                    'Tech Lead thực thụ: ra quyết định kỹ thuật cấp team, dẫn dắt roadmap 6–12 tháng',
+                    'Architecture patterns: Hexagonal/Event-driven, technical strategy proposal',
+                    'GenAI best practices: security/data leakage, cost control, evaluation/monitoring output',
+                    'Mentoring: growth plan cho dev, review design của dev khác, decision making',
+                    'Deliverables: ≥3 system design nâng cao; ≥1 technical strategy proposal; ≥1 AI integration production; team satisfaction ≥85%'
+                ]
+            ]
+        ],
+        'kpis' => [
+            [
+                'title' => 'KPI kỹ thuật (2026)',
+                'items' => [
+                    'Senior design review ≥ 2/tháng',
+                    'System design proposal ≥ 1/tháng',
+                    'ADR (Architecture Decision Record) ≥ 1/tháng',
+                    'Code coverage ≥ 85% (core modules ≥ 90%)',
+                    'Bug escapes (prod) ≤ 1%',
+                    'POC kỹ thuật ≥ 1/quý'
+                ]
+            ],
+            [
+                'title' => 'KPI team',
+                'items' => [
+                    'Mentor ≥ 2 junior (có feedback định kỳ)',
+                    'Team velocity ≥ 90%',
+                    'Team satisfaction ≥ 85%',
+                    'Code review expert (merge reject rate có lý do rõ ràng)'
+                ]
+            ],
+            [
+                'title' => 'Chứng chỉ',
+                'items' => [
+                    'AWS Certified Solutions Architect – Associate (ưu tiên cao)',
+                    'AWS Certified Developer hoặc Solutions Architect (tùy định hướng)',
+                    'GCP Professional Developer (optional nhưng mạnh)'
+                ]
+            ]
         ],
         'certs' => [
-            ['name' => 'AWS Solutions Architect Associate', 'type' => 'cert'],
-            ['name' => 'System Design & Architecture', 'type' => 'course'],
-            ['name' => 'AI/ML Fundamentals', 'type' => 'course'],
-            ['name' => 'TOGAF Foundation', 'type' => 'cert']
+            ['name' => 'AWS Certified Solutions Architect – Associate', 'type' => 'cert'],
+            ['name' => 'AWS Certified Developer – Associate', 'type' => 'cert'],
+            ['name' => 'GCP Professional Developer (optional)', 'type' => 'cert'],
+            ['name' => 'System Design & Architecture (Grokking/Educative)', 'type' => 'course'],
+            ['name' => 'TOGAF Foundation (foundation)', 'type' => 'cert']
         ],
-        'skills' => ['System Design & Architecture', 'AI/ML Integration', 'Cloud Architecture', 'Technical Strategy', 'Tech Leadership & Mentoring']
+        'skills' => [
+            'System Design & Architecture',
+            'Cloud Architecture (AWS/GCP)',
+            'Observability & Reliability',
+            'AI/ML Integration (RAG, Agents)',
+            'Technical Strategy',
+            'Tech Leadership & Mentoring'
+        ]
     ],
     [
         'name' => 'Minh Thư — Senior Dev → Delivery Lead/Coach',
         'icon' => 'widgets',
         'role_template' => 'Developer + Delivery/Training',
-        'level_target' => 'Senior → Delivery Lead/Coach (slide 29 dev/DevOps hybrid)',
+        'level_target' => 'Senior → Delivery Lead/Coach (dev/DevOps hybrid)',
         'note' => 'Thư thiên về đào tạo, dẫn dắt nhóm delivery/DevOps, huấn luyện quy trình & release (khác Hoàng Anh là tech lead thuần).',
         'timeline' => [
             ['m' => '0-3', 'milestone' => 'Chuẩn hóa release mgmt, QA gates, CI pipelines; shadow lead các buổi release'],
@@ -84,8 +150,8 @@ $roles = [
         'name' => 'Hoàn — QA/QC Tester',
         'icon' => 'bug_report',
         'role_template' => 'Tester (QA/QC)',
-        'level_target' => 'Tester → Senior QA (slide 29)',
-        'note' => 'Bám sát lộ trình Tester ở slide 29; nâng dần automation & API coverage.',
+        'level_target' => 'Tester → Senior QA ()',
+        'note' => 'Bám sát lộ trình Tester ở ; nâng dần automation & API coverage.',
         'timeline' => [
             ['m' => '0-3', 'milestone' => 'ISTQB Foundation, test cases & traceability, manual coverage ≥90%'],
             ['m' => '3-6', 'milestone' => 'Automation (Cypress/Selenium), API testing, CI integration'],
@@ -102,8 +168,8 @@ $roles = [
         'name' => 'Nguyễn Duy Tài — Intern/Fresher Dev (học việc)',
         'icon' => 'rocket_launch',
         'role_template' => 'Developer (Intern/Fresher)',
-        'level_target' => 'Học việc → Junior (slide 29 Developer)',
-        'note' => 'Đang học việc; lộ trình dev có thể điều chỉnh theo tiến bộ. Bám sát map Developer slide 29: Intern → Junior.',
+        'level_target' => 'Học việc → Junior (Developer)',
+        'note' => 'Đang học việc; lộ trình dev có thể điều chỉnh theo tiến bộ. Bám sát map Developer : Intern → Junior.',
         'timeline' => [
             ['m' => '0-3', 'milestone' => 'Onboarding quy trình, Git workflow, HTML/CSS/JS cơ bản'],
             ['m' => '3-6', 'milestone' => 'Task nhỏ, PR review, REST basics, SQL cơ bản'],
@@ -257,6 +323,17 @@ $vn_costs = [
             color: #4b5563;
             font-size: 0.9rem;
             line-height: 1.5;
+        }
+
+        /* Timeline dạng gạch đầu dòng: để nội dung dễ scan hơn */
+        .timeline-milestone ul {
+            margin: 0;
+            padding-left: 18px;
+            list-style: disc;
+        }
+
+        .timeline-milestone li {
+            margin: 2px 0;
         }
         
         .role-details {
@@ -491,7 +568,17 @@ $vn_costs = [
                             <?php foreach ($r['timeline'] as $t): ?>
                                 <div class="timeline-item">
                                     <div class="timeline-period"><?= htmlspecialchars($t['m']) ?> tháng</div>
-                                    <div class="timeline-milestone"><?= htmlspecialchars($t['milestone']) ?></div>
+                                    <div class="timeline-milestone">
+                                        <?php if (is_array($t['milestone'])): ?>
+                                            <ul>
+                                                <?php foreach ($t['milestone'] as $mi): ?>
+                                                    <li><?= htmlspecialchars($mi) ?></li>
+                                                <?php endforeach; ?>
+                                            </ul>
+                                        <?php else: ?>
+                                            <?= htmlspecialchars($t['milestone']) ?>
+                                        <?php endif; ?>
+                                    </div>
                                 </div>
                             <?php endforeach; ?>
                         </div>
@@ -515,6 +602,24 @@ $vn_costs = [
                                     <?php endforeach; ?>
                                 </div>
                             </div>
+                            <?php if (!empty($r['kpis'])): ?>
+                                <div class="detail-section">
+                                    <h3>
+                                        <span class="material-symbols-rounded">target</span>
+                                        KPI / Deliverables
+                                    </h3>
+                                    <ul>
+                                        <?php foreach ($r['kpis'] as $kg): ?>
+                                            <li style="background:#fff7ed;border-left-color:#fdba74;color:#9a3412;font-weight:700;">
+                                                <?= htmlspecialchars($kg['title']) ?>
+                                            </li>
+                                            <?php foreach (($kg['items'] ?? []) as $item): ?>
+                                                <li><?= htmlspecialchars($item) ?></li>
+                                            <?php endforeach; ?>
+                                        <?php endforeach; ?>
+                                    </ul>
+                                </div>
+                            <?php endif; ?>
                             <div class="detail-section">
                                 <h3>
                                     <span class="material-symbols-rounded">stars</span>

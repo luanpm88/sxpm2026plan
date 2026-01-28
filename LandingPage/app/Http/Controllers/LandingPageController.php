@@ -274,4 +274,24 @@ class LandingPageController extends Controller
         // No need for metadata/nav, one-page is self-contained
         return view('landing_page.one-page');
     }
+
+    /**
+     * R&D Blog page
+     */
+    public function blog(): View
+    {
+        $metadata = [
+            'title' => 'Research & Development - HKIncotech',
+            'description' => 'Deep dive into our core research initiatives: HKSpace Platform and AI Knowledge Platform'
+        ];
+        $navMenu = $this->getNavMenu();
+        $currentPage = 'blog';
+
+        return view('landing_page.blog.r_and_d', [
+            'pageTitle' => $metadata['title'],
+            'pageDescription' => $metadata['description'],
+            'navMenu' => $navMenu,
+            'currentPage' => $currentPage
+        ]);
+    }
 }

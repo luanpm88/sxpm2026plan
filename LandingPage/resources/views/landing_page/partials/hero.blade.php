@@ -68,7 +68,7 @@
                         <div style="font-size: 0.95rem; color: var(--text-gray); margin-top: 0.5rem;">Years Experience</div>
                     </div>
                     <div>
-                        <div style="font-size: 2.25rem; font-weight: 800; color: var(--primary);">50+</div>
+                        <div style="font-size: 2.25rem; font-weight: 800; color: var(--primary);">10+</div>
                         <div style="font-size: 0.95rem; color: var(--text-gray); margin-top: 0.5rem;">Projects Completed</div>
                     </div>
                     <div>

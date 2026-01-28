@@ -40,4 +40,7 @@ Route::controller(LandingPageController::class)->group(function () {
 
     // One-page landing page route
     Route::get('/one-page', 'onePage')->name('landing.one-page');
+
+    // R&D Blog
+    Route::get('/blog/r_and_d', 'blog')->name('landing.blog.r_and_d');
 });

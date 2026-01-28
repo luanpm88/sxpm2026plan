@@ -41,6 +41,7 @@
                         'landing.tech-stack' => 'Technology',
                         // 'landing.scaling' => 'Scaling',
                         'landing.case-studies' => 'Case Studies',
+                        'landing.blog.r_and_d' => 'R & D',
                         'landing.certifications' => 'Certifications',
                         'landing.pricing' => 'Cost & Plans',
                         'landing.contact' => 'Contact'
@@ -101,6 +102,7 @@
                     <ul>
                         <li><a href="{{ route('landing.about-us') }}">About Us</a></li>
                         <li><a href="{{ route('landing.case-studies') }}">Case Studies</a></li>
+                        <li><a href="{{ route('landing.blog.r_and_d') }}">Research & Development</a></li>
                         <li><a href="{{ route('landing.certifications') }}">Certifications</a></li>
                         <li><a href="{{ route('landing.contact') }}">Contact</a></li>
                         <li><a href="{{ route('landing.pricing') }}">Pricing</a></li>

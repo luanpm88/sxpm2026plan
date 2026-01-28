@@ -6,7 +6,7 @@
                 About <span style="color: var(--primary);">HKIncotech</span>
             </h1>
             <p style="font-size: 1.15rem; color: var(--text-gray); line-height: 1.8;">
-                12+ years delivering software for SaaS, AI, enterprise systems, and custom products. 50+ successful projects by 50+ senior engineers.
+                12+ years delivering software for SaaS, AI, enterprise systems, and custom products. 10+ successful projects by 5+ senior engineers.
             </p>
         </div>
     </div>
@@ -34,21 +34,21 @@
                     Growth (2015)
                 </h3>
                 <p style="color: var(--text-gray); line-height: 1.8; margin-bottom: 1.25rem;">
-                    Delivered 40+ projects and expanded into enterprise clients. Established presence in Singapore and Thailand serving startups and Fortune 500 companies.
+                    Delivered 10+ projects and expanded into enterprise clients. Established presence in Ho Chi Minh City serving startups and established companies.
                 </p>
                 
                 <h3 style="font-size: 1.25rem; font-weight: 700; color: var(--text-dark); margin-bottom: 0.75rem;">
                     Expansion (2020)
                 </h3>
                 <p style="color: var(--text-gray); line-height: 1.8; margin-bottom: 1.25rem;">
-                    Grew to 30+ lead engineers with global operations. Deepened expertise in SaaS, AI, and enterprise solutions across multiple regions.
+                    Grew to 3+ core technical leads with Vietnam-based operations. Deepened expertise in SaaS, AI, and enterprise solutions with focused execution.
                 </p>
                 
                 <h3 style="font-size: 1.25rem; font-weight: 700; color: var(--text-dark); margin-bottom: 0.75rem;">
                     Today (2026)
                 </h3>
                 <p style="color: var(--text-gray); line-height: 1.8;">
-                    50+ senior engineers, 100+ projects delivered, and own SaaS platforms (HKSpace). Mission: Help 20+ companies achieve measurable digital transformation.
+                    5+ senior engineers, 10+ projects delivered, and own SaaS platforms (HKSpace). Mission: Help 5+ companies achieve measurable digital transformation.
                 </p>
             </div>
             
@@ -57,9 +57,9 @@
                     @php
                     $milestones = [
                         ['year' => '2012', 'title' => 'Start', 'desc' => '5 developers', 'highlight' => false],
-                        ['year' => '2015', 'title' => 'Growth', 'desc' => '40+ projects, enterprise clients', 'highlight' => false],
-                        ['year' => '2020', 'title' => 'Expansion', 'desc' => '30+ lead engineers, expanded globally', 'highlight' => false],
-                        ['year' => '2026', 'title' => 'Lead', 'desc' => '50+ engineers, 100+ projects, own SaaS platforms', 'highlight' => true],
+                        ['year' => '2015', 'title' => 'Growth', 'desc' => '10+ projects, enterprise clients', 'highlight' => false],
+                        ['year' => '2020', 'title' => 'Expansion', 'desc' => '3+ technical leads, Vietnam operations', 'highlight' => false],
+                        ['year' => '2026', 'title' => 'Lead', 'desc' => '5+ engineers, 10+ projects, own SaaS platforms', 'highlight' => true],
                     ];
                     @endphp
                     
@@ -103,7 +103,7 @@
         <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2rem;">
             @php
             $values = [
-                ['icon' => 'target', 'title' => 'Mission', 'desc' => 'Help 20+ companies achieve digital transformation with tangible outcomes.'],
+                ['icon' => 'target', 'title' => 'Mission', 'desc' => 'Help 5+ companies achieve digital transformation with tangible outcomes.'],
                 ['icon' => 'diamond', 'title' => 'Quality', 'desc' => 'High bar for reliability and performance. Automated testing and reviews by default.'],
                 ['icon' => 'handshake', 'title' => 'Partnership', 'desc' => 'Aligned incentives and transparency; long-term relationships over short-term gains.'],
                 ['icon' => 'lightbulb', 'title' => 'Innovation', 'desc' => 'Continuous learning, prototyping, and adopting proven best practices.'],
@@ -208,8 +208,8 @@
         <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem;">
             @php
             $achievements = [
-                ['num' => '100+', 'title' => 'Projects Completed', 'desc' => 'From startup launches to enterprise rollouts'],
-                ['num' => '20+', 'title' => 'Senior Engineers', 'desc' => 'Certified and experienced team'],
+                ['num' => '10+', 'title' => 'Projects Completed', 'desc' => 'From startup launches to enterprise rollouts'],
+                ['num' => '5+', 'title' => 'Senior Engineers', 'desc' => 'Certified and experienced team'],
                 ['num' => '99.99%', 'title' => 'Uptime Record', 'desc' => 'Reliability focus'],
                 ['num' => '12+', 'title' => 'Years of Delivery', 'desc' => 'Proven track record'],
                 ['num' => '$1M', 'title' => 'Project Value', 'desc' => 'Solutions delivered'],

@@ -6,14 +6,14 @@
                 Success <span style="color: var(--primary);">Case Studies</span>
             </h1>
             <p style="font-size: 1.15rem; color: var(--text-gray); line-height: 1.8;">
-                50+ projects, 100% client satisfaction. From startup MVPs to enterprise systems, we deliver results.
+                10+ projects delivered with 100% client satisfaction. From startup MVPs to enterprise systems, we deliver results.
             </p>
         </div>
     </div>
 </section>
 
 <!-- Portfolio Stats -->
-<section style="background: white;">
+{{-- <section style="background: white;">
     <div class="container-v5">
         <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 2rem; margin-bottom: 4rem;">
             @php
@@ -38,7 +38,7 @@
             @endforeach
         </div>
     </div>
-</section>
+</section> --}}
 
 <!-- Featured Case Studies -->
 <section style="background: var(--secondary-bg);">
@@ -50,33 +50,33 @@
 
         @php
         $case_studies = [
-            [
-                'title' => 'HKSpace - SaaS Platform',
-                'industry' => 'Enterprise SaaS',
-                'challenge' => 'Build a SaaS platform for 10,000+ users with multi-tenancy, real-time collaboration, and analytics.',
-                'solution' => 'Microservices on AWS, React frontend, Node.js backend, PostgreSQL database. Real-time updates with WebSocket, caching, and CDN optimization.',
-                'results' => [
-                    'Real-time sync: 100% of tasks',
-                    'Latency <100ms; uptime 99.99%',
-                    'Multi-tenant architecture',
-                    'Enterprise adoption in 4 months'
-                ],
-                'tech' => 'React, Node.js, PostgreSQL, AWS, Redis, Docker'
-            ],
-            [
-                'title' => 'AI Knowledge Platform',
-                'industry' => 'Artificial Intelligence',
-                'challenge' => 'Build AI-powered knowledge management platform. Ingest 100,000+ documents, extract insights, provide semantic search.',
-                'solution' => 'Leverage OpenAI APIs, build custom RAG pipeline with Pinecone vector DB, develop intuitive UI. Implement document parsing pipeline, semantic indexing, chat interface.',
-                'results' => [
-                    '100k+ enterprise queries answered daily',
-                    'Accuracy 95%+',
-                    'Response time <500ms',
-                    'Adopted by enterprises',
-                    '90% reduction in research time'
-                ],
-                'tech' => 'OpenAI, Pinecone, Python, FastAPI, React, TypeScript'
-            ],
+            // [
+            //     'title' => 'HKSpace - SaaS Platform',
+            //     'industry' => 'Enterprise SaaS',
+            //     'challenge' => 'Build a SaaS platform for 10,000+ users with multi-tenancy, real-time collaboration, and analytics.',
+            //     'solution' => 'Microservices on AWS, React frontend, Node.js backend, PostgreSQL database. Real-time updates with WebSocket, caching, and CDN optimization.',
+            //     'results' => [
+            //         'Real-time sync: 100% of tasks',
+            //         'Latency <100ms; uptime 99.99%',
+            //         'Multi-tenant architecture',
+            //         'Enterprise adoption in 4 months'
+            //     ],
+            //     'tech' => 'React, Node.js, PostgreSQL, AWS, Redis, Docker'
+            // ],
+            // [
+            //     'title' => 'AI Knowledge Platform',
+            //     'industry' => 'Artificial Intelligence',
+            //     'challenge' => 'Build AI-powered knowledge management platform. Ingest 100,000+ documents, extract insights, provide semantic search.',
+            //     'solution' => 'Leverage OpenAI APIs, build custom RAG pipeline with Pinecone vector DB, develop intuitive UI. Implement document parsing pipeline, semantic indexing, chat interface.',
+            //     'results' => [
+            //         '100k+ enterprise queries answered daily',
+            //         'Accuracy 95%+',
+            //         'Response time <500ms',
+            //         'Adopted by enterprises',
+            //         '90% reduction in research time'
+            //     ],
+            //     'tech' => 'OpenAI, Pinecone, Python, FastAPI, React, TypeScript'
+            // ],
             [
                 'title' => 'Education Platform: Scheduling Automation',
                 'industry' => 'Education',
@@ -94,22 +94,22 @@
             [
                 'title' => 'Storage Management System',
                 'industry' => 'Logistics & Retail',
-                'challenge' => 'Manage ~10M SKUs across 50+ branches. Pain points: inventory control, inbound/outbound, consignment, barcode scanning, monthly audits. Manual workflows led to inaccurate reports. Needed accurate demand forecasting.',
+                'challenge' => 'Manage ~5M SKUs across 2+ branches. Pain points: inventory control, inbound/outbound, consignment, barcode scanning, monthly audits. Manual workflows led to inaccurate reports. Needed accurate demand forecasting.',
                 'solution' => 'Built a comprehensive WMS with real-time barcode scanning and automated reconciliation. Implemented demand forecasting via matrix factorization and time-series analysis. Added analytics dashboards, multi-location sync, and blockchain-backed consignment docs for transparency.',
                 'results' => [
                     'Inventory accuracy: 85% → 99.8%',
                     'Forecasting accuracy: 94%',
-                    'Throughput: 1M+ transactions/day',
+                    'Throughput: 100K+ transactions/day',
                     'Audit time reduced by 80%',
                     'Dead stock reduced by 35%',
-                    'Cost savings: $15M/year'
+                    // 'Cost savings: $15M/year'
                 ],
                 'tech' => 'Python, Machine Learning, PostgreSQL, Redis, React, Node.js, Blockchain'
             ],
             [
                 'title' => 'ERP Management System',
                 'industry' => 'Enterprise Management',
-                'challenge' => 'A 100+ employee company needed unified accounting, procurement, inventory, e-commerce, and operations. Inventory data wasn’t in sync with accounting; disparate modules slowed reporting.',
+                'challenge' => 'A 30+ employee company needed unified accounting, procurement, inventory, e-commerce, and operations. Inventory data wasn’t in sync with accounting; disparate modules slowed reporting.',
                 'solution' => 'Built an integrated ERP: accounting (GL, AR, AP), inventory, procurement, e-commerce sync (Shopify/WooCommerce), HR payroll, and reporting. Added real-time consolidation, BI dashboards, workflow automation, and a mobile app for field staff.',
                 'results' => [
                     'Consolidation: 3 days → 1 minute',
@@ -132,7 +132,8 @@
                     'Conversion rate +25%',
                     'Revenue growth: +$50M/year'
                 ],
-                'tech' => 'Next.js, AWS Lambda, DynamoDB, Elasticsearch'
+                'tech' => 'Next.js, AWS Lambda, DynamoDB, Elasticsearch',
+                'hidden' => true
             ],
             [
                 'title' => 'Mobile Banking App',

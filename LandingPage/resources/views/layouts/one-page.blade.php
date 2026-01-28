@@ -31,6 +31,7 @@
                 <a href="#scrum" class="nav-link">SCRUM</a>
                 <a href="#tech-stack" class="nav-link">Technology</a>
                 <a href="#case-studies" class="nav-link">Case Studies</a>
+                <a href="#r_and_d" class="nav-link">R&D</a>
                 <a href="#certifications" class="nav-link">Certifications</a>
                 <a href="#pricing" class="nav-link">Cost & Plans</a>
                 <a href="#contact" class="nav-link">Contact</a>

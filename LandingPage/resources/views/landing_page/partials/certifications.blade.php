@@ -302,7 +302,7 @@
     <div class="container-v5">
         <div class="section-header">
             <h2 class="section-title">Team Expertise & <span style="color: var(--primary);">Experience</span></h2>
-            <p class="section-subtitle">50+ senior engineers with deep specialization and track record</p>
+            <p class="section-subtitle">5+ senior engineers with deep specialization and track record</p>
         </div>
         
         <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2rem;">
@@ -311,7 +311,7 @@
                 [
                     'icon' => 'person',
                     'title' => 'Senior Engineers',
-                    'count' => '50+',
+                    'count' => '5+',
                     'desc' => 'Average 10+ years enterprise software experience. Certified architects and specialists across all domains.'
                 ],
                 [

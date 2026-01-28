@@ -10,35 +10,36 @@ $roles = [
         'level_target' => 'BA → PO (PSPO)',
         'note' => 'Phong map vào lộ trình BA/PO ở slide 29; ưu tiên backlog health và stakeholder alignment.',
         'timeline' => [
-            ['m' => '0-3', 'milestone' => 'Củng cố BA fundamentals, Jira/Confluence, user story mapping'],
-            ['m' => '3-6', 'milestone' => 'CCBA prep, backlog health ≥85%, stakeholder workshops'],
-            ['m' => '6-12', 'milestone' => 'PSPO I, giá trị ưu tiên, OKR/metrics, chuẩn bị PSPO II']
+            ['m' => '0-3', 'milestone' => 'Requirements Engineering, Business Process Modeling (BPMN), user story mapping'],
+            ['m' => '3-6', 'milestone' => 'CCBA prep, stakeholder workshops, requirements traceability matrix (RTM)'],
+            ['m' => '6-12', 'milestone' => 'PSPO I, value prioritization (WSJF, MoSCoW), OKR/metrics, product vision']
         ],
         'certs' => [
             ['name' => 'PSM I', 'type' => 'cert'],
             ['name' => 'CCBA (IIBA)', 'type' => 'cert'],
             ['name' => 'PSPO I', 'type' => 'cert'],
-            ['name' => 'Agile BA', 'type' => 'course']
+            ['name' => 'Business Process Modeling', 'type' => 'course']
         ],
-        'skills' => ['Requirement elicitation', 'User story mapping', 'Backlog grooming', 'Stakeholder mgmt', 'OKR/KPI']
+        'skills' => ['Requirements Engineering', 'Business Process Modeling', 'Stakeholder Analysis', 'Value Prioritization (WSJF)', 'Product Roadmapping']
     ],
     [
         'name' => 'Hoàng Anh — Senior Dev → Tech Lead',
         'icon' => 'code',
         'role_template' => 'Developer',
         'level_target' => 'Senior → Tech Lead (slide 29)',
-        'note' => 'Hoàng Anh theo track Developer thuần kỹ thuật: system design, scalability, mentoring.',
+        'note' => 'Hoàng Anh theo track Developer thuần kỹ thuật: system design, scalability, mentoring. Vai trò Tech Lead chủ chốt trong bộ phận.',
         'timeline' => [
-            ['m' => '0-3', 'milestone' => 'System Design basics, code review standards, PR quality'],
-            ['m' => '3-6', 'milestone' => 'Cloud Associate (AWS/GCP), CI/CD maturity, observability'],
-            ['m' => '6-12', 'milestone' => 'Architecture patterns, TOGAF Foundation prep, mentoring 2-3 devs']
+            ['m' => '0-3', 'milestone' => 'System Design patterns, distributed systems, code review standards, AI/ML integration basics'],
+            ['m' => '3-6', 'milestone' => 'Cloud Architecture (AWS/GCP), microservices, observability, trending tech (AI agents, RAG)'],
+            ['m' => '6-12', 'milestone' => 'TOGAF/Architecture patterns, GenAI best practices, technical strategy, mentoring 2-3 devs']
         ],
         'certs' => [
             ['name' => 'AWS Solutions Architect Associate', 'type' => 'cert'],
-            ['name' => 'Docker/K8s fundamentals', 'type' => 'course'],
+            ['name' => 'System Design & Architecture', 'type' => 'course'],
+            ['name' => 'AI/ML Fundamentals', 'type' => 'course'],
             ['name' => 'TOGAF Foundation', 'type' => 'cert']
         ],
-        'skills' => ['System design', 'Observability', 'Scalability', 'Tech leadership', 'Code review excellence']
+        'skills' => ['System Design & Architecture', 'AI/ML Integration', 'Cloud Architecture', 'Technical Strategy', 'Tech Leadership & Mentoring']
     ],
     [
         'name' => 'Minh Thư — Senior Dev → Delivery Lead/Coach',
@@ -101,11 +102,14 @@ $vn_costs = [
     ['path' => 'PSM I / PSPO I', 'provider' => 'Scrum.org / VN partners', 'duration' => '2-3 days', 'cost' => '6–12 triệu VND'],
     ['path' => 'PSPO II', 'provider' => 'Scrum.org / VN partners', 'duration' => '2-3 days', 'cost' => '10–18 triệu VND'],
     ['path' => 'CCBA / CBAP', 'provider' => 'IIBA + local training', 'duration' => '4-8 weeks prep', 'cost' => '15–35 triệu VND'],
+    ['path' => 'Business Process Modeling (BPMN)', 'provider' => 'Online/Udemy/local training', 'duration' => '1-2 weeks', 'cost' => '2–5 triệu VND'],
     ['path' => 'Agile BA / Agile Scrum fundamentals', 'provider' => 'Local training / online', 'duration' => '1-2 weeks', 'cost' => '3–6 triệu VND'],
     ['path' => 'AWS Cloud Practitioner', 'provider' => 'VN training centers', 'duration' => '2-4 weeks', 'cost' => '3–6 triệu VND'],
     ['path' => 'AWS Solutions Architect Associate', 'provider' => 'VN training centers', 'duration' => '4-6 weeks', 'cost' => '8–18 triệu VND'],
     ['path' => 'Docker Certified Associate', 'provider' => 'Local bootcamps / online', 'duration' => '2-4 weeks', 'cost' => '6–12 triệu VND'],
     ['path' => 'CKA (Kubernetes Admin)', 'provider' => 'Authorized K8s training', 'duration' => '4-6 weeks', 'cost' => '8–16 triệu VND'],
+    ['path' => 'System Design & Architecture', 'provider' => 'Online/Educative/ByteByteGo', 'duration' => '4-8 weeks', 'cost' => '2–6 triệu VND'],
+    ['path' => 'AI/ML Fundamentals & GenAI', 'provider' => 'Coursera/DeepLearning.AI', 'duration' => '4-8 weeks', 'cost' => '3–8 triệu VND'],
     ['path' => 'TOGAF Foundation', 'provider' => 'Authorized providers', 'duration' => '1-2 weeks', 'cost' => '12–25 triệu VND'],
     ['path' => 'ISTQB Foundation', 'provider' => 'VN QA academies', 'duration' => '1-2 weeks', 'cost' => '5–10 triệu VND'],
     ['path' => 'ISTQB Advanced Test Analyst', 'provider' => 'VN QA academies', 'duration' => '3-6 weeks prep', 'cost' => '12–20 triệu VND'],

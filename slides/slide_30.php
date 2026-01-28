@@ -8,19 +8,39 @@ $roles = [
         'icon' => 'analytics',
         'role_template' => 'Business Analyst / Product Owner',
         'level_target' => 'BA → PO (PSPO)',
-        'note' => 'Phong map vào lộ trình BA/PO ở slide 29; ưu tiên backlog health và stakeholder alignment.',
+        'note' => 'Phong map vào lộ trình BA/PO ở slide 29; ưu tiên backlog health và stakeholder alignment. Bổ sung: SQL/Data Analysis, Facilitation, Product Metrics để đủ năng lực PO thực chiến.',
         'timeline' => [
-            ['m' => '0-3', 'milestone' => 'Requirements Engineering, Business Process Modeling (BPMN), user story mapping'],
-            ['m' => '3-6', 'milestone' => 'CCBA prep, stakeholder workshops, requirements traceability matrix (RTM)'],
-            ['m' => '6-12', 'milestone' => 'PSPO I, value prioritization (WSJF, MoSCoW), OKR/metrics, product vision']
+            ['m' => '0-3', 'milestone' => 'Requirements Engineering, BPMN, user story mapping + SQL basics, Excel nâng cao, Jira mastery, API/REST basics, Presentation skills'],
+            ['m' => '3-6', 'milestone' => 'CCBA prep, stakeholder workshops, RTM + Financial literacy (ROI/business case), customer research methods, facilitation & workshop design, market analysis, data visualization (Power BI/Tableau)'],
+            ['m' => '6-12', 'milestone' => 'PSPO I, WSJF/MoSCoW, OKR/metrics, product vision + Product analytics (AARRR/North Star), Lean Startup & A/B testing, advanced roadmapping, GTM basics, case study projects']
         ],
         'certs' => [
             ['name' => 'PSM I', 'type' => 'cert'],
             ['name' => 'CCBA (IIBA)', 'type' => 'cert'],
             ['name' => 'PSPO I', 'type' => 'cert'],
-            ['name' => 'Business Process Modeling', 'type' => 'course']
+            ['name' => 'Business Process Modeling', 'type' => 'course'],
+            ['name' => 'SQL for Data Analysis', 'type' => 'course'],
+            ['name' => 'Google Data Analytics Certificate', 'type' => 'cert'],
+            ['name' => 'Product Analytics (Reforge/Amplitude)', 'type' => 'course'],
+            ['name' => 'Facilitation Skills', 'type' => 'course'],
+            ['name' => 'PSPO II (optional)', 'type' => 'cert']
         ],
-        'skills' => ['Requirements Engineering', 'Business Process Modeling', 'Stakeholder Analysis', 'Value Prioritization (WSJF)', 'Product Roadmapping']
+        'skills' => [
+            'Requirements Engineering', 
+            'Business Process Modeling', 
+            'Stakeholder Analysis', 
+            'Value Prioritization (WSJF/MoSCoW)', 
+            'Product Roadmapping',
+            'SQL & Data Analysis',
+            'Customer Research & Personas',
+            'Facilitation & Workshop Design',
+            'Product Metrics (AARRR)',
+            'Financial Literacy (ROI/Business Case)',
+            'Lean Startup & Experimentation',
+            'Presentation & Storytelling',
+            'Data Visualization',
+            'Market & Competitive Analysis'
+        ]
     ],
     [
         'name' => 'Hoàng Anh — Senior Dev → Tech Lead',
@@ -104,6 +124,11 @@ $vn_costs = [
     ['path' => 'CCBA / CBAP', 'provider' => 'IIBA + local training', 'duration' => '4-8 weeks prep', 'cost' => '15–35 triệu VND'],
     ['path' => 'Business Process Modeling (BPMN)', 'provider' => 'Online/Udemy/local training', 'duration' => '1-2 weeks', 'cost' => '2–5 triệu VND'],
     ['path' => 'Agile BA / Agile Scrum fundamentals', 'provider' => 'Local training / online', 'duration' => '1-2 weeks', 'cost' => '3–6 triệu VND'],
+    ['path' => 'SQL for Data Analysis', 'provider' => 'Mode Analytics / Codecademy', 'duration' => '2-3 weeks', 'cost' => '0–2 triệu VND'],
+    ['path' => 'Google Data Analytics Certificate', 'provider' => 'Coursera (Google)', 'duration' => '3-6 months', 'cost' => '~2 triệu VND'],
+    ['path' => 'Product Analytics', 'provider' => 'Reforge / Amplitude Academy', 'duration' => '4-8 weeks', 'cost' => '8–12 triệu VND'],
+    ['path' => 'Facilitation Skills', 'provider' => 'LinkedIn Learning / local', 'duration' => '2-3 weeks', 'cost' => '3–6 triệu VND'],
+    ['path' => 'Power BI / Tableau basics', 'provider' => 'Microsoft Learn / online', 'duration' => '1-2 weeks', 'cost' => '0–3 triệu VND'],
     ['path' => 'AWS Cloud Practitioner', 'provider' => 'VN training centers', 'duration' => '2-4 weeks', 'cost' => '3–6 triệu VND'],
     ['path' => 'AWS Solutions Architect Associate', 'provider' => 'VN training centers', 'duration' => '4-6 weeks', 'cost' => '8–18 triệu VND'],
     ['path' => 'Docker Certified Associate', 'provider' => 'Local bootcamps / online', 'duration' => '2-4 weeks', 'cost' => '6–12 triệu VND'],
@@ -541,7 +566,7 @@ $vn_costs = [
                 <div class="note-box">
                     <span class="material-symbols-rounded">info</span>
                     <p class="note-text">
-                        Chi phí thực tế phụ thuộc nhà cung cấp, ưu đãi, và lộ trình học. Có thể tối ưu bằng học liệu tự học + thi chứng chỉ trực tiếp.
+                        Chi phí thực tế phụ thuộc nhà cung cấp, ưu đãi, và lộ trình học. Có thể tối ưu bằng học liệu tự học + thi chứng chỉ trực tiếp. Tổng chi phí bổ sung cho Phong: ~25-50 triệu VND (ngoài chứng chỉ chính).
                     </p>
                 </div>
             </div>

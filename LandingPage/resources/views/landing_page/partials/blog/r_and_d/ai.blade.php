@@ -9,7 +9,12 @@
                     <span class="material-symbols-rounded">psychology</span>
                 </div>
                 <h4 style="font-size: 1.3rem; font-weight: 700; color: var(--text-dark); margin-bottom: 1rem;">AI-Powered Knowledge Engine</h4>
-                
+                <span class="badge  rounded-pill bg-warning fs-6 top-0 mb-3">
+                    <span class="spinner-border spinner-border-sm me-1" role="status">
+                        <span class="visually-hidden">Loading...</span>
+                    </span>
+                    Update banner
+                </span>
                 <div style="background: white; border-radius: 8px; padding: 1.5rem; margin-bottom: 1.5rem; text-align: left;">
                     <div style="display: flex; justify-content: space-between; margin-bottom: 0.75rem;">
                         <span style="color: var(--text-gray); font-weight: 600;">Documents Processed</span>

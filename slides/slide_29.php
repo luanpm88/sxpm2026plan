@@ -956,7 +956,7 @@ $cert_roadmap = [
                                 Tổng quan
                             </div>
                             <div style="font-size: 0.75rem; color: #374151; line-height: 1.6;">
-                                <div style="margin-bottom: 8px; display: flex; align-items: center; gap: 5px;">
+                                <div class="d-none" style="margin-bottom: 8px; display: flex; align-items: center; gap: 5px;">
                                     <span class="material-symbols-rounded" style="font-size: 1rem; color: #059669;">payments</span>
                                     <strong style="color: #059669;">Lương:</strong> <?= htmlspecialchars($pos['salary_range']) ?>
                                 </div>

@@ -1,4 +1,4 @@
-<?php 
+<?php
 require_once '../includes/auth.php';
 requireAuth(); // Check authentication
 require_once '../config.php';
@@ -128,23 +128,28 @@ $roles = [
         ]
     ],
     [
-        'name' => 'Minh Thư — Senior Dev → Delivery Lead/Coach',
+        'name' => 'Minh Thư — Software Engineer',
         'icon' => 'widgets',
+<<<<<<< Updated upstream
         'role_template' => 'Developer + Delivery/Training',
         'level_target' => 'Senior → Delivery Lead/Coach (dev/DevOps hybrid)',
         'note' => 'Thư thiên về đào tạo, dẫn dắt nhóm delivery/DevOps, huấn luyện quy trình & release (khác Hoàng Anh là tech lead thuần).',
+=======
+        'role_template' => 'Software Engineering',
+        'level_target' => 'Dev → Architecture Specialist ',
+        'note' => 'Thư map vào lộ trình Software Engineering → Architecture; tập trung tư duy kiến trúc hệ thống, scalability (khác Tech Lead là không thiên về quản lý team).',
+>>>>>>> Stashed changes
         'timeline' => [
-            ['m' => '0-3', 'milestone' => 'Chuẩn hóa release mgmt, QA gates, CI pipelines; shadow lead các buổi release'],
-            ['m' => '3-6', 'milestone' => 'DevOps practices, Cloud Practitioner, deploy success ≥95%, mentoring 1-2 devs'],
-            ['m' => '6-12', 'milestone' => 'Delivery frameworks, PMI-ACP intro, incident/SLA governance, coaching team rituals']
+            ['m' => '0-3', 'milestone' => 'Software Architecture fundamentals, architectural styles'],
+            ['m' => '3-6', 'milestone' => 'Distributed Systems foundations, scalability & fault tolerance analysis'],
+            ['m' => '6-12', 'milestone' => 'System design & architecture review, chuẩn hóa architecture documentation']
         ],
         'certs' => [
-            ['name' => 'AWS/GCP Cloud Practitioner', 'type' => 'cert'],
-            ['name' => 'Docker Certified Associate', 'type' => 'cert'],
-            ['name' => 'CKA (Kubernetes Admin)', 'type' => 'cert'],
-            ['name' => 'PMI-ACP (intro)', 'type' => 'course']
+            ['name' => 'Software Architecture & Large-Scale System Design', 'type' => 'cert'],
+            ['name' => 'System Design Masterclass', 'type' => 'cert'],
+            ['name' => 'Architecting on AWS', 'type' => 'cert'],
         ],
-        'skills' => ['Delivery planning', 'CI/CD & Release', 'SRE basics', 'Cross-team coordination', 'SLA/OLA & risk', 'Team leadership & coaching']
+        'skills' => ['System & architecture-level thinking', 'Understanding architectural trade-offs', 'Scalability & fault tolerance reasoning']
     ],
     [
         'name' => 'Hoàn — QA/QC Tester',
@@ -217,7 +222,7 @@ $vn_costs = [
             margin-top: 10px;
             color: #6b7280;
         }
-        
+
         .slide-content {
             flex: 1;
             display: flex;
@@ -225,14 +230,14 @@ $vn_costs = [
             gap: 25px;
             animation: fadeInUp 0.8s ease-out;
         }
-        
+
         .roles-grid {
             display: grid;
             grid-template-columns: repeat(2, 1fr);
             gap: 20px;
             margin-bottom: 25px;
         }
-        
+
         .role-card {
             background: #ffffff;
             border: 2px solid #e5e7eb;
@@ -241,13 +246,13 @@ $vn_costs = [
             transition: all 0.3s ease;
             box-shadow: 0 1px 3px rgba(0,0,0,0.1);
         }
-        
+
         .role-card:hover {
             border-color: #7c9ee3;
             transform: translateY(-3px);
             box-shadow: 0 8px 16px rgba(124,158,227,0.2);
         }
-        
+
         .role-header {
             display: flex;
             align-items: center;
@@ -256,12 +261,12 @@ $vn_costs = [
             padding-bottom: 15px;
             border-bottom: 3px solid #7c9ee3;
         }
-        
+
         .role-header .material-symbols-rounded {
             font-size: 2rem;
             color: #7c9ee3;
         }
-        
+
         .role-name {
             font-size: 1.3rem;
             font-weight: 700;
@@ -275,7 +280,7 @@ $vn_costs = [
             flex-wrap: wrap;
             margin-bottom: 14px;
         }
-        
+
         .meta-pill {
             display: inline-flex;
             align-items: center;
@@ -287,21 +292,21 @@ $vn_costs = [
             font-size: 0.8rem;
             font-weight: 600;
         }
-        
+
         .meta-blue {
             background: #e0f2fe;
             color: #075985;
         }
-        
+
         .meta-pill .material-symbols-rounded {
             font-size: 1rem;
             color: inherit;
         }
-        
+
         .timeline {
             margin-bottom: 20px;
         }
-        
+
         .timeline-item {
             display: flex;
             gap: 12px;
@@ -311,20 +316,21 @@ $vn_costs = [
             border-left: 4px solid #7c9ee3;
             border-radius: 4px;
         }
-        
+
         .timeline-period {
             font-weight: 700;
             color: #0f6b9e;
             min-width: 70px;
             font-size: 0.9rem;
         }
-        
+
         .timeline-milestone {
             color: #4b5563;
             font-size: 0.9rem;
             line-height: 1.5;
         }
 
+<<<<<<< Updated upstream
         /* Timeline dạng gạch đầu dòng: để nội dung dễ scan hơn */
         .timeline-milestone ul {
             margin: 0;
@@ -336,12 +342,14 @@ $vn_costs = [
             margin: 2px 0;
         }
         
+=======
+>>>>>>> Stashed changes
         .role-details {
             display: grid;
             grid-template-columns: 1fr 1fr;
             gap: 15px;
         }
-        
+
         .detail-section h3 {
             font-size: 1rem;
             font-weight: 700;
@@ -351,18 +359,18 @@ $vn_costs = [
             align-items: center;
             gap: 6px;
         }
-        
+
         .detail-section h3 .material-symbols-rounded {
             font-size: 1.2rem;
             color: #7c9ee3;
         }
-        
+
         .detail-section ul {
             list-style: none;
             padding: 0;
             margin: 0;
         }
-        
+
         .detail-section li {
             padding: 6px 10px;
             background: #f0f9ff;
@@ -378,7 +386,7 @@ $vn_costs = [
             grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
             gap: 8px;
         }
-        
+
         .cert-badge {
             display: flex;
             align-items: center;
@@ -389,17 +397,17 @@ $vn_costs = [
             font-weight: 700;
             border: 1.5px solid;
         }
-        
+
         .cert-badge .material-symbols-rounded {
             font-size: 1rem;
         }
-        
+
         .cert-cert {
             background: #dbeafe;
             border-color: #3b82f6;
             color: #1e40af;
         }
-        
+
         .cert-course {
             background: #dcfce7;
             border-color: #22c55e;
@@ -416,19 +424,19 @@ $vn_costs = [
             gap: 8px;
             align-items: flex-start;
         }
-        
+
         .role-note .material-symbols-rounded {
             color: #b45309;
             font-size: 1.1rem;
         }
-        
+
         .role-note p {
             margin: 0;
             color: #92400e;
             font-size: 0.85rem;
             line-height: 1.4;
         }
-        
+
         .costs-section {
             background: #ffffff;
             border: 2px solid #e5e7eb;
@@ -436,7 +444,7 @@ $vn_costs = [
             padding: 25px 30px;
             box-shadow: 0 1px 3px rgba(0,0,0,0.1);
         }
-        
+
         .costs-header {
             font-size: 1.6rem;
             font-weight: 700;
@@ -448,22 +456,22 @@ $vn_costs = [
             padding-bottom: 15px;
             border-bottom: 3px solid #7c9ee3;
         }
-        
+
         .costs-header .material-symbols-rounded {
             font-size: 2rem;
             color: #7c9ee3;
         }
-        
+
         .costs-table {
             width: 100%;
             border-collapse: collapse;
             margin-bottom: 15px;
         }
-        
+
         .costs-table thead {
             background: linear-gradient(135deg, #7c9ee3 0%, #6b8dd6 100%);
         }
-        
+
         .costs-table th {
             padding: 12px 15px;
             text-align: left;
@@ -471,32 +479,32 @@ $vn_costs = [
             font-weight: 600;
             font-size: 0.95rem;
         }
-        
+
         .costs-table tbody tr {
             border-bottom: 1px solid #e5e7eb;
             transition: background 0.2s ease;
         }
-        
+
         .costs-table tbody tr:hover {
             background: #f9fafb;
         }
-        
+
         .costs-table td {
             padding: 12px 15px;
             color: #4b5563;
             font-size: 0.9rem;
         }
-        
+
         .costs-table td:first-child {
             font-weight: 600;
             color: #1f2937;
         }
-        
+
         .costs-table td:last-child {
             color: #0f6b9e;
             font-weight: 600;
         }
-        
+
         .note-box {
             background: linear-gradient(135deg, #fef9e7 0%, #fdf2d9 100%);
             border: 2px solid #fcd34d;
@@ -506,25 +514,25 @@ $vn_costs = [
             align-items: start;
             gap: 12px;
         }
-        
+
         .note-box .material-symbols-rounded {
             color: #b45309;
             font-size: 1.5rem;
             margin-top: 2px;
         }
-        
+
         .note-text {
             color: #7c2d12;
             font-size: 0.9rem;
             line-height: 1.6;
             margin: 0;
         }
-        
+
         @media (max-width: 1024px) {
             .roles-grid {
                 grid-template-columns: 1fr;
             }
-            
+
             .role-details {
                 grid-template-columns: 1fr;
             }
@@ -542,7 +550,7 @@ $vn_costs = [
                 Lộ trình phát triển chuyên môn 12 tháng cho từng thành viên
             </div>
         </div>
-        
+
         <div class="slide-content">
             <!-- Roles Grid -->
             <div class="roles-grid">
@@ -563,7 +571,7 @@ $vn_costs = [
                                 <?= htmlspecialchars($r['level_target']) ?>
                             </div>
                         </div>
-                        
+
                         <div class="timeline">
                             <?php foreach ($r['timeline'] as $t): ?>
                                 <div class="timeline-item">
@@ -582,7 +590,7 @@ $vn_costs = [
                                 </div>
                             <?php endforeach; ?>
                         </div>
-                        
+
                         <div class="role-details">
                             <div class="detail-section">
                                 <h3>
@@ -639,14 +647,14 @@ $vn_costs = [
                     </div>
                 <?php endforeach; ?>
             </div>
-            
+
             <!-- Costs Section -->
             <div class="costs-section">
                 <div class="costs-header">
                     <span class="material-symbols-rounded">payments</span>
                     Tổng quan chi phí đào tạo (VN)
                 </div>
-                
+
                 <table class="costs-table">
                     <thead>
                         <tr>
@@ -667,7 +675,7 @@ $vn_costs = [
                         <?php endforeach; ?>
                     </tbody>
                 </table>
-                
+
                 <div class="note-box">
                     <span class="material-symbols-rounded">info</span>
                     <p class="note-text">

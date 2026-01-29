@@ -774,7 +774,7 @@ $vn_costs = [
                                             <?php if ($c['type'] === 'cert'): ?>
                                                 <span class="material-symbols-rounded">verified</span>
                                             <?php else: ?>
-                                                <span class="material-symbols-rounded">school</span>
+                                                <span class="material-symbols-rounded">book_4</span>
                                             <?php endif; ?>
                                             <?= htmlspecialchars($c['name']) ?>
                                         </span>
@@ -810,10 +810,11 @@ $vn_costs = [
                                     <?php endforeach; ?>
                                 </ul>
                             </div>
-                            <div class="role-note">
-                                <span class="material-symbols-rounded">info</span>
-                                <p><?= htmlspecialchars($r['note']) ?></p>
-                            </div>
+                            
+                        </div>
+                        <div class="role-note">
+                            <span class="material-symbols-rounded">info</span>
+                            <p><?= htmlspecialchars($r['note']) ?></p>
                         </div>
                     </div>
                 <?php endforeach; ?>

@@ -310,9 +310,11 @@ $roles = [
 
         'certs' => [
             ['name' => 'ISTQB Foundation (CTFL)', 'type' => 'cert', 'priority' => 'mandatory'],
+            ['name' => 'ISTQB Agile Tester (CTFL-AT)', 'type' => 'cert', 'priority' => 'recommended'],
             ['name' => 'ISTQB Advanced – Test Analyst', 'type' => 'cert', 'priority' => 'target'],
             ['name' => 'Automation Testing (Cypress/Selenium)', 'type' => 'course'],
-            ['name' => 'API Testing (Postman/Newman)', 'type' => 'course']
+            ['name' => 'API Testing (Postman/Newman)', 'type' => 'course'],
+            ['name' => 'Basic Performance Testing (JMeter/k6)', 'type' => 'course']
         ],
 
         'skills' => [

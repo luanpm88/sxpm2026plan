@@ -26,10 +26,10 @@ $roles = [
             ['name' => 'PSPO II (optional)', 'type' => 'cert']
         ],
         'skills' => [
-            'Requirements Engineering', 
-            'Business Process Modeling', 
-            'Stakeholder Analysis', 
-            'Value Prioritization (WSJF/MoSCoW)', 
+            'Requirements Engineering',
+            'Business Process Modeling',
+            'Stakeholder Analysis',
+            'Value Prioritization (WSJF/MoSCoW)',
             'Product Roadmapping',
             'SQL & Data Analysis',
             'Customer Research & Personas',
@@ -130,15 +130,9 @@ $roles = [
     [
         'name' => 'Minh Thư — Software Engineer',
         'icon' => 'widgets',
-<<<<<<< Updated upstream
-        'role_template' => 'Developer + Delivery/Training',
-        'level_target' => 'Senior → Delivery Lead/Coach (dev/DevOps hybrid)',
-        'note' => 'Thư thiên về đào tạo, dẫn dắt nhóm delivery/DevOps, huấn luyện quy trình & release (khác Hoàng Anh là tech lead thuần).',
-=======
         'role_template' => 'Software Engineering',
         'level_target' => 'Dev → Architecture Specialist ',
         'note' => 'Thư map vào lộ trình Software Engineering → Architecture; tập trung tư duy kiến trúc hệ thống, scalability (khác Tech Lead là không thiên về quản lý team).',
->>>>>>> Stashed changes
         'timeline' => [
             ['m' => '0-3', 'milestone' => 'Software Architecture fundamentals, architectural styles'],
             ['m' => '3-6', 'milestone' => 'Distributed Systems foundations, scalability & fault tolerance analysis'],
@@ -341,7 +335,7 @@ $vn_costs = [
         .timeline-milestone li {
             margin: 2px 0;
         }
-        
+
 =======
 >>>>>>> Stashed changes
         .role-details {

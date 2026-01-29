@@ -128,7 +128,7 @@
                 </li>
                 <li style="margin-bottom: 0.75rem; display: flex; gap: 0.75rem;">
                     <span style="color: #d97706; font-weight: 700; flex-shrink: 0;">→</span>
-                    <span>Establish adoption <strong>across leading enterprises</strong> in financial services, healthcare, and technology sectors</span>
+                    <span>Build <strong>adaptive AI architecture</strong> that learns flexibly across all organizational levels—from frontline employees asking operational questions to executives seeking strategic insights. System adapts tone, depth, and context based on user role while maintaining high reliability and verifiable reasoning</span>
                 </li>
             </ul>
 

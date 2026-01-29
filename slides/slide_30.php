@@ -138,9 +138,10 @@ $roles = [
         'certs' => [
             ['name' => 'AWS Certified Solutions Architect – Associate', 'type' => 'cert'],
             ['name' => 'AWS Certified Developer – Associate', 'type' => 'cert'],
-            ['name' => 'GCP Professional Developer (optional)', 'type' => 'cert'],
             ['name' => 'System Design & Architecture (Grokking/Educative)', 'type' => 'course'],
-            ['name' => 'TOGAF Foundation (foundation)', 'type' => 'cert']
+            ['name' => 'AI & LLM Integration (RAG/Agents)', 'type' => 'course'],
+            ['name' => 'TOGAF Foundation', 'type' => 'cert'],
+            ['name' => 'GCP Professional Developer (optional)', 'type' => 'cert']
         ],
         'skills' => [
             'System Design & Architecture',
@@ -375,28 +376,55 @@ $roles = [
 ];
 
 $vn_costs = [
-    ['path' => 'PSM I / PSPO I', 'provider' => 'Scrum.org / VN partners', 'duration' => '2-3 days', 'cost' => '6–12 triệu VND'],
-    ['path' => 'PSPO II', 'provider' => 'Scrum.org / VN partners', 'duration' => '2-3 days', 'cost' => '10–18 triệu VND'],
-    ['path' => 'CCBA / CBAP', 'provider' => 'IIBA + local training', 'duration' => '4-8 weeks prep', 'cost' => '15–35 triệu VND'],
-    ['path' => 'Business Process Modeling (BPMN)', 'provider' => 'Online/Udemy/local training', 'duration' => '1-2 weeks', 'cost' => '2–5 triệu VND'],
-    ['path' => 'Agile BA / Agile Scrum fundamentals', 'provider' => 'Local training / online', 'duration' => '1-2 weeks', 'cost' => '3–6 triệu VND'],
-    ['path' => 'SQL for Data Analysis', 'provider' => 'Mode Analytics / Codecademy', 'duration' => '2-3 weeks', 'cost' => '0–2 triệu VND'],
-    ['path' => 'Google Data Analytics Certificate', 'provider' => 'Coursera (Google)', 'duration' => '3-6 months', 'cost' => '~2 triệu VND'],
-    ['path' => 'Product Analytics', 'provider' => 'Reforge / Amplitude Academy', 'duration' => '4-8 weeks', 'cost' => '8–12 triệu VND'],
-    ['path' => 'Facilitation Skills', 'provider' => 'LinkedIn Learning / local', 'duration' => '2-3 weeks', 'cost' => '3–6 triệu VND'],
-    ['path' => 'Power BI / Tableau basics', 'provider' => 'Microsoft Learn / online', 'duration' => '1-2 weeks', 'cost' => '0–3 triệu VND'],
-    ['path' => 'AWS Cloud Practitioner', 'provider' => 'VN training centers', 'duration' => '2-4 weeks', 'cost' => '3–6 triệu VND'],
-    ['path' => 'AWS Solutions Architect Associate', 'provider' => 'VN training centers', 'duration' => '4-6 weeks', 'cost' => '8–18 triệu VND'],
-    ['path' => 'Docker Certified Associate', 'provider' => 'Local bootcamps / online', 'duration' => '2-4 weeks', 'cost' => '6–12 triệu VND'],
-    ['path' => 'CKA (Kubernetes Admin)', 'provider' => 'Authorized K8s training', 'duration' => '4-6 weeks', 'cost' => '8–16 triệu VND'],
-    ['path' => 'System Design & Architecture', 'provider' => 'Online/Educative/ByteByteGo', 'duration' => '4-8 weeks', 'cost' => '2–6 triệu VND'],
-    ['path' => 'AI/ML Fundamentals & GenAI', 'provider' => 'Coursera/DeepLearning.AI', 'duration' => '4-8 weeks', 'cost' => '3–8 triệu VND'],
-    ['path' => 'TOGAF Foundation', 'provider' => 'Authorized providers', 'duration' => '1-2 weeks', 'cost' => '12–25 triệu VND'],
-    ['path' => 'ISTQB Foundation', 'provider' => 'VN QA academies', 'duration' => '1-2 weeks', 'cost' => '5–10 triệu VND'],
-    ['path' => 'ISTQB Advanced Test Analyst', 'provider' => 'VN QA academies', 'duration' => '3-6 weeks prep', 'cost' => '12–20 triệu VND'],
-    ['path' => 'Automation (Cypress/Selenium)', 'provider' => 'Local bootcamps', 'duration' => '2-4 weeks', 'cost' => '6–15 triệu VND'],
-    ['path' => 'PMI-ACP (intro / prep)', 'provider' => 'PMI R.E.P / local', 'duration' => '3-6 weeks', 'cost' => '12–20 triệu VND'],
-    ['path' => 'Web fundamentals (Git, HTML/CSS/JS, SQL)', 'provider' => 'Online/Udemy/FreeCodeCamp', 'duration' => '2-6 weeks', 'cost' => '0–3 triệu VND']
+    // === PHONG: BA → PO (ưu tiên cao) ===
+    // MANDATORY (học trước)
+    ['path' => 'PSM I', 'tier' => 'mandatory', 'domain' => 'Agile/Scrum', 'for_roles' => 'Phong', 'provider' => 'Scrum.org', 'duration' => '2-3 days', 'cost' => '6–10 triệu VND', 'description' => 'Nền tảng Scrum cho BA, hiểu Sprint/User Story/AC'],
+    ['path' => 'CCBA (IIBA)', 'tier' => 'mandatory', 'domain' => 'Business Analysis', 'for_roles' => 'Phong', 'provider' => 'IIBA + local training', 'duration' => '4-8 weeks prep', 'cost' => '15–35 triệu VND', 'description' => 'Chứng chỉ BA cao cấp: Requirements Engineering, RTM, stakeholder management'],
+    ['path' => 'Business Process Modeling (BPMN)', 'tier' => 'mandatory', 'domain' => 'Business Analysis', 'for_roles' => 'Phong', 'provider' => 'Online/Udemy/local', 'duration' => '1-2 weeks', 'cost' => '2–5 triệu VND', 'description' => 'Mô hình quy trình, user story mapping chuẩn'],
+    // TARGET (mục tiêu 12 tháng)
+    ['path' => 'PSPO I', 'tier' => 'target', 'domain' => 'Product Ownership', 'for_roles' => 'Phong', 'provider' => 'Scrum.org', 'duration' => '2-3 days', 'cost' => '6–12 triệu VND', 'description' => 'Product Owner cơ bản: backlog health, prioritization (WSJF/MoSCoW)'],
+    ['path' => 'SQL for Data Analysis', 'tier' => 'target', 'domain' => 'Data & Analytics', 'for_roles' => 'Phong', 'provider' => 'Mode Analytics / Codecademy', 'duration' => '2-3 weeks', 'cost' => '0–2 triệu VND', 'description' => 'SQL cơ bản cho phân tích dữ liệu, hỗ trợ metrics'],
+    ['path' => 'Google Data Analytics Certificate', 'tier' => 'target', 'domain' => 'Data & Analytics', 'for_roles' => 'Phong', 'provider' => 'Coursera (Google)', 'duration' => '3-6 months', 'cost' => '~2 triệu VND', 'description' => 'Visualize & analyze data: spreadsheet, SQL, Tableau/Power BI cơ bản'],
+    ['path' => 'Product Analytics (Reforge/Amplitude)', 'tier' => 'target', 'domain' => 'Product Metrics', 'for_roles' => 'Phong', 'provider' => 'Reforge / Amplitude Academy', 'duration' => '4-8 weeks', 'cost' => '8–12 triệu VND', 'description' => 'AARRR, North Star metrics, A/B testing, product experimentation'],
+    ['path' => 'Facilitation & Workshop Design', 'tier' => 'target', 'domain' => 'Soft Skills', 'for_roles' => 'Phong', 'provider' => 'LinkedIn Learning / local', 'duration' => '2-3 weeks', 'cost' => '3–6 triệu VND', 'description' => 'Quản lý workshop, stakeholder alignment, tạo consensus'],
+    // OPTIONAL (nâng cao)
+    ['path' => 'PSPO II', 'tier' => 'optional', 'domain' => 'Product Ownership', 'for_roles' => 'Phong', 'provider' => 'Scrum.org', 'duration' => '2-3 days', 'cost' => '10–18 triệu VND', 'description' => 'PO nâng cao: advanced roadmapping, metrics, customer research'],
+
+    // === HOÀNG ANH: Tech Lead (ưu tiên cao) ===
+    // MANDATORY (học trước)
+    ['path' => 'AWS Certified Solutions Architect – Associate', 'tier' => 'mandatory', 'domain' => 'Cloud Architecture', 'for_roles' => 'Hoàng Anh', 'provider' => 'VN training centers', 'duration' => '4-6 weeks', 'cost' => '8–18 triệu VND', 'description' => 'Cloud design: compute, database, networking, security, cost optimization'],
+    ['path' => 'System Design & Architecture', 'tier' => 'mandatory', 'domain' => 'System Design', 'for_roles' => 'Hoàng Anh + Minh Thư', 'provider' => 'Online/Educative/ByteByteGo', 'duration' => '4-8 weeks', 'cost' => '2–6 triệu VND', 'description' => 'Scaling patterns, caching, database optimization, distributed systems cơ bản'],
+    // TARGET (mục tiêu 12 tháng)
+    ['path' => 'AWS Certified Developer – Associate', 'tier' => 'target', 'domain' => 'Cloud Development', 'for_roles' => 'Hoàng Anh', 'provider' => 'VN training centers', 'duration' => '3-5 weeks', 'cost' => '8–15 triệu VND', 'description' => 'Lambda, API Gateway, DynamoDB, SDK – deployment & development'],
+    ['path' => 'AI & LLM Integration (RAG/Agents)', 'tier' => 'target', 'domain' => 'GenAI/Automation', 'for_roles' => 'Hoàng Anh', 'provider' => 'DeepLearning.AI / LangChain Academy', 'duration' => '3-4 weeks', 'cost' => '5–10 triệu VND', 'description' => 'RAG patterns, LLM prompting, Agent architecture, vector databases cho internal tools'],
+    ['path' => 'TOGAF Foundation', 'tier' => 'target', 'domain' => 'Enterprise Architecture', 'for_roles' => 'Hoàng Anh', 'provider' => 'Authorized providers', 'duration' => '1-2 weeks', 'cost' => '12–25 triệu VND', 'description' => 'Framework kiến trúc enterprise: ADM, architecture governance'],
+    // OPTIONAL (nâng cao)
+    ['path' => 'GCP Professional Developer', 'tier' => 'optional', 'domain' => 'Cloud Development', 'for_roles' => 'Hoàng Anh', 'provider' => 'Google Cloud Training', 'duration' => '4-6 weeks', 'cost' => '12–20 triệu VND', 'description' => 'GCP deepdive: App Engine, Firestore, Pub/Sub – alternative to AWS'],
+
+    // === MINH THƯ: Architecture Specialist (ưu tiên cao) ===
+    // TARGET (mục tiêu 12 tháng - không có mandatory vì đã là Senior)
+    ['path' => 'System Design & Architecture', 'tier' => 'mandatory', 'domain' => 'System Design', 'for_roles' => 'Hoàng Anh + Minh Thư', 'provider' => 'Online/Educative/ByteByteGo', 'duration' => '4-8 weeks', 'cost' => '2–6 triệu VND', 'description' => 'Scaling patterns, caching, database optimization, distributed systems cơ bản'],
+    ['path' => 'Domain-Driven Design (DDD) Fundamentals', 'tier' => 'target', 'domain' => 'Architecture Patterns', 'for_roles' => 'Minh Thư', 'provider' => 'Online/O\'Reilly/local training', 'duration' => '2-4 weeks', 'cost' => '3–7 triệu VND', 'description' => 'Ubiquitous language, bounded contexts, aggregates – thiết kế domain'],
+    ['path' => 'Event-Driven Architecture & Microservices', 'tier' => 'target', 'domain' => 'Architecture Patterns', 'for_roles' => 'Minh Thư', 'provider' => 'Online/O\'Reilly/Udemy', 'duration' => '2-4 weeks', 'cost' => '3–6 triệu VND', 'description' => 'Event Sourcing, Saga pattern, consistency models, async communication'],
+    ['path' => 'GCP Professional Cloud Architect', 'tier' => 'target', 'domain' => 'Cloud Architecture', 'for_roles' => 'Minh Thư', 'provider' => 'Google Cloud Training', 'duration' => '4-6 weeks', 'cost' => '12–20 triệu VND', 'description' => 'Multi-region, scalability, security architecture on GCP'],
+    // OPTIONAL (nâng cao)
+    ['path' => 'TOGAF Certified (Advanced)', 'tier' => 'optional', 'domain' => 'Enterprise Architecture', 'for_roles' => 'Minh Thư', 'provider' => 'Authorized TOGAF providers', 'duration' => '4-8 weeks', 'cost' => '20–40 triệu VND', 'description' => 'TOGAF Level 2: architectural planning, governance, transition'],
+    ['path' => 'Enterprise Architecture (Zachman Framework)', 'tier' => 'optional', 'domain' => 'Enterprise Architecture', 'for_roles' => 'Minh Thư', 'provider' => 'Online training / Zachman certified', 'duration' => '2-4 weeks', 'cost' => '8–15 triệu VND', 'description' => 'Holistic enterprise view: 6 perspectives, 6 interrogatives'],
+
+    // === HOÀN: Senior QA (ưu tiên trung bình) ===
+    // MANDATORY (học trước)
+    ['path' => 'ISTQB Foundation (CTFL)', 'tier' => 'mandatory', 'domain' => 'QA Fundamentals', 'for_roles' => 'Hoàn', 'provider' => 'VN QA academies', 'duration' => '1-2 weeks', 'cost' => '5–10 triệu VND', 'description' => 'Nền tảng QA: test levels, types, techniques (BVA, ECP, Decision Table)'],
+    ['path' => 'ISTQB Agile Tester (CTFL-AT)', 'tier' => 'mandatory', 'domain' => 'Agile QA', 'for_roles' => 'Hoàn', 'provider' => 'VN QA academies', 'duration' => '1-2 weeks', 'cost' => '5–10 triệu VND', 'description' => 'QA trong Scrum: sprint testing, user story testing, rapid feedback'],
+    // TARGET (mục tiêu 12 tháng)
+    ['path' => 'API Testing (Postman/Newman)', 'tier' => 'target', 'domain' => 'Automation', 'for_roles' => 'Hoàn', 'provider' => 'Online/Udemy/Postman Academy', 'duration' => '1-2 weeks', 'cost' => '2–5 triệu VND', 'description' => 'Test API: authentication, business logic, negative cases, validation'],
+    ['path' => 'Automation Testing (Cypress/Selenium)', 'tier' => 'target', 'domain' => 'Automation', 'for_roles' => 'Hoàn', 'provider' => 'Local bootcamps / online', 'duration' => '3-4 weeks', 'cost' => '6–15 triệu VND', 'description' => 'Xây dựng automation framework: smoke test, regression test, CI integration'],
+    // OPTIONAL (nâng cao)
+    ['path' => 'Basic Performance Testing (JMeter/k6)', 'tier' => 'optional', 'domain' => 'Performance', 'for_roles' => 'Hoàn', 'provider' => 'Online/Udemy', 'duration' => '2-3 weeks', 'cost' => '3–8 triệu VND', 'description' => 'Load testing, stress testing, performance metrics, bottleneck analysis'],
+    ['path' => 'ISTQB Advanced – Test Analyst', 'tier' => 'optional', 'domain' => 'QA Advanced', 'for_roles' => 'Hoàn', 'provider' => 'VN QA academies', 'duration' => '3-6 weeks prep', 'cost' => '12–20 triệu VND', 'description' => 'Test strategy, risk-based testing, quality gates, advanced test design'],
+
+    // === NGUYỄN DUY TÀI: Fresher Dev (ưu tiên thấp - entry level) ===
+    // MANDATORY (học trước)
+    ['path' => 'Web Fundamentals (Git, HTML/CSS/JS, SQL)', 'tier' => 'mandatory', 'domain' => 'Foundation', 'for_roles' => 'Nguyễn Duy Tài', 'provider' => 'Online/Udemy/FreeCodeCamp', 'duration' => '2-6 weeks', 'cost' => '0–3 triệu VND', 'description' => 'Git workflow, HTML/CSS, vanilla JS, SQL basics – nền tảng dev'],
 ];
 ?>
 <?php include '../includes/head.php'; ?>
@@ -687,6 +715,34 @@ $vn_costs = [
             font-weight: 600;
         }
 
+        .tier-badge {
+            display: inline-block;
+            padding: 4px 10px;
+            border-radius: 4px;
+            font-size: 0.75rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .tier-mandatory {
+            background: #fecaca;
+            color: #991b1b;
+            border: 1px solid #dc2626;
+        }
+
+        .tier-target {
+            background: #bfdbfe;
+            color: #1e40af;
+            border: 1px solid #3b82f6;
+        }
+
+        .tier-optional {
+            background: #d1d5db;
+            color: #374151;
+            border: 1px solid #9ca3af;
+        }
+
         .note-box {
             background: linear-gradient(135deg, #fef9e7 0%, #fdf2d9 100%);
             border: 2px solid #fcd34d;
@@ -838,31 +894,66 @@ $vn_costs = [
                     Tổng quan chi phí đào tạo (VN)
                 </div>
 
-                <table class="costs-table">
-                    <thead>
-                        <tr>
-                            <th>Lộ trình</th>
-                            <th>Nhà cung cấp</th>
-                            <th>Thời lượng</th>
-                            <th>Chi phí ước tính</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <?php foreach ($vn_costs as $row): ?>
-                            <tr>
-                                <td><?= htmlspecialchars($row['path']) ?></td>
-                                <td><?= htmlspecialchars($row['provider']) ?></td>
-                                <td><?= htmlspecialchars($row['duration']) ?></td>
-                                <td><?= htmlspecialchars($row['cost']) ?></td>
-                            </tr>
-                        <?php endforeach; ?>
-                    </tbody>
-                </table>
+                <div style="overflow-x: auto;">
 
+                
+                    <table class="costs-table">
+                        <thead>
+                            <tr>
+                                <th>Chứng chỉ / Khóa học</th>
+                                <th>Loại</th>
+                                <th>Cấp độ</th>
+                                <th>Lĩnh vực</th>
+                                <th>Phù hợp cho</th>
+                                <th>Nhà cung cấp</th>
+                                <th>Thời lượng</th>
+                                <th>Chi phí</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <?php foreach ($vn_costs as $row): 
+                                // Xác định loại (cert hay course)
+                                $type_name = (strpos($row['path'], 'Fundamentals') !== false || strpos($row['path'], 'Framework') !== false || strpos($row['path'], 'Advanced') !== false) ? 'course' : (strpos($row['path'], 'Certified') !== false || strpos($row['path'], 'Certificate') !== false ? 'cert' : 'course');
+                                $type_display = ($type_name === 'cert') ? 'Chứng chỉ' : 'Khóa học';
+                                $type_color = ($type_name === 'cert') ? '#3b82f6' : '#22c55e';
+                                $type_icon = ($type_name === 'cert') ? 'verified' : 'book_4';
+                            ?>
+                                <tr>
+                                    <td style="min-width: 320px;">
+                                        <strong><?= htmlspecialchars($row['path']) ?></strong>
+                                        <div style="font-size: 0.85rem; color: #6b7280; margin-top: 4px;">
+                                            <?= htmlspecialchars($row['description']) ?>
+                                        </div>
+                                    </td>
+                                    <td class="text-nowrap" style="text-align: center;">
+                                        <span style="display: inline-flex; align-items: center; gap: 4px; padding: 4px 8px; border-radius: 4px; background: <?= ($type_name === 'cert') ? '#dbeafe' : '#dcfce7' ?>; color: <?= ($type_name === 'cert') ? '#1e40af' : '#166534' ?>; font-size: 0.75rem; font-weight: 700; border: 1px solid <?= $type_color ?>;">
+                                            <span class="material-symbols-rounded" style="font-size: 0.9rem;"><?= $type_icon ?></span>
+                                            <?= $type_display ?>
+                                        </span>
+                                    </td>
+                                    <td class="text-nowrap">
+                                        <span class="tier-badge tier-<?= htmlspecialchars($row['tier']) ?>">
+                                            <?= ucfirst(htmlspecialchars($row['tier'])) ?>
+                                        </span>
+                                    </td>
+                                    <td class="text-nowrap"><?= htmlspecialchars($row['domain']) ?></td>
+                                    <td class="text-nowrap"><?= htmlspecialchars($row['for_roles']) ?></td>
+                                    <td class="text-nowrap"><?= htmlspecialchars($row['provider']) ?></td>
+                                    <td class="text-nowrap"><?= htmlspecialchars($row['duration']) ?></td>
+                                    <td class="text-nowrap"><?= htmlspecialchars($row['cost']) ?></td>
+                                </tr>
+                            <?php endforeach; ?>
+                        </tbody>
+                    </table>
+                                </div>
                 <div class="note-box">
                     <span class="material-symbols-rounded">info</span>
                     <p class="note-text">
-                        Chi phí thực tế phụ thuộc nhà cung cấp, ưu đãi, và lộ trình học. Có thể tối ưu bằng học liệu tự học + thi chứng chỉ trực tiếp. Tổng chi phí bổ sung cho Phong: ~25-50 triệu VND (ngoài chứng chỉ chính).
+                        <strong>Hướng dẫn đọc bảng:</strong><br>
+                        • <strong>Loại:</strong> Chứng chỉ (Cert) = chứng chỉ chính thức | Khóa học (Course) = bổ trợ/preparatory<br>
+                        • <strong>Cấp độ:</strong> Mandatory (bắt buộc) → Target (mục tiêu 12 tháng) → Optional (nâng cao)<br>
+                        • <strong>Tổng chi phí dự kiến:</strong> Phong 25–50M | Hoàng Anh 20–35M | Minh Thư 25–45M | Hoàn 15–30M | Tài 0–3M<br>
+                        • Có thể tối ưu bằng học liệu tự học + thi trực tiếp. Giải ngân theo ưu tiên team.
                     </p>
                 </div>
             </div>

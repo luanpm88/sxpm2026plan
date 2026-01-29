@@ -145,23 +145,110 @@ $roles = [
         ],
         'skills' => ['System & architecture-level thinking', 'Understanding architectural trade-offs', 'Scalability & fault tolerance reasoning']
     ],
-    [
+[
         'name' => 'Hoàn — QA/QC Tester',
         'icon' => 'bug_report',
         'role_template' => 'Tester (QA/QC)',
-        'level_target' => 'Tester → Senior QA ()',
-        'note' => 'Bám sát lộ trình Tester ở ; nâng dần automation & API coverage.',
+        'current_level' => 'Tester',
+        'level_target' => 'Senior QA',
+        'note' => 'Phát triển từ Manual QA sang Senior QA theo hướng Quality Engineering; tăng dần vai trò ownership, automation, API và chất lượng toàn hệ thống trong môi trường Scrum Agile.',
+
         'timeline' => [
-            ['m' => '0-3', 'milestone' => 'ISTQB Foundation, test cases & traceability, manual coverage ≥90%'],
-            ['m' => '3-6', 'milestone' => 'Automation (Cypress/Selenium), API testing, CI integration'],
-            ['m' => '6-12', 'milestone' => 'Performance/Security testing, automation coverage ≥50%']
+            [
+                'm' => '0-3',
+                'focus' => 'Nền tảng QA & Manual Testing',
+                'milestone' => [
+                    'Nắm vững quy trình kiểm thử trong Scrum (Sprint, User Story, Acceptance Criteria)',
+                    'Thiết kế Test Case, Test Scenario, Test Data theo chuẩn',
+                    'Xây dựng Requirements Traceability Matrix (RTM)',
+                    'Manual test coverage ≥ 90%',
+                    'Bug report rõ ràng (severity, priority, root cause)',
+                    'Tham gia đầy đủ Sprint Planning, Review, Retrospective'
+                ],
+                'deliverables' => [
+                    'Bộ test case chuẩn cho ≥ 1 module chính',
+                    'RTM liên kết AC – TC – Bug',
+                    'Báo cáo test summary theo sprint'
+                ],
+                'cert_target' => ['ISTQB Foundation (CTFL)']
+            ],
+            [
+                'm' => '3-6',
+                'focus' => 'Automation & API Testing',
+                'milestone' => [
+                    'Xây dựng framework automation cơ bản (Cypress hoặc Selenium)',
+                    'Viết test automation cho regression & smoke test',
+                    'API testing với Postman / Newman',
+                    'Hiểu và test API authentication (Bearer Token, OAuth)',
+                    'Tích hợp automation vào CI/CD (GitHub Actions / GitLab CI)',
+                    'Automation coverage đạt ≥ 30%'
+                ],
+                'deliverables' => [
+                    'Automation test suite cho các flow chính',
+                    'API test collection + environment',
+                    'CI pipeline chạy automation test'
+                ],
+                'cert_target' => [
+                    'Automation Testing (Cypress/Selenium)',
+                    'ISTQB Agile Tester (optional)'
+                ]
+            ],
+            [
+                'm' => '6-12',
+                'focus' => 'Senior QA Skills & Quality Ownership',
+                'milestone' => [
+                    'Automation coverage đạt ≥ 50%',
+                    'Thiết kế Test Strategy cho module / dự án',
+                    'Performance testing (JMeter / k6)',
+                    'Security testing cơ bản (OWASP Top 10)',
+                    'Định nghĩa Quality Gates trước khi release',
+                    'Review test case & automation cho Junior/Middle QA',
+                    'Phối hợp chặt với Dev & PO trong release planning'
+                ],
+                'deliverables' => [
+                    'Test Strategy document',
+                    'Performance test report',
+                    'Quality checklist & release gate'
+                ],
+                'cert_target' => [
+                    'ISTQB Advanced – Test Analyst',
+                    'Performance Testing (JMeter/k6)'
+                ]
+            ]
         ],
+
         'certs' => [
-            ['name' => 'ISTQB Foundation', 'type' => 'cert'],
-            ['name' => 'ISTQB Advanced (Test Analyst)', 'type' => 'cert'],
-            ['name' => 'Automation (Cypress/Selenium)', 'type' => 'course']
+            ['name' => 'ISTQB Foundation (CTFL)', 'type' => 'cert', 'priority' => 'mandatory'],
+            ['name' => 'ISTQB Advanced – Test Analyst', 'type' => 'cert', 'priority' => 'target'],
+            ['name' => 'Automation Testing (Cypress/Selenium)', 'type' => 'course'],
+            ['name' => 'API Testing (Postman/Newman)', 'type' => 'course']
         ],
-        'skills' => ['Test strategy', 'Automation scripting', 'API/Performance/Security testing', 'Quality gates']
+
+        'skills' => [
+            'Manual & Exploratory Testing',
+            'Test Case Design & Traceability (RTM)',
+            'Automation Scripting',
+            'API Testing & Validation',
+            'Performance & Security Testing',
+            'CI/CD Integration',
+            'Test Strategy & Quality Gates',
+            'Agile/Scrum QA Practices'
+        ],
+
+        'kpi' => [
+            'Manual test coverage ≥ 90%',
+            'Automation coverage ≥ 50%',
+            'Bug leakage < 5%',
+            'On-time test delivery per sprint',
+            'Positive feedback từ Dev/PO'
+        ],
+
+        'promotion_criteria' => [
+            'Có khả năng tự xây dựng test strategy',
+            'Automation & API test thành thạo',
+            'Chủ động phát hiện rủi ro chất lượng',
+            'Hỗ trợ & mentor QA level thấp hơn'
+        ]
     ],
     [
         'name' => 'Nguyễn Duy Tài — Intern/Fresher Dev (học việc)',

@@ -946,7 +946,7 @@ $vn_costs = [
                         </tbody>
                     </table>
                                 </div>
-                <div class="note-box">
+                <div class="note-box mt-5">
                     <span class="material-symbols-rounded">info</span>
                     <p class="note-text">
                         <strong>Hướng dẫn đọc bảng:</strong><br>

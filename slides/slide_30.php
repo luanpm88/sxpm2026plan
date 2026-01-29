@@ -6,13 +6,37 @@ $roles = [
     [
         'name' => 'Phong — BA → PO',
         'icon' => 'analytics',
-        'role_template' => 'Business Analyst / Product Owner',
+        'role_template' => 'Developer/BA',
         'level_target' => 'BA → PO (PSPO)',
         'note' => 'Phong map vào lộ trình BA/PO ở ; ưu tiên backlog health và stakeholder alignment. Bổ sung: SQL/Data Analysis, Facilitation, Product Metrics để đủ năng lực PO thực chiến.',
         'timeline' => [
-            ['m' => '0-3', 'milestone' => 'Requirements Engineering, BPMN, user story mapping + SQL basics, Excel nâng cao, Jira mastery, API/REST basics, Presentation skills'],
-            ['m' => '3-6', 'milestone' => 'CCBA prep, stakeholder workshops, RTM + Financial literacy (ROI/business case), customer research methods, facilitation & workshop design, market analysis, data visualization (Power BI/Tableau)'],
-            ['m' => '6-12', 'milestone' => 'PSPO I, WSJF/MoSCoW, OKR/metrics, product vision + Product analytics (AARRR/North Star), Lean Startup & A/B testing, advanced roadmapping, GTM basics, case study projects']
+            [
+                'm' => 'GĐ I',
+                'milestone' => [
+                    'Requirements Engineering, BPMN, user story mapping',
+                    'SQL basics, Excel nâng cao, Jira mastery',
+                    'API/REST basics, Presentation skills'
+                ]
+            ],
+            [
+                'm' => 'GĐ II',
+                'milestone' => [
+                    'CCBA prep, stakeholder workshops, RTM',
+                    'Financial literacy (ROI/business case)',
+                    'Customer research methods, facilitation & workshop design',
+                    'Market analysis, data visualization (Power BI/Tableau)'
+                ]
+            ],
+            [
+                'm' => 'GĐ III',
+                'milestone' => [
+                    'PSPO I, WSJF/MoSCoW, OKR/metrics',
+                    'Product vision, Product analytics (AARRR/North Star)',
+                    'Lean Startup & A/B testing',
+                    'Advanced roadmapping, GTM basics',
+                    'Case study projects'
+                ]
+            ]
         ],
         'certs' => [
             ['name' => 'PSM I', 'type' => 'cert'],
@@ -50,7 +74,7 @@ $roles = [
         'note' => 'Track: Developer thuần kỹ thuật (không đi theo EM/PM/Product). Thiên hướng: System Design, DevOps, AI integration (RAG/Agents/internal tools), Technical Analyst. Tập trung ownership kiến trúc + tiêu chuẩn review & reliability.',
         'timeline' => [
             [
-                'm' => '0-3',
+                'm' => 'GĐ I',
                 'milestone' => [
                     'Nền móng Tech Lead: thoát mindset “senior coder”, bắt đầu ownership kiến trúc, chuẩn hóa review & design',
                     'System Design & scalability: cache/indexing/sharding, sync vs async (queue/event-driven)',
@@ -61,7 +85,7 @@ $roles = [
                 ]
             ],
             [
-                'm' => '3-6',
+                'm' => 'GĐ II',
                 'milestone' => [
                     'Kiến trúc & Cloud: cloud architecture AWS/GCP (compute/DB/network/security/cost awareness)',
                     'Microservices: khi nào không dùng, data ownership, versioning/backward compatibility',
@@ -71,7 +95,7 @@ $roles = [
                 ]
             ],
             [
-                'm' => '6-12',
+                'm' => 'GĐ III',
                 'milestone' => [
                     'Tech Lead thực thụ: ra quyết định kỹ thuật cấp team, dẫn dắt roadmap 6–12 tháng',
                     'Architecture patterns: Hexagonal/Event-driven, technical strategy proposal',
@@ -128,22 +152,89 @@ $roles = [
         ]
     ],
     [
-        'name' => 'Minh Thư — Software Engineer',
+        'name' => 'Minh Thư — Senior Dev → Architecture Specialist',
         'icon' => 'widgets',
-        'role_template' => 'Software Engineering',
-        'level_target' => 'Dev → Architecture Specialist ',
-        'note' => 'Thư map vào lộ trình Software Engineering → Architecture; tập trung tư duy kiến trúc hệ thống, scalability (khác Tech Lead là không thiên về quản lý team).',
+        'role_template' => 'Developer',
+        'level_target' => 'Senior → Architecture Specialist',
+        'note' => 'Thư map vào lộ trình Software Engineering → Architecture; tập trung tư duy kiến trúc hệ thống, scalability, không thiên về quản lý team (khác Tech Lead). Đặc biệt: deep expertise trong design patterns, distributed systems, system scalability.',
         'timeline' => [
-            ['m' => '0-3', 'milestone' => 'Software Architecture fundamentals, architectural styles'],
-            ['m' => '3-6', 'milestone' => 'Distributed Systems foundations, scalability & fault tolerance analysis'],
-            ['m' => '6-12', 'milestone' => 'System design & architecture review, chuẩn hóa architecture documentation']
+            [
+                'm' => 'GĐ I',
+                'milestone' => [
+                    'Software Architecture fundamentals: SOLID principles, design patterns',
+                    'Architectural styles: Monolithic, Layered, Microservices',
+                    'Architecture Decision Records (ADR): cách viết & maintain',
+                    'System Design fundamentals: scaling, caching, database optimization',
+                    'Deliverables: ≥3 design reviews; ≥1 architecture documentation'
+                ]
+            ],
+            [
+                'm' => 'GĐ II',
+                'milestone' => [
+                    'Distributed Systems: CAP theorem, idempotency, consistency models',
+                    'Scalability patterns: load balancing, sharding, replication',
+                    'Advanced patterns: Event Sourcing, Saga pattern, Circuit Breaker',
+                    'Cloud architecture: AWS/GCP, multi-region design',
+                    'Deliverables: ≥2 system design proposals; ≥1 scalability analysis document'
+                ]
+            ],
+            [
+                'm' => 'GĐ III',
+                'milestone' => [
+                    'Architecture Specialist: ra quyết định kiến trúc cấp team/product',
+                    'Technology evaluation & trade-off analysis',
+                    'Security & reliability architecture',
+                    'Mentoring architecture thinking, design review lead',
+                    'Deliverables: ≥3 system design; ≥1 technology strategy proposal; ≥1 production implementation'
+                ]
+            ]
+        ],
+        'kpis' => [
+            [
+                'title' => 'Architecture KPIs (2026)',
+                'items' => [
+                    'Architecture review ≥ 2/tháng',
+                    'System design proposal ≥ 1/tháng',
+                    'ADR (Architecture Decision Record) ≥ 1/tháng',
+                    'Design pattern application score ≥ 4/5',
+                    'System scalability score ≥ 4/5',
+                    'Architecture documentation quality ≥ 90%'
+                ]
+            ],
+            [
+                'title' => 'Technical Impact',
+                'items' => [
+                    'Architecture mentoring ≥ 2 dev',
+                    'Optimization projects ≥ 1/quý (cost/performance)',
+                    'System reliability (uptime) ≥ 99.9%',
+                    'Design review expert (high-quality feedback)'
+                ]
+            ]
         ],
         'certs' => [
-            ['name' => 'Software Architecture & Large-Scale System Design', 'type' => 'cert'],
-            ['name' => 'System Design Masterclass', 'type' => 'cert'],
-            ['name' => 'Architecting on AWS', 'type' => 'cert'],
+            ['name' => 'System Design & Architecture (Grokking/Educative)', 'type' => 'course', 'priority' => 'immediate'],
+            // ['name' => 'AWS Certified Solutions Architect – Associate', 'type' => 'cert', 'priority' => 'immediate'],
+            ['name' => 'Domain-Driven Design (DDD) Fundamentals', 'type' => 'course', 'priority' => 'near-term'],
+            ['name' => 'TOGAF Foundation', 'type' => 'cert', 'priority' => 'near-term'],
+            // ['name' => 'AWS Certified Solutions Architect – Professional', 'type' => 'cert', 'priority' => 'mid-term'],
+            ['name' => 'GCP Professional Cloud Architect', 'type' => 'cert', 'priority' => 'mid-term'],
+            ['name' => 'Event-Driven Architecture & Microservices', 'type' => 'course', 'priority' => 'mid-term'],
+            ['name' => 'TOGAF Certified (Advanced)', 'type' => 'cert', 'priority' => 'advanced'],
+            ['name' => 'Enterprise Architecture (Zachman Framework)', 'type' => 'course', 'priority' => 'advanced']
         ],
-        'skills' => ['System & architecture-level thinking', 'Understanding architectural trade-offs', 'Scalability & fault tolerance reasoning']
+        'skills' => [
+            'Software Architecture & Design Patterns',
+            'System Design & Scalability',
+            'Distributed Systems & Microservices',
+            'Domain-Driven Design (DDD)',
+            // 'Cloud Architecture (AWS/GCP)',
+            'Data Architecture & Optimization',
+            'Performance & Reliability Engineering',
+            'Technology Evaluation & Selection',
+            'Architecture Decision Making',
+            'Enterprise Architecture Thinking',
+            'Security & Compliance Architecture'
+        ]
     ],
 [
         'name' => 'Hoàn — QA/QC Tester',
@@ -155,7 +246,7 @@ $roles = [
 
         'timeline' => [
             [
-                'm' => '0-3',
+                'm' => 'GĐ I',
                 'focus' => 'Nền tảng QA & Manual Testing',
                 'milestone' => [
                     'Nắm vững quy trình kiểm thử trong Scrum (Sprint, User Story, Acceptance Criteria)',
@@ -173,7 +264,7 @@ $roles = [
                 'cert_target' => ['ISTQB Foundation (CTFL)']
             ],
             [
-                'm' => '3-6',
+                'm' => 'GĐ II',
                 'focus' => 'Automation & API Testing',
                 'milestone' => [
                     'Xây dựng framework automation cơ bản (Cypress hoặc Selenium)',
@@ -194,7 +285,7 @@ $roles = [
                 ]
             ],
             [
-                'm' => '6-12',
+                'm' => 'GĐ III',
                 'focus' => 'Senior QA Skills & Quality Ownership',
                 'milestone' => [
                     'Automation coverage đạt ≥ 50%',
@@ -257,9 +348,9 @@ $roles = [
         'level_target' => 'Học việc → Junior (Developer)',
         'note' => 'Đang học việc; lộ trình dev có thể điều chỉnh theo tiến bộ. Bám sát map Developer : Intern → Junior.',
         'timeline' => [
-            ['m' => '0-3', 'milestone' => 'Onboarding quy trình, Git workflow, HTML/CSS/JS cơ bản'],
-            ['m' => '3-6', 'milestone' => 'Task nhỏ, PR review, REST basics, SQL cơ bản'],
-            ['m' => '6-12', 'milestone' => 'Backend/frontend foundation, unit test cơ bản, chuẩn bị lên Junior']
+            ['m' => 'GĐ I', 'milestone' => 'Onboarding quy trình, Git workflow, HTML/CSS/JS cơ bản'],
+            ['m' => 'GĐ II', 'milestone' => 'Task nhỏ, PR review, REST basics, SQL cơ bản'],
+            ['m' => 'GĐ III', 'milestone' => 'Backend/frontend foundation, unit test cơ bản, chuẩn bị lên Junior']
         ],
         'certs' => [
             ['name' => 'Git basics', 'type' => 'course'],
@@ -411,7 +502,6 @@ $vn_costs = [
             line-height: 1.5;
         }
 
-<<<<<<< Updated upstream
         /* Timeline dạng gạch đầu dòng: để nội dung dễ scan hơn */
         .timeline-milestone ul {
             margin: 0;
@@ -423,8 +513,6 @@ $vn_costs = [
             margin: 2px 0;
         }
 
-=======
->>>>>>> Stashed changes
         .role-details {
             display: grid;
             grid-template-columns: 1fr 1fr;
@@ -656,7 +744,7 @@ $vn_costs = [
                         <div class="timeline">
                             <?php foreach ($r['timeline'] as $t): ?>
                                 <div class="timeline-item">
-                                    <div class="timeline-period"><?= htmlspecialchars($t['m']) ?> tháng</div>
+                                    <div class="timeline-period"><?= htmlspecialchars($t['m']) ?></div>
                                     <div class="timeline-milestone">
                                         <?php if (is_array($t['milestone'])): ?>
                                             <ul>
@@ -691,7 +779,7 @@ $vn_costs = [
                                     <?php endforeach; ?>
                                 </div>
                             </div>
-                            <?php if (!empty($r['kpis'])): ?>
+                            <?php if (false && !empty($r['kpis'])): ?>
                                 <div class="detail-section">
                                     <h3>
                                         <span class="material-symbols-rounded">target</span>

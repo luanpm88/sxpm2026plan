@@ -91,7 +91,7 @@
                             <h3 style="font-weight: 700; color: var(--text-dark); margin-bottom: 0.5rem;">Headquarters</h3>
                             <p style="color: var(--text-gray); line-height: 1.6;">
                                 Ho Chi Minh City, Vietnam<br>
-                                Address: Tech Park, District 1<br>
+                                Address: 188 Duong So 1<br>
                                 Phone: +84 (0) 28 3824 0000
                             </p>
                         </div>

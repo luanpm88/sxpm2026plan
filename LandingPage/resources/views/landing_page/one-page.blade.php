@@ -21,7 +21,7 @@
     @include('landing_page.partials.scrum')
     @include('landing_page.partials.tech_stack')
     @include('landing_page.partials.case_studies')
-    @include('landing_page.partials.blog.r_and_d')
+    @include('landing_page.blog.r_and_d')
     @include('landing_page.partials.certifications')
     @include('landing_page.partials.pricing')
     @include('landing_page.partials.contact')

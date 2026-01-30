@@ -20,13 +20,13 @@
     <div class="container-v5">
         
         <!-- HKSpace Article -->
-        @include('landing_page.partials.blog.r_and_d.hkspace')
+        @include('landing_page.blog.r_and_d.hkspace')
 
         <!-- Divider -->
         <div style="height: 1px; background: var(--border); margin: 4rem 0;"></div>
 
         <!-- AI Knowledge Platform Article -->
-        @include('landing_page.partials.blog.r_and_d.ai')
+        @include('landing_page.blog.r_and_d.ai')
 
     </div>
 </section>

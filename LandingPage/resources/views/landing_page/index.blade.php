@@ -508,47 +508,6 @@
                         @php
                         $featured_cases = [
                             [
-                                'badge' => 'Enterprise SaaS',
-                                'badge_bg' => '#30699A',
-                                'title' => 'HKSpace: 100% Real-time Task Collaboration',
-                                'description' => 'Multi-tenant enterprise management platform with real-time collaboration. 100% of company tasks uploaded and synchronized instantly. From MVP to enterprise deployment with full data availability in 18 months.',
-                                'metrics' => [
-                                    ['value' => '100%', 'label' => 'Real-time Sync'],
-                                    ['value' => '99.9%', 'label' => 'Uptime'],
-                                    ['value' => '4 months', 'label' => 'Timeline']
-                                ],
-                                'svg_path' => 'M 20 180 Q 80 160, 100 140 T 180 80 T 280 20',
-                                'svg_points' => [
-                                    ['cx' => 20, 'cy' => 180, 'r' => 6, 'label' => 'MVP', 'x' => 20, 'y' => 195],
-                                    ['cx' => 100, 'cy' => 140, 'r' => 6, 'label' => '50%', 'x' => 100, 'y' => 155],
-                                    ['cx' => 180, 'cy' => 80, 'r' => 6, 'label' => '75%', 'x' => 180, 'y' => 95],
-                                    ['cx' => 280, 'cy' => 20, 'r' => 8, 'label' => '100%', 'x' => 280, 'y' => 35]
-                                ],
-                                'image_url' => null,
-                                'ongoing' => false,
-                            ],
-                            [
-                                'badge' => 'Artificial Intelligence',
-                                'badge_bg' => '#10b981',
-                                'title' => 'AI Knowledge Platform: 90% Time Saved',
-                                'description' => 'AI-powered knowledge management with OpenAI APIs, custom RAG pipeline, and Pinecone vector database. Processing 1,000+ documents daily with 95%+ accuracy.',
-                                'metrics' => [
-                                    ['value' => '100k+', 'label' => 'Queries/Day'],
-                                    ['value' => '95%+', 'label' => 'Accuracy'],
-                                    ['value' => '90%', 'label' => 'Time Saved']
-                                ],
-                                'svg_path' => 'M 30 160 L 90 140 L 150 100 L 210 80 L 270 30',
-                                'svg_points' => [
-                                    ['cx' => 30, 'cy' => 160, 'r' => 6, 'label' => 'Start', 'x' => 30, 'y' => 175],
-                                    ['cx' => 90, 'cy' => 140, 'r' => 6, 'label' => 'Q1', 'x' => 90, 'y' => 155],
-                                    ['cx' => 150, 'cy' => 100, 'r' => 6, 'label' => 'Q2', 'x' => 150, 'y' => 115],
-                                    ['cx' => 210, 'cy' => 80, 'r' => 6, 'label' => 'Q3', 'x' => 210, 'y' => 95],
-                                    ['cx' => 270, 'cy' => 30, 'r' => 8, 'label' => '$5M', 'x' => 270, 'y' => 45]
-                                ],
-                                'image_url' => null,
-                                'ongoing' => true,
-                            ],
-                            [
                                 'badge' => 'Education',
                                 'badge_bg' => '#8b5cf6',
                                 'title' => 'Education Platform: Scheduling Automation',
@@ -764,6 +723,92 @@
         });
     })();
     </script>
+
+    <!-- Research & Development Section -->
+    <section style="background: linear-gradient(135deg, #f8fafc 0%, #ecfdf5 100%); padding: 5rem 0;">
+        <div class="container-v5">
+            <div class="section-header">
+                <h2 class="section-title">Research & Development</h2>
+                <p class="section-subtitle">Building foundational technology for the AI era—infrastructure and intelligence layers that enable adaptive enterprise systems</p>
+            </div>
+
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 2.5rem; margin-top: 3rem;">
+                
+                <!-- HKSpace R&D Card -->
+                <a href="{{ route('landing.blog.r_and_d') }}" style="text-decoration: none; display: block; background: linear-gradient(135deg, #f0f9ff 0%, #ecfdf5 100%); border-radius: 16px; padding: 2.5rem; border: 1px solid #bfdbfe; transition: all 0.3s ease; box-shadow: 0 4px 20px rgba(15, 107, 158, 0.08);" onmouseover="this.style.transform='translateY(-8px)'; this.style.boxShadow='0 12px 40px rgba(15, 107, 158, 0.15)';" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 4px 20px rgba(15, 107, 158, 0.08)';">
+                    <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1.5rem;">
+                        <div style="background: var(--primary); width: 48px; height: 48px; border-radius: 12px; display: flex; align-items: center; justify-content: center;">
+                            <span class="material-symbols-rounded" style="color: white; font-size: 28px;">hub</span>
+                        </div>
+                        <div>
+                            <h3 style="font-size: 1.5rem; font-weight: 700; color: var(--text-dark); margin: 0;">HKSpace</h3>
+                            <p style="font-size: 0.85rem; color: var(--primary); font-weight: 600; margin: 0;">Infrastructure Foundation</p>
+                        </div>
+                    </div>
+                    
+                    <p style="color: var(--text-gray); line-height: 1.7; margin-bottom: 1.5rem; font-size: 0.95rem;">
+                        Architectural substrate for adaptive enterprise systems. A general-purpose distributed platform abstracting multi-tenancy, real-time synchronization, and composable workflows—enabling systems that evolve with organizational needs.
+                    </p>
+
+                    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin-bottom: 1.5rem;">
+                        <div style="background: white; border-radius: 8px; padding: 1rem; border: 1px solid #d1e7f5;">
+                            <p style="color: var(--text-dark); font-weight: 600; font-size: 0.85rem; margin-bottom: 0.25rem;">Composable</p>
+                            <p style="color: var(--text-gray); font-size: 0.8rem; margin: 0;">Domain-agnostic layers</p>
+                        </div>
+                        <div style="background: white; border-radius: 8px; padding: 1rem; border: 1px solid #d1e7f5;">
+                            <p style="color: var(--text-dark); font-weight: 600; font-size: 0.85rem; margin-bottom: 0.25rem;">AI-Native</p>
+                            <p style="color: var(--text-gray); font-size: 0.8rem; margin: 0;">Built for intelligence</p>
+                        </div>
+                    </div>
+
+                    <div style="display: flex; align-items: center; gap: 0.5rem; color: var(--primary); font-weight: 600;">
+                        <span>Explore Research</span>
+                        <span class="material-symbols-rounded" style="font-size: 20px;">arrow_forward</span>
+                    </div>
+                </a>
+
+                <!-- AI Knowledge Platform R&D Card -->
+                <a href="{{ route('landing.blog.r_and_d') }}" style="text-decoration: none; display: block; background: linear-gradient(135deg, #fef3c7 0%, #fde68a 100%); border-radius: 16px; padding: 2.5rem; border: 1px solid #fcd34d; transition: all 0.3s ease; box-shadow: 0 4px 20px rgba(217, 119, 6, 0.08);" onmouseover="this.style.transform='translateY(-8px)'; this.style.boxShadow='0 12px 40px rgba(217, 119, 6, 0.15)';" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 4px 20px rgba(217, 119, 6, 0.08)';">
+                    <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1.5rem;">
+                        <div style="background: #d97706; width: 48px; height: 48px; border-radius: 12px; display: flex; align-items: center; justify-content: center;">
+                            <span class="material-symbols-rounded" style="color: white; font-size: 28px;">auto_awesome</span>
+                        </div>
+                        <div>
+                            <h3 style="font-size: 1.5rem; font-weight: 700; color: var(--text-dark); margin: 0;">AI Platform</h3>
+                            <p style="font-size: 0.85rem; color: #d97706; font-weight: 600; margin: 0;">Cognitive Substrate</p>
+                        </div>
+                    </div>
+                    
+                    <p style="color: var(--text-gray); line-height: 1.7; margin-bottom: 1.5rem; font-size: 0.95rem;">
+                        Long-term research into intelligent systems as enterprise force multipliers. Semantic understanding, grounded reasoning, and autonomous optimization—AI deeply integrated with distributed infrastructure rather than bolt-on features.
+                    </p>
+
+                    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin-bottom: 1.5rem;">
+                        <div style="background: white; border-radius: 8px; padding: 1rem; border: 1px solid #fde68a;">
+                            <p style="color: var(--text-dark); font-weight: 600; font-size: 0.85rem; margin-bottom: 0.25rem;">Semantic</p>
+                            <p style="color: var(--text-gray); font-size: 0.8rem; margin: 0;">Vector understanding</p>
+                        </div>
+                        <div style="background: white; border-radius: 8px; padding: 1rem; border: 1px solid #fde68a;">
+                            <p style="color: var(--text-dark); font-weight: 600; font-size: 0.85rem; margin-bottom: 0.25rem;">Adaptive</p>
+                            <p style="color: var(--text-gray); font-size: 0.8rem; margin: 0;">Context-aware</p>
+                        </div>
+                    </div>
+
+                    <div style="display: flex; align-items: center; gap: 0.5rem; color: #d97706; font-weight: 600;">
+                        <span>Explore Research</span>
+                        <span class="material-symbols-rounded" style="font-size: 20px;">arrow_forward</span>
+                    </div>
+                </a>
+
+            </div>
+
+            <div style="text-align: center; margin-top: 3rem;">
+                <p style="color: var(--text-gray); font-size: 0.95rem; line-height: 1.7; max-width: 800px; margin: 0 auto; font-style: italic;">
+                    These initiatives represent complementary research directions: HKSpace provides the infrastructure substrate, while AI provides the cognitive layer. Together, they explore what becomes possible when intelligent systems are built as native components of enterprise architecture.
+                </p>
+            </div>
+        </div>
+    </section>
 
     <!-- Client Testimonials -->
     <section class="opacity-75" style="background: var(--secondary-bg);">

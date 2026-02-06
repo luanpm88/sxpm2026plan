@@ -81,7 +81,7 @@
                 'title' => 'Education Platform: Scheduling Automation',
                 'industry' => 'Education',
                 'challenge' => 'Manage schedules, class assignments, learning reports, and attendance for 10,000+ students. Manual scheduling took 3 weeks per semester with frequent conflicts.',
-                'solution' => 'Built an AI-powered scheduling engine, analytics dashboard, and automated attendance. Applied ML to reduce conflicts and balance workloads. Added real-time transcripts, parent portal, and mobile notifications.',
+                'solution' => 'Delivered a comprehensive operations platform using a PHP-based API stack, focused on reliability and scale rather than heavy AI. Implemented flexible timetable generation, workload balancing rules, automated attendance, and reporting. Added high-availability infrastructure with PostgreSQL load balancing, caching, and resilient queues to handle peak enrollment and scheduling periods.',
                 'results' => [
                     'Scheduling time: 3 weeks → 2 days',
                     'Data accuracy 99.9%',
@@ -89,7 +89,7 @@
                     'Adoption 98%',
                     '500+ hours/semester saved'
                 ],
-                'tech' => 'Python, ML/AI, PostgreSQL, React, React Native, API REST'
+                'tech' => 'PHP, REST API, PostgreSQL (Load Balancing), Redis, React, React Native'
             ],
             [
                 'title' => 'Storage Management System',

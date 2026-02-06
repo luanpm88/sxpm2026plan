@@ -85,7 +85,7 @@ require_once '../config.php';
                 Workshop Use Case: Add a Payment Gateway
             </div>
             <div class="slide-subtitle">
-                HKCore Cashier – design-first integration
+                Emotsy Cashier – design-first integration
             </div>
         </div>
 

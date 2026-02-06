@@ -112,7 +112,7 @@ require_once '../config.php';
                 <div class="card">
                     <h4 style="color:#f97316;">❌ Not this</h4>
                     <div class="prompt-box dont">
-                        "Code me a new payment gateway for HKCore Cashier." 
+                        "Code me a new payment gateway for Emotsy Cashier." 
                         <br><br>
                         This invites AI to redesign parts of the system, introduce coupling, or change core flows without review.
                     </div>

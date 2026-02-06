@@ -1,7 +1,7 @@
 <?php
 // Configuration for the presentation
 define('PRESENTATION_TITLE', 'Định hướng phát triển Bộ phận Sản xuất Phần mềm 2026');
-define('TOTAL_SLIDES', 30);
+define('TOTAL_SLIDES', 38);
 
 // Slide titles
 $slide_titles = [
@@ -35,7 +35,15 @@ $slide_titles = [
     27 => 'Thiết kế: Security Posture & Risk Mitigation',
     28 => 'HKIncotech Landing Page - Nội dung Website',
     29 => 'Nguồn lực: Vị trí, kỹ năng & Chứng chỉ theo SCRUM',
-    30 => 'Nguồn lực: Phân hóa nguồn lực hiện tại và chứng chỉ đề xuất'
+    30 => 'Nguồn lực: Phân hóa nguồn lực hiện tại và chứng chỉ đề xuất',
+    31 => 'Embracing AI, the HKCore Way',
+    32 => 'AI in Development: Benefits & Risks',
+    33 => 'Design-First Control Loop',
+    34 => 'Workshop Use Case: Payment Gateway',
+    35 => 'Payment System Architecture Snapshot',
+    36 => 'AI Prompting with Constraints',
+    37 => 'Workshop Flow & Roles',
+    38 => 'Principles & Takeaways'
 ];
 
 // Get current slide number from URL

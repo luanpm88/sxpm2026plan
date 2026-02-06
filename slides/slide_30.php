@@ -4,6 +4,54 @@ requireAuth(); // Check authentication
 require_once '../config.php';
 $roles = [
     [
+        'name' => 'Luân Phạm — Head of Software / CTO Track',
+        'icon' => 'workspace_premium',
+        'role_template' => 'Senior Engineer',
+        'level_target' => 'Head of Software Department',
+        'note' => 'Senior software engineer (10+ years). MSc in Computer Science. Định hướng: dẫn dắt toàn bộ bộ phận phát triển phần mềm, chịu trách nhiệm kiến trúc, chất lượng, chiến lược kỹ thuật và năng lực đội ngũ.',
+        'timeline' => [
+            [
+                'm' => 'GĐ I',
+                'milestone' => [
+                    'Thiết lập technical vision 12–24 tháng cho toàn bộ bộ phận',
+                    'Chuẩn hóa architecture baseline & review standards',
+                    'Governance cho AI usage, security, cost & data safety'
+                ]
+            ],
+            [
+                'm' => 'GĐ II',
+                'milestone' => [
+                    'Kiến trúc core: scalability, reliability, observability',
+                    'Chuẩn hóa quality gates, CI/CD, release process',
+                    'Mentoring Tech Leads & kiến trúc sư nội bộ'
+                ]
+            ],
+            [
+                'm' => 'GĐ III',
+                'milestone' => [
+                    'Technical strategy 3–5 năm, roadmap cấp bộ phận',
+                    'Portfolio alignment & cross-team architecture governance',
+                    'Maturity model: security, performance, AI integration'
+                ]
+            ]
+        ],
+        'certs' => [
+            ['name' => 'MSc Computer Science', 'type' => 'cert'],
+            // ['name' => 'AWS Solutions Architect (Professional)', 'type' => 'cert'],
+            ['name' => 'TOGAF Foundation', 'type' => 'cert'],
+            ['name' => 'Executive Leadership Program', 'type' => 'course']
+        ],
+        'skills' => [
+            'Technical Strategy & Governance',
+            'Architecture Decision Making',
+            'Engineering Quality & Reliability',
+            'AI Integration Policy',
+            'Security & Risk Management',
+            'Leadership & Team Development',
+            'Cross-team Alignment'
+        ]
+    ],
+    [
         'name' => 'Phong — BA → PO',
         'icon' => 'analytics',
         'role_template' => 'Developer/BA',

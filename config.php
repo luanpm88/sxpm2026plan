@@ -36,14 +36,14 @@ $slide_titles = [
     28 => 'HKIncotech Landing Page - Nội dung Website',
     29 => 'Nguồn lực: Vị trí, kỹ năng & Chứng chỉ theo SCRUM',
     30 => 'Nguồn lực: Phân hóa nguồn lực hiện tại và chứng chỉ đề xuất',
-    31 => 'Embracing AI, the Emotsy Way',
-    32 => 'AI in Development: Benefits & Risks',
-    33 => 'Design-First Control Loop',
-    34 => 'Workshop Use Case: Payment Gateway',
-    35 => 'Payment System Architecture Snapshot',
-    36 => 'AI Prompting with Constraints',
-    37 => 'Workshop Flow & Roles',
-    38 => 'Principles & Takeaways'
+    31 => 'Workshop #1: Embracing AI, the Emotsy Way',
+    32 => 'Workshop #1: AI in Development: Benefits & Risks',
+    33 => 'Workshop #1: Design-First Control Loop',
+    34 => 'Workshop #1: Workshop Use Case: Payment Gateway',
+    35 => 'Workshop #1: Payment System Architecture Snapshot',
+    36 => 'Workshop #1: AI Prompting with Constraints',
+    37 => 'Workshop #1: Workshop Flow & Roles',
+    38 => 'Workshop #1: Principles & Takeaways'
 ];
 
 // Get current slide number from URL

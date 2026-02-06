@@ -546,6 +546,25 @@
                                 'image_url' => null,
                                 'ongoing' => true,
                             ]
+                            ,[
+                                'badge' => 'Enterprise Management',
+                                'badge_bg' => '#10b981',
+                                'title' => 'ERP Management System',
+                                'description' => 'Unified accounting, procurement, inventory, e-commerce sync, and operations. Real-time consolidation, workflow automation, and BI dashboards for 100+ employees.',
+                                'metrics' => [
+                                    ['value' => '3d → 1m', 'label' => 'Consolidation'],
+                                    ['value' => '2h → 5m', 'label' => 'Reports'],
+                                    ['value' => '95%', 'label' => 'Adoption']
+                                ],
+                                'svg_path' => 'M 30 160 Q 110 120, 170 90 Q 230 60, 270 35',
+                                'svg_points' => [
+                                    ['cx' => 30, 'cy' => 160, 'r' => 6, 'label' => 'Manual', 'x' => 30, 'y' => 175],
+                                    ['cx' => 170, 'cy' => 90, 'r' => 6, 'label' => 'Unified', 'x' => 170, 'y' => 105],
+                                    ['cx' => 270, 'cy' => 35, 'r' => 8, 'label' => '1m', 'x' => 270, 'y' => 50]
+                                ],
+                                'image_url' => null,
+                                'ongoing' => true,
+                            ]
                         ];
                         @endphp
                         
@@ -603,6 +622,10 @@
                                         <img src="{{ asset('img/store_warehouse.svg') }}" width="100" />
                                         <img src="{{ asset('img/store_barcode.svg') }}" width="100" class="mx-3" />
                                         <img src="{{ asset('img/store_trolley.svg') }}" width="100" />
+                                    @elseif ($case['badge'] === 'Enterprise Management')
+                                        <img src="{{ asset('img/erp_apartment.svg') }}" width="100" />
+                                        {{-- <img src="{{ asset('img/store_barcode.svg') }}" width="100" class="mx-3" />
+                                        <img src="{{ asset('img/store_trolley.svg') }}" width="100" /> --}}
                                     @else
                                         <svg viewBox="0 0 300 200" style="width: 100%; max-width: 300px;">
                                             <!-- Growth Curve -->

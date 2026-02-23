@@ -87,7 +87,7 @@ require_once '../config.php';
                 Workshop Flow & Roles
             </div>
             <div class="slide-subtitle">
-                Hands-on session focused on design compliance and AI implementation
+                Hands-on session focused on contract compliance and AI implementation
             </div>
         </div>
 
@@ -96,37 +96,37 @@ require_once '../config.php';
                 <div class="phase">
                     <div class="phase-title">1. Design Brief</div>
                     <div class="phase-time">10–15 min</div>
-                    <div class="phase-desc">Review interface design, domain rules, and constraints. Align on what cannot change.</div>
+                    <div class="phase-desc">Review two interfaces, method signatures, status mapping, and scope boundaries.</div>
                 </div>
                 <div class="phase">
                     <div class="phase-title">2. Interaction Mapping</div>
                     <div class="phase-time">15–20 min</div>
-                    <div class="phase-desc">Walk through the sequence diagram and expected behaviors in edge cases.</div>
+                    <div class="phase-desc">Walk through single flow verify($email) and bulk flow bulkSubmit() → bulkCheck().</div>
                 </div>
                 <div class="phase">
                     <div class="phase-title">3. AI Implementation</div>
                     <div class="phase-time">25–30 min</div>
-                    <div class="phase-desc">Use AI to implement the gateway strictly within the defined boundaries.</div>
+                    <div class="phase-desc">Use AI to implement new Reoon class only in provider layer, no core changes.</div>
                 </div>
                 <div class="phase">
                     <div class="phase-title">4. Verification</div>
                     <div class="phase-time">15–20 min</div>
-                    <div class="phase-desc">Run tests, verify compliance, and refactor for clarity if needed.</div>
+                    <div class="phase-desc">Run focused tests and validate interface compliance, callback behavior, and mapping.</div>
                 </div>
             </div>
 
             <div class="roles">
                 <div class="role-card">
                     <div class="role-title">Design Owner</div>
-                    <div class="role-desc">Defines interface, constraints, and acceptance criteria.</div>
+                    <div class="role-desc">Defines contracts, constraints, and acceptance criteria.</div>
                 </div>
                 <div class="role-card">
                     <div class="role-title">AI Driver</div>
-                    <div class="role-desc">Prompts AI with design artifacts and implements within scope.</div>
+                    <div class="role-desc">Prompts AI with contracts + flow artifacts and implements within scope.</div>
                 </div>
                 <div class="role-card">
                     <div class="role-title">Verifier</div>
-                    <div class="role-desc">Validates tests, checks compliance, and reviews code quality.</div>
+                    <div class="role-desc">Validates tests, checks status mapping compliance, and reviews code quality.</div>
                 </div>
             </div>
         </div>

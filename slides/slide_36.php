@@ -90,21 +90,21 @@ require_once '../config.php';
                 <div class="card">
                     <h4 style="color:#10b981;">✅ Do this</h4>
                     <div class="prompt-box do">
-                        "Implement NewGateway that conforms to PaymentGatewayInterface. Do not modify core modules. Use the provided interaction diagram and unit tests. Ensure getCheckoutUrl(), supportsAutoBilling(), autoCharge(), verify(), allowManualReviewingOfTransaction(), getMinimumChargeAmount(), getMethodTitle(), getMethodInfo() comply with existing behavior. Output only the new gateway implementation and minimal test updates if needed."
+                        "Implement Reoon verification provider class that conforms to VerifyInterface and BulkVerifyInterface. Do not modify core modules. Single flow: verify($email). Bulk flow: bulkSubmit(Builder $subscriberQuery) + bulkCheck(string $token, Closure $doneCallback, Closure $waitCallback). Keep status mapping explicit and safe. Output only provider class + focused tests."
                     </div>
 
                     <div class="artifact-grid">
                         <div class="artifact">
                             <span class="material-symbols-rounded">description</span>
-                            <div class="artifact-title">Interface Design</div>
+                            <div class="artifact-title">Interface Contract</div>
                         </div>
                         <div class="artifact">
                             <span class="material-symbols-rounded">device_hub</span>
-                            <div class="artifact-title">Sequence Diagram</div>
+                            <div class="artifact-title">Callback Flow</div>
                         </div>
                         <div class="artifact">
                             <span class="material-symbols-rounded">fact_check</span>
-                            <div class="artifact-title">Unit Tests</div>
+                            <div class="artifact-title">Status Mapping Tests</div>
                         </div>
                     </div>
                 </div>
@@ -112,13 +112,13 @@ require_once '../config.php';
                 <div class="card">
                     <h4 style="color:#f97316;">❌ Not this</h4>
                     <div class="prompt-box dont">
-                        "Code me a new payment gateway for HKCore Cashier." 
+                        "Build email verification quickly, do whatever is needed." 
                         <br><br>
-                        This invites AI to redesign parts of the system, introduce coupling, or change core flows without review.
+                        This invites AI to redesign workflow, skip interface contracts, and break callback behavior.
                     </div>
 
                     <div style="margin-top: 18px; background:#fff7ed; border:1px solid #fed7aa; border-radius:10px; padding:14px; color:#9a3412; line-height:1.6;">
-                        Risk: uncontrolled architecture drift, regression, and harder maintenance.
+                        Risk: uncontrolled architecture drift, verification inconsistency, and harder maintenance.
                     </div>
                 </div>
             </div>

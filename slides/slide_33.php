@@ -93,22 +93,22 @@ require_once '../config.php';
                 <div class="step-card">
                     <div class="step-index">1</div>
                     <div class="step-title">Define Interfaces</div>
-                    <div class="step-desc">PaymentGatewayInterface + InvoiceInterface are the contract: getCheckoutUrl(), supportsAutoBilling(), autoCharge(), verify(), getMethodTitle(), getMethodInfo(), allowManualReviewingOfTransaction(), getMinimumChargeAmount().</div>
+                    <div class="step-desc">Lock two purposes and contracts: <strong>VerifyInterface</strong> for single check <em>verify($email)</em>, and <strong>BulkVerifyInterface</strong> for list flow <em>bulkSubmit(Builder $subscriberQuery)</em> + <em>bulkCheck(string $token, Closure $doneCallback, Closure $waitCallback)</em>.</div>
                 </div>
                 <div class="step-card">
                     <div class="step-index">2</div>
                     <div class="step-title">Model Interactions</div>
-                    <div class="step-desc">Sequence across Invoice, Transaction, PaymentMethod, Gateway service, and cron autoCharge flow.</div>
+                    <div class="step-desc">Keep one simple flow: single check via <em>verify($email)</em>, bulk check via <em>bulkSubmit()</em> then polling <em>bulkCheck()</em> with done/wait callbacks.</div>
                 </div>
                 <div class="step-card">
                     <div class="step-index">3</div>
                     <div class="step-title">Write Tests</div>
-                    <div class="step-desc">Unit tests express compliance and expected behavior. Tests are the truth.</div>
+                    <div class="step-desc">Tests validate status mapping and callback behavior only for the new provider. Keep tests focused, fast, and aligned to interface contracts.</div>
                 </div>
                 <div class="step-card">
                     <div class="step-index">4</div>
                     <div class="step-title">AI Implementation</div>
-                    <div class="step-desc">AI generates code strictly within the design. No core changes. No regression.</div>
+                    <div class="step-desc">AI implements <strong>Reoon</strong> class inside existing provider layer only. No core module changes. Same behavior, new provider.</div>
                 </div>
             </div>
 

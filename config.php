@@ -1,7 +1,7 @@
 <?php
 // Configuration for the presentation
 define('PRESENTATION_TITLE', 'Định hướng phát triển Bộ phận Sản xuất Phần mềm 2026');
-define('TOTAL_SLIDES', 38);
+define('TOTAL_SLIDES', 39);
 
 // Slide titles
 $slide_titles = [
@@ -36,14 +36,15 @@ $slide_titles = [
     28 => 'HKIncotech Landing Page - Nội dung Website',
     29 => 'Nguồn lực: Vị trí, kỹ năng & Chứng chỉ theo SCRUM',
     30 => 'Nguồn lực: Phân hóa nguồn lực hiện tại và chứng chỉ đề xuất',
-    31 => 'Workshop #1: Embracing AI, the HKCore Way',
+    31 => 'Workshop #1: Embracing AI, the Emotsy Way',
     32 => 'Workshop #1: AI in Development: Benefits & Risks',
     33 => 'Workshop #1: Design-First Control Loop',
-    34 => 'Workshop #1: Workshop Use Case: Payment Gateway',
-    35 => 'Workshop #1: Payment System Architecture Snapshot',
+    34 => 'Workshop #1: Workshop Use Case: Email Verification Service',
+    35 => 'Workshop #1: Email Verification Architecture Snapshot',
     36 => 'Workshop #1: AI Prompting with Constraints',
     37 => 'Workshop #1: Workshop Flow & Roles',
-    38 => 'Workshop #1: Principles & Takeaways'
+    38 => 'Workshop #1: Principles & Takeaways',
+    39 => 'Workshop #1: Practice Playbook: Add Reoon Fast & Safely'
 ];
 
 // Get current slide number from URL

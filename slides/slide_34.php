@@ -81,11 +81,11 @@ require_once '../config.php';
     <div class="slide-container">
         <div class="slide-header">
             <div class="slide-title">
-                <span class="material-symbols-rounded">payments</span>
-                Workshop Use Case: Add a Payment Gateway
+                <span class="material-symbols-rounded">mark_email_read</span>
+                Workshop Use Case: Add an Email Verification Service
             </div>
             <div class="slide-subtitle">
-                HKCore Cashier – design-first integration
+                Design-first integration in current app architecture
             </div>
         </div>
 
@@ -97,7 +97,7 @@ require_once '../config.php';
                         Scenario
                     </div>
                     <p style="color:#4b5563; line-height:1.7; font-size:0.98rem;">
-                        We add a new payment gateway plugin that implements <strong>PaymentGatewayInterface</strong> without touching core modules. The implementation must comply 100% with existing behavior and contracts.
+                        We add one new provider class for <strong>Reoon</strong>. It must conform to <strong>VerifyInterface</strong> (single email verification) and <strong>BulkVerifyInterface</strong> (bulk list verification) without touching core modules.
                     </p>
 
                     <div class="tag">
@@ -106,9 +106,9 @@ require_once '../config.php';
                     </div>
 
                     <ul class="list">
-                        <li>Provide interface design aligned to <strong>PaymentGatewayInterface</strong></li>
-                        <li>Sequence diagram: <em>getCheckoutUrl()</em> → user payment → <em>verify()</em> transaction</li>
-                        <li>Unit tests covering <em>supportsAutoBilling()</em>, <em>autoCharge()</em>, <em>allowManualReviewingOfTransaction()</em>, <em>getMinimumChargeAmount()</em>, <em>getMethodTitle()</em>, <em>getMethodInfo()</em></li>
+                        <li>Single purpose: <em>verify($email)</em> returns mapped verification status</li>
+                        <li>Bulk purpose: <em>bulkSubmit(Builder $subscriberQuery)</em> + <em>bulkCheck(string $token, Closure $doneCallback, Closure $waitCallback)</em></li>
+                        <li>Unit tests focus on status mapping, callback flow, and provider metadata methods</li>
                     </ul>
                 </div>
 
@@ -119,9 +119,9 @@ require_once '../config.php';
                     </div>
                     <ul class="list">
                         <li class="constraint">No changes to CORE modules</li>
-                        <li class="constraint">Zero regression risk (no re-testing entire system)</li>
-                        <li class="constraint">AI must follow interface and tests, not invent architecture</li>
-                        <li class="constraint">Result must be maintainable at zero additional cost</li>
+                        <li class="constraint">No architecture redesign</li>
+                        <li class="constraint">AI must follow interfaces and tests</li>
+                        <li class="constraint">Keep implementation small and maintainable</li>
                     </ul>
 
                     <div class="tag" style="background:#ecfeff;border-color:#a5f3fc;color:#0e7490; margin-top:16px;">

@@ -76,7 +76,7 @@ require_once '../config.php';
                 Principles & Takeaways
             </div>
             <div class="slide-subtitle">
-                Professional, simple, and repeatable best practice
+                Professional, simple, and repeatable workshop practice
             </div>
         </div>
 
@@ -87,14 +87,14 @@ require_once '../config.php';
                     <ul class="list">
                         <li>Human-led design is non‑negotiable</li>
                         <li>AI is a tool, not a decision maker</li>
-                        <li>Interfaces and tests are our contracts</li>
-                        <li>Compliance beats creativity in core systems</li>
+                        <li>Two interface purposes stay clear: single verify + bulk verify</li>
+                        <li>Contract compliance beats creativity in core systems</li>
                     </ul>
                 </div>
                 <div class="card">
                     <h4 style="color:#16a34a;">What the team gains</h4>
                     <ul class="list">
-                        <li>Faster delivery without architecture drift</li>
+                        <li>Faster provider integration without architecture drift</li>
                         <li>Higher confidence in changes</li>
                         <li>Cleaner, more maintainable code</li>
                         <li>Better collaboration across teams and roles</li>
@@ -103,7 +103,7 @@ require_once '../config.php';
             </div>
 
             <div class="quote">
-                “Adding a feature is not an excuse to grow messy code. It is a chance to strengthen design and make the system cleaner than before.”
+                “One new provider class, same interfaces, same flow: fast delivery with AI and stable architecture.”
             </div>
         </div>
     </div>

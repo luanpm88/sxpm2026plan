@@ -1,0 +1,55 @@
+---
+config:
+    look: handDrawn
+    layout: elk
+---
+graph LR
+    subgraph Awareness["🎯 AWARENESS STAGE"]
+        HomePage["🏠 Homepage<br/>Hero Section<br/>12+ Years | 50+ Projects<br/>99.99% SLA"]
+    end
+    
+    subgraph Interest["💡 INTEREST & EDUCATION"]
+        Services["🔧 Services<br/>4 Core Offerings<br/>4 Service Cards"]
+        TechStack["💻 Tech Stack<br/>8 Tech Categories<br/>Enterprise-Grade"]
+        SCRUM["⚙️ SCRUM Process<br/>6-Step Methodology<br/>Transparency Benefits"]
+        Scaling["📈 Scaling Roadmap<br/>6 Scaling Phases<br/>0 to 100M Users"]
+        CaseStudies["🎯 Case Studies<br/>3-5 Success Stories<br/>Proof of Results"]
+    end
+    
+    subgraph Consideration["🤔 CONSIDERATION"]
+        Pricing["💰 Pricing Page<br/>3 Plans Breakdown<br/>Feature Comparison"]
+        Certifications["🏆 Certifications<br/>6 Compliance Certs<br/>4 Cloud Certifications"]
+        AboutUs["📚 About Us<br/>Company Story<br/>Mission & Values"]
+    end
+    
+    subgraph Decision["✅ DECISION & ACTION"]
+        Contact["📧 Contact Form<br/>7 Query Fields<br/>Lead Capture"]
+        RFQ["📋 Request Quote<br/>Custom Pricing<br/>Consultation"]
+    end
+    
+    HomePage -->|"View Services"| Services
+    HomePage -->|"Free Consultation"| Contact
+    
+    Services -->|"View Details"| TechStack
+    Services -->|"Technical Interest"| SCRUM
+    
+    Interest -->|"Explore Methodology"| SCRUM
+    Interest -->|"Infrastructure Planning"| Scaling
+    Interest -->|"Proof of Capability"| CaseStudies
+    
+    Interest -->|"Self-Assessment"| Pricing
+    Interest -->|"Trust Building"| Certifications
+    Interest -->|"Company Background"| AboutUs
+    
+    Consideration -->|"Ready to Engage"| Contact
+    
+    Contact -->|"Form Submission"| RFQ
+    RFQ -->|"Sales Process"| Conversion["🎉 CONVERSION<br/>Project Agreement<br/>Kickoff Call"]
+    
+    style Awareness fill:#0f6b9e,color:#fff
+    style Interest fill:#10b981,color:#fff
+    style Consideration fill:#f59e0b,color:#fff
+    style Decision fill:#ef4444,color:#fff
+    style Conversion fill:#059669,color:#fff
+    style Contact fill:#dc2626,color:#fff,stroke:#991b1b,stroke-width:3px
+    style RFQ fill:#ea580c,color:#fff,stroke:#7c2d12,stroke-width:3px

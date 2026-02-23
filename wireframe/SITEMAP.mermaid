@@ -1,0 +1,61 @@
+---
+config:
+    look: handDrawn
+    layout: elk
+---
+graph TD
+    A["🏠 HOMEPAGE<br/>(/) - Entry Point<br/>Engine: Credibility +<br/>Services Preview"] 
+    
+    A -->|CTA: Free<br/>Consultation| Contact["📧 CONTACT<br/>(/contact)<br/>Lead Capture<br/>7 Form Fields"]
+    
+    A -->|"View Services<br/>Button"| Services["🔧 SERVICES<br/>(/services)<br/>4 Core Services<br/>Detailed Offerings"]
+    
+    A -->|"Service Cards<br/>Preview"| CaseStudies["🎯 CASE STUDIES<br/>(/case-studies)<br/>Proof of Results<br/>3-5 Success Stories"]
+    
+    Services -->|"View Details<br/>Link"| TechStack["💻 TECH STACK<br/>(/tech-stack)<br/>Tech Credibility<br/>8 Categories"]
+    
+    Services -->|"CTA: Consult<br/>Services"| Contact
+    
+    B["📚 ABOUT US<br/>(/about-us)<br/>Trust Building<br/>Company Story +<br/>Values"]
+    
+    A -->|"Header Nav"| B
+    
+    C["⚙️ SCRUM PROCESS<br/>(/scrum)<br/>Methodology<br/>6-Step Process +<br/>Benefits"]
+    
+    A -->|"Header Nav"| C
+    
+    C -->|"CTA: Consult<br/>SCRUM Process"| Contact
+    
+    D["📈 SCALING<br/>(/scaling)<br/>Infrastructure Roadmap<br/>6 Scaling Phases"]
+    
+    A -->|"Header Nav"| D
+    
+    D -->|"CTA: Scaling<br/>Consultation"| Contact
+    
+    E["💰 PRICING<br/>(/pricing)<br/>Price Transparency<br/>3 Plans + Comparison"]
+    
+    A -->|"Header Nav"| E
+    
+    E -->|"CTA: Get<br/>Pricing Consultation"| Contact
+    
+    F["🏆 CERTIFICATIONS<br/>(/certifications)<br/>Compliance Proof<br/>6 Compliance +<br/>4 Cloud Certs"]
+    
+    A -->|"Header Nav"| F
+    
+    F -->|"CTA: Verify<br/>Credentials"| Contact
+    
+    G["🔬 R&D BLOG<br/>(/blog/r_and_d)<br/>Thought Leadership<br/>HKSpace + AI Platform"]
+    
+    A -->|"Header Nav"| G
+    
+    style A fill:#0f6b9e,color:#fff,stroke:#059669,stroke-width:3px
+    style Contact fill:#ef4444,color:#fff,stroke:#dc2626,stroke-width:2px
+    style Services fill:#10b981,color:#fff,stroke:#059669,stroke-width:2px
+    style CaseStudies fill:#3b82f6,color:#fff,stroke:#2563eb,stroke-width:2px
+    style TechStack fill:#8b5cf6,color:#fff,stroke:#7c3aed,stroke-width:2px
+    style B fill:#06b6d4,color:#fff,stroke:#0891b2,stroke-width:2px
+    style C fill:#f59e0b,color:#fff,stroke:#d97706,stroke-width:2px
+    style D fill:#ec4899,color:#fff,stroke:#be185d,stroke-width:2px
+    style E fill:#14b8a6,color:#fff,stroke:#0d9488,stroke-width:2px
+    style F fill:#6366f1,color:#fff,stroke:#4f46e5,stroke-width:2px
+    style G fill:#a855f7,color:#fff,stroke:#9333ea,stroke-width:2px

@@ -1,0 +1,68 @@
+---
+config:
+    look: handDrawn
+---
+graph TB
+    subgraph Brand["🎯 BRAND POSITIONING<br/>Enterprise Trusted Partner<br/>12+ Years | 50+ Projects"]
+        BP["Build complex systems with<br/>transparency & excellence"]
+    end
+    
+    subgraph Awareness["📢 AWARENESS MESSAGING"]
+        HM1["Homepage: Heroes<br/>Enterprise + Partner"]
+        HM2["Features: Capabilities<br/>SaaS + AI + SCRUM"]
+        HM3["Stats: Credibility<br/>12+ Years | 50+ Projects | 99.99%"]
+    end
+    
+    subgraph Interest["💡 INTEREST MESSAGING"]
+        SM1["Services: 4 Core Offerings<br/>Clear Value Proposition"]
+        SM2["SCRUM: Transparency<br/>30-50% Faster Delivery"]
+        SM3["TechStack: Innovation<br/>Enterprise-Grade Tech"]
+        SM4["Scaling: Growth Ready<br/>0 to 100M Users"]
+        SM5["Cases: Proof<br/>3-5 Success Stories"]
+    end
+    
+    subgraph Consideration["🤔 CONSIDERATION MESSAGING"]
+        CM1["Pricing: Transparent<br/>3 Plans | No Hidden Fees"]
+        CM2["Certifications: Compliance<br/>ISO 27001 | SOC 2 | GDPR"]
+        CM3["About: Trust<br/>Company Story | Values"]
+        CM4["Blog: Expertise<br/>Thought Leadership"]
+    end
+    
+    subgraph Decision["✅ DECISION MESSAGING"]
+        DM1["Contact: Ready<br/>Multiple CTAs on Every Page"]
+        DM2["Value Summary<br/>What We Do + Why Us"]
+        DM3["Call to Action<br/>Consultation | Quote | Demo"]
+    end
+    
+    subgraph Conversion["🎉 CONVERSION MESSAGING"]
+        CONV["Welcome Email<br/>Next Steps<br/>Schedule Call"]
+    end
+    
+    Brand --> Awareness
+    
+    Awareness --> Interest
+    Interest --> Consideration
+    Consideration --> Decision
+    Decision --> Conversion
+    
+    HM1 --> SM1
+    HM2 --> SM1
+    HM3 --> CM2
+    
+    SM1 -.Discover.-> Consideration
+    SM2 -.Learn.-> Consideration
+    SM3 -.Evaluate.-> Consideration
+    SM4 -.Plan.-> Consideration
+    SM5 -.Trust.-> Consideration
+    
+    CM1 --> Decision
+    CM2 --> Decision
+    CM3 --> Decision
+    CM4 --> Decision
+    
+    style Brand fill:#0f6b9e,color:#fff,stroke:#059669,stroke-width:3px
+    style Awareness fill:#10b981,color:#fff
+    style Interest fill:#3b82f6,color:#fff
+    style Consideration fill:#f59e0b,color:#fff
+    style Decision fill:#ec4899,color:#fff
+    style Conversion fill:#059669,color:#fff,stroke:#047857,stroke-width:3px

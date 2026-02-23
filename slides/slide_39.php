@@ -129,6 +129,13 @@ require_once '../config.php';
             margin-top: 10px;
         }
 
+        .screenshot-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 14px;
+            margin-top: 10px;
+        }
+
         .screenshot-img {
             width: 100%;
             height: auto;
@@ -209,6 +216,12 @@ require_once '../config.php';
             align-items: center;
             justify-content: center;
             cursor: pointer;
+        }
+
+        @media (max-width: 1100px) {
+            .screenshot-grid {
+                grid-template-columns: 1fr;
+            }
         }
     </style>
 </head>
@@ -375,16 +388,31 @@ Then provide the exact command list to rerun validation locally.</div>
                 <div class="step-goal">Now open the app and verify the new verification service works across relevant flows. Admin or customer can directly add and use the new verification service on the platform without any additional code changes.</div>
 
                 <div class="label output"><span class="material-symbols-rounded" style="font-size:14px;">image</span>Screenshot evidence</div>
-                <div class="screenshot-wrap">
-                    <img src="../ReoonVerificationServiceAdding.png" alt="Reoon verification service adding screenshot" class="screenshot-img">
-                    <div class="screenshot-caption">
-                        ReoonVerificationServiceAdding.png — UI confirmation that Reoon is available in the verification service setup flow.
+                <div class="screenshot-grid">
+                    <div class="screenshot-wrap" style="margin-top: 0;">
+                        <img src="../ReoonVerificationServiceAdding.png" alt="Reoon verification service adding screenshot" class="screenshot-img">
+                        <div class="screenshot-caption">
+                            ReoonVerificationServiceAdding.png — UI confirmation that Reoon is available in the verification service setup flow.
+                        </div>
+                        <div class="screenshot-actions">
+                            <button class="screenshot-btn" onclick="openScreenshotModal('../ReoonVerificationServiceAdding.png', 'Reoon verification service adding full screen')">
+                                <span class="material-symbols-rounded" style="font-size:16px;">zoom_in</span>
+                                Full-screen view
+                            </button>
+                        </div>
                     </div>
-                    <div class="screenshot-actions">
-                        <button class="screenshot-btn" onclick="openScreenshotModal()">
-                            <span class="material-symbols-rounded" style="font-size:16px;">zoom_in</span>
-                            Full-screen view
-                        </button>
+
+                    <div class="screenshot-wrap" style="margin-top: 0;">
+                        <img src="../ReoonVerificationServiceUsing.png" alt="Reoon verification service using screenshot" class="screenshot-img">
+                        <div class="screenshot-caption">
+                            ReoonVerificationServiceUsing.png — UI confirmation that the configured Reoon service is actively used in list verification flow.
+                        </div>
+                        <div class="screenshot-actions">
+                            <button class="screenshot-btn" onclick="openScreenshotModal('../ReoonVerificationServiceUsing.png', 'Reoon verification service using full screen')">
+                                <span class="material-symbols-rounded" style="font-size:16px;">zoom_in</span>
+                                Full-screen view
+                            </button>
+                        </div>
                     </div>
                 </div>
 
@@ -397,13 +425,16 @@ Then provide the exact command list to rerun validation locally.</div>
         <button class="image-modal-close" onclick="closeScreenshotModal(event)" aria-label="Close full-screen screenshot">
             <span class="material-symbols-rounded" style="font-size:20px;">close</span>
         </button>
-        <img src="../ReoonVerificationServiceAdding.png" alt="Reoon verification service adding full screen" class="image-modal-content">
+        <img id="modalImage" src="../ReoonVerificationServiceAdding.png" alt="Reoon verification service full screen" class="image-modal-content">
     </div>
 
     <?php include '../includes/navigation.php'; ?>
     <?php include '../includes/scripts.php'; ?>
     <script>
-        function openScreenshotModal() {
+        function openScreenshotModal(src, alt) {
+            const image = document.getElementById('modalImage');
+            image.src = src;
+            image.alt = alt || 'Reoon verification service full screen';
             document.getElementById('screenshotModal').classList.add('open');
         }
 

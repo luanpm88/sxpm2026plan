@@ -1,0 +1,239 @@
+<?php
+require_once '../includes/auth.php';
+requireAuth();
+require_once '../config.php';
+?>
+<?php include '../includes/head.php'; ?>
+<style>
+    .insight-container {
+        max-width: 100%;
+    }
+
+    .insight-header {
+        background: #ffffff;
+        color: white;
+        padding: 30px 40px;
+        border-radius: 16px;
+        margin-bottom: 30px;
+    }
+
+    .insight-header h2 {
+        font-size: 2rem;
+        font-weight: 700;
+        margin-bottom: 5px;
+        margin: 0 0 5px 0;
+    }
+
+    .insight-header p {
+        font-size: 1.05rem;
+        opacity: 0.95;
+        margin: 0;
+    }
+
+    .insight-card {
+        background: white;
+        border: 2px solid #e5e7eb;
+        border-radius: 14px;
+        padding: 32px;
+        box-shadow: 0 4px 15px rgba(15, 107, 158, 0.1);
+    }
+
+    .insight-card h3 {
+        color: #0f6b9e;
+        font-size: 1.3rem;
+        font-weight: 700;
+        margin-bottom: 20px;
+        display: flex;
+        align-items: center;
+        gap: 12px;
+    }
+
+    .insight-description {
+        color: #374151;
+        line-height: 1.8;
+        font-size: 0.95rem;
+        margin-bottom: 24px;
+    }
+
+    .staircase {
+        background: #ffffff;
+        border-radius: 12px;
+        padding: 28px;
+        margin-bottom: 24px;
+    }
+
+    .step {
+        display: flex;
+        gap: 16px;
+        margin-bottom: 20px;
+        align-items: flex-start;
+    }
+
+    .step:last-child {
+        margin-bottom: 0;
+    }
+
+    .step-number {
+        background: #0f6b9e;
+        color: white;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: 700;
+        font-size: 1.2rem;
+        flex-shrink: 0;
+    }
+
+    .step-content {
+        flex: 1;
+        padding-top: 4px;
+    }
+
+    .step-title {
+        color: #0f6b9e;
+        font-weight: 700;
+        font-size: 1rem;
+        margin-bottom: 6px;
+    }
+
+    .step-concern {
+        background: white;
+        border-left: 3px solid #f97316;
+        padding: 8px 12px;
+        border-radius: 6px;
+        margin-bottom: 8px;
+        font-size: 0.9rem;
+        color: #92400e;
+        font-weight: 600;
+    }
+
+    .step-pages {
+        color: #6b7280;
+        font-size: 0.9rem;
+        line-height: 1.6;
+    }
+
+    .benefit-section {
+        background: #ffffff;
+        border-left: 5px solid #f97316;
+        border-radius: 12px;
+        padding: 20px;
+        margin-top: 24px;
+    }
+
+    .benefit-section h4 {
+        color: #92400e;
+        font-size: 1rem;
+        font-weight: 700;
+        margin-bottom: 10px;
+    }
+
+    .benefit-section p {
+        color: #374151;
+        line-height: 1.6;
+        margin: 0;
+        font-size: 0.95rem;
+    }
+</style>
+</head>
+<body>
+    <div class="slide-container">
+        <div class="insight-container">
+            <div class="insight-header">
+                <h2>Strategic Insight #2</h2>
+                <p>Trust-Building Staircase: Addressing Buyer Concerns in Order</p>
+            </div>
+
+            <div class="insight-card">
+                <h3>
+                    <span class="material-symbols-rounded" style="font-size: 2rem;">stairs</span>
+                    Progressive Concern Resolution
+                </h3>
+
+                <div class="insight-description">
+                    Enterprise buyers have multiple concerns that emerge in a predictable sequence. By ordering our content 
+                    strategically, we address each concern at the right time, building confidence progressively from first 
+                    visit to final decision.
+                </div>
+
+                <div class="staircase">
+                    <div class="step">
+                        <div class="step-number">1</div>
+                        <div class="step-content">
+                            <div class="step-title">Capability Concern</div>
+                            <div class="step-concern">❓ "Can they actually do this?"</div>
+                            <div class="step-pages">
+                                <strong>Pages:</strong> Services (detailed offerings) + Tech Stack (enterprise technologies)<br>
+                                <strong>Message:</strong> "We have deep expertise with enterprise tools"
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="step">
+                        <div class="step-number">2</div>
+                        <div class="step-content">
+                            <div class="step-title">Reliability Concern</div>
+                            <div class="step-concern">❓ "Is this reliable? Do they follow best practices?"</div>
+                            <div class="step-pages">
+                                <strong>Pages:</strong> SCRUM (transparent methodology) + Case Studies (proven success)<br>
+                                <strong>Message:</strong> "We follow battle-tested agile practices and deliver results"
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="step">
+                        <div class="step-number">3</div>
+                        <div class="step-content">
+                            <div class="step-title">Scalability Concern</div>
+                            <div class="step-concern">❓ "Can we grow with them?"</div>
+                            <div class="step-pages">
+                                <strong>Pages:</strong> Scaling (infrastructure roadmap + growth story)<br>
+                                <strong>Message:</strong> "We build systems that grow with your business"
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="step">
+                        <div class="step-number">4</div>
+                        <div class="step-content">
+                            <div class="step-title">Financial Concern</div>
+                            <div class="step-concern">❓ "What will this cost?"</div>
+                            <div class="step-pages">
+                                <strong>Pages:</strong> Pricing (transparent models + value demonstration)<br>
+                                <strong>Message:</strong> "Clear pricing reflects transparent, predictable partnership"
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="step">
+                        <div class="step-number">5</div>
+                        <div class="step-content">
+                            <div class="step-title">Risk Concern</div>
+                            <div class="step-concern">❓ "Are we safe? What about compliance?"</div>
+                            <div class="step-pages">
+                                <strong>Pages:</strong> Certifications (compliance + security proof)<br>
+                                <strong>Message:</strong> "We meet enterprise security and compliance standards"
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="benefit-section">
+                    <h4><span class="material-symbols-rounded">check</span> Why This Works</h4>
+                    <p>
+                        By addressing concerns in the natural order buyers experience them, we reduce friction and objections. 
+                        When the buyer reaches the Pricing page, they've already been convinced of your capability, reliability, 
+                        and scalability — making price the only remaining concern.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <?php include '../includes/navigation.php'; ?>
+    <?php include '../includes/scripts.php'; ?>
+</body>
+</html>

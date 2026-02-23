@@ -1,0 +1,175 @@
+<?php
+require_once '../includes/auth.php';
+requireAuth();
+require_once '../config.php';
+?>
+<?php include '../includes/head.php'; ?>
+<style>
+    .slide-subtitle {
+        font-size: 1.35rem;
+        font-weight: 400;
+        margin-top: 8px;
+        color: #6b7280;
+    }
+
+    .challenge-grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 18px;
+        margin-top: 24px;
+    }
+
+    .challenge-card {
+        background: #ffffff;
+        border: 2px solid #e5e7eb;
+        border-radius: 14px;
+        padding: 20px;
+        box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+    }
+
+    .challenge-card h3 {
+        font-size: 1.1rem;
+        font-weight: 700;
+        color: #111827;
+        margin-bottom: 12px;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .challenge-card p {
+        color: #4b5563;
+        font-size: 0.92rem;
+        line-height: 1.6;
+        margin: 0;
+    }
+
+    .journey-section {
+        margin-top: 26px;
+    }
+
+    .journey-section-title {
+        font-size: 1.3rem;
+        font-weight: 700;
+        color: #111827;
+        margin-bottom: 16px;
+    }
+
+    .journey-grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 14px;
+    }
+
+    .journey-item {
+        background: #f9fafb;
+        border-left: 4px solid #2563eb;
+        border-radius: 10px;
+        padding: 14px;
+        display: flex;
+        gap: 12px;
+        align-items: flex-start;
+    }
+
+    .journey-badge {
+        background: #2563eb;
+        color: white;
+        width: 32px;
+        height: 32px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: 700;
+        font-size: 0.9rem;
+        flex-shrink: 0;
+    }
+
+    .journey-content {
+        color: #4b5563;
+        font-size: 0.92rem;
+        line-height: 1.6;
+    }
+
+    .journey-content strong {
+        color: #111827;
+    }
+
+    @media (max-width: 1100px) {
+        .challenge-grid { grid-template-columns: 1fr; }
+    }
+</style>
+</head>
+<body>
+    <div class="slide-container">
+        <div class="slide-header">
+            <div class="slide-title">
+                <span class="material-symbols-rounded">help</span>
+                The Challenge - Enterprise Client Decision-Making
+            </div>
+            <div class="slide-subtitle">
+                Enterprise buyers require multiple verification steps before committing
+            </div>
+        </div>
+
+        <div class="slide-content">
+            <div class="challenge-grid">
+                <div class="challenge-card">
+                    <h3>
+                        <span class="material-symbols-rounded">group</span>
+                        Enterprise Buyer Complexity
+                    </h3>
+                    <p>
+                        Enterprise decision-makers face unique challenges: understanding service depth, evaluating reliability, justifying investment to leadership, and managing complex multi-step evaluation processes.
+                    </p>
+                </div>
+
+                <div class="challenge-card">
+                    <h3>
+                        <span class="material-symbols-rounded">quiz</span>
+                        Key Questions Buyers Ask
+                    </h3>
+                    <p>
+                        <strong>"Can they actually do this?"</strong> Prove expertise and capability through detailed services and case studies. <strong>"Is this reliable?"</strong> Demonstrate methodology and certifications. <strong>"Can we grow with them?"</strong> Show scalability and infrastructure readiness. <strong>"What will it cost?"</strong> Transparent pricing.
+                    </p>
+                </div>
+
+                <div class="challenge-card">
+                    <h3>
+                        <span class="material-symbols-rounded">trending_up</span>
+                        The Opportunity
+                    </h3>
+                    <p>
+                        A strategic landing page architecture can guide enterprise buyers through this evaluation process efficiently. By addressing each question in the right order with the right content, we build confidence and guide them to conversion.
+                    </p>
+                </div>
+            </div>
+
+            <div class="journey-section">
+                <div class="journey-section-title">The Buyer's Journey is Multi-Step</div>
+                <div class="journey-grid">
+                    <div class="journey-item">
+                        <div class="journey-badge">1</div>
+                        <div class="journey-content"><strong>Awareness</strong> - "We need software help" → Discover HKIncotech through search/referral</div>
+                    </div>
+                    <div class="journey-item">
+                        <div class="journey-badge">2</div>
+                        <div class="journey-content"><strong>Interest</strong> - "Do they have what we need?" → Explore services, tech stack, methodology</div>
+                    </div>
+                    <div class="journey-item">
+                        <div class="journey-badge">3</div>
+                        <div class="journey-content"><strong>Consideration</strong> - "Can we afford this?" → Review pricing, case studies, credentials</div>
+                    </div>
+                    <div class="journey-item">
+                        <div class="journey-badge">4</div>
+                        <div class="journey-content"><strong>Decision</strong> - "Let's move forward" → Request consultation via contact form</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <?php include '../includes/navigation.php'; ?>
+    <?php include '../includes/scripts.php'; ?>
+</body>
+</html>

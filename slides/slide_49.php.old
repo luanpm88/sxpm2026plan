@@ -1,0 +1,232 @@
+<?php
+require_once '../includes/auth.php';
+requireAuth();
+require_once '../config.php';
+?>
+<?php include '../includes/head.php'; ?>
+<style>
+    .content-container {
+        max-width: 100%;
+    }
+
+    .section-header {
+        background: #ffffff;
+        color: white;
+        padding: 30px 40px;
+        border-radius: 16px;
+        margin-bottom: 30px;
+        display: flex;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .section-header-text h2 {
+        font-size: 2rem;
+        font-weight: 700;
+        margin-bottom: 5px;
+    }
+
+    .section-header-text p {
+        font-size: 1.05rem;
+        opacity: 0.95;
+        margin: 0;
+    }
+
+    .pages-table {
+        background: white;
+        border-radius: 12px;
+        overflow: hidden;
+        box-shadow: 0 4px 15px rgba(15, 107, 158, 0.1);
+        margin-bottom: 30px;
+    }
+
+    .table-scroll {
+        overflow-x: auto;
+    }
+
+    .pages-table table {
+        width: 100%;
+        border-collapse: collapse;
+        font-size: 0.9rem;
+    }
+
+    .pages-table thead {
+        background: #ffffff;
+        color: white;
+    }
+
+    .pages-table th {
+        padding: 16px;
+        text-align: left;
+        font-weight: 700;
+        border-bottom: 2px solid #e5e7eb;
+    }
+
+    .pages-table td {
+        padding: 14px 16px;
+        border-bottom: 1px solid #e5e7eb;
+    }
+
+    .pages-table tbody tr:hover {
+        background: #f9fafb;
+    }
+
+    .page-name-cell {
+        font-weight: 700;
+        color: #0f6b9e;
+    }
+
+    .goal-primary {
+        color: #059669;
+        font-weight: 600;
+    }
+
+    .goal-secondary {
+        color: #6b7280;
+        font-size: 0.85rem;
+    }
+
+    .cta-badge {
+        background: #dbeafe;
+        color: #0f6b9e;
+        padding: 4px 8px;
+        border-radius: 6px;
+        font-size: 0.85rem;
+        font-weight: 600;
+    }
+
+    .strategy-note {
+        background: #ffffff;
+        border-left: 5px solid #f97316;
+        border-radius: 12px;
+        padding: 24px;
+        margin-top: 30px;
+    }
+
+    .strategy-note h3 {
+        color: #92400e;
+        font-size: 1.15rem;
+        font-weight: 700;
+        margin-bottom: 12px;
+    }
+
+    .strategy-note p {
+        color: #374151;
+        line-height: 1.6;
+        margin: 0;
+        font-size: 0.95rem;
+    }
+</style>
+</head>
+<body>
+    <div class="slide-container">
+        <div class="slide-header">
+            <div class="slide-title">
+                <span class="material-symbols-rounded">article</span>
+                Page Purposes & Content Strategy
+            </div>
+            <div class="slide-subtitle">
+                Strategic purpose of each page mapped to buyer journey
+            </div>
+        </div>
+
+        <div class="slide-content">
+            <div class="pages-table">
+                <div class="table-scroll">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Page</th>
+                                <th>Primary Goal</th>
+                                <th>Secondary Goal</th>
+                                <th>CTA</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="page-name-cell">🏠 Homepage</td>
+                                <td><span class="goal-primary">Credibility + Interest</span></td>
+                                <td>Service overview</td>
+                                <td><span class="cta-badge">View Services</span></td>
+                            </tr>
+                            <tr>
+                                <td class="page-name-cell">👥 About Us</td>
+                                <td><span class="goal-primary">Trust building</span></td>
+                                <td>Company story</td>
+                                <td><span class="cta-badge">Contact</span></td>
+                            </tr>
+                            <tr>
+                                <td class="page-name-cell"><span class="material-symbols-rounded">work</span> Services</td>
+                                <td><span class="goal-primary">Education</span></td>
+                                <td>Show depth</td>
+                                <td><span class="cta-badge">Consult</span></td>
+                            </tr>
+                            <tr>
+                                <td class="page-name-cell">⚙️ Tech Stack</td>
+                                <td><span class="goal-primary">Capability proof</span></td>
+                                <td>Technology credibility</td>
+                                <td><span class="cta-badge">Back to Services</span></td>
+                            </tr>
+                            <tr>
+                                <td class="page-name-cell"><span class="material-symbols-rounded">target</span> SCRUM</td>
+                                <td><span class="goal-primary">Methodology transparency</span></td>
+                                <td>Risk reduction</td>
+                                <td><span class="cta-badge">SCRUM Consult</span></td>
+                            </tr>
+                            <tr>
+                                <td class="page-name-cell"><span class="material-symbols-rounded">trending_up</span> Scaling</td>
+                                <td><span class="goal-primary">Growth confidence</span></td>
+                                <td>Infrastructure roadmap</td>
+                                <td><span class="cta-badge">Scaling Consult</span></td>
+                            </tr>
+                            <tr>
+                                <td class="page-name-cell">🏆 Case Studies</td>
+                                <td><span class="goal-primary">Social proof</span></td>
+                                <td>Success evidence</td>
+                                <td><span class="cta-badge">Explore Cases</span></td>
+                            </tr>
+                            <tr>
+                                <td class="page-name-cell"><span class="material-symbols-rounded">attach_money</span> Pricing</td>
+                                <td><span class="goal-primary">Objection removal</span></td>
+                                <td>Budget alignment</td>
+                                <td><span class="cta-badge">Get Pricing</span></td>
+                            </tr>
+                            <tr>
+                                <td class="page-name-cell"><span class="material-symbols-rounded">lock</span> Certifications</td>
+                                <td><span class="goal-primary">Compliance proof</span></td>
+                                <td>Security validation</td>
+                                <td><span class="cta-badge">Verify Certs</span></td>
+                            </tr>
+                            <tr>
+                                <td class="page-name-cell">📧 Contact</td>
+                                <td><span class="goal-primary" style="color: #dc2626;">LEAD CAPTURE</span></td>
+                                <td>All CTAs lead here</td>
+                                <td><span class="cta-badge" style="background: #fee2e2; color: #dc2626;">Submit Form</span></td>
+                            </tr>
+                            <tr>
+                                <td class="page-name-cell">📰 Blog/R&D</td>
+                                <td><span class="goal-primary">Thought leadership</span></td>
+                                <td>Innovation showcase</td>
+                                <td><span class="cta-badge">Engagement</span></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div class="strategy-note">
+                <h3><span class="material-symbols-rounded">lightbulb</span> Content Strategy Principle</h3>
+                <p>
+                    Each page answers a specific buyer concern <strong>in the right order</strong>. 
+                    The journey progresses from capability proof (Services, Tech) → methodology trust (SCRUM, Scaling) → 
+                    financial clarity (Pricing) → compliance proof (Certs) → final decision (Contact). 
+                    Every page links to Contact, ensuring no dead ends and clear conversion paths.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <?php include '../includes/navigation.php'; ?>
+    <?php include '../includes/scripts.php'; ?>
+</body>
+</html>

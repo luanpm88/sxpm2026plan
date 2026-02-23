@@ -1,0 +1,259 @@
+<?php
+require_once '../includes/auth.php';
+requireAuth();
+require_once '../config.php';
+?>
+<?php include '../includes/head.php'; ?>
+<style>
+    .design-container {
+        max-width: 100%;
+    }
+
+    .section-header {
+        background: #ffffff;
+        color: white;
+        padding: 30px 40px;
+        border-radius: 16px;
+        margin-bottom: 30px;
+        display: flex;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .section-header-text h2 {
+        font-size: 2rem;
+        font-weight: 700;
+        margin-bottom: 5px;
+    }
+
+    .section-header-text p {
+        font-size: 1.05rem;
+        opacity: 0.95;
+        margin: 0;
+    }
+
+    .palette-section {
+        background: white;
+        border: 2px solid #e5e7eb;
+        border-radius: 12px;
+        padding: 28px;
+        margin-bottom: 24px;
+    }
+
+    .palette-section h3 {
+        color: #5b21b6;
+        font-size: 1.2rem;
+        font-weight: 700;
+        margin-bottom: 20px;
+    }
+
+    .colors-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+        gap: 16px;
+        margin-bottom: 20px;
+    }
+
+    .color-box {
+        border-radius: 10px;
+        padding: 20px;
+        text-align: center;
+        color: white;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    }
+
+    .color-name {
+        font-weight: 700;
+        margin-bottom: 6px;
+        font-size: 0.95rem;
+    }
+
+    .color-code {
+        font-family: monospace;
+        font-size: 0.8rem;
+        opacity: 0.9;
+    }
+
+    .primary-color {
+        background: #0f6b9e;
+    }
+
+    .secondary-color {
+        background: #7c3aed;
+    }
+
+    .accent-color {
+        background: #f97316;
+    }
+
+    .success-color {
+        background: #059669;
+    }
+
+    .danger-color {
+        background: #dc2626;
+        color: white;
+    }
+
+    .typography-section {
+        background: #ffffff;
+        border-radius: 12px;
+        padding: 24px;
+        margin-bottom: 24px;
+    }
+
+    .typography-section h3 {
+        color: #5b21b6;
+        font-size: 1.2rem;
+        font-weight: 700;
+        margin-bottom: 20px;
+    }
+
+    .type-example {
+        background: white;
+        border-radius: 8px;
+        padding: 14px;
+        margin-bottom: 12px;
+        border-left: 4px solid #8b5cf6;
+    }
+
+    .type-label {
+        color: #6b7280;
+        font-size: 0.75rem;
+        text-transform: uppercase;
+        font-weight: 700;
+        letter-spacing: 0.5px;
+        margin-bottom: 6px;
+    }
+
+    .type-content {
+        color: #1f2937;
+    }
+
+    .guidelines-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+        gap: 14px;
+        margin-top: 20px;
+    }
+
+    .guideline {
+        background: white;
+        border: 2px solid #e5e7eb;
+        border-radius: 10px;
+        padding: 16px;
+        text-align: center;
+    }
+
+    .guideline-icon {
+        font-size: 1.8rem;
+        margin-bottom: 8px;
+    }
+
+    .guideline-text {
+        color: #5b21b6;
+        font-weight: 700;
+        font-size: 0.9rem;
+        line-height: 1.4;
+    }
+</style>
+</head>
+<body>
+    <div class="slide-container">
+        <div class="design-container">
+            
+                <div class="section-header-text">
+                    <h2>Design Consistency & Visual Standards</h2>
+                    <p>Enterprise-Ready Visual Identity</p>
+                </div>
+            </div>
+
+            <div class="palette-section">
+                <h3>Color Palette</h3>
+                <div class="colors-grid">
+                    <div class="color-box primary-color">
+                        <div class="color-name">Primary</div>
+                        <div class="color-code">#0f6b9e</div>
+                    </div>
+                    <div class="color-box secondary-color">
+                        <div class="color-name">Secondary</div>
+                        <div class="color-code">#7c3aed</div>
+                    </div>
+                    <div class="color-box accent-color" style="color: white;">
+                        <div class="color-name">Accent</div>
+                        <div class="color-code">#f97316</div>
+                    </div>
+                    <div class="color-box success-color">
+                        <div class="color-name">Success</div>
+                        <div class="color-code">#059669</div>
+                    </div>
+                    <div class="color-box danger-color">
+                        <div class="color-name">Danger</div>
+                        <div class="color-code">#dc2626</div>
+                    </div>
+                </div>
+                <div style="background: #f9fafb; border-radius: 8px; padding: 14px; border-left: 4px solid #8b5cf6; color: #374151; font-size: 0.9rem;">
+                    <strong>Purpose:</strong> Primary (trust, credibility) for key elements. Secondary & Accent for highlights. 
+                    Success for positive messages, Danger for warnings.
+                </div>
+            </div>
+
+            <div class="typography-section">
+                <h3>Typography & Font Family</h3>
+                <div class="type-example">
+                    <div class="type-label">Page Heading (H1)</div>
+                    <div class="type-content" style="font-size: 2.2rem; font-weight: 700;">HKIncotech Services</div>
+                </div>
+                <div class="type-example">
+                    <div class="type-label">Section Heading (H2)</div>
+                    <div class="type-content" style="font-size: 1.8rem; font-weight: 700;">Four Core Offerings</div>
+                </div>
+                <div class="type-example">
+                    <div class="type-label">Subheading (H3)</div>
+                    <div class="type-content" style="font-size: 1.3rem; font-weight: 700;">Custom Software Development</div>
+                </div>
+                <div class="type-example">
+                    <div class="type-label">Body Text (regular)</div>
+                    <div class="type-content" style="font-size: 1rem; line-height: 1.6;">We build enterprise software solutions...</div>
+                </div>
+                <div style="background: white; border-radius: 8px; padding: 14px; border-left: 4px solid #8b5cf6; color: #6b7280; font-size: 0.85rem; margin-top: 12px;">
+                    <strong>Font:</strong> Inter (modern, professional) • <strong>Color:</strong> #1f2937 (body) • <strong>Line Height:</strong> 1.6 (readability)
+                </div>
+            </div>
+
+            <div class="palette-section">
+                <h3>Design Consistency Guidelines</h3>
+                <div class="guidelines-grid">
+                    <div class="guideline">
+                        <div class="guideline-icon"><span class="material-symbols-rounded">target</span></div>
+                        <div class="guideline-text">Card-Based Layout</div>
+                    </div>
+                    <div class="guideline">
+                        <div class="guideline-icon">🔢</div>
+                        <div class="guideline-text">Numbered Badges</div>
+                    </div>
+                    <div class="guideline">
+                        <div class="guideline-icon"><span class="material-symbols-rounded">palette</span></div>
+                        <div class="guideline-text">Gradient Overlays</div>
+                    </div>
+                    <div class="guideline">
+                        <div class="guideline-icon">⚙️</div>
+                        <div class="guideline-text">Material Icons</div>
+                    </div>
+                    <div class="guideline">
+                        <div class="guideline-icon"><span class="material-symbols-rounded">auto_awesome</span></div>
+                        <div class="guideline-text">Hover Effects</div>
+                    </div>
+                    <div class="guideline">
+                        <div class="guideline-icon">📱</div>
+                        <div class="guideline-text">Mobile-First</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <?php include '../includes/navigation.php'; ?>
+    <?php include '../includes/scripts.php'; ?>
+</body>
+</html>

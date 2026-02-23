@@ -1,0 +1,163 @@
+<?php
+require_once '../includes/auth.php';
+requireAuth();
+require_once '../config.php';
+?>
+<?php include '../includes/head.php'; ?>
+<style>
+    .slide-subtitle {
+        font-size: 1.35rem;
+        font-weight: 400;
+        margin-top: 8px;
+        color: #6b7280;
+    }
+
+    .metrics-grid {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 16px;
+        margin-top: 24px;
+    }
+
+    .metric-card {
+        background: #ffffff;
+        border: 2px solid #e5e7eb;
+        border-radius: 14px;
+        padding: 18px;
+        box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+    }
+
+    .metric-number {
+        font-size: 1.8rem;
+        font-weight: 700;
+        color: #111827;
+        margin-bottom: 6px;
+    }
+
+    .metric-label {
+        font-size: 0.85rem;
+        color: #6b7280;
+        font-weight: 500;
+    }
+
+    .section-title {
+        font-size: 1.3rem;
+        font-weight: 700;
+        color: #111827;
+        margin-top: 26px;
+        margin-bottom: 16px;
+    }
+
+    .objectives {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 16px;
+        margin-top: 16px;
+    }
+
+    .objective-item {
+        background: #f9fafb;
+        border-left: 4px solid #2563eb;
+        border-radius: 10px;
+        padding: 14px;
+        color: #4b5563;
+        font-size: 0.92rem;
+        line-height: 1.6;
+    }
+
+    @media (max-width: 1100px) {
+        .metrics-grid { grid-template-columns: 1fr 1fr; }
+        .objectives { grid-template-columns: 1fr; }
+    }
+
+    .mission-section {
+        margin-top: 26px;
+    }
+
+    .section-title-icon {
+        font-size: 1.3rem;
+        vertical-align: text-bottom;
+        margin-right: 8px;
+    }
+
+    .objective-item {
+        display: flex;
+        align-items: flex-start;
+        gap: 10px;
+        margin-bottom: 12px;
+        font-size: 0.92rem;
+        line-height: 1.6;
+        color: #374151;
+    }
+
+    .objective-icon {
+        color: #2563eb;
+        font-weight: 700;
+        font-size: 1.1rem;
+        flex-shrink: 0;
+        margin-top: 2px;
+    }
+</style>
+</head>
+<body>
+    <div class="slide-container">
+        <div class="slide-header">
+            <div class="slide-title">
+                <span class="material-symbols-rounded">language</span>
+                HKIncotech Site Architecture Overview
+            </div>
+            <div class="slide-subtitle">
+                Building an enterprise sales architecture that converts enterprise buyers
+            </div>
+        </div>
+
+        <div class="slide-content">
+            <div class="metrics-grid">
+                <div class="metric-card">
+                    <div class="metric-number">2,000</div>
+                    <div class="metric-label">Monthly Visitors</div>
+                </div>
+                <div class="metric-card">
+                    <div class="metric-number">20-25</div>
+                    <div class="metric-label">Qualified Leads/Mo</div>
+                </div>
+                <div class="metric-card">
+                    <div class="metric-number">2-4</div>
+                    <div class="metric-label">Projects/Month</div>
+                </div>
+                <div class="metric-card">
+                    <div class="metric-number">$100K-600K</div>
+                    <div class="metric-label">Revenue Impact</div>
+                </div>
+            </div>
+
+            <div class="section-title">
+                <span class="section-title-icon material-symbols-rounded">target</span>
+                Our Mission
+            </div>
+
+            <div class="objectives">
+                <div class="objective-item">
+                    <span class="objective-icon">✓</span>
+                    <span><strong>Multiple entry paths</strong> for different buyer personas and decision stages</span>
+                </div>
+                <div class="objective-item">
+                    <span class="objective-icon">✓</span>
+                    <span><strong>Clear content journey</strong> that educates and builds trust progressively</span>
+                </div>
+                <div class="objective-item">
+                    <span class="objective-icon">✓</span>
+                    <span><strong>Guide to conversion</strong> with strategic CTAs and lead capture</span>
+                </div>
+                <div class="objective-item">
+                    <span class="objective-icon">✓</span>
+                    <span><strong>Establish authority</strong> with proof of expertise and enterprise readiness</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <?php include '../includes/navigation.php'; ?>
+    <?php include '../includes/scripts.php'; ?>
+</body>
+</html>

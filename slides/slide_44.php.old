@@ -1,0 +1,200 @@
+<?php
+require_once '../includes/auth.php';
+requireAuth();
+require_once '../config.php';
+?>
+<?php include '../includes/head.php'; ?>
+<style>
+    .slide-subtitle {
+        font-size: 1.35rem;
+        font-weight: 400;
+        margin-top: 8px;
+        color: #6b7280;
+    }
+
+    .funnel-stages {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 14px;
+        margin-top: 24px;
+    }
+
+    .funnel-stage {
+        background: #ffffff;
+        border: 2px solid #e5e7eb;
+        border-left: 5px solid #2563eb;
+        border-radius: 14px;
+        padding: 18px;
+        box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+        display: grid;
+        grid-template-columns: 1fr auto;
+        gap: 16px;
+        align-items: center;
+    }
+
+    .stage-name {
+        color: #111827;
+        font-size: 1rem;
+        font-weight: 700;
+    }
+
+    .stage-desc {
+        color: #6b7280;
+        font-size: 0.85rem;
+        line-height: 1.5;
+        margin-top: 4px;
+    }
+
+    .stage-percent {
+        font-size: 1.8rem;
+        font-weight: 700;
+        color: #2563eb;
+    }
+
+    .conversion-box {
+        background: #f9fafb;
+        border: 2px solid #e5e7eb;
+        border-radius: 12px;
+        padding: 20px;
+        margin-top: 24px;
+        text-align: center;
+    }
+
+    .conversion-title {
+        font-size: 1.05rem;
+        font-weight: 700;
+        color: #111827;
+        margin-bottom: 12px;
+    }
+
+    .conversion-math {
+        background: white;
+        border-radius: 10px;
+        padding: 12px;
+        font-size: 0.9rem;
+        color: #4b5563;
+        line-height: 1.7;
+        font-weight: 500;
+    }
+
+    .mermaid-placeholder {
+        background: #f9fafb;
+        border: 2px solid #e5e7eb;
+        border-radius: 12px;
+        padding: 24px;
+        text-align: center;
+        color: #6b7280;
+        font-size: 0.9rem;
+        margin-top: 18px;
+    }
+
+    .conversion-math strong {
+        color: #92400e;
+        font-size: 1.1rem;
+    }
+
+    .mermaid-placeholder {
+        background: #f0f9ff;
+        border: 2px dashed #7c3aed;
+        border-radius: 12px;
+        padding: 40px;
+        text-align: center;
+        color: #7c3aed;
+        font-weight: 600;
+        margin-top: 20px;
+        font-size: 0.95rem;
+    }
+</style>
+</head>
+<body>
+    <div class="slide-container">
+        <div class="slide-header">
+            <div class="slide-title">
+                <span class="material-symbols-rounded">trending_down</span>
+                Customer Journey - 4-Stage Funnel
+            </div>
+            <div class="slide-subtitle">
+                How visitors progress through awareness to conversion
+            </div>
+        </div>
+
+        <div class="slide-content">
+            <!-- Header removed -->
+                <div class="journey-header-text">
+                    <h2>Customer Journey</h2>
+                    <p>4-Stage Funnel: From Awareness to Conversion</p>
+                </div>
+
+            <div class="funnel-visual">
+                <div class="funnel-stages">
+                    <div class="funnel-stage stage-1">
+                        <!-- Header removed -->
+                                <div class="stage-name">AWARENESS</div>
+                            </div>
+                            <div class="stage-percent">100%</div>
+                        </div>
+                        <div class="stage-desc">All traffic arrives at this stage when visiting Homepage through search, referral, or direct.</div>
+                        <div class="stage-pages">
+                            <strong>Pages:</strong> Homepage with hero section and services preview
+                        </div>
+                    </div>
+
+                    <div class="funnel-stage stage-2">
+                        <!-- Header removed -->
+                                <div class="stage-name">INTEREST</div>
+                            </div>
+                            <div class="stage-percent">40%</div>
+                        </div>
+                        <div class="stage-desc">40% of visitors engage with content and explore deeper services and capabilities.</div>
+                        <div class="stage-pages">
+                            <strong>Pages:</strong> Services, Tech Stack, SCRUM, Scaling, Case Studies, Blog/R&D
+                        </div>
+                    </div>
+
+                    <div class="funnel-stage stage-3">
+                        <!-- Header removed -->
+                                <div class="stage-name">CONSIDERATION</div>
+                            </div>
+                            <div class="stage-percent">12%</div>
+                        </div>
+                        <div class="stage-desc">12% of visitors are now seriously considering and checking final decision factors.</div>
+                        <div class="stage-pages">
+                            <strong>Pages:</strong> Pricing, Certifications, About Us, multiple Contact CTAs
+                        </div>
+                    </div>
+
+                    <div class="funnel-stage stage-4">
+                        <!-- Header removed -->
+                                <div class="stage-name">DECISION & CONVERSION</div>
+                            </div>
+                            <div class="stage-percent">1.8%</div>
+                        </div>
+                        <div class="stage-desc">1.8% of visitors are ready to convert by submitting contact form for consultation.</div>
+                        <div class="stage-pages">
+                            <strong>Page:</strong> Contact form (7 qualification fields) → Email follow-up → RFQ process
+                        </div>
+    </div>
+</div>
+                <div class="mermaid-placeholder">
+                    <span class="material-symbols-rounded">bar_chart</span> Diagram: CUSTOMER_JOURNEY.mermaid
+                    <br>(Will be converted to visual funnel chart)
+                </div>
+
+            <div class="conversion-insight">
+                <h3><span class="material-symbols-rounded">trending_up</span> What This Funnel Means in Numbers</h3>
+                <div class="conversion-math">
+                    <strong>2,000 visitors/month</strong> → <strong>800 engage (40%)</strong> → 
+                    <strong>240 consider (12%)</strong> → <strong>36 qualified leads (1.8%)</strong>
+                    <br><br>
+                    <span class="material-symbols-rounded">check</span> Expected: <strong>20-25 qualified leads per month</strong><br>
+                    <span class="material-symbols-rounded">check</span> These convert to <strong>2-4 sales per month </strong>at 10-15% close rate<br>
+                    <span class="material-symbols-rounded">check</span> Revenue impact: <strong>$100K-$600K per month</strong> (at $50K-$150K avg project value)
+                </div>
+    </div>
+</div>
+    </div>
+
+    <?php include '../includes/navigation.php'; ?>
+    <?php include '../includes/scripts.php'; ?>
+</body>
+</html>

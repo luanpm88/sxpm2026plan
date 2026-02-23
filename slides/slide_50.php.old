@@ -1,0 +1,185 @@
+<?php
+require_once '../includes/auth.php';
+requireAuth();
+require_once '../config.php';
+?>
+<?php include '../includes/head.php'; ?>
+<style>
+    .insight-container {
+        max-width: 100%;
+    }
+
+    .insight-header {
+        background: #ffffff;
+        color: white;
+        padding: 30px 40px;
+        border-radius: 16px;
+        margin-bottom: 30px;
+    }
+
+    .insight-header h2 {
+        font-size: 2rem;
+        font-weight: 700;
+        margin-bottom: 5px;
+        margin: 0 0 5px 0;
+    }
+
+    .insight-header p {
+        font-size: 1.05rem;
+        opacity: 0.95;
+        margin: 0;
+    }
+
+    .insight-card {
+        background: white;
+        border: 2px solid #e5e7eb;
+        border-radius: 14px;
+        padding: 32px;
+        box-shadow: 0 4px 15px rgba(124, 58, 237, 0.1);
+    }
+
+    .insight-card h3 {
+        color: #5b21b6;
+        font-size: 1.3rem;
+        font-weight: 700;
+        margin-bottom: 20px;
+        display: flex;
+        align-items: center;
+        gap: 12px;
+    }
+
+    .insight-description {
+        color: #374151;
+        line-height: 1.8;
+        font-size: 0.95rem;
+        margin-bottom: 24px;
+    }
+
+    .ctas-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+        gap: 12px;
+    }
+
+    .cta-example {
+        background: #ffffff;
+        border: 2px solid #e5e7eb;
+        border-radius: 10px;
+        padding: 16px;
+        text-align: center;
+        font-size: 0.9rem;
+        font-weight: 600;
+        color: #5b21b6;
+        transition: all 0.3s ease;
+    }
+
+    .cta-example:hover {
+        border-color: #7c3aed;
+        box-shadow: 0 4px 12px rgba(124, 58, 237, 0.15);
+    }
+
+    .benefit-section {
+        background: #ffffff;
+        border-left: 5px solid #f97316;
+        border-radius: 12px;
+        padding: 20px;
+        margin-top: 24px;
+    }
+
+    .benefit-section h4 {
+        color: #92400e;
+        font-size: 1rem;
+        font-weight: 700;
+        margin-bottom: 10px;
+    }
+
+    .benefit-section p {
+        color: #374151;
+        line-height: 1.6;
+        margin: 0;
+        font-size: 0.95rem;
+    }
+</style>
+</head>
+<body>
+    <div class="slide-container">
+        <div class="insight-container">
+            <div class="insight-header">
+                <h2>Strategic Insight #1</h2>
+                <p>Multiple CTAs Strategy: Progressive Engagement</p>
+            </div>
+
+            <div class="insight-card">
+                <h3>
+                    <span class="material-symbols-rounded" style="font-size: 2rem;">touch_app</span>
+                    Why Multiple CTAs?
+                </h3>
+
+                <div class="insight-description">
+                    Rather than forcing a single "Contact Us" call-to-action, we use <strong>progressive engagement</strong> 
+                    through multiple CTAs tailored to each page and buyer stage. This reduces friction, increases relevance, 
+                    and improves conversion rates by meeting buyers where they are in their decision journey.
+                </div>
+
+                <div style="margin-bottom: 24px;">
+                    <div style="color: #6b7280; font-size: 0.85rem; text-transform: uppercase; font-weight: 600; letter-spacing: 0.5px; margin-bottom: 12px;">CTA Examples by Page:</div>
+                    <div class="ctas-grid">
+                        <div class="cta-example">
+                            <div style="margin-bottom: 8px; font-size: 1.2rem;">🏠</div>
+                            "View Services"
+                        </div>
+                        <div class="cta-example">
+                            <div style="margin-bottom: 8px; font-size: 1.2rem;"><span class="material-symbols-rounded">work</span></div>
+                            "Consult Services"
+                        </div>
+                        <div class="cta-example">
+                            <div style="margin-bottom: 8px; font-size: 1.2rem;">⚙️</div>
+                            "See Tech Stack"
+                        </div>
+                        <div class="cta-example">
+                            <div style="margin-bottom: 8px; font-size: 1.2rem;"><span class="material-symbols-rounded">target</span></div>
+                            "SCRUM Consult"
+                        </div>
+                        <div class="cta-example">
+                            <div style="margin-bottom: 8px; font-size: 1.2rem;"><span class="material-symbols-rounded">trending_up</span></div>
+                            "Scaling Consult"
+                        </div>
+                        <div class="cta-example">
+                            <div style="margin-bottom: 8px; font-size: 1.2rem;"><span class="material-symbols-rounded">attach_money</span></div>
+                            "Get Pricing"
+                        </div>
+                        <div class="cta-example">
+                            <div style="margin-bottom: 8px; font-size: 1.2rem;"><span class="material-symbols-rounded">lock</span></div>
+                            "Verify Certs"
+                        </div>
+                        <div class="cta-example">
+                            <div style="margin-bottom: 8px; font-size: 1.2rem;">📧</div>
+                            "Contact Now"
+                        </div>
+                    </div>
+                </div>
+
+                <div class="benefit-section">
+                    <h4><span class="material-symbols-rounded">check</span> Why This Works</h4>
+                    <p>
+                        Each CTA is contextualized to the current page's purpose. Rather than hard-selling a contact form, 
+                        we guide visitors progressively toward commitment. Visitors feel less pressured and more guided through a 
+                        logical decision-making process.
+                    </p>
+                </div>
+
+                <div class="benefit-section">
+                    <h4><span class="material-symbols-rounded">bar_chart</span> Impact</h4>
+                    <p>
+                        Expected 15-25% improvement in CTR (click-through rate) and 10-15% improvement in conversion rate 
+                        compared to single-CTA approach. Multiple touchpoints increase likelihood of at least one click per visit.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <?php include '../includes/navigation.php'; ?>
+    <?php include '../includes/scripts.php'; ?>
+</body>
+</html>

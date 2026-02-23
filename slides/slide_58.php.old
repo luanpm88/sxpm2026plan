@@ -1,0 +1,197 @@
+<?php
+require_once '../includes/auth.php';
+requireAuth();
+require_once '../config.php';
+?>
+<?php include '../includes/head.php'; ?>
+<style>
+    .roadmap-container {
+        max-width: 100%;
+    }
+
+    .section-header {
+        background: #ffffff;
+        color: white;
+        padding: 30px 40px;
+        border-radius: 16px;
+        margin-bottom: 30px;
+        display: flex;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .section-header-text h2 {
+        font-size: 2rem;
+        font-weight: 700;
+        margin-bottom: 5px;
+    }
+
+    .section-header-text p {
+        font-size: 1.05rem;
+        opacity: 0.95;
+        margin: 0;
+    }
+
+    .quarter {
+        background: white;
+        border: 2px solid #e5e7eb;
+        border-radius: 12px;
+        padding: 26px;
+        margin-bottom: 18px;
+        box-shadow: 0 4px 15px rgba(15, 107, 158, 0.1);
+    }
+
+    .quarter h3 {
+        color: #0f6b9e;
+        font-size: 1.25rem;
+        font-weight: 700;
+        margin-bottom: 16px;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        padding-bottom: 12px;
+        border-bottom: 2px solid #dbeafe;
+    }
+
+    .activities-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+        gap: 12px;
+    }
+
+    .activity {
+        background: #ffffff;
+        border: 2px solid #e5e7eb;
+        border-radius: 10px;
+        padding: 14px;
+        text-align: center;
+        transition: all 0.3s ease;
+    }
+
+    .activity:hover {
+        border-color: #0f6b9e;
+        box-shadow: 0 4px 12px rgba(15, 107, 158, 0.15);
+        transform: translateY(-2px);
+    }
+
+    .activity-icon {
+        font-size: 1.6rem;
+        margin-bottom: 8px;
+    }
+
+    .activity-text {
+        color: #0f6b9e;
+        font-size: 0.85rem;
+        font-weight: 600;
+        line-height: 1.4;
+    }
+
+    .timeline-visual {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 16px;
+        margin-top: 20px;
+        padding-top: 20px;
+        border-top: 2px solid #dbeafe;
+    }
+
+    .quarter-badge {
+        background: #ffffff;
+        color: white;
+        padding: 12px 16px;
+        border-radius: 8px;
+        text-align: center;
+        font-weight: 700;
+        font-size: 0.9rem;
+    }
+</style>
+</head>
+<body>
+    <div class="slide-container">
+        <div class="roadmap-container">
+            
+                <div class="section-header-text">
+                    <h2>12-Month Roadmap</h2>
+                    <p>Q1 & Q2 2026: Foundation & Growth Phase</p>
+                </div>
+            </div>
+
+            <div class="quarter">
+                <h3>
+                    <span class="material-symbols-rounded">source</span>
+                    Q1 2026: Foundation & Launch
+                </h3>
+                <div style="color: #6b7280; font-size: 0.9rem; margin-bottom: 14px; font-weight: 500;">January - March 2026</div>
+                <div class="activities-grid">
+                    <div class="activity">
+                        <div class="activity-icon">🔧</div>
+                        <div class="activity-text">Deploy all 11 pages</div>
+                    </div>
+                    <div class="activity">
+                        <div class="activity-icon">✅</div>
+                        <div class="activity-text">Quality assurance & testing</div>
+                    </div>
+                    <div class="activity">
+                        <div class="activity-icon"><span class="material-symbols-rounded">rocket</span></div>
+                        <div class="activity-text">Go live & establish baseline metrics</div>
+                    </div>
+                    <div class="activity">
+                        <div class="activity-icon"><span class="material-symbols-rounded">bar_chart</span></div>
+                        <div class="activity-text">Set up GA4 & analytics</div>
+                    </div>
+                    <div class="activity">
+                        <div class="activity-icon"><span class="material-symbols-rounded">attach_money</span></div>
+                        <div class="activity-text">Optimize core funnel</div>
+                    </div>
+                    <div class="activity">
+                        <div class="activity-icon"><span class="material-symbols-rounded">school</span></div>
+                        <div class="activity-text">Sales team training on leads</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="quarter">
+                <h3>
+                    <span class="material-symbols-rounded">enhance</span>
+                    Q2 2026: Content Enhancement
+                </h3>
+                <div style="color: #6b7280; font-size: 0.9rem; margin-bottom: 14px; font-weight: 500;">April - June 2026</div>
+                <div class="activities-grid">
+                    <div class="activity">
+                        <div class="activity-icon">🎤</div>
+                        <div class="activity-text">Add customer testimonials</div>
+                    </div>
+                    <div class="activity">
+                        <div class="activity-icon">🎬</div>
+                        <div class="activity-text">Create video case studies</div>
+                    </div>
+                    <div class="activity">
+                        <div class="activity-icon">📚</div>
+                        <div class="activity-text">Expand blog/R&D section</div>
+                    </div>
+                    <div class="activity">
+                        <div class="activity-icon"><span class="material-symbols-rounded">school</span></div>
+                        <div class="activity-text">Add webinar/resource library</div>
+                    </div>
+                    <div class="activity">
+                        <div class="activity-icon"><span class="material-symbols-rounded">trending_up</span></div>
+                        <div class="activity-text">A/B test CTAs & messaging</div>
+                    </div>
+                    <div class="activity">
+                        <div class="activity-icon">⚡</div>
+                        <div class="activity-text">Performance optimization</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="timeline-visual">
+                <div class="quarter-badge">Q1: Launch Phase</div>
+                <div class="quarter-badge">Q2: Growth Phase</div>
+            </div>
+        </div>
+    </div>
+
+    <?php include '../includes/navigation.php'; ?>
+    <?php include '../includes/scripts.php'; ?>
+</body>
+</html>

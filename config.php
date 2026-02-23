@@ -1,7 +1,7 @@
 <?php
 // Configuration for the presentation
 define('PRESENTATION_TITLE', 'Định hướng phát triển Bộ phận Sản xuất Phần mềm 2026');
-define('TOTAL_SLIDES', 39);
+define('TOTAL_SLIDES', 62);
 
 // Slide titles
 $slide_titles = [
@@ -44,7 +44,30 @@ $slide_titles = [
     36 => 'Workshop #1: AI Prompting with Constraints',
     37 => 'Workshop #1: Workshop Flow & Roles',
     38 => 'Workshop #1: Principles & Takeaways',
-    39 => 'Workshop #1: Practice Playbook: Add Reoon Fast & Safely'
+    39 => 'Workshop #1: Practice Playbook: Add Reoon Fast & Safely',
+    40 => 'Website: HKIncotech Site Architecture Overview',
+    41 => 'Website: The Challenge - Enterprise Client Decision-Making',
+    42 => 'Website: The Solution - Strategic Architecture Approach',
+    43 => 'Website: Site Architecture - Navigation Hub Model',
+    44 => 'Website: Customer Journey - 4-Stage Funnel',
+    45 => 'Website: Stage 1 - Awareness (100% Traffic)',
+    46 => 'Website: Stage 2 - Interest (40% Engagement)',
+    47 => 'Website: Stage 3 - Consideration (12% Engagement)',
+    48 => 'Website: Stage 4 - Decision & Conversion (1.8%)',
+    49 => 'Website: Page Purposes & Content Strategy',
+    50 => 'Website: Strategic Insight #1 - Multiple CTAs',
+    51 => 'Website: Strategic Insight #2 - Trust-Building Staircase',
+    52 => 'Website: Strategic Insight #3 - Modular Content Architecture',
+    53 => 'Website: Strategic Insight #4 - Single Conversion Goal',
+    54 => 'Website: Design Consistency & Visual Standards',
+    55 => 'Website: Projected Performance & Revenue Impact',
+    56 => 'Website: Key Metrics to Track',
+    57 => 'Website: Launch & Optimization Strategy',
+    58 => 'Website: 12-Month Roadmap - Q1 & Q2 2026',
+    59 => 'Website: 12-Month Roadmap - Q3 & Q4 2026',
+    60 => 'Website: Risk Mitigation Strategy',
+    61 => 'Website: Implementation Requirements & Timeline',
+    62 => 'Website: Board Decision & Next Steps'
 ];
 
 // Get current slide number from URL

@@ -1,0 +1,199 @@
+<?php
+require_once '../includes/auth.php';
+requireAuth();
+require_once '../config.php';
+?>
+<?php include '../includes/head.php'; ?>
+<style>
+    .risk-container {
+        max-width: 100%;
+    }
+
+    .section-header {
+        background: #ffffff;
+        color: white;
+        padding: 30px 40px;
+        border-radius: 16px;
+        margin-bottom: 30px;
+    }
+
+    .section-header h2 {
+        font-size: 2rem;
+        font-weight: 700;
+        margin-bottom: 5px;
+        margin: 0 0 5px 0;
+    }
+
+    .section-header p {
+        font-size: 1.05rem;
+        opacity: 0.95;
+        margin: 0;
+    }
+
+    .risk-card {
+        background: white;
+        border: 2px solid #e5e7eb;
+        border-radius: 12px;
+        padding: 26px;
+        margin-bottom: 18px;
+        box-shadow: 0 4px 15px rgba(220, 38, 38, 0.1);
+    }
+
+    .risk-card h3 {
+        color: #991b1b;
+        font-size: 1.2rem;
+        font-weight: 700;
+        margin-bottom: 14px;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        padding-bottom: 12px;
+        border-bottom: 2px solid #fee2e2;
+    }
+
+    .risk-content {
+        display: grid;
+        grid-template-columns: auto 1fr;
+        gap: 16px;
+        align-items: start;
+    }
+
+    .risk-icon {
+        font-size: 2rem;
+        flex-shrink: 0;
+    }
+
+    .risk-details {
+        flex: 1;
+    }
+
+    .risk-desc {
+        color: #374151;
+        font-size: 0.95rem;
+        line-height: 1.6;
+        margin-bottom: 12px;
+    }
+
+    .risk-desc strong {
+        color: #991b1b;
+    }
+
+    .mitigation {
+        background: #ffffff;
+        border-left: 4px solid #059669;
+        border-radius: 8px;
+        padding: 12px;
+        font-size: 0.9rem;
+        color: #065f46;
+        line-height: 1.5;
+    }
+
+    .metric-item {
+        background: #f9fafb;
+        border-radius: 6px;
+        padding: 8px;
+        margin-top: 8px;
+        font-size: 0.85rem;
+        color: #6b7280;
+    }
+</style>
+</head>
+<body>
+    <div class="slide-container">
+        <div class="risk-container">
+            
+
+            <div class="risk-card">
+                <h3>
+                    <span class="material-symbols-rounded">warning</span>
+                    Risk #1: Low Form Completion Rate
+                </h3>
+                <div class="risk-content">
+                    <div class="risk-icon"><span class="material-symbols-rounded">warning</span></div>
+                    <div class="risk-details">
+                        <div class="risk-desc">
+                            <strong>Risk:</strong> Visitors don't complete contact form (completion rate <50%)
+                        </div>
+                        <div class="risk-desc">
+                            <strong>Impact:</strong> Fewer leads, missed revenue opportunities
+                        </div>
+                        <div class="mitigation">
+                            <strong>Mitigation:</strong> Optimize form (reduce fields), test CTA placements, A/B test copy, offer incentives (free consultation)
+                            <div class="metric-item">Target: Form completion rate > 50%</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="risk-card">
+                <h3>
+                    <span class="material-symbols-rounded">trending_down</span>
+                    Risk #2: High Bounce Rate
+                </h3>
+                <div class="risk-content">
+                    <div class="risk-icon">📉</div>
+                    <div class="risk-details">
+                        <div class="risk-desc">
+                            <strong>Risk:</strong> Visitors leave after viewing homepage without exploring content (>60% bounce rate)
+                        </div>
+                        <div class="risk-desc">
+                            <strong>Impact:</strong> Low engagement with content, fewer consideration-stage visitors
+                        </div>
+                        <div class="mitigation">
+                            <strong>Mitigation:</strong> Improve homepage hero (stronger value prop), faster loading times, clearer navigation, sticky CTA button
+                            <div class="metric-item">Target: Bounce rate < 50%</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="risk-card">
+                <h3>
+                    <span class="material-symbols-rounded">person_off</span>
+                    Risk #3: Poor Lead Quality
+                </h3>
+                <div class="risk-content">
+                    <div class="risk-icon">📋</div>
+                    <div class="risk-details">
+                        <div class="risk-desc">
+                            <strong>Risk:</strong> High volume of unqualified leads (tire-kickers, wrong budget, wrong industry)
+                        </div>
+                        <div class="risk-desc">
+                            <strong>Impact:</strong> Sales team wastes time on low-probability opportunities
+                        </div>
+                        <div class="mitigation">
+                            <strong>Mitigation:</strong> Strengthen pre-qualification in landing pages, add budget/industry filters to form, improve lead scoring
+                            <div class="metric-item">Target: Qualified lead percentage > 60%</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="risk-card">
+                <h3>
+                    <span class="material-symbols-rounded">schedule</span>
+                    Risk #4: Low Page Engagement
+                </h3>
+                <div class="risk-content">
+                    <div class="risk-icon"><span class="material-symbols-rounded">schedule</span></div>
+                    <div class="risk-details">
+                        <div class="risk-desc">
+                            <strong>Risk:</strong> Users spend <1 minute on pages, don't scroll to CTAs or read content
+                        </div>
+                        <div class="risk-desc">
+                            <strong>Impact:</strong> Content doesn't build trust, low interest-to-consideration conversion
+                        </div>
+                        <div class="mitigation">
+                            <strong>Mitigation:</strong> Improve content quality, simplify page layouts, add visuals, update with current case studies, clearer hierarchy
+                            <div class="metric-item">Target: Avg time per page > 2 minutes, scroll depth 75%+</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <?php include '../includes/navigation.php'; ?>
+    <?php include '../includes/scripts.php'; ?>
+</body>
+</html>

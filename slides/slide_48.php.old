@@ -1,0 +1,340 @@
+<?php
+require_once '../includes/auth.php';
+requireAuth();
+require_once '../config.php';
+?>
+<?php include '../includes/head.php'; ?>
+<style>
+    .stage-container {
+        max-width: 100%;
+    }
+
+    .stage-header {
+        background: #ffffff;
+        color: white;
+        padding: 35px 40px;
+        border-radius: 16px;
+        margin-bottom: 30px;
+        display: flex;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .stage-header-badge {
+        background: rgba(255, 255, 255, 0.25);
+        border-radius: 10px;
+        padding: 12px 16px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 2rem;
+        flex-shrink: 0;
+        width: 80px;
+        height: 80px;
+    }
+
+    .stage-header-text h2 {
+        font-size: 2.2rem;
+        font-weight: 700;
+        margin-bottom: 8px;
+    }
+
+    .stage-header-text p {
+        font-size: 1.1rem;
+        opacity: 0.95;
+        margin: 0;
+    }
+
+    .percent-badge {
+        float: right;
+        background: rgba(255, 255, 255, 0.2);
+        padding: 8px 14px;
+        border-radius: 20px;
+        font-size: 1.3rem;
+        font-weight: 700;
+    }
+
+    .stage-purpose {
+        background: #ffffff;
+        border-left: 5px solid #ec4899;
+        border-radius: 12px;
+        padding: 24px;
+        margin-bottom: 24px;
+    }
+
+    .stage-purpose h3 {
+        color: #be185d;
+        font-size: 1.25rem;
+        font-weight: 700;
+        margin-bottom: 12px;
+    }
+
+    .purpose-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 16px;
+    }
+
+    .purpose-item {
+        background: white;
+        border-radius: 10px;
+        padding: 16px;
+        border: 2px solid #e5e7eb;
+    }
+
+    .purpose-label {
+        color: #6b7280;
+        font-size: 0.85rem;
+        font-weight: 600;
+        text-transform: uppercase;
+        letter-spacing: 0.5px;
+        margin-bottom: 6px;
+    }
+
+    .purpose-value {
+        color: #1f2937;
+        font-size: 1rem;
+        font-weight: 600;
+        line-height: 1.5;
+    }
+
+    .conversion-flow {
+        background: white;
+        border: 2px solid #e5e7eb;
+        border-radius: 12px;
+        padding: 28px;
+        margin-bottom: 24px;
+    }
+
+    .conversion-flow h3 {
+        color: #be185d;
+        font-size: 1.2rem;
+        font-weight: 700;
+        margin-bottom: 24px;
+    }
+
+    .flow-step {
+        display: flex;
+        gap: 16px;
+        margin-bottom: 20px;
+        align-items: flex-start;
+    }
+
+    .flow-number {
+        background: #ffffff;
+        color: white;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: 700;
+        font-size: 1.2rem;
+        flex-shrink: 0;
+    }
+
+    .flow-content {
+        flex: 1;
+        padding-top: 4px;
+    }
+
+    .flow-title {
+        color: #be185d;
+        font-weight: 700;
+        font-size: 1rem;
+        margin-bottom: 6px;
+    }
+
+    .flow-desc {
+        color: #374151;
+        font-size: 0.95rem;
+        line-height: 1.6;
+    }
+
+    .form-section {
+        background: #ffffff;
+        border-radius: 12px;
+        padding: 24px;
+        margin-bottom: 20px;
+    }
+
+    .form-section h3 {
+        color: #be185d;
+        font-size: 1.15rem;
+        font-weight: 700;
+        margin-bottom: 16px;
+    }
+
+    .form-fields {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 12px;
+        background: white;
+        border-radius: 10px;
+        padding: 16px;
+    }
+
+    .form-field {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        padding: 8px 0;
+        font-size: 0.9rem;
+        color: #374151;
+    }
+
+    .field-icon {
+        color: #ec4899;
+        font-weight: 700;
+    }
+
+    .conversion-metric {
+        background: #ffffff;
+        border-radius: 12px;
+        padding: 24px;
+        border-left: 5px solid #f97316;
+        text-align: center;
+    }
+
+    .conversion-metric h3 {
+        color: #92400e;
+        font-size: 1.15rem;
+        font-weight: 700;
+        margin-bottom: 12px;
+    }
+
+    .conversion-math {
+        background: white;
+        border-radius: 8px;
+        padding: 14px;
+        color: #374151;
+        font-size: 0.95rem;
+        line-height: 1.8;
+    }
+
+    .conversion-math strong {
+        color: #92400e;
+        font-size: 1rem;
+    }
+</style>
+</head>
+<body>
+    <div class="slide-container">
+        <div class="slide-header">
+            <div class="slide-title">
+                <span class="material-symbols-rounded">fact_check</span>
+                Stage 4 - Decision & Conversion (1.8%)
+            </div>
+            <div class="slide-subtitle">
+                Converting qualified leads to consultations
+            </div>
+        </div>
+
+        <div class="slide-content">
+            <!-- Header removed -->
+                <div class="stage-header-text">
+                    <h2>Decision & Conversion</h2>
+                    <p>Contact Form → Lead Capture & Sales Handoff</p>
+                    <span class="percent-badge">1.8%</span>
+                </div>
+
+            <div class="stage-purpose">
+                <h3>Stage Purpose & Success Criteria</h3>
+                <div class="purpose-grid">
+                    <div class="purpose-item">
+                        <div class="purpose-label">Primary Goal</div>
+                        <div class="purpose-value">Capture qualified lead information</div>
+                    </div>
+                    <div class="purpose-item">
+                        <div class="purpose-label">Secondary Goal</div>
+                        <div class="purpose-value">Initiate rapid sales consultation process</div>
+                    </div>
+                    <div class="purpose-item">
+                        <div class="purpose-label">Key Outcome</div>
+                        <div class="purpose-value">Lead qualification + same-day follow-up</div>
+                    </div>
+                    <div class="purpose-item">
+                        <div class="purpose-label">Success Rate</div>
+                        <div class="purpose-value">20-25 qualified leads/month</div>
+    </div>
+</div>
+
+            <div class="conversion-flow">
+                <h3>
+                    <span class="material-symbols-rounded">trending_up</span>
+                    Conversion Journey
+                </h3>
+                
+                <div class="flow-step">
+                    <div class="flow-number">1</div>
+                    <div class="flow-content">
+                        <div class="flow-title">Contact Form Submission</div>
+                        <div class="flow-desc">
+                            User submits form with 7 qualification fields: Name, Email, Phone, 
+                            Company, Project Type, Budget, Project Description
+                        </div>
+    </div>
+</div>
+                <div class="flow-step">
+                    <div class="flow-number">2</div>
+                    <div class="flow-content">
+                        <div class="flow-title">Automatic Qualification</div>
+                        <div class="flow-desc">
+                            Database receives submission. System scores lead based on Project Type + Budget. 
+                            High-fit leads prioritized for faster response.
+                        </div>
+    </div>
+</div>
+                <div class="flow-step">
+                    <div class="flow-number">3</div>
+                    <div class="flow-content">
+                        <div class="flow-title">Same-Day Sales Follow-Up</div>
+                        <div class="flow-desc">
+                            Sales team contacts prospect via phone/email within 24 hours. 
+                            Email includes relevant case studies and pricing guides based on project type.
+                        </div>
+    </div>
+</div>
+                <div class="flow-step">
+                    <div class="flow-number">4</div>
+                    <div class="flow-content">
+                        <div class="flow-title">RFQ Process Initiation</div>
+                        <div class="flow-desc">
+                            Schedule discovery call. Send detailed requirements template. 
+                            Begin commercial negotiation and contract discussions.
+                        </div>
+    </div>
+</div>
+
+            <div class="form-section">
+                <h3>
+                    <span class="material-symbols-rounded" style="font-size: 1.3rem;">assignment</span>
+                    Smart Contact Form (7 Fields)
+                </h3>
+                <div class="form-fields">
+                    <div class="form-field"><span class="field-icon">📝</span> Name</div>
+                    <div class="form-field"><span class="field-icon">📧</span> Email</div>
+                    <div class="form-field"><span class="field-icon">📱</span> Phone</div>
+                    <div class="form-field"><span class="field-icon">🏢</span> Company</div>
+                    <div class="form-field"><span class="field-icon"><span class="material-symbols-rounded">target</span></span> Project Type</div>
+                    <div class="form-field"><span class="field-icon"><span class="material-symbols-rounded">attach_money</span></span> Budget Range</div>
+                    <div class="form-field" style="grid-column: 1 / -1;"><span class="field-icon">📄</span> Project Description (free text)</div>
+    </div>
+</div>
+            <div class="conversion-metric">
+                <h3>Expected Monthly Conversion</h3>
+                <div class="conversion-math">
+                    <strong>2,000 visitors</strong> × <strong>1.8% conversion</strong> = 
+                    <strong>36 form submissions</strong> → 
+                    <strong>20-25 qualified leads</strong> → 
+                    <strong>2-4 sales</strong> @ 10-15% close rate
+                </div>
+    </div>
+</div>
+    </div>
+
+    <?php include '../includes/navigation.php'; ?>
+    <?php include '../includes/scripts.php'; ?>
+</body>
+</html>

@@ -93,22 +93,22 @@ require_once '../config.php';
                 <div class="step-card">
                     <div class="step-index">1</div>
                     <div class="step-title">Define Interfaces</div>
-                    <div class="step-desc">PaymentGatewayInterface + InvoiceInterface are the contract: getCheckoutUrl(), supportsAutoBilling(), autoCharge(), verify(), getMethodTitle(), getMethodInfo(), allowManualReviewingOfTransaction(), getMinimumChargeAmount().</div>
+                    <div class="step-desc">Use VerifyInterface + BulkVerifyInterface as the contract. Keep methods aligned to existing structure: verify(), isBulkVerifySupported(), bulkSubmit(), bulkCheck(), getCredits(), getServiceName(), getServiceUrl().</div>
                 </div>
                 <div class="step-card">
                     <div class="step-index">2</div>
                     <div class="step-title">Model Interactions</div>
-                    <div class="step-desc">Sequence across Invoice, Transaction, PaymentMethod, Gateway service, and cron autoCharge flow.</div>
+                    <div class="step-desc">Sequence across subscriber query, provider API, and callback flow: bulkSubmit() → bulkCheck() → done/wait callbacks.</div>
                 </div>
                 <div class="step-card">
                     <div class="step-index">3</div>
                     <div class="step-title">Write Tests</div>
-                    <div class="step-desc">Unit tests express compliance and expected behavior. Tests are the truth.</div>
+                    <div class="step-desc">Unit tests validate status mapping, callback payloads, and safe handling of provider errors. Tests are the truth.</div>
                 </div>
                 <div class="step-card">
                     <div class="step-index">4</div>
                     <div class="step-title">AI Implementation</div>
-                    <div class="step-desc">AI generates code strictly within the design. No core changes. No regression.</div>
+                    <div class="step-desc">AI generates a new Reoon verification service class strictly within the design. No core changes. No regression.</div>
                 </div>
             </div>
 

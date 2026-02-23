@@ -164,7 +164,7 @@ require_once '../config.php';
                     <div class="agenda">
                         <div class="agenda-item"><strong>Why AI, why now:</strong> benefits, risks, and where control is lost.</div>
                         <div class="agenda-item"><strong>Design-first guardrails:</strong> interfaces, diagrams, and tests as contracts.</div>
-                        <div class="agenda-item"><strong>Workshop case:</strong> add a new payment gateway to Emotsy Cashier.</div>
+                        <div class="agenda-item"><strong>Workshop case:</strong> add a new Email Verification provider (Reoon) to the current service design.</div>
                         <div class="agenda-item"><strong>Hands-on flow:</strong> design artifacts → AI implementation → verification.</div>
                         <div class="agenda-item"><strong>Principles:</strong> feature work as a chance to strengthen architecture.</div>
                     </div>

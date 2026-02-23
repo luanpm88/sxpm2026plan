@@ -81,59 +81,59 @@ require_once '../config.php';
         <div class="slide-header">
             <div class="slide-title">
                 <span class="material-symbols-rounded">account_tree</span>
-                Payment System Architecture Snapshot
+                Email Verification Architecture Snapshot
             </div>
             <div class="slide-subtitle">
-                Design structure used for the workshop case
+                Design structure used for the workshop practice
             </div>
         </div>
 
         <div class="slide-content">
             <div class="diagram">
                 <div class="node">
-                    <div class="node-title">Invoice</div>
-                    <div class="node-desc">getTotal(), getCurrencyCode(), getTaxAmount()</div>
+                    <div class="node-title">Subscriber Query</div>
+                    <div class="node-desc">pluck('email') input for single/bulk verification</div>
                 </div>
                 <div class="arrow">
                     <span class="material-symbols-rounded">arrow_forward</span>
                 </div>
                 <div class="node">
-                    <div class="node-title">Transaction</div>
-                    <div class="node-desc">verify() pending transaction state</div>
+                    <div class="node-title">Verification Service</div>
+                    <div class="node-desc">verify() for single email checks</div>
                 </div>
             </div>
 
             <div class="diagram">
                 <div class="node">
-                    <div class="node-title">Payment Method</div>
-                    <div class="node-desc">autoCharge(), getMethodTitle(), getMethodInfo()</div>
+                    <div class="node-title">Bulk Workflow</div>
+                    <div class="node-desc">bulkSubmit() + bulkCheck() with done/wait callbacks</div>
                 </div>
                 <div class="arrow">
                     <span class="material-symbols-rounded">arrow_forward</span>
                 </div>
                 <div class="node" style="border-left:5px solid #f59e0b;">
-                    <div class="node-title">PaymentGatewayInterface</div>
-                    <div class="node-desc">getCheckoutUrl(), supportsAutoBilling(), autoCharge(), verify(), allowManualReviewingOfTransaction(), getMinimumChargeAmount()</div>
+                    <div class="node-title">BulkVerifyInterface</div>
+                    <div class="node-desc">bulkSubmit(), bulkCheck(), getCredits(), getServiceName(), getServiceUrl()</div>
                 </div>
             </div>
 
             <div class="layer">
                 <div class="node" style="border-left-color:#10b981;">
-                    <div class="node-title">StripeGateway</div>
-                    <div class="node-desc">Implements interface + supportsAutoBilling()</div>
+                    <div class="node-title">MyEmailVerifier</div>
+                    <div class="node-desc">Existing provider implementation in current design</div>
                 </div>
                 <div class="node" style="border-left-color:#10b981;">
-                    <div class="node-title">PayPalGateway</div>
-                    <div class="node-desc">Implements interface + verify()</div>
+                    <div class="node-title">Bouncify</div>
+                    <div class="node-desc">Existing provider implementation with bulk workflow</div>
                 </div>
                 <div class="node" style="border-left-color:#10b981;">
-                    <div class="node-title">NewGateway</div>
-                    <div class="node-desc">AI implements methods without core changes</div>
+                    <div class="node-title">New Reoon Service</div>
+                    <div class="node-desc">AI implements provider class without core changes</div>
                 </div>
             </div>
 
             <div class="note">
-                Design rule: all gateways implement the same interface and pass the same tests. PaymentMethod delegates to Gateway service; AI only fills the implementation layer.
+                Design rule: all providers follow the same contracts and pass the same tests. Core workflow stays unchanged; AI only fills the new provider implementation layer.
             </div>
         </div>
     </div>

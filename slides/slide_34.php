@@ -81,11 +81,11 @@ require_once '../config.php';
     <div class="slide-container">
         <div class="slide-header">
             <div class="slide-title">
-                <span class="material-symbols-rounded">payments</span>
-                Workshop Use Case: Add a Payment Gateway
+                <span class="material-symbols-rounded">mark_email_read</span>
+                Workshop Use Case: Add an Email Verification Service
             </div>
             <div class="slide-subtitle">
-                Emotsy Cashier – design-first integration
+                Design-first integration in current app architecture
             </div>
         </div>
 
@@ -97,7 +97,7 @@ require_once '../config.php';
                         Scenario
                     </div>
                     <p style="color:#4b5563; line-height:1.7; font-size:0.98rem;">
-                        We add a new payment gateway plugin that implements <strong>PaymentGatewayInterface</strong> without touching core modules. The implementation must comply 100% with existing behavior and contracts.
+                        We add a new email verification provider class for <strong>Reoon</strong> that implements existing contracts (<strong>VerifyInterface</strong> and <strong>BulkVerifyInterface</strong>) without touching core modules. The implementation must comply 100% with current behavior and contracts.
                     </p>
 
                     <div class="tag">
@@ -106,9 +106,9 @@ require_once '../config.php';
                     </div>
 
                     <ul class="list">
-                        <li>Provide interface design aligned to <strong>PaymentGatewayInterface</strong></li>
-                        <li>Sequence diagram: <em>getCheckoutUrl()</em> → user payment → <em>verify()</em> transaction</li>
-                        <li>Unit tests covering <em>supportsAutoBilling()</em>, <em>autoCharge()</em>, <em>allowManualReviewingOfTransaction()</em>, <em>getMinimumChargeAmount()</em>, <em>getMethodTitle()</em>, <em>getMethodInfo()</em></li>
+                        <li>Provide interface design aligned to <strong>VerifyInterface</strong> + <strong>BulkVerifyInterface</strong></li>
+                        <li>Sequence diagram: <em>verify()</em> single email → <em>bulkSubmit()</em> → <em>bulkCheck()</em> with callbacks</li>
+                        <li>Unit tests covering <em>status mapping</em>, <em>getCredits()</em>, <em>isBulkVerifySupported()</em>, <em>getServiceName()</em>, <em>getServiceUrl()</em>, and callback payload contracts</li>
                     </ul>
                 </div>
 

@@ -25,6 +25,11 @@ $next = getNextSlide($current);
     function goToSlide(num) {
         window.location.href = `slide_${num.toString().padStart(2, '0')}.php`;
     }
+
+    function openWorkshopScript() {
+        const slide = <?php echo $current; ?>;
+        window.open(`/workshop_script.php?slide=${slide}`, '_blank');
+    }
     
     document.addEventListener('click', function(event) {
         const modal = document.getElementById('navModal');

@@ -39,6 +39,10 @@ $next = getNextSlide($current);
     <button class="nav-btn" onclick="nextSlide()" <?php echo $next ? '' : 'disabled'; ?>>
         <span class="material-symbols-rounded">arrow_forward</span>
     </button>
+    <button class="nav-btn" onclick="openWorkshopScript()" title="Open Script Guide">
+        <span class="material-symbols-rounded">menu_book</span>
+        <span class="nav-tooltip">Workshop Script</span>
+    </button>
     <button class="nav-btn" onclick="exportPDF()" title="Export to PDF">
         <span class="material-symbols-rounded">picture_as_pdf</span>
         <span class="nav-tooltip">Export PDF</span>

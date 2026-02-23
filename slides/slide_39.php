@@ -239,17 +239,17 @@ require_once '../config.php';
 
         <div class="slide-content">
             <div class="intro">
-                Use this 6-step flow in live workshop: <strong>prepare constraints</strong> → <strong>configure service</strong> → <strong>implement class with AI</strong> → <strong>test quickly</strong> → <strong>debug/finalize with AI</strong> → <strong>open app and verify end-to-end</strong>.
+                Use this 6-step flow in live workshop: <strong>prepare contracts</strong> → <strong>configure service</strong> → <strong>implement class with AI</strong> → <strong>test quickly</strong> → <strong>debug/finalize with AI</strong> → <strong>open app and verify end-to-end</strong>.
                 <br>
-                Target service: <strong>Reoon</strong>. Goal: deliver working integration in minutes while keeping architecture under control.
+                Target service: <strong>Reoon</strong>. Goal: add one provider class that conforms to two interfaces: single verification + bulk verification.
             </div>
 
             <div class="step">
                 <div class="step-head">
                     <div class="step-index">1</div>
-                    <div class="step-title">Prepare Rules Prompt (ask AI to learn current design into Markdown)</div>
+                    <div class="step-title">Prepare Interface Contract Prompt</div>
                 </div>
-                <div class="step-goal">Create a design-contract markdown before coding. AI must summarize interface rules from existing code first.</div>
+                    <div class="step-goal">Create a markdown contract first. Lock two purposes clearly: single verify and bulk verify.</div>
 
                 <div class="label prompt"><span class="material-symbols-rounded" style="font-size:14px;">chat</span>Prompt</div>
                 <div class="code-box">Read and analyze current verification architecture from:
@@ -261,6 +261,9 @@ Generate a markdown file: /Users/luan/apps/acelle/docs/verification-design-contr
 
 The markdown must include:
 1) Interface method contracts and expected behavior
+    - verify($email)
+    - bulkSubmit(Builder $subscriberQuery)
+    - bulkCheck(string $token, Closure $doneCallback, Closure $waitCallback)
 2) Standard status map conventions (deliverable, undeliverable, risky, unknown)
 3) Single verify flow and bulk verify callback flow
 4) Error-handling conventions used by current providers
@@ -309,7 +312,7 @@ Implement (or update) Reoon verification provider class in:
 Requirements:
 - Implement VerifyInterface and BulkVerifyInterface contracts exactly
 - Keep status mapping explicit and safe
-- Support verify(), bulkSubmit(), bulkCheck(), getCredits(), getServiceName(), getServiceUrl(), isBulkVerifySupported()
+- Support verify($email), bulkSubmit(Builder $subscriberQuery), bulkCheck(string $token, Closure $doneCallback, Closure $waitCallback), getCredits(), getServiceName(), getServiceUrl(), isBulkVerifySupported()
 - Follow coding style used by existing providers in app/Library/Everification
 - No changes to core workflow outside provider class
 - Throw clear exceptions for invalid API responses

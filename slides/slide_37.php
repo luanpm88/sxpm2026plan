@@ -96,22 +96,22 @@ require_once '../config.php';
                 <div class="phase">
                     <div class="phase-title">1. Design Brief</div>
                     <div class="phase-time">10–15 min</div>
-                    <div class="phase-desc">Review service contracts, status mapping rules, and constraints. Align on what cannot change.</div>
+                    <div class="phase-desc">Review two interfaces, method signatures, status mapping, and scope boundaries.</div>
                 </div>
                 <div class="phase">
                     <div class="phase-title">2. Interaction Mapping</div>
                     <div class="phase-time">15–20 min</div>
-                    <div class="phase-desc">Walk through single + bulk verification flow and expected callback behavior in edge cases.</div>
+                    <div class="phase-desc">Walk through single flow verify($email) and bulk flow bulkSubmit() → bulkCheck().</div>
                 </div>
                 <div class="phase">
                     <div class="phase-title">3. AI Implementation</div>
                     <div class="phase-time">25–30 min</div>
-                    <div class="phase-desc">Use AI to implement the Reoon verification service class strictly within the defined boundaries.</div>
+                    <div class="phase-desc">Use AI to implement new Reoon class only in provider layer, no core changes.</div>
                 </div>
                 <div class="phase">
                     <div class="phase-title">4. Verification</div>
                     <div class="phase-time">15–20 min</div>
-                    <div class="phase-desc">Run tests, validate mapping/compliance, and refactor for clarity if needed.</div>
+                    <div class="phase-desc">Run focused tests and validate interface compliance, callback behavior, and mapping.</div>
                 </div>
             </div>
 

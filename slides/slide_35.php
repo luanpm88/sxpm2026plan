@@ -14,10 +14,9 @@ require_once '../config.php';
 
         .diagram {
             display: grid;
-            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-columns: 1fr 1fr;
             gap: 18px;
-            align-items: center;
-            margin-top: 30px;
+            margin-top: 22px;
         }
 
         .node {
@@ -50,7 +49,7 @@ require_once '../config.php';
 
         .layer {
             display: grid;
-            grid-template-columns: repeat(3, 1fr);
+            grid-template-columns: repeat(4, 1fr);
             gap: 16px;
             margin-top: 22px;
         }
@@ -70,6 +69,17 @@ require_once '../config.php';
             font-weight: 600;
         }
 
+        .flow {
+            margin-top: 18px;
+            background: #f8fafc;
+            border: 1px solid #e2e8f0;
+            border-radius: 12px;
+            padding: 14px 16px;
+            color: #374151;
+            font-size: 0.92rem;
+            line-height: 1.7;
+        }
+
         @media (max-width: 1100px) {
             .diagram { grid-template-columns: 1fr; }
             .layer { grid-template-columns: 1fr; }
@@ -84,56 +94,47 @@ require_once '../config.php';
                 Email Verification Architecture Snapshot
             </div>
             <div class="slide-subtitle">
-                Design structure used for the workshop practice
+                Two interfaces, two jobs, one consistent provider pattern
             </div>
         </div>
 
         <div class="slide-content">
             <div class="diagram">
                 <div class="node">
-                    <div class="node-title">Subscriber Query</div>
-                    <div class="node-desc">pluck('email') input for single/bulk verification</div>
-                </div>
-                <div class="arrow">
-                    <span class="material-symbols-rounded">arrow_forward</span>
+                    <div class="node-title">VerifyInterface</div>
+                    <div class="node-desc">Main job: single email verification<br><strong>verify($email)</strong></div>
                 </div>
                 <div class="node">
-                    <div class="node-title">Verification Service</div>
-                    <div class="node-desc">verify() for single email checks</div>
+                    <div class="node-title">BulkVerifyInterface</div>
+                    <div class="node-desc">Main job: bulk list verification<br><strong>bulkSubmit(Builder $subscriberQuery)</strong><br><strong>bulkCheck(string $token, Closure $doneCallback, Closure $waitCallback)</strong></div>
                 </div>
             </div>
 
-            <div class="diagram">
-                <div class="node">
-                    <div class="node-title">Bulk Workflow</div>
-                    <div class="node-desc">bulkSubmit() + bulkCheck() with done/wait callbacks</div>
-                </div>
-                <div class="arrow">
-                    <span class="material-symbols-rounded">arrow_forward</span>
-                </div>
-                <div class="node" style="border-left:5px solid #f59e0b;">
-                    <div class="node-title">BulkVerifyInterface</div>
-                    <div class="node-desc">bulkSubmit(), bulkCheck(), getCredits(), getServiceName(), getServiceUrl()</div>
-                </div>
+            <div class="flow">
+                <strong>Flow:</strong> single email → <strong>verify($email)</strong> | bulk list → <strong>bulkSubmit(...)</strong> → poll <strong>bulkCheck(...)</strong> until done callback receives final statuses.
             </div>
 
             <div class="layer">
                 <div class="node" style="border-left-color:#10b981;">
-                    <div class="node-title">MyEmailVerifier</div>
-                    <div class="node-desc">Existing provider implementation in current design</div>
+                    <div class="node-title">Emailable</div>
+                    <div class="node-desc">Existing class implementing provider contracts</div>
                 </div>
                 <div class="node" style="border-left-color:#10b981;">
                     <div class="node-title">Bouncify</div>
-                    <div class="node-desc">Existing provider implementation with bulk workflow</div>
+                    <div class="node-desc">Existing class with single + bulk support</div>
+                </div>
+                <div class="node" style="border-left-color:#10b981;">
+                    <div class="node-title">MyEmailVerifier</div>
+                    <div class="node-desc">Existing class with same contract pattern</div>
                 </div>
                 <div class="node" style="border-left-color:#10b981;">
                     <div class="node-title">New Reoon Service</div>
-                    <div class="node-desc">AI implements provider class without core changes</div>
+                    <div class="node-desc">New class added in workshop, same interfaces</div>
                 </div>
             </div>
 
             <div class="note">
-                Design rule: all providers follow the same contracts and pass the same tests. Core workflow stays unchanged; AI only fills the new provider implementation layer.
+                Design rule: add only one new provider class that conforms to existing interfaces. No core redesign. Same flow, same contracts, new service.
             </div>
         </div>
     </div>

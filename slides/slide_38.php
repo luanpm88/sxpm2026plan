@@ -87,7 +87,7 @@ require_once '../config.php';
                     <ul class="list">
                         <li>Human-led design is non‑negotiable</li>
                         <li>AI is a tool, not a decision maker</li>
-                        <li>Interfaces and tests are our contracts</li>
+                        <li>Two interface purposes stay clear: single verify + bulk verify</li>
                         <li>Contract compliance beats creativity in core systems</li>
                     </ul>
                 </div>
@@ -103,7 +103,7 @@ require_once '../config.php';
             </div>
 
             <div class="quote">
-                “With clear contracts, AI can deliver a new email verification service in minutes while humans keep architecture fully under control.”
+                “One new provider class, same interfaces, same flow: fast delivery with AI and stable architecture.”
             </div>
         </div>
     </div>

@@ -97,7 +97,7 @@ require_once '../config.php';
                         Scenario
                     </div>
                     <p style="color:#4b5563; line-height:1.7; font-size:0.98rem;">
-                        We add a new email verification provider class for <strong>Reoon</strong> that implements existing contracts (<strong>VerifyInterface</strong> and <strong>BulkVerifyInterface</strong>) without touching core modules. The implementation must comply 100% with current behavior and contracts.
+                        We add one new provider class for <strong>Reoon</strong>. It must conform to <strong>VerifyInterface</strong> (single email verification) and <strong>BulkVerifyInterface</strong> (bulk list verification) without touching core modules.
                     </p>
 
                     <div class="tag">
@@ -106,9 +106,9 @@ require_once '../config.php';
                     </div>
 
                     <ul class="list">
-                        <li>Provide interface design aligned to <strong>VerifyInterface</strong> + <strong>BulkVerifyInterface</strong></li>
-                        <li>Sequence diagram: <em>verify()</em> single email → <em>bulkSubmit()</em> → <em>bulkCheck()</em> with callbacks</li>
-                        <li>Unit tests covering <em>status mapping</em>, <em>getCredits()</em>, <em>isBulkVerifySupported()</em>, <em>getServiceName()</em>, <em>getServiceUrl()</em>, and callback payload contracts</li>
+                        <li>Single purpose: <em>verify($email)</em> returns mapped verification status</li>
+                        <li>Bulk purpose: <em>bulkSubmit(Builder $subscriberQuery)</em> + <em>bulkCheck(string $token, Closure $doneCallback, Closure $waitCallback)</em></li>
+                        <li>Unit tests focus on status mapping, callback flow, and provider metadata methods</li>
                     </ul>
                 </div>
 
@@ -119,9 +119,9 @@ require_once '../config.php';
                     </div>
                     <ul class="list">
                         <li class="constraint">No changes to CORE modules</li>
-                        <li class="constraint">Zero regression risk (no re-testing entire system)</li>
-                        <li class="constraint">AI must follow interface and tests, not invent architecture</li>
-                        <li class="constraint">Result must be maintainable at zero additional cost</li>
+                        <li class="constraint">No architecture redesign</li>
+                        <li class="constraint">AI must follow interfaces and tests</li>
+                        <li class="constraint">Keep implementation small and maintainable</li>
                     </ul>
 
                     <div class="tag" style="background:#ecfeff;border-color:#a5f3fc;color:#0e7490; margin-top:16px;">

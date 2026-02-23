@@ -90,7 +90,7 @@ require_once '../config.php';
                 <div class="card">
                     <h4 style="color:#10b981;">✅ Do this</h4>
                     <div class="prompt-box do">
-                        "Implement ReoonVerificationService that conforms to VerifyInterface and BulkVerifyInterface. Do not modify core modules. Use provided interaction flow and tests. Ensure verify(), isBulkVerifySupported(), bulkSubmit(), bulkCheck(), getCredits(), getServiceName(), getServiceUrl() follow existing behavior and callback contracts. Keep status mapping explicit and safe. Output only the new provider class and minimal test updates if needed."
+                        "Implement Reoon verification provider class that conforms to VerifyInterface and BulkVerifyInterface. Do not modify core modules. Single flow: verify($email). Bulk flow: bulkSubmit(Builder $subscriberQuery) + bulkCheck(string $token, Closure $doneCallback, Closure $waitCallback). Keep status mapping explicit and safe. Output only provider class + focused tests."
                     </div>
 
                     <div class="artifact-grid">
@@ -112,9 +112,9 @@ require_once '../config.php';
                 <div class="card">
                     <h4 style="color:#f97316;">❌ Not this</h4>
                     <div class="prompt-box dont">
-                        "Code me a new email verification integration quickly." 
+                        "Build email verification quickly, do whatever is needed." 
                         <br><br>
-                        This invites AI to redesign parts of the system, break status mapping, or alter callback behavior without review.
+                        This invites AI to redesign workflow, skip interface contracts, and break callback behavior.
                     </div>
 
                     <div style="margin-top: 18px; background:#fff7ed; border:1px solid #fed7aa; border-radius:10px; padding:14px; color:#9a3412; line-height:1.6;">

@@ -12,6 +12,8 @@
             overflow-x: hidden;
             overflow-y: auto;
             min-height: 100vh;
+            font-size: 20px;
+            line-height: 1.6;
         }
         
         .material-symbols-rounded {
@@ -23,16 +25,16 @@
             min-height: 100vh;
             display: flex;
             flex-direction: column;
-            padding: 60px 80px;
+            padding: 64px 88px;
             color: #000000;
             overflow-y: auto;
         }
         
         .slide-header {
-            margin-bottom: 40px;
+            margin-bottom: 44px;
             animation: fadeInDown 0.6s ease-out;
             border-bottom: 2px solid #e5e7eb;
-            padding-bottom: 20px;
+            padding-bottom: 24px;
         }
         
         @keyframes fadeInDown {
@@ -58,23 +60,30 @@
         }
         
         .slide-title {
-            font-size: 2.5rem;
-            font-weight: 700;
+            font-size: 3.1rem;
+            font-weight: 800;
             margin-bottom: 0.5rem;
             display: flex;
             align-items: center;
             gap: 15px;
             color: #000000;
+            letter-spacing: -0.01em;
         }
         
         .slide-title .material-symbols-rounded {
-            font-size: 3rem;
-            color: #1f2937;
+            font-size: 3.3rem;
+            color: #0f172a;
+            background: #eff6ff;
+            border: 1px solid #bfdbfe;
+            border-radius: 14px;
+            padding: 7px;
         }
         
         .slide-content {
             flex: 1;
             animation: fadeInUp 0.8s ease-out;
+            font-size: 1.12rem;
+            line-height: 1.72;
         }
         
         .navigation {
@@ -319,8 +328,8 @@
         }
         
         .card-header {
-            font-size: 1.8rem;
-            font-weight: 700;
+            font-size: 2.05rem;
+            font-weight: 800;
             margin-bottom: 20px;
             display: flex;
             align-items: center;
@@ -361,7 +370,7 @@
         
         /* Card content */
         .card-content {
-            font-size: 1.1rem;
+            font-size: 1.2rem;
             line-height: 1.7;
             color: #4b5563;
         }
@@ -378,7 +387,7 @@
             padding-left: 32px;
             position: relative;
             line-height: 1.6;
-            font-size: 1.1rem;
+            font-size: 1.16rem;
             color: #4b5563;
         }
         
@@ -430,5 +439,67 @@
             font-size: 1.4rem;
             font-weight: 600;
             color: #1f2937;
+        }
+
+        .pro-section-title {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            font-size: 1.35rem;
+            font-weight: 800;
+            color: #0f172a;
+            margin-bottom: 10px;
+        }
+
+        .pro-section-title .material-symbols-rounded {
+            font-size: 1.25rem;
+            color: #2563eb;
+            background: #eff6ff;
+            border: 1px solid #bfdbfe;
+            border-radius: 8px;
+            padding: 2px;
+        }
+
+        .pro-list {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: grid;
+            gap: 10px;
+        }
+
+        .pro-list li {
+            display: flex;
+            align-items: flex-start;
+            gap: 10px;
+            border: 1px solid #e5e7eb;
+            background: #ffffff;
+            border-radius: 10px;
+            padding: 10px 12px;
+            color: #475569;
+            font-size: 1.04rem;
+            line-height: 1.55;
+        }
+
+        .pro-list li .material-symbols-rounded {
+            font-size: 18px;
+            color: #2563eb;
+            margin-top: 2px;
+        }
+
+        .visual-panel {
+            border: 1px solid #dbeafe;
+            background: linear-gradient(180deg, #f8fbff 0%, #ffffff 100%);
+            border-radius: 14px;
+            padding: 16px;
+            box-shadow: 0 4px 12px rgba(15, 23, 42, 0.05);
+        }
+
+        @media (max-width: 1200px) {
+            body { font-size: 18px; }
+            .slide-container { padding: 42px 40px; }
+            .slide-title { font-size: 2.5rem; }
+            .slide-title .material-symbols-rounded { font-size: 2.8rem; }
+            .slide-content { font-size: 1.02rem; }
         }
     </style>

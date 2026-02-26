@@ -10,6 +10,14 @@ require_once '../config.php';
         .cluster h6 { margin-bottom: 10px; }
         .chart-box { border: 2px dashed #93c5fd; background: #f8fbff; border-radius: 14px; padding: 16px; }
         .cluster .material-symbols-rounded { font-size: 18px; color: #2563eb; }
+        .buyer-map { border: 1px solid #d1d5db; border-radius: 14px; background: #ffffff; padding: 16px; }
+        .buyer-intro { font-size: 1.02rem; color: #111827; margin: 4px 0 12px; }
+        .buyer-row { border: 1px solid #e5e7eb; border-radius: 11px; background: #f9fafb; padding: 10px 12px; margin-bottom: 10px; }
+        .buyer-row:last-child { margin-bottom: 0; }
+        .buyer-q { font-weight: 700; margin-bottom: 4px; }
+        .buyer-meta { display: flex; flex-wrap: wrap; gap: 8px; font-size: 0.94rem; }
+        .buyer-chip { border: 1px solid #d1d5db; border-radius: 999px; background: #fff; padding: 4px 9px; display: inline-flex; align-items: center; gap: 5px; }
+        .buyer-chip .material-symbols-rounded { font-size: 15px; }
         .slide-content .text-secondary,
         .slide-content .small,
         .slide-content p,

@@ -57,6 +57,7 @@ require_once '../config.php';
         <div class="slide-title"><span class="material-symbols-rounded">dashboard</span>Website Executive Overview</div>
         <div class="slide-subtitle">BOD Snapshot: challenge, strategic response, and expected business impact</div>
     </div>
+    
 
     <div class="slide-content">
         <div class="mb-5">
@@ -65,11 +66,11 @@ require_once '../config.php';
                     <div class="pro-section-title"><span class="material-symbols-rounded">flag</span>Board Context</div>
                     <p class="mb-0 text-secondary fs-4">Mục tiêu của kiến trúc landing page: chuyển hành vi khách hàng enterprise từ <strong>quan tâm</strong> sang <strong>liên hệ có chất lượng</strong> bằng funnel nhiều điểm vào, một điểm chuyển đổi.</p>
                 </div>
-                <div class="col-md-4 text-md-end">
-                    <span class="focus-pill"><span class="material-symbols-rounded" style="font-size:16px;">flag</span>Single Conversion Goal: Contact/RFQ</span>
-                </div>
+                <div class="col-md-4"><div class="kpi-card"><div class="kpi-title">Presentation Scope</div><div class="kpi-value">30 + 30 mins</div><div class="text-secondary">30 phút trình bày + 30 phút Q&A BOD.</div><span class="focus-pill my-2"><span class="material-symbols-rounded" style="font-size:16px;">flag</span>Single Conversion Goal: Contact/RFQ</span></div></div>
             </div>
         </div>
+
+        
 
         <div class="mb-2">
             <div class="section-kicker">Snapshot</div>
@@ -77,9 +78,9 @@ require_once '../config.php';
         </div>
 
         <div class="row g-4 mb-5">
-            <div class="col-md-4"><div class="kpi-card"><div class="kpi-title">Audience Fit</div><div class="kpi-value">Enterprise Buyers</div><div class="text-secondary">Cần năng lực, độ tin cậy, compliance.</div></div></div>
-            <div class="col-md-4"><div class="kpi-card"><div class="kpi-title">Architecture Pattern</div><div class="kpi-value">Hub & Funnel</div><div class="text-secondary">Nhiều đường vào, luồng chuyển đổi rõ ràng.</div></div></div>
-            <div class="col-md-4"><div class="kpi-card"><div class="kpi-title">Presentation Scope</div><div class="kpi-value">30 + 30 mins</div><div class="text-secondary">30 phút trình bày + 30 phút Q&A BOD.</div></div></div>
+            <div class="col-md-6"><div class="kpi-card"><div class="kpi-title">Audience Fit</div><div class="kpi-value">Enterprise Buyers</div><div class="text-secondary">Cần năng lực, độ tin cậy, compliance.</div></div></div>
+            <div class="col-md-6"><div class="kpi-card"><div class="kpi-title">Architecture Pattern</div><div class="kpi-value">Hub & Funnel</div><div class="text-secondary">Nhiều đường vào, luồng chuyển đổi rõ ràng.</div></div></div>
+            <!-- <div class="col-md-4"><div class="kpi-card"><div class="kpi-title">Presentation Scope</div><div class="kpi-value">30 + 30 mins</div><div class="text-secondary">30 phút trình bày + 30 phút Q&A BOD.</div></div></div> -->
         </div>
 
         <div class="mb-2">

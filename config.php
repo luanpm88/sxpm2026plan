@@ -68,6 +68,7 @@ $slide_titles = [
     'slide_60' => 'FDI sản xuất: Business Model Evolution',
     'slide_61' => 'FDI sản xuất: Competitive Positioning',
     'slide_62' => 'FDI sản xuất: Development Roadmap (24–36 Months)',
+    'slide_63' => 'FDI sản xuất: BOD Requirement Mapping Q&A',
     'slide_64' => 'FDI sản xuất: Strategic Impact & Decision Required',
     'slide_65' => 'FDI sản xuất: Reality Check - Current Readiness & Constraints',
     'slide_66' => 'FDI sản xuất: SWOT for FDI Production Entry',
@@ -77,7 +78,14 @@ $slide_titles = [
     'slide_70' => 'FDI sản xuất: Cost Envelope & Budget Scenarios',
     'slide_71' => 'FDI sản xuất: Pricing Strategy & Opportunity Model',
     'slide_72' => 'FDI sản xuất: BOD Realism Checkpoint & Final Confirmations',
-    'slide_63' => 'FDI sản xuất: BOD Requirement Mapping Q&A',
+    'slide_73' => 'FDI SX - Solution: Product Introduction Plan',
+    'slide_74' => 'FDI SX - Solution: Why Now & Manufacturing Pain',
+    'slide_75' => 'FDI SX - Solution: What We Provide (MES Scope)',
+    'slide_76' => 'FDI SX - Solution: Full Module Catalog',
+    'slide_77' => 'FDI SX - Solution: Architecture & Integration',
+    'slide_78' => 'FDI SX - Solution: Delivery Process & Team',
+    'slide_79' => 'FDI SX - Solution: Security, Infra, Network & Support',
+    'slide_80' => 'FDI SX - Solution: Packages, Pricing & Investment',
 ];
 
 // Get current slide number from URL

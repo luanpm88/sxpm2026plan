@@ -1123,6 +1123,287 @@ Mục tiêu: checklist rút gọn để MKT review trong 10-15 phút trước kh
 - Review date:
 - Status: Draft / In Review / Approved / Published
 
+---
+
+## 17) RESET DESIGN — FDI SX - Solution (Slide 73 trở đi)
+
+Mục này là **source of truth mới** cho nhánh giới thiệu sản phẩm từ slide 73 trở đi.
+
+Quy tắc áp dụng:
+- Bỏ qua toàn bộ mô tả cũ của nhánh 73+ trước đây.
+- Tập trung vào câu chuyện sản phẩm MES cho khách hàng business/market hiểu được.
+- Giọng trình bày: kỹ thuật-vận hành của team sản xuất, không dùng giọng quảng cáo.
+
+### 17.1 Prefix bắt buộc
+
+Prefix tiêu đề chuẩn cho nhánh này:
+
+`FDI SX - Solution:`
+
+Ví dụ:
+- `FDI SX - Solution: Product Overview`
+- `FDI SX - Solution: Module Catalog`
+
+### 17.2 Mục tiêu nhánh 73+
+
+- Giới thiệu rõ sản phẩm MES của mình là gì.
+- Đi theo luồng quyết định tự nhiên của khách hàng: nhu cầu -> giải pháp -> triển khai -> chi phí -> vận hành dài hạn.
+- Bao phủ đầy đủ các nhóm nội dung bắt buộc:
+	- Mã nguồn/Công nghệ
+	- Bảo mật
+	- Kiến trúc hạ tầng
+	- Bảo trì/Bảo hành
+	- Gói sản phẩm (3 gói: chức năng + giá)
+	- Thiết bị/Phần cứng/Ngoại vi
+	- Quy trình SXPM
+	- Đội ngũ/Vai trò
+	- Rủi ro quản lý
+	- Năng lực + Tiêu chuẩn/Chứng nhận
+
+### 17.3 Slide 73 — Plan index cho nhánh sản phẩm (làm trước)
+
+**Title**
+- `FDI SX - Solution: Product Introduction Plan`
+
+**Mục tiêu slide 73**
+- Làm đầu mục tổng cho toàn bộ slide sau.
+- Cho người đọc thấy ngay thứ tự kể chuyện và phạm vi nội dung.
+- Đặt góc nhìn khách hàng FDI sản xuất: họ đang vướng gì, họ cần được dẫn dắt thế nào, và họ sẽ nhận được gì.
+- Chỉ là plan/index nhưng phải đủ rõ để người nghe hiểu logic business trước khi đi vào từng slide chi tiết.
+
+**Khối nội dung bắt buộc**
+- Product scope (MES cho FDI sản xuất).
+- Story flow map (từ nhu cầu đến vận hành và mở rộng).
+- Danh sách slide phía sau + output của từng slide.
+- Pain framing cho FDI sản xuất (nhóm khó khăn thường gặp):
+	- Downtime khó truy nguyên theo line/ca.
+	- Dữ liệu rời rạc giữa ERP/MES/WMS/Excel, thiếu một nguồn sự thật.
+	- Chậm phản ứng khi lỗi chất lượng, CAPA closure kéo dài.
+	- Áp lực audit/compliance, truy xuất bằng chứng tốn công.
+- Solution response map (sản phẩm xử lý pain như thế nào):
+	- Chuẩn hóa module vận hành (Production/Warehouse/Quality/Maintenance/Analytics).
+	- Chuẩn hóa tích hợp dữ liệu và event flow với hệ thống hiện hữu.
+	- Chuẩn hóa delivery theo phase-gate + KPI + ownership.
+	- Chuẩn hóa trust layer: security baseline, SLA band, governance.
+- Customer value summary (khách hàng được gì từ sản phẩm):
+	- Executive Sponsor: thấy rõ risk-control + investment logic + điều kiện scale.
+	- Plant: giảm downtime, ổn định throughput, tăng khả năng kiểm soát line.
+	- IT: giảm integration chaos, tăng auditability, vận hành có chuẩn.
+	- Procurement: scope rõ, mốc nghiệm thu rõ, trách nhiệm và cam kết rõ.
+
+**Gợi ý dẫn chuyện (đặt mình vào khách hàng FDI)**
+- Bước 1: “Nhà máy của tôi đang mất gì nếu giữ cách vận hành hiện tại?”
+- Bước 2: “Giải pháp MES của bên bạn cụ thể giải quyết phần nào trước?”
+- Bước 3: “Tôi nhận được kết quả gì theo từng vai trò (BOD/Plant/IT/Procurement)?”
+- Bước 4: “Triển khai ra sao để không gây rủi ro vận hành?”
+- Bước 5: “Khi nào đủ điều kiện mở rộng và tổng mức đầu tư như thế nào?”
+
+**Talk track 60–90 giây (dùng trực tiếp cho Slide 73)**
+- “Trong phần này, chúng tôi không bắt đầu từ tính năng, mà bắt đầu từ khó khăn vận hành thực tế mà nhà máy FDI đang gặp: downtime khó truy nguyên, dữ liệu rời rạc và áp lực compliance.”
+- “Giải pháp của chúng tôi là một MES theo kiến trúc module, tích hợp với hệ thống hiện hữu, triển khai theo phase-gate để giảm rủi ro khi đưa vào vận hành.”
+- “Giá trị nhận được sẽ rõ theo từng vai trò: Executive Sponsor có logic đầu tư và mở rộng; Plant có hiệu quả vận hành; IT có tích hợp chuẩn và truy vết; Procurement có phạm vi và cam kết rõ.”
+- “Từ slide 74 đến 80, chúng tôi đi theo đúng thứ tự ra quyết định của khách hàng: nhu cầu -> giải pháp -> kiến trúc -> triển khai -> vận hành -> chi phí.”
+
+**Implementation checklist cho Slide 73 (để tránh lỗi cũ)**
+- [ ] Chỉ giữ vai trò plan/index, không đi sâu thành slide kỹ thuật chi tiết.
+- [ ] Có đủ 3 lớp: Pain framing -> Solution response -> Customer value.
+- [ ] Có nhắc rõ sản phẩm là MES cho FDI sản xuất và logic storytelling 74 -> 80.
+- [ ] Không đưa text meta vào render slide: “template”, “DoD”, “publish gate”, “bố cục trình bày”.
+- [ ] Không dùng ngôn ngữ pilot-first trong cụm 73+.
+- [ ] Từ khóa vai trò dùng nhất quán: Executive Sponsor / Plant / IT / Procurement.
+
+**Implementation checklist cho Slide 74–80 (triển khai chính xác, tránh lỗi cũ)**
+
+**Slide 74 — Why Now & Manufacturing Pain**
+- [ ] Có đủ 4 nhóm pain: downtime, data fragmentation, quality response, compliance burden.
+- [ ] Có “cost of inaction” theo ngữ cảnh 12–24 tháng (không nêu mơ hồ).
+- [ ] Kết thúc bằng trigger khởi tạo triển khai (owner + KPI baseline + scope line/process).
+
+**Slide 75 — What We Provide (MES Scope)**
+- [ ] Nói rõ in-scope/out-of-scope, không tạo kỳ vọng thay ERP toàn phần.
+- [ ] Thể hiện mô hình đồng hành theo vòng đời: discover -> co-design -> delivery -> governance.
+- [ ] Có value theo 4 vai trò: Executive Sponsor / Plant / IT / Procurement.
+
+**Slide 76 — Full Module Catalog**
+- [ ] Có danh mục module đầy đủ (Production/Warehouse/Quality/Maintenance/Analytics).
+- [ ] Có integration matrix với ERP/MES/WMS/HRM/IoT/API.
+- [ ] Có bảng module-to-outcome: pain -> function -> KPI -> stakeholder.
+- [ ] Có data governance + scope boundary giai đoạn đầu.
+
+**Slide 77 — Architecture & Integration**
+- [ ] Có architecture logic đủ lớp (application/data/integration/platform-security).
+- [ ] Có flow dữ liệu chính và nguyên tắc source of truth.
+- [ ] Có ràng buộc tích hợp và điều kiện vận hành khi mở rộng.
+
+**Slide 78 — Delivery Process & Team**
+- [ ] Có phase-gate rõ (entry/exit criteria) và điều kiện dừng/chỉnh.
+- [ ] Có RACI vai trò triển khai (PM/PO, Solution Lead, Tech Lead, QA, Support, Program Owner).
+- [ ] Có deliverables theo phase và mốc nghiệm thu.
+
+**Slide 79 — Security, Infra, Network & Support**
+- [ ] Có security baseline: RBAC, encryption, audit trail, backup/DR.
+- [ ] Có infra/network baseline cho môi trường vận hành sản xuất.
+- [ ] Có SLA band + escalation path + commitment boundary.
+- [ ] Nội dung phải ăn nhập trực tiếp với commitments/security/governance, không chèn meta text.
+
+**Slide 80 — Packages, Pricing & Investment**
+- [ ] Có 3 gói sản phẩm rõ chức năng và phạm vi áp dụng.
+- [ ] Có khung giá dự kiến + phần cứng/ngoại vi liên quan.
+- [ ] Có tổng mức đầu tư theo phase và điều kiện mở rộng.
+- [ ] Có lưu ý giả định chi phí (scope, số line/site, mức tích hợp, service level).
+
+**Cross-check bắt buộc trước khi implement 74–80**
+- [ ] Không render text meta vào slide (template/DoD/publish gate/bố cục trình bày).
+- [ ] Không dùng narrative pilot-first trong cụm 73+.
+- [ ] Mọi claim kỹ thuật/chi phí đều trace được về plan FDI cũ (54–63, 67–72).
+- [ ] Giọng văn nhất quán: team sản xuất, kỹ thuật-vận hành, không quảng cáo chung chung.
+
+### 17.4 Story order đề xuất (ưu tiên hợp lý từ chung -> chi tiết)
+
+#### Cụm cốt lõi
+- **Slide 73** — `FDI SX - Solution: Product Introduction Plan`
+	- Đầu mục tổng và thứ tự kể chuyện.
+
+- **Slide 74** — `FDI SX - Solution: Why Now & Manufacturing Pain`
+	- Nhu cầu, pain vận hành, cost of inaction.
+
+- **Slide 75** — `FDI SX - Solution: What We Provide (MES Scope)`
+	- Giải pháp tổng thể, phạm vi in-scope/out-of-scope.
+
+- **Slide 76** — `FDI SX - Solution: Full Module Catalog`
+	- Liệt kê đầy đủ module hệ thống MES và chức năng chính.
+
+- **Slide 77** — `FDI SX - Solution: Architecture & Integration`
+	- Ứng dụng, dữ liệu, tích hợp ERP/MES/WMS/HRM/IoT/API.
+
+- **Slide 78** — `FDI SX - Solution: Delivery Process & Team`
+	- Quy trình SXPM, phase-gate, đội ngũ/vai trò, RACI.
+
+- **Slide 79** — `FDI SX - Solution: Security, Infra, Network & Support`
+	- Bảo mật, hạ tầng, mạng, bảo trì/bảo hành, SLA band.
+
+- **Slide 80** — `FDI SX - Solution: Packages, Pricing & Investment`
+	- 3 gói sản phẩm (chức năng + giá dự kiến), phần cứng/ngoại vi, tổng mức đầu tư.
+
+#### Cụm mở rộng (nên có nếu mở thêm slide sau 80)
+- **Slide 81** — Mã nguồn/Công nghệ & nguyên tắc kỹ thuật.
+- **Slide 82** — Thiết bị phần cứng/ngoại vi theo mô hình nhà máy.
+- **Slide 83** — Rủi ro quản lý và kế hoạch giảm thiểu.
+- **Slide 84** — Năng lực đội ngũ, tiêu chuẩn/chứng nhận, năng lực triển khai.
+- **Slide 85** — Kế hoạch triển khai 12-18 tháng + điều kiện mở rộng.
+
+### 17.5 Ánh xạ từ plan FDI cũ (để không lệch)
+
+Nguồn bắt buộc từ cụm FDI hiện có:
+- Pain & business context: slide 54, 57, 58.
+- Architecture/module: slide 56, 57, 58.
+- Delivery/process/team: slide 59, 60, 61, 62.
+- Q&A và mối quan tâm quyết định: slide 63.
+- Risk/cost/pricing/readiness: slide 67, 68, 70, 71, 72.
+
+Quy tắc ánh xạ:
+- Không thêm claim mới nếu chưa có nguồn từ cụm FDI.
+- Khi mở rộng nội dung kỹ thuật, phải có owner kiểm chứng (Solution Lead/Delivery Lead).
+
+### 17.6 Nếu vẫn giữ trần 80 slide
+
+Nếu hiện tại chưa mở thêm slide >80, giữ 73-80 theo cấu trúc cốt lõi và gộp như sau:
+- Gộp Source code/Công nghệ vào slide 77.
+- Gộp Thiết bị/Phần cứng/Ngoại vi vào slide 80 (phần chi phí).
+- Gộp Tiêu chuẩn/Chứng nhận vào slide 79 hoặc 80.
+- Gộp Rủi ro quản lý vào cuối slide 79.
+
+### 17.7 Deliverable kỳ vọng cho nhánh 73+
+
+- 1 narrative dùng cho Sales/Presales meeting.
+- 1 bộ nội dung có thể chuyển thành website marketing B2B.
+- 1 bộ khung triển khai đủ sâu để Delivery sử dụng khi kickoff.
+
+### 17.8 Implementation Template (8 khung: Slide 73 -> 80)
+
+Mục đích: dev/content chỉ cần điền đúng các khung dưới đây để implement nhanh, không lệch story.
+
+#### Template — Slide 73 (Plan Index)
+- Title:
+- Subtitle:
+- One-line promise (MES cho FDI SX là gì):
+- Pain framing (3-4 ý):
+- Solution response map (3-4 ý):
+- Customer value by role (Executive Sponsor/Plant/IT/Procurement):
+- Story map 74 -> 80:
+- Guardrail: không đi sâu kỹ thuật chi tiết ở slide này.
+
+#### Template — Slide 74 (Why Now & Pain)
+- Title:
+- Subtitle:
+- Pain groups: downtime / data / quality / compliance.
+- Cost of inaction (12-24 tháng):
+- Trigger khởi tạo triển khai:
+- KPI baseline cần đo:
+- Output chốt slide: vì sao cần làm ngay.
+
+#### Template — Slide 75 (What We Provide)
+- Title:
+- Subtitle:
+- In-scope:
+- Out-of-scope:
+- Partnering lifecycle: discover -> co-design -> delivery -> governance.
+- Value per stakeholder:
+- Guardrail cam kết:
+
+#### Template — Slide 76 (Full Module Catalog)
+- Title:
+- Subtitle:
+- Module list đầy đủ:
+- Integration matrix (ERP/MES/WMS/HRM/IoT/API):
+- Module-to-outcome table (pain -> function -> KPI -> stakeholder):
+- Data governance rules:
+- Scope boundary giai đoạn đầu:
+
+#### Template — Slide 77 (Architecture & Integration)
+- Title:
+- Subtitle:
+- Architecture layers:
+- Data flow chính:
+- Source-of-truth mapping:
+- Technical constraints/prerequisites:
+- Output chốt slide: khả năng tích hợp và scale có kiểm soát.
+
+#### Template — Slide 78 (Delivery Process & Team)
+- Title:
+- Subtitle:
+- Phase-gate plan:
+- Entry/Exit criteria:
+- RACI (PM/PO, Solution Lead, Tech Lead, QA, Support, Program Owner):
+- Deliverables theo phase:
+- Failure handling/escalation:
+
+#### Template — Slide 79 (Security/Infra/Network/Support)
+- Title:
+- Subtitle:
+- Security baseline (RBAC/encryption/audit/backup-DR):
+- Infra & network baseline:
+- SLA bands + escalation path:
+- Commitment boundary:
+- Evidence checklist trước sign-off:
+
+#### Template — Slide 80 (Packages/Pricing/Investment)
+- Title:
+- Subtitle:
+- Package 1 (chức năng + giá):
+- Package 2 (chức năng + giá):
+- Package 3 (chức năng + giá):
+- Hardware/peripheral assumptions:
+- TCO theo phase (People/Process/Platform/Program):
+- Điều kiện mở rộng và giả định chi phí:
+
+#### Global QA trước khi code slide
+- [ ] Không có text meta lộ ra slide render.
+- [ ] Không dùng narrative pilot-first cho cụm 73+.
+- [ ] Tên vai trò nhất quán: Executive Sponsor / Plant / IT / Procurement.
+- [ ] Claim kỹ thuật/chi phí trace được về cụm FDI gốc.
+
+
 **Tracking (Sprint use):**
 - Owner:
 - Review date:

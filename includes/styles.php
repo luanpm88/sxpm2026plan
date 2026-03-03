@@ -250,7 +250,7 @@
             box-shadow: 0 8px 32px rgba(0,0,0,0.15);
             z-index: 2000;
             max-height: 70vh;
-            max-width: 500px;
+            max-width: 800px;
             overflow-y: auto;
         }
         

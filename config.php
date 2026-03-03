@@ -1,7 +1,7 @@
 <?php
 // Configuration for the presentation
 define('PRESENTATION_TITLE', 'Định hướng phát triển Bộ phận Sản xuất Phần mềm 2026');
-define('TOTAL_SLIDES', 72);
+define('TOTAL_SLIDES', 80);
 
 // Slide titles by slide ID (order in this array = presentation order)
 $slide_titles = [
@@ -77,7 +77,7 @@ $slide_titles = [
     'slide_70' => 'FDI sản xuất: Cost Envelope & Budget Scenarios',
     'slide_71' => 'FDI sản xuất: Pricing Strategy & Opportunity Model',
     'slide_72' => 'FDI sản xuất: BOD Realism Checkpoint & Final Confirmations',
-    'slide_63' => 'FDI sản xuất: BOD Requirement Mapping Q&A'
+    'slide_63' => 'FDI sản xuất: BOD Requirement Mapping Q&A',
 ];
 
 // Get current slide number from URL

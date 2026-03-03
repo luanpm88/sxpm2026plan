@@ -5,14 +5,18 @@ require_once '../config.php';
 ?>
 <?php include '../includes/head.php'; ?>
 <style>
-.slide-subtitle{font-size:1.28rem;color:#111827;margin-top:8px;font-weight:500}
+.slide-subtitle{font-size:1.32rem;color:#0f172a;margin-top:8px;font-weight:600;line-height:1.35}
+.slide-content{color:#0f172a}
+.pro-section-title{font-size:1.18rem;font-weight:700;color:#0f172a}
+.pro-list li span:last-child{font-size:1rem;color:#1f2937;line-height:1.45}
 .section-card{border:1px solid #d1d5db;border-radius:14px;background:#fff;padding:14px;height:100%}
 .pillar{border:1px solid #94a3b8;border-radius:10px;background:#f8fafc;padding:10px;height:100%}
 .hardware{border:1px dashed #94a3b8;border-radius:10px;background:#f8fafc;padding:10px;height:100%}
 .bridge{border:1px solid #93c5fd;border-radius:12px;background:#eff6ff;padding:12px}
-.detail-table{width:100%;border-collapse:collapse;font-size:.84rem}
-.detail-table th,.detail-table td{border:1px solid #e5e7eb;padding:7px;vertical-align:top}
-.detail-table th{background:#f3f4f6}
+.detail-table{width:100%;border-collapse:collapse;font-size:.94rem}
+.detail-table th,.detail-table td{border:1px solid #e5e7eb;padding:8px;vertical-align:top}
+.detail-table th{background:#f3f4f6;color:#0f172a;font-weight:700}
+.detail-table td{color:#111827}
 </style>
 </head>
 <body>
@@ -31,7 +35,7 @@ require_once '../config.php';
 
     <div class="section-card mb-3">
       <div class="pro-section-title"><span class="material-symbols-rounded">support_agent</span>Mô hình hỗ trợ vận hành</div>
-      <div class="mb-2" style="font-size:.82rem;color:#475569">Lưu ý: các mốc response dưới đây là band tham chiếu và chỉ áp dụng khi baseline hạ tầng, phân vai L1/L2/L3 và quy trình escalation đã được nghiệm thu.</div>
+      <div class="mb-2" style="font-size:.95rem;color:#475569;line-height:1.45">Lưu ý: các mốc response dưới đây là band tham chiếu và chỉ áp dụng khi baseline hạ tầng, phân vai L1/L2/L3 và quy trình escalation đã được nghiệm thu.</div>
       <table class="detail-table">
         <thead><tr><th>Band</th><th>Phạm vi</th><th>Response target</th><th>Escalation</th><th>Ghi chú</th></tr></thead>
         <tbody>

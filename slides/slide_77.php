@@ -5,7 +5,10 @@ require_once '../config.php';
 ?>
 <?php include '../includes/head.php'; ?>
 <style>
-.slide-subtitle{font-size:1.28rem;color:#111827;margin-top:8px;font-weight:500}
+.slide-subtitle{font-size:1.32rem;color:#0f172a;margin-top:8px;font-weight:600;line-height:1.35}
+.slide-content{color:#0f172a}
+.pro-section-title{font-size:1.18rem;font-weight:700;color:#0f172a}
+.pro-list li span:last-child{font-size:1rem;color:#1f2937;line-height:1.45}
 .section-card{border:1px solid #d1d5db;border-radius:14px;background:#fff;padding:14px;height:100%}
 .arch-node{border:1px solid #94a3b8;border-radius:10px;background:#f8fafc;padding:10px;text-align:center;height:100%}
 .link-row{font-size:1.5rem;color:#64748b;text-align:center;line-height:1}
@@ -15,9 +18,10 @@ require_once '../config.php';
 .summary-icon .material-symbols-rounded{font-size:22px;line-height:1}
 .summary-title{font-size:1rem;font-weight:700;color:#1e3a8a;margin-bottom:2px}
 .summary-text{font-size:1rem;color:#0f172a;line-height:1.45}
-.detail-table{width:100%;border-collapse:collapse;font-size:.84rem}
-.detail-table th,.detail-table td{border:1px solid #e5e7eb;padding:7px;vertical-align:top}
-.detail-table th{background:#f3f4f6}
+.detail-table{width:100%;border-collapse:collapse;font-size:.94rem}
+.detail-table th,.detail-table td{border:1px solid #e5e7eb;padding:8px;vertical-align:top}
+.detail-table th{background:#f3f4f6;color:#0f172a;font-weight:700}
+.detail-table td{color:#111827}
 </style>
 </head>
 <body>

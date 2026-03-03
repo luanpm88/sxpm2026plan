@@ -12,7 +12,7 @@ require_once '../config.php';
 <body>
 <div class="slide-container">
   <div class="slide-header">
-    <div class="slide-title"><span class="material-symbols-rounded">analytics</span>SWOT for FDI Manufacturing Entry</div>
+    <div class="slide-title"><span class="material-symbols-rounded">analytics</span>SWOT for FDI Production Entry</div>
     <div class="slide-subtitle">Đánh giá thực chiến để quyết định cách vào thị trường FDI phù hợp năng lực hiện tại</div>
   </div>
   <div class="slide-content">

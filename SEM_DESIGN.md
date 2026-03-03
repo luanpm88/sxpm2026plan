@@ -2,7 +2,7 @@
 
 ## 1. Tài liệu này để làm gì?
 
-Đây là tài liệu gốc để đội ngũ cập nhật deck **FDI Manufacturing** (slide 50–64).
+Đây là tài liệu gốc để đội ngũ cập nhật deck **FDI sản xuất** (slide 50–64).
 
 Mục tiêu:
 
@@ -23,7 +23,7 @@ Nguyên tắc bắt buộc:
 ## 2. Scope áp dụng
 
 - Slide áp dụng: `slides/slide_50.php` đến `slides/slide_64.php`.
-- Prefix title: `FDI Manufacturing:` trong `config.php`.
+- Prefix title: `FDI sản xuất:` trong `config.php`.
 
 ---
 
@@ -77,7 +77,7 @@ Phần này phải nói rất rõ trên slide (slide 53 hoặc 61):
 
 Thông điệp one-line gợi ý:
 
-> “We are structured enough to scale, and flexible enough to deploy fast for FDI manufacturing factories.”
+> “We are structured enough to scale, and flexible enough to deploy fast for FDI production factories.”
 
 ---
 
@@ -441,7 +441,7 @@ Luôn ghi lại để team sau đọc là hiểu ngay.
 - [ ] Có nói rõ maintenance và support
 - [ ] Có nhắc market positioning gap đúng thông điệp
 - [ ] Không claim chứng chỉ sai sự thật
-- [ ] Prefix `FDI Manufacturing:` đúng toàn bộ 50–64
+- [ ] Prefix `FDI sản xuất:` đúng toàn bộ 50–64
 - [ ] Không có lỗi syntax
 
 ---

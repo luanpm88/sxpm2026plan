@@ -13,7 +13,7 @@ require_once '../config.php';
 <div class="slide-container">
   <div class="slide-header">
     <div class="slide-title"><span class="material-symbols-rounded">workspace_premium</span>People, Certification, Governance, Tools (B11-B14)</div>
-    <div class="slide-subtitle">Chuẩn bị nội lực theo lộ trình 3 năm để triển khai FDI manufacturing KCN</div>
+    <div class="slide-subtitle">Chuẩn bị nội lực theo lộ trình 3 năm để triển khai FDI sản xuất KCN</div>
   </div>
   <div class="slide-content">
     <div class="row g-3">

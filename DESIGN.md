@@ -38,7 +38,7 @@ Không làm ngược thứ tự.
 
 ## 4.1 Core message
 
-Công ty xây giải pháp sản phẩm theo chuẩn enterprise để phục vụ phân khúc FDI/large manufacturing, trong đó **FDI manufacturing tại khu công nghiệp là ưu tiên triển khai trước**.
+Công ty xây giải pháp sản phẩm theo chuẩn enterprise để phục vụ phân khúc FDI/large manufacturing, trong đó **FDI sản xuất tại khu công nghiệp là ưu tiên triển khai trước**.
 
 ## 4.2 Tuyên bố định vị bắt buộc
 
@@ -59,7 +59,7 @@ One-line:
 Yêu cầu BOD:
 
 - Phân khúc: FDI, vendor cấp 1-2, tập đoàn đa quốc gia, doanh nghiệp nội địa sản xuất lớn.
-- Thứ tự ưu tiên: làm trước nhóm FDI manufacturing trong khu công nghiệp, sau đó mới mở rộng sang nhóm khác.
+- Thứ tự ưu tiên: làm trước nhóm FDI sản xuất trong khu công nghiệp, sau đó mới mở rộng sang nhóm khác.
 - Khu vực trọng tâm: phía Nam.
 - Ngành ưu tiên: điện-điện tử, linh kiện ô tô.
 - Ngành mở rộng: công nghiệp phụ trợ, sản xuất tiêu dùng lớn, thiết bị công nghiệp/chế tạo.
@@ -95,7 +95,7 @@ Slide đáp ứng:
 
 Quy tắc triển khai bắt buộc:
 
-- Giai đoạn đầu phải có danh sách pilot FDI manufacturing cụ thể theo tiêu chí chọn mẫu (độ sẵn sàng dữ liệu, quy mô line, mức ưu tiên downtime).
+- Giai đoạn đầu phải có danh sách pilot FDI sản xuất cụ thể theo tiêu chí chọn mẫu (độ sẵn sàng dữ liệu, quy mô line, mức ưu tiên downtime).
 - Chỉ mở rộng Year 2 khi Year 1 đã có baseline KPI, bộ tài liệu chuẩn và quy trình vận hành đã được nghiệm thu nội bộ.
 
 ## 5.4 Đặc điểm khách hàng mục tiêu
@@ -180,7 +180,7 @@ Slide đáp ứng:
 ## Slide 51 — Bối cảnh & phân khúc mục tiêu
 
 - Trình bày rõ phân khúc, khu vực, ngành ưu tiên, ngành mở rộng.
-- Nêu thứ tự ưu tiên thực thi: FDI manufacturing KCN phía Nam làm trước.
+- Nêu thứ tự ưu tiên thực thi: FDI sản xuất KCN phía Nam làm trước.
 - Chốt 3 business pillars (hardware/infra/software) như nền cho toàn deck.
 
 ## Slide 52 — Vai trò BOD / Manager / Marketing + 3 giai đoạn
@@ -200,11 +200,11 @@ Slide đáp ứng:
 - Chốt: vấn đề là business + vận hành, không chỉ technical.
 - Pain list phải bám các điểm trong `BOD_REQUIREMENT.md` (không tự thêm hướng lạc đề).
 
-## Slide 55 — Product vision (với FDI manufacturing use-case)
+## Slide 55 — Product vision (với FDI sản xuất use-case)
 
 - Giải pháp tổng thể.
 - Phạm vi và non-goals rõ.
-- Bắt buộc theo khung A1/A2/A3/A4 và có use-case cụ thể FDI manufacturing.
+- Bắt buộc theo khung A1/A2/A3/A4 và có use-case cụ thể FDI sản xuất.
 
 ## Slide 56 — Architecture & system model
 
@@ -262,7 +262,7 @@ Slide đáp ứng:
 
 - Mục tiêu: chuyển từ slide tổng quan sang slide hành động có thể triển khai ngay.
 - Phải có 4 khối nội dung theo thứ tự:
-	1) FDI-first execution scope (làm trước cái gì, cho ai, tại sao).
+	1) Phạm vi thực thi ưu tiên FDI sản xuất (làm trước cái gì, cho ai, tại sao).
 	2) Readiness checklist trước go-to-market.
 	3) Timeline 3 năm (Year 1/2/3) với mục tiêu và điều kiện chuyển phase.
 	4) Team scale-up từ nhỏ -> vừa -> lớn theo từng năm.
@@ -279,7 +279,7 @@ Slide đáp ứng:
 - SWOT phải trung thực, không tô hồng.
 - S phải bám năng lực giao hàng/customization thực tế.
 - W phải nêu rõ thiếu productized SME references và enterprise evidence pack.
-- O/T phải bám bối cảnh FDI manufacturing KCN và áp lực cạnh tranh.
+- O/T phải bám bối cảnh FDI sản xuất KCN và áp lực cạnh tranh.
 
 ## Slide 67 — Top risks & mitigation
 
@@ -390,7 +390,7 @@ Mỗi slide phải có đủ 6 trường:
 - Content blocks: Target segments, priority industries, 3 business pillars
 - Mandatory points:
 	- FDI + large domestic + South; ngành ưu tiên/mở rộng; 3 mảng công ty.
-	- Nêu rõ FDI manufacturing KCN phía Nam là ưu tiên triển khai đầu tiên.
+	- Nêu rõ FDI sản xuất KCN phía Nam là ưu tiên triển khai đầu tiên.
 - Acceptance: BOD nhìn ra rõ thị trường mục tiêu
 
 ### Slide 52
@@ -451,7 +451,7 @@ Mỗi slide phải có đủ 6 trường:
 
 ### Slide 59
 - Title: Implementation Method (A5) — SCRUM
-- Subtitle: FDI manufacturing KCN làm trước với SCRUM theo phase-gate rõ ràng
+- Subtitle: FDI sản xuất KCN làm trước với SCRUM theo phase-gate rõ ràng
 - Content blocks: 6-step execution, SCRUM cadence, phase-gate criteria, ownership
 - Mandatory points:
 	- Planning/Daily/Review/Retro theo nhịp 2 tuần.
@@ -463,10 +463,10 @@ Mỗi slide phải có đủ 6 trường:
 
 ### Slide 60
 - Title: Internal Capability: Current vs Required (B8-B10)
-- Subtitle: FDI-first readiness với kế hoạch lấp gap có owner
+- Subtitle: Readiness ưu tiên FDI sản xuất với kế hoạch lấp gap có owner
 - Content blocks: Current / Required / Gap, 0-90d plan, 3-12m plan, 12m+ plan, phase-gates
 - Mandatory points:
-	- Nêu rõ gap thực tế theo ngữ cảnh FDI manufacturing KCN.
+	- Nêu rõ gap thực tế theo ngữ cảnh FDI sản xuất KCN.
 	- Mỗi nhóm hành động phải có owner cụ thể.
 	- Có điều kiện chuyển phase gắn roadmap Y1->Y2 và Y2->Y3.
 - Glossary: Baseline KPI, Acceptance criteria, Stage gate
@@ -474,7 +474,7 @@ Mỗi slide phải có đủ 6 trường:
 
 ### Slide 61
 - Title: People, Certification, Governance, Tools (B11-B14)
-- Subtitle: Chuẩn bị nội lực 3 năm cho FDI-first rollout
+- Subtitle: Chuẩn bị nội lực 3 năm cho rollout FDI sản xuất
 - Content blocks: Certification roadmap, team scale-up, governance model, toolchain + KPI
 - Mandatory points:
 	- Trình bày lộ trình năng lực/chứng chỉ theo Year 1/2/3.
@@ -485,7 +485,7 @@ Mỗi slide phải có đủ 6 trường:
 
 ### Slide 62
 - Title: Milestones, Resources & Cost Frame (B15-B16)
-- Subtitle: FDI manufacturing KCN làm trước: roadmap 3 năm, phase-gate, và team scale-up
+- Subtitle: FDI sản xuất KCN làm trước: roadmap 3 năm, phase-gate, và team scale-up
 - Content blocks: Year 1/2/3 milestone cards, phase-gate rule, team scale-up, resource-cost frame
 - Mandatory points:
 	- Year 1: Foundation & Pilot (playbook + baseline architecture + 1-2 pilot + baseline KPI).
@@ -508,17 +508,17 @@ Mỗi slide phải có đủ 6 trường:
 
 ### Slide 64
 - Title: Strategic Impact & Decision Required
-- Subtitle: FDI manufacturing KCN làm trước với kế hoạch hành động 3 năm
-- Content blocks: FDI-first scope, readiness, Year 1/2/3 timeline, team scale-up, BOD decisions
+- Subtitle: FDI sản xuất KCN làm trước với kế hoạch hành động 3 năm
+- Content blocks: Scope ưu tiên FDI sản xuất, readiness, Year 1/2/3 timeline, team scale-up, BOD decisions
 - Mandatory points:
-	- Nêu rõ nhóm khách hàng làm trước: FDI manufacturing trong KCN phía Nam.
+	- Nêu rõ nhóm khách hàng làm trước: FDI sản xuất trong KCN phía Nam.
 	- Nêu rõ khâu chuẩn bị trước triển khai: playbook, pre-sales assets, baseline delivery, tiêu chí pilot.
 	- Nêu rõ timeline 3 năm theo logic:
 		- Year 1: Foundation & Pilot (1-2 pilot, xác lập baseline KPI).
 		- Year 2: Replicate & Expand (nhân bản, chuẩn hóa tích hợp/vận hành).
 		- Year 3: Scale Portfolio (mở rộng danh mục, tăng độ phủ delivery).
 	- Nêu rõ quy mô team theo 3 năm (khung tham chiếu): 6-8 -> 12-16 -> 20-28.
-	- Chốt 3 quyết định BOD: duyệt hướng FDI-first, duyệt khung nguồn lực 3 năm, duyệt danh sách pilot + nguyên tắc ngân sách.
+	- Chốt 3 quyết định BOD: duyệt hướng ưu tiên FDI sản xuất, duyệt khung nguồn lực 3 năm, duyệt danh sách pilot + nguyên tắc ngân sách.
 - Glossary: Pilot, Baseline KPI, Scale-up, Service operations
 - Acceptance:
 	- Người đọc hình dung ngay “tuần tới làm gì”, “quý tới làm gì”, “năm tới mở rộng ra sao”.
@@ -532,7 +532,7 @@ Mỗi slide phải có đủ 6 trường:
 
 ### Slide 65
 - Title: Reality Check: Current Readiness & Constraints
-- Subtitle: Năng lực thật hiện tại để tiếp cận FDI manufacturing không vượt kỳ vọng
+- Subtitle: Năng lực thật hiện tại để tiếp cận FDI sản xuất không vượt kỳ vọng
 - Content blocks: Current baseline, proven capability, constraints, implication
 - Mandatory points:
 	- Team SCRUM hiện tại 5-8 người.
@@ -542,7 +542,7 @@ Mỗi slide phải có đủ 6 trường:
 - Acceptance: BOD nhìn rõ “đang đứng ở đâu” trước khi duyệt mở rộng
 
 ### Slide 66
-- Title: SWOT for FDI Manufacturing Entry
+- Title: SWOT for FDI Production Entry
 - Subtitle: Đánh giá năng lực cạnh tranh hiện tại theo góc nhìn thực chiến
 - Content blocks: Strengths, Weaknesses, Opportunities, Threats
 - Mandatory points:
@@ -598,7 +598,7 @@ Mỗi slide phải có đủ 6 trường:
 - Mandatory points:
 	- Có chiến lược giá cho giai đoạn pilot và giai đoạn replication.
 	- Có 3 kịch bản cơ hội (conservative/base/stretch).
-	- Có phần chi phí cơ hội nếu không triển khai FDI-first.
+	- Có phần chi phí cơ hội nếu không triển khai ưu tiên FDI sản xuất.
 - Acceptance: BOD nắm được “cái giá” và “đổi lại được gì”
 
 ### Slide 72
@@ -618,12 +618,12 @@ Mỗi slide phải có đủ 6 trường:
 ## [2026-03-03] Design & Slide Consistency Lock (50-64)
 
 ### Why
-- Chuẩn hóa deck theo hướng FDI-first cho sản xuất KCN, chuyển từ mô tả tổng quan sang kế hoạch hành động có thể triển khai ngay.
+- Chuẩn hóa deck theo hướng ưu tiên FDI sản xuất cho KCN, chuyển từ mô tả tổng quan sang kế hoạch hành động có thể triển khai ngay.
 - Đồng bộ 2 chiều giữa DESIGN và slides để regenerate không bị lệch nội dung.
 
 ### What changed
 - Nâng độ chi tiết hành động cho cụm slide 59-64: phase-gate, ownership, team scale-up, quyết định BOD.
-- Đồng bộ cụm slide 50-58 với DESIGN (ưu tiên FDI-first, output theo mốc, KPI đo được, nguyên tắc không over-claim).
+- Đồng bộ cụm slide 50-58 với DESIGN (ưu tiên FDI sản xuất, output theo mốc, KPI đo được, nguyên tắc không over-claim).
 - Chuẩn hóa thuật ngữ toàn cụm sang `phase-gate`.
 
 ### Slide impact
@@ -637,7 +637,7 @@ Mỗi slide phải có đủ 6 trường:
 ## [2026-03-03] FDI Reality Pack Extension (65-72)
 
 ### Why
-- Bổ sung góc nhìn thực tế năng lực hiện tại để tránh kỳ vọng vượt khả năng khi vào phân khúc FDI manufacturing.
+- Bổ sung góc nhìn thực tế năng lực hiện tại để tránh kỳ vọng vượt khả năng khi vào phân khúc FDI sản xuất.
 - Trả lời trực diện các câu hỏi BOD về SWOT, rủi ro, timeline, chi phí, giá và điều kiện GO/NO-GO.
 
 ### What changed
@@ -684,7 +684,7 @@ Mục này dùng để rehearsal nhanh trước buổi họp và chốt GO/NO-GO
 ### 12.2 Narrative lock theo flow 50 -> 64
 
 - [ ] Slide 50: mở đúng bối cảnh, nêu đủ 4 câu hỏi điều hướng của BOD.
-- [ ] Slide 51-54: chốt rõ FDI-first, pain là business + vận hành.
+- [ ] Slide 51-54: chốt rõ ưu tiên FDI sản xuất, pain là business + vận hành.
 - [ ] Slide 55-58: giải pháp có hệ thống, có cam kết, có KPI đo được.
 - [ ] Slide 59-62: cách làm có phase-gate, owner, team scale-up, cost frame theo phase.
 - [ ] Slide 63-64: phản biện đầy đủ và kết thúc bằng quyết định cần duyệt.
@@ -697,7 +697,7 @@ Mục này dùng để rehearsal nhanh trước buổi họp và chốt GO/NO-GO
 
 ### 12.4 Decision readiness (slide 64)
 
-- [ ] Quyết định 1: duyệt hướng FDI manufacturing KCN làm trước.
+- [ ] Quyết định 1: duyệt hướng FDI sản xuất KCN làm trước.
 - [ ] Quyết định 2: duyệt khung nguồn lực 3 năm và cơ chế tuyển/đào tạo.
 - [ ] Quyết định 3: duyệt danh sách pilot và nguyên tắc ngân sách theo phase.
 - [ ] Mỗi quyết định có owner đề xuất + mốc thời gian follow-up sau cuộc họp.
@@ -706,7 +706,7 @@ Mục này dùng để rehearsal nhanh trước buổi họp và chốt GO/NO-GO
 
 - GO khi tất cả mục 12.1 -> 12.4 đều đạt.
 - NO-GO khi thiếu bất kỳ điểm nào trong 3 nhóm trọng yếu:
-	1) FDI-first scope,
+	1) Scope ưu tiên FDI sản xuất,
 	2) phase-gate + owner + team scale-up,
 	3) 3 quyết định BOD cần duyệt.
 
@@ -727,7 +727,7 @@ Mục này là kịch bản điều phối nhanh cho người dẫn buổi họp
 | Minute | Slide | Speaker | Cue / Key message | Backup slide nếu bị hỏi sâu |
 |---|---|---|---|---|
 | 00:00-02:00 | 50 | MC/Manager | Mở mục tiêu buổi họp, nêu 4 câu hỏi BOD cần được trả lời | 63 |
-| 02:00-06:00 | 51-54 | Manager | Chốt FDI-first KCN phía Nam, pain là business + vận hành | 53, 54 |
+| 02:00-06:00 | 51-54 | Manager | Chốt ưu tiên FDI sản xuất KCN phía Nam, pain là business + vận hành | 53, 54 |
 | 06:00-12:00 | 55-58 | Solution Lead | Trình bày scope giải pháp, kiến trúc, KPI, cam kết bảo mật/vận hành | 56, 58 |
 | 12:00-17:00 | 59-62 | Delivery Lead | Cách triển khai có phase-gate, owner rõ, team scale-up theo năm, cost frame theo phase | 59, 62 |
 | 17:00-22:00 | 63 | MC/Manager | Dẫn Q&A theo mapping table, trả lời ngắn + nhảy đúng slide chứng minh | 63 |
@@ -735,7 +735,7 @@ Mục này là kịch bản điều phối nhanh cho người dẫn buổi họp
 
 ### 13.3 Talk track ngắn (để nói mạch lạc)
 
-- Mở: “Hôm nay mục tiêu là duyệt hướng FDI manufacturing KCN làm trước và chốt kế hoạch triển khai 3 năm.”
+- Mở: “Hôm nay mục tiêu là duyệt hướng FDI sản xuất KCN làm trước và chốt kế hoạch triển khai 3 năm.”
 - Giữa: “Chúng ta không trình bày tính năng rời rạc, mà trình bày cách giải quyết vấn đề vận hành có KPI đo được.”
 - Chốt: “Đề nghị BOD duyệt 3 quyết định ở slide 64 để kick-off phase tiếp theo.”
 
@@ -761,7 +761,7 @@ Mục tiêu: vẫn chốt được quyết định dù chỉ có 5 phút.
 
 | Time | Slide | Nội dung bắt buộc |
 |---|---|---|
-| 00:00-00:45 | 50 | Mở mục tiêu: cần BOD duyệt hướng FDI-first và kế hoạch triển khai.
+| 00:00-00:45 | 50 | Mở mục tiêu: cần BOD duyệt hướng ưu tiên FDI sản xuất và kế hoạch triển khai.
 | 00:45-01:45 | 51 + 54 | Chốt khách hàng ưu tiên (FDI KCN) và pain business/vận hành.
 | 01:45-03:00 | 59 + 62 | Chốt cách làm: phase-gate, team scale-up, nguồn lực/cost frame theo phase.
 | 03:00-04:00 | 63 | Trả lời nhanh 1-2 câu phản biện trọng yếu bằng mapping.
@@ -779,14 +779,14 @@ Mục tiêu: trong 120 giây, BOD hiểu và quyết định được hướng �
 
 | Time | Slide | One-line bắt buộc |
 |---|---|---|
-| 00:00-00:30 | 51 | Ưu tiên làm trước FDI manufacturing trong KCN phía Nam, vì nhu cầu SLA/uptime/compliance cao và khả năng nhân bản tốt. |
+| 00:00-00:30 | 51 | Ưu tiên làm trước FDI sản xuất trong KCN phía Nam, vì nhu cầu SLA/uptime/compliance cao và khả năng nhân bản tốt. |
 | 00:30-01:00 | 59 + 62 | Cách làm theo phase-gate 3 năm, có owner rõ, team scale-up 6-8 -> 12-16 -> 20-28, ngân sách duyệt theo phase. |
 | 01:00-01:30 | 63 | Các phản biện chính đã có mapping trả lời và slide chứng minh ngay. |
-| 01:30-02:00 | 64 | Xin duyệt 3 quyết định: hướng FDI-first, khung nguồn lực 3 năm, danh sách pilot + nguyên tắc ngân sách. |
+| 01:30-02:00 | 64 | Xin duyệt 3 quyết định: hướng ưu tiên FDI sản xuất, khung nguồn lực 3 năm, danh sách pilot + nguyên tắc ngân sách. |
 
 Script 4 câu (đọc liền mạch):
 
-1) “Chúng ta đề xuất làm trước FDI manufacturing KCN phía Nam để tạo case chuẩn có thể nhân rộng.”
+1) “Chúng ta đề xuất làm trước FDI sản xuất KCN phía Nam để tạo case chuẩn có thể nhân rộng.”
 2) “Kế hoạch thực thi theo phase-gate 3 năm, có owner rõ và đội ngũ mở rộng theo từng giai đoạn.”
 3) “Các câu hỏi phản biện trọng yếu đã được mapping và có slide chứng minh trực tiếp.”
 4) “Đề nghị BOD duyệt 3 quyết định ở slide 64 để kick-off triển khai ngay sau cuộc họp.”
@@ -806,7 +806,7 @@ Quy tắc dùng:
 - “Chúng ta sẽ trả lời 4 câu hỏi: làm cho ai, giải quyết vấn đề gì, làm bằng cách nào, và cam kết ra sao.”
 
 ### Slide 51
-- “Phân khúc ưu tiên là FDI manufacturing trong KCN phía Nam, vì nhu cầu chuẩn vận hành cao và khả năng nhân bản.”
+- “Phân khúc ưu tiên là FDI sản xuất trong KCN phía Nam, vì nhu cầu chuẩn vận hành cao và khả năng nhân bản.”
 - “Ba mảng hardware, hạ tầng, software được gom thành một câu chuyện thống nhất.”
 
 ### Slide 52
@@ -858,7 +858,7 @@ Quy tắc dùng:
 - “Tất cả phản biện trọng yếu về phase-gate, owner, team scale-up đều đã có mapping.”
 
 ### Slide 64
-- “Đây là slide quyết định: chốt hướng FDI-first, khung nguồn lực 3 năm, và danh sách pilot + nguyên tắc ngân sách.”
+- “Đây là slide quyết định: chốt hướng ưu tiên FDI sản xuất, khung nguồn lực 3 năm, và danh sách pilot + nguyên tắc ngân sách.”
 - “Sau khi duyệt, chúng ta có thể kick-off ngay với owner và deadline đã xác định.”
 
 ---
@@ -869,18 +869,18 @@ Mục đích: bản tóm tắt 1 trang để MC/Manager/Delivery cùng nhìn m�
 
 ### 15.1 Executive one-liner
 
-“Đề xuất triển khai trước FDI manufacturing tại KCN phía Nam bằng mô hình phase-gate 3 năm, có owner rõ, team scale-up theo giai đoạn, và xin BOD duyệt 3 quyết định để kick-off ngay.”
+“Đề xuất triển khai trước FDI sản xuất tại KCN phía Nam bằng mô hình phase-gate 3 năm, có owner rõ, team scale-up theo giai đoạn, và xin BOD duyệt 3 quyết định để kick-off ngay.”
 
 ### 15.2 4 ý phải nói trong 2 phút đầu
 
-1) Vì sao FDI-first: chuẩn vận hành cao, nhu cầu SLA/uptime/compliance rõ, dễ tạo case chuẩn để nhân rộng.
+1) Vì sao ưu tiên FDI sản xuất: chuẩn vận hành cao, nhu cầu SLA/uptime/compliance rõ, dễ tạo case chuẩn để nhân rộng.
 2) Vấn đề là business + vận hành: downtime, dữ liệu rời rạc, khó kiểm soát rủi ro.
 3) Cách làm có kiểm soát: SCRUM + phase-gate + owner + ngân sách theo phase.
 4) Kết quả cần duyệt: 3 quyết định ở slide 64.
 
 ### 15.3 Decision card (đọc nguyên văn khi chốt)
 
-- Quyết định 1: Duyệt hướng FDI manufacturing KCN làm trước.
+- Quyết định 1: Duyệt hướng FDI sản xuất KCN làm trước.
 - Quyết định 2: Duyệt khung nguồn lực 3 năm và cơ chế tuyển/đào tạo theo phase.
 - Quyết định 3: Duyệt danh sách pilot và nguyên tắc ngân sách theo phase.
 

@@ -16,7 +16,7 @@ require_once '../config.php';
 <div class="slide-container">
   <div class="slide-header">
     <div class="slide-title"><span class="material-symbols-rounded">route</span>Implementation Method (A5) — SCRUM</div>
-    <div class="slide-subtitle">FDI manufacturing KCN làm trước: SCRUM theo phase-gate có điều kiện chuyển rõ ràng</div>
+    <div class="slide-subtitle">FDI sản xuất KCN làm trước: SCRUM theo phase-gate có điều kiện chuyển rõ ràng</div>
   </div>
   <div class="slide-content">
     <div class="row g-3 mb-3">

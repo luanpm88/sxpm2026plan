@@ -14,7 +14,7 @@ require_once '../config.php';
 <div class="slide-container">
   <div class="slide-header">
     <div class="slide-title"><span class="material-symbols-rounded">timeline</span>Milestones, Resources & Cost Frame (B15-B16)</div>
-    <div class="slide-subtitle">FDI manufacturing KCN làm trước: roadmap 3 năm, điều kiện chuyển pha, và team scale-up</div>
+    <div class="slide-subtitle">FDI sản xuất KCN làm trước: roadmap 3 năm, điều kiện chuyển pha, và team scale-up</div>
   </div>
   <div class="slide-content">
     <div class="row g-3 mb-3">

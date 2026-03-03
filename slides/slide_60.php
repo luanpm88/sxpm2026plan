@@ -15,13 +15,13 @@ require_once '../config.php';
 <div class="slide-container">
   <div class="slide-header">
     <div class="slide-title"><span class="material-symbols-rounded">analytics</span>Internal Capability: Current vs Required (B8-B10)</div>
-    <div class="slide-subtitle">FDI-first readiness: hiện trạng, khoảng cách và kế hoạch lấp gap có owner</div>
+    <div class="slide-subtitle">Readiness ưu tiên FDI sản xuất: hiện trạng, khoảng cách và kế hoạch lấp gap có owner</div>
   </div>
   <div class="slide-content">
     <div class="row g-3 mb-3">
       <div class="col-md-4"><div class="box"><strong>B8 - Current capability</strong><ul class="pro-list mb-0"><li><span class="material-symbols-rounded">check_circle</span><span>Có nền tảng custom software và tích hợp hệ thống</span></li><li><span class="material-symbols-rounded">check_circle</span><span>Đội kỹ thuật full-stack, QA, DevOps đã vận hành dự án thực tế</span></li><li><span class="material-symbols-rounded">check_circle</span><span>Đã có kinh nghiệm triển khai theo sprint và quản trị release</span></li></ul></div></div>
       <div class="col-md-4"><div class="box"><strong>B9 - Required capability</strong><ul class="pro-list mb-0"><li><span class="material-symbols-rounded">chevron_right</span><span>Domain manufacturing sâu theo ngữ cảnh FDI KCN</span></li><li><span class="material-symbols-rounded">chevron_right</span><span>Vận hành theo chuẩn SLA/Uptime/Compliance có bằng chứng</span></li><li><span class="material-symbols-rounded">chevron_right</span><span>Mô hình triển khai sản phẩm hóa (pilot -> rollout -> scale)</span></li></ul></div></div>
-      <div class="col-md-4"><div class="box"><strong>B10 - Gap</strong><ul class="pro-list mb-0"><li><span class="material-symbols-rounded">warning</span><span>Thiếu playbook FDI manufacturing dùng chung cho pre-sales/delivery</span></li><li><span class="material-symbols-rounded">warning</span><span>Thiếu baseline KPI sau pilot để làm chuẩn nhân bản</span></li><li><span class="material-symbols-rounded">warning</span><span>Thiếu cơ chế owner liên phòng ban cho vận hành SLA nhiều lớp</span></li></ul></div></div>
+      <div class="col-md-4"><div class="box"><strong>B10 - Gap</strong><ul class="pro-list mb-0"><li><span class="material-symbols-rounded">warning</span><span>Thiếu playbook FDI sản xuất dùng chung cho pre-sales/delivery</span></li><li><span class="material-symbols-rounded">warning</span><span>Thiếu baseline KPI sau pilot để làm chuẩn nhân bản</span></li><li><span class="material-symbols-rounded">warning</span><span>Thiếu cơ chế owner liên phòng ban cho vận hành SLA nhiều lớp</span></li></ul></div></div>
     </div>
 
     <div class="row g-3 mb-3">

@@ -16,11 +16,11 @@ require_once '../config.php';
 <div class="slide-container">
   <div class="slide-header">
     <div class="slide-title"><span class="material-symbols-rounded">gavel</span>Strategic Impact & Decision Required</div>
-    <div class="slide-subtitle">FDI manufacturing khu công nghiệp làm trước: kế hoạch hành động 3 năm, từ team nhỏ đến team mở rộng</div>
+    <div class="slide-subtitle">FDI sản xuất khu công nghiệp làm trước: kế hoạch hành động 3 năm, từ team nhỏ đến team mở rộng</div>
   </div>
   <div class="slide-content">
     <div class="row g-3 mb-3">
-      <div class="col-md-7"><div class="cardx"><div class="pro-section-title"><span class="material-symbols-rounded">flag</span>FDI-first execution scope (KCN sản xuất)</div><ul class="pro-list mb-0"><li><span class="material-symbols-rounded">check_circle</span><span><strong>Ưu tiên khách hàng:</strong> FDI manufacturing trong KCN phía Nam, dự án có nhu cầu SLA/uptime/compliance cao</span></li><li><span class="material-symbols-rounded">check_circle</span><span><strong>Phạm vi làm trước:</strong> 1 gói giải pháp chuẩn theo 3 mảng (hardware/infra/software) để triển khai lặp lại</span></li><li><span class="material-symbols-rounded">check_circle</span><span><strong>Đầu ra bắt buộc:</strong> proposal template, kiến trúc chuẩn, checklist bảo mật, bộ KPI đo hiệu quả sau go-live</span></li><li><span class="material-symbols-rounded">check_circle</span><span><strong>Mục tiêu chiến lược:</strong> từ mô hình dự án rời rạc sang năng lực sản phẩm ngành dọc có thể scale</span></li></ul></div></div>
+      <div class="col-md-7"><div class="cardx"><div class="pro-section-title"><span class="material-symbols-rounded">flag</span>Phạm vi thực thi ưu tiên FDI sản xuất (KCN sản xuất)</div><ul class="pro-list mb-0"><li><span class="material-symbols-rounded">check_circle</span><span><strong>Ưu tiên khách hàng:</strong> FDI sản xuất trong KCN phía Nam, dự án có nhu cầu SLA/uptime/compliance cao</span></li><li><span class="material-symbols-rounded">check_circle</span><span><strong>Phạm vi làm trước:</strong> 1 gói giải pháp chuẩn theo 3 mảng (hardware/infra/software) để triển khai lặp lại</span></li><li><span class="material-symbols-rounded">check_circle</span><span><strong>Đầu ra bắt buộc:</strong> proposal template, kiến trúc chuẩn, checklist bảo mật, bộ KPI đo hiệu quả sau go-live</span></li><li><span class="material-symbols-rounded">check_circle</span><span><strong>Mục tiêu chiến lược:</strong> từ mô hình dự án rời rạc sang năng lực sản phẩm ngành dọc có thể scale</span></li></ul></div></div>
       <div class="col-md-5"><div class="cardy"><div class="pro-section-title"><span class="material-symbols-rounded">playlist_add_check</span>Readiness trước khi go-to-market</div><ul class="pro-list mb-0"><li><span class="material-symbols-rounded">chevron_right</span><span>Hoàn thiện solution playbook + baseline scope (what in / what out)</span></li><li><span class="material-symbols-rounded">chevron_right</span><span>Chuẩn hóa tài liệu pre-sales: one-pager, proposal, Q&A handling</span></li><li><span class="material-symbols-rounded">chevron_right</span><span>Thiết lập baseline delivery: RACI, SLA support, incident flow</span></li><li><span class="material-symbols-rounded">chevron_right</span><span>Chốt tiêu chí chọn pilot: ngành, quy mô line, mức sẵn sàng dữ liệu</span></li></ul></div></div>
     </div>
 
@@ -30,7 +30,7 @@ require_once '../config.php';
         <div class="phase-item">
           <div class="phase-head">Year 1 — Foundation & Pilot (team nhỏ)</div>
           <ul class="pro-list mb-0">
-            <li><span class="material-symbols-rounded">arrow_right</span><span>Thiết kế gói FDI manufacturing chuẩn và demo flow end-to-end</span></li>
+            <li><span class="material-symbols-rounded">arrow_right</span><span>Thiết kế gói FDI sản xuất chuẩn và demo flow end-to-end</span></li>
             <li><span class="material-symbols-rounded">arrow_right</span><span>Triển khai pilot 1-2 khách hàng để lấy case thực tế và baseline KPI</span></li>
             <li><span class="material-symbols-rounded">arrow_right</span><span>Team triển khai: <strong>6-8 người</strong> (PM/BA, Solution, Tech Lead, Dev, QA, Support)</span></li>
           </ul>
@@ -58,7 +58,7 @@ require_once '../config.php';
       </div>
     </div>
 
-    <div class="visual-panel"><strong>Decision required from BOD:</strong> (1) Duyệt hướng FDI manufacturing KCN làm trước; (2) Duyệt khung nguồn lực theo 3 năm và cơ chế tuyển/đào tạo; (3) Duyệt danh sách pilot + nguyên tắc ngân sách theo giai đoạn.</div>
+    <div class="visual-panel"><strong>Decision required from BOD:</strong> (1) Duyệt hướng FDI sản xuất KCN làm trước; (2) Duyệt khung nguồn lực theo 3 năm và cơ chế tuyển/đào tạo; (3) Duyệt danh sách pilot + nguyên tắc ngân sách theo giai đoạn.</div>
   </div>
 </div>
 <?php include '../includes/navigation.php'; ?>

@@ -160,7 +160,7 @@ Một deck/đề xuất đạt chuẩn khi:
 
 ---
 
-## 11. Action dùng ngay cho deck FDI Manufacturing hiện tại
+## 11. Action dùng ngay cho deck FDI sản xuất hiện tại
 
 Áp vào bộ slide 50–64:
 

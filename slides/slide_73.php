@@ -8,6 +8,12 @@ require_once '../config.php';
 .slide-subtitle{font-size:1.28rem;color:#111827;margin-top:8px;font-weight:500}
 .section-card{border:1px solid #d1d5db;border-radius:14px;background:#fff;padding:14px;height:100%}
 .flow-step{border:1px dashed #9ca3af;border-radius:12px;background:#f8fafc;padding:12px;height:100%}
+.bridge{border:1px solid #93c5fd;border-radius:12px;background:#eff6ff;padding:12px}
+.summary-note{display:flex;gap:12px;align-items:flex-start;border:1px solid #c7d2fe;border-radius:14px;background:linear-gradient(180deg,#f8fbff 0%,#eef4ff 100%);padding:14px}
+.summary-icon{width:40px;height:40px;border:1px solid #93c5fd;border-radius:999px;display:flex;align-items:center;justify-content:center;background:#fff;color:#2563eb;flex-shrink:0}
+.summary-icon .material-symbols-rounded{font-size:22px;line-height:1}
+.summary-title{font-size:1rem;font-weight:700;color:#1e3a8a;margin-bottom:2px}
+.summary-text{font-size:1rem;color:#0f172a;line-height:1.45}
 .detail-table{width:100%;border-collapse:collapse;font-size:.86rem}
 .detail-table th,.detail-table td{border:1px solid #e5e7eb;padding:8px;vertical-align:top}
 .detail-table th{background:#f3f4f6;color:#111827}
@@ -21,6 +27,15 @@ require_once '../config.php';
   </div>
 
   <div class="slide-content">
+    <div class="bridge mb-3">
+      <strong>Cách đọc cụm 73 -> 80 để hiểu sản phẩm nhanh</strong>
+      <ul class="pro-list mb-0 mt-2">
+        <li><span class="material-symbols-rounded">looks_one</span><span><strong>74-75:</strong> xác định vấn đề thật và phạm vi giải pháp.</span></li>
+        <li><span class="material-symbols-rounded">looks_two</span><span><strong>76-77:</strong> hiểu module, kiến trúc và logic tích hợp.</span></li>
+        <li><span class="material-symbols-rounded">looks_3</span><span><strong>78-80:</strong> xem cách triển khai, cam kết vận hành, và quyết định đầu tư.</span></li>
+      </ul>
+    </div>
+
     <div class="row g-3 mb-3">
       <div class="col-md-7">
         <div class="section-card">
@@ -71,6 +86,14 @@ require_once '../config.php';
           <tr><td>Tổng đầu tư và gói giải pháp như thế nào?</td><td>80</td><td>Có cơ sở so sánh gói và quyết định đầu tư</td></tr>
         </tbody>
       </table>
+    </div>
+
+    <div class="summary-note mt-3">
+      <div class="summary-icon"><span class="material-symbols-rounded">lightbulb</span></div>
+      <div>
+        <div class="summary-title">Tóm tắt nhanh</div>
+        <div class="summary-text">Cụm 74-80 là hành trình quyết định đầu tư MES theo thứ tự cố định: hiểu pain -> chốt scope -> xác nhận kiến trúc/triển khai -> chốt cam kết vận hành -> phê duyệt đầu tư theo phase.</div>
+      </div>
     </div>
   </div>
 </div>

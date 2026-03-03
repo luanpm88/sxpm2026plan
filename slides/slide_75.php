@@ -8,6 +8,7 @@ require_once '../config.php';
 .slide-subtitle{font-size:1.28rem;color:#111827;margin-top:8px;font-weight:500}
 .section-card{border:1px solid #d1d5db;border-radius:14px;background:#fff;padding:14px;height:100%}
 .badge-box{border:1px solid #93c5fd;border-radius:10px;background:#eff6ff;padding:8px 10px;font-size:.85rem}
+.bridge{border:1px solid #93c5fd;border-radius:12px;background:#eff6ff;padding:12px}
 .detail-table{width:100%;border-collapse:collapse;font-size:.86rem}
 .detail-table th,.detail-table td{border:1px solid #e5e7eb;padding:8px;vertical-align:top}
 .detail-table th{background:#f3f4f6}

@@ -9,6 +9,12 @@ require_once '../config.php';
 .layer{border:1px solid #d1d5db;border-radius:14px;background:#fff;padding:14px;height:100%}
 .layer-head{font-weight:700;color:#0f172a;margin-bottom:8px}
 .connector{text-align:center;color:#64748b;font-size:28px;line-height:1}
+.bridge{border:1px solid #93c5fd;border-radius:12px;background:#eff6ff;padding:12px}
+.summary-note{display:flex;gap:12px;align-items:flex-start;border:1px solid #c7d2fe;border-radius:14px;background:linear-gradient(180deg,#f8fbff 0%,#eef4ff 100%);padding:14px}
+.summary-icon{width:40px;height:40px;border:1px solid #93c5fd;border-radius:999px;display:flex;align-items:center;justify-content:center;background:#fff;color:#2563eb;flex-shrink:0}
+.summary-icon .material-symbols-rounded{font-size:22px;line-height:1}
+.summary-title{font-size:1rem;font-weight:700;color:#1e3a8a;margin-bottom:2px}
+.summary-text{font-size:1rem;color:#0f172a;line-height:1.45}
 .detail-table{width:100%;border-collapse:collapse;font-size:.84rem}
 .detail-table th,.detail-table td{border:1px solid #e5e7eb;padding:7px;vertical-align:top}
 .detail-table th{background:#f3f4f6}
@@ -44,7 +50,13 @@ require_once '../config.php';
       </table>
     </div>
 
-    <div class="visual-panel"><strong>Ý nghĩa kiến trúc module:</strong> không phải list chức năng rời rạc, mà là chuỗi kiểm soát vận hành từ line-level execution -> dữ liệu chuẩn hóa -> quyết định quản trị dựa trên bằng chứng.</div>
+    <div class="summary-note">
+      <div class="summary-icon"><span class="material-symbols-rounded">sticky_note_2</span></div>
+      <div>
+        <div class="summary-title">Ghi chú tổng quan</div>
+        <div class="summary-text">Module không vận hành rời rạc; giá trị chỉ xuất hiện khi execution, dữ liệu và quyết định quản trị được nối thành một chuỗi kiểm soát thống nhất.</div>
+      </div>
+    </div>
   </div>
 </div>
 

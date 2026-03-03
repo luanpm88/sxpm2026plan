@@ -1,7 +1,7 @@
 <?php
 // Configuration for the presentation
 define('PRESENTATION_TITLE', 'Định hướng phát triển Bộ phận Sản xuất Phần mềm 2026');
-define('TOTAL_SLIDES', 49);
+define('TOTAL_SLIDES', 72);
 
 // Slide titles
 $slide_titles = [
@@ -54,7 +54,30 @@ $slide_titles = [
     46 => 'Website: Launch Plan (4-6 Weeks)',
     47 => 'Website: 12-Month Roadmap',
     48 => 'Website: Risk Mitigation & Governance',
-    49 => 'Website: Board Decision & Next Steps'
+    49 => 'Website: Board Decision & Next Steps',
+    50 => 'FDI Manufacturing: Operating Framework',
+    51 => 'FDI Manufacturing: Executive Summary',
+    52 => 'FDI Manufacturing: Why This Opportunity Now',
+    53 => 'FDI Manufacturing: Market Positioning Gap',
+    54 => 'FDI Manufacturing: Current Manufacturing Pain Points',
+    55 => 'FDI Manufacturing: Product Vision',
+    56 => 'FDI Manufacturing: System Architecture (3 Layers)',
+    57 => 'FDI Manufacturing: Core Functional Modules Overview',
+    58 => 'FDI Manufacturing: Quality & Executive Modules',
+    59 => 'FDI Manufacturing: Structured Implementation Approach',
+    60 => 'FDI Manufacturing: Business Model Evolution',
+    61 => 'FDI Manufacturing: Competitive Positioning',
+    62 => 'FDI Manufacturing: Development Roadmap (24–36 Months)',
+    63 => 'FDI Manufacturing: Key Risks & Mitigation',
+    64 => 'FDI Manufacturing: Strategic Impact & Decision Required',
+    65 => 'FDI Manufacturing: Reality Check - Current Readiness & Constraints',
+    66 => 'FDI Manufacturing: SWOT for FDI Manufacturing Entry',
+    67 => 'FDI Manufacturing: Top Risks, Challenges & Mitigation',
+    68 => 'FDI Manufacturing: Strategic Lighthouse Customer Decision',
+    69 => 'FDI Manufacturing: Practical Timeline (0-18 Months)',
+    70 => 'FDI Manufacturing: Cost Envelope & Budget Scenarios',
+    71 => 'FDI Manufacturing: Pricing Strategy & Opportunity Model',
+    72 => 'FDI Manufacturing: BOD Realism Checkpoint & Final Confirmations'
 ];
 
 // Get current slide number from URL

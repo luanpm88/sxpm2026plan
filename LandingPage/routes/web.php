@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\LandingPageController;
+use App\Http\Controllers\SolutionController;
 
 /**
  * Landing Page Routes
@@ -43,4 +44,11 @@ Route::controller(LandingPageController::class)->group(function () {
 
     // R&D Blog
     Route::get('/blog/r_and_d', 'blog')->name('landing.blog.r_and_d');
+});
+
+/**
+ * Solutions Routes
+ */
+Route::controller(SolutionController::class)->prefix('solutions')->name('solutions.')->group(function () {
+    Route::get('/sme-manufacturing', 'manufacturing')->name('sme-manufacturing');
 });

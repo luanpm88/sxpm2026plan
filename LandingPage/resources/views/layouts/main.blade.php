@@ -37,6 +37,7 @@
                         'landing.index' => 'Home',
                         'landing.about-us' => 'About Us',
                         'landing.services' => 'Services',
+                        'solutions.sme-manufacturing' => 'Solutions',
                         'landing.scrum' => 'SCRUM',
                         'landing.tech-stack' => 'Technology',
                         // 'landing.scaling' => 'Scaling',
@@ -101,6 +102,7 @@
                     <h3>Company</h3>
                     <ul>
                         <li><a href="{{ route('landing.about-us') }}">About Us</a></li>
+                        <li><a href="{{ route('solutions.sme-manufacturing') }}">Solutions</a></li>
                         <li><a href="{{ route('landing.case-studies') }}">Case Studies</a></li>
                         <li><a href="{{ route('landing.blog.r_and_d') }}">Research & Development</a></li>
                         <li><a href="{{ route('landing.certifications') }}">Certifications</a></li>

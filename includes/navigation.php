@@ -1,11 +1,16 @@
 <?php
 $current = getCurrentSlide();
+$currentId = getCurrentSlideId();
 $prev = getPrevSlide($current);
 $next = getNextSlide($current);
+$presentationOrder = getPresentationOrder();
+$currentOrder = array_search($currentId, $presentationOrder, true);
+$displayIndex = $currentOrder === false ? 1 : $currentOrder + 1;
+$displayTotal = count($presentationOrder);
 ?>
 
 <div class="slide-number" onclick="toggleNavModal()">
-    <span><?php echo str_pad($current, 2, '0', STR_PAD_LEFT); ?> / <?php echo TOTAL_SLIDES; ?></span>
+    <span><?php echo str_pad($displayIndex, 2, '0', STR_PAD_LEFT); ?> / <?php echo $displayTotal; ?></span>
 </div>
 
 <a href="/logout.php" class="logout-btn" title="Logout">
@@ -17,13 +22,15 @@ $next = getNextSlide($current);
     <div class="nav-list">
         <?php 
         global $slide_titles;
-        for($i = 0; $i <= TOTAL_SLIDES; $i++): 
+        $orderIndex = 0;
+        foreach($presentationOrder as $slideId): 
+            $orderIndex++;
         ?>
-            <div class="nav-list-item<?php echo $current === $i ? ' current' : ''; ?>" onclick="goToSlide(<?php echo $i; ?>)">
-                <div class="nav-item-number"><?php echo str_pad($i, 2, '0', STR_PAD_LEFT); ?></div>
-                <div class="nav-item-title"><?php echo $slide_titles[$i] ?? 'Slide ' . $i; ?></div>
+            <div class="nav-list-item<?php echo $currentId === $slideId ? ' current' : ''; ?>" onclick="goToSlide('<?php echo $slideId; ?>')">
+                <div class="nav-item-number"><?php echo str_pad((string)$orderIndex, 2, '0', STR_PAD_LEFT); ?></div>
+                <div class="nav-item-title"><?php echo $slide_titles[$slideId] ?? $slideId; ?></div>
             </div>
-        <?php endfor; ?>
+        <?php endforeach; ?>
     </div>
     <div class="nav-footer">
         <small style="display: block; color: #666;">

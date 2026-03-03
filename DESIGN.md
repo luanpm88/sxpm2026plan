@@ -4,7 +4,7 @@
 
 Đây là bản thiết kế trình bày chính thức cho deck BOD.
 
-Deck áp dụng: `slides/slide_50.php` -> `slides/slide_72.php`.
+Deck áp dụng: `slides/slide_50.php` -> `slides/slide_80.php`.
 
 Mục tiêu:
 
@@ -167,9 +167,13 @@ Slide đáp ứng:
 
 - Slide 63 (phản biện), slide 64 (quyết định).
 
+Quy tắc trình bày:
+
+- Slide 63 là Q&A hub và được trình bày ở cuối deck (sau slide 80) để tổng kết toàn bộ bằng chứng.
+
 ---
 
-## 6) Storyline chi tiết cho slide 50–72
+## 6) Storyline chi tiết cho slide 50–80
 
 ## Slide 50 — Title & Objective
 
@@ -257,6 +261,8 @@ Slide đáp ứng:
 - Bảng mapping đầy đủ toàn bộ requirement/thắc mắc BOD.
 - Mỗi dòng phải có link slide liên quan để điều hướng tức thì.
 - Bắt buộc có câu hỏi riêng cho: phase-gate chuyển năm, team scale-up, và owner chịu trách nhiệm.
+- Bắt buộc có tham chiếu đến các slide mở rộng 64–80 (reality, SWOT, risks, lighthouse, timeline, cost, pricing, go/no-go, product detail series).
+- Slide này trình bày sau cùng trong flow điều hướng buổi họp.
 
 ## Slide 64 — Strategic impact & decision required
 
@@ -315,6 +321,127 @@ Slide đáp ứng:
 - Đưa điều kiện GO/NO-GO theo 3 nhóm: market signal, delivery readiness, financial guardrail.
 - Kết thúc bằng danh sách xác nhận BOD cần ký duyệt trước khi mở rộng.
 
+## Slide 73 — FDI Product Detail Master Outline
+
+- Mục tiêu: làm slide “đầu mục tổng” cho cụm Product Detail, để MKT/Sales/Delivery cùng bám một narrative sản phẩm thống nhất.
+- Prefix chuẩn áp dụng cho cụm chi tiết: **FDI Product Detail** (ngắn, rõ phân khúc, định vị enterprise).
+- Quy tắc ngôn ngữ: mô tả theo hướng **sản phẩm và năng lực triển khai**, không mô tả theo hướng “content website”.
+- 7 đầu mục bắt buộc (mỗi đầu mục là 1 slide riêng, nội dung dài):
+	1) FDI Product Detail 01 — Enterprise Pain & Transformation Need.
+	2) FDI Product Detail 02 — Solution Positioning & Partnering Model.
+	3) FDI Product Detail 03 — Module Architecture, Integration & Functional Value.
+	4) FDI Product Detail 04 — Delivery Process & Phase-Gate Execution.
+	5) FDI Product Detail 05 — Customer Decision Journey & Adoption Path.
+	6) FDI Product Detail 06 — Commitments, Security & Governance.
+	7) FDI Product Detail 07 — Capability, 3-Year Vision & Pilot Expansion Model.
+- Đầu ra kỳ vọng: MKT có thể tách trực tiếp thành nhiều asset (LP, brochure, sales deck, email sequence) mà không cần tự dựng câu chuyện từ đầu.
+
+## Slide 74 — FDI Product Detail 01: Enterprise Pain & Transformation Need
+
+- Mục tiêu: mở đầu bằng bài toán thực của doanh nghiệp FDI sản xuất để tạo nhu cầu chuyển đổi rõ ràng trước khi nói giải pháp.
+- Khối nội dung:
+	1) Khó khăn vận hành điển hình: downtime khó truy nguyên, dữ liệu phân mảnh IT/OT, phản ứng sự cố chậm, áp lực audit/compliance.
+	2) Tác động business: mất OEE, chậm lead-time, tăng chi phí ẩn, rủi ro giao hàng và rủi ro uy tín.
+	3) “Cost of inaction”: rủi ro nếu tiếp tục vận hành theo mô hình rời rạc.
+	4) Trigger chuyển đổi: điều kiện để doanh nghiệp quyết định đi vào chương trình pilot.
+- Kịch bản thông điệp:
+	- Headline: “Your Plant Complexity Is Real — The Operating Model Must Match It.”
+	- Sub-headline: “Chúng tôi bắt đầu từ pain vận hành và rủi ro kinh doanh, không bắt đầu từ danh sách tính năng.”
+	- 3 trụ cột bắt buộc: operational reality / measurable impact / transformation urgency.
+	- CTA nội bộ cho MKT: “Đánh giá nhanh mức độ sẵn sàng chuyển đổi vận hành.”
+
+## Slide 75 — FDI Product Detail 02: Solution Positioning & Partnering Model
+
+- Mục tiêu: dẫn dắt từ pain sang giải pháp, đồng thời chốt vai trò đồng hành partner dài hạn cho enterprise.
+- Khối nội dung:
+	1) Tuyên bố định vị: không ERP nặng, không custom chắp vá; sản phẩm có kiến trúc chuẩn + tùy biến có kiểm soát.
+	2) Câu chuyện giải pháp: từ “pain operation” sang “operating model có thể scale”.
+	3) Partnering model: đồng hành theo 3 lớp (consultative discovery, controlled delivery, operating governance).
+	4) Value promise theo vai trò: BOD/Plant/IT/Procurement nhận được gì và đo bằng gì.
+	5) Guardrail chống over-promise: cam kết theo phase và theo điều kiện readiness.
+- Kịch bản thông điệp:
+	- Headline: “From Operational Pain to a Scalable Enterprise Solution.”
+	- Sub-headline: “Chúng tôi không chỉ triển khai phần mềm; chúng tôi đồng hành để doanh nghiệp chuẩn hóa và nhân rộng năng lực vận hành.”
+	- 3 proof points: productized architecture / partner-led execution / governance continuity.
+	- CTA nội bộ cho MKT: “Xem mô hình đồng hành giải quyết khó khăn theo từng giai đoạn.”
+
+## Slide 76 — FDI Product Detail 03: Module Architecture, Integration & Functional Value
+
+- Mục tiêu: giới thiệu rõ kiến trúc hệ thống, cách liên kết với các hệ thống khác và giá trị nhận được theo từng module.
+- Khối nội dung:
+	1) Architecture map: Experience layer -> Application layer -> Integration & Data layer -> Platform & Security layer.
+	2) Module catalog bắt buộc: Production Execution / Warehouse & Inventory / Quality / Maintenance / Dashboard & Analytics.
+	3) Integration map: ERP, MES, WMS, HRM, IoT/SCADA, API gateway, event bus, audit log.
+	4) Module-to-value matrix: mỗi module nêu pain giải quyết + chức năng chính + KPI kết quả.
+	5) Interoperability principles: data ownership, sync frequency, fallback mode, exception handling.
+	6) In-scope vs out-of-scope cho pilot đầu để tránh kỳ vọng sai.
+- Kịch bản thông điệp:
+	- Headline: “One Architecture, Multiple Modules, Unified Operational Impact.”
+	- Sub-headline: “Mỗi module không đứng riêng lẻ mà liên kết thành luồng dữ liệu vận hành thống nhất với hệ thống hiện hữu.”
+	- 3 proof points: integration-first design / function-to-KPI mapping / enterprise interoperability.
+	- CTA nội bộ cho MKT: “Xem bản đồ module và lợi ích theo từng vai trò vận hành.”
+
+## Slide 77 — FDI Product Detail 04: Delivery Process & Phase-Gate Execution
+
+- Mục tiêu: chứng minh cách triển khai thực thi được từ Discover đến Scale, có gate rõ và owner rõ.
+- Khối nội dung:
+	1) Giai đoạn 1 — Discover & Diagnose: business case, baseline KPI, system landscape, risk baseline.
+	2) Giai đoạn 2 — Pilot & Validate: MVP enterprise scope, UAT, stabilization, acceptance criteria.
+	3) Giai đoạn 3 — Rollout & Harden: replication package, SOP, incident model, change management.
+	4) Giai đoạn 4 — Scale & Optimize: multi-site governance, SLA operations, continuous improvement.
+	5) Gate matrix bắt buộc: entry criteria / exit criteria / owner / escalation path.
+- Kịch bản thông điệp:
+	- Headline: “Delivery is Governed, Not Improvised.”
+	- Sub-headline: “Mỗi bước triển khai đều có tiêu chí vào-ra rõ ràng để bảo vệ tiến độ, chất lượng và ngân sách.”
+	- 3 proof points: phase-gate control / owner accountability / go-no-go discipline.
+	- CTA nội bộ cho MKT: “Nhận roadmap triển khai mẫu 18 tháng.”
+
+## Slide 78 — FDI Product Detail 05: Customer Decision Journey & Adoption Path
+
+- Mục tiêu: mô tả hành trình quyết định của khách hàng enterprise để MKT tạo content đúng người, đúng lúc, đúng câu hỏi.
+- Khối nội dung:
+	1) Stage A — Awareness: trigger vận hành và tín hiệu cần chuyển đổi.
+	2) Stage B — Evaluation: tiêu chí đánh giá của BOD/Plant/IT/Procurement.
+	3) Stage C — Pilot Decision: điều kiện ký pilot, phạm vi trách nhiệm hai bên, KPI thành công.
+	4) Stage D — Expansion: điều kiện nhân rộng line/site, cơ chế quản trị thay đổi.
+	5) Objection map: “vì sao tin được khi chưa có vertical product production hoàn chỉnh?”.
+- Kịch bản thông điệp:
+	- Headline: “Designed for How Enterprise Teams Actually Decide.”
+	- Sub-headline: “Không bán theo cảm hứng; bán theo logic ra quyết định và rủi ro được kiểm soát.”
+	- 3 proof points: stakeholder-specific value / decision criteria alignment / objection readiness.
+	- CTA nội bộ cho MKT: “Nhận checklist đánh giá readiness cho pilot.”
+
+## Slide 79 — FDI Product Detail 06: Commitments, Security & Governance
+
+- Mục tiêu: chuyển phần cam kết thành nội dung có thể kiểm chứng, tránh claim mơ hồ.
+- Khối nội dung:
+	1) Service commitments: response band, incident priority model, uptime target band.
+	2) Security controls: RBAC, encryption, audit trail, backup/DR, access governance.
+	3) Delivery governance: RACI, steering cadence, risk review, escalation protocol.
+	4) Compliance baseline: tài liệu bắt buộc trước và sau pilot.
+	5) Service boundary: điều kiện áp dụng cam kết theo từng phase.
+- Kịch bản thông điệp:
+	- Headline: “Enterprise Trust Is Earned Through Operating Discipline.”
+	- Sub-headline: “Cam kết đi cùng điều kiện vận hành rõ ràng, có cơ chế đo, báo cáo và truy vết.”
+	- 3 proof points: measurable SLA / security by design / governance with ownership.
+	- CTA nội bộ cho MKT: “Xem khung cam kết dịch vụ cho chương trình pilot.”
+
+## Slide 80 — FDI Product Detail 07: Capability, 3-Year Vision & Pilot Expansion Model
+
+- Mục tiêu: chốt năng lực hiện tại, lộ trình 3 năm và mô hình mở rộng từ pilot sang scale.
+- Khối nội dung:
+	1) Năng lực hiện tại: team SCRUM 5-8, kinh nghiệm customization quy mô vài trăm đến >1.000 users.
+	2) Năng lực lõi có thể tái sử dụng: web/mobile/management core + integration + AI-assisted workflows.
+	3) Gap hiện hữu: thiếu vertical product production reference cho ngành cụ thể.
+	4) Kế hoạch nâng năng lực Year 1/2/3: domain depth, QA automation, security hardening, delivery governance.
+	5) Pilot-to-scale model: điều kiện mở rộng, expansion trigger, governance khi nhân rộng.
+	6) Chứng chỉ/chứng nhận theo roadmap: technical, security, process maturity.
+- Kịch bản thông điệp:
+	- Headline: “Transparent Capability, Structured Growth, Evidence-Led Scale.”
+	- Sub-headline: “Nói đúng năng lực hiện tại, cùng khách hàng đi từ pilot thành năng lực vận hành có thể nhân rộng.”
+	- 3 proof points: real baseline / explicit capability roadmap / pilot-to-scale discipline.
+	- CTA nội bộ cho MKT: “Đăng ký buổi Pilot Readiness Workshop.”
+
 ---
 
 ## 7) Glossary bắt buộc (đơn giản)
@@ -359,6 +486,7 @@ Nếu dùng thuật ngữ, phải có giải thích ngắn ngay trong slide ho�
 - [ ] Có SWOT và risk register có owner/mitigation rõ (slide 66-67).
 - [ ] Có quyết định lighthouse pilot và logic giá-cơ hội (slide 68, 71).
 - [ ] Có budget envelope theo kịch bản và guardrail GO/NO-GO (slide 70, 72).
+- [ ] Có cụm FDI Product Detail (slide 73-80) đủ sâu để MKT triển khai asset marketing theo hướng sản phẩm enterprise.
 
 ---
 
@@ -503,8 +631,9 @@ Mỗi slide phải có đủ 6 trường:
 - Mandatory points:
 	- Link điều hướng tới slide chứng minh cho từng câu hỏi.
 	- Có mapping riêng cho nhóm câu hỏi về phase-gate, team scale-up, owner và quyết định BOD.
+	- Có mapping riêng cho nhóm câu hỏi về readiness thực tế, SWOT, risk register, lighthouse-first, budget scenarios và go/no-go.
 	- Câu trả lời phải ngắn gọn, hành động được, tránh mô tả chung chung.
-- Acceptance: Dùng trực tiếp làm slide điều hướng Q&A trong buổi họp, bao phủ đủ câu hỏi phản biện vận hành
+- Acceptance: Dùng trực tiếp làm slide điều hướng Q&A ở cuối buổi họp, bao phủ đủ câu hỏi phản biện vận hành và tài chính
 
 ### Slide 64
 - Title: Strategic Impact & Decision Required
@@ -611,6 +740,357 @@ Mỗi slide phải có đủ 6 trường:
 	- Chốt danh sách xác nhận BOD cần ký duyệt.
 - Acceptance: Tránh over-commit, ra quyết định thực tế và có kiểm soát
 
+### Slide 73
+- Title: FDI Product Detail Master Outline
+- Subtitle: Khung đầu mục tổng để triển khai cụm nội dung sản phẩm enterprise cho FDI sản xuất
+- Section format rule (áp dụng bắt buộc cho Slide 74-80):
+	- Mỗi phần nhỏ phải có 2 lớp nội dung theo thứ tự:
+		1) **Tóm tắt phần này trình bày gì** (1-2 câu, nói mục tiêu business/decision của phần).
+		2) **Nội dung chi tiết** (bullet dài, đủ dữ kiện để MKT có thể viết content ngay).
+	- Nếu một slide có nhiều phần nhỏ, giữ cấu trúc lặp lại: Tóm tắt -> Chi tiết cho từng phần.
+	- Ngôn ngữ viết theo chuẩn enterprise advisory, tránh kiểu quảng cáo ngắn.
+- Content blocks:
+	1) Product narrative objective (vì sao cần cụm Product Detail).
+	2) Prefix naming rule (FDI Product Detail 01-07).
+	3) Seven-section map (pain, solution partner model, module architecture-value, delivery, journey, commitments, capability-vision).
+	4) Asset mapping cho MKT (LP, brochure, sales one-pager, email sequence, webinar talk-track).
+	5) Guardrails ngôn ngữ (product-first, enterprise-first, no over-promise).
+- Mandatory points:
+	- Prefix chính thức dùng xuyên suốt: `FDI Product Detail`.
+	- Slide 73 chỉ đóng vai trò “master index”, không trùng lặp toàn bộ nội dung của 7 slide chi tiết.
+	- Mỗi đầu mục phải có: message key, proof type, call-to-action gợi ý.
+	- Tuyệt đối tránh mô tả theo hướng “chỉ để làm site”; phải mô tả theo hướng năng lực sản phẩm và năng lực triển khai.
+- Glossary: Product narrative, Proof type, Conversion asset, Messaging guardrail
+- Acceptance:
+	- MKT nhìn vào slide 73 là biết ngay phải sản xuất những cụm nội dung nào.
+	- Sales/Delivery đọc slide 73 vẫn hiểu cùng một câu chuyện, không lệch thông điệp.
+
+### Slide 74
+- Title: FDI Product Detail 01 — Enterprise Pain & Transformation Need
+- Subtitle: Khó khăn vận hành thực tế và lý do cần chuyển đổi theo chuẩn enterprise
+- Section notes (format bắt buộc):
+	- Phần 1: Bối cảnh khó khăn hiện hữu.
+	- Phần 2: Tác động kinh doanh nếu không xử lý.
+	- Phần 3: Điều kiện kích hoạt chuyển đổi.
+	- Mỗi phần đều có “Tóm tắt” trước, “Chi tiết” sau.
+- Content blocks:
+	1) Pain map theo vận hành nhà máy: downtime, defect visibility thấp, dữ liệu rời rạc, phản ứng sự cố chậm.
+	2) Business impact map: OEE loss, lead-time variance, compliance exposure, hidden operating cost.
+	3) Cost-of-inaction narrative: nếu không chuyển đổi thì rủi ro tăng như thế nào trong 12-24 tháng.
+	4) Transformation trigger checklist: điều kiện enterprise thường dùng để khởi động pilot.
+	5) Outcome intent: mục tiêu chuyển đổi ở mức vận hành, tài chính và quản trị rủi ro.
+- Mandatory points:
+	- Bắt buộc trình bày “vấn đề trước” rồi mới đi vào giải pháp ở slide sau.
+	- Mọi pain phải gắn với impact business cụ thể, tránh mô tả IT thuần túy.
+	- Ngôn ngữ phải mang tính enterprise advisory, không mang tính quảng cáo tiêu dùng.
+- Glossary: Cost of inaction, Transformation trigger, OEE impact
+- Acceptance:
+	- Người đọc thấy rõ “vì sao phải thay đổi ngay bây giờ”.
+	- MKT có thể dùng làm phần mở đầu cho mọi asset funnel.
+
+### Slide 75
+- Title: FDI Product Detail 02 — Solution Positioning & Partnering Model
+- Subtitle: Câu chuyện giải pháp và vai trò đồng hành partner cho enterprise FDI
+- Section notes (format bắt buộc):
+	- Phần 1: Giải pháp của mình là gì và khác gì.
+	- Phần 2: Mô hình đồng hành partner theo vòng đời.
+	- Phần 3: Giá trị theo stakeholder và guardrail cam kết.
+	- Mỗi phần đều có “Tóm tắt” trước, “Chi tiết” sau.
+- Content blocks:
+	1) Positioning statement: structured enough to scale, flexible enough to deploy.
+	2) Solution narrative từ pain sang operating model mục tiêu.
+	3) Partnering model theo vòng đời: discover, co-design, controlled delivery, operating governance.
+	4) Value proposition theo stakeholder: BOD/Plant/IT/Procurement.
+	5) Guardrail statement: cam kết theo readiness và phase-gate.
+- Mandatory points:
+	- Nêu rõ doanh nghiệp nhận được gì khi chọn mô hình partner dài hạn thay vì one-off implementation.
+	- Tránh ngôn ngữ “vendor triển khai”; dùng ngôn ngữ “operating partner”.
+	- Chỉ ra nguyên tắc không over-promise ngay trong slide.
+- Glossary: Operating partner, Guardrail commitment, Stakeholder value
+- Acceptance:
+	- MKT có thể viết phần “vì sao chọn chúng tôi” theo logic enterprise.
+	- Sales có câu chuyện partner model nhất quán khi gặp khách hàng.
+
+### Slide 76
+- Title: FDI Product Detail 03 — Module Architecture, Integration & Functional Value
+- Subtitle: Kiến trúc hệ thống liên kết module và hệ thống hiện hữu, kèm giá trị nhận được
+- Section notes (format bắt buộc):
+	- Phần 1: Tổng quan kiến trúc hệ thống.
+	- Phần 2: Module chức năng chi tiết.
+	- Phần 3: Liên kết với hệ thống hiện hữu.
+	- Phần 4: Giá trị/KPI theo từng module.
+	- Mỗi phần đều có “Tóm tắt” trước, “Chi tiết” sau.
+- Content blocks:
+	1) System architecture map: Experience -> Application -> Integration/Data -> Platform/Security.
+	2) Module catalog (chi tiết bắt buộc):
+		- Production Execution: lệnh sản xuất, theo dõi tiến độ line, WIP control, cycle-time tracking, cảnh báo bất thường.
+		- Warehouse & Inventory: nhập-xuất-tồn, lot/batch traceability, barcode/QR flow, stock accuracy, aging control.
+		- Quality Management: QC gate, non-conformance logging, CAPA tracking, defect trend dashboard.
+		- Maintenance Coordination: kế hoạch PM, ticket sự cố, MTTR tracking, phụ tùng thay thế.
+		- Dashboard & Analytics: plant KPI cockpit, exception dashboard, role-based reporting.
+	3) Integration matrix (chi tiết bắt buộc):
+		- ERP: đồng bộ master data (item/BOM/vendor) + transaction summary.
+		- MES: nhận kế hoạch sản xuất, trả trạng thái thực thi theo line/shift.
+		- WMS: đồng bộ tồn kho và luồng xuất/nhập liên quan sản xuất.
+		- HRM: đồng bộ ca kíp, phân quyền, mapping người vận hành.
+		- IoT/SCADA: nhận tín hiệu máy/chuyền phục vụ theo dõi realtime và cảnh báo.
+		- API Gateway/Event Bus: chuẩn hóa kết nối, theo dõi event, audit tích hợp.
+	4) Module-to-outcome table: pain giải quyết / chức năng chính / KPI tác động / stakeholder hưởng lợi / điều kiện áp dụng.
+	5) Data governance basics: source of truth, auditability, exception handling, fallback mode.
+	6) Scope boundary cho pilot: in-scope, deferred scope, out-of-scope.
+- Mandatory points:
+	- Bắt buộc có hình hoặc bảng thể hiện liên kết module với hệ thống khác.
+	- Mỗi module phải nêu rõ “khách hàng nhận được chức năng gì” và “đo hiệu quả bằng gì”.
+	- Nhấn mạnh kiến trúc integration-first để tạo niềm tin enterprise.
+- Glossary: Integration matrix, Source of truth, Module-to-outcome mapping
+- Acceptance:
+	- Người đọc thấy rõ kiến trúc liên kết tổng thể và giá trị từng module.
+	- MKT dùng trực tiếp để viết phần “Modules & Architecture” chi tiết.
+
+### Slide 77
+- Title: FDI Product Detail 04 — Delivery Process & Phase-Gate Execution
+- Subtitle: Cách triển khai thực thi từ discover đến scale với governance rõ ràng
+- Section notes (format bắt buộc):
+	- Phần 1: Quy trình triển khai theo phase.
+	- Phần 2: Deliverables và KPI theo phase.
+	- Phần 3: Cơ chế gate và ownership.
+	- Mỗi phần đều có “Tóm tắt” trước, “Chi tiết” sau.
+- Content blocks:
+	1) Phase 1: Discover & Diagnose (business case, baseline KPI, process mapping, risk baseline, stakeholder alignment).
+	2) Phase 2: Pilot & Validate (MVP scope, sprint plan, UAT, stabilization, acceptance sign-off).
+	3) Phase 3: Rollout & Harden (replication package, SOP enablement, incident rhythm, change management).
+	4) Phase 4: Scale & Optimize (multi-site rollout, service operations model, continuous KPI optimization).
+	5) Gate governance matrix: owner, criteria, risk review, escalation path.
+	6) Delivery role map: PO/PM, Solution Lead, Tech Lead, QA, Support, Program Governance.
+	7) Gate failure playbook: khi KPI/gate không đạt thì dừng ở đâu, xử lý thế nào, ai quyết định.
+- Mandatory points:
+	- Mỗi phase có deliverable và KPI theo dõi rõ.
+	- Có ownership theo vai trò delivery và cơ chế go/no-go.
+	- Có điều kiện dừng/chỉnh khi không đạt gate.
+- Glossary: Phase deliverable, Gate criteria, Escalation path
+- Acceptance:
+	- BOD/khách hàng hiểu rõ phương pháp triển khai thực tế.
+	- MKT có thể xây content “implementation confidence” có cấu trúc.
+
+### Slide 78
+- Title: FDI Product Detail 05 — Customer Decision Journey & Adoption Path
+- Subtitle: Hành trình ra quyết định và điều kiện mở rộng của khách hàng enterprise
+- Section notes (format bắt buộc):
+	- Phần 1: Journey theo stage quyết định.
+	- Phần 2: Tiêu chí theo stakeholder.
+	- Phần 3: Objection handling và CTA.
+	- Mỗi phần đều có “Tóm tắt” trước, “Chi tiết” sau.
+- Content blocks:
+	1) Stage Awareness: trigger chuyển đổi.
+	2) Stage Evaluation: criteria theo BOD/Plant/IT/Procurement.
+	3) Stage Pilot Commitment: scope, trách nhiệm hai bên, success criteria.
+	4) Stage Adoption: training, operating rhythm, change adoption.
+	5) Stage Expansion: điều kiện mở rộng sang line/site khác.
+	6) Objection playbook: câu hỏi phản biện và câu trả lời chuẩn.
+- Mandatory points:
+	- Phải thể hiện khác biệt nội dung theo stakeholder.
+	- Có tối thiểu 5 objection chuẩn và thông điệp xử lý.
+	- Có CTA theo từng stage (assessment/workshop/pilot briefing).
+- Glossary: Adoption path, Stakeholder criteria, Expansion trigger
+- Acceptance:
+	- MKT có thể xây full-funnel content theo hành trình mua enterprise.
+	- Sales có checklist pre-qualify khách hàng pilot.
+
+### Slide 79
+- Title: FDI Product Detail 06 — Commitments, Security & Governance
+- Subtitle: Khung cam kết kiểm chứng được cho môi trường enterprise production
+- Section notes (format bắt buộc):
+	- Phần 1: Cam kết dịch vụ đo được.
+	- Phần 2: Bảo mật và compliance baseline.
+	- Phần 3: Governance và cơ chế phối hợp với khách hàng.
+	- Mỗi phần đều có “Tóm tắt” trước, “Chi tiết” sau.
+- Content blocks:
+	1) Service commitments: response time band, incident severity model, uptime target band, service review cadence.
+	2) Security baseline: RBAC, encryption at rest/in transit, audit trail, backup/DR drills.
+	3) Governance baseline: RACI, steering meeting rhythm, escalation path, issue ownership tracking.
+	4) Compliance evidence pack: tài liệu cần có trước pilot và sau pilot.
+	5) Commitment boundary: điều kiện áp dụng cam kết theo phase và theo phạm vi triển khai.
+- Mandatory points:
+	- Không ghi cam kết tuyệt đối nếu chưa có điều kiện vận hành tương ứng.
+	- Mỗi cam kết phải có cách đo và cơ chế báo cáo.
+	- Nêu rõ cơ chế joint governance với khách hàng enterprise.
+- Glossary: Service review, Evidence pack, Commitment boundary
+- Acceptance:
+	- MKT có thể chuyển thành phần “Trust & Assurance” với ngôn ngữ kiểm chứng được.
+	- Delivery có thể dùng trực tiếp để chuẩn hóa expectation trước hợp đồng pilot.
+
+### Slide 80
+- Title: FDI Product Detail 07 — Capability, 3-Year Vision & Pilot Expansion Model
+- Subtitle: Năng lực hiện tại, lộ trình 3 năm và mô hình mở rộng từ pilot sang scale
+- Section notes (format bắt buộc):
+	- Phần 1: Năng lực hiện tại và giới hạn hiện tại.
+	- Phần 2: Lộ trình năng lực 3 năm.
+	- Phần 3: Pilot offer và expansion model.
+	- Mỗi phần đều có “Tóm tắt” trước, “Chi tiết” sau.
+- Content blocks:
+	1) Current capability baseline: team 5-8, customization record, reusable product assets.
+	2) Gap transparency: thiếu vertical production reference và domain playbook theo ngành.
+	3) 3-year capability vision: Year 1 foundation, Year 2 replication, Year 3 scale portfolio.
+	4) Pilot offer structure: scope, assumptions, joint commitment, pricing principle, success criteria.
+	5) Expansion model: trigger chuyển pilot -> multi-site rollout -> portfolio motion.
+	6) Certification & competency roadmap: technical/security/process maturity.
+	7) Final CTA bundle: Pilot Readiness Workshop / Solution Briefing / Executive Discovery Session.
+	8) Capability investment model: people/process/platform/program theo phase-gate để tránh đầu tư dàn trải.
+- Mandatory points:
+	- Minh bạch năng lực hiện tại và giới hạn hiện tại.
+	- Tầm nhìn 3 năm phải gắn phase-gate và điều kiện chuyển pha rõ.
+	- Pilot offer phải thể hiện win-win và kiểm soát rủi ro hai bên.
+	- Có thông điệp “start small, scale with evidence” làm câu chốt nhất quán.
+- Glossary: Capability baseline, Lighthouse pilot, Expansion playbook, Go-to-market motion
+- Acceptance:
+	- MKT có narrative “năng lực thật + kế hoạch tăng trưởng thật” để chốt pilot.
+	- Narrative kết thúc đủ mạnh để chuyển từ quan tâm sang hành động.
+
+### Product Detail Writing Template (dùng trực tiếp cho MKT)
+
+Mẫu này áp dụng cho **mọi phần nhỏ** trong Slide 74-80.
+
+1) Tóm tắt phần này trình bày gì
+- Viết 1-2 câu trả lời rõ:
+	- “Phần này giúp người đọc hiểu điều gì?”
+	- “Phần này phục vụ quyết định business nào?”
+
+2) Nội dung chi tiết
+- Viết 5-8 bullet theo thứ tự:
+	- Bối cảnh/vấn đề cụ thể.
+	- Cách giải pháp xử lý vấn đề.
+	- Chức năng hoặc cơ chế triển khai cụ thể.
+	- KPI hoặc kết quả kỳ vọng đo được.
+	- Điều kiện áp dụng/giới hạn cam kết.
+
+3) Copy block chuẩn (để MKT copy ra asset)
+- Headline:
+- Sub-headline:
+- 3 Key bullets:
+	- Bullet 1 (pain -> solution).
+	- Bullet 2 (function -> business value).
+	- Bullet 3 (proof/guardrail -> trust).
+- CTA:
+
+### Product Detail Copy Snippet Samples (74-80)
+
+#### Sample for Slide 76 (Module Architecture, Integration & Functional Value)
+- Tóm tắt: “Phần này cho thấy các module hoạt động như một hệ thống thống nhất và kết nối được với ERP/MES/WMS hiện hữu.”
+- Chi tiết:
+	- Production Execution: theo dõi lệnh, tiến độ, WIP, bất thường line theo thời gian gần thực.
+	- Warehouse & Inventory: chuẩn hóa nhập-xuất-tồn, truy vết lot/batch, kiểm soát tồn kho theo ngữ cảnh sản xuất.
+	- Quality: QC gate, ghi nhận lỗi, CAPA, theo dõi xu hướng lỗi theo line/shift.
+	- Maintenance: lịch bảo trì, ticket sự cố, MTTR, theo dõi trạng thái thiết bị trọng yếu.
+	- Dashboard: tổng hợp KPI cho BOD/Plant/IT với role-based view.
+	- Integration: đồng bộ master/transaction giữa ERP-MES-WMS-HRM-IoT qua API/event.
+	- KPI chính: downtime, lead-time, inventory accuracy, defect rate, response time.
+- Copy block:
+	- Headline: “Connected Modules, Unified Factory Decisions.”
+	- Sub-headline: “Kiến trúc integration-first giúp mỗi module tạo giá trị riêng nhưng vẫn vận hành trên một luồng dữ liệu thống nhất.”
+	- 3 Key bullets:
+		- “Mỗi module giải quyết pain cụ thể tại line vận hành.”
+		- “Mỗi luồng tích hợp có định nghĩa dữ liệu và tần suất đồng bộ rõ ràng.”
+		- “Mỗi kết quả đều gắn KPI theo vai trò người dùng.”
+	- CTA: “Yêu cầu bản Module-to-Outcome Map cho nhà máy của bạn.”
+
+#### Sample for Slide 77 (Delivery Process & Phase-Gate Execution)
+- Tóm tắt: “Phần này mô tả cách triển khai có kiểm soát, có gate và người chịu trách nhiệm rõ ràng từ discover đến scale.”
+- Chi tiết:
+	- Discover: chốt baseline KPI, bản đồ quy trình, risk baseline.
+	- Pilot: triển khai phạm vi tối thiểu enterprise, UAT, stabilization, acceptance.
+	- Rollout: đóng gói replication package, SOP, support rhythm.
+	- Scale: mở rộng đa line/site với governance chuẩn.
+	- Gate control: entry/exit criteria, go/no-go, escalation owner.
+	- Failure handling: không đạt gate thì corrective plan trong 2-4 tuần và review lại.
+- Copy block:
+	- Headline: “Execution Discipline from Pilot to Scale.”
+	- Sub-headline: “Không triển khai theo cảm tính; mọi bước đều có gate, deliverable và accountability.”
+	- 3 Key bullets:
+		- “Phase nào cũng có KPI và tiêu chí nghiệm thu.”
+		- “Ownership rõ theo vai trò business và delivery.”
+		- “Có cơ chế dừng/chỉnh để bảo vệ ngân sách và chất lượng.”
+	- CTA: “Nhận mẫu roadmap phase-gate 18 tháng.”
+
+#### Sample for Slide 80 (Capability, 3-Year Vision & Pilot Expansion Model)
+- Tóm tắt: “Phần này chốt năng lực thật hiện tại, lộ trình phát triển 3 năm và cách mở rộng từ pilot sang scale có bằng chứng.”
+- Chi tiết:
+	- Baseline hiện tại: team 5-8, năng lực customization và asset tái sử dụng.
+	- Gap minh bạch: thiếu vertical production reference theo ngành.
+	- Vision Year 1/2/3: foundation -> replicate -> portfolio scale.
+	- Pilot offer: phạm vi, KPI thành công, trách nhiệm hai bên, nguyên tắc giá.
+	- Expansion model: điều kiện nhân rộng sau pilot và governance khi mở rộng.
+	- Investment logic: people/process/platform/program theo phase-gate.
+- Copy block:
+	- Headline: “Start with Reality, Scale with Evidence.”
+	- Sub-headline: “Minh bạch năng lực hiện tại và đồng hành theo lộ trình 3 năm để tạo tăng trưởng bền vững.”
+	- 3 Key bullets:
+		- “Không over-claim: cam kết theo năng lực và điều kiện triển khai.”
+		- “Pilot được thiết kế để tạo bằng chứng vận hành có thể nhân rộng.”
+		- “Lộ trình đầu tư năng lực gắn với phase-gate và kết quả đo được.”
+	- CTA: “Đăng ký Pilot Readiness Workshop cho nhà máy mục tiêu.”
+
+### Product Detail Traceability Map (50-72 -> 74-80)
+
+Mục tiêu: giữ mạch planning chính xác, không thêm claim ngoài phạm vi đã được duyệt trong cụm 50-72.
+
+| Product Detail Slide | Nội dung chính | Nguồn bắt buộc từ 50-72 | Evidence type cần có | Guardrail (không ba hoa) |
+|---|---|---|---|---|
+| 74 — Enterprise Pain & Transformation Need | Pain thực tế + tác động business + cost of inaction | 51, 53, 54, 57 | Pain matrix, KPI baseline giả định có điều kiện | Không nêu ROI tuyệt đối khi chưa có baseline thực tế |
+| 75 — Solution Positioning & Partnering Model | Định vị giải pháp + mô hình đồng hành partner | 55, 56, 58, 64 | Positioning statement, stakeholder value map | Không tự nhận thay thế toàn bộ ERP hiện hữu |
+| 76 — Module Architecture, Integration & Functional Value | Kiến trúc + module + liên kết hệ thống + KPI theo module | 56, 57, 58, 62 | Architecture map, integration matrix, module-to-outcome table | Không ghi “real-time 100%” nếu chưa có điều kiện hạ tầng |
+| 77 — Delivery Process & Phase-Gate Execution | Quy trình triển khai theo phase + gate + owner | 59, 60, 62, 64, 69 | Phase plan, gate criteria, ownership matrix | Không bỏ qua điều kiện dừng/chỉnh khi gate không đạt |
+| 78 — Customer Decision Journey & Adoption Path | Journey theo stakeholder + objection + CTA theo stage | 52, 53, 63, 68, 71 | Stakeholder map, objection playbook, stage CTA map | Không dùng một thông điệp chung cho mọi stakeholder |
+| 79 — Commitments, Security & Governance | SLA/uptime/security/governance có điều kiện áp dụng | 58, 61, 67, 70, 72 | Commitment matrix, security baseline, governance cadence | Không cam kết vượt năng lực vận hành hiện tại |
+| 80 — Capability, 3-Year Vision & Pilot Expansion Model | Năng lực hiện tại + roadmap 3 năm + pilot-to-scale | 60, 61, 62, 65, 68, 70, 71, 72 | Capability baseline, roadmap, pilot offer frame | Không che giấu gap hiện tại hoặc hứa timeline cứng |
+
+#### Gate kiểm duyệt nội dung trước khi giao MKT
+
+- Gate 1 — Source check: mỗi bullet trong 74-80 phải chỉ rõ nguồn từ 50-72.
+- Gate 2 — Evidence check: mỗi claim phải có ít nhất 1 loại bằng chứng (map, KPI band, matrix, rule).
+- Gate 3 — Guardrail check: loại bỏ các câu tuyệt đối như “đảm bảo”, “100%”, “không rủi ro”.
+- Gate 4 — Consistency check: thuật ngữ phải thống nhất với cụm 50-72 (`phase-gate`, `baseline KPI`, `pilot`).
+- Gate 5 — Decision check: nội dung phải hỗ trợ mục tiêu thu hút 1-2 pilot đầu tiên, không lệch sang SMB/low-end.
+
+#### Definition of Done cho cụm Product Detail
+
+- DoD-1: Slide 74-80 bám đúng traceability map ở trên.
+- DoD-2: Mỗi phần nhỏ đều có cấu trúc “Tóm tắt -> Chi tiết”.
+- DoD-3: Slide 76 có đủ 4 bảng bắt buộc: architecture map, module catalog, integration matrix, module-to-outcome.
+- DoD-4: Slide 77 có gate matrix + failure playbook rõ owner.
+- DoD-5: Slide 79 có commitment boundary rõ điều kiện áp dụng.
+- DoD-6: Slide 80 có capability gap minh bạch + roadmap 3 năm + pilot expansion trigger.
+
+#### Checklist review 15 phút cho MKT (pre-publish)
+
+Mục tiêu: rà nhanh trước khi đưa nội dung ra LP/brochure/sales asset để đảm bảo đúng narrative enterprise và không lệch planning.
+
+**Phút 1-3: Narrative fit**
+- [ ] Nội dung bám đúng mạch 74 -> 80: Pain -> Solution/Partner -> Module -> Delivery -> Journey -> Commitments -> Capability/Vision.
+- [ ] Không có đoạn nào đi lệch sang phân khúc SMB/low-end.
+- [ ] One-line định vị xuất hiện rõ: structured enough to scale, flexible enough to deploy.
+
+**Phút 4-6: Source & evidence check**
+- [ ] Mỗi phần chính đều trace được về nguồn 50-72 theo bảng mapping.
+- [ ] Mỗi claim có evidence type đi kèm (map/matrix/KPI band/rule).
+- [ ] Không có con số tuyệt đối nếu chưa có baseline thực tế được xác minh.
+
+**Phút 7-9: Content structure quality**
+- [ ] Mỗi phần nhỏ có đủ cấu trúc: “Tóm tắt phần này trình bày gì” -> “Nội dung chi tiết”.
+- [ ] Mỗi phần có đủ 4 khối copy: headline, sub-headline, 3 key bullets, CTA.
+- [ ] Ngôn ngữ nhất quán enterprise advisory (không quảng cáo khoa trương).
+
+**Phút 10-12: Critical slide quality gates**
+- [ ] Slide 76 có đủ 4 bảng: architecture map, module catalog, integration matrix, module-to-outcome.
+- [ ] Slide 77 có gate matrix, ownership và failure playbook rõ ràng.
+- [ ] Slide 79 nêu rõ commitment boundary và điều kiện áp dụng cam kết.
+- [ ] Slide 80 minh bạch capability gap + roadmap 3 năm + trigger mở rộng pilot.
+
+**Phút 13-15: Conversion readiness**
+- [ ] CTA cuối cùng hướng đúng mục tiêu: thu hút 1-2 pilot enterprise đầu tiên.
+- [ ] Có objection handling tối thiểu cho câu hỏi “chưa có vertical production reference thì vì sao tin?”.
+- [ ] Nội dung hỗ trợ Sales pre-qualify được trong buổi discovery đầu.
+- [ ] Bản cuối đã loại bỏ các từ rủi ro cao: “đảm bảo 100%”, “không rủi ro”, “triển khai mọi nơi ngay”.
+
 ---
 
 ## 11) Changelog mẫu
@@ -651,6 +1131,25 @@ Mỗi slide phải có đủ 6 trường:
 ### Validation
 - Content alignment with BOD: pass
 - Visual consistency: pass
+- Syntax: pass
+
+## [2026-03-03] Product Detail Extension (73-80)
+
+### Why
+- Cần bộ nội dung chi tiết theo hướng sản phẩm để MKT triển khai asset marketing mà không phải tự dựng chiến lược.
+- Cần narrative enterprise nhất quán để thu hút 1-2 pilot khách hàng FDI sản xuất đầu tiên.
+
+### What changed
+- Chuyển Slide 73 thành master outline cho cụm Product Detail.
+- Bổ sung 7 slide chi tiết (74-80), mỗi slide là 1 đầu mục nội dung dài theo prefix `FDI Product Detail`.
+- Chuẩn hóa ngôn ngữ sang hướng sản phẩm và năng lực triển khai, tránh framing “chỉ làm nội dung site”.
+
+### Slide impact
+- Added: slide_73, slide_74, slide_75, slide_76, slide_77, slide_78, slide_79, slide_80 (DESIGN blueprint level).
+
+### Validation
+- Content alignment with BOD/product-first direction: pass
+- Visual/storyline consistency: pass
 - Syntax: pass
 
 ## [YYYY-MM-DD] Design Update
@@ -902,3 +1401,93 @@ Mục đích: bản tóm tắt 1 trang để MC/Manager/Delivery cùng nhìn m�
 ### 15.6 Meeting close template
 
 “Để triển khai ngay sau họp, xin xác nhận 3 quyết định đã nêu. Đề nghị chốt owner và deadline follow-up cho từng quyết định trước khi kết thúc phiên.”
+
+---
+
+## 16) MKT Pre-Publish Quick Card (1-page)
+
+Mục tiêu: checklist rút gọn để MKT review trong 10-15 phút trước khi publish LP/brochure/sales content.
+
+### 16.1 6 câu hỏi phải đạt (Yes/No)
+
+- [ ] Nội dung có bám đúng flow Product Detail 74 -> 80 không?
+- [ ] Mỗi claim đã trace được về nguồn 50 -> 72 chưa?
+- [ ] Mỗi phần nhỏ đã có cấu trúc “Tóm tắt -> Chi tiết” chưa?
+- [ ] Slide 76 đã đủ architecture + modules + integration + KPI outcome chưa?
+- [ ] Có câu nào đang over-claim (100%, guaranteed, no-risk) chưa?
+- [ ] CTA cuối có hướng đúng mục tiêu thu hút 1-2 pilot enterprise đầu tiên chưa?
+
+### 16.2 Critical checks theo slide
+
+- [ ] Slide 74: pain + business impact + cost-of-inaction rõ, không nói chung chung.
+- [ ] Slide 75: định vị solution + partner model rõ, không dùng giọng “vendor triển khai”.
+- [ ] Slide 76: có bảng module-to-outcome (pain/chức năng/KPI/stakeholder).
+- [ ] Slide 77: có phase-gate + owner + failure playbook.
+- [ ] Slide 78: có stakeholder journey + objection handling + CTA theo stage.
+- [ ] Slide 79: commitment boundary rõ điều kiện áp dụng.
+- [ ] Slide 80: capability gap minh bạch + roadmap 3 năm + pilot expansion trigger.
+
+### 16.3 Từ khóa bắt buộc / cấm dùng
+
+**Bắt buộc có**
+- `phase-gate`
+- `baseline KPI`
+- `pilot`
+- `integration`
+- `commitment boundary`
+
+**Tránh dùng**
+- “đảm bảo 100%”
+- “không rủi ro”
+- “triển khai mọi nơi ngay”
+- “thay thế toàn bộ ERP trong một bước”
+
+### 16.4 Publish gate (GO/NO-GO)
+
+- GO khi toàn bộ mục 16.1 và 16.2 đều đạt.
+- NO-GO nếu thiếu một trong các điểm trọng yếu:
+	1) Traceability source (50-72),
+	2) Module/integration evidence (slide 76),
+	3) Capability realism + guardrail commitments (slide 79-80).
+
+### 16.5 Handover note cho Sales
+
+- Link kèm: bản Product Detail 74-80 + Traceability map + Objection playbook.
+- Mục tiêu buổi discovery đầu: xác nhận readiness để vào pilot, không chốt scope mở rộng ngay.
+- Kịch bản chốt cuộc họp: “Start small, scale with evidence.”
+
+### 16.6 Checkbox-only Task Card (10 dòng)
+
+- [ ] Flow đúng 74 -> 80, không lệch mạch.
+- [ ] Claim trace được về nguồn 50 -> 72.
+- [ ] Mỗi phần có “Tóm tắt -> Chi tiết”.
+- [ ] Slide 76 đủ: architecture/modules/integration/outcome.
+- [ ] Slide 77 đủ: phase-gate/owner/failure playbook.
+- [ ] Slide 79 có commitment boundary rõ.
+- [ ] Slide 80 có gap + roadmap + expansion trigger.
+- [ ] Không còn từ over-claim (100%, no-risk, guaranteed).
+- [ ] CTA cuối hướng pilot enterprise (1-2 khách hàng đầu tiên).
+- [ ] Handover package cho Sales đã đính kèm đủ tài liệu.
+
+**Tracking (Sprint use):**
+- Owner:
+- Review date:
+- Status: Draft / In Review / Approved / Published
+
+### 16.7 Checkbox-only Task Card (English, 10 lines)
+
+- [ ] Flow follows 74 -> 80 with no narrative drift.
+- [ ] Every claim is traceable to source slides 50 -> 72.
+- [ ] Every subsection uses the “Summary -> Details” structure.
+- [ ] Slide 76 includes architecture/modules/integration/outcome.
+- [ ] Slide 77 includes phase-gate/owner/failure playbook.
+- [ ] Slide 79 defines commitment boundaries clearly.
+- [ ] Slide 80 includes gaps + roadmap + expansion triggers.
+- [ ] No over-claim terms remain (100%, no-risk, guaranteed).
+- [ ] Final CTA targets enterprise pilot acquisition (first 1-2 customers).
+- [ ] Sales handover package is complete and attached.
+
+**Tracking (Sprint use):**
+- Owner:
+- Review date:
+- Status: Draft / In Review / Approved / Published

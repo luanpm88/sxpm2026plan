@@ -38,7 +38,15 @@ require_once '../config.php';
         <div class="quick-item"><strong>Q5:</strong> Cách triển khai và phase-gate rõ chưa? <a class="slide-link" href="slide_59.php">S59</a><a class="slide-link" href="slide_62.php">S62</a></div>
         <div class="quick-item"><strong>Q6:</strong> Cam kết SLA/Uptime/Security? <a class="slide-link" href="slide_58.php">S58</a></div>
         <div class="quick-item"><strong>Q7:</strong> Team scale-up và owner đã rõ? <a class="slide-link" href="slide_60.php">S60</a><a class="slide-link" href="slide_61.php">S61</a><a class="slide-link" href="slide_64.php">S64</a></div>
-        <div class="quick-item"><strong>Q8:</strong> Cần BOD duyệt gì ngay? <a class="slide-link" href="slide_64.php">S64</a></div>
+        <div class="quick-item"><strong>Q8:</strong> Cần BOD duyệt gì ngay? <a class="slide-link" href="slide_64.php">S64</a><a class="slide-link" href="slide_72.php">S72</a></div>
+        <div class="quick-item"><strong>Q9:</strong> Năng lực thật hiện tại tới đâu? <a class="slide-link" href="slide_65.php">S65</a></div>
+        <div class="quick-item"><strong>Q10:</strong> SWOT có đủ thực tế? <a class="slide-link" href="slide_66.php">S66</a></div>
+        <div class="quick-item"><strong>Q11:</strong> Rủi ro và owner xử lý? <a class="slide-link" href="slide_67.php">S67</a></div>
+        <div class="quick-item"><strong>Q12:</strong> Nên scale ngay hay lighthouse first? <a class="slide-link" href="slide_68.php">S68</a></div>
+        <div class="quick-item"><strong>Q13:</strong> Timeline 18 tháng có khả thi? <a class="slide-link" href="slide_69.php">S69</a></div>
+        <div class="quick-item"><strong>Q14:</strong> Ngân sách và kịch bản chi phí? <a class="slide-link" href="slide_70.php">S70</a></div>
+        <div class="quick-item"><strong>Q15:</strong> Giá và cơ hội doanh thu? <a class="slide-link" href="slide_71.php">S71</a></div>
+        <div class="quick-item"><strong>Q16:</strong> Điều kiện Go/No-Go cuối cùng? <a class="slide-link" href="slide_72.php">S72</a></div>
       </div>
     </div>
 
@@ -125,7 +133,47 @@ require_once '../config.php';
           <tr>
             <td>Rủi ro, phản biện, và quyết định BOD cần duyệt đã chốt chưa?</td>
             <td>Đã trả lời trực diện các câu phản biện và nêu 3 quyết định cần phê duyệt.</td>
-            <td><a class="slide-link" href="slide_63.php">Slide 63</a><a class="slide-link" href="slide_64.php">Slide 64</a></td>
+            <td><a class="slide-link" href="slide_64.php">Slide 64</a><a class="slide-link" href="slide_72.php">Slide 72</a></td>
+          </tr>
+          <tr>
+            <td>Năng lực thực tế hiện tại có đủ để scale ngay không?</td>
+            <td>Đã có reality check về team, asset sẵn có, và giới hạn hiện tại để tránh over-commit.</td>
+            <td><a class="slide-link" href="slide_65.php">Slide 65</a></td>
+          </tr>
+          <tr>
+            <td>SWOT đã phản ánh thực tế thị trường FDI sản xuất chưa?</td>
+            <td>Đã phân tích rõ Strength/Weakness/Opportunity/Threat theo năng lực hiện tại.</td>
+            <td><a class="slide-link" href="slide_66.php">Slide 66</a></td>
+          </tr>
+          <tr>
+            <td>Top risks có owner và mitigation cụ thể chưa?</td>
+            <td>Đã có risk register với impact/likelihood/owner/mitigation cho từng rủi ro chính.</td>
+            <td><a class="slide-link" href="slide_67.php">Slide 67</a></td>
+          </tr>
+          <tr>
+            <td>Nên Scale ngay hay Lighthouse first?</td>
+            <td>Khuyến nghị lighthouse first để đổi margin ngắn hạn lấy reference và khả năng scale bền vững.</td>
+            <td><a class="slide-link" href="slide_68.php">Slide 68</a></td>
+          </tr>
+          <tr>
+            <td>Timeline 0-18 tháng có phase-gate và owner rõ chưa?</td>
+            <td>Đã chia Foundation -> Pilot -> Hardening -> Replication Ready với điều kiện chuyển phase rõ.</td>
+            <td><a class="slide-link" href="slide_69.php">Slide 69</a></td>
+          </tr>
+          <tr>
+            <td>Khung ngân sách và kịch bản chi phí có đủ để duyệt chưa?</td>
+            <td>Đã có Lean/Base/Aggressive scenario và nguyên tắc giải ngân theo phase-gate.</td>
+            <td><a class="slide-link" href="slide_70.php">Slide 70</a></td>
+          </tr>
+          <tr>
+            <td>Mô hình giá và cơ hội doanh thu 3 năm đã hợp lý chưa?</td>
+            <td>Đã có pricing logic pilot vs post-pilot và cơ hội theo 3 kịch bản.</td>
+            <td><a class="slide-link" href="slide_71.php">Slide 71</a></td>
+          </tr>
+          <tr>
+            <td>Điều kiện Go/No-Go cuối cùng và xác nhận BOD?</td>
+            <td>Đã có matrix market/delivery/finance và danh sách xác nhận cuối để ra quyết định thực tế.</td>
+            <td><a class="slide-link" href="slide_72.php">Slide 72</a><a class="slide-link" href="slide_64.php">Slide 64</a></td>
           </tr>
         </tbody>
       </table>
@@ -136,5 +184,21 @@ require_once '../config.php';
 </div>
 <?php include '../includes/navigation.php'; ?>
 <?php include '../includes/scripts.php'; ?>
+<script>
+  (function() {
+    const slideTitles = <?php global $slide_titles; echo json_encode($slide_titles, JSON_UNESCAPED_UNICODE); ?>;
+    const links = document.querySelectorAll('.slide-link[href^="slide_"]');
+
+    links.forEach((link) => {
+      const matched = link.getAttribute('href').match(/slide_(\d+)\.php/);
+      if (!matched) return;
+      const slideNum = parseInt(matched[1], 10);
+      const padded = String(slideNum).padStart(2, '0');
+      const slideId = `slide_${String(slideNum).padStart(2, '0')}`;
+      const title = slideTitles[slideId] || `Slide ${slideNum}`;
+      link.setAttribute('title', `S${padded} - ${title}`);
+    });
+  })();
+</script>
 </body>
 </html>

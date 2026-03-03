@@ -22,8 +22,8 @@ $next = getNextSlide($current);
         modal.classList.toggle('active');
     }
     
-    function goToSlide(num) {
-        window.location.href = `slide_${num.toString().padStart(2, '0')}.php`;
+    function goToSlide(slideId) {
+        window.location.href = `${slideId}.php`;
     }
 
     function openWorkshopScript() {

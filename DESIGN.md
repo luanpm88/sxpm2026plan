@@ -63,7 +63,7 @@ Yêu cầu BOD:
 - Khu vực trọng tâm: phía Nam.
 - Ngành ưu tiên: điện-điện tử, linh kiện ô tô.
 - Ngành mở rộng: công nghiệp phụ trợ, sản xuất tiêu dùng lớn, thiết bị công nghiệp/chế tạo.
-- 3 mảng công ty: phần cứng, hạ tầng CNTT, phần mềm tùy chỉnh.
+- 3 mảng công ty: phần cứng, hạ tầng CNTT, phần mềm quản lý sản xuất.
 
 Slide đáp ứng:
 
@@ -115,7 +115,7 @@ Yêu cầu BOD:
 
 1) Phần cứng: không đồng bộ thiết bị, không kiểm soát vòng đời, downtime, khó quản lý tài sản IT, rủi ro thiết bị cũ.
 2) Hạ tầng CNTT: mạng thiếu ổn định, không tách IT/OT, bảo mật cao, thiếu DR/Backup, khó tích hợp ERP/MES.
-3) Phần mềm tùy chỉnh: quản lý thủ công, không tích hợp dữ liệu, thiếu realtime, thiếu dashboard, phụ thuộc Excel.
+3) Phần mềm quản lý sản xuất: quản lý thủ công, không tích hợp dữ liệu, thiếu realtime, thiếu dashboard, phụ thuộc Excel.
 
 Slide đáp ứng:
 

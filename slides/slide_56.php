@@ -14,7 +14,7 @@ require_once '../config.php';
 <body>
 <div class="slide-container">
   <div class="slide-header">
-    <div class="slide-title"><span class="material-symbols-rounded">schema</span>Architecture & Integration Model (A4)</div>
+    <div class="slide-title"><span class="material-symbols-rounded">schema</span>Architecture & Integration Model</div>
     <div class="slide-subtitle">Kiến trúc hệ thống theo 3 lớp, hỗ trợ tích hợp ERP/MES</div>
   </div>
   <div class="slide-content">

@@ -16,6 +16,9 @@ require_once '../config.php';
 .risk-table td:nth-child(4){width:18%}
 .risk-table td:last-child{border-top-right-radius:10px;border-bottom-right-radius:10px;width:37%}
 .note{border:1px solid #9ca3af;border-radius:12px;background:#f8fafc;padding:12px}
+.term-table{width:100%;border-collapse:collapse;font-size:.93rem}
+.term-table th,.term-table td{border:1px solid #d1d5db;padding:9px;vertical-align:top}
+.term-table th{background:#f3f4f6;color:#111827;font-weight:700}
 </style>
 </head>
 <body>
@@ -43,6 +46,34 @@ require_once '../config.php';
       </table>
     </div>
     <div class="note"><strong>Risk control principle:</strong> Không mở rộng đại trà khi chưa vượt qua phase-gate của pilot (acceptance + KPI + reference evidence).</div>
+
+    <div class="note mt-3">
+      <strong>Glossary (diễn giải thuật ngữ trong slide)</strong>
+      <table class="term-table mt-2">
+        <thead>
+          <tr><th style="width:24%">Thuật ngữ</th><th style="width:40%">Ý nghĩa</th><th style="width:36%">Cách hiểu nhanh / ví dụ</th></tr>
+        </thead>
+        <tbody>
+          <tr><td><strong>Risk register</strong></td><td>Danh mục rủi ro có impact, likelihood, owner và biện pháp xử lý.</td><td>Là công cụ quản trị rủi ro sống, cập nhật theo chu kỳ review.</td></tr>
+          <tr><td><strong>Impact / Likelihood (H/M/L)</strong></td><td>Hai trục đánh giá mức ảnh hưởng và xác suất xảy ra của rủi ro.
+            <ul class="mb-0 ps-3">
+              <li><strong>H — High:</strong> ảnh hưởng lớn (mất khách, downtime hệ thống, dự án fail).</li>
+              <li><strong>M — Medium:</strong> ảnh hưởng vừa (delay timeline, tăng thêm chi phí).</li>
+              <li><strong>L — Low:</strong> ảnh hưởng nhỏ (xử lý nhanh, ít tác động).</li>
+            </ul>
+          </td><td>H-H ưu tiên xử lý trước vì có thể gây thiệt hại lớn và dễ xảy ra.</td></tr>
+          <tr><td><strong>Scope creep</strong></td><td>Phạm vi dự án tăng dần ngoài thỏa thuận ban đầu.</td><td>Khắc phục bằng baseline scope và change control rõ ràng.</td></tr>
+          <tr><td><strong>Integration spike</strong></td><td>Khoảng thời gian thử nghiệm kỹ thuật ngắn để đánh giá rủi ro tích hợp.</td><td>Timebox spike giúp ước lượng tốt hơn trước khi commit timeline.</td></tr>
+          <tr><td><strong>Security checklist</strong></td><td>Danh sách kiểm tra bảo mật bắt buộc trước UAT/go-live.</td><td>Không đạt checklist thì chưa qua gate triển khai.</td></tr>
+          <tr><td><strong>UAT</strong></td><td>User Acceptance Test: kiểm thử chấp nhận với người dùng thực.</td><td>UAT fail nghĩa là chưa đủ điều kiện đi production.</td></tr>
+          <tr><td><strong>Acceptance criteria</strong></td><td>Tiêu chí nghiệm thu định nghĩa rõ điều kiện hoàn thành.</td><td>Giúp tránh tình trạng nghiệm thu mơ hồ theo cảm tính.</td></tr>
+          <tr><td><strong>KPI baseline</strong></td><td>Bộ số liệu gốc để so sánh hiệu quả trước-sau triển khai.</td><td>Thiếu baseline sẽ khó chứng minh ROI và hiệu quả vận hành.</td></tr>
+          <tr><td><strong>Evidence pack</strong></td><td>Gói bằng chứng phục vụ sales và quyết định mở rộng.</td><td>Gồm KPI, acceptance, audit log, case study.</td></tr>
+          <tr><td><strong>Cash burn</strong></td><td>Mức tiêu hao ngân sách theo thời gian khi chương trình đang chạy.</td><td>Nếu burn vượt kế hoạch mà không đạt gate thì cần dừng/điều chỉnh.</td></tr>
+          <tr><td><strong>Phase-gate</strong></td><td>Cơ chế kiểm soát chỉ cho mở rộng khi đạt đủ điều kiện.</td><td>Acceptance + KPI + evidence là cổng tối thiểu trước scale.</td></tr>
+        </tbody>
+      </table>
+    </div>
   </div>
 </div>
 <?php include '../includes/navigation.php'; ?>

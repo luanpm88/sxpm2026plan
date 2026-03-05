@@ -49,7 +49,7 @@ BOD định hướng công ty phát triển đồng thời 3 trục:
 
 1. Thiết bị phần cứng.
 2. Giải pháp hạ tầng CNTT.
-3. Phần mềm tùy chỉnh / phần mềm giải pháp.
+3. Phần mềm quản lý sản xuất / phần mềm giải pháp.
 
 Ý nghĩa:
 

@@ -24,7 +24,7 @@ require_once '../config.php';
     </div>
     <div class="row g-3">
       <div class="col-md-4"><div class="meta"><strong>Presented to</strong><p class="mb-0 mt-1">Board of Directors</p></div></div>
-      <div class="col-md-4"><div class="meta"><strong>Presented by</strong><p class="mb-0 mt-1">Manager + Marketing + Delivery Team</p></div></div>
+      <div class="col-md-4"><div class="meta"><strong>Presented by</strong><p class="mb-0 mt-1">Software Development Department</p></div></div>
       <div class="col-md-4"><div class="meta"><strong>Date</strong><p class="mb-0 mt-1">March 2026</p></div></div>
     </div>
   </div>

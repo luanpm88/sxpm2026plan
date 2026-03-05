@@ -13,7 +13,7 @@ require_once '../config.php';
 <body>
 <div class="slide-container">
   <div class="slide-header">
-    <div class="slide-title"><span class="material-symbols-rounded">verified_user</span>Standards, Commitments & Security (A6)</div>
+    <div class="slide-title"><span class="material-symbols-rounded">verified_user</span>Standards, Commitments & Security</div>
     <div class="slide-subtitle">Cam kết rõ để khách hàng enterprise có cơ sở ra quyết định</div>
   </div>
   <div class="slide-content">

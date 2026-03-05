@@ -15,6 +15,8 @@ require_once '../config.php';
 .cost-table td:nth-child(3){width:22%}
 .cost-table td:nth-child(4){width:20%}
 .cost-table td:last-child{border-top-right-radius:10px;border-bottom-right-radius:10px;width:20%}
+.cost-table tbody td:nth-child(3),
+.cost-table tbody td:nth-child(4){font-weight:800;font-size:1.08rem;color:#0f172a}
 .note{border:1px solid #9ca3af;border-radius:12px;background:#f8fafc;padding:12px}
 .term-table{width:100%;border-collapse:collapse;font-size:.93rem}
 .term-table th,.term-table td{border:1px solid #d1d5db;padding:9px;vertical-align:top}
@@ -36,11 +38,11 @@ require_once '../config.php';
         <tbody>
           <tr><td><strong>Lean</strong></td><td>6-8 core (Year 1) + support bán thời gian</td><td>270-395 triệu VND</td><td>4.9-7.1 tỷ VND</td><td>Khi tập trung 1 lighthouse pilot</td></tr>
           <tr><td><strong>Base</strong></td><td>12-16 (Year 2) tách pre-sales/delivery/service operations</td><td>445-660 triệu VND</td><td>8.0-11.9 tỷ VND</td><td>Khi chạy 1-2 pilot song song có kiểm soát</td></tr>
-          <tr><td><strong>Aggressive</strong></td><td>20-28 (Year 3) + capability owner + mở rộng pre-sales/on-site</td><td>620-990 triệu VND</td><td>11.2-17.8 tỷ VND</td><td>Khi đã có strong signal từ thị trường</td></tr>
+          <tr><td><strong>Aggressive</strong></td><td>20-28 (Year 3) + capability owner + mở rộng pre-sales/on-site</td><td>640-990 triệu VND</td><td>11.5-17.8 tỷ VND</td><td>Khi đã có strong signal từ thị trường</td></tr>
         </tbody>
       </table>
     </div>
-    <div class="note"><strong>Assumptions:</strong> chi phí gồm People + Tooling + Infra + Compliance + On-site support. <strong>Guardrail:</strong> giải ngân theo phase-gate, không giải ngân full upfront nếu pilot chưa đạt KPI/acceptance. <strong>Ghi chú thị trường VN 2026:</strong> đây là <strong>blended cost</strong> cho chương trình FDI (chi phí phân bổ theo mức tham gia thực tế), không phải full overhead/payroll toàn công ty.</div>
+    <div class="note"><strong>Assumptions:</strong> chi phí gồm People + Tooling + Infra + Compliance + On-site support. <strong>Guardrail:</strong> giải ngân theo phase-gate, không giải ngân full upfront nếu pilot chưa đạt KPI/acceptance. <strong>Ghi chú thị trường VN 2026:</strong> đây là <strong>blended cost</strong> cho chương trình FDI (chi phí phân bổ theo mức tham gia thực tế), không phải full overhead/payroll toàn công ty. <strong>Warning:</strong> các con số hiện tại là <strong>dự toán chủ quan lần đầu</strong>, cần hiệu chỉnh sau pilot đầu tiên và mỗi vòng review quý.</div>
 
     <div class="note mt-3">
       <strong>Vì sao ra các con số này? (Cost-driver breakdown)</strong>
@@ -185,7 +187,7 @@ require_once '../config.php';
 
       <ul class="calc-list">
         <li><strong>Monthly burn (ước tính)</strong> = tổng 5 cost drivers theo từng scenario.</li>
-        <li><strong>18-month envelope</strong> = monthly burn x 18 tháng (Lean: 270-395 x 18 = 4.9-7.1 tỷ; Base: 445-660 x 18 = 8.0-11.9 tỷ; Aggressive: 620-990 x 18 = 11.2-17.8 tỷ).</li>
+        <li><strong>18-month envelope</strong> = monthly burn x 18 tháng (Lean: 270-395 x 18 = 4.9-7.1 tỷ; Base: 445-660 x 18 = 8.0-11.9 tỷ; Aggressive: 640-990 x 18 = 11.5-17.8 tỷ).</li>
         <li><strong>Khi nào đổi scenario:</strong> chỉ nâng từ Lean -> Base -> Aggressive khi gate trước đạt KPI/acceptance và có tín hiệu pipeline đủ mạnh.</li>
       </ul>
     </div>

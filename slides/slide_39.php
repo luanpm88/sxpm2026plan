@@ -330,61 +330,25 @@ After coding, summarize which methods were added/changed and why.</div>
                 <div class="step-goal">Create minimal but high-value tests for new Reoon behavior only.</div>
 
                 <div class="label prompt"><span class="material-symbols-rounded" style="font-size:14px;">chat</span>Prompt</div>
-                            <div class="code-box">Create tests for &lt;ProviderName&gt; provider in Laravel project.
+                            <div class="code-box">Create tests for Reoon provider in Laravel project.
+File: /Users/luan/apps/acelle/tests/Unit/ReoonVerificationTest.php
 
-Primary file:
-- /Users/luan/apps/acelle/tests/Unit/&lt;ProviderName&gt;VerificationTest.php
+Include offline mocked unit tests and 2 opt-in live tests (skipped by default unless REOON_LIVE_TESTS=true):
 
-Goal:
-- Include BOTH mocked unit tests and live integration tests in the same test class.
-- Mocked tests must always run offline.
-- Live tests must be opt-in (skipped by default unless env flag is enabled).
+1) Live single-email verify test:
+- Call verify(&lt;real_test_email&gt;) using real API
+- Assert canonical status (deliverable/undeliverable/risky/unknown)
+- Assert raw response is not empty
 
-Required mocked unit coverage:
-1) status mapping converts provider API values to canonical statuses:
-    deliverable, undeliverable, risky, unknown
-2) verify() handles invalid response shape and throws clear exception
-3) bulkSubmit() success returns task id
-4) bulkSubmit() invalid response throws exception
-5) bulkCheck() returns false on non-completed status and calls wait callback
-6) bulkCheck() returns true on completed status and calls done callback for each email
-7) provider metadata:
-    getServiceName(), getServiceUrl(), isBulkVerifySupported()
+2) Live bulk verification flow test:
+- Call bulkSubmit() with real test emails
+- Get real task_id
+- Poll bulkCheck(task_id, doneCallback, waitCallback) until completed
+- Assert doneCallback rows map to canonical statuses
+- Log task_id and poll attempts to STDOUT
 
-Required submit-&gt;check flow coverage (mocked):
-8) bulkSubmit() returned task id is used in bulkCheck() request
-    - capture request history and assert task_id query param in bulkCheck URI
-
-Required live integration coverage (real network, real API):
-9) live verify() test calls real provider API and asserts:
-    - canonical status
-    - non-empty raw response
-10) live bulk flow test:
-    - call bulkSubmit() real API
-    - poll bulkCheck() until completed (configurable attempts/sleep)
-    - assert done callback rows map to canonical statuses
-
-Live test constraints:
-- Use opt-in env guard, e.g. REOON_LIVE_TESTS=true
-- If env flag is false: mark live tests as skipped
-- Do NOT run live tests by default in CI
-- Use provider key in test setup: &lt;API_KEY&gt;
-- Print detailed STDOUT logs for each step:
-  - "Test X: ..."
-  - mock setup details
-  - wait/done callback payload previews
-  - task id and poll attempt logs
-
-Style:
-- Follow existing PHPUnit/Laravel style in tests/Unit
-- Keep existing code untouched outside provider and test files
-- Throw/assert clear exception messages
-
-After coding:
-- Summarize which tests were added/updated
-- Provide exact commands for:
-  1) mocked-only run
-  2) live-only run</div>
+Keep CI safe: live tests must not run by default.
+Follow existing PHPUnit/Laravel style in tests/Unit.</div>
 
                 <div class="label cmd"><span class="material-symbols-rounded" style="font-size:14px;">terminal</span>Run</div>
                 <div class="code-box">cd /Users/luan/apps/acelle

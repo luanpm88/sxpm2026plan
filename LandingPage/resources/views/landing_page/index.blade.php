@@ -16,10 +16,10 @@
 
             <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem;">
                 <div class="fp-card" style="background: white; border: 1px solid var(--border); border-radius: var(--card-radius); padding: 2.5rem 2rem; transition: all 0.3s ease; position: relative;">
-                    <div style="font-size: 3rem; color: var(--primary); margin-bottom: 1rem;">
+                    <div style="font-size: 2rem; color: var(--primary); margin-bottom: 1rem;">
                         <span class="material-symbols-rounded">code</span>
                     </div>
-                    <h3 style="font-size: 1.3rem; font-weight: 700; color: var(--text-dark); margin-bottom: 1rem;">{{ __('index.custom_title') }}</h3>
+                    <h3 style="font-size: 1.1rem; font-weight: 700; color: var(--text-dark); margin-bottom: 1rem;">{{ __('index.custom_title') }}</h3>
                     <p style="color: var(--text-gray); font-size: 0.95rem; line-height: 1.7; margin-bottom: 1.5rem;">
                         {{ __('index.custom_desc') }}
                     </p>
@@ -45,10 +45,10 @@
                 </div>
 
                 <div class="fp-card" style="background: white; border: 1px solid var(--border); border-radius: var(--card-radius); padding: 2.5rem 2rem; transition: all 0.3s ease;">
-                    <div style="font-size: 3rem; color: var(--primary); margin-bottom: 1rem;">
+                    <div style="font-size: 2rem; color: var(--primary); margin-bottom: 1rem;">
                         <span class="material-symbols-rounded">workspace_premium</span>
                     </div>
-                    <h3 style="font-size: 1.3rem; font-weight: 700; color: var(--text-dark); margin-bottom: 1rem;">{{ __('index.saas_title') }}</h3>
+                    <h3 style="font-size: 1.1rem; font-weight: 700; color: var(--text-dark); margin-bottom: 1rem;">{{ __('index.saas_title') }}</h3>
                     <p style="color: var(--text-gray); font-size: 0.95rem; line-height: 1.7; margin-bottom: 1.5rem;">
                         {{ __('index.saas_desc') }}
                     </p>
@@ -74,10 +74,10 @@
                 </div>
 
                 <div class="fp-card" style="background: white; border: 1px solid var(--border); border-radius: var(--card-radius); padding: 2.5rem 2rem; transition: all 0.3s ease;">
-                    <div style="font-size: 3rem; color: var(--primary); margin-bottom: 1rem;">
+                    <div style="font-size: 2rem; color: var(--primary); margin-bottom: 1rem;">
                         <span class="material-symbols-rounded">psychology</span>
                     </div>
-                    <h3 style="font-size: 1.3rem; font-weight: 700; color: var(--text-dark); margin-bottom: 1rem;">{{ __('index.ai_title') }}</h3>
+                    <h3 style="font-size: 1.1rem; font-weight: 700; color: var(--text-dark); margin-bottom: 1rem;">{{ __('index.ai_title') }}</h3>
                     <p style="color: var(--text-gray); font-size: 0.95rem; line-height: 1.7; margin-bottom: 1.5rem;">
                         {{ __('index.ai_desc') }}
                     </p>
@@ -103,10 +103,10 @@
                 </div>
 
                 <div class="fp-card" style="background: white; border: 1px solid var(--border); border-radius: var(--card-radius); padding: 2.5rem 2rem; transition: all 0.3s ease;">
-                    <div style="font-size: 3rem; color: var(--primary); margin-bottom: 1rem;">
+                    <div style="font-size: 2rem; color: var(--primary); margin-bottom: 1rem;">
                         <span class="material-symbols-rounded">shield</span>
                     </div>
-                    <h3 style="font-size: 1.3rem; font-weight: 700; color: var(--text-dark); margin-bottom: 1rem;">{{ __('index.security_title') }}</h3>
+                    <h3 style="font-size: 1.1rem; font-weight: 700; color: var(--text-dark); margin-bottom: 1rem;">{{ __('index.security_title') }}</h3>
                     <p style="color: var(--text-gray); font-size: 0.95rem; line-height: 1.7; margin-bottom: 1.5rem;">
                         Enterprise-grade security architecture complying with OWASP, ISO 27001, SOC 2
                     </p>
@@ -156,7 +156,7 @@
                 @endphp
                 @foreach($processes as $p)
                 <div class="fp-card" style="background: white; border: 1px solid var(--border); border-radius: var(--card-radius); padding: 2rem 1.5rem; text-align: center; transition: all 0.3s ease;">
-                    <div style="font-size: 2.5rem; color: var(--primary); margin-bottom: 1rem;">
+                    <div style="font-size: 1.75rem; color: var(--primary); margin-bottom: 1rem;">
                         <span class="material-symbols-rounded">{{ $p['icon'] }}</span>
                     </div>
                     <h3 style="font-size: 1rem; font-weight: 700; color: var(--text-dark); margin-bottom: 0.5rem;">{{ $p['title'] }}</h3>
@@ -261,19 +261,19 @@
             <div style="background: white; border-radius: var(--card-radius); padding: 2.5rem; border: 1px solid var(--border); margin-bottom: 2.5rem; box-shadow: 0 12px 32px rgba(26, 77, 94, 0.08);">
                 <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 2rem; text-align: center;">
                     <div>
-                        <div style="font-size: 2.5rem; font-weight: 800; color: var(--primary); margin-bottom: 0.5rem;">8</div>
+                        <div style="font-size: 2rem; font-weight: 800; color: var(--primary); margin-bottom: 0.5rem;">8</div>
                         <div style="color: var(--text-gray); font-size: 0.9rem;">{{ __("index.tech_categories") }}</div>
                     </div>
                     <div>
-                        <div style="font-size: 2.5rem; font-weight: 800; color: var(--primary); margin-bottom: 0.5rem;">50+</div>
+                        <div style="font-size: 2rem; font-weight: 800; color: var(--primary); margin-bottom: 0.5rem;">50+</div>
                         <div style="color: var(--text-gray); font-size: 0.9rem;">{{ __("index.tech_frameworks") }}</div>
                     </div>
                     <div>
-                        <div style="font-size: 2.5rem; font-weight: 800; color: var(--primary); margin-bottom: 0.5rem;">99.99%</div>
+                        <div style="font-size: 2rem; font-weight: 800; color: var(--primary); margin-bottom: 0.5rem;">99.99%</div>
                         <div style="color: var(--text-gray); font-size: 0.9rem;">{{ __("index.tech_uptime") }}</div>
                     </div>
                     <div>
-                        <div style="font-size: 2.5rem; font-weight: 800; color: var(--primary); margin-bottom: 0.5rem;"><100ms</div>
+                        <div style="font-size: 2rem; font-weight: 800; color: var(--primary); margin-bottom: 0.5rem;"><100ms</div>
                         <div style="color: var(--text-gray); font-size: 0.9rem;">{{ __("index.tech_response") }}</div>
                     </div>
                 </div>
@@ -313,10 +313,10 @@
                     <div style="position: absolute; top: -15px; left: 50%; transform: translateX(-50%); background: var(--primary); color: white; padding: 0.4rem 0.8rem; border-radius: 20px; font-size: 0.75rem; font-weight: 700;">
                         {{ $sp['phase'] }}
                     </div>
-                    <div style="font-size: 2.5rem; color: var(--primary); margin: 1rem 0;">
+                    <div style="font-size: 1.75rem; color: var(--primary); margin: 1rem 0;">
                         <span class="material-symbols-rounded">{{ $sp['icon'] }}</span>
                     </div>
-                    <h3 style="font-size: 1.1rem; font-weight: 700; color: var(--text-dark); margin-bottom: 0.5rem;">{{ $sp['title'] }}</h3>
+                    <h3 style="font-size: 1rem; font-weight: 700; color: var(--text-dark); margin-bottom: 0.5rem;">{{ $sp['title'] }}</h3>
                     <p style="font-size: 0.85rem; color: var(--text-gray);">{{ $sp['users'] }}</p>
                 </div>
                 @endforeach
@@ -353,10 +353,10 @@
                 @endphp
                 @foreach($features as $f)
                 <div class="fp-card" style="background: white; padding: 2rem; border-radius: var(--card-radius); border: 1px solid var(--border); text-align: center; transition: all 0.3s ease;">
-                    <div style="font-size: 3rem; color: var(--primary); margin-bottom: 1rem;">
+                    <div style="font-size: 2rem; color: var(--primary); margin-bottom: 1rem;">
                         <span class="material-symbols-rounded">{{ $f['icon'] }}</span>
                     </div>
-                    <h3 style="font-size: 1.15rem; font-weight: 700; color: var(--text-dark); margin-bottom: 0.75rem;">{{ $f['title'] }}</h3>
+                    <h3 style="font-size: 1.05rem; font-weight: 700; color: var(--text-dark); margin-bottom: 0.75rem;">{{ $f['title'] }}</h3>
                     <p style="color: var(--text-gray); font-size: 0.95rem;">{{ $f['desc'] }}</p>
                 </div>
                 @endforeach
@@ -449,7 +449,7 @@
                                     <div style="display: inline-block; background: {{ $case['badge_bg'] }}15; color: {{ $case['badge_bg'] }}; padding: 0.4rem 1rem; border-radius: 20px; font-size: 0.85rem; font-weight: 700; margin-bottom: 1.5rem;">
                                         {{ $case['badge'] }}
                                     </div>
-                                    <h3 style="font-size: 2rem; font-weight: 800; color: var(--text-dark); margin-bottom: 1rem; line-height: 1.3;">
+                                    <h3 style="font-size: 1.6rem; font-weight: 800; color: var(--text-dark); margin-bottom: 1rem; line-height: 1.3;">
                                         {{ $case['title'] }}
                                     </h3>
                                     <p style="color: var(--text-gray); font-size: 1rem; line-height: 1.8; margin-bottom: 2rem;">
@@ -459,7 +459,7 @@
                                     <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; margin-bottom: 2rem;">
                                         @foreach($case['metrics'] as $metric)
                                         <div>
-                                            <div style="font-size: 1.8rem; font-weight: 800; color: var(--primary);">{{ $metric['value'] }}</div>
+                                            <div style="font-size: 1.5rem; font-weight: 800; color: var(--primary);">{{ $metric['value'] }}</div>
                                             <div style="font-size: 0.85rem; color: var(--text-gray); margin-top: 0.25rem;">{{ $metric['label'] }}</div>
                                         </div>
                                         @endforeach
@@ -471,15 +471,7 @@
                                     </a>
                                 </div>
 
-                                <div class="position-relative @if($case['ongoing']) opacity-75 @endif" style="background: linear-gradient(135deg, {{ $case['badge_bg'] }} 0%, {{ $case['badge_bg'] }}dd 0%); padding: 5rem; display: flex; align-items: center; justify-content: center; min-height: 400px;">
-                                    @if($case['ongoing'])
-                                        <span class="badge  rounded-pill bg-warning position-absolute fs-6 top-0 mt-3 start-0 ms-3">
-                                            <span class="spinner-border spinner-border-sm me-1" role="status">
-                                                <span class="visually-hidden">Loading...</span>
-                                            </span>
-                                            Update Diagram
-                                        </span>
-                                    @endif
+                                <div class="position-relative" style="background: linear-gradient(135deg, {{ $case['badge_bg'] }} 0%, {{ $case['badge_bg'] }}dd 0%); padding: 5rem; display: flex; align-items: center; justify-content: center; min-height: 400px;">
 
                                     @if ($case['badge'] === 'Enterprise SaaS')
                                         <img src="{{ asset('img/hkspace.png') }}" alt="HKSpace Dashboard Mockup" style="width: 100%; border-radius: var(--card-radius); box-shadow: 0 8px 20px rgba(0,0,0,0.1);"/>
@@ -674,11 +666,11 @@
                     </p>
 
                     <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin-bottom: 1.5rem;">
-                        <div style="background: white; border-radius: 8px; padding: 1rem; border: 1px solid #d1e7f5;">
+                        <div style="background: var(--surface); border-radius: 8px; padding: 1rem; border: 1px solid var(--border);">
                             <p style="color: var(--text-dark); font-weight: 600; font-size: 0.85rem; margin-bottom: 0.25rem;">{{ __('index.rd_composable') }}</p>
                             <p style="color: var(--text-gray); font-size: 0.8rem; margin: 0;">{{ __('index.rd_composable_desc') }}</p>
                         </div>
-                        <div style="background: white; border-radius: 8px; padding: 1rem; border: 1px solid #d1e7f5;">
+                        <div style="background: var(--surface); border-radius: 8px; padding: 1rem; border: 1px solid var(--border);">
                             <p style="color: var(--text-dark); font-weight: 600; font-size: 0.85rem; margin-bottom: 0.25rem;">{{ __('index.rd_ai_native') }}</p>
                             <p style="color: var(--text-gray); font-size: 0.8rem; margin: 0;">{{ __('index.rd_ai_native_desc') }}</p>
                         </div>
@@ -693,12 +685,12 @@
                 <!-- {{ __('index.ai_title') }} R&D Card -->
                 <a href="{{ route('landing.blog.r_and_d') }}" style="text-decoration: none; display: block; background: linear-gradient(135deg, #fef3c7 0%, #fde68a 100%); border-radius: var(--card-radius); padding: 2.5rem; border: 1px solid #fcd34d; transition: all 0.3s ease; box-shadow: 0 12px 32px rgba(26, 77, 94, 0.08);">
                     <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1.5rem;">
-                        <div style="background: #d97706; width: 48px; height: 48px; border-radius: var(--btn-radius); display: flex; align-items: center; justify-content: center;">
+                        <div style="background: var(--accent); width: 48px; height: 48px; border-radius: var(--btn-radius); display: flex; align-items: center; justify-content: center;">
                             <span class="material-symbols-rounded" style="color: white; font-size: 28px;">auto_awesome</span>
                         </div>
                         <div>
                             <h3 style="font-size: 1.5rem; font-weight: 700; color: var(--text-dark); margin: 0;">{{ __('index.rd_ai_platform') }}</h3>
-                            <p style="font-size: 0.85rem; color: #d97706; font-weight: 600; margin: 0;">{{ __('index.rd_ai_platform_subtitle') }}</p>
+                            <p style="font-size: 0.85rem; color: var(--accent); font-weight: 600; margin: 0;">{{ __('index.rd_ai_platform_subtitle') }}</p>
                         </div>
                     </div>
 
@@ -707,17 +699,17 @@
                     </p>
 
                     <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin-bottom: 1.5rem;">
-                        <div style="background: white; border-radius: 8px; padding: 1rem; border: 1px solid #fde68a;">
+                        <div style="background: var(--surface); border-radius: 8px; padding: 1rem; border: 1px solid var(--border);">
                             <p style="color: var(--text-dark); font-weight: 600; font-size: 0.85rem; margin-bottom: 0.25rem;">{{ __('index.rd_semantic') }}</p>
                             <p style="color: var(--text-gray); font-size: 0.8rem; margin: 0;">{{ __('index.rd_semantic_desc') }}</p>
                         </div>
-                        <div style="background: white; border-radius: 8px; padding: 1rem; border: 1px solid #fde68a;">
+                        <div style="background: var(--surface); border-radius: 8px; padding: 1rem; border: 1px solid var(--border);">
                             <p style="color: var(--text-dark); font-weight: 600; font-size: 0.85rem; margin-bottom: 0.25rem;">{{ __('index.rd_adaptive') }}</p>
                             <p style="color: var(--text-gray); font-size: 0.8rem; margin: 0;">{{ __('index.rd_adaptive_desc') }}</p>
                         </div>
                     </div>
 
-                    <div style="display: flex; align-items: center; gap: 0.5rem; color: #d97706; font-weight: 600;">
+                    <div style="display: flex; align-items: center; gap: 0.5rem; color: var(--accent); font-weight: 600;">
                         <span>{{ __('index.rd_explore') }}</span>
                         <span class="material-symbols-rounded" style="font-size: 20px;">arrow_forward</span>
                     </div>
@@ -804,7 +796,7 @@
 
                 <div style="position: relative; z-index: 1;">
                     <span class="section-label" style="color: rgba(255,255,255,0.7);">GET STARTED</span>
-                    <h2 style="font-size: 2.5rem; font-weight: 800; margin: 1rem 0 1rem 0; color: white;">{{ __('index.cta_title') }}</h2>
+                    <h2 style="font-size: 1.6rem; font-weight: 800; margin: 1rem 0 1rem 0; color: white;">{{ __('index.cta_title') }}</h2>
                     <p style="color: rgba(255,255,255,0.95); font-size: 1.1rem; margin: 0; max-width: 500px;">{{ __('index.cta_subtitle') }}</p>
                 </div>
                 <div style="display: flex; gap: 1rem; flex-wrap: wrap; position: relative; z-index: 1;">

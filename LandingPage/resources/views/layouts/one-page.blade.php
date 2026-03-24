@@ -5,6 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="HKIncotech - Enterprise Software Engineering">
     <title>HKIncotech | One Page Landing</title>
+    <script>
+        (function() {
+            const savedTheme = localStorage.getItem('theme');
+            const preferredDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+            const theme = savedTheme || (preferredDark ? 'dark' : 'light');
+            document.documentElement.setAttribute('data-theme', theme);
+        })();
+    </script>
     <link rel="icon" type="image/svg+xml" href="{{ asset('img/logo.svg') }}">
     <link rel="shortcut icon" href="{{ asset('img/logo.svg') }}">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -17,7 +25,8 @@
             align-items: center;
             gap: 0.25rem;
         }
-        .lang-switcher-op a {
+        .lang-switcher-op a,
+        .theme-toggle-locale {
             display: inline-flex;
             align-items: center;
             gap: 0.2rem;
@@ -29,9 +38,16 @@
             border: 1.5px solid rgba(255,255,255,0.3);
             color: rgba(255,255,255,0.8);
             transition: all 0.2s ease;
+            background: transparent;
+            cursor: pointer;
+        }
+        .theme-toggle-locale .material-symbols-rounded {
+            font-size: 1rem;
+            line-height: 1;
         }
         .lang-switcher-op a:hover,
-        .lang-switcher-op a.active {
+        .lang-switcher-op a.active,
+        .theme-toggle-locale:hover {
             background: rgba(255,255,255,0.15);
             border-color: rgba(255,255,255,0.7);
             color: white;
@@ -63,6 +79,9 @@
                 <a href="#pricing" class="nav-link">{{ __('nav.pricing') }}</a>
                 <a href="#contact" class="nav-link">{{ __('nav.contact') }}</a>
             </nav>
+            <button class="theme-toggle theme-toggle-locale" type="button" aria-label="Toggle dark mode" data-theme-toggle>
+                <span class="material-symbols-rounded" data-theme-icon>dark_mode</span>
+            </button>
             <!-- Language Switcher -->
             <div class="lang-switcher-op">
                 <a href="{{ route('locale.switch', 'en') }}" class="{{ app()->getLocale() === 'en' ? 'active' : '' }}">🇺🇸 EN</a>
@@ -288,6 +307,27 @@
                 }
             });
         });
+
+        (function () {
+            const toggleButton = document.querySelector('[data-theme-toggle]');
+            const icon = document.querySelector('[data-theme-icon]');
+            if (!toggleButton || !icon) return;
+
+            const applyTheme = (theme) => {
+                document.documentElement.setAttribute('data-theme', theme);
+                localStorage.setItem('theme', theme);
+                icon.textContent = theme === 'dark' ? 'light_mode' : 'dark_mode';
+                toggleButton.setAttribute('aria-label', theme === 'dark' ? 'Switch to light mode' : 'Switch to dark mode');
+            };
+
+            const currentTheme = document.documentElement.getAttribute('data-theme') || 'light';
+            applyTheme(currentTheme);
+
+            toggleButton.addEventListener('click', () => {
+                const nextTheme = document.documentElement.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
+                applyTheme(nextTheme);
+            });
+        })();
     </script>
 
     @stack('scripts')

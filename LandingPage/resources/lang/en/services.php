@@ -54,7 +54,7 @@ return [
         'tech_title' => 'Tech Stack & Technologies',
         'tech_desc' => 'Full-stack development with modern tech stack suitable for MVP to Enterprise projects',
         'tech_details' => '10+ tech categories',
-        'tech_details_full' => '10+ tech categories with 50+ technologies & frameworks used in production',
+        'tech_details_full' => 'with 50+ technologies & frameworks used in production',
         'view_details' => 'View Details',
         'view_tech_full' => 'View Complete Tech Stack',
     ],

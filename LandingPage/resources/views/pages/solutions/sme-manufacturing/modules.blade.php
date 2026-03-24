@@ -6,7 +6,7 @@
         </div>
 
         <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.25rem;">
-            <article style="background: #fff; border: 1px solid var(--border); border-radius: var(--card-radius); padding: 1.75rem;">
+            <article style="background: var(--surface); border: 1px solid var(--border); border-radius: var(--card-radius); padding: 1.75rem;">
                 <h3 style="font-size: 1.2rem; font-weight: 700; margin-bottom: 0.75rem;">{{ __('sme_manufacturing.modules_production_title') }}</h3>
                 <ul style="margin: 0; padding-left: 1.2rem; color: var(--text-gray); line-height: 1.8;">
                     @foreach(__('sme_manufacturing.modules_production_items') as $item)
@@ -15,7 +15,7 @@
                 </ul>
             </article>
 
-            <article style="background: #fff; border: 1px solid var(--border); border-radius: var(--card-radius); padding: 1.75rem;">
+            <article style="background: var(--surface); border: 1px solid var(--border); border-radius: var(--card-radius); padding: 1.75rem;">
                 <h3 style="font-size: 1.2rem; font-weight: 700; margin-bottom: 0.75rem;">{{ __('sme_manufacturing.modules_warehouse_title') }}</h3>
                 <ul style="margin: 0; padding-left: 1.2rem; color: var(--text-gray); line-height: 1.8;">
                     @foreach(__('sme_manufacturing.modules_warehouse_items') as $item)
@@ -24,7 +24,7 @@
                 </ul>
             </article>
 
-            <article style="background: #fff; border: 1px solid var(--border); border-radius: var(--card-radius); padding: 1.75rem;">
+            <article style="background: var(--surface); border: 1px solid var(--border); border-radius: var(--card-radius); padding: 1.75rem;">
                 <h3 style="font-size: 1.2rem; font-weight: 700; margin-bottom: 0.75rem;">{{ __('sme_manufacturing.modules_quality_title') }}</h3>
                 <ul style="margin: 0; padding-left: 1.2rem; color: var(--text-gray); line-height: 1.8;">
                     @foreach(__('sme_manufacturing.modules_quality_items') as $item)
@@ -33,7 +33,7 @@
                 </ul>
             </article>
 
-            <article style="background: #fff; border: 1px solid var(--border); border-radius: var(--card-radius); padding: 1.75rem;">
+            <article style="background: var(--surface); border: 1px solid var(--border); border-radius: var(--card-radius); padding: 1.75rem;">
                 <h3 style="font-size: 1.2rem; font-weight: 700; margin-bottom: 0.75rem;">{{ __('sme_manufacturing.modules_dashboard_title') }}</h3>
                 <ul style="margin: 0; padding-left: 1.2rem; color: var(--text-gray); line-height: 1.8;">
                     @foreach(__('sme_manufacturing.modules_dashboard_items') as $item)
@@ -44,7 +44,7 @@
         </div>
 
         <div style="margin-top: 1.5rem; display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1rem;">
-            <article style="background: #fff; border: 1px solid var(--border); border-radius: var(--card-radius); padding: 1.5rem;">
+            <article style="background: var(--surface); border: 1px solid var(--border); border-radius: var(--card-radius); padding: 1.5rem;">
                 <h3 style="font-size: 1.1rem; font-weight: 700; margin-bottom: 0.75rem;">{{ __('sme_manufacturing.modules_packaging_title') }}</h3>
                 <ul style="margin: 0; padding-left: 1.2rem; color: var(--text-gray); line-height: 1.8;">
                     @foreach(__('sme_manufacturing.modules_packaging_items') as $item)
@@ -53,7 +53,7 @@
                 </ul>
             </article>
 
-            <article style="background: #fff; border: 1px solid var(--border); border-radius: var(--card-radius); padding: 1.5rem;">
+            <article style="background: var(--surface); border: 1px solid var(--border); border-radius: var(--card-radius); padding: 1.5rem;">
                 <h3 style="font-size: 1.1rem; font-weight: 700; margin-bottom: 0.75rem;">{{ __('sme_manufacturing.modules_barcode_title') }}</h3>
                 <ul style="margin: 0; padding-left: 1.2rem; color: var(--text-gray); line-height: 1.8;">
                     @foreach(__('sme_manufacturing.modules_barcode_items') as $item)
@@ -62,7 +62,7 @@
                 </ul>
             </article>
 
-            <article style="background: #fff; border: 1px solid var(--border); border-radius: var(--card-radius); padding: 1.5rem;">
+            <article style="background: var(--surface); border: 1px solid var(--border); border-radius: var(--card-radius); padding: 1.5rem;">
                 <h3 style="font-size: 1.1rem; font-weight: 700; margin-bottom: 0.75rem;">{{ __('sme_manufacturing.modules_workforce_title') }}</h3>
                 <ul style="margin: 0; padding-left: 1.2rem; color: var(--text-gray); line-height: 1.8;">
                     @foreach(__('sme_manufacturing.modules_workforce_items') as $item)
@@ -71,7 +71,7 @@
                 </ul>
             </article>
 
-            <article style="background: #fff; border: 1px solid var(--border); border-radius: var(--card-radius); padding: 1.5rem;">
+            <article style="background: var(--surface); border: 1px solid var(--border); border-radius: var(--card-radius); padding: 1.5rem;">
                 <h3 style="font-size: 1.1rem; font-weight: 700; margin-bottom: 0.75rem;">{{ __('sme_manufacturing.modules_reporting_title') }}</h3>
                 <ul style="margin: 0; padding-left: 1.2rem; color: var(--text-gray); line-height: 1.8;">
                     @foreach(__('sme_manufacturing.modules_reporting_items') as $item)

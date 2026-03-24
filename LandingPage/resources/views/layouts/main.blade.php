@@ -5,6 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="{{ $pageDescription ?? 'HKIncotech - Enterprise Software Engineering' }}">
     <title>{{ $pageTitle ?? 'HKIncotech' }}</title>
+    <script>
+        (function() {
+            const savedTheme = localStorage.getItem('theme');
+            const preferredDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+            const theme = savedTheme || (preferredDark ? 'dark' : 'light');
+            document.documentElement.setAttribute('data-theme', theme);
+        })();
+    </script>
     <link rel="icon" type="image/svg+xml" href="{{ asset('img/logo.svg') }}">
     <link rel="shortcut icon" href="{{ asset('img/logo.svg') }}">
 
@@ -18,7 +26,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 
     <!-- Main CSS (v= cache-bust so header/nav fixes always apply) -->
-    <link rel="stylesheet" href="{{ asset('css/main.css') }}?v=8">
+    <link rel="stylesheet" href="{{ asset('css/main.css') }}?v=15">
 
     {{-- Critical header/lang fallback if main.css fails to load or is cached stale --}}
     <style>
@@ -77,6 +85,9 @@
             </nav>
 
             <div class="header-actions">
+                <button class="lang-trigger theme-toggle" type="button" aria-label="Toggle dark mode" data-theme-toggle>
+                    <span class="material-symbols-rounded" data-theme-icon>dark_mode</span>
+                </button>
                 <!-- Language Switcher -->
                 <div class="lang-menu" data-lang-menu>
                     <button class="lang-trigger" type="button" aria-label="Switch language" data-lang-trigger>
@@ -186,6 +197,27 @@
                 }
             });
         });
+
+        (function () {
+            const toggleButton = document.querySelector('[data-theme-toggle]');
+            const icon = document.querySelector('[data-theme-icon]');
+            if (!toggleButton || !icon) return;
+
+            const applyTheme = (theme) => {
+                document.documentElement.setAttribute('data-theme', theme);
+                localStorage.setItem('theme', theme);
+                icon.textContent = theme === 'dark' ? 'light_mode' : 'dark_mode';
+                toggleButton.setAttribute('aria-label', theme === 'dark' ? 'Switch to light mode' : 'Switch to dark mode');
+            };
+
+            const currentTheme = document.documentElement.getAttribute('data-theme') || 'light';
+            applyTheme(currentTheme);
+
+            toggleButton.addEventListener('click', () => {
+                const nextTheme = document.documentElement.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
+                applyTheme(nextTheme);
+            });
+        })();
     </script>
 
     @stack('scripts')

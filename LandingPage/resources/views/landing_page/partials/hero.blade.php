@@ -6,7 +6,7 @@
             display: flex;
             align-items: center;
             padding: 6rem 2rem;
-            background: linear-gradient(135deg, #ffffff 0%, var(--secondary-bg) 100%);
+            background: linear-gradient(135deg, var(--surface) 0%, var(--secondary-bg) 100%);
         }
 
         .hero-grid {
@@ -17,7 +17,7 @@
         }
 
         .hero h1 {
-            font-size: 3.5rem;
+            font-size: 2.75rem;
             font-weight: 800;
             line-height: 1.15;
             letter-spacing: -0.03em;
@@ -70,7 +70,7 @@
         }
 
         .hero-svg-box {
-            background: white;
+            background: var(--surface);
             border-radius: var(--card-radius);
             padding: 2.5rem;
             border: 1px solid var(--border);

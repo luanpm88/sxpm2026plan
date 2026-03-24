@@ -1,8 +1,8 @@
 <!-- Contact Hero -->
-<section id="contact" style="min-height: 50vh; display: flex; align-items: center; padding: 6rem 2rem; background: linear-gradient(135deg, #ffffff 0%, var(--secondary-bg) 100%);">
+<section id="contact" style="min-height: 50vh; display: flex; align-items: center; padding: 6rem 2rem; background: linear-gradient(135deg, var(--surface) 0%, var(--secondary-bg) 100%);">
     <div class="container-v5">
         <div style="text-align: center; max-width: 900px; margin: 0 auto;">
-            <h1 style="font-size: 3.5rem; font-weight: 800; line-height: 1.15; margin-bottom: 1.5rem; color: var(--text-dark);">
+            <h1 style="font-size: 2.75rem; font-weight: 800; line-height: 1.15; margin-bottom: 1.5rem; color: var(--text-dark);">
                 {{ __('contact.title') }} <span style="color: var(--primary);">{{ __('contact.title_accent') }}</span>
             </h1>
             <p style="font-size: 1.15rem; color: var(--text-gray); line-height: 1.8;">
@@ -62,7 +62,7 @@
 
                     <div>
                         <label style="display: block; font-weight: 600; color: var(--text-dark); margin-bottom: 0.5rem;">{{ __('contact.project_type_label') }}</label>
-                        <select name="project_type" style="width: 100%; height: 56px; padding: 0 1rem; border: 1px solid var(--border); border-radius: 8px; font-size: 1rem; font-family: inherit; line-height: 1.4; appearance: none; background-color: white;">
+                        <select name="project_type" style="width: 100%; height: 56px; padding: 0 1rem; border: 1px solid var(--border); border-radius: 8px; font-size: 1rem; font-family: inherit; line-height: 1.4; appearance: none; background-color: var(--surface);">
                             <option value="">{{ __('contact.project_type_default') }}</option>
                             <option value="{{ __('contact.project_types.custom') }}" @selected(old('project_type') === __('contact.project_types.custom'))>{{ __('contact.project_types.custom') }}</option>
                             <option value="{{ __('contact.project_types.saas') }}" @selected(old('project_type') === __('contact.project_types.saas'))>{{ __('contact.project_types.saas') }}</option>
@@ -75,7 +75,7 @@
 
                     <div>
                         <label style="display: block; font-weight: 600; color: var(--text-dark); margin-bottom: 0.5rem;">{{ __('contact.budget_label') }}</label>
-                        <select name="budget" style="width: 100%; height: 56px; padding: 0 1rem; border: 1px solid var(--border); border-radius: 8px; font-size: 1rem; font-family: inherit; line-height: 1.4; appearance: none; background-color: white;">
+                        <select name="budget" style="width: 100%; height: 56px; padding: 0 1rem; border: 1px solid var(--border); border-radius: 8px; font-size: 1rem; font-family: inherit; line-height: 1.4; appearance: none; background-color: var(--surface);">
                             <option value="">{{ __('contact.budget_default') }}</option>
                             <option value="{{ __('contact.budgets.lt50') }}" @selected(old('budget') === __('contact.budgets.lt50'))>{{ __('contact.budgets.lt50') }}</option>
                             <option value="{{ __('contact.budgets.50_100') }}" @selected(old('budget') === __('contact.budgets.50_100'))>{{ __('contact.budgets.50_100') }}</option>

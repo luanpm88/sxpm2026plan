@@ -54,7 +54,7 @@ return [
         'tech_title' => 'Tech Stack & Công Nghệ',
         'tech_desc' => 'Phát triển full-stack với tech stack hiện đại phù hợp cho các dự án từ MVP đến Doanh Nghiệp',
         'tech_details' => '10+ danh mục công nghệ',
-        'tech_details_full' => '10+ danh mục công nghệ với 50+ công nghệ & framework được sử dụng trong sản xuất',
+        'tech_details_full' => 'với 50+ công nghệ & framework được sử dụng trong sản xuất',
         'view_details' => 'Xem Chi Tiết',
         'view_tech_full' => 'Xem Toàn Bộ Tech Stack',
     ],

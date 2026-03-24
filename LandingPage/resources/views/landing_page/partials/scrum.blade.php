@@ -1,8 +1,8 @@
 <!-- Hero -->
-<section id="scrum" style="min-height: 70vh; display: flex; align-items: center; padding: 6rem 2rem; background: linear-gradient(135deg, #ffffff 0%, var(--secondary-bg) 100%);">
+<section id="scrum" style="min-height: 70vh; display: flex; align-items: center; padding: 6rem 2rem; background: linear-gradient(135deg, var(--surface) 0%, var(--secondary-bg) 100%);">
     <div class="container-v5">
         <div style="text-align: center; max-width: 900px; margin: 0 auto;">
-            <h1 style="font-size: 3.5rem; font-weight: 800; line-height: 1.15; margin-bottom: 1.5rem; color: var(--text-dark);">
+            <h1 style="font-size: 2.75rem; font-weight: 800; line-height: 1.15; margin-bottom: 1.5rem; color: var(--text-dark);">
                 {{ __('scrum.hero_title') }} <span style="color: var(--primary);">{{ __('scrum.hero_title_highlight') }}</span>
             </h1>
             <p style="font-size: 1.15rem; color: var(--text-gray); line-height: 1.8; margin-bottom: 2rem;">
@@ -30,7 +30,7 @@
                 <div style="display: inline-flex; align-items: center; justify-content: center; width: 50px; height: 50px; background: var(--primary); color: white; border-radius: 50%; font-weight: 800; font-size: 1.5rem; margin-bottom: 1rem;">
                     {{ $step['num'] }}
                 </div>
-                <div style="font-size: 2.5rem; color: var(--primary); margin: 1rem 0;">
+                <div style="font-size: 2rem; color: var(--primary); margin: 1rem 0;">
                     <span class="material-symbols-rounded">{{ $step['icon'] }}</span>
                 </div>
                 <h3 style="font-size: 1.1rem; font-weight: 700; color: var(--text-dark); margin-bottom: 0.75rem;">
@@ -46,7 +46,7 @@
 </section>
 
 <!-- Sprint Cycle Details -->
-<section style="background: var(--secondary-bg);">
+<section class="scrum-sprint-cycle-section" style="background: var(--secondary-bg);">
     <div class="container-v5">
         <div class="section-header">
             <h2 class="section-title">{{ __('scrum.sprint_title') }}</h2>
@@ -69,13 +69,7 @@
                 </ul>
             </div>
 
-            <div class="position-relative opacity-75" style="background: white; border-radius: var(--card-radius); padding: 2rem; border: 1px solid var(--border); text-align: center; min-height: 400px; display: flex; align-items: center; justify-content: center;">
-                <span class="badge  rounded-pill bg-warning position-absolute fs-6 top-0 mt-3 start-0 ms-3">
-                    <span class="spinner-border spinner-border-sm me-1" role="status">
-                        <span class="visually-hidden">Loading...</span>
-                    </span>
-                    Update Diagram
-                </span>
+            <div class="position-relative" style="background: white; border-radius: var(--card-radius); padding: 2rem; border: 1px solid var(--border); text-align: center; min-height: 400px; display: flex; align-items: center; justify-content: center;">
                 <svg viewBox="0 0 300 300" style="width: 100%; max-width: 300px;">
                     <!-- Sprint cycle circle -->
                     <circle cx="150" cy="150" r="120" fill="none" stroke="#1a4d5e" stroke-width="2" opacity="0.2"/>
@@ -126,8 +120,8 @@
 
         <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2rem;">
             @foreach(__('scrum.benefits') as $b)
-            <div style="background: white; border: 1px solid var(--border); border-radius: var(--card-radius); padding: 2rem; transition: all 0.3s ease;" onmouseover="this.style.borderColor='var(--primary)'; this.style.boxShadow='0 12px 30px rgba(26, 77, 94, 0.12)';" onmouseout="this.style.borderColor='var(--border)'; this.style.boxShadow='';">
-                <div style="font-size: 2.5rem; color: var(--primary); margin-bottom: 1rem;">
+            <div style="background: white; border: 1px solid var(--border); border-radius: var(--card-radius); padding: 2rem; transition: all 0.3s ease;" onmouseover="this.style.borderColor='var(--primary)'; this.style.boxShadow='0 12px 30px var(--shadow-hover)';" onmouseout="this.style.borderColor='var(--border)'; this.style.boxShadow='';">
+                <div style="font-size: 2rem; color: var(--primary); margin-bottom: 1rem;">
                     <span class="material-symbols-rounded">{{ $b['icon'] }}</span>
                 </div>
                 <h3 style="font-size: 1.1rem; font-weight: 700; color: var(--text-dark); margin-bottom: 0.75rem;">
@@ -190,7 +184,7 @@
 
         <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2rem;">
             @foreach(__('scrum.why_items') as $w)
-            <div style="background: white; border: 1px solid var(--border); border-radius: var(--card-radius); padding: 2rem; text-align: center; transition: all 0.3s ease;" onmouseover="this.style.borderColor='var(--primary)'; this.style.boxShadow='0 12px 30px rgba(26, 77, 94, 0.12)'; this.style.transform='translateY(-5px)';" onmouseout="this.style.borderColor='var(--border)'; this.style.boxShadow=''; this.style.transform='';">
+            <div style="background: white; border: 1px solid var(--border); border-radius: var(--card-radius); padding: 2rem; text-align: center; transition: all 0.3s ease;" onmouseover="this.style.borderColor='var(--primary)'; this.style.boxShadow='0 12px 30px var(--shadow-hover)'; this.style.transform='translateY(-5px)';" onmouseout="this.style.borderColor='var(--border)'; this.style.boxShadow=''; this.style.transform='';">
                 <h3 style="font-size: 1.1rem; font-weight: 700; color: var(--text-dark); margin-bottom: 0.75rem;">
                     {{ $w['title'] }}
                 </h3>
@@ -207,7 +201,7 @@
 <section style="background: var(--secondary-bg);">
     <div class="container-v5">
         <div style="background: linear-gradient(135deg, var(--primary) 0%, var(--primary-light) 100%); border-radius: var(--card-radius); padding: 3.5rem 2rem; text-align: center; color: white;">
-            <h2 style="font-size: 2.5rem; font-weight: 800; margin-bottom: 1rem;">{{ __('scrum.cta_title') }}</h2>
+            <h2 style="font-size: 2rem; font-weight: 800; margin-bottom: 1rem;">{{ __('scrum.cta_title') }}</h2>
             <p style="font-size: 1.1rem; margin-bottom: 2rem; opacity: 0.95;">
                 {{ __('scrum.cta_desc') }}
             </p>

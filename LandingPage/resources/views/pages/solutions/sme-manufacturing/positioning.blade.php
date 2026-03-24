@@ -1,4 +1,4 @@
-<section style="background: #ffffff;">
+<section style="background: var(--surface);">
     <div class="container-v5">
         <div class="section-header">
             <h2 class="section-title">{{ __('sme_manufacturing.positioning_title') }}</h2>
@@ -25,15 +25,15 @@
         </div>
 
         <div style="margin-top: 1.5rem; display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 1rem;">
-            <div style="background: #fff; border: 1px dashed var(--border); border-radius: 10px; padding: 1rem;">
+            <div style="background: var(--surface); border: 1px dashed var(--border); border-radius: 10px; padding: 1rem;">
                 <h3 style="font-size: 1rem; font-weight: 700; margin-bottom: 0.4rem; color: var(--text-dark);">{{ __('sme_manufacturing.positioning_buyers_title') }}</h3>
                 <p style="margin: 0; color: var(--text-gray); font-size: 0.9rem;">{{ __('sme_manufacturing.positioning_buyers_desc') }}</p>
             </div>
-            <div style="background: #fff; border: 1px dashed var(--border); border-radius: 10px; padding: 1rem;">
+            <div style="background: var(--surface); border: 1px dashed var(--border); border-radius: 10px; padding: 1rem;">
                 <h3 style="font-size: 1rem; font-weight: 700; margin-bottom: 0.4rem; color: var(--text-dark);">{{ __('sme_manufacturing.positioning_targets_title') }}</h3>
                 <p style="margin: 0; color: var(--text-gray); font-size: 0.9rem;">{{ __('sme_manufacturing.positioning_targets_desc') }}</p>
             </div>
-            <div style="background: #fff; border: 1px dashed var(--border); border-radius: 10px; padding: 1rem;">
+            <div style="background: var(--surface); border: 1px dashed var(--border); border-radius: 10px; padding: 1rem;">
                 <h3 style="font-size: 1rem; font-weight: 700; margin-bottom: 0.4rem; color: var(--text-dark);">{{ __('sme_manufacturing.positioning_model_title') }}</h3>
                 <p style="margin: 0; color: var(--text-gray); font-size: 0.9rem;">{{ __('sme_manufacturing.positioning_model_desc') }}</p>
             </div>

@@ -1,4 +1,4 @@
-<section style="background: #ffffff;">
+<section style="background: var(--surface);">
     <div class="container-v5">
         <div class="section-header">
             <h2 class="section-title">{{ __('sme_manufacturing.framework_title') }}</h2>

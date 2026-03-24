@@ -1,8 +1,8 @@
 <!-- Hero -->
-<section id="pricing" style="min-height: 60vh; display: flex; align-items: center; padding: 6rem 2rem; background: linear-gradient(135deg, #ffffff 0%, var(--secondary-bg) 100%);">
+<section id="pricing" style="min-height: 60vh; display: flex; align-items: center; padding: 6rem 2rem; background: linear-gradient(135deg, var(--surface) 0%, var(--secondary-bg) 100%);">
     <div class="container-v5">
         <div style="text-align: center; max-width: 900px; margin: 0 auto;">
-            <h1 style="font-size: 3.5rem; font-weight: 800; line-height: 1.15; margin-bottom: 1.5rem; color: var(--text-dark);">
+            <h1 style="font-size: 2.75rem; font-weight: 800; line-height: 1.15; margin-bottom: 1.5rem; color: var(--text-dark);">
                 {{ __('pricing.hero_title') }} <span style="color: var(--primary);">{{ __('pricing.hero_title_highlight') }}</span>
             </h1>
             <p style="font-size: 1.15rem; color: var(--text-gray); line-height: 1.8;">
@@ -36,7 +36,7 @@
                 </div>
                 @endif
 
-                <h3 style="font-size: 1.5rem; font-weight: 700; color: {{ $plan['highlighted'] ? 'white' : 'var(--text-dark)' }}; margin-bottom: 0.5rem;">
+                <h3 style="font-size: 1.3rem; font-weight: 700; color: {{ $plan['highlighted'] ? 'white' : 'var(--text-dark)' }}; margin-bottom: 0.5rem;">
                     {{ $plan['name'] }}
                 </h3>
                 <p style="color: {{ $plan['highlighted'] ? 'rgba(255,255,255,0.9)' : 'var(--text-gray)' }}; margin-bottom: 1.5rem;">
@@ -98,7 +98,7 @@
 
             @foreach($core_services as $service)
             <div style="background: white; border-radius: var(--card-radius); padding: 2rem; text-align: center;">
-                <div style="font-size: 2.5rem; color: var(--primary); margin-bottom: 1rem;">
+                <div style="font-size: 2rem; color: var(--primary); margin-bottom: 1rem;">
                     <span class="material-symbols-rounded">{{ $service['icon'] }}</span>
                 </div>
                 <h3 style="font-size: 1.1rem; font-weight: 700; color: var(--text-dark); margin-bottom: 0.75rem;">
@@ -182,7 +182,7 @@
 <section style="background: white;">
     <div class="container-v5">
         <div style="background: linear-gradient(135deg, var(--primary) 0%, var(--primary-light) 100%); border-radius: var(--card-radius); padding: 3.5rem 2rem; text-align: center; color: white;">
-            <h2 style="font-size: 2.5rem; font-weight: 800; margin-bottom: 1rem;">{{ __('pricing.cta_title') }}</h2>
+            <h2 style="font-size: 2rem; font-weight: 800; margin-bottom: 1rem;">{{ __('pricing.cta_title') }}</h2>
             <p style="font-size: 1.1rem; margin-bottom: 2rem; opacity: 0.95;">
                 {{ __('pricing.cta_desc') }}
             </p>

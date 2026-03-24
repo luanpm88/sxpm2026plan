@@ -3,10 +3,10 @@
 @section('content')
 
     <!-- Hero -->
-    <section style="min-height: 60vh; display: flex; align-items: center; padding: 6rem 2rem; background: linear-gradient(135deg, #ffffff 0%, var(--secondary-bg) 100%);">
+    <section style="min-height: 60vh; display: flex; align-items: center; padding: 6rem 2rem; background: linear-gradient(135deg, var(--surface) 0%, var(--secondary-bg) 100%);">
         <div class="container-v5">
             <div style="text-align: center; max-width: 900px; margin: 0 auto;">
-                <h1 style="font-size: 3.5rem; font-weight: 800; line-height: 1.15; margin-bottom: 1.5rem; color: var(--text-dark);">
+                <h1 style="font-size: 2.75rem; font-weight: 800; line-height: 1.15; margin-bottom: 1.5rem; color: var(--text-dark);">
                     {{ __('about.hero_title') }} <span style="color: var(--primary);">{{ __('about.hero_title_accent') }}</span>
                 </h1>
                 <p style="font-size: 1.15rem; color: var(--text-gray); line-height: 1.8;">
@@ -101,7 +101,7 @@
             <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2rem;">
                 @foreach(__('about.values') as $v)
                 <div style="background: white; border-radius: var(--card-radius); padding: 2rem; text-align: center;">
-                    <div style="font-size: 2.5rem; color: var(--primary); margin-bottom: 1rem;">
+                    <div style="font-size: 2rem; color: var(--primary); margin-bottom: 1rem;">
                         <span class="material-symbols-rounded">{{ $v['icon'] }}</span>
                     </div>
                     <h3 style="font-size: 1.1rem; font-weight: 700; color: var(--text-dark); margin-bottom: 0.75rem;">
@@ -132,7 +132,7 @@
                     <div style="background: linear-gradient(135deg, var(--primary) 0%, var(--primary-light) 100%); height: 150px;"></div>
                     <div style="padding: 1.5rem; text-align: center; margin-top: -60px;">
                         <div style="width: 120px; height: 120px; background: white; border: 3px solid var(--border); border-radius: 50%; margin: 0 auto 1rem; display: flex; align-items: center; justify-content: center;">
-                            <div style="font-size: 3rem; color: var(--primary);">
+                            <div style="font-size: 2rem; color: var(--primary);">
                                 <span class="material-symbols-rounded">account_circle</span>
                             </div>
                         </div>
@@ -171,7 +171,7 @@
             <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem;">
                 @foreach(__('about.achievements') as $a)
                 <div style="background: white; border-radius: var(--card-radius); padding: 2.5rem; text-align: center; border: 1px solid var(--border);">
-                    <div style="font-size: 2.5rem; font-weight: 800; color: var(--primary); margin-bottom: 0.5rem;">
+                    <div style="font-size: 2rem; font-weight: 800; color: var(--primary); margin-bottom: 0.5rem;">
                         {{ $a['num'] }}
                     </div>
                     <div style="font-weight: 700; color: var(--text-dark); margin-bottom: 0.5rem;">
@@ -190,7 +190,7 @@
     <section style="background: var(--secondary-bg);">
         <div class="container-v5">
             <div style="background: linear-gradient(135deg, var(--primary) 0%, var(--primary-light) 100%); border-radius: var(--card-radius); padding: 3.5rem 2rem; text-align: center; color: white;">
-                <h2 style="font-size: 2.5rem; font-weight: 800; margin-bottom: 1rem;">{{ __('about.cta_title') }}</h2>
+                <h2 style="font-size: 2rem; font-weight: 800; margin-bottom: 1rem;">{{ __('about.cta_title') }}</h2>
                 <p style="font-size: 1.1rem; margin-bottom: 2rem; opacity: 0.95;">
                     {{ __('about.cta_desc') }}
                 </p>

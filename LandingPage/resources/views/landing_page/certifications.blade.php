@@ -3,10 +3,10 @@
 @section('content')
 
     <!-- Hero -->
-    <section style="min-height: 70vh; display: flex; align-items: center; padding: 6rem 2rem; background: linear-gradient(135deg, #ffffff 0%, var(--secondary-bg) 100%);">
+    <section style="min-height: 70vh; display: flex; align-items: center; padding: 6rem 2rem; background: linear-gradient(135deg, var(--surface) 0%, var(--secondary-bg) 100%);">
         <div class="container-v5">
             <div style="text-align: center; max-width: 900px; margin: 0 auto;">
-                <h1 style="font-size: 3.5rem; font-weight: 800; line-height: 1.15; margin-bottom: 1.5rem; color: var(--text-dark);">
+                <h1 style="font-size: 2.75rem; font-weight: 800; line-height: 1.15; margin-bottom: 1.5rem; color: var(--text-dark);">
                     {{ __('certifications.hero_title') }} <span style="color: var(--primary);">{{ __('certifications.hero_title_accent') }}</span>
                 </h1>
                 <p style="font-size: 1.15rem; color: var(--text-gray); line-height: 1.8; margin-bottom: 2rem;">
@@ -32,10 +32,10 @@
             <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2rem;">
                 @foreach(__('certifications.compliance') as $cert)
                 <div style="background: white; border-radius: var(--card-radius); padding: 2.5rem 2rem; border: 1px solid var(--border); transition: all 0.3s ease; text-align: center;" onmouseover="this.style.borderColor='var(--primary)'; this.style.boxShadow='0 10px 30px rgba(26, 77, 94, 0.1)'; this.style.transform='translateY(-4px)';" onmouseout="this.style.borderColor='var(--border)'; this.style.boxShadow=''; this.style.transform='';">
-                    <div style="font-size: 3rem; color: var(--primary); margin-bottom: 1rem;">
+                    <div style="font-size: 2rem; color: var(--primary); margin-bottom: 1rem;">
                         <span class="material-symbols-rounded">{{ $cert['icon'] }}</span>
                     </div>
-                    <h3 style="font-size: 1.3rem; font-weight: 700; color: var(--text-dark); margin-bottom: 0.5rem;">{{ $cert['name'] }}</h3>
+                    <h3 style="font-size: 1.1rem; font-weight: 700; color: var(--text-dark); margin-bottom: 0.5rem;">{{ $cert['name'] }}</h3>
                     <p style="font-size: 0.85rem; color: var(--primary); font-weight: 600; margin-bottom: 1rem;">{{ $cert['subtitle'] }}</p>
                     <p style="font-size: 0.9rem; color: var(--text-gray); line-height: 1.6;">{{ $cert['desc'] }}</p>
                 </div>
@@ -56,7 +56,7 @@
             <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2rem;">
                 @foreach(__('certifications.cloud_certs') as $cloud)
                 <div style="background: white; border-radius: var(--card-radius); padding: 2rem; border: 1px solid var(--border); transition: all 0.3s ease;" onmouseover="this.style.borderColor='var(--primary)'; this.style.boxShadow='0 10px 30px rgba(26, 77, 94, 0.1)';" onmouseout="this.style.borderColor='var(--border)'; this.style.boxShadow='';">
-                    <div style="font-size: 2.5rem; color: var(--primary); margin-bottom: 1rem;">
+                    <div style="font-size: 2rem; color: var(--primary); margin-bottom: 1rem;">
                         <span class="material-symbols-rounded">{{ $cloud['icon'] }}</span>
                     </div>
                     <h3 style="font-size: 1.15rem; font-weight: 700; color: var(--text-dark); margin-bottom: 1.5rem;">{{ $cloud['provider'] }}</h3>
@@ -150,7 +150,7 @@
             <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2rem;">
                 @foreach(__('certifications.team_profile') as $profile)
                 <div style="background: white; border-radius: var(--card-radius); padding: 2.5rem 2rem; border: 1px solid var(--border); text-align: center; transition: all 0.3s ease;" onmouseover="this.style.borderColor='var(--primary)'; this.style.transform='translateY(-5px)'; this.style.boxShadow='0 10px 30px rgba(26, 77, 94, 0.1)';" onmouseout="this.style.borderColor='var(--border)'; this.style.transform=''; this.style.boxShadow='';">
-                    <div style="font-size: 2.5rem; color: var(--primary); margin-bottom: 1rem;">
+                    <div style="font-size: 2rem; color: var(--primary); margin-bottom: 1rem;">
                         <span class="material-symbols-rounded">{{ $profile['icon'] }}</span>
                     </div>
                     <h3 style="font-size: 1.1rem; font-weight: 700; color: var(--text-dark); margin-bottom: 0.5rem;">{{ $profile['title'] }}</h3>
@@ -166,7 +166,7 @@
     <section style="background: var(--secondary-bg);">
         <div class="container-v5">
             <div style="background: linear-gradient(135deg, var(--primary) 0%, var(--primary-light) 100%); border-radius: var(--card-radius); padding: 3.5rem 2rem; text-align: center; color: white;">
-                <h2 style="font-size: 2.5rem; font-weight: 800; margin-bottom: 1rem;">{{ __('certifications.learning_title') }}</h2>
+                <h2 style="font-size: 2rem; font-weight: 800; margin-bottom: 1rem;">{{ __('certifications.learning_title') }}</h2>
                 <p style="font-size: 1.1rem; margin-bottom: 2rem; opacity: 0.95;">{{ __('certifications.learning_desc') }}</p>
 
                 <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 2rem; max-width: 1200px; margin: 0 auto;">
@@ -195,7 +195,7 @@
     <section>
         <div class="container-v5">
             <div style="background: linear-gradient(135deg, var(--primary) 0%, var(--primary-light) 100%); border-radius: var(--card-radius); padding: 3.5rem 2rem; text-align: center; color: white;">
-                <h2 style="font-size: 2.5rem; font-weight: 800; margin-bottom: 1rem;">{{ __('certifications.cta_title') }}</h2>
+                <h2 style="font-size: 2rem; font-weight: 800; margin-bottom: 1rem;">{{ __('certifications.cta_title') }}</h2>
                 <p style="font-size: 1.1rem; margin-bottom: 2rem; opacity: 0.95;">{{ __('certifications.cta_desc') }}</p>
                 <a href="{{ route('landing.contact') }}" style="background: white; color: var(--primary); padding: 1rem 2.5rem; border-radius: 8px; font-weight: 600; text-decoration: none; display: inline-block; transition: all 0.3s ease;" onmouseover="this.style.backgroundColor='var(--secondary-bg)';" onmouseout="this.style.backgroundColor='white';">
                     {{ __('certifications.cta_button') }}

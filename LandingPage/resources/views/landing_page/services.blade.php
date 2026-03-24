@@ -3,10 +3,10 @@
 @section('content')
 
     <!-- Hero -->
-    <section style="min-height: 70vh; display: flex; align-items: center; padding: 6rem 2rem; background: linear-gradient(135deg, #ffffff 0%, var(--secondary-bg) 100%);">
+    <section style="min-height: 70vh; display: flex; align-items: center; padding: 6rem 2rem; background: linear-gradient(135deg, var(--surface) 0%, var(--secondary-bg) 100%);">
         <div class="container-v5">
             <div style="text-align: center; max-width: 900px; margin: 0 auto;">
-                <h1 style="font-size: 3.5rem; font-weight: 800; line-height: 1.15; margin-bottom: 1.5rem; color: var(--text-dark);">
+                <h1 style="font-size: 2.75rem; font-weight: 800; line-height: 1.15; margin-bottom: 1.5rem; color: var(--text-dark);">
                     {{ __('services.hero_title') }}
                 </h1>
                 <p style="font-size: 1.15rem; color: var(--text-gray); line-height: 1.8; margin-bottom: 1.5rem;">
@@ -30,11 +30,11 @@
 
             <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2rem;">
                 @foreach(__('services.services') as $s)
-                <div style="background: white; border: 1px solid var(--border); border-radius: var(--card-radius); padding: 2rem; text-align: center; transition: all 0.3s ease;" onmouseover="this.style.borderColor='var(--primary)'; this.style.boxShadow='0 12px 30px rgba(26, 77, 94, 0.12)'; this.style.transform='translateY(-4px)';" onmouseout="this.style.borderColor='var(--border)'; this.style.boxShadow=''; this.style.transform='';">
+                <div style="background: white; border: 1px solid var(--border); border-radius: var(--card-radius); padding: 2rem; text-align: center; transition: all 0.3s ease;" onmouseover="this.style.borderColor='var(--primary)'; this.style.boxShadow='0 12px 30px var(--shadow-hover)'; this.style.transform='translateY(-4px)';" onmouseout="this.style.borderColor='var(--border)'; this.style.boxShadow=''; this.style.transform='';">
                     <div style="display: inline-flex; align-items: center; justify-content: center; width: 50px; height: 50px; background: var(--primary); color: white; border-radius: 50%; font-weight: 800; font-size: 1.3rem; margin-bottom: 1rem;">
                         {{ $loop->iteration }}
                     </div>
-                    <div style="font-size: 2.5rem; color: var(--primary); margin-bottom: 1rem;">
+                    <div style="font-size: 2rem; color: var(--primary); margin-bottom: 1rem;">
                         <span class="material-symbols-rounded">
                             @switch($loop->iteration)
                                 @case(1)
@@ -75,7 +75,7 @@
 
             <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; align-items: center; margin-bottom: 4rem;">
                 <div style="background: white; border-radius: var(--card-radius); padding: 2.5rem; border: 1px solid var(--border);">
-                    <h3 style="font-size: 1.3rem; font-weight: 700; color: var(--text-dark); margin-bottom: 1.5rem;">{{ __('services.service1.process_title') }}</h3>
+                    <h3 style="font-size: 1.1rem; font-weight: 700; color: var(--text-dark); margin-bottom: 1.5rem;">{{ __('services.service1.process_title') }}</h3>
                     <p style="color: var(--text-gray); line-height: 1.8; margin-bottom: 1.5rem;">
                         {{ __('services.service1.process_desc') }}
                     </p>
@@ -106,16 +106,8 @@
                     </div>
                 </div>
 
-                <div class="opacity-75" style="background: white; border-radius: var(--card-radius); padding: 2.5rem; border: 1px solid var(--border);">
-                    <h3 style="font-size: 1.3rem; font-weight: 700; color: var(--text-dark); margin-bottom: 1.5rem;">{{ __('services.service1.cycle_title') }}
-                        <span class="badge  rounded-pill bg-warning">
-                            <span class="spinner-border spinner-border-sm me-1" role="status">
-                                <span class="visually-hidden">Loading...</span>
-                            </span>
-                            Update Diagram
-                        </span>
-
-                    </h3>
+                <div style="background: white; border-radius: var(--card-radius); padding: 2.5rem; border: 1px solid var(--border);">
+                    <h3 style="font-size: 1.1rem; font-weight: 700; color: var(--text-dark); margin-bottom: 1.5rem;">{{ __('services.service1.cycle_title') }}</h3>
                     <svg viewBox="0 0 300 280" style="width: 100%; max-width: 300px; margin: 0 auto; display: block;">
                         <!-- Sprint Cycle Circle -->
                         <circle cx="150" cy="140" r="90" fill="none" stroke="#e5e7eb" stroke-width="3"/>
@@ -162,7 +154,7 @@
                 </div>
             </div>
 
-            <div style="background: white; border-radius: var(--card-radius); padding: 2.5rem; border: 1px solid var(--border);">
+            <div class="services-tech-stack-block" style="background: white; border-radius: var(--card-radius); padding: 2.5rem; border: 1px solid var(--border);">
                 <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 2rem;">
                     <div>
                         <h4 style="font-weight: 700; color: var(--text-dark); margin-bottom: 0.5rem;">{{ __('services.service1.tech_title') }}</h4>
@@ -176,7 +168,7 @@
 
                 <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2rem;">
                     @foreach(__('services.tech_categories') as $cat)
-                    <div style="background: var(--secondary-bg); border-radius: 10px; padding: 1.5rem; transition: all 0.3s ease;" onmouseover="this.style.backgroundColor='white'; this.style.boxShadow='0 4px 12px rgba(0,0,0,0.08)';" onmouseout="this.style.backgroundColor='var(--secondary-bg)'; this.style.boxShadow='';">
+                    <div style="background: var(--secondary-bg); border-radius: 10px; padding: 1.5rem; transition: all 0.3s ease; border: 1px solid transparent;" onmouseover="this.style.borderColor='var(--primary)'; this.style.boxShadow='0 4px 12px rgba(0,0,0,0.08)';" onmouseout="this.style.borderColor='transparent'; this.style.boxShadow='';">
                         <div style="display: flex; align-items: center; gap: 0.75rem; margin-bottom: 1rem;">
                             <div style="width: 40px; height: 40px; background: @switch($loop->iteration)
                                 @case(1)
@@ -259,7 +251,7 @@
                 <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; align-items: center; margin-bottom: 3rem;">
 
                     <div style="background: white; border-radius: var(--card-radius); padding: 2.5rem; border: 1px solid var(--border);">
-                        <h3 style="font-size: 1.3rem; font-weight: 700; color: var(--text-dark); margin-bottom: 1rem;">{{ __('services.ai.foundation_title') }}</h3>
+                        <h3 style="font-size: 1.1rem; font-weight: 700; color: var(--text-dark); margin-bottom: 1rem;">{{ __('services.ai.foundation_title') }}</h3>
                         <p style="color: var(--text-gray); line-height: 1.8; margin-bottom: 1rem;">
                             {{ __('services.ai.foundation_desc') }}
                         </p>
@@ -273,13 +265,7 @@
                         </ul>
                     </div>
 
-                    <div class="position-relative opacity-75" style="background: white; border-radius: var(--card-radius); padding: 2.5rem; border: 1px solid var(--border); text-align: center;">
-                        <span class="badge  rounded-pill bg-warning position-absolute fs-6 top-0 mt-3 start-0 ms-3">
-                            <span class="spinner-border spinner-border-sm me-1" role="status">
-                                <span class="visually-hidden">Loading...</span>
-                            </span>
-                            Update Diagram
-                        </span>
+                    <div class="position-relative" style="background: white; border-radius: var(--card-radius); padding: 2.5rem; border: 1px solid var(--border); text-align: center;">
                         <svg viewBox="0 0 280 280" style="width: 100%; max-width: 280px;">
                             <!-- Query -->
                             <rect x="120" y="40" width="40" height="25" fill="#0ea5e9" rx="6"/>
@@ -399,7 +385,7 @@
         </section>
 
     <!-- Service 2: SaaS Platform -->
-    <section style="background: linear-gradient(135deg, var(--secondary-bg) 0%, white 100%);">
+    <section style="background: linear-gradient(135deg, var(--secondary-bg) 0%, var(--surface) 100%);">
         <div class="container-v5">
             <div class="section-header">
                 <span class="section-label">SAAS PLATFORMS</span>
@@ -408,13 +394,7 @@
             </div>
 
             <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; align-items: center; margin-bottom: 4rem;">
-                <div class="position-relative opacity-75" style="background: white; border-radius: var(--card-radius); padding: 2.5rem; border: 2px solid var(--primary); box-shadow: 0 8px 32px rgba(26, 77, 94, 0.15);">
-                    <span class="badge  rounded-pill bg-warning position-absolute fs-6 top-0 mt-3 start-0 ms-3">
-                        <span class="spinner-border spinner-border-sm me-1" role="status">
-                            <span class="visually-hidden">Loading...</span>
-                        </span>
-                        Update Diagram
-                    </span>
+                <div class="position-relative" style="background: white; border-radius: var(--card-radius); padding: 2.5rem; border: 2px solid var(--primary); box-shadow: 0 8px 32px rgba(26, 77, 94, 0.15);">
                     <svg viewBox="0 0 280 280" style="width: 100%; max-width: 280px;">
                         <!-- Multiple users -->
                         <circle cx="60" cy="60" r="15" fill="#1a4d5e" opacity="0.7"/>
@@ -443,7 +423,7 @@
                 </div>
 
                 <div>
-                    <h3 style="font-size: 1.3rem; font-weight: 700; color: var(--text-dark); margin-bottom: 1rem;">{{ __('services.saas.hkspace_title') }}</h3>
+                    <h3 style="font-size: 1.1rem; font-weight: 700; color: var(--text-dark); margin-bottom: 1rem;">{{ __('services.saas.hkspace_title') }}</h3>
                     <p style="color: var(--text-gray); line-height: 1.8; margin-bottom: 1.5rem;">
                         {{ __('services.saas.subtitle') }}
                     </p>
@@ -493,8 +473,8 @@
             </div>
 
             <!-- Why Choose HKIncotech for SaaS -->
-            <div style="background: linear-gradient(135deg, var(--secondary-bg) 0%, white 100%); border-radius: 16px; padding: 3rem; border: 1px solid var(--border);">
-                <h3 style="font-size: 1.3rem; font-weight: 800; color: var(--text-dark); text-align: center; margin-bottom: 2rem;">{{ __('services.why_us.title') }}</h3>
+            <div style="background: linear-gradient(135deg, var(--secondary-bg) 0%, var(--surface) 100%); border-radius: 16px; padding: 3rem; border: 1px solid var(--border);">
+                <h3 style="font-size: 1.1rem; font-weight: 800; color: var(--text-dark); text-align: center; margin-bottom: 2rem;">{{ __('services.why_us.title') }}</h3>
                 <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem;">
                     @foreach(__('services.why_us.highlights') as $highlight)
                     <div style="text-align: center;">

@@ -20,55 +20,77 @@
             <div>
                 <h2 style="font-size: 1.75rem; font-weight: 700; color: var(--text-dark); margin-bottom: 2rem;">{{ __('contact.form_title') }}</h2>
 
-                <form style="display: flex; flex-direction: column; gap: 1.5rem;">
+                @if(session('contact_success'))
+                    <div style="margin-bottom: 1rem; padding: 0.9rem 1rem; border-radius: 8px; background: #eaf8f2; border: 1px solid #bde8d4; color: #176544;">
+                        {{ session('contact_success') }}
+                    </div>
+                @endif
+
+                @if($errors->has('contact_form'))
+                    <div style="margin-bottom: 1rem; padding: 0.9rem 1rem; border-radius: 8px; background: #fff1f2; border: 1px solid #fecdd3; color: #9f1239;">
+                        {{ $errors->first('contact_form') }}
+                    </div>
+                @endif
+
+                <form action="{{ route('landing.contact.submit') }}" method="POST" style="display: flex; flex-direction: column; gap: 1.5rem;">
+                    @csrf
                     <div>
                         <label style="display: block; font-weight: 600; color: var(--text-dark); margin-bottom: 0.5rem;">{{ __('contact.name_label') }}</label>
-                        <input type="text" placeholder="{{ __('contact.name_placeholder') }}" style="width: 100%; padding: 0.75rem 1rem; border: 1px solid var(--border); border-radius: 8px; font-size: 1rem; font-family: inherit;" required>
+                        <input type="text" name="name" value="{{ old('name') }}" placeholder="{{ __('contact.name_placeholder') }}" style="width: 100%; padding: 0.75rem 1rem; border: 1px solid var(--border); border-radius: 8px; font-size: 1rem; font-family: inherit;" required>
+                        @error('name')
+                            <p style="margin-top: 0.45rem; color: #b91c1c; font-size: 0.9rem;">{{ $message }}</p>
+                        @enderror
                     </div>
 
                     <div>
                         <label style="display: block; font-weight: 600; color: var(--text-dark); margin-bottom: 0.5rem;">{{ __('contact.email_label') }}</label>
-                        <input type="email" placeholder="{{ __('contact.email_placeholder') }}" style="width: 100%; padding: 0.75rem 1rem; border: 1px solid var(--border); border-radius: 8px; font-size: 1rem; font-family: inherit;" required>
+                        <input type="email" name="email" value="{{ old('email') }}" placeholder="{{ __('contact.email_placeholder') }}" style="width: 100%; padding: 0.75rem 1rem; border: 1px solid var(--border); border-radius: 8px; font-size: 1rem; font-family: inherit;" required>
+                        @error('email')
+                            <p style="margin-top: 0.45rem; color: #b91c1c; font-size: 0.9rem;">{{ $message }}</p>
+                        @enderror
                     </div>
 
                     <div>
                         <label style="display: block; font-weight: 600; color: var(--text-dark); margin-bottom: 0.5rem;">{{ __('contact.phone_label') }}</label>
-                        <input type="tel" placeholder="{{ __('contact.phone_placeholder') }}" style="width: 100%; padding: 0.75rem 1rem; border: 1px solid var(--border); border-radius: 8px; font-size: 1rem; font-family: inherit;">
+                        <input type="tel" name="phone" value="{{ old('phone') }}" placeholder="{{ __('contact.phone_placeholder') }}" style="width: 100%; padding: 0.75rem 1rem; border: 1px solid var(--border); border-radius: 8px; font-size: 1rem; font-family: inherit;">
                     </div>
 
                     <div>
                         <label style="display: block; font-weight: 600; color: var(--text-dark); margin-bottom: 0.5rem;">{{ __('contact.company_label') }}</label>
-                        <input type="text" placeholder="{{ __('contact.company_placeholder') }}" style="width: 100%; padding: 0.75rem 1rem; border: 1px solid var(--border); border-radius: 8px; font-size: 1rem; font-family: inherit;">
+                        <input type="text" name="company" value="{{ old('company') }}" placeholder="{{ __('contact.company_placeholder') }}" style="width: 100%; padding: 0.75rem 1rem; border: 1px solid var(--border); border-radius: 8px; font-size: 1rem; font-family: inherit;">
                     </div>
 
                     <div>
                         <label style="display: block; font-weight: 600; color: var(--text-dark); margin-bottom: 0.5rem;">{{ __('contact.project_type_label') }}</label>
-                        <select style="width: 100%; height: 56px; padding: 0 1rem; border: 1px solid var(--border); border-radius: 8px; font-size: 1rem; font-family: inherit; line-height: 1.4; appearance: none; background-color: white;">
-                            <option>{{ __('contact.project_type_default') }}</option>
-                            <option>{{ __('contact.project_types.custom') }}</option>
-                            <option>{{ __('contact.project_types.saas') }}</option>
-                            <option>{{ __('contact.project_types.mobile') }}</option>
-                            <option>{{ __('contact.project_types.ai') }}</option>
-                            <option>{{ __('contact.project_types.cloud') }}</option>
-                            <option>{{ __('contact.project_types.other') }}</option>
+                        <select name="project_type" style="width: 100%; height: 56px; padding: 0 1rem; border: 1px solid var(--border); border-radius: 8px; font-size: 1rem; font-family: inherit; line-height: 1.4; appearance: none; background-color: white;">
+                            <option value="">{{ __('contact.project_type_default') }}</option>
+                            <option value="{{ __('contact.project_types.custom') }}" @selected(old('project_type') === __('contact.project_types.custom'))>{{ __('contact.project_types.custom') }}</option>
+                            <option value="{{ __('contact.project_types.saas') }}" @selected(old('project_type') === __('contact.project_types.saas'))>{{ __('contact.project_types.saas') }}</option>
+                            <option value="{{ __('contact.project_types.mobile') }}" @selected(old('project_type') === __('contact.project_types.mobile'))>{{ __('contact.project_types.mobile') }}</option>
+                            <option value="{{ __('contact.project_types.ai') }}" @selected(old('project_type') === __('contact.project_types.ai'))>{{ __('contact.project_types.ai') }}</option>
+                            <option value="{{ __('contact.project_types.cloud') }}" @selected(old('project_type') === __('contact.project_types.cloud'))>{{ __('contact.project_types.cloud') }}</option>
+                            <option value="{{ __('contact.project_types.other') }}" @selected(old('project_type') === __('contact.project_types.other'))>{{ __('contact.project_types.other') }}</option>
                         </select>
                     </div>
 
                     <div>
                         <label style="display: block; font-weight: 600; color: var(--text-dark); margin-bottom: 0.5rem;">{{ __('contact.budget_label') }}</label>
-                        <select style="width: 100%; height: 56px; padding: 0 1rem; border: 1px solid var(--border); border-radius: 8px; font-size: 1rem; font-family: inherit; line-height: 1.4; appearance: none; background-color: white;">
-                            <option>{{ __('contact.budget_default') }}</option>
-                            <option>{{ __('contact.budgets.lt50') }}</option>
-                            <option>{{ __('contact.budgets.50_100') }}</option>
-                            <option>{{ __('contact.budgets.100_250') }}</option>
-                            <option>{{ __('contact.budgets.250_500') }}</option>
-                            <option>{{ __('contact.budgets.gt500') }}</option>
+                        <select name="budget" style="width: 100%; height: 56px; padding: 0 1rem; border: 1px solid var(--border); border-radius: 8px; font-size: 1rem; font-family: inherit; line-height: 1.4; appearance: none; background-color: white;">
+                            <option value="">{{ __('contact.budget_default') }}</option>
+                            <option value="{{ __('contact.budgets.lt50') }}" @selected(old('budget') === __('contact.budgets.lt50'))>{{ __('contact.budgets.lt50') }}</option>
+                            <option value="{{ __('contact.budgets.50_100') }}" @selected(old('budget') === __('contact.budgets.50_100'))>{{ __('contact.budgets.50_100') }}</option>
+                            <option value="{{ __('contact.budgets.100_250') }}" @selected(old('budget') === __('contact.budgets.100_250'))>{{ __('contact.budgets.100_250') }}</option>
+                            <option value="{{ __('contact.budgets.250_500') }}" @selected(old('budget') === __('contact.budgets.250_500'))>{{ __('contact.budgets.250_500') }}</option>
+                            <option value="{{ __('contact.budgets.gt500') }}" @selected(old('budget') === __('contact.budgets.gt500'))>{{ __('contact.budgets.gt500') }}</option>
                         </select>
                     </div>
 
                     <div>
                         <label style="display: block; font-weight: 600; color: var(--text-dark); margin-bottom: 0.5rem;">{{ __('contact.message_label') }}</label>
-                        <textarea placeholder="{{ __('contact.message_placeholder') }}" style="width: 100%; padding: 0.75rem 1rem; border: 1px solid var(--border); border-radius: 8px; font-size: 1rem; font-family: inherit; min-height: 150px; resize: vertical;" required></textarea>
+                        <textarea name="message" placeholder="{{ __('contact.message_placeholder') }}" style="width: 100%; padding: 0.75rem 1rem; border: 1px solid var(--border); border-radius: 8px; font-size: 1rem; font-family: inherit; min-height: 150px; resize: vertical;" required>{{ old('message') }}</textarea>
+                        @error('message')
+                            <p style="margin-top: 0.45rem; color: #b91c1c; font-size: 0.9rem;">{{ $message }}</p>
+                        @enderror
                     </div>
 
                     <button type="submit" style="background: var(--primary); color: white; padding: 1rem 2rem; border: none; border-radius: 8px; font-weight: 600; font-size: 1rem; cursor: pointer; transition: all 0.3s ease;" onmouseover="this.style.backgroundColor='var(--primary-light)';" onmouseout="this.style.backgroundColor='var(--primary)';">

@@ -3,6 +3,7 @@
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\LandingPageController;
+use App\Http\Controllers\ContactSubmissionController;
 use App\Http\Controllers\SolutionController;
 
 /**
@@ -78,6 +79,7 @@ Route::prefix('{locale}')
             Route::get('/pricing', 'pricing')->name('landing.pricing');
             Route::get('/certifications', 'certifications')->name('landing.certifications');
             Route::get('/contact', 'contact')->name('landing.contact');
+            Route::post('/contact', ContactSubmissionController::class)->name('landing.contact.submit');
             Route::get('/one-page', 'onePage')->name('landing.one-page');
             Route::get('/blog/r_and_d', 'blog')->name('landing.blog.r_and_d');
 

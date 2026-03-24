@@ -35,4 +35,13 @@ return [
         ],
     ],
 
+    'google_sheets' => [
+        'webhook_url' => env('GOOGLE_SHEETS_WEBHOOK_URL'),
+    ],
+
+    'telegram' => [
+        'bot_token' => env('TELEGRAM_BOT_TOKEN'),
+        'chat_id' => env('TELEGRAM_CHAT_ID'),
+    ],
+
 ];

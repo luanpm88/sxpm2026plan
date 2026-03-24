@@ -33,6 +33,9 @@ return [
     'email_us'            => 'Gửi Email',
     'learn_more_title'    => 'Muốn Tìm Hiểu Thêm?',
     'learn_more_subtitle' => 'Đặt lịch tư vấn miễn phí 30 phút với đội ngũ của chúng tôi để trao đổi về yêu cầu dự án của bạn',
+    'submit_success'      => 'Cảm ơn bạn! Yêu cầu đã được ghi nhận. Đội ngũ sẽ phản hồi sớm.',
+    'submit_failed'       => 'Xin lỗi, chưa thể gửi yêu cầu lúc này. Vui lòng thử lại sau ít phút.',
+    'integration_not_configured' => 'Chưa cấu hình tích hợp cho form liên hệ. Vui lòng cấu hình Google Sheets hoặc Telegram.',
 
     'project_types' => [
         'custom' => 'Phát Triển Phần Mềm Tùy Chỉnh',

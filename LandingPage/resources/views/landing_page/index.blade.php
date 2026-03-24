@@ -2,145 +2,15 @@
 
 @section('content')
 
-    <!-- Hero Section -->
-    <section class="hero" style="min-height: 90vh; display: flex; align-items: center; padding: 6rem 2rem; background: linear-gradient(135deg, #ffffff 0%, var(--secondary-bg) 100%);">
-        <style>
-            @media (max-width: 991px) {
-                .case-study-grid {
-                    grid-template-columns: 1fr !important;
-                }
-            }
-            
-            @media (max-width: 767px) {
-                .hero {
-                    min-height: auto;
-                    padding: 3rem 0 !important;
-                }
-                .hero-grid {
-                    grid-template-columns: 1fr !important;
-                    gap: 2rem !important;
-                }
-                .hero h1 {
-                    font-size: 2rem !important;
-                }
-                .hero-content p {
-                    font-size: 0.95rem !important;
-                }
-                .hero-stats {
-                    gap: 1.5rem !important;
-                    grid-template-columns: 1fr !important;
-                }
-                .hero-stats > div {
-                    font-size: 1.5rem !important;
-                }
-                .hero-stats > div > div:first-child {
-                    font-size: 1.75rem !important;
-                }
-                .hero-svg-box {
-                    min-height: 300px !important;
-                }
-                .case-study-grid {
-                    grid-template-columns: 1fr !important;
-                }
-                .case-study-grid > div:last-child {
-                    min-height: 200px !important;
-                }
-            }
-        </style>
-        <div class="container-v5">
-            <div class="hero-grid" style="display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: center;">
-                <div class="hero-content">
-                    <h1 style="font-size: 4rem; font-weight: 800; line-height: 1.15; margin-bottom: 1.5rem; color: var(--text-dark);">
-                        Enterprise Software<br><span style="color: var(--primary);">Development Partner</span>
-                    </h1>
-                    <p style="font-size: 1.15rem; color: var(--text-gray); margin-bottom: 2.5rem; line-height: 1.8;">
-                        HKIncotech is a software development partner in Southeast Asia. We build complex systems, AI platforms, and SaaS solutions using SCRUM methodology with 12+ years of experience.
-                    </p>
-                    <div style="display: flex; gap: 1.25rem; margin-bottom: 3rem; flex-wrap: wrap;">
-                        <a href="{{ route('landing.contact') }}" class="btn-primary-v5">
-                            <span>Free Consultation</span>
-                            <span class="material-symbols-rounded">arrow_forward</span>
-                        </a>
-                        <a href="{{ route('landing.services') }}" class="btn-secondary-v5">
-                            <span>View Services</span>
-                            <span class="material-symbols-rounded">explore</span>
-                        </a>
-                    </div>
-                    <div class="hero-stats" style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 2rem; margin-top: 3rem; padding-top: 2.5rem; border-top: 1px solid var(--border);">
-                        <div>
-                            <div style="font-size: 2.25rem; font-weight: 800; color: var(--primary);">12+</div>
-                            <div style="font-size: 0.95rem; color: var(--text-gray); margin-top: 0.5rem;">Years Experience</div>
-                        </div>
-                        <div>
-                            <div style="font-size: 2.25rem; font-weight: 800; color: var(--primary);">50+</div>
-                            <div style="font-size: 0.95rem; color: var(--text-gray); margin-top: 0.5rem;">Projects Completed</div>
-                        </div>
-                        <div>
-                            <div style="font-size: 2.25rem; font-weight: 800; color: var(--primary);">99.99%</div>
-                            <div style="font-size: 0.95rem; color: var(--text-gray); margin-top: 0.5rem;">Uptime SLA</div>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="hero-svg-box opacity-75 position-relative" style="background: white; border-radius: 12px; padding: 2.5rem; border: 1px solid var(--border); display: flex; align-items: center; justify-content: center; min-height: 450px;">
-                    <span class="badge  rounded-pill bg-warning position-absolute fs-6 top-0 mt-3">
-                        <span class="spinner-border spinner-border-sm me-1" role="status">
-                            <span class="visually-hidden">Loading...</span>
-                        </span>
-                        Update banner
-                    </span>
-                    <svg viewBox="0 0 350 350" style="width: 100%; max-width: 350px;">
-                        <!-- Background circles -->
-                        <circle cx="175" cy="175" r="160" fill="none" stroke="#0f6b9e" stroke-width="1" opacity="0.1"/>
-                        <circle cx="175" cy="175" r="120" fill="none" stroke="#0f6b9e" stroke-width="1" opacity="0.15"/>
-                        <circle cx="175" cy="175" r="80" fill="none" stroke="#0f6b9e" stroke-width="1" opacity="0.2"/>
-                        
-                        <!-- Nodes -->
-                        <circle cx="175" cy="80" r="12" fill="#0f6b9e"/>
-                        <circle cx="265" cy="130" r="12" fill="#0f6b9e"/>
-                        <circle cx="285" cy="220" r="12" fill="#0f6b9e"/>
-                        <circle cx="175" cy="270" r="12" fill="#0f6b9e"/>
-                        <circle cx="65" cy="220" r="12" fill="#0f6b9e"/>
-                        <circle cx="85" cy="130" r="12" fill="#0f6b9e"/>
-                        <circle cx="175" cy="175" r="16" fill="#059669"/>
-                        
-                        <!-- Connections -->
-                        <line x1="175" y1="80" x2="265" y2="130" stroke="#0f6b9e" stroke-width="2" opacity="0.4"/>
-                        <line x1="265" y1="130" x2="285" y2="220" stroke="#0f6b9e" stroke-width="2" opacity="0.4"/>
-                        <line x1="285" y1="220" x2="175" y2="270" stroke="#0f6b9e" stroke-width="2" opacity="0.4"/>
-                        <line x1="175" y1="270" x2="65" y2="220" stroke="#0f6b9e" stroke-width="2" opacity="0.4"/>
-                        <line x1="65" y1="220" x2="85" y2="130" stroke="#0f6b9e" stroke-width="2" opacity="0.4"/>
-                        <line x1="85" y1="130" x2="175" y2="80" stroke="#0f6b9e" stroke-width="2" opacity="0.4"/>
-                        
-                        <!-- Center to nodes -->
-                        <line x1="175" y1="175" x2="175" y2="80" stroke="#059669" stroke-width="2" opacity="0.5"/>
-                        <line x1="175" y1="175" x2="265" y2="130" stroke="#059669" stroke-width="2" opacity="0.5"/>
-                        <line x1="175" y1="175" x2="285" y2="220" stroke="#059669" stroke-width="2" opacity="0.5"/>
-                        <line x1="175" y1="175" x2="175" y2="270" stroke="#059669" stroke-width="2" opacity="0.5"/>
-                        <line x1="175" y1="175" x2="65" y2="220" stroke="#059669" stroke-width="2" opacity="0.5"/>
-                        <line x1="175" y1="175" x2="85" y2="130" stroke="#059669" stroke-width="2" opacity="0.5"/>
-                        
-                        <!-- Labels -->
-                        <text x="175" y="55" text-anchor="middle" font-size="11" fill="#0f6b9e" font-weight="bold">Frontend</text>
-                        <text x="290" y="105" text-anchor="middle" font-size="11" fill="#0f6b9e" font-weight="bold">Backend</text>
-                        <text x="305" y="225" text-anchor="middle" font-size="11" fill="#0f6b9e" font-weight="bold">Database</text>
-                        <text x="175" y="295" text-anchor="middle" font-size="11" fill="#0f6b9e" font-weight="bold">DevOps</text>
-                        <text x="35" y="225" text-anchor="middle" font-size="11" fill="#0f6b9e" font-weight="bold">Security</text>
-                        <text x="55" y="105" text-anchor="middle" font-size="11" fill="#0f6b9e" font-weight="bold">AI/ML</text>
-                        
-                        <text x="175" y="180" text-anchor="middle" font-size="14" fill="#059669" font-weight="bold">SCRUM</text>
-                    </svg>
-                </div>
-            </div>
-        </div>
-    </section>
+    @include('landing_page.partials.hero')
+
 
     <!-- Services Preview -->
     <section id="services" style="background: var(--secondary-bg);">
         <div class="container-v5">
             <div class="section-header">
-                <h2 class="section-title">Complete Capabilities</h2>
-                <p class="section-subtitle">Enterprise-grade software solutions from custom development to SaaS platforms</p>
+                <h2 class="section-title">{{ __('index.services_title') }}</h2>
+                <p class="section-subtitle">{{ __('index.services_subtitle') }}</p>
             </div>
             
             <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem;">
@@ -148,138 +18,138 @@
                     <div style="font-size: 3rem; color: var(--primary); margin-bottom: 1rem;">
                         <span class="material-symbols-rounded">code</span>
                     </div>
-                    <h3 style="font-size: 1.3rem; font-weight: 700; color: var(--text-dark); margin-bottom: 1rem;">Custom Software Development</h3>
+                    <h3 style="font-size: 1.3rem; font-weight: 700; color: var(--text-dark); margin-bottom: 1rem;">{{ __('index.custom_title') }}</h3>
                     <p style="color: var(--text-gray); font-size: 0.95rem; line-height: 1.7; margin-bottom: 1.5rem;">
-                        Application development from scratch with cloud-native architecture, microservices, and DevOps automation
+                        {{ __('index.custom_desc') }}
                     </p>
                     <ul style="list-style: none; padding: 0; margin-bottom: 1.5rem;">
                         <li style="padding: 0.5rem 0; color: var(--text-gray); display: flex; align-items: center; gap: 0.75rem; font-size: 0.9rem;">
                             <span style="width: 6px; height: 6px; background: var(--primary); border-radius: 50%; flex-shrink: 0;"></span>
-                            Web & Mobile Applications
+                            {{ __('index.custom_feature_1') }}
                         </li>
                         <li style="padding: 0.5rem 0; color: var(--text-gray); display: flex; align-items: center; gap: 0.75rem; font-size: 0.9rem;">
                             <span style="width: 6px; height: 6px; background: var(--primary); border-radius: 50%; flex-shrink: 0;"></span>
-                            Distributed Systems
+                            {{ __('index.custom_feature_2') }}
                         </li>
                         <li style="padding: 0.5rem 0; color: var(--text-gray); display: flex; align-items: center; gap: 0.75rem; font-size: 0.9rem;">
                             <span style="width: 6px; height: 6px; background: var(--primary); border-radius: 50%; flex-shrink: 0;"></span>
-                            Real-time Processing
+                            {{ __('index.custom_feature_3') }}
                         </li>
                         <li style="padding: 0.5rem 0; color: var(--text-gray); display: flex; align-items: center; gap: 0.75rem; font-size: 0.9rem;">
                             <span style="width: 6px; height: 6px; background: var(--primary); border-radius: 50%; flex-shrink: 0;"></span>
-                            Data Pipelines
+                            {{ __('index.custom_feature_4') }}
                         </li>
                     </ul>
-                    <a href="{{ route('landing.services') }}" style="color: var(--primary); font-weight: 600; text-decoration: none;">View Details</a>
+                    <a href="{{ route('landing.services') }}" style="color: var(--primary); font-weight: 600; text-decoration: none;">{{ __('index.view_details') }}</a>
                 </div>
                 
                 <div style="background: white; border: 1px solid var(--border); border-radius: 12px; padding: 2.5rem 2rem; transition: all 0.3s ease;" onmouseover="this.style.borderColor='var(--primary)'; this.style.boxShadow='0 12px 30px rgba(15, 107, 158, 0.12)';" onmouseout="this.style.borderColor='var(--border)'; this.style.boxShadow='';">
                     <div style="font-size: 3rem; color: var(--primary); margin-bottom: 1rem;">
                         <span class="material-symbols-rounded">workspace_premium</span>
                     </div>
-                    <h3 style="font-size: 1.3rem; font-weight: 700; color: var(--text-dark); margin-bottom: 1rem;">SaaS Platform: HKSpace</h3>
+                    <h3 style="font-size: 1.3rem; font-weight: 700; color: var(--text-dark); margin-bottom: 1rem;">{{ __('index.saas_title') }}</h3>
                     <p style="color: var(--text-gray); font-size: 0.95rem; line-height: 1.7; margin-bottom: 1.5rem;">
-                        Multi-tenant enterprise management platform with unlimited scalability
+                        {{ __('index.saas_desc') }}
                     </p>
                     <ul style="list-style: none; padding: 0; margin-bottom: 1.5rem;">
                         <li style="padding: 0.5rem 0; color: var(--text-gray); display: flex; align-items: center; gap: 0.75rem; font-size: 0.9rem;">
                             <span style="width: 6px; height: 6px; background: var(--primary); border-radius: 50%; flex-shrink: 0;"></span>
-                            Task Management Engine
+                            {{ __('index.saas_feature_1') }}
                         </li>
                         <li style="padding: 0.5rem 0; color: var(--text-gray); display: flex; align-items: center; gap: 0.75rem; font-size: 0.9rem;">
                             <span style="width: 6px; height: 6px; background: var(--primary); border-radius: 50%; flex-shrink: 0;"></span>
-                            Workflow Automation
+                            {{ __('index.saas_feature_2') }}
                         </li>
                         <li style="padding: 0.5rem 0; color: var(--text-gray); display: flex; align-items: center; gap: 0.75rem; font-size: 0.9rem;">
                             <span style="width: 6px; height: 6px; background: var(--primary); border-radius: 50%; flex-shrink: 0;"></span>
-                            Real-time Collaboration
+                            {{ __('index.saas_feature_3') }}
                         </li>
                         <li style="padding: 0.5rem 0; color: var(--text-gray); display: flex; align-items: center; gap: 0.75rem; font-size: 0.9rem;">
                             <span style="width: 6px; height: 6px; background: var(--primary); border-radius: 50%; flex-shrink: 0;"></span>
-                            Advanced Analytics
+                            {{ __('index.saas_feature_4') }}
                         </li>
                     </ul>
-                    <a href="{{ route('landing.services') }}" style="color: var(--primary); font-weight: 600; text-decoration: none;">View Details</a>
+                    <a href="{{ route('landing.services') }}" style="color: var(--primary); font-weight: 600; text-decoration: none;">{{ __('index.view_details') }}</a>
                 </div>
                 
                 <div style="background: white; border: 1px solid var(--border); border-radius: 12px; padding: 2.5rem 2rem; transition: all 0.3s ease;" onmouseover="this.style.borderColor='var(--primary)'; this.style.boxShadow='0 12px 30px rgba(15, 107, 158, 0.12)';" onmouseout="this.style.borderColor='var(--border)'; this.style.boxShadow='';">
                     <div style="font-size: 3rem; color: var(--primary); margin-bottom: 1rem;">
                         <span class="material-symbols-rounded">psychology</span>
                     </div>
-                    <h3 style="font-size: 1.3rem; font-weight: 700; color: var(--text-dark); margin-bottom: 1rem;">AI Knowledge Platform</h3>
+                    <h3 style="font-size: 1.3rem; font-weight: 700; color: var(--text-dark); margin-bottom: 1rem;">{{ __('index.ai_title') }}</h3>
                     <p style="color: var(--text-gray); font-size: 0.95rem; line-height: 1.7; margin-bottom: 1.5rem;">
-                        AI platform integrating NLP, RAG, vector databases, and custom LLM
+                        {{ __('index.ai_desc') }}
                     </p>
                     <ul style="list-style: none; padding: 0; margin-bottom: 1.5rem;">
                         <li style="padding: 0.5rem 0; color: var(--text-gray); display: flex; align-items: center; gap: 0.75rem; font-size: 0.9rem;">
                             <span style="width: 6px; height: 6px; background: var(--primary); border-radius: 50%; flex-shrink: 0;"></span>
-                            Natural Language Processing
+                            {{ __('index.ai_feature_1') }}
                         </li>
                         <li style="padding: 0.5rem 0; color: var(--text-gray); display: flex; align-items: center; gap: 0.75rem; font-size: 0.9rem;">
                             <span style="width: 6px; height: 6px; background: var(--primary); border-radius: 50%; flex-shrink: 0;"></span>
-                            Semantic Search
+                            {{ __('index.ai_feature_2') }}
                         </li>
                         <li style="padding: 0.5rem 0; color: var(--text-gray); display: flex; align-items: center; gap: 0.75rem; font-size: 0.9rem;">
                             <span style="width: 6px; height: 6px; background: var(--primary); border-radius: 50%; flex-shrink: 0;"></span>
-                            Knowledge Graph
+                            {{ __('index.ai_feature_3') }}
                         </li>
                         <li style="padding: 0.5rem 0; color: var(--text-gray); display: flex; align-items: center; gap: 0.75rem; font-size: 0.9rem;">
                             <span style="width: 6px; height: 6px; background: var(--primary); border-radius: 50%; flex-shrink: 0;"></span>
-                            LLM Integration
+                            {{ __('index.ai_feature_4') }}
                         </li>
                     </ul>
-                    <a href="{{ route('landing.services') }}" style="color: var(--primary); font-weight: 600; text-decoration: none;">View Details</a>
+                    <a href="{{ route('landing.services') }}" style="color: var(--primary); font-weight: 600; text-decoration: none;">{{ __('index.view_details') }}</a>
                 </div>
                 
                 <div style="background: white; border: 1px solid var(--border); border-radius: 12px; padding: 2.5rem 2rem; transition: all 0.3s ease;" onmouseover="this.style.borderColor='var(--primary)'; this.style.boxShadow='0 12px 30px rgba(15, 107, 158, 0.12)';" onmouseout="this.style.borderColor='var(--border)'; this.style.boxShadow='';">
                     <div style="font-size: 3rem; color: var(--primary); margin-bottom: 1rem;">
                         <span class="material-symbols-rounded">shield</span>
                     </div>
-                    <h3 style="font-size: 1.3rem; font-weight: 700; color: var(--text-dark); margin-bottom: 1rem;">Security & Compliance</h3>
+                    <h3 style="font-size: 1.3rem; font-weight: 700; color: var(--text-dark); margin-bottom: 1rem;">{{ __('index.security_title') }}</h3>
                     <p style="color: var(--text-gray); font-size: 0.95rem; line-height: 1.7; margin-bottom: 1.5rem;">
                         Enterprise-grade security architecture complying with OWASP, ISO 27001, SOC 2
                     </p>
                     <ul style="list-style: none; padding: 0; margin-bottom: 1.5rem;">
                         <li style="padding: 0.5rem 0; color: var(--text-gray); display: flex; align-items: center; gap: 0.75rem; font-size: 0.9rem;">
                             <span style="width: 6px; height: 6px; background: var(--primary); border-radius: 50%; flex-shrink: 0;"></span>
-                            Zero Trust Architecture
+                            {{ __('index.security_feature_1') }}
                         </li>
                         <li style="padding: 0.5rem 0; color: var(--text-gray); display: flex; align-items: center; gap: 0.75rem; font-size: 0.9rem;">
                             <span style="width: 6px; height: 6px; background: var(--primary); border-radius: 50%; flex-shrink: 0;"></span>
-                            Data Encryption
+                            {{ __('index.security_feature_2') }}
                         </li>
                         <li style="padding: 0.5rem 0; color: var(--text-gray); display: flex; align-items: center; gap: 0.75rem; font-size: 0.9rem;">
                             <span style="width: 6px; height: 6px; background: var(--primary); border-radius: 50%; flex-shrink: 0;"></span>
-                            Access Control
+                            {{ __('index.security_feature_3') }}
                         </li>
                         <li style="padding: 0.5rem 0; color: var(--text-gray); display: flex; align-items: center; gap: 0.75rem; font-size: 0.9rem;">
                             <span style="width: 6px; height: 6px; background: var(--primary); border-radius: 50%; flex-shrink: 0;"></span>
-                            Incident Response
+                            {{ __('index.security_feature_4') }}
                         </li>
                     </ul>
-                    <a href="{{ route('landing.services') }}" style="color: var(--primary); font-weight: 600; text-decoration: none;">View Details</a>
+                    <a href="{{ route('landing.services') }}" style="color: var(--primary); font-weight: 600; text-decoration: none;">{{ __('index.view_details') }}</a>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- SCRUM Process Preview -->
+    <!-- {{ __('index.scrum_title') }} Preview -->
     <section id="process">
         <div class="container-v5">
             <div class="section-header">
-                <h2 class="section-title">SCRUM Process</h2>
-                <p class="section-subtitle">Agile development methodology for real-time progress visibility</p>
+                <h2 class="section-title">{{ __('index.scrum_title') }}</h2>
+                <p class="section-subtitle">{{ __('index.scrum_subtitle') }}</p>
             </div>
             
             <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 1.5rem;">
                 @php
                 $processes = [
-                    ['icon' => 'lightbulb', 'title' => 'Discovery', 'desc' => 'Consulting, planning'],
-                    ['icon' => 'architecture', 'title' => 'Design', 'desc' => 'Wireframe, architecture'],
-                    ['icon' => 'code', 'title' => 'Development', 'desc' => 'Sprint cycles'],
-                    ['icon' => 'verified', 'title' => 'QA Testing', 'desc' => 'Comprehensive testing'],
-                    ['icon' => 'cloud_upload', 'title' => 'Deploy', 'desc' => 'Product launch'],
-                    ['icon' => 'support_agent', 'title' => 'Support', 'desc' => '24/7 support'],
+                    ['icon' => 'lightbulb', 'title' => __('index.scrum_discovery'), 'desc' => __('index.scrum_discovery_desc')],
+                    ['icon' => 'architecture', 'title' => __('index.scrum_design'), 'desc' => __('index.scrum_design_desc')],
+                    ['icon' => 'code', 'title' => __('index.scrum_development'), 'desc' => __('index.scrum_development_desc')],
+                    ['icon' => 'verified', 'title' => __('index.scrum_qa'), 'desc' => __('index.scrum_qa_desc')],
+                    ['icon' => 'cloud_upload', 'title' => __('index.scrum_deploy'), 'desc' => __('index.scrum_deploy_desc')],
+                    ['icon' => 'support_agent', 'title' => __('index.scrum_support'), 'desc' => __('index.scrum_support_desc')],
                 ];
                 @endphp
                 @foreach($processes as $p)
@@ -295,19 +165,19 @@
             
             <div style="text-align: center; margin-top: 3rem;">
                 <a href="{{ route('landing.scrum') }}" class="btn-primary-v5">
-                    <span>Learn Detailed Process</span>
+                    <span>{{ __('index.scrum_learn') }}</span>
                     <span class="material-symbols-rounded">arrow_forward</span>
                 </a>
             </div>
         </div>
     </section>
 
-    <!-- Technology Stack Preview -->
+    <!-- {{ __('index.tech_title') }} Preview -->
     <section style="background: var(--secondary-bg);">
         <div class="container-v5">
             <div class="section-header">
-                <h2 class="section-title">Technology Stack</h2>
-                <p class="section-subtitle">Enterprise-grade technologies across 8 categories, 50+ frameworks & tools</p>
+                <h2 class="section-title">{{ __('index.tech_title') }}</h2>
+                <p class="section-subtitle">{{ __('index.tech_subtitle') }}</p>
             </div>
             
             <!-- Tech Stack Grid -->
@@ -316,49 +186,49 @@
                 $tech_categories = [
                     [
                         'icon' => 'web',
-                        'title' => 'Frontend & UI',
+                        'title' => __('index.tech_frontend'),
                         'techs' => ['React, Vue, Angular', 'TypeScript, Next.js', 'TailwindCSS, Material Design', 'PWA & Performance'],
                         'color' => 'rgb(59, 130, 246)'
                     ],
                     [
                         'icon' => 'storage',
-                        'title' => 'Backend & API',
+                        'title' => __('index.tech_backend'),
                         'techs' => ['Node.js, Python, Java, Go', 'FastAPI, NestJS', 'GraphQL, REST APIs', 'Microservices'],
                         'color' => 'rgb(15, 107, 158)'
                     ],
                     [
                         'icon' => 'database',
-                        'title' => 'Data & Database',
+                        'title' => __('index.tech_data'),
                         'techs' => ['PostgreSQL, MongoDB, MySQL', 'Redis, Elasticsearch', 'Vector Databases', 'BigQuery Data Warehouse'],
                         'color' => 'rgb(34, 197, 94)'
                     ],
                     [
                         'icon' => 'cloud',
-                        'title' => 'Cloud & Infrastructure',
+                        'title' => __('index.tech_cloud'),
                         'techs' => ['AWS, GCP, Azure', 'Kubernetes, Docker', 'CI/CD Automation', 'Infrastructure as Code'],
                         'color' => 'rgb(168, 85, 247)'
                     ],
                     [
                         'icon' => 'shield',
-                        'title' => 'Security & Compliance',
+                        'title' => __('index.security_title'),
                         'techs' => ['SSL/TLS Encryption', 'OWASP Standards', 'GDPR Compliance', 'Penetration Testing'],
                         'color' => 'rgb(239, 68, 68)'
                     ],
                     [
                         'icon' => 'smartphone',
-                        'title' => 'Mobile Development',
+                        'title' => __('index.tech_mobile'),
                         'techs' => ['React Native, Flutter', 'iOS (Swift), Android (Kotlin)', 'Progressive Web Apps', 'App Store Deployment'],
                         'color' => 'rgb(249, 115, 22)'
                     ],
                     [
                         'icon' => 'psychology',
-                        'title' => 'AI & Machine Learning',
+                        'title' => __('index.tech_ai'),
                         'techs' => ['OpenAI APIs', 'Custom ML Models', 'Computer Vision & NLP', 'RAG & Vector Search'],
                         'color' => 'rgb(14, 165, 233)'
                     ],
                     [
                         'icon' => 'settings',
-                        'title' => 'DevOps & Tools',
+                        'title' => __('index.tech_devops'),
                         'techs' => ['Git, GitHub, GitLab', 'Docker, Terraform', 'Monitoring & Logging', 'Performance Tools'],
                         'color' => 'rgb(236, 72, 153)'
                     ],
@@ -391,26 +261,26 @@
                 <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 2rem; text-align: center;">
                     <div>
                         <div style="font-size: 2.5rem; font-weight: 800; color: var(--primary); margin-bottom: 0.5rem;">8</div>
-                        <div style="color: var(--text-gray); font-size: 0.9rem;">Tech Categories</div>
+                        <div style="color: var(--text-gray); font-size: 0.9rem;">{{ __("index.tech_categories") }}</div>
                     </div>
                     <div>
                         <div style="font-size: 2.5rem; font-weight: 800; color: var(--primary); margin-bottom: 0.5rem;">50+</div>
-                        <div style="color: var(--text-gray); font-size: 0.9rem;">Frameworks & Tools</div>
+                        <div style="color: var(--text-gray); font-size: 0.9rem;">{{ __("index.tech_frameworks") }}</div>
                     </div>
                     <div>
                         <div style="font-size: 2.5rem; font-weight: 800; color: var(--primary); margin-bottom: 0.5rem;">99.99%</div>
-                        <div style="color: var(--text-gray); font-size: 0.9rem;">Uptime SLA</div>
+                        <div style="color: var(--text-gray); font-size: 0.9rem;">{{ __("index.tech_uptime") }}</div>
                     </div>
                     <div>
                         <div style="font-size: 2.5rem; font-weight: 800; color: var(--primary); margin-bottom: 0.5rem;"><100ms</div>
-                        <div style="color: var(--text-gray); font-size: 0.9rem;">API Response Time</div>
+                        <div style="color: var(--text-gray); font-size: 0.9rem;">{{ __("index.tech_response") }}</div>
                     </div>
                 </div>
             </div>
             
             <div style="text-align: center;">
                 <a href="{{ route('landing.tech-stack') }}" class="btn-secondary-v5" style="display: inline-flex; align-items: center; gap: 0.75rem;">
-                    <span>View Complete Tech Stack with Details</span>
+                    <span>{{ __('index.tech_view') }}</span>
                     <span class="material-symbols-rounded">arrow_forward</span>
                 </a>
             </div>
@@ -421,19 +291,19 @@
     <section>
         <div class="container-v5">
             <div class="section-header">
-                <h2 class="section-title">Scaling Architecture</h2>
-                <p class="section-subtitle">From MVP to 10M+ concurrent users - 6 enterprise-grade scaling phases</p>
+                <h2 class="section-title">{{ __('index.scaling_title') }}</h2>
+                <p class="section-subtitle">{{ __('index.scaling_subtitle') }}</p>
             </div>
             
             <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 2rem;">
                 @php
                 $scaling_phases = [
-                    ['phase' => 'Phase 1', 'title' => 'MVP Launch', 'users' => '100-1K users', 'icon' => 'rocket_launch'],
-                    ['phase' => 'Phase 2', 'title' => 'Growth', 'users' => '1K-10K users', 'icon' => 'trending_up'],
-                    ['phase' => 'Phase 3', 'title' => 'Scaling', 'users' => '10K-100K users', 'icon' => 'expand'],
-                    ['phase' => 'Phase 4', 'title' => 'Multi-region', 'users' => '100K-1M users', 'icon' => 'public'],
-                    ['phase' => 'Phase 5', 'title' => 'Hyper-scale', 'users' => '1M-10M users', 'icon' => 'auto_awesome'],
-                    ['phase' => 'Phase 6', 'title' => 'Enterprise', 'users' => '10M+ users', 'icon' => 'domain'],
+                    ['phase' => __('index.scaling_phase1'), 'title' => __('index.scaling_phase1_title'), 'users' => __('index.scaling_phase1_users'), 'icon' => 'rocket_launch'],
+                    ['phase' => __('index.scaling_phase2'), 'title' => __('index.scaling_phase2_title'), 'users' => __('index.scaling_phase2_users'), 'icon' => 'trending_up'],
+                    ['phase' => __('index.scaling_phase3'), 'title' => __('index.scaling_phase3_title'), 'users' => __('index.scaling_phase3_users'), 'icon' => 'expand'],
+                    ['phase' => __('index.scaling_phase4'), 'title' => __('index.scaling_phase4_title'), 'users' => __('index.scaling_phase4_users'), 'icon' => 'public'],
+                    ['phase' => __('index.scaling_phase5'), 'title' => __('index.scaling_phase5_title'), 'users' => __('index.scaling_phase5_users'), 'icon' => 'auto_awesome'],
+                    ['phase' => __('index.scaling_phase6'), 'title' => __('index.scaling_phase6_title'), 'users' => __('index.scaling_phase6_users'), 'icon' => 'domain'],
                 ];
                 @endphp
                 @foreach($scaling_phases as $sp)
@@ -452,7 +322,7 @@
             
             <div style="text-align: center; margin-top: 3rem;">
                 <a href="{{ route('landing.scaling') }}" class="btn-primary-v5">
-                    <span>Explore Scaling Details</span>
+                    <span>{{ __('index.scaling_explore') }}</span>
                     <span class="material-symbols-rounded">arrow_forward</span>
                 </a>
             </div>
@@ -463,8 +333,8 @@
     <section style="background: var(--secondary-bg);">
         <div class="container-v5">
             <div class="section-header">
-                <h2 class="section-title">Why Choose HKIncotech?</h2>
-                <p class="section-subtitle">Reliable software development partner</p>
+                <h2 class="section-title">{{ __('index.why_title') }}</h2>
+                <p class="section-subtitle">{{ __('index.why_subtitle') }}</p>
             </div>
             
             <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2rem;">
@@ -472,10 +342,10 @@
                 $features = [
                     ['icon' => 'verified_user', 'title' => 'Deep Expertise', 'desc' => '12+ years building enterprise-grade systems'],
                     ['icon' => 'groups', 'title' => 'Expert Team', 'desc' => '100+ specialized engineers & architects'],
-                    ['icon' => 'speed', 'title' => 'Fast Delivery', 'desc' => 'MVP in 4-8 weeks, flexible scaling'],
-                    ['icon' => 'shield_lock', 'title' => 'High Security', 'desc' => 'ISO 27001, SOC 2, OWASP Level 3'],
+                    ['icon' => 'speed', 'title' => __('index.why_fast'), 'desc' => __('index.why_fast_desc')],
+                    ['icon' => 'shield_lock', 'title' => __('index.why_security'), 'desc' => __('index.why_security_desc')],
                     ['icon' => 'trending_up', 'title' => 'Scalable Architecture', 'desc' => 'From 100 to 10M+ concurrent users'],
-                    ['icon' => 'handshake', 'title' => 'True Partnership', 'desc' => 'Strategic partner, not just a vendor'],
+                    ['icon' => 'handshake', 'title' => __('index.why_partnership'), 'desc' => __('index.why_partnership_desc')],
                 ];
                 @endphp
                 @foreach($features as $f)
@@ -491,12 +361,12 @@
         </div>
     </section>
 
-    <!-- Success Stories Carousel -->
+    <!-- {{ __('index.case_title') }} Carousel -->
     <section>
         <div class="container-v5">
             <div class="section-header">
-                <h2 class="section-title">Success Stories</h2>
-                <p class="section-subtitle">Featured case studies from our portfolio - Real results, real impact</p>
+                <h2 class="section-title">{{ __('index.case_title') }}</h2>
+                <p class="section-subtitle">{{ __('index.case_subtitle') }}</p>
             </div>
             
             <!-- Carousel Container -->
@@ -592,7 +462,7 @@
                                     </div>
                                     
                                     <a href="{{ route('landing.case-studies') }}" style="color: var(--primary); font-weight: 600; text-decoration: none; display: inline-flex; align-items: center; gap: 0.5rem;">
-                                        <span>Read Full Case Study</span>
+                                        <span>{{ __('index.case_read') }}</span>
                                         <span class="material-symbols-rounded">arrow_forward</span>
                                     </a>
                                 </div>
@@ -747,12 +617,12 @@
     })();
     </script>
 
-    <!-- Research & Development Section -->
+    <!-- {{ __('index.rd_title') }} Section -->
     <section style="background: linear-gradient(135deg, #f8fafc 0%, #ecfdf5 100%); padding: 5rem 0;">
         <div class="container-v5">
             <div class="section-header">
-                <h2 class="section-title">Research & Development</h2>
-                <p class="section-subtitle">Building foundational technology for the AI era—infrastructure and intelligence layers that enable adaptive enterprise systems</p>
+                <h2 class="section-title">{{ __('index.rd_title') }}</h2>
+                <p class="section-subtitle">{{ __('index.rd_subtitle') }}</p>
             </div>
 
             <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 2.5rem; margin-top: 3rem;">
@@ -764,8 +634,8 @@
                             <span class="material-symbols-rounded" style="color: white; font-size: 28px;">hub</span>
                         </div>
                         <div>
-                            <h3 style="font-size: 1.5rem; font-weight: 700; color: var(--text-dark); margin: 0;">HKSpace</h3>
-                            <p style="font-size: 0.85rem; color: var(--primary); font-weight: 600; margin: 0;">Infrastructure Foundation</p>
+                            <h3 style="font-size: 1.5rem; font-weight: 700; color: var(--text-dark); margin: 0;">{{ __('index.rd_hkspace') }}</h3>
+                            <p style="font-size: 0.85rem; color: var(--primary); font-weight: 600; margin: 0;">{{ __('index.rd_hkspace_subtitle') }}</p>
                         </div>
                     </div>
                     
@@ -775,30 +645,30 @@
 
                     <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin-bottom: 1.5rem;">
                         <div style="background: white; border-radius: 8px; padding: 1rem; border: 1px solid #d1e7f5;">
-                            <p style="color: var(--text-dark); font-weight: 600; font-size: 0.85rem; margin-bottom: 0.25rem;">Composable</p>
-                            <p style="color: var(--text-gray); font-size: 0.8rem; margin: 0;">Domain-agnostic layers</p>
+                            <p style="color: var(--text-dark); font-weight: 600; font-size: 0.85rem; margin-bottom: 0.25rem;">{{ __('index.rd_composable') }}</p>
+                            <p style="color: var(--text-gray); font-size: 0.8rem; margin: 0;">{{ __('index.rd_composable_desc') }}</p>
                         </div>
                         <div style="background: white; border-radius: 8px; padding: 1rem; border: 1px solid #d1e7f5;">
-                            <p style="color: var(--text-dark); font-weight: 600; font-size: 0.85rem; margin-bottom: 0.25rem;">AI-Native</p>
-                            <p style="color: var(--text-gray); font-size: 0.8rem; margin: 0;">Built for intelligence</p>
+                            <p style="color: var(--text-dark); font-weight: 600; font-size: 0.85rem; margin-bottom: 0.25rem;">{{ __('index.rd_ai_native') }}</p>
+                            <p style="color: var(--text-gray); font-size: 0.8rem; margin: 0;">{{ __('index.rd_ai_native_desc') }}</p>
                         </div>
                     </div>
 
                     <div style="display: flex; align-items: center; gap: 0.5rem; color: var(--primary); font-weight: 600;">
-                        <span>Explore Research</span>
+                        <span>{{ __('index.rd_explore') }}</span>
                         <span class="material-symbols-rounded" style="font-size: 20px;">arrow_forward</span>
                     </div>
                 </a>
 
-                <!-- AI Knowledge Platform R&D Card -->
+                <!-- {{ __('index.ai_title') }} R&D Card -->
                 <a href="{{ route('landing.blog.r_and_d') }}" style="text-decoration: none; display: block; background: linear-gradient(135deg, #fef3c7 0%, #fde68a 100%); border-radius: 16px; padding: 2.5rem; border: 1px solid #fcd34d; transition: all 0.3s ease; box-shadow: 0 4px 20px rgba(217, 119, 6, 0.08);" onmouseover="this.style.transform='translateY(-8px)'; this.style.boxShadow='0 12px 40px rgba(217, 119, 6, 0.15)';" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 4px 20px rgba(217, 119, 6, 0.08)';">
                     <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1.5rem;">
                         <div style="background: #d97706; width: 48px; height: 48px; border-radius: 12px; display: flex; align-items: center; justify-content: center;">
                             <span class="material-symbols-rounded" style="color: white; font-size: 28px;">auto_awesome</span>
                         </div>
                         <div>
-                            <h3 style="font-size: 1.5rem; font-weight: 700; color: var(--text-dark); margin: 0;">AI Platform</h3>
-                            <p style="font-size: 0.85rem; color: #d97706; font-weight: 600; margin: 0;">Cognitive Substrate</p>
+                            <h3 style="font-size: 1.5rem; font-weight: 700; color: var(--text-dark); margin: 0;">{{ __('index.rd_ai_platform') }}</h3>
+                            <p style="font-size: 0.85rem; color: #d97706; font-weight: 600; margin: 0;">{{ __('index.rd_ai_platform_subtitle') }}</p>
                         </div>
                     </div>
                     
@@ -808,17 +678,17 @@
 
                     <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin-bottom: 1.5rem;">
                         <div style="background: white; border-radius: 8px; padding: 1rem; border: 1px solid #fde68a;">
-                            <p style="color: var(--text-dark); font-weight: 600; font-size: 0.85rem; margin-bottom: 0.25rem;">Semantic</p>
-                            <p style="color: var(--text-gray); font-size: 0.8rem; margin: 0;">Vector understanding</p>
+                            <p style="color: var(--text-dark); font-weight: 600; font-size: 0.85rem; margin-bottom: 0.25rem;">{{ __('index.rd_semantic') }}</p>
+                            <p style="color: var(--text-gray); font-size: 0.8rem; margin: 0;">{{ __('index.rd_semantic_desc') }}</p>
                         </div>
                         <div style="background: white; border-radius: 8px; padding: 1rem; border: 1px solid #fde68a;">
-                            <p style="color: var(--text-dark); font-weight: 600; font-size: 0.85rem; margin-bottom: 0.25rem;">Adaptive</p>
-                            <p style="color: var(--text-gray); font-size: 0.8rem; margin: 0;">Context-aware</p>
+                            <p style="color: var(--text-dark); font-weight: 600; font-size: 0.85rem; margin-bottom: 0.25rem;">{{ __('index.rd_adaptive') }}</p>
+                            <p style="color: var(--text-gray); font-size: 0.8rem; margin: 0;">{{ __('index.rd_adaptive_desc') }}</p>
                         </div>
                     </div>
 
                     <div style="display: flex; align-items: center; gap: 0.5rem; color: #d97706; font-weight: 600;">
-                        <span>Explore Research</span>
+                        <span>{{ __('index.rd_explore') }}</span>
                         <span class="material-symbols-rounded" style="font-size: 20px;">arrow_forward</span>
                     </div>
                 </a>
@@ -837,8 +707,8 @@
     <section class="opacity-75" style="background: var(--secondary-bg);">
         <div class="container-v5">
             <div class="section-header">
-                <h2 class="section-title">What Our Clients Say <span class="badge  rounded-pill bg-warning">Demo data</span></h2>
-                <p class="section-subtitle">Feedback from our partners and clients</p>
+                <h2 class="section-title">{{ __('index.testimonials_title') }} <span class="badge  rounded-pill bg-warning">Demo data</span></h2>
+                <p class="section-subtitle">{{ __('index.testimonials_subtitle') }}</p>
             </div>
             
             <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem;">
@@ -888,7 +758,7 @@
             
             <div style="text-align: center; margin-top: 3rem;">
                 <a href="{{ route('landing.case-studies') }}" style="color: var(--primary); font-weight: 600; text-decoration: none; display: inline-flex; align-items: center; gap: 0.5rem;">
-                    <span>View More Case Studies & Testimonials</span>
+                    <span>{{ __('index.case_view_more') }}</span>
                     <span class="material-symbols-rounded">arrow_forward</span>
                 </a>
             </div>
@@ -903,17 +773,17 @@
                 <div style="position: absolute; bottom: 0; left: 0; width: 200px; height: 200px; background: rgba(255,255,255,0.05); border-radius: 50%; transform: translate(-30%, 30%);"></div>
                 
                 <div style="position: relative; z-index: 1;">
-                    <h2 style="font-size: 2.5rem; font-weight: 800; margin-bottom: 1rem;">Ready to Start Your Project?</h2>
+                    <h2 style="font-size: 2.5rem; font-weight: 800; margin-bottom: 1rem;">{{ __('index.cta_title') }}</h2>
                     <p style="font-size: 1.1rem; margin-bottom: 2.5rem; opacity: 0.95; max-width: 600px; margin-left: auto; margin-right: auto;">
                         Schedule a free 30-minute consultation to discuss your project. We'll provide optimal solutions and detailed pricing.
                     </p>
                     <div style="display: flex; gap: 1.5rem; justify-content: center; flex-wrap: wrap;">
                         <a href="{{ route('landing.contact') }}" style="background: white; color: var(--primary); padding: 1rem 2.5rem; border-radius: 8px; font-weight: 600; text-decoration: none; display: inline-flex; align-items: center; gap: 0.75rem; transition: all 0.3s ease; box-shadow: 0 4px 12px rgba(0,0,0,0.1);" onmouseover="this.style.backgroundColor='var(--secondary-bg)'; this.style.transform='translateY(-2px)'; this.style.boxShadow='0 8px 20px rgba(0,0,0,0.15)';" onmouseout="this.style.backgroundColor='white'; this.style.transform=''; this.style.boxShadow='0 4px 12px rgba(0,0,0,0.1)';">
-                            <span>Schedule Consultation</span>
+                            <span>{{ __('index.cta_consultation') }}</span>
                             <span class="material-symbols-rounded">arrow_forward</span>
                         </a>
                         <a href="{{ route('landing.pricing') }}" style="background: transparent; color: white; padding: 1rem 2.5rem; border-radius: 8px; font-weight: 600; text-decoration: none; display: inline-flex; align-items: center; gap: 0.75rem; border: 2px solid white; transition: all 0.3s ease;" onmouseover="this.style.backgroundColor='rgba(255,255,255,0.1)';" onmouseout="this.style.backgroundColor='transparent';">
-                            <span>View Cost & Plans</span>
+                            <span>{{ __('index.cta_pricing') }}</span>
                             <span class="material-symbols-rounded">receipt_long</span>
                         </a>
                     </div>

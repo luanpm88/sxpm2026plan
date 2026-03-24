@@ -13,44 +13,44 @@ class LandingPageController extends Controller
     {
         return [
             'index' => [
-                'title' => 'HKIncotech - Enterprise Software Engineering',
-                'description' => 'Phát triển phần mềm doanh nghiệp quy mô toàn cầu theo SCRUM'
+                'title' => __('meta.home_title'),
+                'description' => __('meta.home_description')
             ],
             'services' => [
-                'title' => 'Dịch Vụ - HKIncotech',
-                'description' => 'Custom Software Development, SaaS Platform, AI Knowledge Platform, Security & Compliance'
+                'title' => __('meta.services_title'),
+                'description' => __('meta.services_description')
             ],
             'scrum' => [
-                'title' => 'Quy Trình SCRUM - HKIncotech',
-                'description' => 'Phương pháp phát triển Agile SCRUM: 6 bước từ khám phá đến triển khai sản phẩm thành công'
+                'title' => __('meta.scrum_title'),
+                'description' => __('meta.scrum_description')
             ],
             'tech-stack' => [
-                'title' => 'Công Nghệ - HKIncotech',
-                'description' => 'Tech stack toàn diện: Frontend, Backend, Data, Cloud, DevOps'
+                'title' => __('meta.tech_stack_title'),
+                'description' => __('meta.tech_stack_description')
             ],
             'scaling' => [
-                'title' => 'Kiến Trúc Mở Rộng - HKIncotech',
-                'description' => 'Chiến lược scaling từ MVP đến enterprise solutions'
+                'title' => __('meta.scaling_title'),
+                'description' => __('meta.scaling_description')
             ],
             'about-us' => [
-                'title' => 'Về Chúng Tôi - HKIncotech',
-                'description' => 'Câu chuyện, team, culture, vision của HKIncotech'
+                'title' => __('meta.about_us_title'),
+                'description' => __('meta.about_us_description')
             ],
             'case-studies' => [
-                'title' => 'Case Studies - HKIncotech',
-                'description' => 'Portfolio: 50+ projects, diverse industries, proven results'
+                'title' => __('meta.case_studies_title'),
+                'description' => __('meta.case_studies_description')
             ],
             'pricing' => [
-                'title' => 'Giá - HKIncotech',
-                'description' => '3 pricing tiers: Startup, Growth, Enterprise'
+                'title' => __('meta.pricing_title'),
+                'description' => __('meta.pricing_description')
             ],
             'certifications' => [
-                'title' => 'Chứng chỉ & Tiêu chuẩn - HKIncotech',
-                'description' => 'Compliance, Security certifications, Cloud certifications, Agile certifications'
+                'title' => __('meta.certifications_title'),
+                'description' => __('meta.certifications_description')
             ],
             'contact' => [
-                'title' => 'Liên Hệ - HKIncotech',
-                'description' => 'Liên hệ với chúng tôi để tư vấn free về giải pháp phần mềm'
+                'title' => __('meta.contact_title'),
+                'description' => __('meta.contact_description')
             ]
         ];
     }
@@ -281,8 +281,8 @@ class LandingPageController extends Controller
     public function blog(): View
     {
         $metadata = [
-            'title' => 'Research & Development - HKIncotech',
-            'description' => 'Deep dive into our core research initiatives: HKSpace Platform and AI Knowledge Platform'
+            'title' => __('meta.blog_title'),
+            'description' => __('meta.blog_description')
         ];
         $navMenu = $this->getNavMenu();
         $currentPage = 'blog';

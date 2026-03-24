@@ -31,7 +31,7 @@
                 </div>
             </div>
 
-            <div style="background: #ffffff; border: 1px solid var(--border); border-radius: 12px; padding: 2rem; box-shadow: 0 10px 30px rgba(15, 107, 158, 0.08);">
+            <div style="background: #ffffff; border: 1px solid var(--border); border-radius: var(--card-radius); padding: 2rem; box-shadow: 0 10px 30px rgba(26, 77, 94, 0.08);">
                 <h2 style="font-size: 1.2rem; font-weight: 700; color: var(--text-dark); margin-bottom: 1rem;">{{ __('sme_manufacturing.hero_sidebar_title') }}</h2>
                 <div style="display: grid; gap: 0.75rem; margin-bottom: 1rem;">
                     @foreach(__('sme_manufacturing.hero_sidebar_items') as $item)

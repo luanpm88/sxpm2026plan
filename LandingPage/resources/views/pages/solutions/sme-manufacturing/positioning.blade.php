@@ -5,7 +5,7 @@
             <p class="section-subtitle">{{ __('sme_manufacturing.positioning_subtitle') }}</p>
         </div>
 
-        <div style="background: var(--secondary-bg); border: 1px solid var(--border); border-radius: 12px; padding: 1.75rem; margin-bottom: 1.5rem;">
+        <div style="background: var(--secondary-bg); border: 1px solid var(--border); border-radius: var(--card-radius); padding: 1.75rem; margin-bottom: 1.5rem;">
             <h3 style="font-size: 1.2rem; font-weight: 700; color: var(--text-dark); margin-bottom: 0.75rem;">{{ __('sme_manufacturing.positioning_context_heading') }}</h3>
             <p style="color: var(--text-gray); line-height: 1.8; margin-bottom: 0.75rem;">
                 {{ __('sme_manufacturing.positioning_context_p1') }}
@@ -17,7 +17,7 @@
 
         <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem;">
             @foreach(__('sme_manufacturing.positioning_items') as $item)
-                <div style="background: var(--secondary-bg); border: 1px solid var(--border); border-radius: 12px; padding: 1.75rem;">
+                <div style="background: var(--secondary-bg); border: 1px solid var(--border); border-radius: var(--card-radius); padding: 1.75rem;">
                     <h3 style="font-size: 1.1rem; font-weight: 700; margin-bottom: 0.75rem; color: var(--text-dark);">{{ $item['title'] }}</h3>
                     <p style="color: var(--text-gray); margin: 0; line-height: 1.7;">{{ $item['description'] }}</p>
                 </div>

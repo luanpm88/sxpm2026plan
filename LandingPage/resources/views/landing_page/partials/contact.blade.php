@@ -157,7 +157,7 @@
 <!-- Map -->
 <section style="background: var(--secondary-bg);">
     <div class="container-v5">
-        <div style="background: white; border-radius: 12px; overflow: hidden; height: 400px;">
+        <div style="background: white; border-radius: var(--card-radius); overflow: hidden; height: 400px;">
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.6047467284906!2d106.6576869!3d10.8475931!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x317529bc96bc31d5%3A0xb45cb7e22ebf8fda!2z188IEvSG0bEgU8OzLCBQaOG7nW5nIEFuIEjhu5lpIMSQ8O0gbiwgVHAuIEjhu5kgQ2jDrSBNaW5o!5e0!3m2!1svi!2svn!4v1705816000000" style="width: 100%; height: 100%; border: none;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
     </div>
@@ -190,7 +190,7 @@
 <!-- CTA -->
 <section style="background: white;">
     <div class="container-v5">
-        <div style="background: linear-gradient(135deg, var(--primary) 0%, var(--primary-light) 100%); border-radius: 12px; padding: 3.5rem 2rem; text-align: center; color: white;">
+        <div style="background: linear-gradient(135deg, var(--primary) 0%, var(--primary-light) 100%); border-radius: var(--card-radius); padding: 3.5rem 2rem; text-align: center; color: white;">
             <h2 style="font-size: 2rem; font-weight: 800; margin-bottom: 1rem;">{{ __('contact.learn_more_title') }}</h2>
             <p style="font-size: 1rem; margin-bottom: 2rem; opacity: 0.95;">
                 {{ __('contact.learn_more_subtitle') }}

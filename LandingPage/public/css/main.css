@@ -1,21 +1,26 @@
 /* ==========================================
-   HKIncotech Landing Page - Main CSS
+   HKIncotech Landing Page - Finpay-Inspired Design
+   Clean, modern fintech aesthetic
    ========================================== */
 
 /* ==========================================
-   CSS Variables & Theme
+   CSS Variables & Theme (Finpay Teal Palette)
    ========================================== */
 :root {
     --primary: #0f6b9e;
-    --primary-light: #1a8fb8;
-    --primary-dark: #0a4a6b;
-    --accent: #059669;
-    --accent-light: #d1fae5;
-    --secondary-bg: #f8fafc;
+    --primary-light: #2f8fc3;
+    --primary-dark: #0b4e73;
+    --primary-subtle: rgba(15, 107, 158, 0.06);
+    --accent: #1a8ec7;
+    --accent-light: #d9f0fb;
+    --secondary-bg: #f2f8fc;
     --text-dark: #0f172a;
-    --text-gray: #475569;
-    --text-light: #64748b;
-    --border: #e2e8f0;
+    --text-gray: #556a7b;
+    --text-light: #7b8fa0;
+    --border: #e0ebe9;
+    --card-radius: 16px;
+    --section-radius: 20px;
+    --btn-radius: 10px;
 }
 
 /* ==========================================
@@ -48,67 +53,79 @@ body {
    Utilities & Layout
    ========================================== */
 .container-v5 {
-    max-width: 1400px;
+    max-width: 1200px;
     margin: 0 auto;
     padding: 0 2rem;
 }
 
 section {
-    padding: 6rem 0;
+    padding: 5.5rem 0;
 }
 
+/* Section Header — Finpay style: small uppercase label + big title */
 .section-header {
     margin-bottom: 3.5rem;
     text-align: center;
 }
 
+.section-label {
+    display: inline-block;
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--primary);
+    margin-bottom: 0.75rem;
+}
+
 .section-title {
-    font-size: 3rem;
+    font-size: 2.6rem;
     font-weight: 800;
     color: var(--text-dark);
     margin-bottom: 1rem;
+    letter-spacing: -0.02em;
+    line-height: 1.2;
 }
 
 .section-subtitle {
-    font-size: 1.15rem;
+    font-size: 1.05rem;
     color: var(--text-gray);
-    max-width: 750px;
+    max-width: 640px;
     margin: 0 auto;
     line-height: 1.7;
 }
 
 /* ==========================================
-   Header & Navigation
+   Header & Navigation (Finpay clean nav)
    ========================================== */
 header {
-    background: rgba(255, 255, 255, 0.94);
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
-    border-bottom: 1px solid rgba(15, 23, 42, 0.08);
-    padding: 0.75rem 0;
+    background: rgba(255, 255, 255, 0.96);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border-bottom: 1px solid rgba(15, 23, 42, 0.06);
+    padding: 0.65rem 0;
     position: sticky;
     top: 0;
     z-index: 1000;
-    box-shadow: 0 2px 10px rgba(15, 23, 42, 0.06);
 }
 
 .header-container {
-    max-width: 1400px;
+    max-width: 1220px;
     margin: 0 auto;
-    padding: 0 1.25rem;
+    padding: 0 2rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 0.8rem;
+    gap: 1.25rem;
     flex-wrap: nowrap;
 }
 
 .logo {
     display: flex;
     align-items: center;
-    gap: 0.35rem;
+    gap: 0.4rem;
     font-weight: 800;
-    font-size: 0.98rem;
+    font-size: 1rem;
     color: var(--primary);
     text-decoration: none;
     flex-shrink: 0;
@@ -121,7 +138,7 @@ header {
 }
 
 .logo:hover {
-    opacity: 0.8;
+    opacity: 0.85;
 }
 
 nav {
@@ -132,57 +149,63 @@ nav {
     justify-content: flex-start;
     flex-wrap: nowrap;
     min-width: 0;
+    padding-left: 0.75rem;
     overflow: hidden;
-    padding-left: 0.4rem;
 }
 
-/* Avoid Bootstrap/global .active conflicts — use our own class */
 nav a.nav-link-v5 {
     color: var(--text-gray);
     text-decoration: none !important;
-    font-size: 0.76rem;
+    font-size: 0.82rem;
     font-weight: 500;
-    letter-spacing: 0.004em;
-    transition: color 0.2s ease, background 0.2s ease, border-color 0.2s ease;
+    letter-spacing: 0;
+    transition: color 0.22s ease;
     position: relative;
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    min-height: 34px;
-    padding: 0.38rem 0.5rem;
-    border-radius: 5px;
+    min-height: 36px;
+    padding: 0.3rem 0.55rem;
+    border-radius: 0;
     white-space: nowrap !important;
     flex-shrink: 0;
-    max-width: none;
     word-break: keep-all;
-    border-bottom: 2px solid transparent;
 }
 
 nav a.nav-link-v5:hover {
-    color: var(--primary);
-    background: rgba(15, 107, 158, 0.055);
+    color: var(--text-dark);
 }
 
 nav a.nav-link-v5--active {
-    color: var(--primary);
-    background: rgba(15, 107, 158, 0.06);
-    border-bottom-color: var(--primary);
+    color: var(--text-dark);
     font-weight: 600;
+}
+
+nav a.nav-link-v5--active::after {
+    content: "";
+    position: absolute;
+    left: 25%;
+    right: 25%;
+    bottom: 2px;
+    height: 2px;
+    border-radius: 999px;
+    background: var(--primary);
 }
 
 .btn-header {
     background: var(--primary);
     color: white;
-    padding: 0.56rem 1.12rem;
+    padding: 0.5rem 1.15rem;
     border-radius: 8px;
     border: none;
     cursor: pointer;
     font-weight: 600;
-    font-size: 0.86rem;
-    letter-spacing: 0.01em;
-    transition: background 0.2s ease, transform 0.2s ease;
+    font-size: 0.82rem;
+    letter-spacing: 0;
+    transition: background 0.2s ease, transform 0.15s ease, box-shadow 0.2s ease;
     text-decoration: none;
-    display: inline-block;
+    display: inline-flex;
+    align-items: center;
     flex-shrink: 0;
     white-space: nowrap;
 }
@@ -190,35 +213,43 @@ nav a.nav-link-v5--active {
 .btn-header:hover {
     background: var(--primary-dark);
     transform: translateY(-1px);
+    box-shadow: 0 4px 14px rgba(15, 107, 158, 0.18);
 }
 
-/* Language Menu (flag style) */
+.header-actions {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.55rem;
+    flex-shrink: 0;
+    margin-left: 0.6rem;
+}
+
+/* Language Menu */
 .lang-menu {
     position: relative;
     flex-shrink: 0;
     display: block;
     z-index: 1100;
+    margin-left: 0;
 }
 
 .lang-trigger {
-    width: 32px;
-    height: 32px;
+    width: 34px;
+    height: 34px;
     border-radius: 50%;
-    border: 1px solid #d7e6f0;
+    border: 1px solid var(--border);
     background: #ffffff;
     display: inline-flex;
     align-items: center;
     justify-content: center;
     padding: 0;
     cursor: pointer;
-    box-shadow: 0 2px 8px rgba(15, 23, 42, 0.08);
-    transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 .lang-trigger:hover {
     transform: translateY(-1px);
-    border-color: #b9d6e8;
-    box-shadow: 0 6px 14px rgba(15, 23, 42, 0.12);
+    box-shadow: 0 4px 12px rgba(15, 107, 158, 0.1);
 }
 
 .lang-current-flag {
@@ -230,11 +261,11 @@ nav a.nav-link-v5--active {
     position: absolute;
     top: calc(100% + 8px);
     right: 0;
-    min-width: 88px;
+    min-width: 90px;
     background: #ffffff;
     border: 1px solid var(--border);
-    border-radius: 10px;
-    box-shadow: 0 10px 26px rgba(15, 23, 42, 0.14);
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(15, 23, 42, 0.12);
     padding: 0.35rem;
     display: none;
     z-index: 1200;
@@ -248,21 +279,21 @@ nav a.nav-link-v5--active {
     display: flex;
     align-items: center;
     gap: 0.5rem;
-    border-radius: 7px;
-    padding: 0.42rem 0.5rem;
+    border-radius: 8px;
+    padding: 0.45rem 0.55rem;
     color: var(--text-gray);
     text-decoration: none;
-    font-size: 0.78rem;
+    font-size: 0.8rem;
     font-weight: 600;
 }
 
 .lang-dropdown a:hover {
-    background: rgba(15, 107, 158, 0.08);
+    background: var(--primary-subtle);
     color: var(--primary);
 }
 
 .lang-dropdown a.lang-option--active {
-    background: rgba(15, 107, 158, 0.12);
+    background: rgba(15, 107, 158, 0.1);
     color: var(--primary);
 }
 
@@ -282,65 +313,336 @@ nav.mobile-open {
 }
 
 /* ==========================================
-   Buttons
+   Hero Section (Finpay style)
+   ========================================== */
+.hero {
+    background: linear-gradient(160deg, #ffffff 0%, var(--secondary-bg) 60%, #e4f0ef 100%);
+    min-height: 88vh;
+    display: flex;
+    align-items: center;
+    padding: 5rem 2rem;
+    position: relative;
+    overflow: hidden;
+}
+
+.hero::after {
+    content: '';
+    position: absolute;
+    top: -50%;
+    right: -20%;
+    width: 700px;
+    height: 700px;
+    background: radial-gradient(circle, rgba(15, 107, 158, 0.04) 0%, transparent 70%);
+    border-radius: 50%;
+    pointer-events: none;
+}
+
+.hero-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    align-items: center;
+}
+
+.hero h1 {
+    font-size: 3.5rem;
+    font-weight: 800;
+    line-height: 1.12;
+    margin-bottom: 1.5rem;
+    color: var(--text-dark);
+    letter-spacing: -0.03em;
+}
+
+.hero h1 span {
+    color: var(--primary);
+}
+
+.hero-content p {
+    font-size: 1.05rem;
+    color: var(--text-gray);
+    margin-bottom: 2.5rem;
+    line-height: 1.75;
+    max-width: 480px;
+}
+
+.hero-stats {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    margin-top: 3rem;
+    padding-top: 2.5rem;
+    border-top: 1px solid var(--border);
+}
+
+.hero-stats > div > div:first-child {
+    font-size: 2.2rem;
+    font-weight: 800;
+    color: var(--primary);
+}
+
+.hero-stats > div > div:last-child {
+    font-size: 0.88rem;
+    color: var(--text-gray);
+    margin-top: 0.4rem;
+}
+
+.hero-svg-box {
+    background: white;
+    border-radius: var(--card-radius);
+    padding: 2.5rem;
+    border: 1px solid var(--border);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 420px;
+    box-shadow: 0 20px 60px rgba(15, 107, 158, 0.08);
+    position: relative;
+}
+
+/* ==========================================
+   Buttons (Finpay style)
    ========================================== */
 .btn-primary-v5 {
     background: var(--primary);
     color: white;
-    padding: 1rem 2.5rem;
-    border-radius: 8px;
+    padding: 0.9rem 2.2rem;
+    border-radius: var(--btn-radius);
     border: none;
     cursor: pointer;
     font-weight: 600;
-    font-size: 1rem;
-    transition: all 0.3s ease;
+    font-size: 0.95rem;
+    transition: all 0.25s ease;
     text-decoration: none;
     display: inline-flex;
     align-items: center;
-    gap: 0.75rem;
+    gap: 0.6rem;
 }
 
 .btn-primary-v5:hover {
     background: var(--primary-dark);
     transform: translateY(-2px);
-    box-shadow: 0 12px 24px rgba(15, 107, 158, 0.2);
+    box-shadow: 0 8px 24px rgba(15, 107, 158, 0.2);
 }
 
 .btn-secondary-v5 {
     background: white;
     color: var(--primary);
-    padding: 1rem 2.5rem;
-    border-radius: 8px;
-    border: 2px solid var(--primary);
+    padding: 0.9rem 2.2rem;
+    border-radius: var(--btn-radius);
+    border: 1.5px solid var(--border);
     cursor: pointer;
     font-weight: 600;
-    font-size: 1rem;
-    transition: all 0.3s ease;
+    font-size: 0.95rem;
+    transition: all 0.25s ease;
     text-decoration: none;
     display: inline-flex;
     align-items: center;
-    gap: 0.75rem;
+    gap: 0.6rem;
 }
 
 .btn-secondary-v5:hover {
+    border-color: var(--primary);
+    background: var(--primary-subtle);
+}
+
+/* ==========================================
+   Cards (Finpay style — larger radius, cleaner)
+   ========================================== */
+.fp-card {
+    background: white;
+    border: 1px solid var(--border);
+    border-radius: var(--card-radius);
+    padding: 2rem 1.75rem;
+    transition: all 0.3s ease;
+}
+
+.fp-card:hover {
+    border-color: rgba(15, 107, 158, 0.2);
+    box-shadow: 0 12px 32px rgba(15, 107, 158, 0.08);
+    transform: translateY(-3px);
+}
+
+.fp-card-icon {
+    width: 48px;
+    height: 48px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    margin-bottom: 1.25rem;
+    background: var(--primary-subtle);
+    color: var(--primary);
+}
+
+.fp-card h3 {
+    font-size: 1.15rem;
+    font-weight: 700;
+    color: var(--text-dark);
+    margin-bottom: 0.6rem;
+}
+
+.fp-card p {
+    color: var(--text-gray);
+    font-size: 0.92rem;
+    line-height: 1.65;
+}
+
+/* Bento Grid (Finpay "Why us" style) */
+.bento-grid {
+    display: grid;
+    gap: 1.25rem;
+}
+
+.bento-grid-2x2 {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+}
+
+.bento-card {
+    background: white;
+    border: 1px solid var(--border);
+    border-radius: var(--card-radius);
+    padding: 2rem;
+    transition: all 0.3s ease;
+}
+
+.bento-card:hover {
+    box-shadow: 0 8px 24px rgba(15, 107, 158, 0.07);
+}
+
+.bento-card-lg {
+    grid-column: span 2;
+}
+
+/* Stat number — large teal numbers */
+.fp-stat-value {
+    font-size: 3rem;
+    font-weight: 800;
+    color: var(--primary);
+    letter-spacing: -0.02em;
+    line-height: 1;
+    margin-bottom: 0.5rem;
+}
+
+.fp-stat-label {
+    font-size: 0.88rem;
+    color: var(--text-gray);
+}
+
+/* ==========================================
+   Steps Section (Finpay numbered steps)
+   ========================================== */
+.fp-step-number {
+    font-size: 4rem;
+    font-weight: 800;
+    color: var(--primary);
+    opacity: 0.12;
+    line-height: 1;
+    margin-bottom: 1rem;
+    letter-spacing: -0.04em;
+}
+
+.fp-step-card {
+    background: var(--secondary-bg);
+    border: 1px solid var(--border);
+    border-radius: var(--card-radius);
+    padding: 2rem 1.75rem;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.fp-step-card:hover {
+    background: white;
+    box-shadow: 0 8px 24px rgba(15, 107, 158, 0.08);
+}
+
+/* ==========================================
+   Pricing Cards (Finpay style)
+   ========================================== */
+.fp-pricing-card {
+    background: white;
+    border: 1px solid var(--border);
+    border-radius: var(--card-radius);
+    padding: 2.5rem 2rem;
+    transition: all 0.3s ease;
+}
+
+.fp-pricing-featured {
     background: var(--primary);
+    color: white;
+    border-color: var(--primary);
+}
+
+.fp-pricing-featured .fp-stat-value,
+.fp-pricing-featured h3,
+.fp-pricing-featured p,
+.fp-pricing-featured .fp-stat-label {
     color: white;
 }
 
 /* ==========================================
-   Footer
+   CTA Banner (Finpay dark teal banner)
+   ========================================== */
+.fp-cta-banner {
+    background: var(--primary);
+    border-radius: var(--section-radius);
+    padding: 3.5rem 3rem;
+    color: white;
+    margin: 0 2rem;
+}
+
+.fp-cta-banner h2 {
+    font-size: 2.2rem;
+    font-weight: 800;
+    margin-bottom: 1rem;
+    letter-spacing: -0.02em;
+    line-height: 1.2;
+}
+
+.fp-cta-banner p {
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 0.95rem;
+    margin-bottom: 2rem;
+    max-width: 480px;
+}
+
+.fp-cta-banner .btn-primary-v5 {
+    background: white;
+    color: var(--primary);
+}
+
+.fp-cta-banner .btn-primary-v5:hover {
+    background: #f0f7f7;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+}
+
+.fp-cta-banner .btn-secondary-v5 {
+    background: transparent;
+    color: white;
+    border-color: rgba(255, 255, 255, 0.3);
+}
+
+.fp-cta-banner .btn-secondary-v5:hover {
+    background: rgba(255, 255, 255, 0.1);
+    border-color: rgba(255, 255, 255, 0.6);
+}
+
+/* ==========================================
+   Footer (Finpay clean dark footer)
    ========================================== */
 footer {
-    background: #0f172a;
+    background: #0b1a24;
     color: white;
-    padding: 3rem 0 1.5rem;
-    margin-top: 4rem;
+    padding: 4rem 0 1.5rem;
+    margin-top: 0;
 }
 
 footer a {
-    color: rgba(255, 255, 255, 0.7);
+    color: rgba(255, 255, 255, 0.6);
     text-decoration: none;
-    transition: color 0.3s ease;
+    transition: color 0.2s ease;
+    font-size: 0.88rem;
 }
 
 footer a:hover {
@@ -348,10 +650,11 @@ footer a:hover {
 }
 
 .footer-section h3 {
-    font-size: 0.95rem;
+    font-size: 0.88rem;
     font-weight: 700;
-    margin-bottom: 1rem;
+    margin-bottom: 1.25rem;
     color: white;
+    letter-spacing: 0.01em;
 }
 
 .footer-section ul {
@@ -359,45 +662,66 @@ footer a:hover {
 }
 
 .footer-section li {
-    margin-bottom: 0.75rem;
+    margin-bottom: 0.65rem;
 }
 
 .footer-divider {
-    border-top: 1px solid rgba(255, 255, 255, 0.1);
-    margin: 2rem 0 1rem;
-    padding-top: 1rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.08);
+    margin: 2.5rem 0 1rem;
+    padding-top: 1.25rem;
     text-align: center;
-    color: rgba(255, 255, 255, 0.5);
-    font-size: 0.85rem;
+    color: rgba(255, 255, 255, 0.4);
+    font-size: 0.82rem;
+}
+
+/* ==========================================
+   Partner Logos Row
+   ========================================== */
+.fp-partners {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+    padding: 2.5rem 0;
+    opacity: 0.5;
+    filter: grayscale(100%);
+}
+
+.fp-partners img {
+    height: 28px;
+    width: auto;
+}
+
+/* ==========================================
+   Inline style overrides for blade templates
+   (make existing inline-styled cards match Finpay)
+   ========================================== */
+section[style*="background: var(--secondary-bg)"] {
+    background: var(--secondary-bg) !important;
 }
 
 /* ==========================================
    Responsive Design
    ========================================== */
 
-/* Large tablet (1280px and down) – shrink nav further */
-@media (max-width: 1280px) {
+/* Large desktop (1280px and down) */
+@media (max-width: 1380px) {
     nav a.nav-link-v5 {
-        font-size: 0.64rem;
-        padding: 0.26rem 0.28rem;
+        font-size: 0.76rem;
+        padding: 0.25rem 0.35rem;
     }
 
     .btn-header {
-        padding: 0.38rem 0.66rem;
-        font-size: 0.74rem;
+        padding: 0.45rem 0.9rem;
+        font-size: 0.78rem;
     }
 
     .logo {
-        font-size: 0.9rem;
-    }
-
-    .lang-trigger {
-        width: 31px;
-        height: 31px;
+        font-size: 0.92rem;
     }
 }
 
-/* Laptop / tablet (1279px and down) – hamburger: avoids cramped wrapping */
+/* Hamburger menu breakpoint (1279px and down) */
 @media (max-width: 1279px) {
     .mobile-menu-toggle {
         display: block;
@@ -415,14 +739,17 @@ footer a:hover {
         width: 100%;
         text-align: left;
         border-top: 1px solid var(--border);
-        border-bottom: 1px solid var(--border);
         padding: 0;
         z-index: 999;
         max-height: calc(100vh - 54px);
         overflow-x: hidden;
         overflow-y: auto;
-        box-shadow: 0 8px 24px rgba(0,0,0,0.1);
+        box-shadow: 0 12px 32px rgba(0, 0, 0, 0.08);
         justify-content: flex-start;
+    }
+
+    .header-actions {
+        margin-left: 0;
     }
 
     nav a.nav-link-v5 {
@@ -432,25 +759,67 @@ footer a:hover {
         border-bottom: 1px solid var(--border);
         white-space: normal;
         max-width: none;
-        border-bottom-color: var(--border);
+        border-radius: 0;
+    }
+
+    nav a.nav-link-v5::after {
+        display: none !important;
     }
 
     nav a.nav-link-v5--active {
         background: var(--secondary-bg);
+        color: var(--primary);
+    }
+}
+
+/* Tablet (991px and down) */
+@media (max-width: 991px) {
+    .hero-grid {
+        grid-template-columns: 1fr !important;
+        gap: 2.5rem !important;
+    }
+
+    .hero {
+        min-height: auto !important;
+        padding: 4rem 2rem !important;
+    }
+
+    .hero h1 {
+        font-size: 2.8rem !important;
+    }
+
+    .section-title {
+        font-size: 2.2rem;
+    }
+
+    .fp-cta-banner {
+        margin: 0 1rem;
+        padding: 2.5rem 2rem;
+    }
+
+    .case-study-grid {
+        grid-template-columns: 1fr !important;
+    }
+
+    .bento-grid-2x2 {
+        grid-template-columns: 1fr;
+    }
+
+    .bento-card-lg {
+        grid-column: span 1;
     }
 }
 
 /* Mobile (768px and down) */
 @media (max-width: 767px) {
     header {
-        padding: 0.75rem 0;
+        padding: 0.65rem 0;
         position: fixed;
         width: 100%;
         top: 0;
         left: 0;
         right: 0;
         z-index: 1000;
-        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
         background: white;
     }
 
@@ -465,7 +834,7 @@ footer a:hover {
     }
 
     .logo img {
-        height: 35px;
+        height: 32px;
     }
 
     .logo span {
@@ -483,8 +852,8 @@ footer a:hover {
     }
 
     nav {
-        top: 60px;
-        max-height: calc(100vh - 60px);
+        top: 58px;
+        max-height: calc(100vh - 58px);
     }
 
     nav a.nav-link-v5 {
@@ -494,7 +863,7 @@ footer a:hover {
     }
 
     body {
-        padding-top: 60px;
+        padding-top: 58px;
     }
 
     section {
@@ -507,6 +876,33 @@ footer a:hover {
 
     .container-v5 {
         padding: 0 1rem;
+    }
+
+    .hero h1 {
+        font-size: 2.2rem !important;
+    }
+
+    .hero-content p {
+        font-size: 0.95rem !important;
+    }
+
+    .hero-stats {
+        gap: 1.5rem !important;
+        grid-template-columns: 1fr !important;
+    }
+
+    .hero-svg-box {
+        min-height: 280px !important;
+    }
+
+    .fp-cta-banner {
+        margin: 0;
+        border-radius: 0;
+        padding: 2.5rem 1.5rem;
+    }
+
+    .fp-cta-banner h2 {
+        font-size: 1.6rem;
     }
 }
 
@@ -533,17 +929,14 @@ footer a:hover {
         padding: 0 1rem !important;
     }
 
-    /* Grid responsive - auto-fit with larger minmax to force single column */
     [style*="grid-template-columns: repeat(auto-fit"] {
         grid-template-columns: 1fr !important;
     }
 
-    /* Ensure 2-column grids don't break */
     [style*="grid-template-columns: 1fr 1fr"] {
         grid-template-columns: 1fr !important;
     }
 
-    /* Reduce padding on grid gaps */
     [style*="gap: 2rem"] {
         gap: 1rem !important;
     }
@@ -552,7 +945,6 @@ footer a:hover {
         gap: 1.5rem !important;
     }
 
-    /* Reduce padding on grid items */
     [style*="padding: 2.5rem"] {
         padding: 1.5rem !important;
     }

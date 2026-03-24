@@ -16,7 +16,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 
     <!-- Main CSS (v= cache-bust so header/nav fixes always apply) -->
-    <link rel="stylesheet" href="{{ asset('css/main.css') }}?v=3">
+    <link rel="stylesheet" href="{{ asset('css/main.css') }}?v=8">
 
     {{-- Critical header/lang fallback if main.css fails to load or is cached stale --}}
     <style>
@@ -74,22 +74,24 @@
                 @endforeach
             </nav>
 
-            <!-- Language Switcher -->
-            <div class="lang-menu" data-lang-menu>
-                <button class="lang-trigger" type="button" aria-label="Switch language" data-lang-trigger>
-                    <span class="lang-current-flag">{{ app()->getLocale() === 'vi' ? '🇻🇳' : '🇬🇧' }}</span>
-                </button>
-                <div class="lang-dropdown" data-lang-dropdown>
-                    <a href="{{ route('locale.switch', 'vi') }}" class="{{ app()->getLocale() === 'vi' ? 'lang-option--active' : '' }}">
-                        <span>🇻🇳</span> VI
-                    </a>
-                    <a href="{{ route('locale.switch', 'en') }}" class="{{ app()->getLocale() === 'en' ? 'lang-option--active' : '' }}">
-                        <span>🇬🇧</span> EN
-                    </a>
+            <div class="header-actions">
+                <!-- Language Switcher -->
+                <div class="lang-menu" data-lang-menu>
+                    <button class="lang-trigger" type="button" aria-label="Switch language" data-lang-trigger>
+                        <span class="lang-current-flag">{{ app()->getLocale() === 'vi' ? '🇻🇳' : '🇬🇧' }}</span>
+                    </button>
+                    <div class="lang-dropdown" data-lang-dropdown>
+                        <a href="{{ route('locale.switch', 'vi') }}" class="{{ app()->getLocale() === 'vi' ? 'lang-option--active' : '' }}">
+                            <span>🇻🇳</span> VI
+                        </a>
+                        <a href="{{ route('locale.switch', 'en') }}" class="{{ app()->getLocale() === 'en' ? 'lang-option--active' : '' }}">
+                            <span>🇬🇧</span> EN
+                        </a>
+                    </div>
                 </div>
-            </div>
 
-            <a href="{{ route('landing.contact') }}" class="btn-header">{{ __('nav.get_started') }}</a>
+                <a href="{{ route('landing.contact') }}" class="btn-header">{{ __('nav.get_started') }}</a>
+            </div>
         </div>
     </header>
 
@@ -99,16 +101,19 @@
     <!-- Footer -->
     <footer>
         <div class="container-v5">
-            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem; margin-bottom: 2rem;">
+            <div style="display: grid; grid-template-columns: 1.5fr 1fr 1fr 1fr 1fr; gap: 2.5rem; margin-bottom: 2.5rem;">
                 <!-- Company Info -->
                 <div class="footer-section">
-                    <h3>{{ __('footer.about_title') }}</h3>
-                    <p style="color: rgba(255, 255, 255, 0.7); font-size: 0.9rem; line-height: 1.6;">
+                    <a href="{{ route('landing.index') }}" class="logo" style="color: white; margin-bottom: 1rem; display: inline-flex;">
+                        <img src="{{ asset('img/logo.svg') }}" alt="HKIncotech" style="filter: brightness(10);">
+                        <span style="transform: translateY(5px)">INCOTECH</span>
+                    </a>
+                    <p style="color: rgba(255, 255, 255, 0.6); font-size: 0.88rem; line-height: 1.65; margin-top: 1rem;">
                         {{ __('footer.about_desc') }}
                     </p>
                 </div>
 
-                <!-- Services -->
+                <!-- Solutions -->
                 <div class="footer-section">
                     <h3>{{ __('footer.services_title') }}</h3>
                     <ul>
@@ -137,10 +142,18 @@
                         <li><a href="{{ route('landing.about-us') }}">{{ __('footer.company.about') }}</a></li>
                         <li><a href="{{ route('solutions.sme-manufacturing') }}">{{ __('footer.company.solutions') }}</a></li>
                         <li><a href="{{ route('landing.case-studies') }}">{{ __('footer.company.case_studies') }}</a></li>
+                        <li><a href="{{ route('landing.contact') }}">{{ __('footer.company.contact') }}</a></li>
+                    </ul>
+                </div>
+
+                <!-- Learn -->
+                <div class="footer-section">
+                    <h3>Learn</h3>
+                    <ul>
                         <li><a href="{{ route('landing.blog.r_and_d') }}">{{ __('footer.company.rd') }}</a></li>
                         <li><a href="{{ route('landing.certifications') }}">{{ __('footer.company.certifications') }}</a></li>
-                        <li><a href="{{ route('landing.contact') }}">{{ __('footer.company.contact') }}</a></li>
                         <li><a href="{{ route('landing.pricing') }}">{{ __('footer.company.pricing') }}</a></li>
+                        <li><a href="{{ route('landing.scrum') }}">{{ __('nav.scrum') }}</a></li>
                     </ul>
                 </div>
             </div>

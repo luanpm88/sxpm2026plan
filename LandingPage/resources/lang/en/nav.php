@@ -13,4 +13,5 @@ return [
     'pricing'       => 'Cost & Plans',
     'contact'       => 'Contact',
     'get_started'   => 'Get Started',
+    'login'         => 'Login',
 ];

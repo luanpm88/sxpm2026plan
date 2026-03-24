@@ -19,6 +19,7 @@
     <section>
         <div class="container-v5">
             <div class="section-header">
+                <span class="section-label">OUR STACK</span>
                 <h2 class="section-title">{{ __('tech_stack.stack_title') }}</h2>
                 <p class="section-subtitle">{{ __('tech_stack.stack_subtitle') }}</p>
             </div>
@@ -28,7 +29,7 @@
                 $tech_categories = __('tech_stack.categories');
                 @endphp
                 @foreach($tech_categories as $cat)
-                <div style="background: white; border: 1px solid var(--border); border-radius: 12px; overflow: hidden; transition: all 0.3s ease;" onmouseover="this.style.borderColor='var(--primary)'; this.style.boxShadow='0 12px 30px rgba(15, 107, 158, 0.12)';" onmouseout="this.style.borderColor='var(--border)'; this.style.boxShadow='';">
+                <div style="background: white; border: 1px solid var(--border); border-radius: var(--card-radius); overflow: hidden; transition: all 0.3s ease;" onmouseover="this.style.borderColor='var(--primary)'; this.style.boxShadow='0 12px 30px rgba(26, 77, 94, 0.12)';" onmouseout="this.style.borderColor='var(--border)'; this.style.boxShadow='';">
                     <div style="background: linear-gradient(135deg, var(--primary) 0%, var(--primary-light) 100%); color: white; padding: 2rem; display: flex; align-items: center; gap: 1rem;">
                         <div style="font-size: 2.5rem;">
                             <span class="material-symbols-rounded">{{ $cat['icon'] }}</span>
@@ -57,6 +58,7 @@
     <section>
         <div class="container-v5">
             <div class="section-header">
+                <span class="section-label">PERFORMANCE</span>
                 <h2 class="section-title">{{ __('tech_stack.metrics_title') }}</h2>
                 <p class="section-subtitle">{{ __('tech_stack.metrics_subtitle') }}</p>
             </div>
@@ -66,7 +68,7 @@
                 $metrics = __('tech_stack.metrics');
                 @endphp
                 @foreach($metrics as $m)
-                <div style="background: white; border: 1px solid var(--border); border-radius: 12px; padding: 2rem; transition: all 0.3s ease;" onmouseover="this.style.boxShadow='0 12px 30px rgba(15, 107, 158, 0.1)';" onmouseout="this.style.boxShadow='';">
+                <div style="background: white; border: 1px solid var(--border); border-radius: var(--card-radius); padding: 2rem; transition: all 0.3s ease;" onmouseover="this.style.boxShadow='0 12px 30px rgba(26, 77, 94, 0.1)';" onmouseout="this.style.boxShadow='';">
                     <div style="font-size: 2.5rem; font-weight: 800; color: var(--primary); margin-bottom: 0.5rem;">
                         {{ $m['metric'] }}
                     </div>
@@ -86,6 +88,7 @@
     <section style="background: var(--secondary-bg);">
         <div class="container-v5">
             <div class="section-header">
+                <span class="section-label">PLATFORMS</span>
                 <h2 class="section-title">{{ __('tech_stack.platforms_title') }}</h2>
                 <p class="section-subtitle">{{ __('tech_stack.platforms_subtitle') }}</p>
             </div>
@@ -95,7 +98,7 @@
                 $platforms = __('tech_stack.platforms');
                 @endphp
                 @foreach($platforms as $platform)
-                <div style="background: white; border-radius: 12px; padding: 2.5rem; transition: all 0.3s ease; border: 1px solid var(--border);" onmouseover="this.style.transform='translateY(-8px)'; this.style.boxShadow='0 20px 40px rgba(15, 107, 158, 0.15)';" onmouseout="this.style.transform=''; this.style.boxShadow='';">
+                <div style="background: white; border-radius: var(--card-radius); padding: 2.5rem; transition: all 0.3s ease; border: 1px solid var(--border);" onmouseover="this.style.transform='translateY(-8px)'; this.style.boxShadow='0 20px 40px rgba(26, 77, 94, 0.15)';" onmouseout="this.style.transform=''; this.style.boxShadow='';">
                     <div style="font-size: 3rem; color: var(--primary); margin-bottom: 1.5rem;">
                         <span class="material-symbols-rounded" style="font-size: 3rem;">{{ $platform['icon'] }}</span>
                     </div>
@@ -127,6 +130,7 @@
     <section style="background: white;">
         <div class="container-v5">
             <div class="section-header">
+                <span class="section-label">BEST PRACTICES</span>
                 <h2 class="section-title">{{ __('tech_stack.practices_title') }}</h2>
                 <p class="section-subtitle">{{ __('tech_stack.practices_subtitle') }}</p>
             </div>
@@ -136,7 +140,7 @@
                 $practices = __('tech_stack.practices');
                 @endphp
                 @foreach($practices as $p)
-                <div style="background: white; border-radius: 12px; padding: 2rem; transition: all 0.3s ease; border: 1px solid var(--border);" onmouseover="this.style.borderColor='var(--primary)'; this.style.boxShadow='0 12px 30px rgba(15, 107, 158, 0.1)';" onmouseout="this.style.borderColor='var(--border)'; this.style.boxShadow='';">
+                <div style="background: white; border-radius: var(--card-radius); padding: 2rem; transition: all 0.3s ease; border: 1px solid var(--border);" onmouseover="this.style.borderColor='var(--primary)'; this.style.boxShadow='0 12px 30px rgba(26, 77, 94, 0.1)';" onmouseout="this.style.borderColor='var(--border)'; this.style.boxShadow='';">
                     <div style="font-size: 2.5rem; color: var(--primary); margin-bottom: 1rem;">
                         <span class="material-symbols-rounded">{{ $p['icon'] }}</span>
                     </div>
@@ -158,7 +162,7 @@
     <!-- CTA -->
     <section>
         <div class="container-v5">
-            <div style="background: linear-gradient(135deg, var(--primary) 0%, var(--primary-light) 100%); border-radius: 12px; padding: 3.5rem 2rem; text-align: center; color: white;">
+            <div style="background: linear-gradient(135deg, var(--primary) 0%, var(--primary-light) 100%); border-radius: var(--card-radius); padding: 3.5rem 2rem; text-align: center; color: white;">
                 <h2 style="font-size: 2.5rem; font-weight: 800; margin-bottom: 1rem;">{{ __('tech_stack.cta_title') }}</h2>
                 <p style="font-size: 1.1rem; margin-bottom: 2rem; opacity: 0.95;">
                     {{ __('tech_stack.cta_desc') }}

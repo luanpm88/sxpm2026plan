@@ -40,7 +40,7 @@
         </div>
 
         <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2rem;">
-            <div style="background: white; border-radius: 12px; padding: 2rem; border: 1px solid var(--border);">
+            <div style="background: white; border-radius: var(--card-radius); padding: 2rem; border: 1px solid var(--border);">
                 <div style="font-size: 2.5rem; color: var(--primary); margin-bottom: 1rem;">
                     <span class="material-symbols-rounded">architecture</span>
                 </div>
@@ -50,7 +50,7 @@
                 </p>
             </div>
 
-            <div style="background: white; border-radius: 12px; padding: 2rem; border: 1px solid var(--border);">
+            <div style="background: white; border-radius: var(--card-radius); padding: 2rem; border: 1px solid var(--border);">
                 <div style="font-size: 2.5rem; color: var(--primary); margin-bottom: 1rem;">
                     <span class="material-symbols-rounded">psychology</span>
                 </div>
@@ -60,7 +60,7 @@
                 </p>
             </div>
 
-            <div style="background: white; border-radius: 12px; padding: 2rem; border: 1px solid var(--border);">
+            <div style="background: white; border-radius: var(--card-radius); padding: 2rem; border: 1px solid var(--border);">
                 <div style="font-size: 2.5rem; color: var(--primary); margin-bottom: 1rem;">
                     <span class="material-symbols-rounded">security</span>
                 </div>
@@ -70,7 +70,7 @@
                 </p>
             </div>
 
-            <div style="background: white; border-radius: 12px; padding: 2rem; border: 1px solid var(--border);">
+            <div style="background: white; border-radius: var(--card-radius); padding: 2rem; border: 1px solid var(--border);">
                 <div style="font-size: 2.5rem; color: var(--primary); margin-bottom: 1rem;">
                     <span class="material-symbols-rounded">cloud</span>
                 </div>
@@ -80,7 +80,7 @@
                 </p>
             </div>
 
-            <div style="background: white; border-radius: 12px; padding: 2rem; border: 1px solid var(--border);">
+            <div style="background: white; border-radius: var(--card-radius); padding: 2rem; border: 1px solid var(--border);">
                 <div style="font-size: 2.5rem; color: var(--primary); margin-bottom: 1rem;">
                     <span class="material-symbols-rounded">data_object</span>
                 </div>
@@ -90,7 +90,7 @@
                 </p>
             </div>
 
-            <div style="background: white; border-radius: 12px; padding: 2rem; border: 1px solid var(--border);">
+            <div style="background: white; border-radius: var(--card-radius); padding: 2rem; border: 1px solid var(--border);">
                 <div style="font-size: 2.5rem; color: var(--primary); margin-bottom: 1rem;">
                     <span class="material-symbols-rounded">auto_awesome</span>
                 </div>
@@ -106,7 +106,7 @@
 <!-- CTA -->
 <section style="background: white;">
     <div class="container-v5">
-        <div style="background: linear-gradient(135deg, var(--primary) 0%, var(--primary-light) 100%); border-radius: 12px; padding: 3.5rem 2rem; text-align: center; color: white;">
+        <div style="background: linear-gradient(135deg, var(--primary) 0%, var(--primary-light) 100%); border-radius: var(--card-radius); padding: 3.5rem 2rem; text-align: center; color: white;">
             <h2 style="font-size: 2.5rem; font-weight: 800; margin-bottom: 1rem;">Interested in Our R&D?</h2>
             <p style="font-size: 1.1rem; margin-bottom: 2rem; opacity: 0.95;">
                 Let's discuss how our research-driven platforms can power your enterprise.

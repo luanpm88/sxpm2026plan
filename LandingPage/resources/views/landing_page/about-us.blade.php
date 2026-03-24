@@ -20,6 +20,7 @@
     <section>
         <div class="container-v5">
             <div class="section-header">
+                <span class="section-label">OUR STORY</span>
                 <h2 class="section-title">{{ __('about.story_title') }}</h2>
                 <p class="section-subtitle">{{ __('about.story_subtitle') }}</p>
             </div>
@@ -56,23 +57,23 @@
                     </p>
                 </div>
                 
-                <div style="background: white; border-radius: 12px; padding: 2rem; border: 1px solid var(--border);">
+                <div style="background: white; border-radius: var(--card-radius); padding: 2rem; border: 1px solid var(--border);">
                     <div style="position: relative; max-width: 500px; margin: 0 auto;">
                         @php $milestones = __('about.milestones'); @endphp
                         @foreach($milestones as $index => $milestone)
                         <div class="d-flex align-items-start position-relative" style="margin-bottom: {{ $index < count($milestones) - 1 ? '2rem' : '0' }};">
                             <!-- Timeline Line -->
                             @if($index < count($milestones) - 1)
-                            <div style="position: absolute; left: 22px; top: 48px; width: 3px; height: calc(100% + 2rem); background: linear-gradient(180deg, var(--primary) 0%, rgba(15, 107, 158, 0.2) 100%);"></div>
+                            <div style="position: absolute; left: 22px; top: 48px; width: 3px; height: calc(100% + 2rem); background: linear-gradient(180deg, var(--primary) 0%, rgba(26, 77, 94, 0.2) 100%);"></div>
                             @endif
                             
                             <!-- Circle Number -->
-                            <div class="flex-shrink-0" style="width: 48px; height: 48px; border-radius: 50%; background: {{ $milestone['highlight'] ? 'var(--primary)' : 'white' }}; border: 3px solid var(--primary); display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 1.1rem; color: {{ $milestone['highlight'] ? 'white' : 'var(--primary)' }}; box-shadow: 0 2px 8px rgba(15, 107, 158, 0.15); position: relative; z-index: 1;">
+                            <div class="flex-shrink-0" style="width: 48px; height: 48px; border-radius: 50%; background: {{ $milestone['highlight'] ? 'var(--primary)' : 'white' }}; border: 3px solid var(--primary); display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 1.1rem; color: {{ $milestone['highlight'] ? 'white' : 'var(--primary)' }}; box-shadow: 0 2px 8px rgba(26, 77, 94, 0.15); position: relative; z-index: 1;">
                                 {{ $index + 1 }}
                             </div>
                             
                             <!-- Content Card -->
-                            <div class="flex-grow-1 ms-3" style="background: {{ $milestone['highlight'] ? 'rgba(15, 107, 158, 0.05)' : '#f9fafb' }}; border: {{ $milestone['highlight'] ? '2px solid var(--primary)' : '1px solid #e5e7eb' }}; border-radius: 8px; padding: 1rem 1.25rem;">
+                            <div class="flex-grow-1 ms-3" style="background: {{ $milestone['highlight'] ? 'rgba(26, 77, 94, 0.05)' : '#f9fafb' }}; border: {{ $milestone['highlight'] ? '2px solid var(--primary)' : '1px solid #e5e7eb' }}; border-radius: 8px; padding: 1rem 1.25rem;">
                                 <h5 class="mb-1" style="color: var(--primary); font-weight: 700; font-size: 1rem;">
                                     {{ $milestone['year'] }}: {{ $milestone['title'] }}
                                 </h5>
@@ -92,13 +93,14 @@
     <section style="background: var(--secondary-bg);">
         <div class="container-v5">
             <div class="section-header">
+                <span class="section-label">OUR VALUES</span>
                 <h2 class="section-title">{{ __('about.values_title') }}</h2>
                 <p class="section-subtitle">{{ __('about.values_subtitle') }}</p>
             </div>
 
             <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2rem;">
                 @foreach(__('about.values') as $v)
-                <div style="background: white; border-radius: 12px; padding: 2rem; text-align: center;">
+                <div style="background: white; border-radius: var(--card-radius); padding: 2rem; text-align: center;">
                     <div style="font-size: 2.5rem; color: var(--primary); margin-bottom: 1rem;">
                         <span class="material-symbols-rounded">{{ $v['icon'] }}</span>
                     </div>
@@ -118,6 +120,7 @@
     <section class="opacity-75">
         <div class="container-v5">
             <div class="section-header">
+                <span class="section-label">OUR TEAM</span>
                 <h2 class="section-title">{{ __('about.team_title') }}  <span class="badge  rounded-pill bg-warning">{{ __('about.team_draft_badge') }}</span></h2>
                 <p class="section-subtitle">{{ __('about.team_subtitle') }}</p>
             </div>
@@ -125,7 +128,7 @@
             <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2rem;">
                 @php $leaders = __('about.team'); @endphp
                 @foreach($leaders as $leader)
-                <div style="background: white; border: 1px solid var(--border); border-radius: 12px; overflow: hidden; transition: all 0.3s ease;" onmouseover="this.style.borderColor='var(--primary)'; this.style.boxShadow='0 12px 30px rgba(15, 107, 158, 0.1)';" onmouseout="this.style.borderColor='var(--border)'; this.style.boxShadow='';">
+                <div style="background: white; border: 1px solid var(--border); border-radius: var(--card-radius); overflow: hidden; transition: all 0.3s ease;" onmouseover="this.style.borderColor='var(--primary)'; this.style.boxShadow='0 12px 30px rgba(26, 77, 94, 0.1)';" onmouseout="this.style.borderColor='var(--border)'; this.style.boxShadow='';">
                     <div style="background: linear-gradient(135deg, var(--primary) 0%, var(--primary-light) 100%); height: 150px;"></div>
                     <div style="padding: 1.5rem; text-align: center; margin-top: -60px;">
                         <div style="width: 120px; height: 120px; background: white; border: 3px solid var(--border); border-radius: 50%; margin: 0 auto 1rem; display: flex; align-items: center; justify-content: center;">
@@ -160,13 +163,14 @@
     <section style="background: white;">
         <div class="container-v5">
             <div class="section-header">
+                <span class="section-label">ACHIEVEMENTS</span>
                 <h2 class="section-title">{{ __('about.achievements_title') }}</h2>
                 <p class="section-subtitle">{{ __('about.achievements_subtitle') }}</p>
             </div>
 
             <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem;">
                 @foreach(__('about.achievements') as $a)
-                <div style="background: white; border-radius: 12px; padding: 2.5rem; text-align: center; border: 1px solid var(--border);">
+                <div style="background: white; border-radius: var(--card-radius); padding: 2.5rem; text-align: center; border: 1px solid var(--border);">
                     <div style="font-size: 2.5rem; font-weight: 800; color: var(--primary); margin-bottom: 0.5rem;">
                         {{ $a['num'] }}
                     </div>
@@ -185,7 +189,7 @@
     <!-- CTA -->
     <section style="background: var(--secondary-bg);">
         <div class="container-v5">
-            <div style="background: linear-gradient(135deg, var(--primary) 0%, var(--primary-light) 100%); border-radius: 12px; padding: 3.5rem 2rem; text-align: center; color: white;">
+            <div style="background: linear-gradient(135deg, var(--primary) 0%, var(--primary-light) 100%); border-radius: var(--card-radius); padding: 3.5rem 2rem; text-align: center; color: white;">
                 <h2 style="font-size: 2.5rem; font-weight: 800; margin-bottom: 1rem;">{{ __('about.cta_title') }}</h2>
                 <p style="font-size: 1.1rem; margin-bottom: 2rem; opacity: 0.95;">
                     {{ __('about.cta_desc') }}

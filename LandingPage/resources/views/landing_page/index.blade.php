@@ -9,12 +9,13 @@
     <section id="services" style="background: var(--secondary-bg);">
         <div class="container-v5">
             <div class="section-header">
+                <span class="section-label">OUR SERVICES</span>
                 <h2 class="section-title">{{ __('index.services_title') }}</h2>
                 <p class="section-subtitle">{{ __('index.services_subtitle') }}</p>
             </div>
-            
+
             <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem;">
-                <div style="background: white; border: 1px solid var(--border); border-radius: 12px; padding: 2.5rem 2rem; transition: all 0.3s ease; position: relative;" onmouseover="this.style.borderColor='var(--primary)'; this.style.boxShadow='0 12px 30px rgba(15, 107, 158, 0.12)';" onmouseout="this.style.borderColor='var(--border)'; this.style.boxShadow='';">
+                <div class="fp-card" style="background: white; border: 1px solid var(--border); border-radius: var(--card-radius); padding: 2.5rem 2rem; transition: all 0.3s ease; position: relative;">
                     <div style="font-size: 3rem; color: var(--primary); margin-bottom: 1rem;">
                         <span class="material-symbols-rounded">code</span>
                     </div>
@@ -42,8 +43,8 @@
                     </ul>
                     <a href="{{ route('landing.services') }}" style="color: var(--primary); font-weight: 600; text-decoration: none;">{{ __('index.view_details') }}</a>
                 </div>
-                
-                <div style="background: white; border: 1px solid var(--border); border-radius: 12px; padding: 2.5rem 2rem; transition: all 0.3s ease;" onmouseover="this.style.borderColor='var(--primary)'; this.style.boxShadow='0 12px 30px rgba(15, 107, 158, 0.12)';" onmouseout="this.style.borderColor='var(--border)'; this.style.boxShadow='';">
+
+                <div class="fp-card" style="background: white; border: 1px solid var(--border); border-radius: var(--card-radius); padding: 2.5rem 2rem; transition: all 0.3s ease;">
                     <div style="font-size: 3rem; color: var(--primary); margin-bottom: 1rem;">
                         <span class="material-symbols-rounded">workspace_premium</span>
                     </div>
@@ -71,8 +72,8 @@
                     </ul>
                     <a href="{{ route('landing.services') }}" style="color: var(--primary); font-weight: 600; text-decoration: none;">{{ __('index.view_details') }}</a>
                 </div>
-                
-                <div style="background: white; border: 1px solid var(--border); border-radius: 12px; padding: 2.5rem 2rem; transition: all 0.3s ease;" onmouseover="this.style.borderColor='var(--primary)'; this.style.boxShadow='0 12px 30px rgba(15, 107, 158, 0.12)';" onmouseout="this.style.borderColor='var(--border)'; this.style.boxShadow='';">
+
+                <div class="fp-card" style="background: white; border: 1px solid var(--border); border-radius: var(--card-radius); padding: 2.5rem 2rem; transition: all 0.3s ease;">
                     <div style="font-size: 3rem; color: var(--primary); margin-bottom: 1rem;">
                         <span class="material-symbols-rounded">psychology</span>
                     </div>
@@ -100,8 +101,8 @@
                     </ul>
                     <a href="{{ route('landing.services') }}" style="color: var(--primary); font-weight: 600; text-decoration: none;">{{ __('index.view_details') }}</a>
                 </div>
-                
-                <div style="background: white; border: 1px solid var(--border); border-radius: 12px; padding: 2.5rem 2rem; transition: all 0.3s ease;" onmouseover="this.style.borderColor='var(--primary)'; this.style.boxShadow='0 12px 30px rgba(15, 107, 158, 0.12)';" onmouseout="this.style.borderColor='var(--border)'; this.style.boxShadow='';">
+
+                <div class="fp-card" style="background: white; border: 1px solid var(--border); border-radius: var(--card-radius); padding: 2.5rem 2rem; transition: all 0.3s ease;">
                     <div style="font-size: 3rem; color: var(--primary); margin-bottom: 1rem;">
                         <span class="material-symbols-rounded">shield</span>
                     </div>
@@ -137,10 +138,11 @@
     <section id="process">
         <div class="container-v5">
             <div class="section-header">
+                <span class="section-label">OUR PROCESS</span>
                 <h2 class="section-title">{{ __('index.scrum_title') }}</h2>
                 <p class="section-subtitle">{{ __('index.scrum_subtitle') }}</p>
             </div>
-            
+
             <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 1.5rem;">
                 @php
                 $processes = [
@@ -153,7 +155,7 @@
                 ];
                 @endphp
                 @foreach($processes as $p)
-                <div style="background: white; border: 1px solid var(--border); border-radius: 12px; padding: 2rem 1.5rem; text-align: center; transition: all 0.3s ease;" onmouseover="this.style.borderColor='var(--primary)'; this.style.boxShadow='0 10px 30px rgba(15, 107, 158, 0.1)';" onmouseout="this.style.borderColor='var(--border)'; this.style.boxShadow='';">
+                <div class="fp-card" style="background: white; border: 1px solid var(--border); border-radius: var(--card-radius); padding: 2rem 1.5rem; text-align: center; transition: all 0.3s ease;">
                     <div style="font-size: 2.5rem; color: var(--primary); margin-bottom: 1rem;">
                         <span class="material-symbols-rounded">{{ $p['icon'] }}</span>
                     </div>
@@ -162,7 +164,7 @@
                 </div>
                 @endforeach
             </div>
-            
+
             <div style="text-align: center; margin-top: 3rem;">
                 <a href="{{ route('landing.scrum') }}" class="btn-primary-v5">
                     <span>{{ __('index.scrum_learn') }}</span>
@@ -176,10 +178,11 @@
     <section style="background: var(--secondary-bg);">
         <div class="container-v5">
             <div class="section-header">
+                <span class="section-label">TECHNOLOGY</span>
                 <h2 class="section-title">{{ __('index.tech_title') }}</h2>
                 <p class="section-subtitle">{{ __('index.tech_subtitle') }}</p>
             </div>
-            
+
             <!-- Tech Stack Grid -->
             <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 2rem; margin-bottom: 3rem;">
                 @php
@@ -194,7 +197,7 @@
                         'icon' => 'storage',
                         'title' => __('index.tech_backend'),
                         'techs' => ['Node.js, Python, Java, Go', 'FastAPI, NestJS', 'GraphQL, REST APIs', 'Microservices'],
-                        'color' => 'rgb(15, 107, 158)'
+                        'color' => 'rgb(26, 77, 94)'
                     ],
                     [
                         'icon' => 'database',
@@ -235,9 +238,7 @@
                 ];
                 @endphp
                 @foreach($tech_categories as $cat)
-                <div style="background: white; border: 1px solid var(--border); border-radius: 12px; padding: 1.75rem; transition: all 0.3s ease;" 
-                     onmouseover="this.style.borderColor='{{ $cat['color'] }}'; this.style.boxShadow='0 8px 20px rgba(15, 107, 158, 0.1)'; this.style.transform='translateY(-2px)';" 
-                     onmouseout="this.style.borderColor='var(--border)'; this.style.boxShadow=''; this.style.transform='';">
+                <div class="fp-card" style="background: white; border: 1px solid var(--border); border-radius: var(--card-radius); padding: 1.75rem; transition: all 0.3s ease;">
                     <div style="display: flex; align-items: center; gap: 0.75rem; margin-bottom: 1rem;">
                         <div style="font-size: 1.75rem; color: {{ $cat['color'] }}; line-height: 1;">
                             <span class="material-symbols-rounded">{{ $cat['icon'] }}</span>
@@ -255,9 +256,9 @@
                 </div>
                 @endforeach
             </div>
-            
+
             <!-- Summary Stats -->
-            <div style="background: white; border-radius: 12px; padding: 2.5rem; border: 1px solid var(--border); margin-bottom: 2.5rem;">
+            <div style="background: white; border-radius: var(--card-radius); padding: 2.5rem; border: 1px solid var(--border); margin-bottom: 2.5rem; box-shadow: 0 12px 32px rgba(26, 77, 94, 0.08);">
                 <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 2rem; text-align: center;">
                     <div>
                         <div style="font-size: 2.5rem; font-weight: 800; color: var(--primary); margin-bottom: 0.5rem;">8</div>
@@ -277,7 +278,7 @@
                     </div>
                 </div>
             </div>
-            
+
             <div style="text-align: center;">
                 <a href="{{ route('landing.tech-stack') }}" class="btn-secondary-v5" style="display: inline-flex; align-items: center; gap: 0.75rem;">
                     <span>{{ __('index.tech_view') }}</span>
@@ -291,10 +292,11 @@
     <section>
         <div class="container-v5">
             <div class="section-header">
+                <span class="section-label">SCALING JOURNEY</span>
                 <h2 class="section-title">{{ __('index.scaling_title') }}</h2>
                 <p class="section-subtitle">{{ __('index.scaling_subtitle') }}</p>
             </div>
-            
+
             <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 2rem;">
                 @php
                 $scaling_phases = [
@@ -307,7 +309,7 @@
                 ];
                 @endphp
                 @foreach($scaling_phases as $sp)
-                <div style="background: white; border: 1px solid var(--border); border-radius: 12px; padding: 2rem 1.5rem; text-align: center; position: relative; transition: all 0.3s ease;" onmouseover="this.style.borderColor='var(--primary)'; this.style.boxShadow='0 12px 30px rgba(15, 107, 158, 0.12)'; this.style.transform='translateY(-5px)';" onmouseout="this.style.borderColor='var(--border)'; this.style.boxShadow=''; this.style.transform='';">
+                <div class="fp-card" style="background: white; border: 1px solid var(--border); border-radius: var(--card-radius); padding: 2rem 1.5rem; text-align: center; position: relative; transition: all 0.3s ease;">
                     <div style="position: absolute; top: -15px; left: 50%; transform: translateX(-50%); background: var(--primary); color: white; padding: 0.4rem 0.8rem; border-radius: 20px; font-size: 0.75rem; font-weight: 700;">
                         {{ $sp['phase'] }}
                     </div>
@@ -319,7 +321,7 @@
                 </div>
                 @endforeach
             </div>
-            
+
             <div style="text-align: center; margin-top: 3rem;">
                 <a href="{{ route('landing.scaling') }}" class="btn-primary-v5">
                     <span>{{ __('index.scaling_explore') }}</span>
@@ -333,10 +335,11 @@
     <section style="background: var(--secondary-bg);">
         <div class="container-v5">
             <div class="section-header">
+                <span class="section-label">WHY CHOOSE US</span>
                 <h2 class="section-title">{{ __('index.why_title') }}</h2>
                 <p class="section-subtitle">{{ __('index.why_subtitle') }}</p>
             </div>
-            
+
             <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2rem;">
                 @php
                 $features = [
@@ -349,7 +352,7 @@
                 ];
                 @endphp
                 @foreach($features as $f)
-                <div style="background: white; padding: 2rem; border-radius: 12px; border: 1px solid var(--border); text-align: center; transition: all 0.3s ease;" onmouseover="this.style.borderColor='var(--primary)'; this.style.boxShadow='0 12px 30px rgba(15, 107, 158, 0.12)'; this.style.transform='translateY(-5px)';" onmouseout="this.style.borderColor='var(--border)'; this.style.boxShadow=''; this.style.transform='';">
+                <div class="fp-card" style="background: white; padding: 2rem; border-radius: var(--card-radius); border: 1px solid var(--border); text-align: center; transition: all 0.3s ease;">
                     <div style="font-size: 3rem; color: var(--primary); margin-bottom: 1rem;">
                         <span class="material-symbols-rounded">{{ $f['icon'] }}</span>
                     </div>
@@ -365,16 +368,17 @@
     <section>
         <div class="container-v5">
             <div class="section-header">
+                <span class="section-label">CASE STUDIES</span>
                 <h2 class="section-title">{{ __('index.case_title') }}</h2>
                 <p class="section-subtitle">{{ __('index.case_subtitle') }}</p>
             </div>
-            
+
             <!-- Carousel Container -->
             <div style="position: relative;">
                 <!-- Slides Wrapper -->
-                <div id="casesCarousel" style="overflow: hidden; border-radius: 12px; background: white; border: 1px solid var(--border); box-shadow: 0 10px 40px rgba(15, 107, 158, 0.08);">
+                <div id="casesCarousel" style="overflow: hidden; border-radius: var(--card-radius); background: white; border: 1px solid var(--border); box-shadow: 0 12px 32px rgba(26, 77, 94, 0.08);">
                     <div id="carouselInner" style="display: flex; transition: transform 0.5s ease-in-out;">
-                        
+
                         @php
                         $featured_cases = [
                             [
@@ -437,7 +441,7 @@
                             ]
                         ];
                         @endphp
-                        
+
                         @foreach($featured_cases as $case)
                         <div class="carousel-slide" style="min-width: 100%; box-sizing: border-box;">
                             <div class="case-study-grid" style="display: grid; grid-template-columns: 1fr 1fr; gap: 0;">
@@ -451,7 +455,7 @@
                                     <p style="color: var(--text-gray); font-size: 1rem; line-height: 1.8; margin-bottom: 2rem;">
                                         {{ $case['description'] }}
                                     </p>
-                                    
+
                                     <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; margin-bottom: 2rem;">
                                         @foreach($case['metrics'] as $metric)
                                         <div>
@@ -460,13 +464,13 @@
                                         </div>
                                         @endforeach
                                     </div>
-                                    
+
                                     <a href="{{ route('landing.case-studies') }}" style="color: var(--primary); font-weight: 600; text-decoration: none; display: inline-flex; align-items: center; gap: 0.5rem;">
                                         <span>{{ __('index.case_read') }}</span>
                                         <span class="material-symbols-rounded">arrow_forward</span>
                                     </a>
                                 </div>
-                                
+
                                 <div class="position-relative @if($case['ongoing']) opacity-75 @endif" style="background: linear-gradient(135deg, {{ $case['badge_bg'] }} 0%, {{ $case['badge_bg'] }}dd 0%); padding: 5rem; display: flex; align-items: center; justify-content: center; min-height: 400px;">
                                     @if($case['ongoing'])
                                         <span class="badge  rounded-pill bg-warning position-absolute fs-6 top-0 mt-3 start-0 ms-3">
@@ -478,9 +482,9 @@
                                     @endif
 
                                     @if ($case['badge'] === 'Enterprise SaaS')
-                                        <img src="{{ asset('img/hkspace.png') }}" alt="HKSpace Dashboard Mockup" style="width: 100%; border-radius: 12px; box-shadow: 0 8px 20px rgba(0,0,0,0.1);"/>
+                                        <img src="{{ asset('img/hkspace.png') }}" alt="HKSpace Dashboard Mockup" style="width: 100%; border-radius: var(--card-radius); box-shadow: 0 8px 20px rgba(0,0,0,0.1);"/>
                                         <div class="position-absolute start-0 bottom-0 mb-4 ms-4 p-1">
-                                            <img src="{{ asset('img/hkspace_2.png') }}" alt="HKSpace Dashboard Mockup" style="width: 200px; border-radius: 12px; box-shadow: 0 8px 20px rgba(0,0,0,0.1);"/>
+                                            <img src="{{ asset('img/hkspace_2.png') }}" alt="HKSpace Dashboard Mockup" style="width: 200px; border-radius: var(--card-radius); box-shadow: 0 8px 20px rgba(0,0,0,0.1);"/>
                                         </div>
                                     @elseif ($case['badge'] === 'Artificial Intelligence')
                                         <img src="{{ asset('img/ai_face.svg') }}" width="100" />
@@ -499,12 +503,12 @@
                                     @else
                                         <svg viewBox="0 0 300 200" style="width: 100%; max-width: 300px;">
                                             <!-- Growth Curve -->
-                                            <path d="{{ $case['svg_path'] }}" 
-                                                fill="none" 
-                                                stroke="white" 
-                                                stroke-width="3" 
+                                            <path d="{{ $case['svg_path'] }}"
+                                                fill="none"
+                                                stroke="white"
+                                                stroke-width="3"
                                                 opacity="0.8"/>
-                                            
+
                                             @foreach($case['svg_points'] as $point)
                                             <circle cx="{{ $point['cx'] }}" cy="{{ $point['cy'] }}" r="{{ $point['r'] }}" fill="white" opacity="{{ $point['r'] > 6 ? '1' : '0.9' }}"/>
                                             <text x="{{ $point['x'] }}" y="{{ $point['y'] }}" text-anchor="middle" font-size="10" fill="white" opacity="{{ $point['r'] > 6 ? '1' : '0.8' }}">{{ $point['label'] }}</text>
@@ -515,29 +519,29 @@
                             </div>
                         </div>
                         @endforeach
-                        
+
                     </div>
                 </div>
-                
+
                 <!-- Navigation Arrows -->
-                <button id="prevBtn" style="position: absolute; left: -20px; top: 50%; transform: translateY(-50%); background: white; border: 1px solid var(--border); width: 48px; height: 48px; border-radius: 50%; display: flex; align-items: center; justify-content: center; cursor: pointer; box-shadow: 0 4px 12px rgba(0,0,0,0.1); transition: all 0.3s ease; z-index: 10;" onmouseover="this.style.background='var(--primary)'; this.style.borderColor='var(--primary)'; this.querySelector('.material-symbols-rounded').style.color='white';" onmouseout="this.style.background='white'; this.style.borderColor='var(--border)'; this.querySelector('.material-symbols-rounded').style.color='var(--primary)';">
+                <button id="prevBtn" style="position: absolute; left: -20px; top: 50%; transform: translateY(-50%); background: white; border: 1px solid var(--border); width: 48px; height: 48px; border-radius: 50%; display: flex; align-items: center; justify-content: center; cursor: pointer; box-shadow: 0 4px 12px rgba(0,0,0,0.1); transition: all 0.3s ease; z-index: 10;">
                     <span class="material-symbols-rounded" style="color: var(--primary); transition: color 0.3s ease;">chevron_left</span>
                 </button>
-                
-                <button id="nextBtn" style="position: absolute; right: -20px; top: 50%; transform: translateY(-50%); background: white; border: 1px solid var(--border); width: 48px; height: 48px; border-radius: 50%; display: flex; align-items: center; justify-content: center; cursor: pointer; box-shadow: 0 4px 12px rgba(0,0,0,0.1); transition: all 0.3s ease; z-index: 10;" onmouseover="this.style.background='var(--primary)'; this.style.borderColor='var(--primary)'; this.querySelector('.material-symbols-rounded').style.color='white';" onmouseout="this.style.background='white'; this.style.borderColor='var(--border)'; this.querySelector('.material-symbols-rounded').style.color='var(--primary)';">
+
+                <button id="nextBtn" style="position: absolute; right: -20px; top: 50%; transform: translateY(-50%); background: white; border: 1px solid var(--border); width: 48px; height: 48px; border-radius: 50%; display: flex; align-items: center; justify-content: center; cursor: pointer; box-shadow: 0 4px 12px rgba(0,0,0,0.1); transition: all 0.3s ease; z-index: 10;">
                     <span class="material-symbols-rounded" style="color: var(--primary); transition: color 0.3s ease;">chevron_right</span>
                 </button>
-                
+
                 <!-- Dots Navigation -->
                 <div id="dotsContainer" style="display: flex; justify-content: center; gap: 0.75rem; margin-top: 2rem;">
                     @for($i = 0; $i < count($featured_cases); $i++)
-                    <button class="carousel-dot" data-index="{{ $i }}" style="width: 12px; height: 12px; border-radius: 50%; border: 2px solid var(--primary); background: {{ $i === 0 ? 'var(--primary)' : 'transparent' }}; cursor: pointer; transition: all 0.3s ease;" onmouseover="if(this.style.background !== 'var(--primary)') this.style.background='#0f6b9e33';" onmouseout="if(this.style.background !== 'var(--primary)') this.style.background='transparent';"></button>
+                    <button class="carousel-dot" data-index="{{ $i }}" style="width: 12px; height: 12px; border-radius: 50%; border: 2px solid var(--primary); background: {{ $i === 0 ? 'var(--primary)' : 'transparent' }}; cursor: pointer; transition: all 0.3s ease;"></button>
                     @endfor
                 </div>
             </div>
         </div>
     </section>
-    
+
     <script>
     (function() {
         const carouselInner = document.getElementById('carouselInner');
@@ -545,18 +549,18 @@
         const dots = document.querySelectorAll('.carousel-dot');
         const prevBtn = document.getElementById('prevBtn');
         const nextBtn = document.getElementById('nextBtn');
-        
+
         let currentIndex = 0;
         const totalSlides = slides.length;
-        
+
         function updateCarousel(index) {
             currentIndex = index;
             if (currentIndex < 0) currentIndex = totalSlides - 1;
             if (currentIndex >= totalSlides) currentIndex = 0;
-            
+
             const offset = -currentIndex * 100;
             carouselInner.style.transform = `translateX(${offset}%)`;
-            
+
             // Update dots
             dots.forEach((dot, i) => {
                 if (i === currentIndex) {
@@ -570,17 +574,17 @@
                 }
             });
         }
-        
+
         // Previous button
         prevBtn.addEventListener('click', () => {
             updateCarousel(currentIndex - 1);
         });
-        
+
         // Next button
         nextBtn.addEventListener('click', () => {
             updateCarousel(currentIndex + 1);
         });
-        
+
         // Dots navigation
         dots.forEach(dot => {
             dot.addEventListener('click', () => {
@@ -588,24 +592,24 @@
                 updateCarousel(index);
             });
         });
-        
+
         // Auto-play (optional)
         let autoPlayInterval = setInterval(() => {
             updateCarousel(currentIndex + 1);
         }, 5000);
-        
+
         // Pause on hover
         const carousel = document.getElementById('casesCarousel');
         carousel.addEventListener('mouseenter', () => {
             clearInterval(autoPlayInterval);
         });
-        
+
         carousel.addEventListener('mouseleave', () => {
             autoPlayInterval = setInterval(() => {
                 updateCarousel(currentIndex + 1);
             }, 5000);
         });
-        
+
         // Keyboard navigation
         document.addEventListener('keydown', (e) => {
             if (e.key === 'ArrowLeft') {
@@ -614,6 +618,31 @@
                 updateCarousel(currentIndex + 1);
             }
         });
+
+        // Arrow button hover effects
+        prevBtn.addEventListener('mouseenter', function() {
+            this.style.background = 'var(--primary)';
+            this.style.borderColor = 'var(--primary)';
+            this.querySelector('.material-symbols-rounded').style.color = 'white';
+        });
+
+        prevBtn.addEventListener('mouseleave', function() {
+            this.style.background = 'white';
+            this.style.borderColor = 'var(--border)';
+            this.querySelector('.material-symbols-rounded').style.color = 'var(--primary)';
+        });
+
+        nextBtn.addEventListener('mouseenter', function() {
+            this.style.background = 'var(--primary)';
+            this.style.borderColor = 'var(--primary)';
+            this.querySelector('.material-symbols-rounded').style.color = 'white';
+        });
+
+        nextBtn.addEventListener('mouseleave', function() {
+            this.style.background = 'white';
+            this.style.borderColor = 'var(--border)';
+            this.querySelector('.material-symbols-rounded').style.color = 'var(--primary)';
+        });
     })();
     </script>
 
@@ -621,16 +650,17 @@
     <section style="background: linear-gradient(135deg, #f8fafc 0%, #ecfdf5 100%); padding: 5rem 0;">
         <div class="container-v5">
             <div class="section-header">
+                <span class="section-label" style="color: var(--primary);">RESEARCH & DEVELOPMENT</span>
                 <h2 class="section-title">{{ __('index.rd_title') }}</h2>
                 <p class="section-subtitle">{{ __('index.rd_subtitle') }}</p>
             </div>
 
             <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 2.5rem; margin-top: 3rem;">
-                
+
                 <!-- HKSpace R&D Card -->
-                <a href="{{ route('landing.blog.r_and_d') }}" style="text-decoration: none; display: block; background: linear-gradient(135deg, #f0f9ff 0%, #ecfdf5 100%); border-radius: 16px; padding: 2.5rem; border: 1px solid #bfdbfe; transition: all 0.3s ease; box-shadow: 0 4px 20px rgba(15, 107, 158, 0.08);" onmouseover="this.style.transform='translateY(-8px)'; this.style.boxShadow='0 12px 40px rgba(15, 107, 158, 0.15)';" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 4px 20px rgba(15, 107, 158, 0.08)';">
+                <a href="{{ route('landing.blog.r_and_d') }}" style="text-decoration: none; display: block; background: linear-gradient(135deg, #f0f9ff 0%, #ecfdf5 100%); border-radius: var(--card-radius); padding: 2.5rem; border: 1px solid #bfdbfe; transition: all 0.3s ease; box-shadow: 0 12px 32px rgba(26, 77, 94, 0.08);">
                     <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1.5rem;">
-                        <div style="background: var(--primary); width: 48px; height: 48px; border-radius: 12px; display: flex; align-items: center; justify-content: center;">
+                        <div style="background: var(--primary); width: 48px; height: 48px; border-radius: var(--btn-radius); display: flex; align-items: center; justify-content: center;">
                             <span class="material-symbols-rounded" style="color: white; font-size: 28px;">hub</span>
                         </div>
                         <div>
@@ -638,7 +668,7 @@
                             <p style="font-size: 0.85rem; color: var(--primary); font-weight: 600; margin: 0;">{{ __('index.rd_hkspace_subtitle') }}</p>
                         </div>
                     </div>
-                    
+
                     <p style="color: var(--text-gray); line-height: 1.7; margin-bottom: 1.5rem; font-size: 0.95rem;">
                         Architectural substrate for adaptive enterprise systems. A general-purpose distributed platform abstracting multi-tenancy, real-time synchronization, and composable workflows—enabling systems that evolve with organizational needs.
                     </p>
@@ -661,9 +691,9 @@
                 </a>
 
                 <!-- {{ __('index.ai_title') }} R&D Card -->
-                <a href="{{ route('landing.blog.r_and_d') }}" style="text-decoration: none; display: block; background: linear-gradient(135deg, #fef3c7 0%, #fde68a 100%); border-radius: 16px; padding: 2.5rem; border: 1px solid #fcd34d; transition: all 0.3s ease; box-shadow: 0 4px 20px rgba(217, 119, 6, 0.08);" onmouseover="this.style.transform='translateY(-8px)'; this.style.boxShadow='0 12px 40px rgba(217, 119, 6, 0.15)';" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 4px 20px rgba(217, 119, 6, 0.08)';">
+                <a href="{{ route('landing.blog.r_and_d') }}" style="text-decoration: none; display: block; background: linear-gradient(135deg, #fef3c7 0%, #fde68a 100%); border-radius: var(--card-radius); padding: 2.5rem; border: 1px solid #fcd34d; transition: all 0.3s ease; box-shadow: 0 12px 32px rgba(26, 77, 94, 0.08);">
                     <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1.5rem;">
-                        <div style="background: #d97706; width: 48px; height: 48px; border-radius: 12px; display: flex; align-items: center; justify-content: center;">
+                        <div style="background: #d97706; width: 48px; height: 48px; border-radius: var(--btn-radius); display: flex; align-items: center; justify-content: center;">
                             <span class="material-symbols-rounded" style="color: white; font-size: 28px;">auto_awesome</span>
                         </div>
                         <div>
@@ -671,7 +701,7 @@
                             <p style="font-size: 0.85rem; color: #d97706; font-weight: 600; margin: 0;">{{ __('index.rd_ai_platform_subtitle') }}</p>
                         </div>
                     </div>
-                    
+
                     <p style="color: var(--text-gray); line-height: 1.7; margin-bottom: 1.5rem; font-size: 0.95rem;">
                         Long-term research into intelligent systems as enterprise force multipliers. Semantic understanding, grounded reasoning, and autonomous optimization—AI deeply integrated with distributed infrastructure rather than bolt-on features.
                     </p>
@@ -710,7 +740,7 @@
                 <h2 class="section-title">{{ __('index.testimonials_title') }} <span class="badge  rounded-pill bg-warning">Demo data</span></h2>
                 <p class="section-subtitle">{{ __('index.testimonials_subtitle') }}</p>
             </div>
-            
+
             <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem;">
                 <?php
                 $testimonials = [
@@ -735,13 +765,13 @@
                 ];
                 foreach ($testimonials as $t):
                 ?>
-                <div style="background: white; border: 1px solid var(--border); border-radius: 12px; padding: 2rem; position: relative; transition: all 0.3s ease;" onmouseover="this.style.borderColor='var(--primary)'; this.style.boxShadow='0 12px 30px rgba(15, 107, 158, 0.12)';" onmouseout="this.style.borderColor='var(--border)'; this.style.boxShadow='';">
+                <div style="background: white; border: 1px solid var(--border); border-radius: var(--card-radius); padding: 2rem; position: relative; transition: all 0.3s ease;">
                     <div style="color: var(--primary); font-size: 3rem; line-height: 1; margin-bottom: 1rem; opacity: 0.3;">"</div>
                     <p style="color: var(--text-gray); font-size: 0.95rem; line-height: 1.7; margin-bottom: 1.5rem; font-style: italic;">
                         <?php echo $t['quote']; ?>
                     </p>
                     <div style="display: flex; align-items: center; gap: 1rem;">
-                        <div style="width: 50px; height: 50px; background: linear-gradient(135deg, var(--primary), var(--accent)); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white; font-weight: 700; font-size: 1.2rem;">
+                        <div style="width: 50px; height: 50px; background: linear-gradient(135deg, var(--primary), #0d9488); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white; font-weight: 700; font-size: 1.2rem;">
                             <?php echo substr($t['name'], 0, 1); ?>
                         </div>
                         <div>
@@ -755,7 +785,7 @@
                 </div>
                 <?php endforeach; ?>
             </div>
-            
+
             <div style="text-align: center; margin-top: 3rem;">
                 <a href="{{ route('landing.case-studies') }}" style="color: var(--primary); font-weight: 600; text-decoration: none; display: inline-flex; align-items: center; gap: 0.5rem;">
                     <span>{{ __('index.case_view_more') }}</span>
@@ -766,27 +796,25 @@
     </section>
 
     <!-- CTA Banner -->
-    <section>
+    <section style="padding: 3rem 0 5rem;">
         <div class="container-v5">
-            <div style="background: linear-gradient(135deg, var(--primary) 0%, var(--primary-light) 100%); border-radius: 12px; padding: 4rem 2rem; text-align: center; color: white; position: relative; overflow: hidden;">
+            <div class="fp-cta-banner" style="display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 2rem; background: linear-gradient(135deg, var(--primary) 0%, var(--primary) 100%); border-radius: var(--card-radius); padding: 4rem 2rem; position: relative; overflow: hidden;">
                 <div style="position: absolute; top: 0; right: 0; width: 300px; height: 300px; background: rgba(255,255,255,0.05); border-radius: 50%; transform: translate(30%, -30%);"></div>
                 <div style="position: absolute; bottom: 0; left: 0; width: 200px; height: 200px; background: rgba(255,255,255,0.05); border-radius: 50%; transform: translate(-30%, 30%);"></div>
-                
+
                 <div style="position: relative; z-index: 1;">
-                    <h2 style="font-size: 2.5rem; font-weight: 800; margin-bottom: 1rem;">{{ __('index.cta_title') }}</h2>
-                    <p style="font-size: 1.1rem; margin-bottom: 2.5rem; opacity: 0.95; max-width: 600px; margin-left: auto; margin-right: auto;">
-                        Schedule a free 30-minute consultation to discuss your project. We'll provide optimal solutions and detailed pricing.
-                    </p>
-                    <div style="display: flex; gap: 1.5rem; justify-content: center; flex-wrap: wrap;">
-                        <a href="{{ route('landing.contact') }}" style="background: white; color: var(--primary); padding: 1rem 2.5rem; border-radius: 8px; font-weight: 600; text-decoration: none; display: inline-flex; align-items: center; gap: 0.75rem; transition: all 0.3s ease; box-shadow: 0 4px 12px rgba(0,0,0,0.1);" onmouseover="this.style.backgroundColor='var(--secondary-bg)'; this.style.transform='translateY(-2px)'; this.style.boxShadow='0 8px 20px rgba(0,0,0,0.15)';" onmouseout="this.style.backgroundColor='white'; this.style.transform=''; this.style.boxShadow='0 4px 12px rgba(0,0,0,0.1)';">
-                            <span>{{ __('index.cta_consultation') }}</span>
-                            <span class="material-symbols-rounded">arrow_forward</span>
-                        </a>
-                        <a href="{{ route('landing.pricing') }}" style="background: transparent; color: white; padding: 1rem 2.5rem; border-radius: 8px; font-weight: 600; text-decoration: none; display: inline-flex; align-items: center; gap: 0.75rem; border: 2px solid white; transition: all 0.3s ease;" onmouseover="this.style.backgroundColor='rgba(255,255,255,0.1)';" onmouseout="this.style.backgroundColor='transparent';">
-                            <span>{{ __('index.cta_pricing') }}</span>
-                            <span class="material-symbols-rounded">receipt_long</span>
-                        </a>
-                    </div>
+                    <span class="section-label" style="color: rgba(255,255,255,0.7);">GET STARTED</span>
+                    <h2 style="font-size: 2.5rem; font-weight: 800; margin: 1rem 0 1rem 0; color: white;">{{ __('index.cta_title') }}</h2>
+                    <p style="color: rgba(255,255,255,0.95); font-size: 1.1rem; margin: 0; max-width: 500px;">{{ __('index.cta_subtitle') }}</p>
+                </div>
+                <div style="display: flex; gap: 1rem; flex-wrap: wrap; position: relative; z-index: 1;">
+                    <a href="{{ route('landing.contact') }}" class="btn-primary-v5" style="background: white; color: var(--primary); padding: 1rem 2.5rem; border-radius: var(--btn-radius); font-weight: 600; text-decoration: none; display: inline-flex; align-items: center; gap: 0.75rem; transition: all 0.3s ease;">
+                        <span>{{ __('hero.cta_primary') }}</span>
+                        <span class="material-symbols-rounded" style="font-size: 1.1rem;">arrow_forward</span>
+                    </a>
+                    <a href="#services" class="btn-secondary-v5" style="background: transparent; color: white; padding: 1rem 2.5rem; border-radius: var(--btn-radius); font-weight: 600; text-decoration: none; display: inline-flex; align-items: center; gap: 0.75rem; border: 2px solid white; transition: all 0.3s ease;">
+                        <span>{{ __('hero.cta_secondary') }}</span>
+                    </a>
                 </div>
             </div>
         </div>

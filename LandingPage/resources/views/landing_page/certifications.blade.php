@@ -24,13 +24,14 @@
     <section id="compliance">
         <div class="container-v5">
             <div class="section-header">
+                <span class="section-label">COMPLIANCE & SECURITY</span>
                 <h2 class="section-title">{{ __('certifications.compliance_title') }} <span style="color: var(--primary);">{{ __('certifications.compliance_title_accent') }}</span></h2>
                 <p class="section-subtitle">{{ __('certifications.compliance_subtitle') }}</p>
             </div>
 
             <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2rem;">
                 @foreach(__('certifications.compliance') as $cert)
-                <div style="background: white; border-radius: 12px; padding: 2.5rem 2rem; border: 1px solid var(--border); transition: all 0.3s ease; text-align: center;" onmouseover="this.style.borderColor='var(--primary)'; this.style.boxShadow='0 10px 30px rgba(15, 107, 158, 0.1)'; this.style.transform='translateY(-4px)';" onmouseout="this.style.borderColor='var(--border)'; this.style.boxShadow=''; this.style.transform='';">
+                <div style="background: white; border-radius: var(--card-radius); padding: 2.5rem 2rem; border: 1px solid var(--border); transition: all 0.3s ease; text-align: center;" onmouseover="this.style.borderColor='var(--primary)'; this.style.boxShadow='0 10px 30px rgba(26, 77, 94, 0.1)'; this.style.transform='translateY(-4px)';" onmouseout="this.style.borderColor='var(--border)'; this.style.boxShadow=''; this.style.transform='';">
                     <div style="font-size: 3rem; color: var(--primary); margin-bottom: 1rem;">
                         <span class="material-symbols-rounded">{{ $cert['icon'] }}</span>
                     </div>
@@ -47,13 +48,14 @@
     <section style="background: var(--secondary-bg);">
         <div class="container-v5">
             <div class="section-header">
+                <span class="section-label">CLOUD CERTIFICATIONS</span>
                 <h2 class="section-title">{{ __('certifications.cloud_title') }} <span style="color: var(--primary);">{{ __('certifications.cloud_title_accent') }}</span></h2>
                 <p class="section-subtitle">{{ __('certifications.cloud_subtitle') }}</p>
             </div>
 
             <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2rem;">
                 @foreach(__('certifications.cloud_certs') as $cloud)
-                <div style="background: white; border-radius: 12px; padding: 2rem; border: 1px solid var(--border); transition: all 0.3s ease;" onmouseover="this.style.borderColor='var(--primary)'; this.style.boxShadow='0 10px 30px rgba(15, 107, 158, 0.1)';" onmouseout="this.style.borderColor='var(--border)'; this.style.boxShadow='';">
+                <div style="background: white; border-radius: var(--card-radius); padding: 2rem; border: 1px solid var(--border); transition: all 0.3s ease;" onmouseover="this.style.borderColor='var(--primary)'; this.style.boxShadow='0 10px 30px rgba(26, 77, 94, 0.1)';" onmouseout="this.style.borderColor='var(--border)'; this.style.boxShadow='';">
                     <div style="font-size: 2.5rem; color: var(--primary); margin-bottom: 1rem;">
                         <span class="material-symbols-rounded">{{ $cloud['icon'] }}</span>
                     </div>
@@ -76,13 +78,14 @@
     <section>
         <div class="container-v5">
             <div class="section-header">
+                <span class="section-label">AGILE EXPERTISE</span>
                 <h2 class="section-title">{{ __('certifications.agile_title') }} <span style="color: var(--primary);">{{ __('certifications.agile_title_accent') }}</span></h2>
                 <p class="section-subtitle">{{ __('certifications.agile_subtitle') }}</p>
             </div>
 
             <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem;">
                 @foreach(__('certifications.agile') as $cat)
-                <div style="background: white; border-radius: 12px; padding: 2.5rem 2rem; border: 2px solid #e2e8f0; transition: all 0.3s ease;" onmouseover="this.style.borderColor='var(--primary)'; this.style.transform='translateX(5px)';" onmouseout="this.style.borderColor='#e2e8f0'; this.style.transform='';">
+                <div style="background: white; border-radius: var(--card-radius); padding: 2.5rem 2rem; border: 2px solid #e2e8f0; transition: all 0.3s ease;" onmouseover="this.style.borderColor='var(--primary)'; this.style.transform='translateX(5px)';" onmouseout="this.style.borderColor='#e2e8f0'; this.style.transform='';">
                     <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1.5rem;">
                         <div style="font-size: 2rem; color: var(--primary);">
                             <span class="material-symbols-rounded">{{ $cat['icon'] }}</span>
@@ -107,13 +110,14 @@
     <section style="background: var(--secondary-bg);">
         <div class="container-v5">
             <div class="section-header">
+                <span class="section-label">TECHNOLOGY STACK</span>
                 <h2 class="section-title">{{ __('certifications.tech_title') }} <span style="color: var(--primary);">{{ __('certifications.tech_title_accent') }}</span></h2>
                 <p class="section-subtitle">{{ __('certifications.tech_subtitle') }}</p>
             </div>
 
             <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2rem;">
                 @foreach(__('certifications.technologies') as $tech)
-                <div style="background: white; border-radius: 12px; padding: 2rem; border: 1px solid var(--border); transition: all 0.3s ease;" onmouseover="this.style.boxShadow='0 8px 20px rgba(15, 107, 158, 0.1)';" onmouseout="this.style.boxShadow='';">
+                <div style="background: white; border-radius: var(--card-radius); padding: 2rem; border: 1px solid var(--border); transition: all 0.3s ease;" onmouseover="this.style.boxShadow='0 8px 20px rgba(26, 77, 94, 0.1)';" onmouseout="this.style.boxShadow='';">
                     <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1.5rem;">
                         <div style="font-size: 2rem; color: var(--primary);">
                             <span class="material-symbols-rounded">{{ $tech['icon'] }}</span>
@@ -138,13 +142,14 @@
     <section>
         <div class="container-v5">
             <div class="section-header">
+                <span class="section-label">TEAM EXPERTISE</span>
                 <h2 class="section-title">{{ __('certifications.team_title') }} <span style="color: var(--primary);">{{ __('certifications.team_title_accent') }}</span></h2>
                 <p class="section-subtitle">{{ __('certifications.team_subtitle') }}</p>
             </div>
 
             <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2rem;">
                 @foreach(__('certifications.team_profile') as $profile)
-                <div style="background: white; border-radius: 12px; padding: 2.5rem 2rem; border: 1px solid var(--border); text-align: center; transition: all 0.3s ease;" onmouseover="this.style.borderColor='var(--primary)'; this.style.transform='translateY(-5px)'; this.style.boxShadow='0 10px 30px rgba(15, 107, 158, 0.1)';" onmouseout="this.style.borderColor='var(--border)'; this.style.transform=''; this.style.boxShadow='';">
+                <div style="background: white; border-radius: var(--card-radius); padding: 2.5rem 2rem; border: 1px solid var(--border); text-align: center; transition: all 0.3s ease;" onmouseover="this.style.borderColor='var(--primary)'; this.style.transform='translateY(-5px)'; this.style.boxShadow='0 10px 30px rgba(26, 77, 94, 0.1)';" onmouseout="this.style.borderColor='var(--border)'; this.style.transform=''; this.style.boxShadow='';">
                     <div style="font-size: 2.5rem; color: var(--primary); margin-bottom: 1rem;">
                         <span class="material-symbols-rounded">{{ $profile['icon'] }}</span>
                     </div>
@@ -160,7 +165,7 @@
     <!-- Continuous Learning Culture -->
     <section style="background: var(--secondary-bg);">
         <div class="container-v5">
-            <div style="background: linear-gradient(135deg, var(--primary) 0%, var(--primary-light) 100%); border-radius: 12px; padding: 3.5rem 2rem; text-align: center; color: white;">
+            <div style="background: linear-gradient(135deg, var(--primary) 0%, var(--primary-light) 100%); border-radius: var(--card-radius); padding: 3.5rem 2rem; text-align: center; color: white;">
                 <h2 style="font-size: 2.5rem; font-weight: 800; margin-bottom: 1rem;">{{ __('certifications.learning_title') }}</h2>
                 <p style="font-size: 1.1rem; margin-bottom: 2rem; opacity: 0.95;">{{ __('certifications.learning_desc') }}</p>
 
@@ -189,7 +194,7 @@
     <!-- CTA -->
     <section>
         <div class="container-v5">
-            <div style="background: linear-gradient(135deg, var(--primary) 0%, var(--primary-light) 100%); border-radius: 12px; padding: 3.5rem 2rem; text-align: center; color: white;">
+            <div style="background: linear-gradient(135deg, var(--primary) 0%, var(--primary-light) 100%); border-radius: var(--card-radius); padding: 3.5rem 2rem; text-align: center; color: white;">
                 <h2 style="font-size: 2.5rem; font-weight: 800; margin-bottom: 1rem;">{{ __('certifications.cta_title') }}</h2>
                 <p style="font-size: 1.1rem; margin-bottom: 2rem; opacity: 0.95;">{{ __('certifications.cta_desc') }}</p>
                 <a href="{{ route('landing.contact') }}" style="background: white; color: var(--primary); padding: 1rem 2.5rem; border-radius: 8px; font-weight: 600; text-decoration: none; display: inline-block; transition: all 0.3s ease;" onmouseover="this.style.backgroundColor='var(--secondary-bg)';" onmouseout="this.style.backgroundColor='white';">

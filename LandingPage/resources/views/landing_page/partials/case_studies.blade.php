@@ -158,7 +158,7 @@
 
         @foreach($case_studies as $cs)
         @if(!isset($cs['hidden']) || !$cs['hidden'])
-        <div style="background: white; border-radius: 12px; padding: 3rem; margin-bottom: 2rem; border: 1px solid var(--border); transition: all 0.3s ease;" onmouseover="this.style.boxShadow='0 12px 30px rgba(15, 107, 158, 0.12)';" onmouseout="this.style.boxShadow='';">
+        <div style="background: white; border-radius: var(--card-radius); padding: 3rem; margin-bottom: 2rem; border: 1px solid var(--border); transition: all 0.3s ease;" onmouseover="this.style.boxShadow='0 12px 30px rgba(26, 77, 94, 0.12)';" onmouseout="this.style.boxShadow='';">
             <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; align-items: start;">
                 <div>
                     <div style="display: inline-block; background: var(--secondary-bg); padding: 0.5rem 1rem; border-radius: 6px; color: var(--primary); font-size: 0.85rem; font-weight: 600; margin-bottom: 1.5rem;">
@@ -225,7 +225,7 @@
         
         <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2rem;">
             @foreach(__('case_studies.industries') as $ind)
-            <div style="background: white; border-radius: 12px; padding: 2rem; text-align: center; border: 1px solid var(--border); transition: all 0.3s ease;" onmouseover="this.style.borderColor='var(--primary)'; this.style.boxShadow='0 12px 30px rgba(15, 107, 158, 0.12)';" onmouseout="this.style.borderColor='var(--border)'; this.style.boxShadow='';">
+            <div style="background: white; border-radius: var(--card-radius); padding: 2rem; text-align: center; border: 1px solid var(--border); transition: all 0.3s ease;" onmouseover="this.style.borderColor='var(--primary)'; this.style.boxShadow='0 12px 30px rgba(26, 77, 94, 0.12)';" onmouseout="this.style.borderColor='var(--border)'; this.style.boxShadow='';">
                 <div style="font-size: 2.5rem; color: var(--primary); margin-bottom: 1rem;">
                     <span class="material-symbols-rounded">{{ $ind['icon'] }}</span>
                 </div>
@@ -251,7 +251,7 @@
         
         <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem;">
             @foreach(__('case_studies.testimonials') as $t)
-            <div style="background: var(--secondary-bg); border-radius: 12px; padding: 2rem; border: 1px solid var(--border); transition: all 0.3s ease;" onmouseover="this.style.backgroundColor='white';" onmouseout="this.style.backgroundColor='var(--secondary-bg)';">
+            <div style="background: var(--secondary-bg); border-radius: var(--card-radius); padding: 2rem; border: 1px solid var(--border); transition: all 0.3s ease;" onmouseover="this.style.backgroundColor='white';" onmouseout="this.style.backgroundColor='var(--secondary-bg)';">
                 <div style="display: flex; gap: 0.3rem; margin-bottom: 1rem;">
                     @for($i = 0; $i < 5; $i++)
                     <span style="color: #f59e0b; font-size: 1.2rem;">★</span>
@@ -272,7 +272,7 @@
 <!-- CTA -->
 <section style="background: white;">
     <div class="container-v5">
-        <div style="background: linear-gradient(135deg, var(--primary) 0%, var(--primary-light) 100%); border-radius: 12px; padding: 3.5rem 2rem; text-align: center; color: white;">
+        <div style="background: linear-gradient(135deg, var(--primary) 0%, var(--primary-light) 100%); border-radius: var(--card-radius); padding: 3.5rem 2rem; text-align: center; color: white;">
             <h2 style="font-size: 2.5rem; font-weight: 800; margin-bottom: 1rem;">{{ __('case_studies.cta_title') }}</h2>
             <p style="font-size: 1.1rem; margin-bottom: 2rem; opacity: 0.95;">
                 {{ __('case_studies.cta_desc') }}

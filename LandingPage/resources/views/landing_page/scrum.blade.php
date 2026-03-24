@@ -23,13 +23,14 @@
     <section id="process">
         <div class="container-v5">
             <div class="section-header">
+                <span class="section-label">OUR PROCESS</span>
                 <h2 class="section-title">{{ __('scrum.steps_title') }}</h2>
                 <p class="section-subtitle">{{ __('scrum.steps_subtitle') }}</p>
             </div>
 
             <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 1.5rem;">
                 @foreach(__('scrum.steps') as $step)
-                <div style="background: white; border-radius: 12px; padding: 2.5rem 2rem; border: 1px solid var(--border); transition: all 0.3s ease; text-align: center; position: relative;" onmouseover="this.style.borderColor='var(--primary)'; this.style.boxShadow='0 10px 30px rgba(15, 107, 158, 0.1)'; this.style.transform='translateY(-4px)';" onmouseout="this.style.borderColor='var(--border)'; this.style.boxShadow=''; this.style.transform='';">
+                <div style="background: white; border-radius: var(--card-radius); padding: 2.5rem 2rem; border: 1px solid var(--border); transition: all 0.3s ease; text-align: center; position: relative;" onmouseover="this.style.borderColor='var(--primary)'; this.style.boxShadow='0 10px 30px rgba(26, 77, 94, 0.1)'; this.style.transform='translateY(-4px)';" onmouseout="this.style.borderColor='var(--border)'; this.style.boxShadow=''; this.style.transform='';">
                     <div style="display: inline-flex; align-items: center; justify-content: center; width: 50px; height: 50px; background: var(--primary); color: white; border-radius: 50%; font-weight: 800; font-size: 1.5rem; margin-bottom: 1rem;">
                         {{ $step['num'] }}
                     </div>
@@ -52,6 +53,7 @@
     <section style="background: var(--secondary-bg);">
         <div class="container-v5">
             <div class="section-header">
+                <span class="section-label">SPRINT CYCLE</span>
                 <h2 class="section-title">{{ __('scrum.sprint_title') }}</h2>
                 <p class="section-subtitle">{{ __('scrum.sprint_subtitle') }}</p>
             </div>
@@ -60,7 +62,7 @@
                 <div>
                     <ul style="list-style: none;">
                         @foreach(__('scrum.sprint_items') as $cycle)
-                        <li style="padding: 1.5rem; background: white; margin-bottom: 1rem; border-radius: 12px; border-left: 4px solid var(--primary);">
+                        <li style="padding: 1.5rem; background: white; margin-bottom: 1rem; border-radius: var(--card-radius); border-left: 4px solid var(--primary);">
                             <strong style="display: block; color: var(--text-dark); font-weight: 700; margin-bottom: 0.5rem;">
                                 {{ $cycle['title'] }}
                             </strong>
@@ -72,7 +74,7 @@
                     </ul>
                 </div>
                 
-                <div class="position-relative opacity-75" style="background: white; border-radius: 12px; padding: 2rem; border: 1px solid var(--border); text-align: center; min-height: 400px; display: flex; align-items: center; justify-content: center;">
+                <div class="position-relative opacity-75" style="background: white; border-radius: var(--card-radius); padding: 2rem; border: 1px solid var(--border); text-align: center; min-height: 400px; display: flex; align-items: center; justify-content: center;">
                     <span class="badge  rounded-pill bg-warning position-absolute fs-6 top-0 mt-3 start-0 ms-3">
                         <span class="spinner-border spinner-border-sm me-1" role="status">
                             <span class="visually-hidden">Loading...</span>
@@ -81,38 +83,38 @@
                     </span>
                     <svg viewBox="0 0 300 300" style="width: 100%; max-width: 300px;">
                         <!-- Sprint cycle circle -->
-                        <circle cx="150" cy="150" r="120" fill="none" stroke="#0f6b9e" stroke-width="2" opacity="0.2"/>
+                        <circle cx="150" cy="150" r="120" fill="none" stroke="#1a4d5e" stroke-width="2" opacity="0.2"/>
                         
                         <!-- 5 phases -->
-                        <circle cx="150" cy="50" r="15" fill="#0f6b9e"/>
-                        <circle cx="250" cy="105" r="15" fill="#0f6b9e"/>
-                        <circle cx="210" cy="230" r="15" fill="#0f6b9e"/>
-                        <circle cx="90" cy="230" r="15" fill="#0f6b9e"/>
-                        <circle cx="50" cy="105" r="15" fill="#0f6b9e"/>
+                        <circle cx="150" cy="50" r="15" fill="#1a4d5e"/>
+                        <circle cx="250" cy="105" r="15" fill="#1a4d5e"/>
+                        <circle cx="210" cy="230" r="15" fill="#1a4d5e"/>
+                        <circle cx="90" cy="230" r="15" fill="#1a4d5e"/>
+                        <circle cx="50" cy="105" r="15" fill="#1a4d5e"/>
                         
                         <!-- Center -->
-                        <circle cx="150" cy="150" r="25" fill="#059669"/>
+                        <circle cx="150" cy="150" r="25" fill="#0d9488"/>
                         <text x="150" y="155" text-anchor="middle" font-size="11" fill="white" font-weight="bold">Sprint</text>
                         
                         <!-- Arrows -->
-                        <path d="M 160 80 L 240 110" stroke="#0f6b9e" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
-                        <path d="M 240 135 L 220 220" stroke="#0f6b9e" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
-                        <path d="M 200 240 L 100 240" stroke="#0f6b9e" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
-                        <path d="M 80 220 L 60 110" stroke="#0f6b9e" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
-                        <path d="M 60 80 L 140 60" stroke="#0f6b9e" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+                        <path d="M 160 80 L 240 110" stroke="#1a4d5e" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+                        <path d="M 240 135 L 220 220" stroke="#1a4d5e" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+                        <path d="M 200 240 L 100 240" stroke="#1a4d5e" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+                        <path d="M 80 220 L 60 110" stroke="#1a4d5e" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+                        <path d="M 60 80 L 140 60" stroke="#1a4d5e" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
                         
                         <defs>
                             <marker id="arrowhead" markerWidth="10" markerHeight="10" refX="5" refY="5" orient="auto">
-                                <polygon points="0 0, 10 5, 0 10" fill="#0f6b9e"/>
+                                <polygon points="0 0, 10 5, 0 10" fill="#1a4d5e"/>
                             </marker>
                         </defs>
                         
                         <!-- Labels -->
-                        <text x="150" y="35" text-anchor="middle" font-size="11" fill="#0f6b9e" font-weight="bold">Plan</text>
-                        <text x="260" y="105" text-anchor="start" font-size="11" fill="#0f6b9e" font-weight="bold">Execute</text>
-                        <text x="220" y="255" text-anchor="end" font-size="11" fill="#0f6b9e" font-weight="bold">Review</text>
-                        <text x="50" y="255" text-anchor="start" font-size="11" fill="#0f6b9e" font-weight="bold">Improve</text>
-                        <text x="30" y="105" text-anchor="end" font-size="11" fill="#0f6b9e" font-weight="bold">Deliver</text>
+                        <text x="150" y="35" text-anchor="middle" font-size="11" fill="#1a4d5e" font-weight="bold">Plan</text>
+                        <text x="260" y="105" text-anchor="start" font-size="11" fill="#1a4d5e" font-weight="bold">Execute</text>
+                        <text x="220" y="255" text-anchor="end" font-size="11" fill="#1a4d5e" font-weight="bold">Review</text>
+                        <text x="50" y="255" text-anchor="start" font-size="11" fill="#1a4d5e" font-weight="bold">Improve</text>
+                        <text x="30" y="105" text-anchor="end" font-size="11" fill="#1a4d5e" font-weight="bold">Deliver</text>
                     </svg>
                 </div>
             </div>
@@ -123,13 +125,14 @@
     <section id="benefits">
         <div class="container-v5">
             <div class="section-header">
+                <span class="section-label">KEY BENEFITS</span>
                 <h2 class="section-title">{{ __('scrum.benefits_title') }}</h2>
                 <p class="section-subtitle">{{ __('scrum.benefits_subtitle') }}</p>
             </div>
 
             <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2rem;">
                 @foreach(__('scrum.benefits') as $b)
-                <div style="background: white; border: 1px solid var(--border); border-radius: 12px; padding: 2rem; transition: all 0.3s ease;" onmouseover="this.style.borderColor='var(--primary)'; this.style.boxShadow='0 12px 30px rgba(15, 107, 158, 0.12)';" onmouseout="this.style.borderColor='var(--border)'; this.style.boxShadow='';">
+                <div style="background: white; border: 1px solid var(--border); border-radius: var(--card-radius); padding: 2rem; transition: all 0.3s ease;" onmouseover="this.style.borderColor='var(--primary)'; this.style.boxShadow='0 12px 30px rgba(26, 77, 94, 0.12)';" onmouseout="this.style.borderColor='var(--border)'; this.style.boxShadow='';">
                     <div style="font-size: 2.5rem; color: var(--primary); margin-bottom: 1rem;">
                         <span class="material-symbols-rounded">{{ $b['icon'] }}</span>
                     </div>
@@ -149,6 +152,7 @@
     <section style="background: var(--secondary-bg);">
         <div class="container-v5">
             <div class="section-header">
+                <span class="section-label">CLIENT JOURNEY</span>
                 <h2 class="section-title">{{ __('scrum.journey_title') }}</h2>
                 <p class="section-subtitle">{{ __('scrum.journey_subtitle') }}</p>
             </div>
@@ -158,18 +162,18 @@
                 <div style="display: flex; gap: 2rem; align-items: flex-start; margin-bottom: {{ $index < count(__('scrum.journey')) - 1 ? '3rem' : '0' }};">
                     <!-- Left side: Circle with connecting line -->
                     <div style="position: relative; flex-shrink: 0;">
-                        <div style="width: 110px; height: 110px; background: white; border: 3px solid var(--primary); border-radius: 50%; display: flex; align-items: center; justify-content: center; text-align: center; box-shadow: 0 4px 15px rgba(15, 107, 158, 0.15); position: relative; z-index: 2;">
+                        <div style="width: 110px; height: 110px; background: white; border: 3px solid var(--primary); border-radius: 50%; display: flex; align-items: center; justify-content: center; text-align: center; box-shadow: 0 4px 15px rgba(26, 77, 94, 0.15); position: relative; z-index: 2;">
                             <div style="font-size: 1.1rem; font-weight: 700; color: var(--primary); line-height: 1.2;">{{ __('scrum.journey_phase_label') }} {{ $index + 1 }}</div>
                         </div>
 
                         <!-- Vertical connecting line -->
                         @if($index < count(__('scrum.journey')) - 1)
-                        <div style="position: absolute; top: 110px; left: 50%; width: 3px; height: 80px; background: linear-gradient(180deg, var(--primary) 0%, rgba(15, 107, 158, 0.3) 100%); transform: translateX(-50%); z-index: 1;"></div>
+                        <div style="position: absolute; top: 110px; left: 50%; width: 3px; height: 80px; background: linear-gradient(180deg, var(--primary) 0%, rgba(26, 77, 94, 0.3) 100%); transform: translateX(-50%); z-index: 1;"></div>
                         @endif
                     </div>
                     
                     <!-- Right side: Content box -->
-                    <div style="flex: 1; background: white; border-radius: 12px; padding: 2rem; border: 1px solid #e2e8f0; box-shadow: 0 2px 8px rgba(0,0,0,0.05); transition: all 0.3s ease;" onmouseover="this.style.borderColor='var(--primary)'; this.style.boxShadow='0 8px 20px rgba(15, 107, 158, 0.1)'; this.style.transform='translateX(5px)';" onmouseout="this.style.borderColor='#e2e8f0'; this.style.boxShadow='0 2px 8px rgba(0,0,0,0.05)'; this.style.transform='translateX(0)';">
+                    <div style="flex: 1; background: white; border-radius: var(--card-radius); padding: 2rem; border: 1px solid #e2e8f0; box-shadow: 0 2px 8px rgba(0,0,0,0.05); transition: all 0.3s ease;" onmouseover="this.style.borderColor='var(--primary)'; this.style.boxShadow='0 8px 20px rgba(26, 77, 94, 0.1)'; this.style.transform='translateX(5px)';" onmouseout="this.style.borderColor='#e2e8f0'; this.style.boxShadow='0 2px 8px rgba(0,0,0,0.05)'; this.style.transform='translateX(0)';">
                         <h3 style="font-size: 1.15rem; font-weight: 700; color: var(--text-dark); margin-bottom: 0.75rem; line-height: 1.4;">
                             {{ $j['phase'] }}
                         </h3>
@@ -187,13 +191,14 @@
     <section id="why">
         <div class="container-v5">
             <div class="section-header">
+                <span class="section-label">WHY CHOOSE US</span>
                 <h2 class="section-title">{{ __('scrum.why_title') }}</h2>
                 <p class="section-subtitle">{{ __('scrum.why_subtitle') }}</p>
             </div>
 
             <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2rem;">
                 @foreach(__('scrum.why_items') as $w)
-                <div style="background: white; border: 1px solid var(--border); border-radius: 12px; padding: 2rem; text-align: center; transition: all 0.3s ease;" onmouseover="this.style.borderColor='var(--primary)'; this.style.boxShadow='0 12px 30px rgba(15, 107, 158, 0.12)'; this.style.transform='translateY(-5px)';" onmouseout="this.style.borderColor='var(--border)'; this.style.boxShadow=''; this.style.transform='';">
+                <div style="background: white; border: 1px solid var(--border); border-radius: var(--card-radius); padding: 2rem; text-align: center; transition: all 0.3s ease;" onmouseover="this.style.borderColor='var(--primary)'; this.style.boxShadow='0 12px 30px rgba(26, 77, 94, 0.12)'; this.style.transform='translateY(-5px)';" onmouseout="this.style.borderColor='var(--border)'; this.style.boxShadow=''; this.style.transform='';">
                     <h3 style="font-size: 1.1rem; font-weight: 700; color: var(--text-dark); margin-bottom: 0.75rem;">
                         {{ $w['title'] }}
                     </h3>
@@ -209,7 +214,7 @@
     <!-- CTA -->
     <section style="background: var(--secondary-bg);">
         <div class="container-v5">
-            <div style="background: linear-gradient(135deg, var(--primary) 0%, var(--primary-light) 100%); border-radius: 12px; padding: 3.5rem 2rem; text-align: center; color: white;">
+            <div style="background: linear-gradient(135deg, var(--primary) 0%, var(--primary-light) 100%); border-radius: var(--card-radius); padding: 3.5rem 2rem; text-align: center; color: white;">
                 <h2 style="font-size: 2.5rem; font-weight: 800; margin-bottom: 1rem;">{{ __('scrum.cta_title') }}</h2>
                 <p style="font-size: 1.1rem; margin-bottom: 2rem; opacity: 0.95;">
                     {{ __('scrum.cta_desc') }}

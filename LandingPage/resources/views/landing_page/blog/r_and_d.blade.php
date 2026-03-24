@@ -38,7 +38,7 @@
 
             <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2rem;">
                 @foreach(__('r_and_d.capabilities') as $cap)
-                <div style="background: white; border-radius: 12px; padding: 2rem; border: 1px solid var(--border);">
+                <div style="background: white; border-radius: var(--card-radius); padding: 2rem; border: 1px solid var(--border);">
                     <div style="font-size: 2.5rem; color: var(--primary); margin-bottom: 1rem;">
                         <span class="material-symbols-rounded">{{ $cap['icon'] }}</span>
                     </div>
@@ -53,7 +53,7 @@
     <!-- CTA -->
     <section style="background: white;">
         <div class="container-v5">
-            <div style="background: linear-gradient(135deg, var(--primary) 0%, var(--primary-light) 100%); border-radius: 12px; padding: 3.5rem 2rem; text-align: center; color: white;">
+            <div style="background: linear-gradient(135deg, var(--primary) 0%, var(--primary-light) 100%); border-radius: var(--card-radius); padding: 3.5rem 2rem; text-align: center; color: white;">
                 <h2 style="font-size: 2.5rem; font-weight: 800; margin-bottom: 1rem;">{{ __('r_and_d.cta_title') }}</h2>
                 <p style="font-size: 1.1rem; margin-bottom: 2rem; opacity: 0.95;">{{ __('r_and_d.cta_desc') }}</p>
                 <a href="{{ route('landing.contact') }}" style="background: white; color: var(--primary); padding: 1rem 2.5rem; border-radius: 8px; font-weight: 600; text-decoration: none; display: inline-block; transition: all 0.3s ease;" onmouseover="this.style.backgroundColor='var(--secondary-bg)';" onmouseout="this.style.backgroundColor='white';">

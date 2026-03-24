@@ -13,4 +13,5 @@ return [
     'pricing'       => 'Bảng Giá',
     'contact'       => 'Liên Hệ',
     'get_started'   => 'Bắt Đầu',
+    'login'         => 'Đăng Nhập',
 ];

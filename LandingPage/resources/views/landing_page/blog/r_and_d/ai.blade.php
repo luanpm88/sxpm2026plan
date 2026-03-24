@@ -3,7 +3,7 @@
     <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; align-items: start;">
         
         <!-- Visual Element -->
-        <div style="background: linear-gradient(135deg, #fef3c7 0%, #fde68a 100%); border-radius: 12px; padding: 2.5rem; height: 100%; min-height: 600px; display: flex; flex-direction: column; justify-content: space-between; border: 1px solid #fcd34d; order: 2;">
+        <div style="background: linear-gradient(135deg, #fef3c7 0%, #fde68a 100%); border-radius: var(--card-radius); padding: 2.5rem; height: 100%; min-height: 600px; display: flex; flex-direction: column; justify-content: space-between; border: 1px solid #fcd34d; order: 2;">
             <div>
                 <div style="font-size: 3.5rem; color: #d97706; margin-bottom: 1.5rem;">
                     <span class="material-symbols-rounded">auto_awesome</span>

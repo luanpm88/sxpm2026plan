@@ -83,7 +83,7 @@
         </div>
 
         <!-- Visual Element -->
-        <div style="background: linear-gradient(135deg, #f0f9ff 0%, #ecfdf5 100%); border-radius: 12px; padding: 2.5rem; height: 100%; min-height: 600px; display: flex; flex-direction: column; justify-content: space-between; border: 1px solid #bfdbfe;">
+        <div style="background: linear-gradient(135deg, #f0f9ff 0%, #ecfdf5 100%); border-radius: var(--card-radius); padding: 2.5rem; height: 100%; min-height: 600px; display: flex; flex-direction: column; justify-content: space-between; border: 1px solid #bfdbfe;">
             <div>
                 <div style="font-size: 3.5rem; color: var(--primary); margin-bottom: 1.5rem;">
                     <span class="material-symbols-rounded">hub</span>

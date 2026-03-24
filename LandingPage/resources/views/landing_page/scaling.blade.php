@@ -29,7 +29,7 @@
 
             <div style="display: grid; gap: 2rem;">
                 @foreach(__('scaling.phases') as $index => $p)
-                <div style="background: white; border-radius: 12px; padding: 2.5rem; border: 1px solid var(--border); transition: all 0.3s ease;" onmouseover="this.style.boxShadow='0 12px 30px rgba(15, 107, 158, 0.12)';" onmouseout="this.style.boxShadow='';">
+                <div style="background: white; border-radius: var(--card-radius); padding: 2.5rem; border: 1px solid var(--border); transition: all 0.3s ease;" onmouseover="this.style.boxShadow='0 12px 30px rgba(26, 77, 94, 0.12)';" onmouseout="this.style.boxShadow='';">
                     <div style="display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 2rem; margin-bottom: 1.5rem;">
                         <div>
                             <div style="font-size: 2.5rem; font-weight: 800; color: var(--primary); margin-bottom: 0.5rem;">
@@ -74,7 +74,7 @@
 
             <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 2rem;">
                 @foreach(__('scaling.metrics') as $m)
-                <div style="background: var(--secondary-bg); border-radius: 12px; padding: 2rem; border: 1px solid var(--border); text-align: center; transition: all 0.3s ease;" onmouseover="this.style.backgroundColor='white'; this.style.borderColor='var(--primary)';" onmouseout="this.style.backgroundColor='var(--secondary-bg)'; this.style.borderColor='var(--border)';">
+                <div style="background: var(--secondary-bg); border-radius: var(--card-radius); padding: 2rem; border: 1px solid var(--border); text-align: center; transition: all 0.3s ease;" onmouseover="this.style.backgroundColor='white'; this.style.borderColor='var(--primary)';" onmouseout="this.style.backgroundColor='var(--secondary-bg)'; this.style.borderColor='var(--border)';">
                     <div style="font-size: 2.5rem; font-weight: 800; color: var(--primary); margin-bottom: 0.5rem;">{{ $m['metric'] }}</div>
                     <div style="font-weight: 700; color: var(--text-dark); margin-bottom: 0.5rem;">{{ $m['label'] }}</div>
                     <div style="font-size: 0.9rem; color: var(--text-gray);">{{ $m['desc'] }}</div>
@@ -87,7 +87,7 @@
     <!-- CTA -->
     <section style="background: white;">
         <div class="container-v5">
-            <div style="background: linear-gradient(135deg, var(--primary) 0%, var(--primary-light) 100%); border-radius: 12px; padding: 4rem 2rem; text-align: center; color: white;">
+            <div style="background: linear-gradient(135deg, var(--primary) 0%, var(--primary-light) 100%); border-radius: var(--card-radius); padding: 4rem 2rem; text-align: center; color: white;">
                 <h2 style="font-size: 2.5rem; font-weight: 800; margin-bottom: 1rem;">{{ __('scaling.cta_title') }}</h2>
                 <p style="font-size: 1.1rem; margin-bottom: 2rem; opacity: 0.95;">{{ __('scaling.cta_desc') }}</p>
                 <a href="{{ route('landing.contact') }}" style="background: white; color: var(--primary); padding: 1rem 2.5rem; border-radius: 8px; font-weight: 600; text-decoration: none; display: inline-flex; align-items: center; gap: 0.75rem; transition: all 0.3s ease;" onmouseover="this.style.backgroundColor='var(--secondary-bg)'; this.style.transform='translateY(-2px)'; this.style.boxShadow='0 8px 20px rgba(0,0,0,0.15)';" onmouseout="this.style.backgroundColor='white'; this.style.transform=''; this.style.boxShadow='';">

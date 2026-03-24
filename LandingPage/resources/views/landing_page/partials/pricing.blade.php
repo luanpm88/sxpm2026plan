@@ -26,8 +26,8 @@
             @endphp
 
             @foreach($pricing_plans as $plan)
-            <div style="background: {{ $plan['highlighted'] ? 'linear-gradient(135deg, var(--primary) 0%, var(--primary-light) 100%)' : 'white' }}; border-radius: 12px; padding: 2.5rem; border: {{ $plan['highlighted'] ? 'none' : '1px solid var(--border)' }}; position: relative; transition: all 0.3s ease;"
-                    onmouseover="this.style.transform='translateY(-5px)'; this.style.boxShadow='0 12px 30px rgba(15, 107, 158, 0.15)';"
+            <div style="background: {{ $plan['highlighted'] ? 'linear-gradient(135deg, var(--primary) 0%, var(--primary-light) 100%)' : 'white' }}; border-radius: var(--card-radius); padding: 2.5rem; border: {{ $plan['highlighted'] ? 'none' : '1px solid var(--border)' }}; position: relative; transition: all 0.3s ease;"
+                    onmouseover="this.style.transform='translateY(-5px)'; this.style.boxShadow='0 12px 30px rgba(26, 77, 94, 0.15)';"
                     onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='';">
 
                 @if($plan['highlighted'])
@@ -97,7 +97,7 @@
             @endphp
 
             @foreach($core_services as $service)
-            <div style="background: white; border-radius: 12px; padding: 2rem; text-align: center;">
+            <div style="background: white; border-radius: var(--card-radius); padding: 2rem; text-align: center;">
                 <div style="font-size: 2.5rem; color: var(--primary); margin-bottom: 1rem;">
                     <span class="material-symbols-rounded">{{ $service['icon'] }}</span>
                 </div>
@@ -181,7 +181,7 @@
 <!-- Custom Quote -->
 <section style="background: white;">
     <div class="container-v5">
-        <div style="background: linear-gradient(135deg, var(--primary) 0%, var(--primary-light) 100%); border-radius: 12px; padding: 3.5rem 2rem; text-align: center; color: white;">
+        <div style="background: linear-gradient(135deg, var(--primary) 0%, var(--primary-light) 100%); border-radius: var(--card-radius); padding: 3.5rem 2rem; text-align: center; color: white;">
             <h2 style="font-size: 2.5rem; font-weight: 800; margin-bottom: 1rem;">{{ __('pricing.cta_title') }}</h2>
             <p style="font-size: 1.1rem; margin-bottom: 2rem; opacity: 0.95;">
                 {{ __('pricing.cta_desc') }}

@@ -26,7 +26,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 
     <!-- Main CSS (v= cache-bust so header/nav fixes always apply) -->
-    <link rel="stylesheet" href="{{ asset('css/main.css') }}?v=15">
+    <link rel="stylesheet" href="{{ asset('css/main.css') }}?v=18">
 
     {{-- Critical header/lang fallback if main.css fails to load or is cached stale --}}
     <style>

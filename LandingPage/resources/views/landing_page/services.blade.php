@@ -265,40 +265,80 @@
                         </ul>
                     </div>
 
-                    <div class="position-relative" style="background: white; border-radius: var(--card-radius); padding: 2.5rem; border: 1px solid var(--border); text-align: center;">
-                        <svg viewBox="0 0 280 280" style="width: 100%; max-width: 280px;">
-                            <!-- Query -->
-                            <rect x="120" y="40" width="40" height="25" fill="#0ea5e9" rx="6"/>
-                            <text x="140" y="57" text-anchor="middle" font-size="10" fill="white" font-weight="bold">Query</text>
+                    <div class="position-relative" style="background: white; border-radius: var(--card-radius); padding: 1.5rem; border: 1px solid var(--border);">
+                        <svg viewBox="0 0 420 300" style="width: 100%;">
+                            <defs>
+                                <filter id="llm-glow" x="-60%" y="-60%" width="220%" height="220%">
+                                    <feGaussianBlur stdDeviation="5" result="blur"/>
+                                    <feMerge>
+                                        <feMergeNode in="blur"/>
+                                        <feMergeNode in="SourceGraphic"/>
+                                    </feMerge>
+                                </filter>
+                                <linearGradient id="flow-grad" x1="0%" y1="0%" x2="100%" y2="0%">
+                                    <stop offset="0%" stop-color="#0ea5e9"/>
+                                    <stop offset="50%" stop-color="#a855f7"/>
+                                    <stop offset="100%" stop-color="#f59e0b"/>
+                                </linearGradient>
+                            </defs>
 
-                            <!-- NLP -->
-                            <circle cx="140" cy="90" r="18" fill="#f59e0b"/>
-                            <text x="140" y="95" text-anchor="middle" font-size="9" fill="white" font-weight="bold">NLP</text>
-                            <text x="140" y="106" text-anchor="middle" font-size="8" fill="white" opacity="0.9">Processing</text>
+                            <text x="12" y="22" font-size="10" fill="var(--text-dark)" font-weight="800">AI Brain / Knowledge Flow</text>
 
-                            <!-- Branches -->
-                            <rect x="30" y="140" width="80" height="35" fill="#10b981" rx="8"/>
-                            <text x="70" y="160" text-anchor="middle" font-size="9" fill="white" font-weight="bold">Vector DB</text>
-                            <text x="70" y="170" text-anchor="middle" font-size="8" fill="white">Storage</text>
+                            <!-- Data Sources -->
+                            <rect x="12" y="54" width="74" height="56" rx="10" fill="#0ea5e910" stroke="#0ea5e930"/>
+                            <text x="49" y="74" text-anchor="middle" font-size="8" fill="#0ea5e9" font-weight="700">Data Sources</text>
+                            <text x="49" y="90" text-anchor="middle" font-size="6.5" fill="var(--text-gray)">Docs · APIs</text>
 
-                            <circle cx="140" cy="160" r="22" fill="#0d9488"/>
-                            <text x="140" y="160" text-anchor="middle" font-size="9" fill="white" font-weight="bold">LLM</text>
-                            <text x="140" y="172" text-anchor="middle" font-size="8" fill="white" opacity="0.9">Generation</text>
+                            <!-- Processing / Knowledge Ingestion -->
+                            <rect x="94" y="54" width="74" height="56" rx="10" fill="#0ea5e910" stroke="#0ea5e930"/>
+                            <text x="131" y="74" text-anchor="middle" font-size="8" fill="#0ea5e9" font-weight="700">Processing</text>
+                            <text x="131" y="90" text-anchor="middle" font-size="6.5" fill="var(--text-gray)">Knowledge Ingestion</text>
 
-                            <rect x="200" y="140" width="60" height="35" fill="#8b5cf6" rx="8"/>
-                            <text x="230" y="160" text-anchor="middle" font-size="9" fill="white" font-weight="bold">RAG</text>
-                            <text x="230" y="170" text-anchor="middle" font-size="8" fill="white">Pipeline</text>
+                            <!-- Vector DB / Vector Search -->
+                            <rect x="176" y="54" width="74" height="56" rx="10" fill="#a855f710" stroke="#a855f730"/>
+                            <text x="213" y="74" text-anchor="middle" font-size="8" fill="#a855f7" font-weight="700">Vector DB</text>
+                            <text x="213" y="90" text-anchor="middle" font-size="6.5" fill="var(--text-gray)">Vector Search</text>
+
+                            <!-- LLM / LLM Routing -->
+                            <rect x="258" y="54" width="74" height="56" rx="10" fill="#f59e0b10" stroke="#f59e0b30"/>
+                            <circle cx="295" cy="82" r="18" fill="#f59e0b" opacity="0.18" filter="url(#llm-glow)">
+                                <animate attributeName="opacity" values="0.12;0.35;0.12" dur="2.2s" repeatCount="indefinite"/>
+                            </circle>
+                            <text x="295" y="74" text-anchor="middle" font-size="8" fill="#f59e0b" font-weight="800">LLM</text>
+                            <text x="295" y="90" text-anchor="middle" font-size="6.5" fill="var(--text-gray)">LLM Routing</text>
 
                             <!-- Output -->
-                            <rect x="110" y="240" width="60" height="25" fill="#0ea5e9" rx="6"/>
-                            <text x="140" y="257" text-anchor="middle" font-size="9" fill="white" font-weight="bold">Intelligent Response</text>
+                            <rect x="340" y="54" width="68" height="56" rx="10" fill="#22c55e10" stroke="#22c55e30"/>
+                            <text x="374" y="74" text-anchor="middle" font-size="8" fill="#22c55e" font-weight="700">Output</text>
+                            <text x="374" y="90" text-anchor="middle" font-size="6.5" fill="var(--text-gray)">Answer + Cite</text>
 
-                            <!-- Lines -->
-                            <line x1="140" y1="65" x2="140" y2="72" stroke="#0ea5e9" stroke-width="2"/>
-                            <line x1="140" y1="85" x2="50" y2="150" stroke="#0d9488" stroke-width="2"/>
-                            <line x1="140" y1="85" x2="140" y2="140" stroke="#0d9488" stroke-width="2"/>
-                            <line x1="140" y1="85" x2="230" y2="150" stroke="#0d9488" stroke-width="2"/>
-                            <line x1="140" y1="210" x2="140" y2="240" stroke="#1a4d5e" stroke-width="2"/>
+                            <!-- Flow line -->
+                            <path id="data-flow-path" d="M 49 126 C 120 154, 304 154, 374 126" fill="none" stroke="url(#flow-grad)" stroke-width="2.5" stroke-linecap="round" opacity="0.75"/>
+                            <circle r="4" fill="#0ea5e9">
+                                <animateMotion dur="2.6s" repeatCount="indefinite" rotate="auto">
+                                    <mpath href="#data-flow-path"/>
+                                </animateMotion>
+                            </circle>
+
+                            <!-- Mapping block -->
+                            <rect x="12" y="170" width="396" height="112" rx="12" fill="var(--secondary-bg)" stroke="var(--border)"/>
+                            <text x="24" y="190" font-size="9" fill="var(--text-dark)" font-weight="700">Platform Mapping</text>
+
+                            <rect x="24" y="200" width="184" height="32" rx="8" fill="var(--surface)" stroke="var(--border)"/>
+                            <text x="34" y="219" font-size="7.5" fill="var(--text-dark)" font-weight="600">Knowledge Ingestion</text>
+                            <text x="150" y="219" font-size="7" fill="var(--text-light)">Connectors · OCR · Chunking</text>
+
+                            <rect x="214" y="200" width="184" height="32" rx="8" fill="var(--surface)" stroke="var(--border)"/>
+                            <text x="224" y="219" font-size="7.5" fill="var(--text-dark)" font-weight="600">Vector Search</text>
+                            <text x="294" y="219" font-size="7" fill="var(--text-light)">Semantic · BM25 · Re-rank</text>
+
+                            <rect x="24" y="238" width="184" height="32" rx="8" fill="var(--surface)" stroke="var(--border)"/>
+                            <text x="34" y="257" font-size="7.5" fill="var(--text-dark)" font-weight="600">LLM Routing</text>
+                            <text x="93" y="257" font-size="7" fill="var(--text-light)">Multi-provider · Fallbacks</text>
+
+                            <rect x="214" y="238" width="184" height="32" rx="8" fill="var(--surface)" stroke="var(--border)"/>
+                            <text x="224" y="257" font-size="7.5" fill="var(--text-dark)" font-weight="600">RAG Pipeline</text>
+                            <text x="286" y="257" font-size="7" fill="var(--text-light)">Retrieve → Context → Generate → Cite</text>
                         </svg>
                     </div>
                 </div>
@@ -394,39 +434,65 @@
             </div>
 
             <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; align-items: center; margin-bottom: 4rem;">
-                <div class="position-relative" style="background: white; border-radius: var(--card-radius); padding: 2.5rem; border: 2px solid var(--primary); box-shadow: 0 8px 32px rgba(26, 77, 94, 0.15);">
-                    <svg viewBox="0 0 280 280" style="width: 100%; max-width: 280px;">
-                        <!-- Multiple users -->
-                        <circle cx="60" cy="60" r="15" fill="#1a4d5e" opacity="0.7"/>
-                        <circle cx="100" cy="40" r="15" fill="#1a4d5e" opacity="0.7"/>
-                        <circle cx="140" cy="35" r="15" fill="#1a4d5e" opacity="0.7"/>
-                        <circle cx="180" cy="50" r="15" fill="#1a4d5e" opacity="0.7"/>
-                        <circle cx="210" cy="85" r="15" fill="#1a4d5e" opacity="0.7"/>
+                <div class="position-relative" style="background: white; border-radius: var(--card-radius); padding: 1.5rem; border: 2px solid var(--primary); box-shadow: 0 8px 32px rgba(26, 77, 94, 0.15);">
+                    <svg viewBox="0 0 420 300" style="width: 100%;">
+                        <text x="12" y="22" font-size="10" fill="var(--text-dark)" font-weight="800">Enterprise SaaS Platform</text>
 
-                        <!-- Central Platform -->
-                        <rect x="80" y="120" width="120" height="80" fill="#1a4d5e" rx="8"/>
-                        <text x="140" y="155" text-anchor="middle" font-size="12" fill="white" font-weight="bold">Multi-Tenant</text>
-                        <text x="140" y="170" text-anchor="middle" font-size="12" fill="white" font-weight="bold">Platform</text>
+                        <!-- KPI row -->
+                        <rect x="12" y="34" width="126" height="56" rx="10" fill="#3b82f610" stroke="#3b82f630"/>
+                        <text x="24" y="52" font-size="8" fill="var(--text-light)">Active Users</text>
+                        <text x="24" y="72" font-size="16" fill="#3b82f6" font-weight="800">50K+</text>
+                        <rect x="146" y="34" width="126" height="56" rx="10" fill="#22c55e10" stroke="#22c55e30"/>
+                        <text x="158" y="52" font-size="8" fill="var(--text-light)">Uptime SLA</text>
+                        <text x="158" y="72" font-size="16" fill="#22c55e" font-weight="800">99.95%</text>
+                        <rect x="280" y="34" width="128" height="56" rx="10" fill="#f59e0b10" stroke="#f59e0b30"/>
+                        <text x="292" y="52" font-size="8" fill="var(--text-light)">API Response</text>
+                        <text x="292" y="72" font-size="16" fill="#f59e0b" font-weight="800">&lt;50ms</text>
 
-                        <!-- Database -->
-                        <rect x="100" y="240" width="80" height="20" fill="#10b981" rx="4"/>
-                        <text x="140" y="253" text-anchor="middle" font-size="9" fill="white" font-weight="bold">Shared Infrastructure</text>
+                        <!-- Main modules -->
+                        <rect x="12" y="106" width="128" height="84" rx="10" fill="var(--secondary-bg)" stroke="var(--border)"/>
+                        <text x="24" y="126" font-size="9" fill="var(--text-dark)" font-weight="700">Workspace Mgmt</text>
+                        <text x="24" y="143" font-size="7" fill="var(--text-gray)">Projects · Members</text>
+                        <text x="24" y="156" font-size="7" fill="var(--text-gray)">Permissions · Teams</text>
 
-                        <!-- Connections -->
-                        <line x1="80" y1="75" x2="100" y2="125" stroke="#0ea5e9" stroke-width="2" stroke-dasharray="4"/>
-                        <line x1="120" y1="55" x2="110" y2="125" stroke="#0ea5e9" stroke-width="2" stroke-dasharray="4"/>
-                        <line x1="140" y1="50" x2="140" y2="125" stroke="#0ea5e9" stroke-width="2" stroke-dasharray="4"/>
-                        <line x1="160" y1="60" x2="170" y2="125" stroke="#0ea5e9" stroke-width="2" stroke-dasharray="4"/>
-                        <line x1="200" y1="100" x2="180" y2="125" stroke="#0ea5e9" stroke-width="2" stroke-dasharray="4"/>
-                        <line x1="140" y1="200" x2="140" y2="240" stroke="#0d9488" stroke-width="2"/>
+                        <rect x="146" y="106" width="128" height="84" rx="10" fill="var(--secondary-bg)" stroke="var(--border)"/>
+                        <text x="158" y="126" font-size="9" fill="var(--text-dark)" font-weight="700">Collaboration</text>
+                        <text x="158" y="143" font-size="7" fill="var(--text-gray)">Real-time Updates</text>
+                        <text x="158" y="156" font-size="7" fill="var(--text-gray)">Activity Stream</text>
+
+                        <rect x="280" y="106" width="128" height="84" rx="10" fill="var(--secondary-bg)" stroke="var(--border)"/>
+                        <text x="292" y="126" font-size="9" fill="var(--text-dark)" font-weight="700">Billing &amp; Plans</text>
+                        <text x="292" y="143" font-size="7" fill="var(--text-gray)">Subscription · Invoice</text>
+                        <text x="292" y="156" font-size="7" fill="var(--text-gray)">Usage Metering</text>
+
+                        <!-- Tenant strip -->
+                        <text x="12" y="212" font-size="9" fill="var(--text-dark)" font-weight="700">Multi-tenant Isolation</text>
+                        <rect x="12" y="220" width="396" height="60" rx="10" fill="var(--secondary-bg)" stroke="var(--border)"/>
+                        <rect x="24" y="236" width="82" height="28" rx="8" fill="#3b82f6"/>
+                        <text x="65" y="253" text-anchor="middle" font-size="8" fill="white" font-weight="700">Tenant A</text>
+                        <rect x="116" y="236" width="82" height="28" rx="8" fill="#22c55e"/>
+                        <text x="157" y="253" text-anchor="middle" font-size="8" fill="white" font-weight="700">Tenant B</text>
+                        <rect x="208" y="236" width="82" height="28" rx="8" fill="#f59e0b"/>
+                        <text x="249" y="253" text-anchor="middle" font-size="8" fill="white" font-weight="700">Tenant C</text>
+                        <rect x="300" y="236" width="96" height="28" rx="8" fill="var(--surface)" stroke="var(--border)"/>
+                        <text x="348" y="253" text-anchor="middle" font-size="8" fill="var(--text-gray)" font-weight="700">+ Others</text>
                     </svg>
                 </div>
 
                 <div>
-                    <h3 style="font-size: 1.1rem; font-weight: 700; color: var(--text-dark); margin-bottom: 1rem;">{{ __('services.saas.hkspace_title') }}</h3>
-                    <p style="color: var(--text-gray); line-height: 1.8; margin-bottom: 1.5rem;">
-                        {{ __('services.saas.subtitle') }}
+                    <h3 style="font-size: 1.8rem; font-weight: 800; color: var(--text-dark); margin-bottom: 0.8rem; line-height: 1.25;">
+                        Build and Scale Your Enterprise SaaS Platform with Confidence
+                    </h3>
+                    <p style="color: var(--text-gray); line-height: 1.7; margin-bottom: 0.7rem; font-size: 1rem;">
+                        Production-ready multi-tenant system powering 50,000+ users.
                     </p>
+                    <p style="color: var(--text-gray); line-height: 1.7; margin-bottom: 1.4rem; font-size: 0.95rem;">
+                        End-to-end solution from architecture design to deployment and continuous scaling.
+                    </p>
+                    <div style="display: flex; flex-wrap: wrap; gap: 0.75rem; margin-bottom: 1.6rem;">
+                        <a href="{{ route('landing.contact') }}" class="btn-primary-v5">Get Started</a>
+                        <a href="{{ route('landing.case-studies') }}" class="btn-secondary-v5">View Demo</a>
+                    </div>
 
                     <div style="display: grid; gap: 1.5rem;">
                         @foreach(__('services.saas.ecosystem_items') as $item)
@@ -435,6 +501,7 @@
                             <p style="color: var(--text-gray); font-size: 0.9rem; line-height: 1.6; margin: 0;">{{ $item['desc'] }}</p>
                         </div>
                         @endforeach
+                        
                     </div>
                 </div>
             </div>

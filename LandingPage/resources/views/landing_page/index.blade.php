@@ -6,11 +6,11 @@
 
 
     <!-- Services Preview -->
-    <section id="services" style="background: var(--secondary-bg);">
+    <section id="services" aria-labelledby="heading-services" style="background: var(--secondary-bg);">
         <div class="container-v5">
             <div class="section-header">
-                <span class="section-label">OUR SERVICES</span>
-                <h2 class="section-title">{{ __('index.services_title') }}</h2>
+                <span class="section-label">{{ __('index.section_services') }}</span>
+                <h2 id="heading-services" class="section-title">{{ __('index.services_title') }}</h2>
                 <p class="section-subtitle">{{ __('index.services_subtitle') }}</p>
             </div>
 
@@ -108,7 +108,7 @@
                     </div>
                     <h3 style="font-size: 1.1rem; font-weight: 700; color: var(--text-dark); margin-bottom: 1rem;">{{ __('index.security_title') }}</h3>
                     <p style="color: var(--text-gray); font-size: 0.95rem; line-height: 1.7; margin-bottom: 1.5rem;">
-                        Enterprise-grade security architecture complying with OWASP, ISO 27001, SOC 2
+                        {{ __('index.security_desc') }}
                     </p>
                     <ul style="list-style: none; padding: 0; margin-bottom: 1.5rem;">
                         <li style="padding: 0.5rem 0; color: var(--text-gray); display: flex; align-items: center; gap: 0.75rem; font-size: 0.9rem;">
@@ -134,16 +134,16 @@
         </div>
     </section>
 
-    <!-- {{ __('index.scrum_title') }} Preview -->
-    <section id="process">
+    <!-- Scrum Process Preview -->
+    <section id="process" aria-labelledby="heading-process">
         <div class="container-v5">
             <div class="section-header">
-                <span class="section-label">OUR PROCESS</span>
-                <h2 class="section-title">{{ __('index.scrum_title') }}</h2>
+                <span class="section-label">{{ __('index.section_process') }}</span>
+                <h2 id="heading-process" class="section-title">{{ __('index.scrum_title') }}</h2>
                 <p class="section-subtitle">{{ __('index.scrum_subtitle') }}</p>
             </div>
 
-            <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem;">
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 1.5rem;">
                 @php
                 $processes = [
                     ['icon' => 'lightbulb', 'title' => __('index.scrum_discovery'), 'desc' => __('index.scrum_discovery_desc'), 'num' => '01'],
@@ -155,9 +155,7 @@
                 ];
                 @endphp
                 @foreach($processes as $p)
-                <div class="fp-card" style="background: var(--surface); border: 1px solid var(--border); border-radius: var(--card-radius); padding: 2rem 1.75rem; text-align: left; transition: all 0.25s ease; position: relative;"
-                     onmouseover="this.style.boxShadow='0 6px 24px var(--shadow-color)'; this.style.transform='translateY(-2px)';"
-                     onmouseout="this.style.boxShadow='none'; this.style.transform='translateY(0)';">
+                <div class="fp-card" style="text-align: left; position: relative;">
                     <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 1rem;">
                         <div style="width: 42px; height: 42px; border-radius: 10px; display: flex; align-items: center; justify-content: center; background: var(--primary-subtle); color: var(--primary); font-size: 1.3rem;">
                             <span class="material-symbols-rounded">{{ $p['icon'] }}</span>
@@ -179,12 +177,12 @@
         </div>
     </section>
 
-    <!-- {{ __('index.tech_title') }} Preview -->
-    <section style="background: var(--secondary-bg);">
+    <!-- Technology Stack Preview -->
+    <section id="technology" aria-labelledby="heading-technology" style="background: var(--secondary-bg);">
         <div class="container-v5">
             <div class="section-header">
-                <span class="section-label">TECHNOLOGY</span>
-                <h2 class="section-title">{{ __('index.tech_title') }}</h2>
+                <span class="section-label">{{ __('index.section_technology') }}</span>
+                <h2 id="heading-technology" class="section-title">{{ __('index.tech_title') }}</h2>
                 <p class="section-subtitle">{{ __('index.tech_subtitle') }}</p>
             </div>
 
@@ -278,7 +276,7 @@
                         <div style="color: var(--text-gray); font-size: 0.9rem;">{{ __("index.tech_uptime") }}</div>
                     </div>
                     <div>
-                        <div style="font-size: 2rem; font-weight: 800; color: var(--primary); margin-bottom: 0.5rem;"><100ms</div>
+                        <div style="font-size: 2rem; font-weight: 800; color: var(--primary); margin-bottom: 0.5rem;">&lt;100ms</div>
                         <div style="color: var(--text-gray); font-size: 0.9rem;">{{ __("index.tech_response") }}</div>
                     </div>
                 </div>
@@ -294,11 +292,11 @@
     </section>
 
     <!-- Scaling Journey -->
-    <section>
+    <section id="scaling" aria-labelledby="heading-scaling">
         <div class="container-v5">
             <div class="section-header">
-                <span class="section-label">SCALING JOURNEY</span>
-                <h2 class="section-title">{{ __('index.scaling_title') }}</h2>
+                <span class="section-label">{{ __('index.section_scaling') }}</span>
+                <h2 id="heading-scaling" class="section-title">{{ __('index.scaling_title') }}</h2>
                 <p class="section-subtitle">{{ __('index.scaling_subtitle') }}</p>
             </div>
 
@@ -336,30 +334,28 @@
         </div>
     </section>
 
-    <!-- Why Choose — June-style bento cards with icon pill + left-aligned text -->
-    <section style="background: var(--secondary-bg);">
+    <!-- Why Choose Us -->
+    <section id="why-us" aria-labelledby="heading-why" style="background: var(--secondary-bg);">
         <div class="container-v5">
             <div class="section-header">
-                <span class="section-label">WHY CHOOSE US</span>
-                <h2 class="section-title">{{ __('index.why_title') }}</h2>
+                <span class="section-label">{{ __('index.section_why') }}</span>
+                <h2 id="heading-why" class="section-title">{{ __('index.why_title') }}</h2>
                 <p class="section-subtitle">{{ __('index.why_subtitle') }}</p>
             </div>
 
             @php
             $features = [
-                ['icon' => 'verified_user', 'title' => 'Deep Expertise', 'desc' => '12+ years building enterprise-grade systems with proven results across industries.', 'color' => '#0f6b9e'],
-                ['icon' => 'groups', 'title' => 'Expert Team', 'desc' => '100+ specialized engineers & architects, from frontend to cloud infrastructure.', 'color' => '#22c55e'],
+                ['icon' => 'verified_user', 'title' => __('index.why_expertise'), 'desc' => __('index.why_expertise_desc'), 'color' => '#0f6b9e'],
+                ['icon' => 'groups', 'title' => __('index.why_team'), 'desc' => __('index.why_team_desc'), 'color' => '#22c55e'],
                 ['icon' => 'speed', 'title' => __('index.why_fast'), 'desc' => __('index.why_fast_desc'), 'color' => '#f59e0b'],
                 ['icon' => 'shield_lock', 'title' => __('index.why_security'), 'desc' => __('index.why_security_desc'), 'color' => '#ef4444'],
-                ['icon' => 'trending_up', 'title' => 'Scalable Architecture', 'desc' => 'From 100 to 10M+ concurrent users — we build systems that grow with you.', 'color' => '#a855f7'],
+                ['icon' => 'trending_up', 'title' => __('index.why_scalable'), 'desc' => __('index.why_scalable_desc'), 'color' => '#a855f7'],
                 ['icon' => 'handshake', 'title' => __('index.why_partnership'), 'desc' => __('index.why_partnership_desc'), 'color' => '#0ea5e9'],
             ];
             @endphp
-            <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem;">
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 1.5rem;">
                 @foreach($features as $f)
-                <div class="fp-card" style="background: var(--surface); padding: 2rem 1.75rem; border-radius: var(--card-radius); border: 1px solid var(--border); text-align: left; transition: all 0.25s ease;"
-                     onmouseover="this.style.boxShadow='0 8px 28px var(--shadow-color)'; this.style.transform='translateY(-2px)'; this.style.borderColor='{{ $f['color'] }}25';"
-                     onmouseout="this.style.boxShadow='none'; this.style.transform='translateY(0)'; this.style.borderColor='var(--border)';">
+                <div class="fp-card why-card" style="--card-accent: {{ $f['color'] }}; text-align: left;">
                     <div style="width: 44px; height: 44px; border-radius: 12px; display: flex; align-items: center; justify-content: center; background: {{ $f['color'] }}12; color: {{ $f['color'] }}; font-size: 1.35rem; margin-bottom: 1.15rem;">
                         <span class="material-symbols-rounded">{{ $f['icon'] }}</span>
                     </div>
@@ -372,18 +368,19 @@
     </section>
 
     <!-- {{ __('index.case_title') }} Carousel -->
-    <section>
+    <!-- Case Studies Carousel -->
+    <section id="case-studies" aria-labelledby="heading-cases">
         <div class="container-v5">
             <div class="section-header">
-                <span class="section-label">CASE STUDIES</span>
-                <h2 class="section-title">{{ __('index.case_title') }}</h2>
+                <span class="section-label">{{ __('index.section_cases') }}</span>
+                <h2 id="heading-cases" class="section-title">{{ __('index.case_title') }}</h2>
                 <p class="section-subtitle">{{ __('index.case_subtitle') }}</p>
             </div>
 
             <!-- Carousel Container -->
             <div style="position: relative;">
                 <!-- Slides Wrapper -->
-                <div id="casesCarousel" style="overflow: hidden; border-radius: var(--card-radius); background: var(--surface); border: 1px solid var(--border); box-shadow: 0 12px 32px var(--shadow-color);">
+                <div id="casesCarousel" role="region" aria-label="{{ __('index.case_title') }}" tabindex="0" style="overflow: hidden; border-radius: var(--card-radius); background: var(--surface); border: 1px solid var(--border); box-shadow: 0 12px 32px var(--shadow-color); outline: none;">
                     <div id="carouselInner" style="display: flex; transition: transform 0.5s ease-in-out;">
 
                         @php
@@ -508,7 +505,7 @@
                                         {{ $case['description'] }}
                                     </p>
 
-                                    <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; margin-bottom: 2rem;">
+                                    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(90px, 1fr)); gap: 1rem; margin-bottom: 2rem;">
                                         @foreach($case['metrics'] as $metric)
                                         <div>
                                             <div style="font-size: 1.5rem; font-weight: 800; color: var(--primary);">{{ $metric['value'] }}</div>
@@ -523,11 +520,11 @@
                                     </a>
                                 </div>
 
-                                <div class="position-relative" style="background: linear-gradient(135deg, {{ $case['badge_bg'] }}18 0%, {{ $case['badge_bg'] }}08 100%); padding: 2rem; display: flex; align-items: center; justify-content: center; min-height: 400px; overflow: hidden;">
+                                <div style="position: relative; background: linear-gradient(135deg, {{ $case['badge_bg'] }}18 0%, {{ $case['badge_bg'] }}08 100%); padding: 2rem; display: flex; align-items: center; justify-content: center; min-height: 400px; overflow: hidden;">
 
                                     @if ($case['badge'] === 'Education')
                                     {{-- Education: Scheduling Dashboard SVG --}}
-                                    <svg viewBox="0 0 420 340" fill="none" style="width: 100%; max-width: 400px; filter: drop-shadow(0 8px 24px rgba(139, 92, 246, 0.12));">
+                                    <svg viewBox="0 0 420 340" fill="none" aria-hidden="true" style="width: 100%; max-width: 400px; filter: drop-shadow(0 8px 24px rgba(139, 92, 246, 0.12));">
                                         <!-- Main card -->
                                         <rect x="0" y="0" width="420" height="340" rx="14" fill="var(--surface)" stroke="var(--border)" stroke-width="1"/>
                                         <!-- Top bar -->
@@ -608,7 +605,7 @@
 
                                     @elseif ($case['badge'] === 'Logistics & Retail')
                                     {{-- Logistics: Warehouse Management Dashboard SVG --}}
-                                    <svg viewBox="0 0 420 340" fill="none" style="width: 100%; max-width: 400px; filter: drop-shadow(0 8px 24px rgba(245, 158, 11, 0.12));">
+                                    <svg viewBox="0 0 420 340" fill="none" aria-hidden="true" style="width: 100%; max-width: 400px; filter: drop-shadow(0 8px 24px rgba(245, 158, 11, 0.12));">
                                         <rect x="0" y="0" width="420" height="340" rx="14" fill="var(--surface)" stroke="var(--border)" stroke-width="1"/>
                                         <!-- Top bar -->
                                         <rect x="0" y="0" width="420" height="40" rx="14" fill="var(--secondary-bg)"/>
@@ -696,7 +693,7 @@
 
                                     @elseif ($case['badge'] === 'Enterprise Management')
                                     {{-- ERP: Enterprise Dashboard SVG --}}
-                                    <svg viewBox="0 0 420 340" fill="none" style="width: 100%; max-width: 400px; filter: drop-shadow(0 8px 24px rgba(16, 185, 129, 0.12));">
+                                    <svg viewBox="0 0 420 340" fill="none" aria-hidden="true" style="width: 100%; max-width: 400px; filter: drop-shadow(0 8px 24px rgba(16, 185, 129, 0.12));">
                                         <rect x="0" y="0" width="420" height="340" rx="14" fill="var(--surface)" stroke="var(--border)" stroke-width="1"/>
                                         <!-- Top bar -->
                                         <rect x="0" y="0" width="420" height="40" rx="14" fill="var(--secondary-bg)"/>
@@ -794,7 +791,7 @@
 
                                     @elseif ($case['badge'] === 'AI Knowledge Platform')
                                     {{-- AI Knowledge Platform: Modern AI Foundation — 6 Core Modules SVG --}}
-                                    <svg viewBox="0 0 420 340" fill="none" style="width: 100%; max-width: 400px; filter: drop-shadow(0 8px 24px rgba(14, 165, 233, 0.12));">
+                                    <svg viewBox="0 0 420 340" fill="none" aria-hidden="true" style="width: 100%; max-width: 400px; filter: drop-shadow(0 8px 24px rgba(14, 165, 233, 0.12));">
                                         <rect x="0" y="0" width="420" height="340" rx="14" fill="var(--surface)" stroke="var(--border)" stroke-width="1"/>
                                         <!-- Top bar -->
                                         <rect x="0" y="0" width="420" height="36" rx="14" fill="var(--secondary-bg)"/>
@@ -967,7 +964,7 @@
 
                                     @elseif ($case['badge'] === 'Enterprise SaaS')
                                     {{-- Enterprise SaaS: HKSpace Platform Dashboard SVG --}}
-                                    <svg viewBox="0 0 420 340" fill="none" style="width: 100%; max-width: 400px; filter: drop-shadow(0 8px 24px rgba(59, 130, 246, 0.12));">
+                                    <svg viewBox="0 0 420 340" fill="none" aria-hidden="true" style="width: 100%; max-width: 400px; filter: drop-shadow(0 8px 24px rgba(59, 130, 246, 0.12));">
                                         <rect x="0" y="0" width="420" height="340" rx="14" fill="var(--surface)" stroke="var(--border)" stroke-width="1"/>
                                         <!-- Top bar -->
                                         <rect x="0" y="0" width="420" height="40" rx="14" fill="var(--secondary-bg)"/>
@@ -1072,7 +1069,7 @@
 
                                     @elseif ($case['badge'] === 'Sprint Cycle')
                                     {{-- Sprint Cycle: Agile Sprint Board Dashboard SVG --}}
-                                    <svg viewBox="0 0 420 340" fill="none" style="width: 100%; max-width: 400px; filter: drop-shadow(0 8px 24px rgba(99, 102, 241, 0.12));">
+                                    <svg viewBox="0 0 420 340" fill="none" aria-hidden="true" style="width: 100%; max-width: 400px; filter: drop-shadow(0 8px 24px rgba(99, 102, 241, 0.12));">
                                         <rect x="0" y="0" width="420" height="340" rx="14" fill="var(--surface)" stroke="var(--border)" stroke-width="1"/>
                                         <!-- Top bar -->
                                         <rect x="0" y="0" width="420" height="40" rx="14" fill="var(--secondary-bg)"/>
@@ -1216,7 +1213,7 @@
 
                                     @else
                                     {{-- Default fallback: growth chart --}}
-                                    <svg viewBox="0 0 300 200" style="width: 100%; max-width: 300px;">
+                                    <svg viewBox="0 0 300 200" aria-hidden="true" style="width: 100%; max-width: 300px;">
                                         <path d="{{ $case['svg_path'] }}" fill="none" stroke="var(--primary)" stroke-width="3" opacity="0.8"/>
                                         @foreach($case['svg_points'] as $point)
                                         <circle cx="{{ $point['cx'] }}" cy="{{ $point['cy'] }}" r="{{ $point['r'] }}" fill="var(--primary)" opacity="{{ $point['r'] > 6 ? '1' : '0.7' }}"/>
@@ -1233,12 +1230,12 @@
                 </div>
 
                 <!-- Navigation Arrows -->
-                <button id="prevBtn" style="position: absolute; left: -20px; top: 50%; transform: translateY(-50%); background: var(--surface); border: 1px solid var(--border); width: 48px; height: 48px; border-radius: 50%; display: flex; align-items: center; justify-content: center; cursor: pointer; box-shadow: 0 4px 12px rgba(0,0,0,0.1); transition: all 0.3s ease; z-index: 10;">
-                    <span class="material-symbols-rounded" style="color: var(--primary); transition: color 0.3s ease;">chevron_left</span>
+                <button id="prevBtn" aria-label="Previous case study" style="position: absolute; left: -20px; top: 50%; transform: translateY(-50%); background: var(--surface); border: 1px solid var(--border); width: 48px; height: 48px; border-radius: 50%; display: flex; align-items: center; justify-content: center; cursor: pointer; box-shadow: 0 4px 12px rgba(0,0,0,0.1); transition: all 0.3s ease; z-index: 10;">
+                    <span class="material-symbols-rounded" aria-hidden="true" style="color: var(--primary); transition: color 0.3s ease;">chevron_left</span>
                 </button>
 
-                <button id="nextBtn" style="position: absolute; right: -20px; top: 50%; transform: translateY(-50%); background: var(--surface); border: 1px solid var(--border); width: 48px; height: 48px; border-radius: 50%; display: flex; align-items: center; justify-content: center; cursor: pointer; box-shadow: 0 4px 12px rgba(0,0,0,0.1); transition: all 0.3s ease; z-index: 10;">
-                    <span class="material-symbols-rounded" style="color: var(--primary); transition: color 0.3s ease;">chevron_right</span>
+                <button id="nextBtn" aria-label="Next case study" style="position: absolute; right: -20px; top: 50%; transform: translateY(-50%); background: var(--surface); border: 1px solid var(--border); width: 48px; height: 48px; border-radius: 50%; display: flex; align-items: center; justify-content: center; cursor: pointer; box-shadow: 0 4px 12px rgba(0,0,0,0.1); transition: all 0.3s ease; z-index: 10;">
+                    <span class="material-symbols-rounded" aria-hidden="true" style="color: var(--primary); transition: color 0.3s ease;">chevron_right</span>
                 </button>
 
                 <!-- Dots Navigation -->
@@ -1319,11 +1316,23 @@
             }, 5000);
         });
 
-        // Keyboard navigation
-        document.addEventListener('keydown', (e) => {
+        // Touch/swipe support for mobile
+        let touchStartX = 0;
+        carousel.addEventListener('touchstart', (e) => {
+            touchStartX = e.changedTouches[0].screenX;
+        }, { passive: true });
+        carousel.addEventListener('touchend', (e) => {
+            const diff = touchStartX - e.changedTouches[0].screenX;
+            if (Math.abs(diff) > 50) updateCarousel(diff > 0 ? currentIndex + 1 : currentIndex - 1);
+        }, { passive: true });
+
+        // Keyboard navigation — scoped to carousel focus only
+        carousel.addEventListener('keydown', (e) => {
             if (e.key === 'ArrowLeft') {
+                e.preventDefault();
                 updateCarousel(currentIndex - 1);
             } else if (e.key === 'ArrowRight') {
+                e.preventDefault();
                 updateCarousel(currentIndex + 1);
             }
         });
@@ -1336,7 +1345,7 @@
         });
 
         prevBtn.addEventListener('mouseleave', function() {
-            this.style.background = 'white';
+            this.style.background = 'var(--surface)';
             this.style.borderColor = 'var(--border)';
             this.querySelector('.material-symbols-rounded').style.color = 'var(--primary)';
         });
@@ -1348,26 +1357,26 @@
         });
 
         nextBtn.addEventListener('mouseleave', function() {
-            this.style.background = 'white';
+            this.style.background = 'var(--surface)';
             this.style.borderColor = 'var(--border)';
             this.querySelector('.material-symbols-rounded').style.color = 'var(--primary)';
         });
     })();
     </script>
 
-    <!-- {{ __('index.rd_title') }} Section -->
-    <section style="background: linear-gradient(135deg, #f8fafc 0%, #ecfdf5 100%); padding: 5rem 0;">
+    <!-- R&D Section -->
+    <section id="rd" aria-labelledby="heading-rd" style="background: var(--secondary-bg);">
         <div class="container-v5">
             <div class="section-header">
-                <span class="section-label" style="color: var(--primary);">RESEARCH & DEVELOPMENT</span>
-                <h2 class="section-title">{{ __('index.rd_title') }}</h2>
+                <span class="section-label" style="color: var(--primary);">{{ __('index.section_rd') }}</span>
+                <h2 id="heading-rd" class="section-title">{{ __('index.rd_title') }}</h2>
                 <p class="section-subtitle">{{ __('index.rd_subtitle') }}</p>
             </div>
 
             <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 2.5rem; margin-top: 3rem;">
 
                 <!-- HKSpace R&D Card -->
-                <a href="{{ route('landing.blog.r_and_d') }}" style="text-decoration: none; display: block; background: linear-gradient(135deg, #f0f9ff 0%, #ecfdf5 100%); border-radius: var(--card-radius); padding: 2.5rem; border: 1px solid #bfdbfe; transition: all 0.3s ease; box-shadow: 0 12px 32px rgba(26, 77, 94, 0.08);">
+                <a href="{{ route('landing.blog.r_and_d') }}" style="text-decoration: none; display: block; background: var(--surface); border-radius: var(--card-radius); padding: 2.5rem; border: 1px solid var(--border); border-top: 3px solid var(--primary); transition: box-shadow 0.25s ease, transform 0.25s ease; box-shadow: 0 4px 16px var(--shadow-color);" onmouseenter="this.style.transform='translateY(-2px)';this.style.boxShadow='0 12px 32px var(--shadow-hover)'" onmouseleave="this.style.transform='';this.style.boxShadow='0 4px 16px var(--shadow-color)'"  >
                     <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1.5rem;">
                         <div style="background: var(--primary); width: 48px; height: 48px; border-radius: var(--btn-radius); display: flex; align-items: center; justify-content: center;">
                             <span class="material-symbols-rounded" style="color: white; font-size: 28px;">hub</span>
@@ -1379,7 +1388,7 @@
                     </div>
 
                     <p style="color: var(--text-gray); line-height: 1.7; margin-bottom: 1.5rem; font-size: 0.95rem;">
-                        Architectural substrate for adaptive enterprise systems. A general-purpose distributed platform abstracting multi-tenancy, real-time synchronization, and composable workflows—enabling systems that evolve with organizational needs.
+                        {{ __('index.rd_hkspace_desc') }}
                     </p>
 
                     <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin-bottom: 1.5rem;">
@@ -1400,7 +1409,7 @@
                 </a>
 
                 <!-- {{ __('index.ai_title') }} R&D Card -->
-                <a href="{{ route('landing.blog.r_and_d') }}" style="text-decoration: none; display: block; background: linear-gradient(135deg, #fef3c7 0%, #fde68a 100%); border-radius: var(--card-radius); padding: 2.5rem; border: 1px solid #fcd34d; transition: all 0.3s ease; box-shadow: 0 12px 32px rgba(26, 77, 94, 0.08);">
+                <a href="{{ route('landing.blog.r_and_d') }}" style="text-decoration: none; display: block; background: var(--surface); border-radius: var(--card-radius); padding: 2.5rem; border: 1px solid var(--border); border-top: 3px solid var(--accent); transition: box-shadow 0.25s ease, transform 0.25s ease; box-shadow: 0 4px 16px var(--shadow-color);" onmouseenter="this.style.transform='translateY(-2px)';this.style.boxShadow='0 12px 32px var(--shadow-hover)'" onmouseleave="this.style.transform='';this.style.boxShadow='0 4px 16px var(--shadow-color)'"  >
                     <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1.5rem;">
                         <div style="background: var(--accent); width: 48px; height: 48px; border-radius: var(--btn-radius); display: flex; align-items: center; justify-content: center;">
                             <span class="material-symbols-rounded" style="color: white; font-size: 28px;">auto_awesome</span>
@@ -1412,7 +1421,7 @@
                     </div>
 
                     <p style="color: var(--text-gray); line-height: 1.7; margin-bottom: 1.5rem; font-size: 0.95rem;">
-                        Long-term research into intelligent systems as enterprise force multipliers. Semantic understanding, grounded reasoning, and autonomous optimization—AI deeply integrated with distributed infrastructure rather than bolt-on features.
+                        {{ __('index.rd_ai_platform_desc') }}
                     </p>
 
                     <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin-bottom: 1.5rem;">
@@ -1436,17 +1445,18 @@
 
             <div style="text-align: center; margin-top: 3rem;">
                 <p style="color: var(--text-gray); font-size: 0.95rem; line-height: 1.7; max-width: 800px; margin: 0 auto; font-style: italic;">
-                    These initiatives represent complementary research directions: HKSpace provides the infrastructure substrate, while AI provides the cognitive layer. Together, they explore what becomes possible when intelligent systems are built as native components of enterprise architecture.
+                    {{ __('index.rd_closing') }}
                 </p>
             </div>
         </div>
     </section>
 
     <!-- Client Testimonials -->
-    <section class="opacity-75" style="background: var(--secondary-bg);">
+    <section aria-labelledby="heading-testimonials" style="background: var(--secondary-bg);">
         <div class="container-v5">
             <div class="section-header">
-                <h2 class="section-title">{{ __('index.testimonials_title') }} <span class="badge  rounded-pill bg-warning">Demo data</span></h2>
+                <span class="section-label">{{ __('index.section_testimonials') }}</span>
+                <h2 id="heading-testimonials" class="section-title">{{ __('index.testimonials_title') }}</h2>
                 <p class="section-subtitle">{{ __('index.testimonials_subtitle') }}</p>
             </div>
 
@@ -1512,13 +1522,13 @@
                 <div style="position: absolute; bottom: 0; left: 0; width: 200px; height: 200px; background: rgba(255,255,255,0.05); border-radius: 50%; transform: translate(-30%, 30%);"></div>
 
                 <div style="position: relative; z-index: 1;">
-                    <span class="section-label" style="color: rgba(255,255,255,0.7);">GET STARTED</span>
-                    <h2 style="font-size: 1.6rem; font-weight: 800; margin: 1rem 0 1rem 0; color: white;">{{ __('index.cta_title') }}</h2>
-                    <p style="color: rgba(255,255,255,0.95); font-size: 1.1rem; margin: 0; max-width: 500px;">{{ __('index.cta_subtitle') }}</p>
+                    <span class="section-label" style="color: rgba(255,255,255,0.7);">{{ __('index.section_cta') }}</span>
+                    <h2 style="font-size: 2rem; font-weight: 800; margin: 1rem 0 1rem 0; color: white; letter-spacing: -0.025em;">{{ __('index.cta_title') }}</h2>
+                    <p style="color: rgba(255,255,255,0.88); font-size: 0.95rem; margin: 0; max-width: 500px; line-height: 1.75;">{{ __('index.cta_subtitle') }}</p>
                 </div>
                 <div style="display: flex; gap: 1rem; flex-wrap: wrap; position: relative; z-index: 1;">
                     <a href="{{ route('landing.contact') }}" class="btn-primary-v5" style="background: white; color: var(--primary); padding: 1rem 2.5rem; border-radius: var(--btn-radius); font-weight: 600; text-decoration: none; display: inline-flex; align-items: center; gap: 0.75rem; transition: all 0.3s ease;">
-                        <span>{{ __('hero.cta_primary') }}</span>
+                        <span>{{ __('index.cta_consultation') }}</span>
                         <span class="material-symbols-rounded" style="font-size: 1.1rem;">arrow_forward</span>
                     </a>
                     <a href="#services" class="btn-secondary-v5" style="background: transparent; color: white; padding: 1rem 2.5rem; border-radius: var(--btn-radius); font-weight: 600; text-decoration: none; display: inline-flex; align-items: center; gap: 0.75rem; border: 2px solid white; transition: all 0.3s ease;">

@@ -3,7 +3,7 @@
 return [
     'hero_title' => 'Dự Án',
     'hero_title_highlight' => 'Tiêu Biểu',
-    'hero_desc' => '50+ dự án, mức hài lòng khách hàng rất cao. Từ MVP startup đến hệ thống doanh nghiệp, chúng tôi tập trung vào kết quả thực tế.',
+    'hero_desc' => '50+ dự án hoàn thành trên 10+ lĩnh vực. Từ MVP startup đến hệ thống doanh nghiệp quy mô lớn — mỗi hợp tác được đánh giá bằng kết quả đo lường cụ thể.',
 
     'stats' => [
         ['num' => '50+', 'label' => 'Dự Án Hoàn Thành'],
@@ -85,9 +85,9 @@ return [
         ['icon' => 'cloud', 'name' => 'SaaS & Điện Toán Đám Mây', 'description' => 'Giúp các nhóm khởi chạy MVP với các chủ đề đa người dùng cơ bản, xác thực và thanh toán sẵn sàng phát triển.'],
     ],
 
+    'section_testimonials' => 'PHẢN HỒI KHÁCH HÀNG',
     'testimonials_title' => 'Phản Hồi Khách Hàng',
-    'testimonials_draft_label' => 'Nháp',
-    'testimonials_subtitle' => 'Ý kiến từ khách hàng của chúng tôi',
+    'testimonials_subtitle' => 'Chia sẻ từ các đối tác và khách hàng đã hợp tác cùng chúng tôi.',
 
     'testimonials' => [
         ['name' => 'CEO, E-Commerce Startup', 'text' => 'HKIncotech không chỉ cung cấp phạm vi công việc mà còn chủ động đề xuất cải tiến. Giao tiếp xuất sắc và đáp ứng nhanh.'],
@@ -95,7 +95,7 @@ return [
         ['name' => 'Director, Healthcare Provider', 'text' => 'Kiến thức chuyên môn y tế sâu sắc. Hiệu suất ML vượt quá kỳ vọng.'],
         ['name' => 'VP Product, Logistics Company', 'text' => 'Tăng từ 100 lên 2.000 vận chuyển/ngày mà không bị gián đoạn. Lập kế hoạch hạ tầng mạnh mẽ.'],
         ['name' => 'CTO, Retail Chain', 'text' => 'Phân tích thời gian thực cho phép đưa ra quyết định dựa trên dữ liệu. ROI tích cực trong 3 tháng.'],
-        ['name' => 'Founder, SaaS Startup', 'text' => 'Hỗ trợ sau khi phát hành là ngoài lề: 24/7 có sẵn, phản hồi nhanh, hướng tới giải pháp.'],
+        ['name' => 'Founder, SaaS Startup', 'text' => 'Hỗ trợ sau khi ra mắt rất xuất sắc: phản hồi 24/7, xử lý nhanh và luôn tập trung vào giải pháp.'],
     ],
 
     'cta_title' => 'Sẵn Sàng Cho Dự Án Tiếp Theo?',

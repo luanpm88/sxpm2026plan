@@ -3,8 +3,8 @@
 return [
     // Hero Section
     'hero_title' => 'Services & Solutions',
-    'hero_desc' => 'Four core services covering software needs from MVP to enterprise solutions',
-    'hero_subtitle' => 'We combine modern technology, global best practices, and domain expertise to build effective solutions.',
+    'hero_desc' => 'Four core service areas covering the full spectrum of enterprise software needs — from initial MVP to large-scale production systems.',
+    'hero_subtitle' => 'We combine modern technology, global engineering best practices, and deep domain expertise to deliver solutions built for long-term performance.',
 
     // Services Overview Section
     'overview_title' => 'Four Core Services',
@@ -132,6 +132,11 @@ return [
         'reference_tech_title' => 'Reference Tech Stack',
         'reference_tech_desc' => 'Ingestion: Python (LangChain/LlamaIndex) workers • Vector DB: Weaviate/Pinecone/PGVector • LLM: OpenAI/DeepSeek/Claude + local (Llama/Ollama) • Backend: FastAPI/Node.js • Observability: Langfuse/Prometheus • Streaming: SSE/WebSocket.',
         'flow_title' => 'Example AI Processing Flow',
+        'see_how_it_works' => 'See how it works',
+        'how_it_works_title' => 'How the AI Knowledge Platform works',
+        'how_it_works_subtitle' => 'From ingestion to secure, production-grade reasoning and generation.',
+        'how_it_works_foundation_title' => 'Foundation modules',
+        'how_it_works_flow_title' => 'Processing flow',
         'flow_steps' => [
             [
                 'text' => 'Receive user query',
@@ -328,8 +333,8 @@ return [
     ],
 
     // CTA
-    'cta_title' => 'Ready to Get Started?',
-    'cta_desc' => 'Contact us today for a free consultation',
-    'cta_button' => 'Schedule a Call',
+    'cta_title' => 'Ready to Discuss Your Project?',
+    'cta_desc' => 'Share your requirements and receive a comprehensive technical proposal within 48 hours, at no obligation.',
+    'cta_button' => 'Request a Free Consultation',
     'learn_process' => 'Learn Detailed Process',
 ];

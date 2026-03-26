@@ -11,6 +11,9 @@
             const preferredDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
             const theme = savedTheme || (preferredDark ? 'dark' : 'light');
             document.documentElement.setAttribute('data-theme', theme);
+            if (sessionStorage.getItem('locale-switch-scroll-y') !== null) {
+                history.scrollRestoration = 'manual';
+            }
         })();
     </script>
     <link rel="icon" type="image/svg+xml" href="{{ asset('img/logo.svg') }}">
@@ -62,7 +65,7 @@
         <div class="header-container">
             <a href="#hero" class="logo nav-link">
                 <img src="/img/logo.svg" alt="HKIncotech">
-                <span style="transform: translateY(5px)">INCOTECH</span>
+                <span>INCOTECH</span>
             </a>
             <button class="mobile-menu-toggle" onclick="document.querySelector('nav').classList.toggle('mobile-open')">
                 <span class="material-symbols-rounded">menu</span>
@@ -84,8 +87,8 @@
             </button>
             <!-- Language Switcher -->
             <div class="lang-switcher-op">
-                <a href="{{ route('locale.switch', 'en') }}" class="{{ app()->getLocale() === 'en' ? 'active' : '' }}">🇺🇸 EN</a>
-                <a href="{{ route('locale.switch', 'vi') }}" class="{{ app()->getLocale() === 'vi' ? 'active' : '' }}">🇻🇳 VI</a>
+                <a href="{{ route('locale.switch', 'en') }}" class="{{ app()->getLocale() === 'en' ? 'active' : '' }}" data-locale-switch>🇺🇸 EN</a>
+                <a href="{{ route('locale.switch', 'vi') }}" class="{{ app()->getLocale() === 'vi' ? 'active' : '' }}" data-locale-switch>🇻🇳 VI</a>
             </div>
 
             <a href="#contact" class="btn-header nav-link">{{ __('nav.get_started') }}</a>
@@ -132,7 +135,7 @@
                     <ul>
                         <li><a href="#about" class="nav-link">{{ __('footer.company.about') }}</a></li>
                         <li><a href="#case-studies" class="nav-link">{{ __('footer.company.case_studies') }}</a></li>
-                        <li><a href="#certs" class="nav-link">{{ __('footer.company.certifications') }}</a></li>
+                        <li><a href="#certifications" class="nav-link">{{ __('footer.company.certifications') }}</a></li>
                         <li><a href="#contact" class="nav-link">{{ __('footer.company.contact') }}</a></li>
                         <li><a href="#pricing" class="nav-link">{{ __('footer.company.pricing') }}</a></li>
                     </ul>
@@ -146,6 +149,34 @@
 
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        (function () {
+            const LOCALE_SCROLL_KEY = 'locale-switch-scroll-y';
+            const savedScrollY = sessionStorage.getItem(LOCALE_SCROLL_KEY);
+            if (savedScrollY !== null) {
+                sessionStorage.removeItem(LOCALE_SCROLL_KEY);
+                history.scrollRestoration = 'manual';
+                requestAnimationFrame(() => {
+                    window.scrollTo({ top: Number(savedScrollY) || 0, behavior: 'instant' });
+                });
+            }
+            document.querySelectorAll('[data-locale-switch]').forEach((link) => {
+                link.addEventListener('click', () => {
+                    sessionStorage.setItem(LOCALE_SCROLL_KEY, String(window.scrollY));
+                });
+            });
+        })();
+    </script>
+    <script>
+        // Mobile nav: close when clicking outside
+        document.addEventListener('click', (e) => {
+            const nav = document.querySelector('nav');
+            const toggle = document.querySelector('.mobile-menu-toggle');
+            if (nav && nav.classList.contains('mobile-open') && !nav.contains(e.target) && toggle && !toggle.contains(e.target)) {
+                nav.classList.remove('mobile-open');
+            }
+        });
+    </script>
     <script>
         // Smooth scroll for nav links
         document.addEventListener('DOMContentLoaded', function() {
@@ -326,6 +357,24 @@
             toggleButton.addEventListener('click', () => {
                 const nextTheme = document.documentElement.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
                 applyTheme(nextTheme);
+            });
+        })();
+
+        (function () {
+            const LOCALE_SCROLL_KEY = 'locale-switch-scroll-y';
+            const localeLinks = document.querySelectorAll('[data-locale-switch]');
+
+            // Restore scroll position after locale page reload.
+            const savedScrollY = sessionStorage.getItem(LOCALE_SCROLL_KEY);
+            if (savedScrollY !== null) {
+                sessionStorage.removeItem(LOCALE_SCROLL_KEY);
+                window.scrollTo(0, Number(savedScrollY) || 0);
+            }
+
+            localeLinks.forEach((link) => {
+                link.addEventListener('click', () => {
+                    sessionStorage.setItem(LOCALE_SCROLL_KEY, String(window.scrollY));
+                });
             });
         })();
     </script>

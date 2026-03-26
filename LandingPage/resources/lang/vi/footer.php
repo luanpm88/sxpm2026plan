@@ -31,5 +31,7 @@ return [
         'pricing'        => 'Bảng Giá',
     ],
 
+    'learn_title' => 'Tìm Hiểu',
+
     'copyright' => '© 2026 HKIncotech. Bảo lưu mọi quyền.',
 ];

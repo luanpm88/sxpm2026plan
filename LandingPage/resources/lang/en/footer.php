@@ -31,5 +31,7 @@ return [
         'pricing'        => 'Pricing',
     ],
 
+    'learn_title' => 'Learn',
+
     'copyright' => '© 2026 HKIncotech. All rights reserved.',
 ];

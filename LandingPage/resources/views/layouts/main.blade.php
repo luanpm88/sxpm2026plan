@@ -5,44 +5,54 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="{{ $pageDescription ?? 'HKIncotech - Enterprise Software Engineering' }}">
     <title>{{ $pageTitle ?? 'HKIncotech' }}</title>
+
+    <!-- OpenGraph -->
+    <meta property="og:type"        content="website">
+    <meta property="og:title"       content="{{ $pageTitle ?? 'HKIncotech' }}">
+    <meta property="og:description" content="{{ $pageDescription ?? 'HKIncotech - Enterprise Software Engineering' }}">
+    <meta property="og:url"         content="{{ url()->current() }}">
+    <meta property="og:image"       content="{{ asset('img/og-cover.png') }}">
+    <meta property="og:site_name"   content="HKIncotech">
+    <!-- Twitter Card -->
+    <meta name="twitter:card"        content="summary_large_image">
+    <meta name="twitter:title"       content="{{ $pageTitle ?? 'HKIncotech' }}">
+    <meta name="twitter:description" content="{{ $pageDescription ?? 'HKIncotech - Enterprise Software Engineering' }}">
+    <meta name="twitter:image"       content="{{ asset('img/og-cover.png') }}">
     <script>
         (function() {
             const savedTheme = localStorage.getItem('theme');
             const preferredDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
             const theme = savedTheme || (preferredDark ? 'dark' : 'light');
             document.documentElement.setAttribute('data-theme', theme);
+            // Prevent browser from overriding JS scroll restore on locale switch
+            if (sessionStorage.getItem('locale-switch-scroll-y') !== null) {
+                history.scrollRestoration = 'manual';
+            }
         })();
     </script>
     <link rel="icon" type="image/svg+xml" href="{{ asset('img/logo.svg') }}">
     <link rel="shortcut icon" href="{{ asset('img/logo.svg') }}">
 
-    <!-- Bootstrap 5 CDN -->
+    <!-- Preconnect for external resources -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+
+    <!-- Bootstrap 5 CSS (retained for multi-page compatibility) -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
 
-    <!-- Material Symbols Rounded -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <!-- Fonts: Inter + Material Symbols in a single request -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400,0,0&display=swap" />
 
-    <!-- Inter Font -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="{{ asset('css/main.css') }}?v={{ filemtime(public_path('css/main.css')) }}">
 
-    <!-- Main CSS (v= cache-bust so header/nav fixes always apply) -->
-    <link rel="stylesheet" href="{{ asset('css/main.css') }}?v=18">
-
-    {{-- Critical header/lang fallback if main.css fails to load or is cached stale --}}
+    {{-- Critical nav fallback --}}
     <style>
-        header nav a.nav-link-v5 {
-            white-space: nowrap !important;
-            word-break: keep-all;
-        }
-        .btn-header {
-            white-space: nowrap !important;
-        }
-        .lang-dropdown {
-            display: none !important;
-        }
-        .lang-menu.open .lang-dropdown {
-            display: block !important;
-        }
+        header nav a.nav-link-v5 { white-space: nowrap !important; word-break: keep-all; }
+        .btn-header { white-space: nowrap !important; }
+        .lang-dropdown { display: none !important; }
+        .lang-menu.open .lang-dropdown { display: block !important; }
     </style>
 
     @stack('styles')
@@ -53,35 +63,190 @@
         <div class="header-container">
             <a href="{{ route('landing.index') }}" class="logo">
                 <img src="{{ asset('img/logo.svg') }}" alt="HKIncotech">
-                <span style="transform: translateY(5px)">INCOTECH</span>
+                <span>INCOTECH</span>
             </a>
-            <button class="mobile-menu-toggle" onclick="document.querySelector('nav').classList.toggle('mobile-open')">
+            <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Toggle menu">
                 <span class="material-symbols-rounded">menu</span>
             </button>
-            <nav>
+            <nav id="mainNav">
                 @php
-                    $locale = app()->getLocale();
-                    $navLinks = [
-                        'landing.index'              => __('nav.home'),
-                        'landing.about-us'           => __('nav.about'),
-                        'landing.services'           => __('nav.services'),
-                        'solutions.sme-manufacturing'=> __('nav.solutions'),
-                        'landing.scrum'              => __('nav.scrum'),
-                        'landing.tech-stack'         => __('nav.tech'),
-                        'landing.case-studies'       => __('nav.case_studies'),
-                        'landing.blog.r_and_d'       => __('nav.rd'),
-                        'landing.certifications'     => __('nav.certifications'),
-                        'landing.pricing'            => __('nav.pricing'),
-                        'landing.contact'            => __('nav.contact'),
-                    ];
+                    $r = Route::currentRouteName();
+                    $servicesActive = in_array($r, ['landing.services', 'solutions.sme-manufacturing']);
+                    $expertiseActive = in_array($r, ['landing.scrum', 'landing.tech-stack', 'landing.certifications']);
+                    $companyActive   = in_array($r, ['landing.about-us', 'landing.case-studies', 'landing.blog.r_and_d']);
+                    $closeNav = "document.getElementById('mainNav').classList.remove('mobile-open')";
                 @endphp
-                @foreach($navLinks as $route => $label)
-                    <a href="{{ route($route) }}"
-                       class="nav-link-v5 @if(Route::currentRouteName() === $route) nav-link-v5--active @endif"
-                       onclick="document.querySelector('nav').classList.remove('mobile-open')">
-                        {{ $label }}
-                    </a>
-                @endforeach
+
+                <a href="{{ route('landing.index') }}"
+                   class="nav-link-v5 {{ $r === 'landing.index' ? 'nav-link-v5--active' : '' }}"
+                   onclick="{{ $closeNav }}">
+                    {{ __('nav.home') }}
+                </a>
+
+                {{-- Services dropdown --}}
+                <div class="nav-group nav-group--services {{ $servicesActive ? 'nav-group--active' : '' }}" data-nav-group>
+                    <button class="nav-group__trigger" data-nav-trigger aria-expanded="false">
+                        {{ __('nav.group_services') }}
+                        <span class="material-symbols-rounded nav-chevron">expand_more</span>
+                    </button>
+                    <div class="nav-group__panel nav-group__panel--mega">
+                        <div class="nav-mega">
+                            <div class="nav-mega__aside">
+                                <div class="nav-mega__aside-top">
+                                    <div class="nav-mega__aside-title">{{ __('nav.dropdown.services.aside_title') }}</div>
+                                    <div class="nav-mega__aside-desc">{{ __('nav.dropdown.services.aside_desc') }}</div>
+                                </div>
+                                <div class="nav-mega__tags" aria-label="{{ __('nav.dropdown.services.tags_aria') }}">
+                                    <span class="nav-mega__tag">{{ __('nav.dropdown.services.tag_1') }}</span>
+                                    <span class="nav-mega__tag">{{ __('nav.dropdown.services.tag_2') }}</span>
+                                    <span class="nav-mega__tag">{{ __('nav.dropdown.services.tag_3') }}</span>
+                                    <span class="nav-mega__tag">{{ __('nav.dropdown.services.tag_4') }}</span>
+                                </div>
+                            </div>
+                            <div class="nav-mega__main">
+                                <div class="nav-mega__label">{{ __('nav.dropdown.services.main_label') }}</div>
+                                <a href="{{ route('landing.services') }}"
+                                   class="nav-mega__item {{ $r === 'landing.services' ? 'nav-item--active' : '' }}"
+                                   onclick="{{ $closeNav }}">
+                                    <span class="material-symbols-rounded nav-mega__icon">code</span>
+                                    <span class="nav-mega__text">
+                                        <span class="nav-mega__title">{{ __('nav.services') }}</span>
+                                        <span class="nav-mega__desc">{{ __('nav.dropdown.services.item_services_desc') }}</span>
+                                    </span>
+                                </a>
+                                <a href="{{ route('solutions.sme-manufacturing') }}"
+                                   class="nav-mega__item {{ $r === 'solutions.sme-manufacturing' ? 'nav-item--active' : '' }}"
+                                   onclick="{{ $closeNav }}">
+                                    <span class="material-symbols-rounded nav-mega__icon">factory</span>
+                                    <span class="nav-mega__text">
+                                        <span class="nav-mega__title">{{ __('nav.solutions') }}</span>
+                                        <span class="nav-mega__desc">{{ __('nav.dropdown.services.item_solutions_desc') }}</span>
+                                    </span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                {{-- Expertise dropdown --}}
+                <div class="nav-group nav-group--expertise {{ $expertiseActive ? 'nav-group--active' : '' }}" data-nav-group>
+                    <button class="nav-group__trigger" data-nav-trigger aria-expanded="false">
+                        {{ __('nav.group_expertise') }}
+                        <span class="material-symbols-rounded nav-chevron">expand_more</span>
+                    </button>
+                    <div class="nav-group__panel nav-group__panel--mega">
+                        <div class="nav-mega">
+                            <div class="nav-mega__aside">
+                                <div class="nav-mega__aside-top">
+                                    <div class="nav-mega__aside-title">{{ __('nav.dropdown.expertise.aside_title') }}</div>
+                                    <div class="nav-mega__aside-desc">{{ __('nav.dropdown.expertise.aside_desc') }}</div>
+                                </div>
+                                <div class="nav-mega__tags" aria-label="{{ __('nav.dropdown.expertise.tags_aria') }}">
+                                    <span class="nav-mega__tag">{{ __('nav.dropdown.expertise.tag_1') }}</span>
+                                    <span class="nav-mega__tag">{{ __('nav.dropdown.expertise.tag_2') }}</span>
+                                    <span class="nav-mega__tag">{{ __('nav.dropdown.expertise.tag_3') }}</span>
+                                    <span class="nav-mega__tag">{{ __('nav.dropdown.expertise.tag_4') }}</span>
+                                </div>
+                            </div>
+                            <div class="nav-mega__main">
+                                <div class="nav-mega__label">{{ __('nav.dropdown.expertise.main_label') }}</div>
+                                <a href="{{ route('landing.scrum') }}"
+                                   class="nav-mega__item {{ $r === 'landing.scrum' ? 'nav-item--active' : '' }}"
+                                   onclick="{{ $closeNav }}">
+                                    <span class="material-symbols-rounded nav-mega__icon">sprint</span>
+                                    <span class="nav-mega__text">
+                                        <span class="nav-mega__title">{{ __('nav.scrum') }}</span>
+                                        <span class="nav-mega__desc">{{ __('nav.dropdown.expertise.item_scrum_desc') }}</span>
+                                    </span>
+                                </a>
+                                <a href="{{ route('landing.tech-stack') }}"
+                                   class="nav-mega__item {{ $r === 'landing.tech-stack' ? 'nav-item--active' : '' }}"
+                                   onclick="{{ $closeNav }}">
+                                    <span class="material-symbols-rounded nav-mega__icon">layers</span>
+                                    <span class="nav-mega__text">
+                                        <span class="nav-mega__title">{{ __('nav.tech') }}</span>
+                                        <span class="nav-mega__desc">{{ __('nav.dropdown.expertise.item_tech_desc') }}</span>
+                                    </span>
+                                </a>
+                                <a href="{{ route('landing.certifications') }}"
+                                   class="nav-mega__item {{ $r === 'landing.certifications' ? 'nav-item--active' : '' }}"
+                                   onclick="{{ $closeNav }}">
+                                    <span class="material-symbols-rounded nav-mega__icon">verified</span>
+                                    <span class="nav-mega__text">
+                                        <span class="nav-mega__title">{{ __('nav.certifications') }}</span>
+                                        <span class="nav-mega__desc">{{ __('nav.dropdown.expertise.item_certs_desc') }}</span>
+                                    </span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                {{-- Company dropdown --}}
+                <div class="nav-group nav-group--company {{ $companyActive ? 'nav-group--active' : '' }}" data-nav-group>
+                    <button class="nav-group__trigger" data-nav-trigger aria-expanded="false">
+                        {{ __('nav.group_company') }}
+                        <span class="material-symbols-rounded nav-chevron">expand_more</span>
+                    </button>
+                    <div class="nav-group__panel nav-group__panel--mega">
+                        <div class="nav-mega">
+                            <div class="nav-mega__aside">
+                                <div class="nav-mega__aside-top">
+                                    <div class="nav-mega__aside-title">{{ __('nav.dropdown.company.aside_title') }}</div>
+                                    <div class="nav-mega__aside-desc">{{ __('nav.dropdown.company.aside_desc') }}</div>
+                                </div>
+                                <div class="nav-mega__tags" aria-label="{{ __('nav.dropdown.company.tags_aria') }}">
+                                    <span class="nav-mega__tag">{{ __('nav.dropdown.company.tag_1') }}</span>
+                                    <span class="nav-mega__tag">{{ __('nav.dropdown.company.tag_2') }}</span>
+                                    <span class="nav-mega__tag">{{ __('nav.dropdown.company.tag_3') }}</span>
+                                    <span class="nav-mega__tag">{{ __('nav.dropdown.company.tag_4') }}</span>
+                                </div>
+                            </div>
+                            <div class="nav-mega__main">
+                                <div class="nav-mega__label">{{ __('nav.dropdown.company.main_label') }}</div>
+                                <a href="{{ route('landing.about-us') }}"
+                                   class="nav-mega__item {{ $r === 'landing.about-us' ? 'nav-item--active' : '' }}"
+                                   onclick="{{ $closeNav }}">
+                                    <span class="material-symbols-rounded nav-mega__icon">groups</span>
+                                    <span class="nav-mega__text">
+                                        <span class="nav-mega__title">{{ __('nav.about') }}</span>
+                                        <span class="nav-mega__desc">{{ __('nav.dropdown.company.item_about_desc') }}</span>
+                                    </span>
+                                </a>
+                                <a href="{{ route('landing.case-studies') }}"
+                                   class="nav-mega__item {{ $r === 'landing.case-studies' ? 'nav-item--active' : '' }}"
+                                   onclick="{{ $closeNav }}">
+                                    <span class="material-symbols-rounded nav-mega__icon">cases</span>
+                                    <span class="nav-mega__text">
+                                        <span class="nav-mega__title">{{ __('nav.case_studies') }}</span>
+                                        <span class="nav-mega__desc">{{ __('nav.dropdown.company.item_case_desc') }}</span>
+                                    </span>
+                                </a>
+                                <a href="{{ route('landing.blog.r_and_d') }}"
+                                   class="nav-mega__item {{ $r === 'landing.blog.r_and_d' ? 'nav-item--active' : '' }}"
+                                   onclick="{{ $closeNav }}">
+                                    <span class="material-symbols-rounded nav-mega__icon">science</span>
+                                    <span class="nav-mega__text">
+                                        <span class="nav-mega__title">{{ __('nav.rd') }}</span>
+                                        <span class="nav-mega__desc">{{ __('nav.dropdown.company.item_rd_desc') }}</span>
+                                    </span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <a href="{{ route('landing.pricing') }}"
+                   class="nav-link-v5 {{ $r === 'landing.pricing' ? 'nav-link-v5--active' : '' }}"
+                   onclick="{{ $closeNav }}">
+                    {{ __('nav.pricing') }}
+                </a>
+
+                <a href="{{ route('landing.contact') }}"
+                   class="nav-link-v5 {{ $r === 'landing.contact' ? 'nav-link-v5--active' : '' }}"
+                   onclick="{{ $closeNav }}">
+                    {{ __('nav.contact') }}
+                </a>
             </nav>
 
             <div class="header-actions">
@@ -94,10 +259,10 @@
                         <span class="lang-current-flag">{{ app()->getLocale() === 'vi' ? '🇻🇳' : '🇬🇧' }}</span>
                     </button>
                     <div class="lang-dropdown" data-lang-dropdown>
-                        <a href="{{ route('locale.switch', 'vi') }}" class="{{ app()->getLocale() === 'vi' ? 'lang-option--active' : '' }}">
+                        <a href="{{ route('locale.switch', 'vi') }}" class="{{ app()->getLocale() === 'vi' ? 'lang-option--active' : '' }}" data-locale-switch>
                             <span>🇻🇳</span> VI
                         </a>
-                        <a href="{{ route('locale.switch', 'en') }}" class="{{ app()->getLocale() === 'en' ? 'lang-option--active' : '' }}">
+                        <a href="{{ route('locale.switch', 'en') }}" class="{{ app()->getLocale() === 'en' ? 'lang-option--active' : '' }}" data-locale-switch>
                             <span>🇬🇧</span> EN
                         </a>
                     </div>
@@ -109,17 +274,19 @@
     </header>
 
     <!-- Main Content -->
+    <main>
     @yield('content')
+    </main>
 
     <!-- Footer -->
     <footer>
         <div class="container-v5">
-            <div style="display: grid; grid-template-columns: 1.5fr 1fr 1fr 1fr 1fr; gap: 2.5rem; margin-bottom: 2.5rem;">
+            <div class="footer-grid-5col" style="display: grid; grid-template-columns: 1.5fr 1fr 1fr 1fr 1fr; gap: 2.5rem; margin-bottom: 2.5rem;">
                 <!-- Company Info -->
                 <div class="footer-section">
                     <a href="{{ route('landing.index') }}" class="logo" style="color: white; margin-bottom: 1rem; display: inline-flex;">
                         <img src="{{ asset('img/logo.svg') }}" alt="HKIncotech" style="filter: brightness(10);">
-                        <span style="transform: translateY(5px)">INCOTECH</span>
+                        <span>INCOTECH</span>
                     </a>
                     <p style="color: rgba(255, 255, 255, 0.6); font-size: 0.88rem; line-height: 1.65; margin-top: 1rem;">
                         {{ __('footer.about_desc') }}
@@ -161,7 +328,7 @@
 
                 <!-- Learn -->
                 <div class="footer-section">
-                    <h3>Learn</h3>
+                    <h3>{{ __('footer.learn_title') }}</h3>
                     <ul>
                         <li><a href="{{ route('landing.blog.r_and_d') }}">{{ __('footer.company.rd') }}</a></li>
                         <li><a href="{{ route('landing.certifications') }}">{{ __('footer.company.certifications') }}</a></li>
@@ -180,10 +347,42 @@
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
     <script>
+        // Mobile menu toggle
+        const mobileToggle = document.getElementById('mobileMenuToggle');
+        const mainNav = document.getElementById('mainNav');
+        if (mobileToggle && mainNav) {
+            mobileToggle.addEventListener('click', () => {
+                const isOpen = mainNav.classList.toggle('mobile-open');
+                // Collapse all nav groups when closing
+                if (!isOpen) {
+                    document.querySelectorAll('[data-nav-group]').forEach(g => g.classList.remove('open'));
+                }
+            });
+        }
+
+        // Nav dropdown groups — toggle open/close on click (mobile)
+        document.querySelectorAll('[data-nav-trigger]').forEach((trigger) => {
+            trigger.addEventListener('click', (e) => {
+                e.stopPropagation();
+                const group = trigger.closest('[data-nav-group]');
+                const isOpen = group.classList.contains('open');
+                // Close all groups
+                document.querySelectorAll('[data-nav-group]').forEach(g => {
+                    g.classList.remove('open');
+                    g.querySelector('[data-nav-trigger]')?.setAttribute('aria-expanded', 'false');
+                });
+                // Toggle this one
+                if (!isOpen) {
+                    group.classList.add('open');
+                    trigger.setAttribute('aria-expanded', 'true');
+                }
+            });
+        });
+
+        // Lang menu toggle
         document.querySelectorAll('[data-lang-menu]').forEach((menu) => {
             const trigger = menu.querySelector('[data-lang-trigger]');
             if (!trigger) return;
-
             trigger.addEventListener('click', (e) => {
                 e.stopPropagation();
                 menu.classList.toggle('open');
@@ -191,11 +390,19 @@
         });
 
         document.addEventListener('click', (e) => {
+            // Close lang menu
             document.querySelectorAll('[data-lang-menu]').forEach((menu) => {
-                if (!menu.contains(e.target)) {
-                    menu.classList.remove('open');
-                }
+                if (!menu.contains(e.target)) menu.classList.remove('open');
             });
+            // Close mobile nav when clicking outside
+            if (mainNav && mainNav.classList.contains('mobile-open') && !mainNav.contains(e.target) && mobileToggle && !mobileToggle.contains(e.target)) {
+                mainNav.classList.remove('mobile-open');
+                document.querySelectorAll('[data-nav-group]').forEach(g => g.classList.remove('open'));
+            }
+            // Close desktop dropdowns when clicking outside
+            if (!e.target.closest('[data-nav-group]')) {
+                document.querySelectorAll('[data-nav-group]').forEach(g => g.classList.remove('open'));
+            }
         });
 
         (function () {
@@ -216,6 +423,27 @@
             toggleButton.addEventListener('click', () => {
                 const nextTheme = document.documentElement.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
                 applyTheme(nextTheme);
+            });
+        })();
+
+        (function () {
+            const LOCALE_SCROLL_KEY = 'locale-switch-scroll-y';
+            const localeLinks = document.querySelectorAll('[data-locale-switch]');
+
+            // Restore scroll position after locale switch redirect.
+            const savedScrollY = sessionStorage.getItem(LOCALE_SCROLL_KEY);
+            if (savedScrollY !== null) {
+                sessionStorage.removeItem(LOCALE_SCROLL_KEY);
+                history.scrollRestoration = 'manual';
+                requestAnimationFrame(() => {
+                    window.scrollTo({ top: Number(savedScrollY) || 0, behavior: 'instant' });
+                });
+            }
+
+            localeLinks.forEach((link) => {
+                link.addEventListener('click', () => {
+                    sessionStorage.setItem(LOCALE_SCROLL_KEY, String(window.scrollY));
+                });
             });
         })();
     </script>

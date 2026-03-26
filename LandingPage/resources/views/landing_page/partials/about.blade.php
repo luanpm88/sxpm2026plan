@@ -112,10 +112,11 @@
 </section>
 
 <!-- Leadership Team -->
-<section class="opacity-75">
+<section>
     <div class="container-v5">
         <div class="section-header">
-            <h2 class="section-title">{{ __('about.team_title') }}  <span class="badge  rounded-pill bg-warning">{{ __('about.team_draft_badge') }}</span></h2>
+            <span class="section-label">{{ __('about.section_team') }}</span>
+            <h2 class="section-title">{{ __('about.team_title') }}</h2>
             <p class="section-subtitle">{{ __('about.team_subtitle') }}</p>
         </div>
 

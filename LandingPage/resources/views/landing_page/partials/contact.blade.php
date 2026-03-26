@@ -112,9 +112,9 @@
                         <div>
                             <h3 style="font-weight: 700; color: var(--text-dark); margin-bottom: 0.5rem;">{{ __('contact.hq_title') }}</h3>
                             <p style="color: var(--text-gray); line-height: 1.6;">
-                                Ho Chi Minh City, Vietnam<br>
-                                Address: 188 Duong So 1<br>
-                                Phone: +84 (0) 28 3824 0000
+                                {{ __('contact.hq_city') }}<br>
+                                {{ __('contact.hq_address_label') }}: {{ __('contact.hq_address') }}<br>
+                                {{ __('contact.hq_phone_label') }}: {{ __('contact.hq_phone') }}
                             </p>
                         </div>
                     </div>
@@ -148,9 +148,9 @@
                         <div>
                             <h3 style="font-weight: 700; color: var(--text-dark); margin-bottom: 0.5rem;">{{ __('contact.email_title') }}</h3>
                             <p style="color: var(--text-gray); line-height: 1.6;">
-                                General Inquiry: <a href="mailto:hello@hkincotech.com" style="color: var(--primary); text-decoration: none; font-weight: 600;">hello@hkincotech.com</a><br>
-                                Sales: <a href="mailto:sales@hkincotech.com" style="color: var(--primary); text-decoration: none; font-weight: 600;">sales@hkincotech.com</a><br>
-                                Support: <a href="mailto:support@hkincotech.com" style="color: var(--primary); text-decoration: none; font-weight: 600;">support@hkincotech.com</a>
+                                {{ __('contact.email_inquiry_label') }}: <a href="mailto:hello@hkincotech.com" style="color: var(--primary); text-decoration: none; font-weight: 600;">hello@hkincotech.com</a><br>
+                                {{ __('contact.email_sales_label') }}: <a href="mailto:sales@hkincotech.com" style="color: var(--primary); text-decoration: none; font-weight: 600;">sales@hkincotech.com</a><br>
+                                {{ __('contact.email_support_label') }}: <a href="mailto:support@hkincotech.com" style="color: var(--primary); text-decoration: none; font-weight: 600;">support@hkincotech.com</a>
                             </p>
                         </div>
                     </div>

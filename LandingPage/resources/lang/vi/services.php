@@ -3,8 +3,8 @@
 return [
     // Hero Section
     'hero_title' => 'Dịch Vụ & Giải Pháp',
-    'hero_desc' => 'Bốn dịch vụ cốt lõi bao phủ nhu cầu phần mềm từ MVP đến giải pháp cấp doanh nghiệp',
-    'hero_subtitle' => 'Chúng tôi kết hợp công nghệ hiện đại, thực tiễn tốt nhất toàn cầu và chuyên môn lĩnh vực để xây dựng các giải pháp hiệu quả.',
+    'hero_desc' => 'Bốn dịch vụ cốt lõi bao phủ toàn bộ nhu cầu phần mềm doanh nghiệp — từ MVP ban đầu đến các hệ thống vận hành quy mô lớn.',
+    'hero_subtitle' => 'Chúng tôi kết hợp công nghệ hiện đại, thực tiễn kỹ thuật tốt nhất toàn cầu và chuyên môn sâu về lĩnh vực để xây dựng các giải pháp có hiệu suất lâu dài.',
 
     // Services Overview Section
     'overview_title' => 'Bốn Dịch Vụ Cốt Lõi',
@@ -132,6 +132,11 @@ return [
         'reference_tech_title' => 'Reference Tech Stack',
         'reference_tech_desc' => 'Ingestion: Python (LangChain/LlamaIndex) workers • Vector DB: Weaviate/Pinecone/PGVector • LLM: OpenAI/DeepSeek/Claude + local (Llama/Ollama) • Backend: FastAPI/Node.js • Observability: Langfuse/Prometheus • Streaming: SSE/WebSocket.',
         'flow_title' => 'Ví Dụ Quy Trình Xử Lý AI',
+        'see_how_it_works' => 'Xem cách hoạt động',
+        'how_it_works_title' => 'Nền tảng Tri thức AI hoạt động như thế nào',
+        'how_it_works_subtitle' => 'Từ tiếp nhận kiến thức đến suy luận và tạo sinh an toàn, sẵn sàng production.',
+        'how_it_works_foundation_title' => 'Các module nền tảng',
+        'how_it_works_flow_title' => 'Luồng xử lý',
         'flow_steps' => [
             [
                 'text' => 'Nhận truy vấn từ người dùng',
@@ -156,7 +161,7 @@ return [
         'title' => 'Nền Tảng SaaS Cấp Doanh Nghiệp',
         'subtitle' => 'Nền tảng SaaS đa người dùng hoàn chỉnh sẵn sàng sản xuất phục vụ 50K+ người dùng với bảo mật & khả năng mở rộng cấp doanh nghiệp',
         'hkspace_title' => 'HKSpace - Nền Tảng SaaS Tiêu Biểu',
-        'ecosystem_title' => 'Hệ Sinh Thái SaaS Hoàn Chỉnh Chúng Tôi Xây Dựng',
+        'ecosystem_title' => 'Hệ Sinh Thái SaaS Toàn Diện Chúng Tôi Triển Khai',
         'ecosystem_items' => [
             [
                 'title' => 'Giải Pháp End-to-End',
@@ -328,8 +333,8 @@ return [
     ],
 
     // CTA
-    'cta_title' => 'Sẵn Sàng Bắt Đầu?',
-    'cta_desc' => 'Liên hệ với chúng tôi ngay hôm nay để tư vấn miễn phí',
-    'cta_button' => 'Lên Lịch Gọi',
+    'cta_title' => 'Sẵn Sàng Trao Đổi Về Dự Án Của Bạn?',
+    'cta_desc' => 'Chia sẻ yêu cầu và nhận đề xuất kỹ thuật chi tiết trong vòng 48 giờ, hoàn toàn miễn phí.',
+    'cta_button' => 'Yêu Cầu Tư Vấn Miễn Phí',
     'learn_process' => 'Tìm Hiểu Quy Trình Chi Tiết',
 ];

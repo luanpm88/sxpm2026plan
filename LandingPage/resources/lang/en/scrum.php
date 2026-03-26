@@ -4,7 +4,7 @@ return [
     // Hero Section
     'hero_title' => 'SCRUM Development',
     'hero_title_highlight' => 'Process',
-    'hero_desc' => 'Agile methodology enabling real-time progress visibility, flexible adjustments, and 30-50% faster product delivery',
+    'hero_desc' => 'A structured Agile delivery methodology providing real-time progress visibility, adaptive planning, and consistently faster time-to-market.',
     'hero_cta' => 'Consult on SCRUM Process',
 
     // 6 Steps Section
@@ -82,7 +82,7 @@ return [
         [
             'icon' => 'visibility',
             'title' => 'Transparency & Control',
-            'desc' => 'Sprint demos show real-time progress. No project surprises. You control priorities.',
+            'desc' => 'Sprint demos provide real-time progress visibility with no project surprises. Clients maintain full control over prioritization at every stage.',
         ],
         [
             'icon' => 'tune',
@@ -173,7 +173,7 @@ return [
     ],
 
     // CTA Section
-    'cta_title' => 'Start SCRUM Development Today',
-    'cta_desc' => 'Free 30-minute consultation to plan your SCRUM project',
-    'cta_button' => 'Schedule Consultation',
+    'cta_title' => 'Begin Your SCRUM Engagement',
+    'cta_desc' => 'Schedule a complimentary 30-minute consultation to discuss your project scope and SCRUM delivery approach.',
+    'cta_button' => 'Schedule a Consultation',
 ];

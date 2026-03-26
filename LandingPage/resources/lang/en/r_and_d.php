@@ -5,15 +5,15 @@ return [
     'badge'             => 'Deep Research & Innovation',
     'hero_title'        => 'Our Core',
     'hero_title_accent' => 'R&D Initiatives',
-    'hero_desc'         => 'Pioneering technology platforms designed for tomorrow\'s enterprise demands. Explore our research-driven innovations in scalable systems and artificial intelligence.',
+    'hero_desc'         => 'Building foundational technology for the next generation of enterprise systems. Our research spans scalable distributed infrastructure and applied artificial intelligence — developed to become native components of enterprise architecture.',
 
     // Research capabilities section
     'capabilities_title'   => 'Research Capabilities',
     'capabilities_subtitle'=> 'Our multidisciplinary approach to building the future of enterprise software',
 
     // CTA
-    'cta_title'  => 'Interested in Our R&D?',
-    'cta_desc'   => 'Let\'s discuss how our research-driven platforms can power your enterprise.',
+    'cta_title'  => 'Explore Our R&D Initiatives',
+    'cta_desc'   => 'Learn how our research-driven platforms can serve as the foundation for your enterprise systems.',
     'cta_button' => 'Start a Conversation',
 
     // Capabilities cards

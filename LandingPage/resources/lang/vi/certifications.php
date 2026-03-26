@@ -30,7 +30,7 @@ return [
     // Team section
     'team_title'        => 'Chuyên Môn &',
     'team_title_accent' => 'Kinh Nghiệm Đội Ngũ',
-    'team_subtitle'     => '50+ kỹ sư cấp cao với chuyên môn sâu và thành tích thực chiến',
+    'team_subtitle'     => '50+ kỹ sư cấp cao với chuyên môn sâu và thành tích đã được kiểm chứng qua các dự án thực tế',
 
     // Learning section
     'learning_title'    => 'Văn Hóa Học Hỏi Liên Tục',
@@ -46,7 +46,7 @@ return [
 
     // CTA
     'cta_title'  => 'Hợp Tác với HKIncotech',
-    'cta_desc'   => 'Đội ngũ cấp doanh nghiệp với chứng chỉ ngành và chuyên môn đã được kiểm chứng',
+    'cta_desc'   => 'Đội ngũ kỹ thuật cấp doanh nghiệp với chứng chỉ ngành được công nhận và thành tích bàn giao được kiểm chứng qua 100+ dự án thực tế.',
     'cta_button' => 'Bắt Đầu Dự Án',
 
     // Compliance certs

@@ -1,9 +1,9 @@
 <?php
 
 return [
-    'hero_title' => 'Gói Linh Hoạt',
-    'hero_title_highlight' => 'Theo Nhu Cầu',
-    'hero_desc' => 'Mỗi dự án là duy nhất. Chúng tôi tùy chỉnh chi phí theo phạm vi, độ phức tạp và timeline. Không có gói cứng, chỉ có giải pháp phù hợp.',
+    'hero_title' => 'Gói Đầu Tư',
+    'hero_title_highlight' => 'Phù Hợp Với Nhu Cầu',
+    'hero_desc' => 'Mỗi dự án là một yêu cầu riêng biệt. Chi phí được cấu trúc dựa trên phạm vi, độ phức tạp và timeline cụ thể — không có gói cứng nhắc, chỉ có giải pháp phù hợp với yêu cầu thực tế của bạn.',
 
     'plans_title' => 'Bảng Giá Tham Khảo',
     'plans_subtitle' => 'Mức giá dưới đây chỉ mang tính tham khảo. Chi phí thực tế phụ thuộc vào yêu cầu cụ thể của dự án.',
@@ -117,7 +117,7 @@ return [
         ['q' => 'Ai sở hữu mã nguồn sau dự án?', 'a' => 'Bạn sở hữu 100% mã nguồn. Chúng tôi bàn giao đầy đủ source code, tài liệu và hướng dẫn triển khai. Không có phí license hay royalty.'],
     ],
 
-    'cta_title' => 'Dự Án Của Bạn Khác Các Gói Trên?',
-    'cta_desc' => 'Hoàn toàn phù hợp. Chúng tôi tùy chỉnh báo giá theo yêu cầu cụ thể của bạn. Cùng trao đổi nhu cầu ngay.',
-    'cta_button' => 'Tư Vấn Miễn Phí',
+    'cta_title' => 'Dự Án Của Bạn Nằm Ngoài Các Gói Trên?',
+    'cta_desc' => 'Điều đó hoàn toàn bình thường. Chúng tôi điều chỉnh báo giá theo yêu cầu, độ phức tạp và timeline cụ thể của từng dự án. Hãy cùng trao đổi.',
+    'cta_button' => 'Yêu Cầu Tư Vấn Miễn Phí',
 ];

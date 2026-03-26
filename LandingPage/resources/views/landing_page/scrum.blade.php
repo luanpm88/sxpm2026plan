@@ -58,7 +58,7 @@
                 <p class="section-subtitle">{{ __('scrum.sprint_subtitle') }}</p>
             </div>
 
-            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: center;">
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: stretch;">
                 <div>
                     <ul style="list-style: none;">
                         @foreach(__('scrum.sprint_items') as $cycle)
@@ -74,8 +74,8 @@
                     </ul>
                 </div>
                 
-                <div class="position-relative" style="background: white; border-radius: var(--card-radius); padding: 2rem; border: 1px solid var(--border); text-align: center; min-height: 400px; display: flex; align-items: center; justify-content: center;">
-                    <svg viewBox="0 0 300 300" style="width: 100%; max-width: 300px;">
+                <div class="position-relative" style="background: white; border-radius: var(--card-radius); padding: 2rem; border: 1px solid var(--border); text-align: center; height: 100%; display: flex; align-items: stretch; justify-content: center;">
+                    <svg viewBox="0 0 300 300" preserveAspectRatio="xMidYMid meet" style="width: 100%; height: 100%; max-width: 340px; flex: 1; display: block; overflow: visible;">
                         <!-- Sprint cycle circle -->
                         <circle cx="150" cy="150" r="120" fill="none" stroke="#1a4d5e" stroke-width="2" opacity="0.2"/>
                         
@@ -91,11 +91,11 @@
                         <text x="150" y="155" text-anchor="middle" font-size="11" fill="white" font-weight="bold">Sprint</text>
                         
                         <!-- Arrows -->
-                        <path d="M 160 80 L 240 110" stroke="#1a4d5e" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
-                        <path d="M 240 135 L 220 220" stroke="#1a4d5e" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
-                        <path d="M 200 240 L 100 240" stroke="#1a4d5e" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
-                        <path d="M 80 220 L 60 110" stroke="#1a4d5e" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
-                        <path d="M 60 80 L 140 60" stroke="#1a4d5e" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+                        <path d="M 160 80 L 240 110" stroke="#1a4d5e" stroke-width="2" stroke-linecap="round" fill="none" marker-end="url(#arrowhead)"/>
+                        <path d="M 240 135 L 220 220" stroke="#1a4d5e" stroke-width="2" stroke-linecap="round" fill="none" marker-end="url(#arrowhead)"/>
+                        <path d="M 200 240 L 100 240" stroke="#1a4d5e" stroke-width="2" stroke-linecap="round" fill="none" marker-end="url(#arrowhead)"/>
+                        <path d="M 80 220 L 60 110" stroke="#1a4d5e" stroke-width="2" stroke-linecap="round" fill="none" marker-end="url(#arrowhead)"/>
+                        <path d="M 60 80 L 140 60" stroke="#1a4d5e" stroke-width="2" stroke-linecap="round" fill="none" marker-end="url(#arrowhead)"/>
                         
                         <defs>
                             <marker id="arrowhead" markerWidth="10" markerHeight="10" refX="5" refY="5" orient="auto">
@@ -104,11 +104,11 @@
                         </defs>
                         
                         <!-- Labels -->
-                        <text x="150" y="35" text-anchor="middle" font-size="11" fill="#1a4d5e" font-weight="bold">Plan</text>
-                        <text x="260" y="105" text-anchor="start" font-size="11" fill="#1a4d5e" font-weight="bold">Execute</text>
-                        <text x="220" y="255" text-anchor="end" font-size="11" fill="#1a4d5e" font-weight="bold">Review</text>
-                        <text x="50" y="255" text-anchor="start" font-size="11" fill="#1a4d5e" font-weight="bold">Improve</text>
-                        <text x="30" y="105" text-anchor="end" font-size="11" fill="#1a4d5e" font-weight="bold">Deliver</text>
+                        <text x="150" y="38" text-anchor="middle" font-size="11.5" fill="#1a4d5e" font-weight="bold">Plan</text>
+                        <text x="250" y="118" text-anchor="middle" font-size="11.5" fill="#1a4d5e" font-weight="bold">Execute</text>
+                        <text x="210" y="262" text-anchor="middle" font-size="11.5" fill="#1a4d5e" font-weight="bold">Review</text>
+                        <text x="90" y="262" text-anchor="middle" font-size="11.5" fill="#1a4d5e" font-weight="bold">Improve</text>
+                        <text x="50" y="118" text-anchor="middle" font-size="11.5" fill="#1a4d5e" font-weight="bold">Deliver</text>
                     </svg>
                 </div>
             </div>

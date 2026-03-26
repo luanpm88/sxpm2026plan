@@ -2,8 +2,8 @@
 
 return [
     // Hero Section
-    'hero_title' => 'Công Nghệ & Tech Stack',
-    'hero_desc' => 'Bộ công nghệ cấp doanh nghiệp: dễ mở rộng, bảo mật, ổn định và đã được kiểm chứng thực tế.',
+    'hero_title' => 'Ngăn Xếp Công Nghệ',
+    'hero_desc' => 'Bộ công nghệ cấp doanh nghiệp được lựa chọn cho khả năng mở rộng, bảo mật và độ tin cậy lâu dài — được áp dụng trên 8 danh mục và kiểm chứng trong môi trường production thực tế.',
 
     // Tech Stack Matrix
     'stack_title' => 'Toàn Bộ Tech Stack',
@@ -166,7 +166,7 @@ return [
     ],
 
     // CTA Section
-    'cta_title' => 'Xây Dựng Với Công Nghệ Phù Hợp',
-    'cta_desc' => 'Tech stack tối ưu = sản phẩm tốt hơn và tăng trưởng nhanh hơn',
-    'cta_button' => 'Tư Vấn Kiến Trúc',
+    'cta_title' => 'Xây Dựng Trên Nền Tảng Công Nghệ Đúng Đắn',
+    'cta_desc' => 'Các quyết định kiến trúc đúng đắn từ đầu sẽ quyết định hiệu suất, khả năng bảo trì và khả năng mở rộng của hệ thống trong dài hạn.',
+    'cta_button' => 'Yêu Cầu Tư Vấn Kiến Trúc',
 ];

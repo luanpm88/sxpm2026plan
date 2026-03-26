@@ -5,16 +5,16 @@ return [
     'badge'             => 'Nghiên Cứu Chuyên Sâu & Đổi Mới',
     'hero_title'        => 'Các Sáng Kiến',
     'hero_title_accent' => 'R&D Cốt Lõi',
-    'hero_desc'         => 'Các nền tảng công nghệ tiên phong được thiết kế cho nhu cầu doanh nghiệp của ngày mai. Khám phá những đổi mới nghiên cứu của chúng tôi trong hệ thống có khả năng mở rộng và trí tuệ nhân tạo.',
+    'hero_desc'         => 'Xây dựng nền tảng công nghệ cho thế hệ hệ thống doanh nghiệp tiếp theo. Nghiên cứu của chúng tôi bao gồm hạ tầng phân tán có khả năng mở rộng và trí tuệ nhân tạo ứng dụng — được phát triển để trở thành thành phần bản địa của kiến trúc doanh nghiệp.',
 
     // Research capabilities section
     'capabilities_title'   => 'Năng Lực Nghiên Cứu',
     'capabilities_subtitle'=> 'Cách tiếp cận đa ngành của chúng tôi trong việc xây dựng tương lai phần mềm doanh nghiệp',
 
     // CTA
-    'cta_title'  => 'Quan Tâm Đến R&D Của Chúng Tôi?',
-    'cta_desc'   => 'Hãy thảo luận về cách các nền tảng nghiên cứu của chúng tôi có thể thúc đẩy doanh nghiệp của bạn.',
-    'cta_button' => 'Bắt Đầu Trò Chuyện',
+    'cta_title'  => 'Tìm Hiểu Về Các Sáng Kiến R&D',
+    'cta_desc'   => 'Khám phá cách các nền tảng nghiên cứu của chúng tôi có thể trở thành nền tảng cho hệ thống doanh nghiệp của bạn.',
+    'cta_button' => 'Bắt Đầu Trao Đổi',
 
     // Capabilities cards
     'capabilities' => [

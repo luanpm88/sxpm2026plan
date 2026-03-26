@@ -127,11 +127,11 @@
     </section>
 
     <!-- Client Testimonials -->
-    <section class="opacity-75" style="background: white;">
+    <section style="background: white;">
         <div class="container-v5">
             <div class="section-header">
-                <span class="section-label">CLIENT TESTIMONIALS</span>
-                <h2 class="section-title">{{ __('case_studies.testimonials_title') }}  <span class="badge  rounded-pill bg-warning">{{ __('case_studies.testimonials_draft_label') }}</span></h2>
+                <span class="section-label">{{ __('case_studies.section_testimonials') }}</span>
+                <h2 class="section-title">{{ __('case_studies.testimonials_title') }}</h2>
                 <p class="section-subtitle">{{ __('case_studies.testimonials_subtitle') }}</p>
             </div>
             

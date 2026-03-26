@@ -2,8 +2,8 @@
 
 return [
     // Hero Section
-    'hero_title' => 'Technology & Tech Stack',
-    'hero_desc' => 'Enterprise-grade technology: scalable, secure, reliable. Industry-proven standards.',
+    'hero_title' => 'Technology Stack',
+    'hero_desc' => 'Enterprise-grade technologies selected for scalability, security, and long-term reliability — applied across 8 categories and validated in production environments.',
 
     // Tech Stack Matrix
     'stack_title' => 'Complete Tech Stack',
@@ -166,7 +166,7 @@ return [
     ],
 
     // CTA Section
-    'cta_title' => 'Build with the Right Technology',
-    'cta_desc' => 'Optimized tech stack = better product and faster growth',
-    'cta_button' => 'Architecture Consultation',
+    'cta_title' => 'Build on the Right Technology Foundation',
+    'cta_desc' => 'The right architecture decisions at the start determine your system\'s performance, maintainability, and ability to scale.',
+    'cta_button' => 'Request an Architecture Consultation',
 ];

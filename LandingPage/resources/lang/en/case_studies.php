@@ -1,9 +1,9 @@
 <?php
 
 return [
-    'hero_title' => 'Success',
+    'hero_title' => 'Client',
     'hero_title_highlight' => 'Case Studies',
-    'hero_desc' => '50+ projects, 100% client satisfaction. From startup MVPs to enterprise systems, we deliver results.',
+    'hero_desc' => '50+ delivered projects across 10+ industries. From startup MVPs to large-scale enterprise systems — each engagement is measured by real, demonstrable outcomes.',
 
     'stats' => [
         ['num' => '50+', 'label' => 'Projects Delivered'],
@@ -85,9 +85,9 @@ return [
         ['icon' => 'cloud', 'name' => 'SaaS & Cloud', 'description' => 'Helped teams launch MVPs with multi-tenant basics, auth, and billing ready to grow.'],
     ],
 
+    'section_testimonials' => 'CLIENT TESTIMONIALS',
     'testimonials_title' => 'Client Testimonials',
-    'testimonials_draft_label' => 'Draft',
-    'testimonials_subtitle' => 'Feedback from our clients',
+    'testimonials_subtitle' => 'What our partners and clients say about working with us.',
 
     'testimonials' => [
         ['name' => 'CEO, E-Commerce Startup', 'text' => 'HKIncotech not only delivered the scope, but proactively suggested improvements. Communication was excellent and responsive.'],

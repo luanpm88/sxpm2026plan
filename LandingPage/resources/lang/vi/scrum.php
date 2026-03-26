@@ -4,7 +4,7 @@ return [
     // Hero Section
     'hero_title' => 'Quy Trình Phát Triển',
     'hero_title_highlight' => 'SCRUM',
-    'hero_desc' => 'Phương pháp Agile giúp theo dõi tiến độ thời gian thực, linh hoạt điều chỉnh và tăng tốc bàn giao sản phẩm 30-50%.',
+    'hero_desc' => 'Phương pháp Agile có cấu trúc, đảm bảo khả năng theo dõi tiến độ thời gian thực, kế hoạch linh hoạt và rút ngắn thời gian đưa sản phẩm ra thị trường một cách nhất quán.',
     'hero_cta' => 'Tư Vấn Quy Trình SCRUM',
 
     // 6 Steps Section
@@ -82,7 +82,7 @@ return [
         [
             'icon' => 'visibility',
             'title' => 'Minh Bạch & Kiểm Soát',
-            'desc' => 'Demo Sprint hiển thị tiến độ thời gian thực. Không có bất ngờ dự án. Bạn kiểm soát ưu tiên.',
+            'desc' => 'Demo Sprint cung cấp khả năng theo dõi tiến độ thời gian thực, không có bất ngờ trong dự án. Khách hàng duy trì toàn quyền kiểm soát thứ tự ưu tiên ở mọi giai đoạn.',
         ],
         [
             'icon' => 'tune',
@@ -173,7 +173,7 @@ return [
     ],
 
     // CTA Section
-    'cta_title' => 'Bắt Đầu Dự Án SCRUM Ngay Hôm Nay',
-    'cta_desc' => 'Tư vấn miễn phí 30 phút để lên kế hoạch dự án SCRUM',
+    'cta_title' => 'Bắt Đầu Hợp Tác Theo Quy Trình SCRUM',
+    'cta_desc' => 'Đặt lịch tư vấn miễn phí 30 phút để trao đổi phạm vi dự án và phương thức triển khai SCRUM phù hợp.',
     'cta_button' => 'Đặt Lịch Tư Vấn',
 ];

@@ -30,7 +30,7 @@ return [
     // Team section
     'team_title'        => 'Team Expertise &',
     'team_title_accent' => 'Experience',
-    'team_subtitle'     => '50+ senior engineers with deep specialization and track record',
+    'team_subtitle'     => '50+ senior engineers with deep domain specialization and a proven track record across enterprise engagements',
 
     // Learning section
     'learning_title'    => 'Continuous Learning Culture',
@@ -46,7 +46,7 @@ return [
 
     // CTA
     'cta_title'  => 'Partner with HKIncotech',
-    'cta_desc'   => 'Enterprise-grade team with industry certifications and proven expertise',
+    'cta_desc'   => 'An enterprise-grade engineering team with recognized industry certifications and a proven delivery record across 100+ projects.',
     'cta_button' => 'Start Your Project',
 
     // Compliance certs

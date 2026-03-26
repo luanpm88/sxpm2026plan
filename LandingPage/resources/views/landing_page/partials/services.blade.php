@@ -239,6 +239,16 @@
             <p class="section-subtitle">{{ __('services.ai.subtitle') }}</p>
         </div>
 
+        <div style="text-align: center; margin: 0 auto 2rem; display: flex; justify-content: center;">
+            <a href="#ai-how-it-works"
+               class="btn-secondary-v5"
+               style="text-decoration: none; align-items: center; gap: 0.55rem; white-space: nowrap;"
+               aria-label="{{ __('services.ai.see_how_it_works') }}">
+                {{ __('services.ai.see_how_it_works') }}
+                <span class="material-symbols-rounded" style="font-size: 1.1rem;">arrow_downward</span>
+            </a>
+        </div>
+
         <!-- Foundation Overview -->
         <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; align-items: center; margin-bottom: 3rem;">
 
@@ -373,6 +383,54 @@
                 @endforeach
             </div>
         </div>
+
+        <!-- How it works (new section) -->
+        <section id="ai-how-it-works" style="scroll-margin-top: 120px; background: white; border-radius: var(--section-radius); padding: 3rem 2.5rem; border: 1px solid var(--border); margin-bottom: 4rem;">
+            <div style="max-width: 1200px; margin: 0 auto;">
+                <div style="text-align: center; margin-bottom: 2rem;">
+                    <h3 style="font-size: 1.6rem; font-weight: 900; color: var(--text-dark); margin-bottom: 0.75rem; letter-spacing: -0.02em;">
+                        {{ __('services.ai.how_it_works_title') }}
+                    </h3>
+                    <p style="color: var(--text-gray); font-size: 1.02rem; line-height: 1.8; margin: 0 auto; max-width: 760px;">
+                        {{ __('services.ai.how_it_works_subtitle') }}
+                    </p>
+                </div>
+
+                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; align-items: start;">
+                    <div style="background: var(--secondary-bg); border: 1px solid var(--border); border-radius: var(--card-radius); padding: 1.75rem;">
+                        <h4 style="font-size: 1.05rem; font-weight: 800; color: var(--text-dark); margin-bottom: 1rem;">
+                            {{ __('services.ai.how_it_works_foundation_title') }}
+                        </h4>
+                        <ul style="list-style: none; padding: 0; margin: 0; color: var(--text-gray); line-height: 1.9;">
+                            @foreach(__('services.ai.foundation_items') as $item)
+                                <li style="display: flex; gap: 0.75rem; margin-bottom: 0.65rem;">
+                                    <span class="material-symbols-rounded" style="color: var(--primary); font-size: 1.1rem; margin-top: 0.1rem; flex-shrink: 0;">check_circle</span>
+                                    <span>{{ $item }}</span>
+                                </li>
+                            @endforeach
+                        </ul>
+                    </div>
+
+                    <div style="background: var(--surface); border: 1px solid var(--border); border-radius: var(--card-radius); padding: 1.75rem;">
+                        <h4 style="font-size: 1.05rem; font-weight: 800; color: var(--text-dark); margin-bottom: 1rem;">
+                            {{ __('services.ai.how_it_works_flow_title') }}
+                        </h4>
+                        <div style="display: grid; gap: 0.9rem;">
+                            @foreach(__('services.ai.flow_steps') as $step)
+                                <div style="display: flex; align-items: center; gap: 0.9rem; padding: 0.9rem 1rem; border: 1px solid var(--border); border-radius: 12px;">
+                                    <div style="width: 28px; height: 28px; border-radius: 10px; background: var(--primary-subtle); color: var(--primary); display: flex; align-items: center; justify-content: center; font-weight: 900;">
+                                        {{ $loop->iteration }}
+                                    </div>
+                                    <div style="color: var(--text-gray); font-weight: 600;">
+                                        {{ $step['text'] }}
+                                    </div>
+                                </div>
+                            @endforeach
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
     </div>
 </section>
 

@@ -1,9 +1,9 @@
 <?php
 
 return [
-    'hero_title' => 'Flexible Plans',
-    'hero_title_highlight' => 'Based on Needs',
-    'hero_desc' => 'Every project is unique. We customize pricing based on your scope, complexity, and timeline. No fixed packages, only solutions that fit.',
+    'hero_title' => 'Investment Plans',
+    'hero_title_highlight' => 'Tailored to Your Needs',
+    'hero_desc' => 'Every engagement is unique. Pricing is structured around your scope, complexity, and delivery timeline — no rigid packages, only solutions that fit your actual requirements.',
 
     'plans_title' => 'Price Reference Guide',
     'plans_subtitle' => 'Prices below are reference only. Actual pricing depends on project-specific requirements',
@@ -117,7 +117,7 @@ return [
         ['q' => 'Who owns the code after the project?', 'a' => 'You own 100% of the code. We provide full source code, documentation, deployment guides. No licensing fees or royalties.'],
     ],
 
-    'cta_title' => 'Your Project Different from Above Plans?',
-    'cta_desc' => 'That\'s fine. We customize pricing based on your specific requirements. Let\'s discuss your needs.',
-    'cta_button' => 'Free Consultation',
+    'cta_title' => 'Does Your Project Fall Outside These Plans?',
+    'cta_desc' => 'That is perfectly normal. We tailor pricing to your specific requirements, complexity, and timeline. Let us discuss your needs.',
+    'cta_button' => 'Request a Free Consultation',
 ];

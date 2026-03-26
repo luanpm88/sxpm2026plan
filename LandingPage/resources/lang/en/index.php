@@ -1,8 +1,8 @@
 <?php
 
 return [
-    'services_title' => 'Complete Capabilities',
-    'services_subtitle' => 'Enterprise-grade software solutions from custom development to SaaS platforms',
+    'services_title' => 'Core Engineering Capabilities',
+    'services_subtitle' => 'From custom systems and SaaS platforms to AI solutions and enterprise security — purpose-built to perform at scale.',
 
     'custom_title' => 'Custom Software Development',
     'custom_desc' => 'Application development from scratch with cloud-native architecture, microservices, and DevOps automation',
@@ -34,7 +34,7 @@ return [
     'security_feature_4' => 'Incident Response',
 
     'scrum_title' => 'SCRUM Process',
-    'scrum_subtitle' => 'Agile development methodology for real-time progress visibility',
+    'scrum_subtitle' => 'Clients retain complete transparency and full ownership of the project roadmap throughout every sprint cycle.',
     'scrum_discovery' => 'Discovery',
     'scrum_discovery_desc' => 'Consulting, planning',
     'scrum_design' => 'Design',
@@ -87,24 +87,24 @@ return [
     'scaling_phase6_users' => '10M+ users',
     'scaling_explore' => 'Explore Scaling Details',
 
-    'why_title' => 'Why Choose HKIncotech?',
-    'why_subtitle' => 'Reliable software development partner',
+    'why_title' => 'Trusted by 50+ Enterprise Clients',
+    'why_subtitle' => 'Built on 12 years of enterprise delivery, 100+ specialized engineers, and a strict no-outsourcing commitment — every engagement receives a dedicated team from day one.',
     'why_expertise' => 'Deep Expertise',
-    'why_expertise_desc' => '12+ years building enterprise-grade systems',
+    'why_expertise_desc' => '12+ years building enterprise-grade systems with proven results across industries.',
     'why_team' => 'Expert Team',
-    'why_team_desc' => '100+ specialized engineers & architects',
+    'why_team_desc' => '100+ specialized engineers & architects, from frontend to cloud infrastructure.',
     'why_fast' => 'Fast Delivery',
-    'why_fast_desc' => 'MVP in 4-8 weeks, flexible scaling',
+    'why_fast_desc' => 'Rapid MVP delivery within 4–8 weeks, with architecture designed for long-term scalability.',
     'why_security' => 'High Security',
     'why_security_desc' => 'ISO 27001, SOC 2, OWASP Level 3',
     'why_scalable' => 'Scalable Architecture',
-    'why_scalable_desc' => 'From 100 to 10M+ concurrent users',
+    'why_scalable_desc' => 'Architecture engineered to scale from 100 to over 10 million concurrent users without the need for system re-engineering.',
     'why_partnership' => 'True Partnership',
-    'why_partnership_desc' => 'Strategic partner, not just a vendor',
+    'why_partnership_desc' => 'A long-term engagement model with dedicated engineers, transparent communication, and full intellectual property ownership transferred to the client.',
 
-    'case_title' => 'Success Stories',
-    'case_subtitle' => 'Featured case studies from our portfolio - Real results, real impact',
-    'case_read' => 'Read Full Case Study',
+    'case_title' => 'Client Case Studies',
+    'case_subtitle' => 'Selected client engagements demonstrating measurable outcomes across education, logistics, and enterprise management.',
+    'case_read' => 'View Project Details',
     'case_view_more' => 'View More Case Studies & Testimonials',
 
     'rd_title' => 'Research & Development',
@@ -127,7 +127,24 @@ return [
     'testimonials_demo' => 'Demo data',
     'testimonials_subtitle' => 'Feedback from our partners and clients',
 
-    'cta_title' => 'Ready to Start Your Project?',
-    'cta_consultation' => 'Schedule Consultation',
+    'cta_title' => 'Begin Your Enterprise Software Project',
+    'cta_subtitle' => 'Share your project requirements and receive a comprehensive technical proposal with cost estimate within 48 hours, at no obligation.',
+    'cta_consultation' => 'Request a Free Technical Proposal',
     'cta_pricing' => 'View Cost & Plans',
+
+    // Section labels (i18n)
+    'section_services'   => 'OUR SERVICES',
+    'section_process'    => 'OUR PROCESS',
+    'section_technology' => 'TECHNOLOGY',
+    'section_scaling'    => 'SCALING JOURNEY',
+    'section_why'        => 'WHY CHOOSE US',
+    'section_cases'      => 'CASE STUDIES',
+    'section_rd'         => 'RESEARCH & DEVELOPMENT',
+    'section_testimonials' => 'CLIENT TESTIMONIALS',
+    'section_cta'        => 'GET STARTED',
+
+    // R&D descriptions (previously hardcoded)
+    'rd_hkspace_desc'     => 'Architectural substrate for adaptive enterprise systems. A general-purpose distributed platform abstracting multi-tenancy, real-time synchronization, and composable workflows—enabling systems that evolve with organizational needs.',
+    'rd_ai_platform_desc' => 'Long-term research into intelligent systems as enterprise force multipliers. Semantic understanding, grounded reasoning, and autonomous optimization—AI deeply integrated with distributed infrastructure rather than bolt-on features.',
+    'rd_closing'          => 'These initiatives represent complementary research directions: HKSpace provides the infrastructure substrate, while AI provides the cognitive layer. Together, they explore what becomes possible when intelligent systems are built as native components of enterprise architecture.',
 ];

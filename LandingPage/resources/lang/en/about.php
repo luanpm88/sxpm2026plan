@@ -4,7 +4,7 @@ return [
     // Hero Section
     'hero_title' => 'About',
     'hero_title_accent' => 'HKIncotech',
-    'hero_desc' => '12+ years delivering software for SaaS, AI, enterprise systems, and custom products. 50+ successful projects by 50+ senior engineers.',
+    'hero_desc' => 'Over 12 years delivering enterprise software across SaaS, AI, and custom systems. A team of 50+ specialized engineers with 100+ completed engagements and a strict no-outsourcing commitment.',
 
     // Company Story Section
     'story_title' => 'HKIncotech Story',
@@ -16,7 +16,7 @@ return [
     'story_expansion_title' => 'Expansion (2020)',
     'story_expansion_desc' => 'Grew to 30+ lead engineers with global operations. Deepened expertise in SaaS, AI, and enterprise solutions across multiple regions.',
     'story_today_title' => 'Today (2026)',
-    'story_today_desc' => '50+ senior engineers, 100+ projects delivered, and own SaaS platforms (HKSpace). Mission: Help 20+ companies achieve measurable digital transformation.',
+    'story_today_desc' => '50+ senior engineers, 100+ projects delivered, and our own SaaS platform HKSpace. We continue to deepen our capabilities across enterprise systems, AI, and cloud infrastructure to serve clients across Southeast Asia.',
 
     // Milestones Timeline
     'milestones' => [
@@ -39,6 +39,7 @@ return [
     ],
 
     // Leadership Team Section
+    'section_team' => 'OUR TEAM',
     'team_title' => 'Leadership Team',
     'team_subtitle' => 'Experienced leaders with delivery track records',
     'team_draft_badge' => 'Draft',
@@ -83,6 +84,6 @@ return [
 
     // CTA Section
     'cta_title' => 'Build with HKIncotech',
-    'cta_desc' => 'From MVP to enterprise delivery—we partner to ship dependable software.',
+    'cta_desc' => 'From MVP to large-scale enterprise systems — we partner with clients to deliver dependable software that drives real business outcomes.',
     'cta_button' => 'Contact Us',
 ];

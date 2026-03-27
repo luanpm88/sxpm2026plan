@@ -74,41 +74,34 @@
                     </ul>
                 </div>
                 
-                <div class="position-relative" style="background: white; border-radius: var(--card-radius); padding: 2rem; border: 1px solid var(--border); text-align: center; height: 100%; display: flex; align-items: stretch; justify-content: center;">
-                    <svg viewBox="0 0 300 300" preserveAspectRatio="xMidYMid meet" style="width: 100%; height: 100%; max-width: 340px; flex: 1; display: block; overflow: visible;">
-                        <!-- Sprint cycle circle -->
-                        <circle cx="150" cy="150" r="120" fill="none" stroke="#1a4d5e" stroke-width="2" opacity="0.2"/>
-                        
-                        <!-- 5 phases -->
-                        <circle cx="150" cy="50" r="15" fill="#1a4d5e"/>
-                        <circle cx="250" cy="105" r="15" fill="#1a4d5e"/>
-                        <circle cx="210" cy="230" r="15" fill="#1a4d5e"/>
-                        <circle cx="90" cy="230" r="15" fill="#1a4d5e"/>
-                        <circle cx="50" cy="105" r="15" fill="#1a4d5e"/>
-                        
-                        <!-- Center -->
-                        <circle cx="150" cy="150" r="25" fill="#0d9488"/>
-                        <text x="150" y="155" text-anchor="middle" font-size="11" fill="white" font-weight="bold">Sprint</text>
-                        
-                        <!-- Arrows -->
-                        <path d="M 160 80 L 240 110" stroke="#1a4d5e" stroke-width="2" stroke-linecap="round" fill="none" marker-end="url(#arrowhead)"/>
-                        <path d="M 240 135 L 220 220" stroke="#1a4d5e" stroke-width="2" stroke-linecap="round" fill="none" marker-end="url(#arrowhead)"/>
-                        <path d="M 200 240 L 100 240" stroke="#1a4d5e" stroke-width="2" stroke-linecap="round" fill="none" marker-end="url(#arrowhead)"/>
-                        <path d="M 80 220 L 60 110" stroke="#1a4d5e" stroke-width="2" stroke-linecap="round" fill="none" marker-end="url(#arrowhead)"/>
-                        <path d="M 60 80 L 140 60" stroke="#1a4d5e" stroke-width="2" stroke-linecap="round" fill="none" marker-end="url(#arrowhead)"/>
-                        
+                <div class="position-relative" style=" text-align: center; height: 100%; display: flex; align-items: stretch; justify-content: center;">
+                    <svg viewBox="0 0 360 360" preserveAspectRatio="xMidYMid meet" style="width: 100%; height: 100%; max-width: 420px; flex: 1; display: block;">
                         <defs>
-                            <marker id="arrowhead" markerWidth="10" markerHeight="10" refX="5" refY="5" orient="auto">
-                                <polygon points="0 0, 10 5, 0 10" fill="#1a4d5e"/>
+                            <marker id="scrum-cycle-flow-arrow-page" markerUnits="userSpaceOnUse" markerWidth="7" markerHeight="7" refX="6" refY="3.5" orient="auto">
+                                <polygon points="0 0, 7 3.5, 0 7" fill="#38bdf8"/>
                             </marker>
                         </defs>
+                        <!-- outer guide ring -->
                         
-                        <!-- Labels -->
-                        <text x="150" y="38" text-anchor="middle" font-size="11.5" fill="#1a4d5e" font-weight="bold">Plan</text>
-                        <text x="250" y="118" text-anchor="middle" font-size="11.5" fill="#1a4d5e" font-weight="bold">Execute</text>
-                        <text x="210" y="262" text-anchor="middle" font-size="11.5" fill="#1a4d5e" font-weight="bold">Review</text>
-                        <text x="90" y="262" text-anchor="middle" font-size="11.5" fill="#1a4d5e" font-weight="bold">Improve</text>
-                        <text x="50" y="118" text-anchor="middle" font-size="11.5" fill="#1a4d5e" font-weight="bold">Deliver</text>
+                        <!-- continuous flow loop (pentagon through phase centers, clockwise Plan → … → Deliver) -->
+                        <path d="M 180 65 L 275.1 134.1 L 238.8 245.9 L 121.2 245.9 L 84.9 134.1 Z" fill="none" stroke="#38bdf8" stroke-width="1" stroke-linejoin="round" stroke-linecap="round" opacity="0.92" marker-mid="url(#scrum-cycle-flow-arrow-page)"/>
+
+                        <!-- phase nodes: regular pentagon, radius 100 from (180,165), Plan at top -->
+                        <circle cx="180" cy="65" r="28" fill="#0f4c66"/>
+                        <circle cx="275.1" cy="134.1" r="28" fill="#14b88c"/>
+                        <circle cx="238.8" cy="245.9" r="28" fill="#f4a300"/>
+                        <circle cx="121.2" cy="245.9" r="28" fill="#0e9f97"/>
+                        <circle cx="84.9" cy="134.1" r="28" fill="#5d8193"/>
+
+                        <!-- center text -->
+                        <text x="180" y="178" text-anchor="middle" font-size="24" fill="#0e9f97" font-weight="700">Sprint</text>
+
+                        <!-- labels -->
+                        <text x="180" y="69" text-anchor="middle" font-size="9.5" fill="#ffffff" font-weight="700">Plan</text>
+                        <text x="275.1" y="138" text-anchor="middle" font-size="9.5" fill="#ffffff" font-weight="700">Execute</text>
+                        <text x="238.8" y="250" text-anchor="middle" font-size="9.5" fill="#ffffff" font-weight="700">Review</text>
+                        <text x="121.2" y="250" text-anchor="middle" font-size="9.5" fill="#ffffff" font-weight="700">Improve</text>
+                        <text x="84.9" y="138" text-anchor="middle" font-size="9.5" fill="#ffffff" font-weight="700">Deliver</text>
                     </svg>
                 </div>
             </div>

@@ -69,42 +69,28 @@
                 </ul>
             </div>
 
-            <div class="position-relative" style="background: white; border-radius: var(--card-radius); padding: 2rem; border: 1px solid var(--border); text-align: center; height: 100%; display: flex; align-items: stretch; justify-content: center;">
-                <svg viewBox="0 0 300 300" preserveAspectRatio="xMidYMid meet" style="width: 100%; height: 100%; max-width: 340px; flex: 1; display: block; overflow: visible;">
-                    <!-- Sprint cycle circle -->
-                    <circle cx="150" cy="150" r="120" fill="none" stroke="#1a4d5e" stroke-width="2" opacity="0.2"/>
-
-                    <!-- 5 phases -->
-                    <circle cx="150" cy="50" r="15" fill="#1a4d5e"/>
-                    <circle cx="250" cy="105" r="15" fill="#1a4d5e"/>
-                    <circle cx="210" cy="230" r="15" fill="#1a4d5e"/>
-                    <circle cx="90" cy="230" r="15" fill="#1a4d5e"/>
-                    <circle cx="50" cy="105" r="15" fill="#1a4d5e"/>
-
-                    <!-- Center -->
-                    <circle cx="150" cy="150" r="25" fill="#0d9488"/>
-                    <text x="150" y="155" text-anchor="middle" font-size="11" fill="white" font-weight="bold">Sprint</text>
-
-                    <!-- Arrows -->
-                    <path d="M 160 80 L 240 110" stroke="#1a4d5e" stroke-width="2" stroke-linecap="round" fill="none" marker-end="url(#arrowhead)"/>
-                    <path d="M 240 135 L 220 220" stroke="#1a4d5e" stroke-width="2" stroke-linecap="round" fill="none" marker-end="url(#arrowhead)"/>
-                    <path d="M 200 240 L 100 240" stroke="#1a4d5e" stroke-width="2" stroke-linecap="round" fill="none" marker-end="url(#arrowhead)"/>
-                    <path d="M 80 220 L 60 110" stroke="#1a4d5e" stroke-width="2" stroke-linecap="round" fill="none" marker-end="url(#arrowhead)"/>
-                    <path d="M 60 80 L 140 60" stroke="#1a4d5e" stroke-width="2" stroke-linecap="round" fill="none" marker-end="url(#arrowhead)"/>
-
-                    <defs>
-                        <marker id="arrowhead" markerWidth="10" markerHeight="10" refX="5" refY="5" orient="auto">
-                            <polygon points="0 0, 10 5, 0 10" fill="#1a4d5e"/>
-                        </marker>
-                    </defs>
-
-                    <!-- Labels -->
-                    <text x="150" y="38" text-anchor="middle" font-size="11.5" fill="#1a4d5e" font-weight="bold">Plan</text>
-                    <text x="250" y="118" text-anchor="middle" font-size="11.5" fill="#1a4d5e" font-weight="bold">Execute</text>
-                    <text x="210" y="262" text-anchor="middle" font-size="11.5" fill="#1a4d5e" font-weight="bold">Review</text>
-                    <text x="90" y="262" text-anchor="middle" font-size="11.5" fill="#1a4d5e" font-weight="bold">Improve</text>
-                    <text x="50" y="118" text-anchor="middle" font-size="11.5" fill="#1a4d5e" font-weight="bold">Deliver</text>
-                </svg>
+            <div class="position-relative" style="background: linear-gradient(135deg, var(--primary) 0%, #0a4a78 100%); border-radius: 16px; padding: 2.25rem 1.75rem; color: white; box-shadow: 0 12px 40px rgba(26, 77, 94, 0.25); border: 1px solid rgba(255,255,255,0.15); height: 100%; display: flex; flex-direction: column; justify-content: center;">
+                <h3 style="font-size: 1.2rem; font-weight: 800; text-align: center; margin-bottom: 0.45rem;">Sprint Cycle</h3>
+                <p style="text-align: center; font-size: 0.92rem; margin-bottom: 1.25rem; color: rgba(255,255,255,0.92);">
+                    Plan, execute, review and improve continuously in each sprint.
+                </p>
+                <div style="display: grid; grid-template-columns: 1fr; gap: 0.65rem;">
+                    <div style="background: rgba(255,255,255,0.12); border: 1px solid rgba(255,255,255,0.24); border-radius: 12px; padding: 0.68rem 0.9rem; display: flex; align-items: center; justify-content: space-between;">
+                        <span style="font-weight: 700; font-size: 0.95rem;">Plan</span><span style="opacity: 0.9;">→</span><span style="font-weight: 700; font-size: 0.95rem;">Execute</span>
+                    </div>
+                    <div style="background: rgba(255,255,255,0.12); border: 1px solid rgba(255,255,255,0.24); border-radius: 12px; padding: 0.68rem 0.9rem; display: flex; align-items: center; justify-content: space-between;">
+                        <span style="font-weight: 700; font-size: 0.95rem;">Execute</span><span style="opacity: 0.9;">→</span><span style="font-weight: 700; font-size: 0.95rem;">Review</span>
+                    </div>
+                    <div style="background: rgba(255,255,255,0.12); border: 1px solid rgba(255,255,255,0.24); border-radius: 12px; padding: 0.68rem 0.9rem; display: flex; align-items: center; justify-content: space-between;">
+                        <span style="font-weight: 700; font-size: 0.95rem;">Review</span><span style="opacity: 0.9;">→</span><span style="font-weight: 700; font-size: 0.95rem;">Improve</span>
+                    </div>
+                    <div style="background: rgba(255,255,255,0.12); border: 1px solid rgba(255,255,255,0.24); border-radius: 12px; padding: 0.68rem 0.9rem; display: flex; align-items: center; justify-content: space-between;">
+                        <span style="font-weight: 700; font-size: 0.95rem;">Improve</span><span style="opacity: 0.9;">→</span><span style="font-weight: 700; font-size: 0.95rem;">Deliver</span>
+                    </div>
+                    <div style="background: rgba(255,255,255,0.12); border: 1px solid rgba(255,255,255,0.24); border-radius: 12px; padding: 0.68rem 0.9rem; text-align: center; font-weight: 800; letter-spacing: 0.02em;">
+                        Deliver → Plan
+                    </div>
+                </div>
             </div>
         </div>
     </div>

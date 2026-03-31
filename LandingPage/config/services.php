@@ -44,4 +44,8 @@ return [
         'chat_id' => env('TELEGRAM_CHAT_ID'),
     ],
 
+    'ga4' => [
+        'id' => env('GA4_MEASUREMENT_ID'),
+    ],
+
 ];

@@ -5,6 +5,52 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="{{ $pageDescription ?? 'HKIncotech - Enterprise Software Engineering' }}">
     <title>{{ $pageTitle ?? 'HKIncotech' }}</title>
+    <meta name="keywords" content="enterprise software development Vietnam, custom software development Southeast Asia, SaaS development company, offshore development team Vietnam, MVP development service, cloud-native application development, AI integration enterprise software">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="{{ url()->current() }}">
+
+    <!-- Hreflang for multilingual SEO -->
+    @php
+        $currentPath = request()->path();
+        $pathWithoutLocale = preg_replace('#^(en|vi)(/|$)#', '', $currentPath);
+    @endphp
+    <link rel="alternate" hreflang="en" href="{{ url('/en/' . $pathWithoutLocale) }}">
+    <link rel="alternate" hreflang="vi" href="{{ url('/vi/' . $pathWithoutLocale) }}">
+    <link rel="alternate" hreflang="x-default" href="{{ url('/en/' . $pathWithoutLocale) }}">
+
+    <!-- JSON-LD Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@@context": "https://schema.org",
+        "@@type": "Organization",
+        "name": "HKIncotech",
+        "url": "{{ url('/') }}",
+        "logo": "{{ asset('img/logo.svg') }}",
+        "description": "Enterprise software engineering company based in Southeast Asia. 12+ years, 100+ engineers, 50+ enterprise clients.",
+        "foundingDate": "2012",
+        "numberOfEmployees": {
+            "@@type": "QuantitativeValue",
+            "minValue": 100
+        },
+        "address": {
+            "@@type": "PostalAddress",
+            "streetAddress": "188 Duong So 1, Binh Hung Hoa, Binh Tan",
+            "addressLocality": "Ho Chi Minh City",
+            "addressCountry": "VN"
+        },
+        "sameAs": [],
+        "knowsAbout": ["Custom Software Development", "SaaS Platforms", "AI Solutions", "Cloud Architecture", "Manufacturing Software"],
+        "areaServed": ["Southeast Asia", "Global"]
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+        "@@context": "https://schema.org",
+        "@@type": "WebSite",
+        "name": "HKIncotech",
+        "url": "{{ url('/') }}"
+    }
+    </script>
 
     <!-- OpenGraph -->
     <meta property="og:type"        content="website">
@@ -55,6 +101,7 @@
         .lang-menu.open .lang-dropdown { display: block !important; }
     </style>
 
+    @stack('schemas')
     @stack('styles')
 </head>
 <body>
@@ -449,5 +496,110 @@
     </script>
 
     @stack('scripts')
+
+    {{-- Google Analytics 4 --}}
+    {{-- Replace GA_MEASUREMENT_ID with your actual GA4 ID (e.g., G-XXXXXXXXXX) --}}
+    @if(config('services.ga4.id'))
+    <script async src="https://www.googletagmanager.com/gtag/js?id={{ config('services.ga4.id') }}"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', '{{ config('services.ga4.id') }}', {
+            page_title: document.title,
+            page_location: window.location.href,
+            content_group: '{{ $currentPage ?? "index" }}'
+        });
+    </script>
+    @endif
+
+    {{-- GA4 Event Tracking --}}
+    <script>
+    (function() {
+        function trackEvent(eventName, params) {
+            if (typeof gtag === 'function') {
+                gtag('event', eventName, params);
+            }
+        }
+
+        // CTA click tracking
+        document.querySelectorAll('[data-ga-event="cta_click"]').forEach(function(el) {
+            el.addEventListener('click', function() {
+                trackEvent('cta_click', {
+                    cta_text: this.textContent.trim(),
+                    cta_location: this.dataset.gaCta || 'unknown',
+                    page: window.location.pathname
+                });
+            });
+        });
+
+        // Service explore tracking
+        document.querySelectorAll('[data-ga-event="service_explore"]').forEach(function(el) {
+            el.addEventListener('click', function() {
+                trackEvent('service_explore', {
+                    service_name: this.dataset.gaService || 'unknown',
+                    source_section: 'services'
+                });
+            });
+        });
+
+        // Case study view tracking
+        document.querySelectorAll('[data-ga-event="case_study_view"]').forEach(function(el) {
+            el.addEventListener('click', function() {
+                trackEvent('case_study_view', {
+                    case_study_name: this.dataset.gaCase || 'unknown',
+                    page: window.location.pathname
+                });
+            });
+        });
+
+        // Contact form submission tracking
+        var contactForm = document.querySelector('form[action*="contact"]');
+        if (contactForm) {
+            contactForm.addEventListener('submit', function() {
+                trackEvent('contact_form_submit', {
+                    form_type: 'contact',
+                    source_page: window.location.pathname
+                });
+            });
+        }
+
+        // Scroll depth tracking
+        var scrollMarkers = [25, 50, 75, 100];
+        var scrollFired = {};
+        window.addEventListener('scroll', function() {
+            var scrollPercent = Math.round(
+                (window.scrollY / (document.documentElement.scrollHeight - window.innerHeight)) * 100
+            );
+            scrollMarkers.forEach(function(marker) {
+                if (scrollPercent >= marker && !scrollFired[marker]) {
+                    scrollFired[marker] = true;
+                    trackEvent('scroll_depth', {
+                        page: window.location.pathname,
+                        percent: marker
+                    });
+                }
+            });
+        }, { passive: true });
+
+        // Language switch tracking
+        document.querySelectorAll('[data-locale-switch]').forEach(function(el) {
+            el.addEventListener('click', function() {
+                trackEvent('language_switch', {
+                    from_lang: document.documentElement.lang,
+                    to_lang: this.href.includes('/vi') ? 'vi' : 'en'
+                });
+            });
+        });
+
+        // Engagement time tracking (>30s)
+        setTimeout(function() {
+            trackEvent('engagement_time', {
+                page: window.location.pathname,
+                duration_bucket: '30s+'
+            });
+        }, 30000);
+    })();
+    </script>
 </body>
 </html>

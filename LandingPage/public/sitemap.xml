@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+
+  <url>
+    <loc>https://demo.hkincotech.com/en</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://demo.hkincotech.com/en"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://demo.hkincotech.com/vi"/>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+
+  <url>
+    <loc>https://demo.hkincotech.com/vi</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://demo.hkincotech.com/en"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://demo.hkincotech.com/vi"/>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+
+  <url>
+    <loc>https://demo.hkincotech.com/en/services</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://demo.hkincotech.com/en/services"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://demo.hkincotech.com/vi/services"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <url>
+    <loc>https://demo.hkincotech.com/vi/services</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://demo.hkincotech.com/en/services"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://demo.hkincotech.com/vi/services"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <url>
+    <loc>https://demo.hkincotech.com/en/scrum</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://demo.hkincotech.com/en/scrum"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://demo.hkincotech.com/vi/scrum"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://demo.hkincotech.com/vi/scrum</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://demo.hkincotech.com/en/scrum"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://demo.hkincotech.com/vi/scrum"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://demo.hkincotech.com/en/tech-stack</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://demo.hkincotech.com/en/tech-stack"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://demo.hkincotech.com/vi/tech-stack"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://demo.hkincotech.com/vi/tech-stack</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://demo.hkincotech.com/en/tech-stack"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://demo.hkincotech.com/vi/tech-stack"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://demo.hkincotech.com/en/about-us</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://demo.hkincotech.com/en/about-us"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://demo.hkincotech.com/vi/about-us"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://demo.hkincotech.com/vi/about-us</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://demo.hkincotech.com/en/about-us"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://demo.hkincotech.com/vi/about-us"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://demo.hkincotech.com/en/case-studies</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://demo.hkincotech.com/en/case-studies"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://demo.hkincotech.com/vi/case-studies"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://demo.hkincotech.com/vi/case-studies</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://demo.hkincotech.com/en/case-studies"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://demo.hkincotech.com/vi/case-studies"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://demo.hkincotech.com/en/pricing</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://demo.hkincotech.com/en/pricing"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://demo.hkincotech.com/vi/pricing"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://demo.hkincotech.com/vi/pricing</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://demo.hkincotech.com/en/pricing"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://demo.hkincotech.com/vi/pricing"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://demo.hkincotech.com/en/certifications</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://demo.hkincotech.com/en/certifications"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://demo.hkincotech.com/vi/certifications"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc>https://demo.hkincotech.com/vi/certifications</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://demo.hkincotech.com/en/certifications"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://demo.hkincotech.com/vi/certifications"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc>https://demo.hkincotech.com/en/contact</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://demo.hkincotech.com/en/contact"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://demo.hkincotech.com/vi/contact"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://demo.hkincotech.com/vi/contact</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://demo.hkincotech.com/en/contact"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://demo.hkincotech.com/vi/contact"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://demo.hkincotech.com/en/scaling</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://demo.hkincotech.com/en/scaling"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://demo.hkincotech.com/vi/scaling"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc>https://demo.hkincotech.com/vi/scaling</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://demo.hkincotech.com/en/scaling"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://demo.hkincotech.com/vi/scaling"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc>https://demo.hkincotech.com/en/blog/r_and_d</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://demo.hkincotech.com/en/blog/r_and_d"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://demo.hkincotech.com/vi/blog/r_and_d"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc>https://demo.hkincotech.com/vi/blog/r_and_d</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://demo.hkincotech.com/en/blog/r_and_d"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://demo.hkincotech.com/vi/blog/r_and_d"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc>https://demo.hkincotech.com/en/solutions/sme-manufacturing</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://demo.hkincotech.com/en/solutions/sme-manufacturing"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://demo.hkincotech.com/vi/solutions/sme-manufacturing"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://demo.hkincotech.com/vi/solutions/sme-manufacturing</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://demo.hkincotech.com/en/solutions/sme-manufacturing"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://demo.hkincotech.com/vi/solutions/sme-manufacturing"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+</urlset>

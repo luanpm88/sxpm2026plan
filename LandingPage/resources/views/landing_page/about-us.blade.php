@@ -7,10 +7,10 @@
         <div class="container-v5">
             <div style="text-align: center; max-width: 900px; margin: 0 auto;">
                 <h1 style="font-size: 3.5rem; font-weight: 800; line-height: 1.15; margin-bottom: 1.5rem; color: var(--text-dark);">
-                    About <span style="color: var(--primary);">HKIncotech</span>
+                    Built by Engineers,<br><span style="color: var(--primary);">Trusted by Enterprises.</span>
                 </h1>
                 <p style="font-size: 1.15rem; color: var(--text-gray); line-height: 1.8;">
-                    12+ years delivering software for SaaS, AI, enterprise systems, and custom products. 50+ successful projects by 50+ senior engineers.
+                    12 years of shipping production systems. 50+ projects delivered. A team of 50+ senior engineers who've built everything from startup MVPs to platforms serving millions of users.
                 </p>
             </div>
         </div>
@@ -128,6 +128,58 @@
                     </p>
                 </div>
                 @endforeach
+            </div>
+        </div>
+    </section>
+
+    <!-- Engineering Culture -->
+    <section>
+        <div class="container-v5">
+            <div class="section-header">
+                <h2 class="section-title">Engineering Culture</h2>
+                <p class="section-subtitle">How we build matters as much as what we build</p>
+            </div>
+
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem;">
+                <div style="background: white; border: 1px solid var(--border); border-radius: 12px; padding: 2rem;">
+                    <div style="font-size: 2rem; color: var(--primary); margin-bottom: 1rem;">
+                        <span class="material-symbols-rounded">code_blocks</span>
+                    </div>
+                    <h3 style="font-size: 1.15rem; font-weight: 700; color: var(--text-dark); margin-bottom: 0.75rem;">High Engineering Bar</h3>
+                    <p style="color: var(--text-gray); font-size: 0.95rem; line-height: 1.7;">
+                        Every pull request goes through mandatory code review. Automated testing runs on every commit. We measure code coverage, performance budgets, and security scans — not just whether it works.
+                    </p>
+                </div>
+
+                <div style="background: white; border: 1px solid var(--border); border-radius: 12px; padding: 2rem;">
+                    <div style="font-size: 2rem; color: var(--primary); margin-bottom: 1rem;">
+                        <span class="material-symbols-rounded">school</span>
+                    </div>
+                    <h3 style="font-size: 1.15rem; font-weight: 700; color: var(--text-dark); margin-bottom: 0.75rem;">Continuous Learning</h3>
+                    <p style="color: var(--text-gray); font-size: 0.95rem; line-height: 1.7;">
+                        Weekly tech talks, certification programs, and dedicated R&D time. Our engineers stay current with AI/ML, cloud-native patterns, and emerging frameworks — so your project benefits from the latest proven approaches.
+                    </p>
+                </div>
+
+                <div style="background: white; border: 1px solid var(--border); border-radius: 12px; padding: 2rem;">
+                    <div style="font-size: 2rem; color: var(--primary); margin-bottom: 1rem;">
+                        <span class="material-symbols-rounded">monitoring</span>
+                    </div>
+                    <h3 style="font-size: 1.15rem; font-weight: 700; color: var(--text-dark); margin-bottom: 0.75rem;">Production-First Mindset</h3>
+                    <p style="color: var(--text-gray); font-size: 0.95rem; line-height: 1.7;">
+                        We don't just build features — we build systems that run reliably at scale. Observability, alerting, and incident response are built in from day one, not bolted on after launch.
+                    </p>
+                </div>
+
+                <div style="background: white; border: 1px solid var(--border); border-radius: 12px; padding: 2rem;">
+                    <div style="font-size: 2rem; color: var(--primary); margin-bottom: 1rem;">
+                        <span class="material-symbols-rounded">diversity_3</span>
+                    </div>
+                    <h3 style="font-size: 1.15rem; font-weight: 700; color: var(--text-dark); margin-bottom: 0.75rem;">Cross-Functional Teams</h3>
+                    <p style="color: var(--text-gray); font-size: 0.95rem; line-height: 1.7;">
+                        Every project gets a dedicated team: architects, senior developers, QA engineers, and a project manager. No shared resources, no context switching — your team is fully committed to your success.
+                    </p>
+                </div>
             </div>
         </div>
     </section>

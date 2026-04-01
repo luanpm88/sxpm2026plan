@@ -51,10 +51,10 @@
             <div class="hero-grid" style="display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: center;">
                 <div class="hero-content">
                     <h1 style="font-size: 4rem; font-weight: 800; line-height: 1.15; margin-bottom: 1.5rem; color: var(--text-dark);">
-                        Enterprise Software<br><span style="color: var(--primary);">Development Partner</span>
+                        We architect systems<br><span style="color: var(--primary);">that serve millions.</span>
                     </h1>
                     <p style="font-size: 1.15rem; color: var(--text-gray); margin-bottom: 2.5rem; line-height: 1.8;">
-                        HKIncotech is a software development partner in Southeast Asia. We build complex systems, AI platforms, and SaaS solutions using SCRUM methodology with 12+ years of experience.
+                        From SaaS platforms to AI-powered solutions — HKIncotech delivers production systems built on 12 years of battle-tested engineering practices. We don't just write code. We build the infrastructure your business depends on.
                     </p>
                     <div style="display: flex; gap: 1.25rem; margin-bottom: 3rem; flex-wrap: wrap;">
                         <a href="{{ route('landing.contact') }}" class="btn-primary-v5">
@@ -69,26 +69,20 @@
                     <div class="hero-stats" style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 2rem; margin-top: 3rem; padding-top: 2.5rem; border-top: 1px solid var(--border);">
                         <div>
                             <div style="font-size: 2.25rem; font-weight: 800; color: var(--primary);">12+</div>
-                            <div style="font-size: 0.95rem; color: var(--text-gray); margin-top: 0.5rem;">Years Experience</div>
+                            <div style="font-size: 0.95rem; color: var(--text-gray); margin-top: 0.5rem;">Years Building Production Systems</div>
                         </div>
                         <div>
                             <div style="font-size: 2.25rem; font-weight: 800; color: var(--primary);">50+</div>
-                            <div style="font-size: 0.95rem; color: var(--text-gray); margin-top: 0.5rem;">Projects Completed</div>
+                            <div style="font-size: 0.95rem; color: var(--text-gray); margin-top: 0.5rem;">Projects Shipped to Production</div>
                         </div>
                         <div>
                             <div style="font-size: 2.25rem; font-weight: 800; color: var(--primary);">99.99%</div>
-                            <div style="font-size: 0.95rem; color: var(--text-gray); margin-top: 0.5rem;">Uptime SLA</div>
+                            <div style="font-size: 0.95rem; color: var(--text-gray); margin-top: 0.5rem;">Uptime Across All Systems</div>
                         </div>
                     </div>
                 </div>
                 
-                <div class="hero-svg-box opacity-75 position-relative" style="background: white; border-radius: 12px; padding: 2.5rem; border: 1px solid var(--border); display: flex; align-items: center; justify-content: center; min-height: 450px;">
-                    <span class="badge  rounded-pill bg-warning position-absolute fs-6 top-0 mt-3">
-                        <span class="spinner-border spinner-border-sm me-1" role="status">
-                            <span class="visually-hidden">Loading...</span>
-                        </span>
-                        Update banner
-                    </span>
+                <div class="hero-svg-box position-relative" style="background: white; border-radius: 12px; padding: 2.5rem; border: 1px solid var(--border); display: flex; align-items: center; justify-content: center; min-height: 450px;">
                     <svg viewBox="0 0 350 350" style="width: 100%; max-width: 350px;">
                         <!-- Background circles -->
                         <circle cx="175" cy="175" r="160" fill="none" stroke="#0f6b9e" stroke-width="1" opacity="0.1"/>
@@ -139,8 +133,8 @@
     <section id="services" style="background: var(--secondary-bg);">
         <div class="container-v5">
             <div class="section-header">
-                <h2 class="section-title">Complete Capabilities</h2>
-                <p class="section-subtitle">Enterprise-grade software solutions from custom development to SaaS platforms</p>
+                <h2 class="section-title">What We Build</h2>
+                <p class="section-subtitle">From custom enterprise systems to AI platforms — production-grade solutions that scale with your business</p>
             </div>
             
             <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem;">
@@ -148,9 +142,9 @@
                     <div style="font-size: 3rem; color: var(--primary); margin-bottom: 1rem;">
                         <span class="material-symbols-rounded">code</span>
                     </div>
-                    <h3 style="font-size: 1.3rem; font-weight: 700; color: var(--text-dark); margin-bottom: 1rem;">Custom Software Development</h3>
+                    <h3 style="font-size: 1.3rem; font-weight: 700; color: var(--text-dark); margin-bottom: 1rem;">Custom Software Engineering</h3>
                     <p style="color: var(--text-gray); font-size: 0.95rem; line-height: 1.7; margin-bottom: 1.5rem;">
-                        Application development from scratch with cloud-native architecture, microservices, and DevOps automation
+                        We architect systems designed for your next 10x growth — cloud-native, microservices, with the reliability your business depends on
                     </p>
                     <ul style="list-style: none; padding: 0; margin-bottom: 1.5rem;">
                         <li style="padding: 0.5rem 0; color: var(--text-gray); display: flex; align-items: center; gap: 0.75rem; font-size: 0.9rem;">
@@ -177,9 +171,9 @@
                     <div style="font-size: 3rem; color: var(--primary); margin-bottom: 1rem;">
                         <span class="material-symbols-rounded">workspace_premium</span>
                     </div>
-                    <h3 style="font-size: 1.3rem; font-weight: 700; color: var(--text-dark); margin-bottom: 1rem;">SaaS Platform: HKSpace</h3>
+                    <h3 style="font-size: 1.3rem; font-weight: 700; color: var(--text-dark); margin-bottom: 1rem;">SaaS Platform Development</h3>
                     <p style="color: var(--text-gray); font-size: 0.95rem; line-height: 1.7; margin-bottom: 1.5rem;">
-                        Multi-tenant enterprise management platform with unlimited scalability
+                        Production-ready multi-tenant platforms — proven with HKSpace, our own SaaS serving enterprise teams at scale
                     </p>
                     <ul style="list-style: none; padding: 0; margin-bottom: 1.5rem;">
                         <li style="padding: 0.5rem 0; color: var(--text-gray); display: flex; align-items: center; gap: 0.75rem; font-size: 0.9rem;">
@@ -206,9 +200,9 @@
                     <div style="font-size: 3rem; color: var(--primary); margin-bottom: 1rem;">
                         <span class="material-symbols-rounded">psychology</span>
                     </div>
-                    <h3 style="font-size: 1.3rem; font-weight: 700; color: var(--text-dark); margin-bottom: 1rem;">AI Knowledge Platform</h3>
+                    <h3 style="font-size: 1.3rem; font-weight: 700; color: var(--text-dark); margin-bottom: 1rem;">AI & Intelligent Systems</h3>
                     <p style="color: var(--text-gray); font-size: 0.95rem; line-height: 1.7; margin-bottom: 1.5rem;">
-                        AI platform integrating NLP, RAG, vector databases, and custom LLM
+                        Production AI that delivers business value — from NLP and document intelligence to custom AI assistants integrated into your workflows
                     </p>
                     <ul style="list-style: none; padding: 0; margin-bottom: 1.5rem;">
                         <li style="padding: 0.5rem 0; color: var(--text-gray); display: flex; align-items: center; gap: 0.75rem; font-size: 0.9rem;">
@@ -237,7 +231,7 @@
                     </div>
                     <h3 style="font-size: 1.3rem; font-weight: 700; color: var(--text-dark); margin-bottom: 1rem;">Security & Compliance</h3>
                     <p style="color: var(--text-gray); font-size: 0.95rem; line-height: 1.7; margin-bottom: 1.5rem;">
-                        Enterprise-grade security architecture complying with OWASP, ISO 27001, SOC 2
+                        Enterprise security built in from day one — OWASP, ISO 27001, SOC 2 compliant architecture that protects your data and your reputation
                     </p>
                     <ul style="list-style: none; padding: 0; margin-bottom: 1.5rem;">
                         <li style="padding: 0.5rem 0; color: var(--text-gray); display: flex; align-items: center; gap: 0.75rem; font-size: 0.9rem;">
@@ -463,8 +457,8 @@
     <section style="background: var(--secondary-bg);">
         <div class="container-v5">
             <div class="section-header">
-                <h2 class="section-title">Why Choose HKIncotech?</h2>
-                <p class="section-subtitle">Reliable software development partner</p>
+                <h2 class="section-title">Why Teams Choose HKIncotech</h2>
+                <p class="section-subtitle">The difference between a vendor and a technology partner you can depend on</p>
             </div>
             
             <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2rem;">

@@ -1,15 +1,61 @@
 <!DOCTYPE html>
-<html lang="vi">
+<html lang="{{ app()->getLocale() }}">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="HKIncotech - Enterprise Software Engineering">
     <title>HKIncotech | One Page Landing</title>
+    <script>
+        (function() {
+            const savedTheme = localStorage.getItem('theme');
+            const preferredDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+            const theme = savedTheme || (preferredDark ? 'dark' : 'light');
+            document.documentElement.setAttribute('data-theme', theme);
+            if (sessionStorage.getItem('locale-switch-scroll-y') !== null) {
+                history.scrollRestoration = 'manual';
+            }
+        })();
+    </script>
+    <link rel="icon" type="image/svg+xml" href="{{ asset('img/logo.svg') }}">
+    <link rel="shortcut icon" href="{{ asset('img/logo.svg') }}">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400,0,0" />
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/css/main.css">
-    <link rel="stylesheet" href="/css/onepage.css">
+    <style>
+        .lang-switcher-op {
+            display: flex;
+            align-items: center;
+            gap: 0.25rem;
+        }
+        .lang-switcher-op a,
+        .theme-toggle-locale {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.2rem;
+            padding: 0.25rem 0.55rem;
+            border-radius: 5px;
+            font-size: 0.78rem;
+            font-weight: 600;
+            text-decoration: none;
+            border: 1.5px solid rgba(255,255,255,0.3);
+            color: rgba(255,255,255,0.8);
+            transition: all 0.2s ease;
+            background: transparent;
+            cursor: pointer;
+        }
+        .theme-toggle-locale .material-symbols-rounded {
+            font-size: 1rem;
+            line-height: 1;
+        }
+        .lang-switcher-op a:hover,
+        .lang-switcher-op a.active,
+        .theme-toggle-locale:hover {
+            background: rgba(255,255,255,0.15);
+            border-color: rgba(255,255,255,0.7);
+            color: white;
+        }
+    </style>
     @stack('styles')
     @yield('custom_head')
 </head>
@@ -19,24 +65,33 @@
         <div class="header-container">
             <a href="#hero" class="logo nav-link">
                 <img src="/img/logo.svg" alt="HKIncotech">
-                <span style="transform: translateY(5px)">INCOTECH</span>
+                <span>INCOTECH</span>
             </a>
             <button class="mobile-menu-toggle" onclick="document.querySelector('nav').classList.toggle('mobile-open')">
                 <span class="material-symbols-rounded">menu</span>
             </button>
             <nav>
-                <a href="#hero" class="nav-link">Home</a>
-                <a href="#about" class="nav-link">About Us</a>
-                <a href="#services" class="nav-link">Services</a>
-                <a href="#scrum" class="nav-link">SCRUM</a>
-                <a href="#tech-stack" class="nav-link">Technology</a>
-                <a href="#case-studies" class="nav-link">Case Studies</a>
-                <a href="#r_and_d" class="nav-link">R&D</a>
-                <a href="#certifications" class="nav-link">Certifications</a>
-                <a href="#pricing" class="nav-link">Cost & Plans</a>
-                <a href="#contact" class="nav-link">Contact</a>
+                <a href="#hero" class="nav-link">{{ __('nav.home') }}</a>
+                <a href="#about" class="nav-link">{{ __('nav.about') }}</a>
+                <a href="#services" class="nav-link">{{ __('nav.services') }}</a>
+                <a href="#scrum" class="nav-link">{{ __('nav.scrum') }}</a>
+                <a href="#tech-stack" class="nav-link">{{ __('nav.tech') }}</a>
+                <a href="#case-studies" class="nav-link">{{ __('nav.case_studies') }}</a>
+                <a href="#r_and_d" class="nav-link">{{ __('nav.rd') }}</a>
+                <a href="#certifications" class="nav-link">{{ __('nav.certifications') }}</a>
+                <a href="#pricing" class="nav-link">{{ __('nav.pricing') }}</a>
+                <a href="#contact" class="nav-link">{{ __('nav.contact') }}</a>
             </nav>
-            <a href="#contact" class="btn-header nav-link">Get Started</a>
+            <button class="theme-toggle theme-toggle-locale" type="button" aria-label="Toggle dark mode" data-theme-toggle>
+                <span class="material-symbols-rounded" data-theme-icon>dark_mode</span>
+            </button>
+            <!-- Language Switcher -->
+            <div class="lang-switcher-op">
+                <a href="{{ route('locale.switch', 'en') }}" class="{{ app()->getLocale() === 'en' ? 'active' : '' }}" data-locale-switch>🇺🇸 EN</a>
+                <a href="{{ route('locale.switch', 'vi') }}" class="{{ app()->getLocale() === 'vi' ? 'active' : '' }}" data-locale-switch>🇻🇳 VI</a>
+            </div>
+
+            <a href="#contact" class="btn-header nav-link">{{ __('nav.get_started') }}</a>
         </div>
     </header>
 
@@ -49,51 +104,79 @@
             <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem; margin-bottom: 2rem;">
                 <!-- Company Info -->
                 <div class="footer-section">
-                    <h3>About HKIncotech</h3>
+                    <h3>{{ __('footer.about_title') }}</h3>
                     <p style="color: rgba(255, 255, 255, 0.7); font-size: 0.9rem; line-height: 1.6;">
-                        Leading enterprise software development company in Southeast Asia. Specializing in custom software solutions, SaaS platforms, and AI solutions with 12+ years of experience.
+                        {{ __('footer.about_desc') }}
                     </p>
                 </div>
                 <!-- Services -->
                 <div class="footer-section">
-                    <h3>Services</h3>
+                    <h3>{{ __('footer.services_title') }}</h3>
                     <ul>
-                        <li><a href="#services" class="nav-link">Custom Software Development</a></li>
-                        <li><a href="#services" class="nav-link">SaaS Platform</a></li>
-                        <li><a href="#services" class="nav-link">AI Knowledge Platform</a></li>
-                        <li><a href="#services" class="nav-link">Security & Compliance</a></li>
+                        <li><a href="#services" class="nav-link">{{ __('footer.services.custom') }}</a></li>
+                        <li><a href="#services" class="nav-link">{{ __('footer.services.saas') }}</a></li>
+                        <li><a href="#services" class="nav-link">{{ __('footer.services.ai') }}</a></li>
+                        <li><a href="#services" class="nav-link">{{ __('footer.services.security') }}</a></li>
                     </ul>
                 </div>
                 <!-- Technology -->
                 <div class="footer-section">
-                    <h3>Technology</h3>
+                    <h3>{{ __('footer.tech_title') }}</h3>
                     <ul>
-                        <li><a href="#tech-stack" class="nav-link">Cloud & DevOps</a></li>
-                        <li><a href="#tech-stack" class="nav-link">Frontend Technologies</a></li>
-                        <li><a href="#tech-stack" class="nav-link">Backend Technologies</a></li>
-                        <li><a href="#tech-stack" class="nav-link">Data & Analytics</a></li>
+                        <li><a href="#tech-stack" class="nav-link">{{ __('footer.tech.cloud') }}</a></li>
+                        <li><a href="#tech-stack" class="nav-link">{{ __('footer.tech.frontend') }}</a></li>
+                        <li><a href="#tech-stack" class="nav-link">{{ __('footer.tech.backend') }}</a></li>
+                        <li><a href="#tech-stack" class="nav-link">{{ __('footer.tech.data') }}</a></li>
                     </ul>
                 </div>
                 <!-- Company -->
                 <div class="footer-section">
-                    <h3>Company</h3>
+                    <h3>{{ __('footer.company_title') }}</h3>
                     <ul>
-                        <li><a href="#about" class="nav-link">About Us</a></li>
-                        <li><a href="#case-studies" class="nav-link">Case Studies</a></li>
-                        <li><a href="#certs" class="nav-link">Certifications</a></li>
-                        <li><a href="#contact" class="nav-link">Contact</a></li>
-                        <li><a href="#pricing" class="nav-link">Pricing</a></li>
+                        <li><a href="#about" class="nav-link">{{ __('footer.company.about') }}</a></li>
+                        <li><a href="#case-studies" class="nav-link">{{ __('footer.company.case_studies') }}</a></li>
+                        <li><a href="#certifications" class="nav-link">{{ __('footer.company.certifications') }}</a></li>
+                        <li><a href="#contact" class="nav-link">{{ __('footer.company.contact') }}</a></li>
+                        <li><a href="#pricing" class="nav-link">{{ __('footer.company.pricing') }}</a></li>
                     </ul>
                 </div>
             </div>
             <div class="footer-divider">
-                &copy; 2026 HKIncotech. All rights reserved.
+                {{ __('footer.copyright') }}
             </div>
         </div>
     </footer>
 
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        (function () {
+            const LOCALE_SCROLL_KEY = 'locale-switch-scroll-y';
+            const savedScrollY = sessionStorage.getItem(LOCALE_SCROLL_KEY);
+            if (savedScrollY !== null) {
+                sessionStorage.removeItem(LOCALE_SCROLL_KEY);
+                history.scrollRestoration = 'manual';
+                requestAnimationFrame(() => {
+                    window.scrollTo({ top: Number(savedScrollY) || 0, behavior: 'instant' });
+                });
+            }
+            document.querySelectorAll('[data-locale-switch]').forEach((link) => {
+                link.addEventListener('click', () => {
+                    sessionStorage.setItem(LOCALE_SCROLL_KEY, String(window.scrollY));
+                });
+            });
+        })();
+    </script>
+    <script>
+        // Mobile nav: close when clicking outside
+        document.addEventListener('click', (e) => {
+            const nav = document.querySelector('nav');
+            const toggle = document.querySelector('.mobile-menu-toggle');
+            if (nav && nav.classList.contains('mobile-open') && !nav.contains(e.target) && toggle && !toggle.contains(e.target)) {
+                nav.classList.remove('mobile-open');
+            }
+        });
+    </script>
     <script>
         // Smooth scroll for nav links
         document.addEventListener('DOMContentLoaded', function() {
@@ -255,6 +338,45 @@
                 }
             });
         });
+
+        (function () {
+            const toggleButton = document.querySelector('[data-theme-toggle]');
+            const icon = document.querySelector('[data-theme-icon]');
+            if (!toggleButton || !icon) return;
+
+            const applyTheme = (theme) => {
+                document.documentElement.setAttribute('data-theme', theme);
+                localStorage.setItem('theme', theme);
+                icon.textContent = theme === 'dark' ? 'light_mode' : 'dark_mode';
+                toggleButton.setAttribute('aria-label', theme === 'dark' ? 'Switch to light mode' : 'Switch to dark mode');
+            };
+
+            const currentTheme = document.documentElement.getAttribute('data-theme') || 'light';
+            applyTheme(currentTheme);
+
+            toggleButton.addEventListener('click', () => {
+                const nextTheme = document.documentElement.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
+                applyTheme(nextTheme);
+            });
+        })();
+
+        (function () {
+            const LOCALE_SCROLL_KEY = 'locale-switch-scroll-y';
+            const localeLinks = document.querySelectorAll('[data-locale-switch]');
+
+            // Restore scroll position after locale page reload.
+            const savedScrollY = sessionStorage.getItem(LOCALE_SCROLL_KEY);
+            if (savedScrollY !== null) {
+                sessionStorage.removeItem(LOCALE_SCROLL_KEY);
+                window.scrollTo(0, Number(savedScrollY) || 0);
+            }
+
+            localeLinks.forEach((link) => {
+                link.addEventListener('click', () => {
+                    sessionStorage.setItem(LOCALE_SCROLL_KEY, String(window.scrollY));
+                });
+            });
+        })();
     </script>
 
     @stack('scripts')

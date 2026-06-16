@@ -1,5 +1,10 @@
 @extends('layouts.main')
 
+@section('meta')
+    <title>{{ __('sme_manufacturing.hero_title') }} - HKIncotech</title>
+    <meta name="description" content="{{ __('sme_manufacturing.hero_description') }}">
+@endsection
+
 @section('content')
     @include('pages.solutions.sme-manufacturing.hero')
     @include('pages.solutions.sme-manufacturing.positioning')

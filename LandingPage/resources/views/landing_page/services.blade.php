@@ -3,17 +3,17 @@
 @section('content')
 
     <!-- Hero -->
-    <section style="min-height: 70vh; display: flex; align-items: center; padding: 6rem 2rem; background: linear-gradient(135deg, #ffffff 0%, var(--secondary-bg) 100%);">
+    <section style="min-height: 70vh; display: flex; align-items: center; padding: 6rem 2rem; background: linear-gradient(135deg, var(--surface) 0%, var(--secondary-bg) 100%);">
         <div class="container-v5">
             <div style="text-align: center; max-width: 900px; margin: 0 auto;">
-                <h1 style="font-size: 3.5rem; font-weight: 800; line-height: 1.15; margin-bottom: 1.5rem; color: var(--text-dark);">
-                    Services & Solutions
+                <h1 style="font-size: 2.75rem; font-weight: 800; line-height: 1.15; margin-bottom: 1.5rem; color: var(--text-dark);">
+                    {{ __('services.hero_title') }}
                 </h1>
                 <p style="font-size: 1.15rem; color: var(--text-gray); line-height: 1.8; margin-bottom: 1.5rem;">
-                    Four core services covering software needs from MVP to enterprise solutions
+                    {{ __('services.hero_desc') }}
                 </p>
                 <p style="font-size: 1rem; color: var(--text-gray); margin-bottom: 2rem;">
-                    We combine modern technology, global best practices, and domain expertise to build effective solutions.
+                    {{ __('services.hero_subtitle') }}
                 </p>
             </div>
         </div>
@@ -23,26 +23,34 @@
     <section style="background: white;">
         <div class="container-v5">
             <div class="section-header">
-                <h2 class="section-title">Four Core Services</h2>
-                <p class="section-subtitle">Complete solutions from development to deployment & scaling</p>
+                <span class="section-label">OUR SERVICES</span>
+                <h2 class="section-title">{{ __('services.overview_title') }}</h2>
+                <p class="section-subtitle">{{ __('services.overview_subtitle') }}</p>
             </div>
-            
+
             <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2rem;">
-                @php
-                $service_overview = [
-                    ['num' => 1, 'icon' => 'code', 'title' => 'Custom Software Development', 'desc' => 'Build applications from scratch with cloud-native architecture, microservices, and optimized performance'],
-                    ['num' => 2, 'icon' => 'workspace_premium', 'title' => 'SaaS Platform', 'desc' => 'Production-ready multi-tenant platform. HKSpace currently serves 50K+ active users'],
-                    ['num' => 3, 'icon' => 'psychology', 'title' => 'AI Knowledge Platform', 'desc' => 'NLP, RAG, LLM integration. Build intelligent AI-powered solutions'],
-                    ['num' => 4, 'icon' => 'shield', 'title' => 'Security & Compliance', 'desc' => 'Enterprise security architecture. ISO 27001, SOC 2, GDPR, PCI DSS compliant'],
-                ];
-                @endphp
-                @foreach($service_overview as $s)
-                <div style="background: white; border: 1px solid var(--border); border-radius: 12px; padding: 2rem; text-align: center; transition: all 0.3s ease;" onmouseover="this.style.borderColor='var(--primary)'; this.style.boxShadow='0 12px 30px rgba(15, 107, 158, 0.12)'; this.style.transform='translateY(-4px)';" onmouseout="this.style.borderColor='var(--border)'; this.style.boxShadow=''; this.style.transform='';">
+                @foreach(__('services.services') as $s)
+                <div style="background: white; border: 1px solid var(--border); border-radius: var(--card-radius); padding: 2rem; text-align: center; transition: all 0.3s ease;" onmouseover="this.style.borderColor='var(--primary)'; this.style.boxShadow='0 12px 30px var(--shadow-hover)'; this.style.transform='translateY(-4px)';" onmouseout="this.style.borderColor='var(--border)'; this.style.boxShadow=''; this.style.transform='';">
                     <div style="display: inline-flex; align-items: center; justify-content: center; width: 50px; height: 50px; background: var(--primary); color: white; border-radius: 50%; font-weight: 800; font-size: 1.3rem; margin-bottom: 1rem;">
-                        {{ $s['num'] }}
+                        {{ $loop->iteration }}
                     </div>
-                    <div style="font-size: 2.5rem; color: var(--primary); margin-bottom: 1rem;">
-                        <span class="material-symbols-rounded">{{ $s['icon'] }}</span>
+                    <div style="font-size: 2rem; color: var(--primary); margin-bottom: 1rem;">
+                        <span class="material-symbols-rounded">
+                            @switch($loop->iteration)
+                                @case(1)
+                                    code
+                                    @break
+                                @case(2)
+                                    workspace_premium
+                                    @break
+                                @case(3)
+                                    psychology
+                                    @break
+                                @case(4)
+                                    shield
+                                    @break
+                            @endswitch
+                        </span>
                     </div>
                     <h3 style="font-size: 1.15rem; font-weight: 700; color: var(--text-dark); margin-bottom: 0.75rem;">
                         {{ $s['title'] }}
@@ -60,158 +68,150 @@
     <section style="background: var(--secondary-bg);">
         <div class="container-v5">
             <div class="section-header">
-                <h2 class="section-title">Custom Software Development</h2>
-                <p class="section-subtitle">Professional software development with transparent SCRUM process</p>
+                <span class="section-label">CUSTOM DEVELOPMENT</span>
+                <h2 class="section-title">{{ __('services.service1.title') }}</h2>
+                <p class="section-subtitle">{{ __('services.service1.subtitle') }}</p>
             </div>
-            
+
             <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; align-items: center; margin-bottom: 4rem;">
-                <div style="background: white; border-radius: 12px; padding: 2.5rem; border: 1px solid var(--border);">
-                    <h3 style="font-size: 1.3rem; font-weight: 700; color: var(--text-dark); margin-bottom: 1.5rem;">Clear, Standard Process</h3>
+                <div style="background: white; border-radius: var(--card-radius); padding: 2.5rem; border: 1px solid var(--border);">
+                    <h3 style="font-size: 1.1rem; font-weight: 700; color: var(--text-dark); margin-bottom: 1.5rem;">{{ __('services.service1.process_title') }}</h3>
                     <p style="color: var(--text-gray); line-height: 1.8; margin-bottom: 1.5rem;">
-                        We follow international SCRUM standards. Clients receive progress updates, participate in regular reviews, and control each development phase.
+                        {{ __('services.service1.process_desc') }}
                     </p>
                     <div style="background: var(--secondary-bg); padding: 1.5rem; border-radius: 8px; margin-bottom: 1.5rem;">
-                        <h4 style="font-size: 1.1rem; font-weight: 700; color: var(--primary); margin-bottom: 1rem;">Transparency Commitment</h4>
+                        <h4 style="font-size: 1.1rem; font-weight: 700; color: var(--primary); margin-bottom: 1rem;">{{ __('services.service1.transparency_title') }}</h4>
                         <ul style="list-style: none; margin: 0;">
                             <li style="padding: 0.5rem 0; color: var(--text-gray); display: flex; align-items: flex-start; gap: 0.75rem;">
                                 <span class="material-symbols-rounded" style="color: var(--primary); font-size: 1.2rem; flex-shrink: 0;">verified</span>
-                                <span><strong>Sprint Planning:</strong> Sprint kickoff meetings to define specific work items</span>
+                                <span><strong>{{ __('services.service1.sprint_planning_title') }}:</strong> {{ __('services.service1.sprint_planning_desc') }}</span>
                             </li>
                             <li style="padding: 0.5rem 0; color: var(--text-gray); display: flex; align-items: flex-start; gap: 0.75rem;">
                                 <span class="material-symbols-rounded" style="color: var(--primary); font-size: 1.2rem; flex-shrink: 0;">visibility</span>
-                                <span><strong>Daily Updates:</strong> Daily progress reports through project management tools</span>
+                                <span><strong>{{ __('services.service1.daily_updates_title') }}:</strong> {{ __('services.service1.daily_updates_desc') }}</span>
                             </li>
                             <li style="padding: 0.5rem 0; color: var(--text-gray); display: flex; align-items: flex-start; gap: 0.75rem;">
                                 <span class="material-symbols-rounded" style="color: var(--primary); font-size: 1.2rem; flex-shrink: 0;">preview</span>
-                                <span><strong>Sprint Demo:</strong> Clients review and test new features every 2 weeks</span>
+                                <span><strong>{{ __('services.service1.sprint_demo_title') }}:</strong> {{ __('services.service1.sprint_demo_desc') }}</span>
                             </li>
                             <li style="padding: 0.5rem 0; color: var(--text-gray); display: flex; align-items: flex-start; gap: 0.75rem;">
                                 <span class="material-symbols-rounded" style="color: var(--primary); font-size: 1.2rem; flex-shrink: 0;">code</span>
-                                <span><strong>Code Quality:</strong> Code reviews, automated testing, CI/CD</span>
+                                <span><strong>{{ __('services.service1.code_quality_title') }}:</strong> {{ __('services.service1.code_quality_desc') }}</span>
                             </li>
                             <li style="padding: 0.5rem 0; color: var(--text-gray); display: flex; align-items: flex-start; gap: 0.75rem;">
                                 <span class="material-symbols-rounded" style="color: var(--primary); font-size: 1.2rem; flex-shrink: 0;">track_changes</span>
-                                <span><strong>Full Visibility:</strong> Access to Jira/Git for realtime tracking</span>
+                                <span><strong>{{ __('services.service1.full_visibility_title') }}:</strong> {{ __('services.service1.full_visibility_desc') }}</span>
                             </li>
                         </ul>
                     </div>
                 </div>
-                
-                <div class="opacity-75" style="background: white; border-radius: 12px; padding: 2.5rem; border: 1px solid var(--border);">
-                    <h3 style="font-size: 1.3rem; font-weight: 700; color: var(--text-dark); margin-bottom: 1.5rem;">SCRUM Development Cycle
-                        <span class="badge  rounded-pill bg-warning">
-                            <span class="spinner-border spinner-border-sm me-1" role="status">
-                                <span class="visually-hidden">Loading...</span>
-                            </span>
-                            Update Diagram
-                        </span>
-                        
-                    </h3>
+
+                <div style="background: white; border-radius: var(--card-radius); padding: 2.5rem; border: 1px solid var(--border);">
+                    <h3 style="font-size: 1.1rem; font-weight: 700; color: var(--text-dark); margin-bottom: 1.5rem;">{{ __('services.service1.cycle_title') }}</h3>
                     <svg viewBox="0 0 300 280" style="width: 100%; max-width: 300px; margin: 0 auto; display: block;">
                         <!-- Sprint Cycle Circle -->
                         <circle cx="150" cy="140" r="90" fill="none" stroke="#e5e7eb" stroke-width="3"/>
-                        
+
                         <!-- Planning -->
-                        <circle cx="150" cy="50" r="25" fill="#0f6b9e"/>
+                        <circle cx="150" cy="50" r="25" fill="#1a4d5e"/>
                         <text x="150" y="50" text-anchor="middle" font-size="10" fill="white" font-weight="bold" dy="5">Planning</text>
-                        
+
                         <!-- Development -->
                         <circle cx="235" cy="100" r="25" fill="#10b981"/>
                         <text x="235" y="100" text-anchor="middle" font-size="10" fill="white" font-weight="bold" dy="5">Dev</text>
-                        
+
                         <!-- Testing -->
                         <circle cx="235" cy="180" r="25" fill="#f59e0b"/>
                         <text x="235" y="180" text-anchor="middle" font-size="10" fill="white" font-weight="bold" dy="5">Testing</text>
-                        
+
                         <!-- Demo/Review -->
                         <circle cx="150" cy="230" r="25" fill="#7c3aed"/>
                         <text x="150" y="230" text-anchor="middle" font-size="10" fill="white" font-weight="bold" dy="5">Demo</text>
-                        
+
                         <!-- Deploy -->
-                        <circle cx="65" cy="180" r="25" fill="#059669"/>
+                        <circle cx="65" cy="180" r="25" fill="#0d9488"/>
                         <text x="65" y="180" text-anchor="middle" font-size="10" fill="white" font-weight="bold" dy="5">Deploy</text>
-                        
+
                         <!-- Retrospective -->
-                        <circle cx="65" cy="100" r="25" fill="#0f6b9e" opacity="0.7"/>
+                        <circle cx="65" cy="100" r="25" fill="#1a4d5e" opacity="0.7"/>
                         <text x="65" y="100" text-anchor="middle" font-size="10" fill="white" font-weight="bold" dy="5">Retro</text>
-                        
+
                         <!-- Center: 2 weeks -->
-                        <text x="150" y="135" text-anchor="middle" font-size="14" fill="#0f6b9e" font-weight="bold">2-Week</text>
-                        <text x="150" y="152" text-anchor="middle" font-size="13" fill="#059669" font-weight="bold">Sprint</text>
-                        
+                        <text x="150" y="135" text-anchor="middle" font-size="14" fill="#1a4d5e" font-weight="bold">{{ __('services.service1.cycle_2week') }}</text>
+                        <text x="150" y="152" text-anchor="middle" font-size="13" fill="#0d9488" font-weight="bold">{{ __('services.service1.cycle_sprint') }}</text>
+
                         <!-- Arrows -->
-                        <path d="M 150 75 L 150 85" stroke="#0f6b9e" stroke-width="2" marker-end="url(#arrowhead)"/>
+                        <path d="M 150 75 L 150 85" stroke="#1a4d5e" stroke-width="2" marker-end="url(#arrowhead)"/>
                         <defs>
                             <marker id="arrowhead" markerWidth="10" markerHeight="10" refX="5" refY="3" orient="auto">
-                                <polygon points="0 0, 5 3, 0 6" fill="#0f6b9e" />
+                                <polygon points="0 0, 5 3, 0 6" fill="#1a4d5e" />
                             </marker>
                         </defs>
                     </svg>
                     <p style="text-align: center; color: var(--text-gray); font-size: 0.9rem; margin-top: 1rem; line-height: 1.6;">
-                        2-week cycles with client participation in each phase to ensure product alignment
+                        {{ __('services.service1.cycle_desc') }}
                     </p>
                 </div>
             </div>
-            
-            <div style="background: white; border-radius: 12px; padding: 2.5rem; border: 1px solid var(--border);">
+
+            <div class="services-tech-stack-block" style="background: white; border-radius: var(--card-radius); padding: 2.5rem; border: 1px solid var(--border);">
                 <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 2rem;">
                     <div>
-                        <h4 style="font-weight: 700; color: var(--text-dark); margin-bottom: 0.5rem;">Tech Stack & Technologies</h4>
-                        <p style="color: var(--text-gray); font-size: 0.95rem; margin: 0;">Full-stack development with modern tech stack suitable for MVP to Enterprise projects</p>
+                        <h4 style="font-weight: 700; color: var(--text-dark); margin-bottom: 0.5rem;">{{ __('services.service1.tech_title') }}</h4>
+                        <p style="color: var(--text-gray); font-size: 0.95rem; margin: 0;">{{ __('services.service1.tech_desc') }}</p>
                     </div>
                     <a href="{{ route('landing.tech-stack') }}" style="background: var(--primary); color: white; padding: 0.75rem 1.5rem; border-radius: 8px; text-decoration: none; font-weight: 600; white-space: nowrap; display: inline-flex; align-items: center; gap: 0.5rem; transition: all 0.3s ease;" onmouseover="this.style.backgroundColor='#0a5a82';" onmouseout="this.style.backgroundColor='var(--primary)';">
-                        <span>View Details</span>
+                        <span>{{ __('services.service1.view_details') }}</span>
                         <span class="material-symbols-rounded" style="font-size: 1.2rem;">arrow_forward</span>
                     </a>
                 </div>
-                
+
                 <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2rem;">
-                    @php
-                    $tech_categories = [
-                        [
-                            'icon' => 'web',
-                            'title' => 'Frontend & Mobile',
-                            'color' => '#0f6b9e',
-                            'techs' => ['React', 'Vue', 'Next.js', 'React Native', 'Flutter', 'TypeScript']
-                        ],
-                        [
-                            'icon' => 'storage',
-                            'title' => 'Backend & API',
-                            'color' => '#059669',
-                            'techs' => ['Node.js', 'Python', 'Java', 'Go', 'FastAPI', 'NestJS']
-                        ],
-                        [
-                            'icon' => 'database',
-                            'title' => 'Database & Cache',
-                            'color' => '#10b981',
-                            'techs' => ['PostgreSQL', 'MongoDB', 'Redis', 'Elasticsearch', 'Pinecone']
-                        ],
-                        [
-                            'icon' => 'cloud',
-                            'title' => 'Cloud & DevOps',
-                            'color' => '#0f6b9e',
-                            'techs' => ['AWS', 'GCP', 'Azure', 'Kubernetes', 'Docker', 'Terraform']
-                        ],
-                        [
-                            'icon' => 'psychology',
-                            'title' => 'AI & Machine Learning',
-                            'color' => '#7c3aed',
-                            'techs' => ['OpenAI GPT-4', 'Claude', 'LangChain', 'TensorFlow', 'PyTorch']
-                        ],
-                        [
-                            'icon' => 'shield',
-                            'title' => 'Security & Compliance',
-                            'color' => '#059669',
-                            'techs' => ['OAuth 2.0', 'JWT', 'Encryption', 'OWASP', 'Zero Trust']
-                        ]
-                    ];
-                    @endphp
-                    
-                    @foreach($tech_categories as $cat)
-                    <div style="background: var(--secondary-bg); border-radius: 10px; padding: 1.5rem; transition: all 0.3s ease;" onmouseover="this.style.backgroundColor='white'; this.style.boxShadow='0 4px 12px rgba(0,0,0,0.08)';" onmouseout="this.style.backgroundColor='var(--secondary-bg)'; this.style.boxShadow='';">
+                    @foreach(__('services.tech_categories') as $cat)
+                    <div style="background: var(--secondary-bg); border-radius: 10px; padding: 1.5rem; transition: all 0.3s ease; border: 1px solid transparent;" onmouseover="this.style.borderColor='var(--primary)'; this.style.boxShadow='0 4px 12px rgba(0,0,0,0.08)';" onmouseout="this.style.borderColor='transparent'; this.style.boxShadow='';">
                         <div style="display: flex; align-items: center; gap: 0.75rem; margin-bottom: 1rem;">
-                            <div style="width: 40px; height: 40px; background: {{ $cat['color'] }}; border-radius: 8px; display: flex; align-items: center; justify-content: center;">
-                                <span class="material-symbols-rounded" style="color: white; font-size: 1.5rem;">{{ $cat['icon'] }}</span>
+                            <div style="width: 40px; height: 40px; background: @switch($loop->iteration)
+                                @case(1)
+                                    #1a4d5e
+                                @break
+                                @case(2)
+                                    #0d9488
+                                @break
+                                @case(3)
+                                    #10b981
+                                @break
+                                @case(4)
+                                    #1a4d5e
+                                @break
+                                @case(5)
+                                    #7c3aed
+                                @break
+                                @case(6)
+                                    #0d9488
+                                @break
+                            @endswitch; border-radius: 8px; display: flex; align-items: center; justify-content: center;">
+                                <span class="material-symbols-rounded" style="color: white; font-size: 1.5rem;">
+                                    @switch($loop->iteration)
+                                        @case(1)
+                                            web
+                                        @break
+                                        @case(2)
+                                            storage
+                                        @break
+                                        @case(3)
+                                            database
+                                        @break
+                                        @case(4)
+                                            cloud
+                                        @break
+                                        @case(5)
+                                            psychology
+                                        @break
+                                        @case(6)
+                                            shield
+                                        @break
+                                    @endswitch
+                                </span>
                             </div>
                             <h5 style="font-weight: 700; color: var(--text-dark); margin: 0; font-size: 1rem;">{{ $cat['title'] }}</h5>
                         </div>
@@ -223,13 +223,13 @@
                     </div>
                     @endforeach
                 </div>
-                
+
                 <div style="text-align: center; margin-top: 2rem; padding-top: 2rem; border-top: 1px solid var(--border);">
                     <p style="color: var(--text-gray); font-size: 0.95rem; margin-bottom: 1rem;">
-                        <strong style="color: var(--primary);">10+ tech categories</strong> with 50+ technologies & frameworks used in production
+                        <strong style="color: var(--primary);">{{ __('services.service1.tech_details') }}</strong> {{ __('services.service1.tech_details_full') }}
                     </p>
                     <a href="{{ route('landing.tech-stack') }}" style="color: var(--primary); font-weight: 600; text-decoration: none; display: inline-flex; align-items: center; gap: 0.5rem;" onmouseover="this.style.textDecoration='underline';" onmouseout="this.style.textDecoration='none';">
-                        <span>View Complete Tech Stack</span>
+                        <span>{{ __('services.service1.view_tech_full') }}</span>
                         <span class="material-symbols-rounded" style="font-size: 1.2rem;">arrow_forward</span>
                     </a>
                 </div>
@@ -242,30 +242,31 @@
         <section style="background: var(--secondary-bg);">
             <div class="container-v5">
                 <div class="section-header">
-                    <h2 class="section-title">AI Knowledge Platform</h2>
-                    <p class="section-subtitle">NLP, RAG, LLM integration grounded on solid AI foundations</p>
+                    <span class="section-label">AI SOLUTIONS</span>
+                    <h2 class="section-title">{{ __('services.ai.title') }}</h2>
+                    <p class="section-subtitle">{{ __('services.ai.subtitle') }}</p>
                 </div>
+
+            <div style="text-align: center; margin: 0 auto 2rem; display: flex; justify-content: center;">
+                <a href="#ai-how-it-works"
+                   class="btn-secondary-v5"
+                   style="text-decoration: none; align-items: center; gap: 0.55rem; white-space: nowrap;"
+                   aria-label="{{ __('services.ai.see_how_it_works') }}">
+                    {{ __('services.ai.see_how_it_works') }}
+                    <span class="material-symbols-rounded" style="font-size: 1.1rem;">arrow_downward</span>
+                </a>
+            </div>
 
                 <!-- Foundation Overview -->
                 <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; align-items: center; margin-bottom: 3rem;">
-                    
-                    <div style="background: white; border-radius: 12px; padding: 2.5rem; border: 1px solid var(--border);">
-                        <h3 style="font-size: 1.3rem; font-weight: 700; color: var(--text-dark); margin-bottom: 1rem;">Modern AI Foundation</h3>
+
+                    <div style="background: white; border-radius: var(--card-radius); padding: 2.5rem; border: 1px solid var(--border);">
+                        <h3 style="font-size: 1.1rem; font-weight: 700; color: var(--text-dark); margin-bottom: 1rem;">{{ __('services.ai.foundation_title') }}</h3>
                         <p style="color: var(--text-gray); line-height: 1.8; margin-bottom: 1rem;">
-                            Built from the ground up with knowledge ingestion, semantic storage, intelligent routing and secure governance.
+                            {{ __('services.ai.foundation_desc') }}
                         </p>
                         <ul style="list-style: none; margin: 0;">
-                            @php
-                            $ai_foundation = [
-                                'Knowledge Ingestion: connectors, OCR, extraction, chunking with token budgeting',
-                                'Vector Search: hybrid semantic + keyword (BM25), metadata filters, re-ranking',
-                                'LLM Routing: multi-provider, cost/speed capabilities, fallbacks, function calling',
-                                'RAG Pipeline: retrieval, context assembly, generation, citations',
-                                'Security & Policy: RBAC/ABAC, PII scrubbing, guardrails, audit logs',
-                                'Observability: latency/cost tracking, evaluation, A/B experiments'
-                            ];
-                            @endphp
-                            @foreach($ai_foundation as $item)
+                            @foreach(__('services.ai.foundation_items') as $item)
                             <li style="padding: 0.55rem 0; color: var(--text-gray); font-size: 0.95rem; padding-left: 1.75rem; position: relative;">
                                 <span class="material-symbols-rounded" style="position: absolute; left: 0; color: var(--primary); font-size: 1.2rem; display: flex; align-items: center;">check_circle</span>
                                 {{ $item }}
@@ -274,70 +275,115 @@
                         </ul>
                     </div>
 
-                    <div class="position-relative opacity-75" style="background: white; border-radius: 12px; padding: 2.5rem; border: 1px solid var(--border); text-align: center;">
-                        <span class="badge  rounded-pill bg-warning position-absolute fs-6 top-0 mt-3 start-0 ms-3">
-                            <span class="spinner-border spinner-border-sm me-1" role="status">
-                                <span class="visually-hidden">Loading...</span>
-                            </span>
-                            Update Diagram
-                        </span>
-                        <svg viewBox="0 0 280 280" style="width: 100%; max-width: 280px;">
-                            <!-- Query -->
-                            <rect x="120" y="40" width="40" height="25" fill="#0ea5e9" rx="6"/>
-                            <text x="140" y="57" text-anchor="middle" font-size="10" fill="white" font-weight="bold">Query</text>
-        
-                            <!-- NLP -->
-                            <circle cx="140" cy="90" r="18" fill="#f59e0b"/>
-                            <text x="140" y="95" text-anchor="middle" font-size="9" fill="white" font-weight="bold">NLP</text>
-                            <text x="140" y="106" text-anchor="middle" font-size="8" fill="white" opacity="0.9">Processing</text>
-        
-                            <!-- Branches -->
-                            <rect x="30" y="140" width="80" height="35" fill="#10b981" rx="8"/>
-                            <text x="70" y="160" text-anchor="middle" font-size="9" fill="white" font-weight="bold">Vector DB</text>
-                            <text x="70" y="170" text-anchor="middle" font-size="8" fill="white">Storage</text>
-        
-                            <circle cx="140" cy="160" r="22" fill="#059669"/>
-                            <text x="140" y="160" text-anchor="middle" font-size="9" fill="white" font-weight="bold">LLM</text>
-                            <text x="140" y="172" text-anchor="middle" font-size="8" fill="white" opacity="0.9">Generation</text>
-        
-                            <rect x="200" y="140" width="60" height="35" fill="#8b5cf6" rx="8"/>
-                            <text x="230" y="160" text-anchor="middle" font-size="9" fill="white" font-weight="bold">RAG</text>
-                            <text x="230" y="170" text-anchor="middle" font-size="8" fill="white">Pipeline</text>
-        
+                    <div class="position-relative" style="background: white; border-radius: var(--card-radius); padding: 1.5rem; border: 1px solid var(--border);">
+                        <svg viewBox="0 0 420 300" style="width: 100%;">
+                            <defs>
+                                <filter id="llm-glow" x="-60%" y="-60%" width="220%" height="220%">
+                                    <feGaussianBlur stdDeviation="5" result="blur"/>
+                                    <feMerge>
+                                        <feMergeNode in="blur"/>
+                                        <feMergeNode in="SourceGraphic"/>
+                                    </feMerge>
+                                </filter>
+                                <linearGradient id="flow-grad" x1="0%" y1="0%" x2="100%" y2="0%">
+                                    <stop offset="0%" stop-color="#0ea5e9"/>
+                                    <stop offset="50%" stop-color="#a855f7"/>
+                                    <stop offset="100%" stop-color="#f59e0b"/>
+                                </linearGradient>
+                            </defs>
+
+                            <text x="12" y="22" font-size="10" fill="var(--text-dark)" font-weight="800">AI Brain / Knowledge Flow</text>
+
+                            <!-- Data Sources -->
+                            <rect x="12" y="54" width="74" height="56" rx="10" fill="#0ea5e910" stroke="#0ea5e930"/>
+                            <text x="49" y="74" text-anchor="middle" font-size="8" fill="#0ea5e9" font-weight="700">Data Sources</text>
+                            <text x="49" y="90" text-anchor="middle" font-size="6.5" fill="var(--text-gray)">Docs · APIs</text>
+
+                            <!-- Processing / Knowledge Ingestion -->
+                            <rect x="94" y="54" width="74" height="56" rx="10" fill="#0ea5e910" stroke="#0ea5e930"/>
+                            <text x="131" y="74" text-anchor="middle" font-size="8" fill="#0ea5e9" font-weight="700">Processing</text>
+                            <text x="131" y="90" text-anchor="middle" font-size="6.5" fill="var(--text-gray)">Knowledge Ingestion</text>
+
+                            <!-- Vector DB / Vector Search -->
+                            <rect x="176" y="54" width="74" height="56" rx="10" fill="#a855f710" stroke="#a855f730"/>
+                            <text x="213" y="74" text-anchor="middle" font-size="8" fill="#a855f7" font-weight="700">Vector DB</text>
+                            <text x="213" y="90" text-anchor="middle" font-size="6.5" fill="var(--text-gray)">Vector Search</text>
+
+                            <!-- LLM / LLM Routing -->
+                            <rect x="258" y="54" width="74" height="56" rx="10" fill="#f59e0b10" stroke="#f59e0b30"/>
+                            <circle cx="295" cy="82" r="18" fill="#f59e0b" opacity="0.18" filter="url(#llm-glow)">
+                                <animate attributeName="opacity" values="0.12;0.35;0.12" dur="2.2s" repeatCount="indefinite"/>
+                            </circle>
+                            <text x="295" y="74" text-anchor="middle" font-size="8" fill="#f59e0b" font-weight="800">LLM</text>
+                            <text x="295" y="90" text-anchor="middle" font-size="6.5" fill="var(--text-gray)">LLM Routing</text>
+
                             <!-- Output -->
-                            <rect x="110" y="240" width="60" height="25" fill="#0ea5e9" rx="6"/>
-                            <text x="140" y="257" text-anchor="middle" font-size="9" fill="white" font-weight="bold">Intelligent Response</text>
-        
-                            <!-- Lines -->
-                            <line x1="140" y1="65" x2="140" y2="72" stroke="#0ea5e9" stroke-width="2"/>
-                            <line x1="140" y1="85" x2="50" y2="150" stroke="#059669" stroke-width="2"/>
-                            <line x1="140" y1="85" x2="140" y2="140" stroke="#059669" stroke-width="2"/>
-                            <line x1="140" y1="85" x2="230" y2="150" stroke="#059669" stroke-width="2"/>
-                            <line x1="140" y1="210" x2="140" y2="240" stroke="#0f6b9e" stroke-width="2"/>
+                            <rect x="340" y="54" width="68" height="56" rx="10" fill="#22c55e10" stroke="#22c55e30"/>
+                            <text x="374" y="74" text-anchor="middle" font-size="8" fill="#22c55e" font-weight="700">Output</text>
+                            <text x="374" y="90" text-anchor="middle" font-size="6.5" fill="var(--text-gray)">Answer + Cite</text>
+
+                            <!-- Flow line -->
+                            <path id="data-flow-path" d="M 49 126 C 120 154, 304 154, 374 126" fill="none" stroke="url(#flow-grad)" stroke-width="2.5" stroke-linecap="round" opacity="0.75"/>
+                            <circle r="4" fill="#0ea5e9">
+                                <animateMotion dur="2.6s" repeatCount="indefinite" rotate="auto">
+                                    <mpath href="#data-flow-path"/>
+                                </animateMotion>
+                            </circle>
+
+                            <!-- Mapping block -->
+                            <rect x="12" y="170" width="396" height="112" rx="12" fill="var(--secondary-bg)" stroke="var(--border)"/>
+                            <text x="24" y="190" font-size="9" fill="var(--text-dark)" font-weight="700">Platform Mapping</text>
+
+                            <rect x="24" y="200" width="184" height="32" rx="8" fill="var(--surface)" stroke="var(--border)"/>
+                            <text x="34" y="219" font-size="7.5" fill="var(--text-dark)" font-weight="600">Knowledge Ingestion</text>
+                            <text x="150" y="219" font-size="7" fill="var(--text-light)">Connectors · OCR · Chunking</text>
+
+                            <rect x="214" y="200" width="184" height="32" rx="8" fill="var(--surface)" stroke="var(--border)"/>
+                            <text x="224" y="219" font-size="7.5" fill="var(--text-dark)" font-weight="600">Vector Search</text>
+                            <text x="294" y="219" font-size="7" fill="var(--text-light)">Semantic · BM25 · Re-rank</text>
+
+                            <rect x="24" y="238" width="184" height="32" rx="8" fill="var(--surface)" stroke="var(--border)"/>
+                            <text x="34" y="257" font-size="7.5" fill="var(--text-dark)" font-weight="600">LLM Routing</text>
+                            <text x="93" y="257" font-size="7" fill="var(--text-light)">Multi-provider · Fallbacks</text>
+
+                            <rect x="214" y="238" width="184" height="32" rx="8" fill="var(--surface)" stroke="var(--border)"/>
+                            <text x="224" y="257" font-size="7.5" fill="var(--text-dark)" font-weight="600">RAG Pipeline</text>
+                            <text x="286" y="257" font-size="7" fill="var(--text-light)">Retrieve → Context → Generate → Cite</text>
                         </svg>
                     </div>
                 </div>
 
                 <!-- AI Capabilities Banner -->
-                <div style="background: linear-gradient(135deg, var(--primary) 0%, #0a4a78 100%); border-radius: 16px; padding: 3rem 2rem; color: white; box-shadow: 0 12px 48px rgba(15, 107, 158, 0.25); margin-bottom: 2.5rem;">
+                <div style="background: linear-gradient(135deg, var(--primary) 0%, #0a4a78 100%); border-radius: 16px; padding: 3rem 2rem; color: white; box-shadow: 0 12px 48px rgba(26, 77, 94, 0.25); margin-bottom: 2.5rem;">
                     <div style="max-width: 1200px; margin: 0 auto;">
-                        <h3 style="font-size: 1.6rem; font-weight: 800; text-align: center; margin-bottom: 0.5rem;">AI Capabilities We Deliver</h3>
-                        <p style="text-align: center; font-size: 1.02rem; margin-bottom: 2rem; opacity: 0.95;">From data ingestion to secure, production-grade reasoning and generation</p>
+                        <h3 style="font-size: 1.6rem; font-weight: 800; text-align: center; margin-bottom: 0.5rem;">{{ __('services.ai.capabilities_title') }}</h3>
+                        <p style="text-align: center; font-size: 1.02rem; margin-bottom: 2rem; opacity: 0.95;">{{ __('services.ai.capabilities_desc') }}</p>
                         <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 1.75rem;">
-                            @php
-                            $ai_components = [
-                                ['icon' => 'input', 'title' => 'Knowledge Ingestion', 'desc' => 'Connectors, extraction, OCR, semantic chunking, metadata management'],
-                                ['icon' => 'database', 'title' => 'Vector DB & Search', 'desc' => 'Weaviate/Pinecone/PGVector, hybrid search, metadata filters, re-rank'],
-                                ['icon' => 'smart_toy', 'title' => 'LLM Routing & Serving', 'desc' => 'Multi-provider routing, function calling, streaming, prompt management'],
-                                ['icon' => 'build_circle', 'title' => 'RAG Pipeline', 'desc' => 'Query expansion, retrieval, context assembly, generation, citations'],
-                                ['icon' => 'security', 'title' => 'Security & Policy', 'desc' => 'RBAC/ABAC, PII scrubbing, toxicity filters, audit logging, cost control'],
-                                ['icon' => 'monitoring', 'title' => 'Observability', 'desc' => 'Latency & cost tracking, evaluation, A/B testing, guardrails'],
-                            ];
-                            @endphp
-                            @foreach($ai_components as $comp)
-                            <div style="background: rgba(255,255,255,0.12); border: 1px solid rgba(255,255,255,0.25); border-radius: 12px; padding: 1.5rem; backdrop-filter: blur(8px); transition: all 0.3s ease;" onmouseover="this.style.background='rgba(255,255,255,0.18)'; this.style.transform='translateY(-2px)';" onmouseout="this.style.background='rgba(255,255,255,0.12)'; this.style.transform='';">
+                            @foreach(__('services.ai.components') as $comp)
+                            <div style="background: rgba(255,255,255,0.12); border: 1px solid rgba(255,255,255,0.25); border-radius: var(--card-radius); padding: 1.5rem; backdrop-filter: blur(8px); transition: all 0.3s ease;" onmouseover="this.style.background='rgba(255,255,255,0.18)'; this.style.transform='translateY(-2px)';" onmouseout="this.style.background='rgba(255,255,255,0.12)'; this.style.transform='';">
                                 <div style="display: flex; align-items: center; gap: 0.75rem; margin-bottom: 0.75rem;">
-                                    <span class="material-symbols-rounded" style="font-size: 1.7rem; color: #fbbf24;">{{ $comp['icon'] }}</span>
+                                    <span class="material-symbols-rounded" style="font-size: 1.7rem; color: #fbbf24;">
+                                        @switch($loop->iteration)
+                                            @case(1)
+                                                input
+                                            @break
+                                            @case(2)
+                                                database
+                                            @break
+                                            @case(3)
+                                                smart_toy
+                                            @break
+                                            @case(4)
+                                                build_circle
+                                            @break
+                                            @case(5)
+                                                security
+                                            @break
+                                            @case(6)
+                                                monitoring
+                                            @break
+                                        @endswitch
+                                    </span>
                                     <h4 style="font-size: 1.05rem; font-weight: 700; margin: 0; color: white;">{{ $comp['title'] }}</h4>
                                 </div>
                                 <p style="color: rgba(255,255,255,0.92); font-size: 0.9rem; line-height: 1.6; margin: 0;">{{ $comp['desc'] }}</p>
@@ -348,365 +394,277 @@
                 </div>
 
                 <!-- Reference Tech Stack -->
-                <div style="background: white; border-radius: 12px; padding: 2rem; border: 1px solid var(--border); margin-bottom: 2.5rem;">
-                    <h3 style="font-size: 1.2rem; font-weight: 800; color: var(--text-dark); margin-bottom: 0.75rem;">Reference Tech Stack</h3>
+                <div style="background: white; border-radius: var(--card-radius); padding: 2rem; border: 1px solid var(--border); margin-bottom: 2.5rem;">
+                    <h3 style="font-size: 1.2rem; font-weight: 800; color: var(--text-dark); margin-bottom: 0.75rem;">{{ __('services.ai.reference_tech_title') }}</h3>
                     <p style="color: var(--text-gray); font-size: 0.95rem; line-height: 1.7;">
-                        Ingestion: Python (LangChain/LlamaIndex) workers • Vector DB: Weaviate/Pinecone/PGVector • LLM: OpenAI/DeepSeek/Claude + local (Llama/Ollama) • Backend: FastAPI/Node.js • Observability: Langfuse/Prometheus • Streaming: SSE/WebSocket.
+                        {{ __('services.ai.reference_tech_desc') }}
                     </p>
                 </div>
 
                 <!-- Example Flow -->
-                <div style="background: white; border-radius: 12px; padding: 2rem; border: 1px solid var(--border);">
-                    <h3 style="font-size: 1.2rem; font-weight: 800; color: var(--text-dark); margin-bottom: 1rem; text-align: center;">Example AI Processing Flow</h3>
+                <div style="background: white; border-radius: var(--card-radius); padding: 2rem; border: 1px solid var(--border);">
+                    <h3 style="font-size: 1.2rem; font-weight: 800; color: var(--text-dark); margin-bottom: 1rem; text-align: center;">{{ __('services.ai.flow_title') }}</h3>
                     <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 1rem;">
-                        @php
-                        $ai_flow = [
-                            ['icon' => 'input', 'text' => 'Receive user query'],
-                            ['icon' => 'rule', 'text' => 'Classify via specification layer'],
-                            ['icon' => 'fork_right', 'text' => 'Route to the right engine (LLM, RAG, SQL, Hybrid)'],
-                            ['icon' => 'precision_manufacturing', 'text' => 'Execute: retrieval + reasoning + generation'],
-                            ['icon' => 'outbox', 'text' => 'Return answer with citations and confidence'],
-                        ];
-                        @endphp
-                        @foreach($ai_flow as $step)
+                        @foreach(__('services.ai.flow_steps') as $step)
                         <div style="display: flex; align-items: center; gap: 0.75rem; padding: 0.9rem 1rem; border: 1px solid var(--border); border-radius: 10px;">
-                            <span class="material-symbols-rounded" style="font-size: 1.4rem; color: var(--primary);">{{ $step['icon'] }}</span>
+                            <span class="material-symbols-rounded" style="font-size: 1.4rem; color: var(--primary);">
+                                @switch($loop->iteration)
+                                    @case(1)
+                                        input
+                                    @break
+                                    @case(2)
+                                        rule
+                                    @break
+                                    @case(3)
+                                        fork_right
+                                    @break
+                                    @case(4)
+                                        precision_manufacturing
+                                    @break
+                                    @case(5)
+                                        outbox
+                                    @break
+                                @endswitch
+                            </span>
                             <span style="font-weight: 600; color: var(--text-dark); font-size: 0.95rem;">{{ $step['text'] }}</span>
                         </div>
                         @endforeach
                     </div>
                 </div>
             </div>
+
+            <!-- How it works (new section) -->
+            <section id="ai-how-it-works" style="scroll-margin-top: 120px; background: white; border-radius: var(--section-radius); padding: 3rem 2.5rem; border: 1px solid var(--border); margin-bottom: 4rem;">
+                <div style="max-width: 1200px; margin: 0 auto;">
+                    <div style="text-align: center; margin-bottom: 2rem;">
+                        <h3 style="font-size: 1.6rem; font-weight: 900; color: var(--text-dark); margin-bottom: 0.75rem; letter-spacing: -0.02em;">
+                            {{ __('services.ai.how_it_works_title') }}
+                        </h3>
+                        <p style="color: var(--text-gray); font-size: 1.02rem; line-height: 1.8; margin: 0 auto; max-width: 760px;">
+                            {{ __('services.ai.how_it_works_subtitle') }}
+                        </p>
+                    </div>
+
+                    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; align-items: start;">
+                        <div style="background: var(--secondary-bg); border: 1px solid var(--border); border-radius: var(--card-radius); padding: 1.75rem;">
+                                <h4 style="font-size: 1.05rem; font-weight: 800; color: var(--text-dark); margin-bottom: 1rem;">{{ __('services.ai.how_it_works_foundation_title') }}</h4>
+                            <ul style="list-style: none; padding: 0; margin: 0; color: var(--text-gray); line-height: 1.9;">
+                                @foreach(__('services.ai.foundation_items') as $item)
+                                    <li style="display: flex; gap: 0.75rem; margin-bottom: 0.65rem;">
+                                        <span class="material-symbols-rounded" style="color: var(--primary); font-size: 1.1rem; margin-top: 0.1rem; flex-shrink: 0;">check_circle</span>
+                                        <span>{{ $item }}</span>
+                                    </li>
+                                @endforeach
+                            </ul>
+                        </div>
+
+                        <div style="background: var(--surface); border: 1px solid var(--border); border-radius: var(--card-radius); padding: 1.75rem;">
+                                <h4 style="font-size: 1.05rem; font-weight: 800; color: var(--text-dark); margin-bottom: 1rem;">{{ __('services.ai.how_it_works_flow_title') }}</h4>
+                            <div style="display: grid; gap: 0.9rem;">
+                                @foreach(__('services.ai.flow_steps') as $step)
+                                    <div style="display: flex; align-items: center; gap: 0.9rem; padding: 0.9rem 1rem; border: 1px solid var(--border); border-radius: 12px;">
+                                        <div style="width: 28px; height: 28px; border-radius: 10px; background: var(--primary-subtle); color: var(--primary); display: flex; align-items: center; justify-content: center; font-weight: 900;">
+                                            {{ $loop->iteration }}
+                                        </div>
+                                        <div style="color: var(--text-gray); font-weight: 600;">
+                                            {{ $step['text'] }}
+                                        </div>
+                                    </div>
+                                @endforeach
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
         </section>
 
     <!-- Service 2: SaaS Platform -->
-    <section style="background: linear-gradient(135deg, var(--secondary-bg) 0%, white 100%);">
+    <section style="background: linear-gradient(135deg, var(--secondary-bg) 0%, var(--surface) 100%);">
         <div class="container-v5">
             <div class="section-header">
-                <h2 class="section-title">Enterprise SaaS Platform</h2>
-                <p class="section-subtitle">Complete production-ready multi-tenant platform serving 50K+ users with enterprise-grade security & scalability</p>
+                <span class="section-label">SAAS PLATFORMS</span>
+                <h2 class="section-title">{{ __('services.saas.title') }}</h2>
+                <p class="section-subtitle">{{ __('services.saas.subtitle') }}</p>
             </div>
-            
+
             <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; align-items: center; margin-bottom: 4rem;">
-                <div class="position-relative opacity-75" style="background: white; border-radius: 12px; padding: 2.5rem; border: 2px solid var(--primary); box-shadow: 0 8px 32px rgba(15, 107, 158, 0.15);">
-                    <span class="badge  rounded-pill bg-warning position-absolute fs-6 top-0 mt-3 start-0 ms-3">
-                        <span class="spinner-border spinner-border-sm me-1" role="status">
-                            <span class="visually-hidden">Loading...</span>
-                        </span>
-                        Update Diagram
-                    </span>
-                    <svg viewBox="0 0 280 280" style="width: 100%; max-width: 280px;">
-                        <!-- Multiple users -->
-                        <circle cx="70" cy="60" r="20" fill="#0f6b9e"/>
-                        <circle cx="140" cy="40" r="20" fill="#0f6b9e"/>
-                        <circle cx="210" cy="60" r="20" fill="#0f6b9e"/>
-                        
-                        <!-- Central Platform -->
-                        <rect x="100" y="110" width="80" height="80" fill="#059669" rx="8" style="filter: drop-shadow(0 4px 12px rgba(5, 150, 105, 0.3))"/>
-                        <text x="140" y="150" text-anchor="middle" font-size="12" fill="white" font-weight="bold">SaaS Platform</text>
-                        <text x="140" y="165" text-anchor="middle" font-size="10" fill="white">Multi-tenant</text>
-                        
-                        <!-- Database -->
-                        <rect x="110" y="220" width="60" height="30" fill="#10b981" rx="6"/>
-                        <text x="140" y="241" text-anchor="middle" font-size="10" fill="white" font-weight="bold">Database</text>
-                        
-                        <!-- Connections -->
-                        <line x1="70" y1="80" x2="120" y2="110" stroke="#0f6b9e" stroke-width="2" stroke-dasharray="5,5"/>
-                        <line x1="140" y1="60" x2="140" y2="110" stroke="#0f6b9e" stroke-width="2" stroke-dasharray="5,5"/>
-                        <line x1="210" y1="80" x2="160" y2="110" stroke="#0f6b9e" stroke-width="2" stroke-dasharray="5,5"/>
-                        <line x1="140" y1="190" x2="140" y2="220" stroke="#059669" stroke-width="2" stroke-dasharray="5,5"/>
+                <div class="position-relative" style="background: white; border-radius: var(--card-radius); padding: 1.5rem; border: 2px solid var(--primary); box-shadow: 0 8px 32px rgba(26, 77, 94, 0.15);">
+                    <svg viewBox="0 0 420 300" style="width: 100%;">
+                        <text x="12" y="22" font-size="10" fill="var(--text-dark)" font-weight="800">Enterprise SaaS Platform</text>
+
+                        <!-- KPI row -->
+                        <rect x="12" y="34" width="126" height="56" rx="10" fill="#3b82f610" stroke="#3b82f630"/>
+                        <text x="24" y="52" font-size="8" fill="var(--text-light)">Active Users</text>
+                        <text x="24" y="72" font-size="16" fill="#3b82f6" font-weight="800">50K+</text>
+                        <rect x="146" y="34" width="126" height="56" rx="10" fill="#22c55e10" stroke="#22c55e30"/>
+                        <text x="158" y="52" font-size="8" fill="var(--text-light)">Uptime SLA</text>
+                        <text x="158" y="72" font-size="16" fill="#22c55e" font-weight="800">99.95%</text>
+                        <rect x="280" y="34" width="128" height="56" rx="10" fill="#f59e0b10" stroke="#f59e0b30"/>
+                        <text x="292" y="52" font-size="8" fill="var(--text-light)">API Response</text>
+                        <text x="292" y="72" font-size="16" fill="#f59e0b" font-weight="800">&lt;50ms</text>
+
+                        <!-- Main modules -->
+                        <rect x="12" y="106" width="128" height="84" rx="10" fill="var(--secondary-bg)" stroke="var(--border)"/>
+                        <text x="24" y="126" font-size="9" fill="var(--text-dark)" font-weight="700">Workspace Mgmt</text>
+                        <text x="24" y="143" font-size="7" fill="var(--text-gray)">Projects · Members</text>
+                        <text x="24" y="156" font-size="7" fill="var(--text-gray)">Permissions · Teams</text>
+
+                        <rect x="146" y="106" width="128" height="84" rx="10" fill="var(--secondary-bg)" stroke="var(--border)"/>
+                        <text x="158" y="126" font-size="9" fill="var(--text-dark)" font-weight="700">Collaboration</text>
+                        <text x="158" y="143" font-size="7" fill="var(--text-gray)">Real-time Updates</text>
+                        <text x="158" y="156" font-size="7" fill="var(--text-gray)">Activity Stream</text>
+
+                        <rect x="280" y="106" width="128" height="84" rx="10" fill="var(--secondary-bg)" stroke="var(--border)"/>
+                        <text x="292" y="126" font-size="9" fill="var(--text-dark)" font-weight="700">Billing &amp; Plans</text>
+                        <text x="292" y="143" font-size="7" fill="var(--text-gray)">Subscription · Invoice</text>
+                        <text x="292" y="156" font-size="7" fill="var(--text-gray)">Usage Metering</text>
+
+                        <!-- Tenant strip -->
+                        <text x="12" y="212" font-size="9" fill="var(--text-dark)" font-weight="700">Multi-tenant Isolation</text>
+                        <rect x="12" y="220" width="396" height="60" rx="10" fill="var(--secondary-bg)" stroke="var(--border)"/>
+                        <rect x="24" y="236" width="82" height="28" rx="8" fill="#3b82f6"/>
+                        <text x="65" y="253" text-anchor="middle" font-size="8" fill="white" font-weight="700">Tenant A</text>
+                        <rect x="116" y="236" width="82" height="28" rx="8" fill="#22c55e"/>
+                        <text x="157" y="253" text-anchor="middle" font-size="8" fill="white" font-weight="700">Tenant B</text>
+                        <rect x="208" y="236" width="82" height="28" rx="8" fill="#f59e0b"/>
+                        <text x="249" y="253" text-anchor="middle" font-size="8" fill="white" font-weight="700">Tenant C</text>
+                        <rect x="300" y="236" width="96" height="28" rx="8" fill="var(--surface)" stroke="var(--border)"/>
+                        <text x="348" y="253" text-anchor="middle" font-size="8" fill="var(--text-gray)" font-weight="700">+ Others</text>
                     </svg>
                 </div>
-                
+
                 <div>
-                    <div style="">
-                        <h3 style="font-size: 1.5rem; font-weight: 800; color: var(--primary); margin-bottom: 1rem;">HKSpace - Flagship SaaS Platform</h3>
-                        <p style="color: var(--text-dark); line-height: 1.8; font-weight: 500; margin-bottom: 1rem;">
-                            Enterprise-grade collaboration & task management platform currently serving <strong>50K+ active users</strong> across multiple industries.
-                        </p>
-                        <p style="color: var(--text-gray); line-height: 1.7; font-size: 0.95rem;">
-                            <strong>Proven success</strong> in SaaS development: handling high concurrent users, enterprise requirements, and complex workflows with 99.99% uptime SLA.
-                        </p>
+                    <h3 style="font-size: 1.8rem; font-weight: 800; color: var(--text-dark); margin-bottom: 0.8rem; line-height: 1.25;">
+                        Build and Scale Your Enterprise SaaS Platform with Confidence
+                    </h3>
+                    <p style="color: var(--text-gray); line-height: 1.7; margin-bottom: 0.7rem; font-size: 1rem;">
+                        Production-ready multi-tenant system powering 50,000+ users.
+                    </p>
+                    <p style="color: var(--text-gray); line-height: 1.7; margin-bottom: 1.4rem; font-size: 0.95rem;">
+                        End-to-end solution from architecture design to deployment and continuous scaling.
+                    </p>
+                    <div style="display: flex; flex-wrap: wrap; gap: 0.75rem; margin-bottom: 1.6rem;">
+                        <a href="{{ route('landing.contact') }}" class="btn-primary-v5">Get Started</a>
+                        <a href="{{ route('landing.case-studies') }}" class="btn-secondary-v5">View Demo</a>
                     </div>
-                    
-                    <ul style="list-style: none; margin: 0;">
-                        @php
-                        $saas_features = [
-                            'Multi-tenant Architecture (Data isolation, tenant customization)',
-                            'Real-time Collaboration (WebSocket, live updates)',
-                            'Task & Workflow Management',
-                            'Advanced Analytics & Reporting',
-                            'Enterprise Integrations (Slack, GitHub, Jira)',
-                            'Auto-scaling Infrastructure',
-                            'SLA 99.99% Uptime Guarantee'
-                        ];
-                        @endphp
-                        @foreach($saas_features as $item)
-                        <li style="padding: 0.6rem 0; color: var(--text-gray); font-size: 0.95rem; padding-left: 1.75rem; position: relative;">
-                            <span class="material-symbols-rounded" style="position: absolute; left: 0; color: var(--accent); font-size: 1.2rem; display: flex; align-items: center;">check_circle</span>
-                            {{ $item }}
-                        </li>
+
+                    <div style="display: grid; gap: 1.5rem;">
+                        @foreach(__('services.saas.ecosystem_items') as $item)
+                        <div style="background: white; border-left: 4px solid var(--primary); padding: 1.25rem; border-radius: 6px;">
+                            <h4 style="font-weight: 700; color: var(--text-dark); margin-bottom: 0.5rem;">{{ $item['title'] }}</h4>
+                            <p style="color: var(--text-gray); font-size: 0.9rem; line-height: 1.6; margin: 0;">{{ $item['desc'] }}</p>
+                        </div>
                         @endforeach
-                    </ul>
+                        
+                    </div>
                 </div>
             </div>
 
             <!-- SaaS Capabilities Banner -->
-            <div style="background: linear-gradient(135deg, var(--primary) 0%, #0a4a78 100%); border-radius: 16px; padding: 3.5rem 2.5rem; color: white; margin-top: 3rem; box-shadow: 0 12px 48px rgba(15, 107, 158, 0.25);">
-                <div style="max-width: 1200px; margin: 0 auto;">
-                    <h3 style="font-size: 1.8rem; font-weight: 800; margin-bottom: 0.5rem; text-align: center;">Complete SaaS Ecosystem We Build</h3>
-                    <p style="text-align: center; font-size: 1.05rem; margin-bottom: 2.5rem; opacity: 0.95;">
-                        We don't just build platforms—we build complete, production-ready SaaS systems with every critical component integrated
-                    </p>
-                    
-                    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 2rem;">
-                        @php
-                        $saas_components = [
-                            ['icon' => 'security', 'title' => 'Enterprise Security', 'desc' => 'SSL/TLS encryption, OAuth 2.0, role-based access control, audit logging, penetration testing'],
-                            ['icon' => 'verified_user', 'title' => 'License Management', 'desc' => 'Flexible licensing models, subscription management, feature toggles per tier, usage tracking'],
-                            ['icon' => 'payment', 'title' => 'Payment Integration', 'desc' => 'Stripe, PayPal, multiple currencies, invoicing, billing cycle automation, tax handling'],
-                            ['icon' => 'cloud_sync', 'title' => 'Flexible Scaling', 'desc' => 'Auto-scaling infrastructure, multi-region deployment, load balancing, CDN integration'],
-                            ['icon' => 'integration_instructions', 'title' => 'Third-party Integrations', 'desc' => 'Webhooks, REST APIs, OAuth, Slack, Teams, Salesforce, HubSpot, and 100+ platforms'],
-                            ['icon' => 'storage', 'title' => 'Data Management', 'desc' => 'Multi-database support, backup & disaster recovery, data residency, GDPR compliance'],
-                            ['icon' => 'monitoring', 'title' => 'Monitoring & Analytics', 'desc' => 'Real-time dashboards, system health monitoring, user analytics, performance metrics'],
-                            ['icon' => 'support_agent', 'title' => '24/7 Support', 'desc' => 'Dedicated support team, SLA guarantees, incident response, regular updates & patches'],
-                        ];
-                        @endphp
-                        @foreach($saas_components as $comp)
-                        <div style="background: rgba(255, 255, 255, 0.1); border: 1px solid rgba(255, 255, 255, 0.2); border-radius: 12px; padding: 1.75rem; backdrop-filter: blur(10px); transition: all 0.3s ease;" onmouseover="this.style.background='rgba(255, 255, 255, 0.15)'; this.style.transform='translateY(-2px)'; this.style.boxShadow='0 8px 24px rgba(255, 255, 255, 0.1)';" onmouseout="this.style.background='rgba(255, 255, 255, 0.1)'; this.style.transform=''; this.style.boxShadow='';">
-                            <div style="display: flex; align-items: center; gap: 0.75rem; margin-bottom: 1rem;">
-                                <span class="material-symbols-rounded" style="font-size: 1.8rem; color: #fbbf24;">{{ $comp['icon'] }}</span>
-                                <h4 style="font-size: 1.1rem; font-weight: 700; margin: 0; color: white;">{{ $comp['title'] }}</h4>
+            <div style="margin-bottom: 3rem;">
+                <div style="text-align: center; margin-bottom: 2rem;">
+                    <h3 style="font-size: 1.4rem; font-weight: 800; color: var(--text-dark); margin-bottom: 0.5rem;">{{ __('services.saas.ecosystem_title') }}</h3>
+                </div>
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.5rem; margin-bottom: 2rem;">
+                    @foreach(__('services.saas.features') as $feature)
+                    <div style="background: white; border: 1px solid var(--border); border-radius: var(--card-radius); padding: 1.75rem; transition: all 0.3s ease;" onmouseover="this.style.boxShadow='0 8px 24px rgba(26, 77, 94, 0.1)'; this.style.transform='translateY(-4px)';" onmouseout="this.style.boxShadow=''; this.style.transform='';">
+                        <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1rem;">
+                            <div style="width: 48px; height: 48px; background: var(--secondary-bg); border-radius: 10px; display: flex; align-items: center; justify-content: center;">
+                                <span class="material-symbols-rounded" style="color: var(--primary); font-size: 1.5rem;">{{ $feature['icon'] }}</span>
                             </div>
-                            <p style="color: rgba(255, 255, 255, 0.9); font-size: 0.9rem; line-height: 1.6; margin: 0;">
-                                {{ $comp['desc'] }}
-                            </p>
+                            <h4 style="font-weight: 700; color: var(--text-dark); margin: 0; font-size: 1rem;">{{ $feature['title'] }}</h4>
                         </div>
-                        @endforeach
+                        <p style="color: var(--text-gray); font-size: 0.9rem; line-height: 1.6; margin: 0;">{{ $feature['desc'] }}</p>
                     </div>
+                    @endforeach
+                </div>
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.5rem;">
+                    @foreach(__('services.saas.saas_features') as $feature)
+                    <div style="background: white; border: 1px solid var(--border); border-radius: var(--card-radius); padding: 1.75rem; transition: all 0.3s ease;" onmouseover="this.style.boxShadow='0 8px 24px rgba(26, 77, 94, 0.1)'; this.style.transform='translateY(-4px)';" onmouseout="this.style.boxShadow=''; this.style.transform='';">
+                        <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1rem;">
+                            <div style="width: 48px; height: 48px; background: var(--secondary-bg); border-radius: 10px; display: flex; align-items: center; justify-content: center;">
+                                <span class="material-symbols-rounded" style="color: var(--primary); font-size: 1.5rem;">{{ $feature['icon'] }}</span>
+                            </div>
+                            <h4 style="font-weight: 700; color: var(--text-dark); margin: 0; font-size: 1rem;">{{ $feature['title'] }}</h4>
+                        </div>
+                        <p style="color: var(--text-gray); font-size: 0.9rem; line-height: 1.6; margin: 0;">{{ $feature['desc'] }}</p>
+                    </div>
+                    @endforeach
                 </div>
             </div>
 
             <!-- Why Choose HKIncotech for SaaS -->
-            <div style="margin-top: 3rem; background: white; border-radius: 12px; padding: 2.5rem; border: 1px solid var(--border);">
-                <h3 style="font-size: 1.4rem; font-weight: 800; color: var(--primary); margin-bottom: 2rem; text-align: center;">Why HKIncotech for Enterprise SaaS?</h3>
-                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2rem;">
-                    <div style="padding: 1.5rem; background: linear-gradient(135deg, rgba(15, 107, 158, 0.05) 0%, rgba(5, 150, 105, 0.05) 100%); border-radius: 10px; border-left: 4px solid var(--primary);">
-                        <h4 style="font-size: 1.1rem; font-weight: 700; color: var(--text-dark); margin-bottom: 0.75rem;">Proven Track Record</h4>
-                        <p style="color: var(--text-gray); font-size: 0.95rem; line-height: 1.6;">
-                            50K+ active users on HKSpace demonstrates real-world, production-grade SaaS capability at scale with enterprise requirements.
-                        </p>
+            <div style="background: linear-gradient(135deg, var(--secondary-bg) 0%, var(--surface) 100%); border-radius: 16px; padding: 3rem; border: 1px solid var(--border);">
+                <h3 style="font-size: 1.1rem; font-weight: 800; color: var(--text-dark); text-align: center; margin-bottom: 2rem;">{{ __('services.why_us.title') }}</h3>
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem;">
+                    @foreach(__('services.why_us.highlights') as $highlight)
+                    <div style="text-align: center;">
+                        <h4 style="font-weight: 700; color: var(--primary); margin-bottom: 0.5rem;">{{ $highlight['title'] }}</h4>
+                        <p style="color: var(--text-gray); font-size: 0.95rem; line-height: 1.6;">{{ $highlight['desc'] }}</p>
                     </div>
-                    <div style="padding: 1.5rem; background: linear-gradient(135deg, rgba(15, 107, 158, 0.05) 0%, rgba(5, 150, 105, 0.05) 100%); border-radius: 10px; border-left: 4px solid var(--accent);">
-                        <h4 style="font-size: 1.1rem; font-weight: 700; color: var(--text-dark); margin-bottom: 0.75rem;">End-to-End Solution</h4>
-                        <p style="color: var(--text-gray); font-size: 0.95rem; line-height: 1.6;">
-                            From architecture design to deployment, security, payments, scaling—we handle all aspects so you can focus on your business.
-                        </p>
-                    </div>
-                    <div style="padding: 1.5rem; background: linear-gradient(135deg, rgba(15, 107, 158, 0.05) 0%, rgba(5, 150, 105, 0.05) 100%); border-radius: 10px; border-left: 4px solid var(--primary);">
-                        <h4 style="font-size: 1.1rem; font-weight: 700; color: var(--text-dark); margin-bottom: 0.75rem;">Future-Ready Architecture</h4>
-                        <p style="color: var(--text-gray); font-size: 0.95rem; line-height: 1.6;">
-                            Built for growth: scales from MVP to millions of users with flexible, modular architecture that evolves with your needs.
-                        </p>
-                    </div>
+                    @endforeach
                 </div>
             </div>
         </div>
     </section>
-    
 
-    <!-- Technology Stack Preview -->
-    <section style="background: var(--secondary-bg);">
+    <!-- Service 3: Security & Compliance -->
+    <section style="background: white;">
         <div class="container-v5">
             <div class="section-header">
-                <h2 class="section-title">Technology Stack</h2>
-                <p class="section-subtitle">Enterprise-grade technologies across 8 categories, 50+ frameworks & tools</p>
+                <span class="section-label">SECURITY & COMPLIANCE</span>
+                <h2 class="section-title">{{ __('services.security.title') }}</h2>
+                <p class="section-subtitle">{{ __('services.security.subtitle') }}</p>
             </div>
-            
-            <!-- Tech Stack Grid -->
-            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 2rem; margin-bottom: 3rem;">
-                @php
-                $tech_categories = [
-                    [
-                        'icon' => 'web',
-                        'title' => 'Frontend & UI',
-                        'techs' => ['React, Vue, Angular', 'TypeScript, Next.js', 'TailwindCSS, Material Design', 'PWA & Performance'],
-                        'color' => 'rgb(59, 130, 246)'
-                    ],
-                    [
-                        'icon' => 'storage',
-                        'title' => 'Backend & API',
-                        'techs' => ['Node.js, Python, Java, Go', 'FastAPI, NestJS', 'GraphQL, REST APIs', 'Microservices'],
-                        'color' => 'rgb(15, 107, 158)'
-                    ],
-                    [
-                        'icon' => 'database',
-                        'title' => 'Data & Database',
-                        'techs' => ['PostgreSQL, MongoDB, MySQL', 'Redis, Elasticsearch', 'Vector Databases', 'BigQuery Data Warehouse'],
-                        'color' => 'rgb(34, 197, 94)'
-                    ],
-                    [
-                        'icon' => 'cloud',
-                        'title' => 'Cloud & Infrastructure',
-                        'techs' => ['AWS, GCP, Azure', 'Kubernetes, Docker', 'CI/CD Automation', 'Infrastructure as Code'],
-                        'color' => 'rgb(168, 85, 247)'
-                    ],
-                    [
-                        'icon' => 'shield',
-                        'title' => 'Security & Compliance',
-                        'techs' => ['SSL/TLS Encryption', 'OWASP Standards', 'GDPR Compliance', 'Penetration Testing'],
-                        'color' => 'rgb(239, 68, 68)'
-                    ],
-                    [
-                        'icon' => 'smartphone',
-                        'title' => 'Mobile Development',
-                        'techs' => ['React Native, Flutter', 'iOS (Swift), Android (Kotlin)', 'Progressive Web Apps', 'App Store Deployment'],
-                        'color' => 'rgb(249, 115, 22)'
-                    ],
-                    [
-                        'icon' => 'psychology',
-                        'title' => 'AI & Machine Learning',
-                        'techs' => ['OpenAI APIs', 'Custom ML Models', 'Computer Vision & NLP', 'RAG & Vector Search'],
-                        'color' => 'rgb(14, 165, 233)'
-                    ],
-                    [
-                        'icon' => 'settings',
-                        'title' => 'DevOps & Tools',
-                        'techs' => ['Git, GitHub, GitLab', 'Docker, Terraform', 'Monitoring & Logging', 'Performance Tools'],
-                        'color' => 'rgb(236, 72, 153)'
-                    ],
-                ];
-                @endphp
-                @foreach($tech_categories as $cat)
-                <div style="background: white; border: 1px solid var(--border); border-radius: 12px; padding: 1.75rem; transition: all 0.3s ease;" 
-                     onmouseover="this.style.borderColor='{{ $cat['color'] }}'; this.style.boxShadow='0 8px 20px rgba(15, 107, 158, 0.1)'; this.style.transform='translateY(-2px)';" 
-                     onmouseout="this.style.borderColor='var(--border)'; this.style.boxShadow=''; this.style.transform='';">
-                    <div style="display: flex; align-items: center; gap: 0.75rem; margin-bottom: 1rem;">
-                        <div style="font-size: 1.75rem; color: {{ $cat['color'] }}; line-height: 1;">
-                            <span class="material-symbols-rounded">{{ $cat['icon'] }}</span>
-                        </div>
-                        <h3 style="font-size: 1rem; font-weight: 700; color: var(--text-dark); margin: 0;">{{ $cat['title'] }}</h3>
-                    </div>
-                    <div style="display: flex; flex-direction: column; gap: 0.5rem;">
-                        @foreach($cat['techs'] as $tech)
-                        <div style="font-size: 0.85rem; color: var(--text-gray); display: flex; align-items: center; gap: 0.5rem;">
-                            <span style="width: 3px; height: 3px; background: {{ $cat['color'] }}; border-radius: 50%; flex-shrink: 0;"></span>
-                            {{ $tech }}
-                        </div>
-                        @endforeach
-                    </div>
+
+            <div style="background: linear-gradient(135deg, var(--primary) 0%, #0a4a78 100%); border-radius: 16px; padding: 2.5rem; color: white; margin-bottom: 2rem;">
+                <p style="text-align: center; font-size: 1.1rem; margin-bottom: 0; font-weight: 600;">{{ __('services.security.standards') }}</p>
+            </div>
+
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.5rem;">
+                @foreach(__('services.security.features') as $feature)
+                <div style="background: white; border: 1px solid var(--border); border-radius: var(--card-radius); padding: 1.75rem;">
+                    <h4 style="font-weight: 700; color: var(--text-dark); margin-bottom: 0.75rem;">{{ $feature['title'] }}</h4>
+                    <p style="color: var(--text-gray); font-size: 0.9rem; line-height: 1.6; margin: 0;">{{ $feature['desc'] }}</p>
                 </div>
                 @endforeach
             </div>
-            
-            <!-- Summary Stats -->
-            <div style="background: white; border-radius: 12px; padding: 2.5rem; border: 1px solid var(--border); margin-bottom: 2.5rem;">
-                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 2rem; text-align: center;">
-                    <div>
-                        <div style="font-size: 2.5rem; font-weight: 800; color: var(--primary); margin-bottom: 0.5rem;">8</div>
-                        <div style="color: var(--text-gray); font-size: 0.9rem;">Tech Categories</div>
-                    </div>
-                    <div>
-                        <div style="font-size: 2.5rem; font-weight: 800; color: var(--primary); margin-bottom: 0.5rem;">50+</div>
-                        <div style="color: var(--text-gray); font-size: 0.9rem;">Frameworks & Tools</div>
-                    </div>
-                    <div>
-                        <div style="font-size: 2.5rem; font-weight: 800; color: var(--primary); margin-bottom: 0.5rem;">99.99%</div>
-                        <div style="color: var(--text-gray); font-size: 0.9rem;">Uptime SLA</div>
-                    </div>
-                    <div>
-                        <div style="font-size: 2.5rem; font-weight: 800; color: var(--primary); margin-bottom: 0.5rem;"><100ms</div>
-                        <div style="color: var(--text-gray); font-size: 0.9rem;">API Response Time</div>
-                    </div>
-                </div>
-            </div>
-            
-            <div style="text-align: center;">
-                <a href="{{ route('landing.tech-stack') }}" class="btn-secondary-v5" style="display: inline-flex; align-items: center; gap: 0.75rem;">
-                    <span>View Complete Tech Stack with Details</span>
-                    <span class="material-symbols-rounded">arrow_forward</span>
-                </a>
+
+            <div style="background: var(--secondary-bg); border-radius: var(--card-radius); padding: 2rem; margin-top: 2rem;">
+                <h3 style="font-weight: 700; color: var(--text-dark); margin-bottom: 1rem;">Compliance Highlights</h3>
+                <ul style="list-style: none; margin: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1rem;">
+                    @foreach(__('services.security.compliance_highlights') as $item)
+                    <li style="color: var(--text-gray); display: flex; align-items: flex-start; gap: 0.75rem;">
+                        <span class="material-symbols-rounded" style="color: var(--primary); font-size: 1.2rem; flex-shrink: 0; margin-top: 0.2rem;">check_circle</span>
+                        <span>{{ $item }}</span>
+                    </li>
+                    @endforeach
+                </ul>
             </div>
         </div>
     </section>
 
     <!-- Engagement Models -->
-    <section style="background: white;">
-        <div class="container-v5">
-            <div class="section-header">
-                <h2 class="section-title">Engagement Models</h2>
-                <p class="section-subtitle">Flexible options for various business needs</p>
-            </div>
-            
-            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2rem;">
-                @php
-                $models = [
-                    ['title' => 'Fixed Project', 'desc' => 'Fixed scope, timeline, and price. Suitable for well-defined requirements.', 'timeline' => '4-16 weeks'],
-                    ['title' => 'MVP Development', 'desc' => 'Rapid MVP in 4-8 weeks. Test market assumptions, gather user feedback.', 'timeline' => '4-8 weeks'],
-                    ['title' => 'Team Augmentation', 'desc' => 'Add developers to your team. Flexible duration, you remain Product Owner.', 'timeline' => 'Flexible'],
-                    ['title' => 'Dedicated Team', 'desc' => 'Full dedicated team for your project. Long-term commitment, product-focused.', 'timeline' => '6+ months'],
-                    ['title' => 'Consulting', 'desc' => 'Architecture, strategy, technology guidance. CTO-as-a-service.', 'timeline' => 'Flexible'],
-                    ['title' => 'Support & Scaling', 'desc' => 'Post-launch support, optimization, maintenance, adding features.', 'timeline' => 'Ongoing'],
-                ];
-                @endphp
-                @foreach($models as $m)
-                <div style="background: var(--secondary-bg); border-radius: 12px; padding: 2rem; border: 1px solid var(--border); transition: all 0.3s ease;" onmouseover="this.style.borderColor='var(--primary)'; this.style.backgroundColor='white';" onmouseout="this.style.borderColor='var(--border)'; this.style.backgroundColor='var(--secondary-bg)';">
-                    <h3 style="font-size: 1.1rem; font-weight: 700; color: var(--text-dark); margin-bottom: 0.75rem;">
-                        {{ $m['title'] }}
-                    </h3>
-                    <p style="color: var(--text-gray); font-size: 0.95rem; line-height: 1.6; margin-bottom: 1rem;">
-                        {{ $m['desc'] }}
-                    </p>
-                    <div style="display: flex; align-items: center; gap: 0.5rem; color: var(--primary); font-weight: 600; font-size: 0.9rem;">
-                        <span class="material-symbols-rounded" style="font-size: 1.2rem;">schedule</span>
-                        {{ $m['timeline'] }}
-                    </div>
-                </div>
-                @endforeach
-            </div>
-        </div>
-    </section>
-
-    <!-- Process -->
     <section style="background: var(--secondary-bg);">
         <div class="container-v5">
             <div class="section-header">
-                <h2 class="section-title">Development Process</h2>
-                <p class="section-subtitle">SCRUM-based methodology for fast delivery and high quality</p>
+                <span class="section-label">ENGAGEMENT MODELS</span>
+                <h2 class="section-title">{{ __('services.engagement.title') }}</h2>
+                <p class="section-subtitle">{{ __('services.engagement.subtitle') }}</p>
             </div>
-            
-            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 2rem;">
-                @php
-                $process = [
-                    ['icon' => 'search', 'title' => 'Discovery', 'desc' => 'Understand goals, analyze requirements, market research'],
-                    ['icon' => 'design_services', 'title' => 'Design', 'desc' => 'Architecture, wireframes, data models, tech planning'],
-                    ['icon' => 'code', 'title' => 'Development', 'desc' => 'Sprint-based delivery, code review, CI/CD'],
-                    ['icon' => 'bug_report', 'title' => 'Testing', 'desc' => 'QA, performance testing, security scanning'],
-                    ['icon' => 'cloud_upload', 'title' => 'Deployment', 'desc' => 'Production release, monitoring setup'],
-                    ['icon' => 'support_agent', 'title' => 'Support', 'desc' => '24/7 support, optimization, scaling'],
-                ];
-                @endphp
-                @foreach($process as $p)
-                <div style="background: white; border-radius: 12px; padding: 2rem; border: 1px solid var(--border); text-align: center;">
-                    <div style="font-size: 3rem; color: var(--primary); margin-bottom: 1rem;">
-                        <span class="material-symbols-rounded">{{ $p['icon'] }}</span>
+
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 2rem;">
+                @foreach(__('services.engagement.models') as $model)
+                <div style="background: white; border: 1px solid var(--border); border-radius: var(--card-radius); padding: 2rem; text-align: center; transition: all 0.3s ease;" onmouseover="this.style.boxShadow='0 12px 30px rgba(26, 77, 94, 0.15)'; this.style.transform='translateY(-4px)';" onmouseout="this.style.boxShadow=''; this.style.transform='';">
+                    <h3 style="font-size: 1.15rem; font-weight: 700; color: var(--text-dark); margin-bottom: 0.75rem;">{{ $model['title'] }}</h3>
+                    <p style="color: var(--text-gray); font-size: 0.95rem; line-height: 1.6; margin-bottom: 1.5rem;">{{ $model['desc'] }}</p>
+                    <div style="background: var(--secondary-bg); padding: 1rem; border-radius: 8px;">
+                        <p style="color: var(--primary); font-weight: 600; margin: 0; font-size: 0.95rem;">{{ $model['timeline'] }}</p>
                     </div>
-                    <h3 style="font-size: 1.1rem; font-weight: 700; color: var(--text-dark); margin-bottom: 0.75rem;">
-                        {{ $p['title'] }}
-                    </h3>
-                    <p style="color: var(--text-gray); font-size: 0.95rem;">
-                        {{ $p['desc'] }}
-                    </p>
                 </div>
                 @endforeach
             </div>
         </div>
-        <div style="text-align: center; margin-top: 3rem;">
-                <a href="http://localhost:8000/scrum" class="btn-primary-v5">
-                    <span>Learn Detailed Process</span>
-                    <span class="material-symbols-rounded">arrow_forward</span>
-                </a>
-            </div>
     </section>
 
 @endsection

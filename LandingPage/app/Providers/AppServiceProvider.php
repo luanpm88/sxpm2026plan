@@ -19,6 +19,8 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot(): void
     {
-        //
+        // Laravel 12 mặc định tìm lang/ ở root project.
+        // Project này dùng resources/lang/ nên cần override lại.
+        app()->useLangPath(resource_path('lang'));
     }
 }

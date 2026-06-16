@@ -1,917 +1,348 @@
 @extends('layouts.main')
 
+@push('schemas')
+<script type="application/ld+json">
+{
+    "@@context": "https://schema.org",
+    "@@type": "FAQPage",
+    "mainEntity": [
+        {
+            "@@type": "Question",
+            "name": "What does HKIncotech do?",
+            "acceptedAnswer": {
+                "@@type": "Answer",
+                "text": "HKIncotech is an enterprise software engineering company based in Southeast Asia. We build custom software, SaaS platforms, AI solutions, and provide security & compliance services for startups, scale-ups, and enterprises."
+            }
+        },
+        {
+            "@@type": "Question",
+            "name": "How long does it take to build an MVP?",
+            "acceptedAnswer": {
+                "@@type": "Answer",
+                "text": "MVP delivery typically takes 4-8 weeks using our SCRUM process with 2-week sprints and live demos every cycle. Full products take 4-12 months depending on complexity."
+            }
+        },
+        {
+            "@@type": "Question",
+            "name": "What technologies does HKIncotech use?",
+            "acceptedAnswer": {
+                "@@type": "Answer",
+                "text": "We use 50+ enterprise-grade technologies including React, Node.js, Python, AWS, Kubernetes, PostgreSQL, GPT-4, Flutter, and Terraform across 8 technology categories."
+            }
+        },
+        {
+            "@@type": "Question",
+            "name": "Do I own the source code?",
+            "acceptedAnswer": {
+                "@@type": "Answer",
+                "text": "Yes. Full IP and source code ownership belongs to you. No licensing fees, no royalties. You can walk away with everything at any time."
+            }
+        },
+        {
+            "@@type": "Question",
+            "name": "What security certifications does HKIncotech have?",
+            "acceptedAnswer": {
+                "@@type": "Answer",
+                "text": "We are ISO 27001, SOC 2 Type II, GDPR, PCI DSS, and HIPAA certified. Our team includes 8+ security experts and we follow OWASP standards with Zero Trust architecture."
+            }
+        }
+    ]
+}
+</script>
+@endpush
+
 @section('content')
 
-    <!-- Hero Section -->
-    <section class="hero" style="min-height: 90vh; display: flex; align-items: center; padding: 6rem 2rem; background: linear-gradient(135deg, #ffffff 0%, var(--secondary-bg) 100%);">
-        <style>
-            @media (max-width: 991px) {
-                .case-study-grid {
-                    grid-template-columns: 1fr !important;
-                }
-            }
-            
-            @media (max-width: 767px) {
-                .hero {
-                    min-height: auto;
-                    padding: 3rem 0 !important;
-                }
-                .hero-grid {
-                    grid-template-columns: 1fr !important;
-                    gap: 2rem !important;
-                }
-                .hero h1 {
-                    font-size: 2rem !important;
-                }
-                .hero-content p {
-                    font-size: 0.95rem !important;
-                }
-                .hero-stats {
-                    gap: 1.5rem !important;
-                    grid-template-columns: 1fr !important;
-                }
-                .hero-stats > div {
-                    font-size: 1.5rem !important;
-                }
-                .hero-stats > div > div:first-child {
-                    font-size: 1.75rem !important;
-                }
-                .hero-svg-box {
-                    min-height: 300px !important;
-                }
-                .case-study-grid {
-                    grid-template-columns: 1fr !important;
-                }
-                .case-study-grid > div:last-child {
-                    min-height: 200px !important;
-                }
-            }
-        </style>
+    {{-- 1. HERO --}}
+    @include('landing_page.partials.hero')
+
+
+    {{-- 2. PAIN — Sound Familiar? --}}
+    <section id="pain" aria-labelledby="heading-pain" class="section-alt">
         <div class="container-v5">
-            <div class="hero-grid" style="display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: center;">
-                <div class="hero-content">
-                    <h1 style="font-size: 4rem; font-weight: 800; line-height: 1.15; margin-bottom: 1.5rem; color: var(--text-dark);">
-                        We architect systems<br><span style="color: var(--primary);">that serve millions.</span>
-                    </h1>
-                    <p style="font-size: 1.15rem; color: var(--text-gray); margin-bottom: 2.5rem; line-height: 1.8;">
-                        From SaaS platforms to AI-powered solutions — HKIncotech delivers production systems built on 12 years of battle-tested engineering practices. We don't just write code. We build the infrastructure your business depends on.
-                    </p>
-                    <div style="display: flex; gap: 1.25rem; margin-bottom: 3rem; flex-wrap: wrap;">
-                        <a href="{{ route('landing.contact') }}" class="btn-primary-v5">
-                            <span>Free Consultation</span>
-                            <span class="material-symbols-rounded">arrow_forward</span>
-                        </a>
-                        <a href="{{ route('landing.services') }}" class="btn-secondary-v5">
-                            <span>View Services</span>
-                            <span class="material-symbols-rounded">explore</span>
-                        </a>
-                    </div>
-                    <div class="hero-stats" style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 2rem; margin-top: 3rem; padding-top: 2.5rem; border-top: 1px solid var(--border);">
-                        <div>
-                            <div style="font-size: 2.25rem; font-weight: 800; color: var(--primary);">12+</div>
-                            <div style="font-size: 0.95rem; color: var(--text-gray); margin-top: 0.5rem;">Years Building Production Systems</div>
-                        </div>
-                        <div>
-                            <div style="font-size: 2.25rem; font-weight: 800; color: var(--primary);">50+</div>
-                            <div style="font-size: 0.95rem; color: var(--text-gray); margin-top: 0.5rem;">Projects Shipped to Production</div>
-                        </div>
-                        <div>
-                            <div style="font-size: 2.25rem; font-weight: 800; color: var(--primary);">99.99%</div>
-                            <div style="font-size: 0.95rem; color: var(--text-gray); margin-top: 0.5rem;">Uptime Across All Systems</div>
-                        </div>
-                    </div>
+            <div class="section-header">
+                <span class="section-label">{{ __('index.section_pain') }}</span>
+                <h2 id="heading-pain" class="section-title">{{ __('index.pain_title') }}</h2>
+                <p class="section-subtitle">{{ __('index.pain_subtitle') }}</p>
+            </div>
+
+            <div class="pain-grid">
+                @for($i = 1; $i <= 4; $i++)
+                <div class="pain-card">
+                    <span class="pain-icon material-symbols-rounded">warning</span>
+                    <p class="pain-text">{{ __('index.pain_' . $i) }}</p>
                 </div>
-                
-                <div class="hero-svg-box position-relative" style="background: white; border-radius: 12px; padding: 2.5rem; border: 1px solid var(--border); display: flex; align-items: center; justify-content: center; min-height: 450px;">
-                    <svg viewBox="0 0 350 350" style="width: 100%; max-width: 350px;">
-                        <!-- Background circles -->
-                        <circle cx="175" cy="175" r="160" fill="none" stroke="#0f6b9e" stroke-width="1" opacity="0.1"/>
-                        <circle cx="175" cy="175" r="120" fill="none" stroke="#0f6b9e" stroke-width="1" opacity="0.15"/>
-                        <circle cx="175" cy="175" r="80" fill="none" stroke="#0f6b9e" stroke-width="1" opacity="0.2"/>
-                        
-                        <!-- Nodes -->
-                        <circle cx="175" cy="80" r="12" fill="#0f6b9e"/>
-                        <circle cx="265" cy="130" r="12" fill="#0f6b9e"/>
-                        <circle cx="285" cy="220" r="12" fill="#0f6b9e"/>
-                        <circle cx="175" cy="270" r="12" fill="#0f6b9e"/>
-                        <circle cx="65" cy="220" r="12" fill="#0f6b9e"/>
-                        <circle cx="85" cy="130" r="12" fill="#0f6b9e"/>
-                        <circle cx="175" cy="175" r="16" fill="#059669"/>
-                        
-                        <!-- Connections -->
-                        <line x1="175" y1="80" x2="265" y2="130" stroke="#0f6b9e" stroke-width="2" opacity="0.4"/>
-                        <line x1="265" y1="130" x2="285" y2="220" stroke="#0f6b9e" stroke-width="2" opacity="0.4"/>
-                        <line x1="285" y1="220" x2="175" y2="270" stroke="#0f6b9e" stroke-width="2" opacity="0.4"/>
-                        <line x1="175" y1="270" x2="65" y2="220" stroke="#0f6b9e" stroke-width="2" opacity="0.4"/>
-                        <line x1="65" y1="220" x2="85" y2="130" stroke="#0f6b9e" stroke-width="2" opacity="0.4"/>
-                        <line x1="85" y1="130" x2="175" y2="80" stroke="#0f6b9e" stroke-width="2" opacity="0.4"/>
-                        
-                        <!-- Center to nodes -->
-                        <line x1="175" y1="175" x2="175" y2="80" stroke="#059669" stroke-width="2" opacity="0.5"/>
-                        <line x1="175" y1="175" x2="265" y2="130" stroke="#059669" stroke-width="2" opacity="0.5"/>
-                        <line x1="175" y1="175" x2="285" y2="220" stroke="#059669" stroke-width="2" opacity="0.5"/>
-                        <line x1="175" y1="175" x2="175" y2="270" stroke="#059669" stroke-width="2" opacity="0.5"/>
-                        <line x1="175" y1="175" x2="65" y2="220" stroke="#059669" stroke-width="2" opacity="0.5"/>
-                        <line x1="175" y1="175" x2="85" y2="130" stroke="#059669" stroke-width="2" opacity="0.5"/>
-                        
-                        <!-- Labels -->
-                        <text x="175" y="55" text-anchor="middle" font-size="11" fill="#0f6b9e" font-weight="bold">Frontend</text>
-                        <text x="290" y="105" text-anchor="middle" font-size="11" fill="#0f6b9e" font-weight="bold">Backend</text>
-                        <text x="305" y="225" text-anchor="middle" font-size="11" fill="#0f6b9e" font-weight="bold">Database</text>
-                        <text x="175" y="295" text-anchor="middle" font-size="11" fill="#0f6b9e" font-weight="bold">DevOps</text>
-                        <text x="35" y="225" text-anchor="middle" font-size="11" fill="#0f6b9e" font-weight="bold">Security</text>
-                        <text x="55" y="105" text-anchor="middle" font-size="11" fill="#0f6b9e" font-weight="bold">AI/ML</text>
-                        
-                        <text x="175" y="180" text-anchor="middle" font-size="14" fill="#059669" font-weight="bold">SCRUM</text>
-                    </svg>
-                </div>
+                @endfor
             </div>
         </div>
     </section>
 
-    <!-- Services Preview -->
-    <section id="services" style="background: var(--secondary-bg);">
-        <div class="container-v5">
-            <div class="section-header">
-                <h2 class="section-title">What We Build</h2>
-                <p class="section-subtitle">From custom enterprise systems to AI platforms — production-grade solutions that scale with your business</p>
-            </div>
-            
-            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem;">
-                <div style="background: white; border: 1px solid var(--border); border-radius: 12px; padding: 2.5rem 2rem; transition: all 0.3s ease; position: relative;" onmouseover="this.style.borderColor='var(--primary)'; this.style.boxShadow='0 12px 30px rgba(15, 107, 158, 0.12)';" onmouseout="this.style.borderColor='var(--border)'; this.style.boxShadow='';">
-                    <div style="font-size: 3rem; color: var(--primary); margin-bottom: 1rem;">
-                        <span class="material-symbols-rounded">code</span>
-                    </div>
-                    <h3 style="font-size: 1.3rem; font-weight: 700; color: var(--text-dark); margin-bottom: 1rem;">Custom Software Engineering</h3>
-                    <p style="color: var(--text-gray); font-size: 0.95rem; line-height: 1.7; margin-bottom: 1.5rem;">
-                        We architect systems designed for your next 10x growth — cloud-native, microservices, with the reliability your business depends on
-                    </p>
-                    <ul style="list-style: none; padding: 0; margin-bottom: 1.5rem;">
-                        <li style="padding: 0.5rem 0; color: var(--text-gray); display: flex; align-items: center; gap: 0.75rem; font-size: 0.9rem;">
-                            <span style="width: 6px; height: 6px; background: var(--primary); border-radius: 50%; flex-shrink: 0;"></span>
-                            Web & Mobile Applications
-                        </li>
-                        <li style="padding: 0.5rem 0; color: var(--text-gray); display: flex; align-items: center; gap: 0.75rem; font-size: 0.9rem;">
-                            <span style="width: 6px; height: 6px; background: var(--primary); border-radius: 50%; flex-shrink: 0;"></span>
-                            Distributed Systems
-                        </li>
-                        <li style="padding: 0.5rem 0; color: var(--text-gray); display: flex; align-items: center; gap: 0.75rem; font-size: 0.9rem;">
-                            <span style="width: 6px; height: 6px; background: var(--primary); border-radius: 50%; flex-shrink: 0;"></span>
-                            Real-time Processing
-                        </li>
-                        <li style="padding: 0.5rem 0; color: var(--text-gray); display: flex; align-items: center; gap: 0.75rem; font-size: 0.9rem;">
-                            <span style="width: 6px; height: 6px; background: var(--primary); border-radius: 50%; flex-shrink: 0;"></span>
-                            Data Pipelines
-                        </li>
-                    </ul>
-                    <a href="{{ route('landing.services') }}" style="color: var(--primary); font-weight: 600; text-decoration: none;">View Details</a>
-                </div>
-                
-                <div style="background: white; border: 1px solid var(--border); border-radius: 12px; padding: 2.5rem 2rem; transition: all 0.3s ease;" onmouseover="this.style.borderColor='var(--primary)'; this.style.boxShadow='0 12px 30px rgba(15, 107, 158, 0.12)';" onmouseout="this.style.borderColor='var(--border)'; this.style.boxShadow='';">
-                    <div style="font-size: 3rem; color: var(--primary); margin-bottom: 1rem;">
-                        <span class="material-symbols-rounded">workspace_premium</span>
-                    </div>
-                    <h3 style="font-size: 1.3rem; font-weight: 700; color: var(--text-dark); margin-bottom: 1rem;">SaaS Platform Development</h3>
-                    <p style="color: var(--text-gray); font-size: 0.95rem; line-height: 1.7; margin-bottom: 1.5rem;">
-                        Production-ready multi-tenant platforms — proven with HKSpace, our own SaaS serving enterprise teams at scale
-                    </p>
-                    <ul style="list-style: none; padding: 0; margin-bottom: 1.5rem;">
-                        <li style="padding: 0.5rem 0; color: var(--text-gray); display: flex; align-items: center; gap: 0.75rem; font-size: 0.9rem;">
-                            <span style="width: 6px; height: 6px; background: var(--primary); border-radius: 50%; flex-shrink: 0;"></span>
-                            Task Management Engine
-                        </li>
-                        <li style="padding: 0.5rem 0; color: var(--text-gray); display: flex; align-items: center; gap: 0.75rem; font-size: 0.9rem;">
-                            <span style="width: 6px; height: 6px; background: var(--primary); border-radius: 50%; flex-shrink: 0;"></span>
-                            Workflow Automation
-                        </li>
-                        <li style="padding: 0.5rem 0; color: var(--text-gray); display: flex; align-items: center; gap: 0.75rem; font-size: 0.9rem;">
-                            <span style="width: 6px; height: 6px; background: var(--primary); border-radius: 50%; flex-shrink: 0;"></span>
-                            Real-time Collaboration
-                        </li>
-                        <li style="padding: 0.5rem 0; color: var(--text-gray); display: flex; align-items: center; gap: 0.75rem; font-size: 0.9rem;">
-                            <span style="width: 6px; height: 6px; background: var(--primary); border-radius: 50%; flex-shrink: 0;"></span>
-                            Advanced Analytics
-                        </li>
-                    </ul>
-                    <a href="{{ route('landing.services') }}" style="color: var(--primary); font-weight: 600; text-decoration: none;">View Details</a>
-                </div>
-                
-                <div style="background: white; border: 1px solid var(--border); border-radius: 12px; padding: 2.5rem 2rem; transition: all 0.3s ease;" onmouseover="this.style.borderColor='var(--primary)'; this.style.boxShadow='0 12px 30px rgba(15, 107, 158, 0.12)';" onmouseout="this.style.borderColor='var(--border)'; this.style.boxShadow='';">
-                    <div style="font-size: 3rem; color: var(--primary); margin-bottom: 1rem;">
-                        <span class="material-symbols-rounded">psychology</span>
-                    </div>
-                    <h3 style="font-size: 1.3rem; font-weight: 700; color: var(--text-dark); margin-bottom: 1rem;">AI & Intelligent Systems</h3>
-                    <p style="color: var(--text-gray); font-size: 0.95rem; line-height: 1.7; margin-bottom: 1.5rem;">
-                        Production AI that delivers business value — from NLP and document intelligence to custom AI assistants integrated into your workflows
-                    </p>
-                    <ul style="list-style: none; padding: 0; margin-bottom: 1.5rem;">
-                        <li style="padding: 0.5rem 0; color: var(--text-gray); display: flex; align-items: center; gap: 0.75rem; font-size: 0.9rem;">
-                            <span style="width: 6px; height: 6px; background: var(--primary); border-radius: 50%; flex-shrink: 0;"></span>
-                            Natural Language Processing
-                        </li>
-                        <li style="padding: 0.5rem 0; color: var(--text-gray); display: flex; align-items: center; gap: 0.75rem; font-size: 0.9rem;">
-                            <span style="width: 6px; height: 6px; background: var(--primary); border-radius: 50%; flex-shrink: 0;"></span>
-                            Semantic Search
-                        </li>
-                        <li style="padding: 0.5rem 0; color: var(--text-gray); display: flex; align-items: center; gap: 0.75rem; font-size: 0.9rem;">
-                            <span style="width: 6px; height: 6px; background: var(--primary); border-radius: 50%; flex-shrink: 0;"></span>
-                            Knowledge Graph
-                        </li>
-                        <li style="padding: 0.5rem 0; color: var(--text-gray); display: flex; align-items: center; gap: 0.75rem; font-size: 0.9rem;">
-                            <span style="width: 6px; height: 6px; background: var(--primary); border-radius: 50%; flex-shrink: 0;"></span>
-                            LLM Integration
-                        </li>
-                    </ul>
-                    <a href="{{ route('landing.services') }}" style="color: var(--primary); font-weight: 600; text-decoration: none;">View Details</a>
-                </div>
-                
-                <div style="background: white; border: 1px solid var(--border); border-radius: 12px; padding: 2.5rem 2rem; transition: all 0.3s ease;" onmouseover="this.style.borderColor='var(--primary)'; this.style.boxShadow='0 12px 30px rgba(15, 107, 158, 0.12)';" onmouseout="this.style.borderColor='var(--border)'; this.style.boxShadow='';">
-                    <div style="font-size: 3rem; color: var(--primary); margin-bottom: 1rem;">
-                        <span class="material-symbols-rounded">shield</span>
-                    </div>
-                    <h3 style="font-size: 1.3rem; font-weight: 700; color: var(--text-dark); margin-bottom: 1rem;">Security & Compliance</h3>
-                    <p style="color: var(--text-gray); font-size: 0.95rem; line-height: 1.7; margin-bottom: 1.5rem;">
-                        Enterprise security built in from day one — OWASP, ISO 27001, SOC 2 compliant architecture that protects your data and your reputation
-                    </p>
-                    <ul style="list-style: none; padding: 0; margin-bottom: 1.5rem;">
-                        <li style="padding: 0.5rem 0; color: var(--text-gray); display: flex; align-items: center; gap: 0.75rem; font-size: 0.9rem;">
-                            <span style="width: 6px; height: 6px; background: var(--primary); border-radius: 50%; flex-shrink: 0;"></span>
-                            Zero Trust Architecture
-                        </li>
-                        <li style="padding: 0.5rem 0; color: var(--text-gray); display: flex; align-items: center; gap: 0.75rem; font-size: 0.9rem;">
-                            <span style="width: 6px; height: 6px; background: var(--primary); border-radius: 50%; flex-shrink: 0;"></span>
-                            Data Encryption
-                        </li>
-                        <li style="padding: 0.5rem 0; color: var(--text-gray); display: flex; align-items: center; gap: 0.75rem; font-size: 0.9rem;">
-                            <span style="width: 6px; height: 6px; background: var(--primary); border-radius: 50%; flex-shrink: 0;"></span>
-                            Access Control
-                        </li>
-                        <li style="padding: 0.5rem 0; color: var(--text-gray); display: flex; align-items: center; gap: 0.75rem; font-size: 0.9rem;">
-                            <span style="width: 6px; height: 6px; background: var(--primary); border-radius: 50%; flex-shrink: 0;"></span>
-                            Incident Response
-                        </li>
-                    </ul>
-                    <a href="{{ route('landing.services') }}" style="color: var(--primary); font-weight: 600; text-decoration: none;">View Details</a>
-                </div>
-            </div>
-        </div>
-    </section>
 
-    <!-- SCRUM Process Preview -->
-    <section id="process">
+    {{-- 3. SERVICES --}}
+    <section id="services" aria-labelledby="heading-services">
         <div class="container-v5">
             <div class="section-header">
-                <h2 class="section-title">SCRUM Process</h2>
-                <p class="section-subtitle">Agile development methodology for real-time progress visibility</p>
+                <span class="section-label">{{ __('index.section_services') }}</span>
+                <h2 id="heading-services" class="section-title">{{ __('index.services_title') }}</h2>
+                <p class="section-subtitle">{{ __('index.services_subtitle') }}</p>
             </div>
-            
-            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 1.5rem;">
+
+            <div class="grid-4col">
                 @php
-                $processes = [
-                    ['icon' => 'lightbulb', 'title' => 'Discovery', 'desc' => 'Consulting, planning'],
-                    ['icon' => 'architecture', 'title' => 'Design', 'desc' => 'Wireframe, architecture'],
-                    ['icon' => 'code', 'title' => 'Development', 'desc' => 'Sprint cycles'],
-                    ['icon' => 'verified', 'title' => 'QA Testing', 'desc' => 'Comprehensive testing'],
-                    ['icon' => 'cloud_upload', 'title' => 'Deploy', 'desc' => 'Product launch'],
-                    ['icon' => 'support_agent', 'title' => 'Support', 'desc' => '24/7 support'],
+                $services = [
+                    ['icon' => 'code', 'key' => 'custom', 'cta_key' => 'custom_cta'],
+                    ['icon' => 'workspace_premium', 'key' => 'saas', 'cta_key' => 'saas_cta'],
+                    ['icon' => 'psychology', 'key' => 'ai', 'cta_key' => 'ai_cta'],
+                    ['icon' => 'shield', 'key' => 'security', 'cta_key' => 'security_cta'],
                 ];
                 @endphp
-                @foreach($processes as $p)
-                <div style="background: white; border: 1px solid var(--border); border-radius: 12px; padding: 2rem 1.5rem; text-align: center; transition: all 0.3s ease;" onmouseover="this.style.borderColor='var(--primary)'; this.style.boxShadow='0 10px 30px rgba(15, 107, 158, 0.1)';" onmouseout="this.style.borderColor='var(--border)'; this.style.boxShadow='';">
-                    <div style="font-size: 2.5rem; color: var(--primary); margin-bottom: 1rem;">
-                        <span class="material-symbols-rounded">{{ $p['icon'] }}</span>
+
+                @foreach($services as $svc)
+                <div class="service-card">
+                    <div class="service-card__icon">
+                        <span class="material-symbols-rounded">{{ $svc['icon'] }}</span>
                     </div>
-                    <h3 style="font-size: 1rem; font-weight: 700; color: var(--text-dark); margin-bottom: 0.5rem;">{{ $p['title'] }}</h3>
-                    <p style="font-size: 0.9rem; color: var(--text-gray);">{{ $p['desc'] }}</p>
+                    <h3 class="service-card__title">{{ __('index.' . $svc['key'] . '_title') }}</h3>
+                    <p class="service-card__desc">{{ __('index.' . $svc['key'] . '_desc') }}</p>
+                    <ul class="service-card__features">
+                        @for($i = 1; $i <= 4; $i++)
+                        <li>
+                            <span class="dot"></span>
+                            {{ __('index.' . $svc['key'] . '_feature_' . $i) }}
+                        </li>
+                        @endfor
+                    </ul>
+                    <a href="{{ route('landing.services') }}" class="service-card__link" data-ga-event="service_explore" data-ga-service="{{ $svc['key'] }}">
+                        {{ __('index.' . $svc['cta_key']) }}
+                        <span class="material-symbols-rounded">arrow_forward</span>
+                    </a>
                 </div>
                 @endforeach
             </div>
-            
-            <div style="text-align: center; margin-top: 3rem;">
-                <a href="{{ route('landing.scrum') }}" class="btn-primary-v5">
-                    <span>Learn Detailed Process</span>
+        </div>
+    </section>
+
+
+    {{-- 4. CAPABILITIES --}}
+    <section id="capabilities" aria-labelledby="heading-capabilities" class="section-alt">
+        <div class="container-v5">
+            <div class="section-header">
+                <span class="section-label">{{ __('index.section_capabilities') }}</span>
+                <h2 id="heading-capabilities" class="section-title">{{ __('index.capabilities_title') }}</h2>
+                <p class="section-subtitle">{{ __('index.capabilities_subtitle') }}</p>
+            </div>
+
+            <div class="capabilities-grid">
+                @php
+                $caps = [
+                    ['key' => 'build', 'color' => '#3b82f6'],
+                    ['key' => 'scale', 'color' => '#10b981'],
+                    ['key' => 'secure', 'color' => '#8b5cf6'],
+                    ['key' => 'ai', 'color' => '#f59e0b'],
+                    ['key' => 'mfg', 'color' => '#ef4444'],
+                    ['key' => 'ship', 'color' => '#06b6d4'],
+                ];
+                @endphp
+
+                @foreach($caps as $cap)
+                <div class="capability-card">
+                    <div class="capability-icon" style="background: {{ $cap['color'] }}15; color: {{ $cap['color'] }};">
+                        <span class="material-symbols-rounded">{{ __('index.cap_' . $cap['key'] . '_icon') }}</span>
+                    </div>
+                    <h3 class="capability-title">{{ __('index.cap_' . $cap['key'] . '_title') }}</h3>
+                    <p class="capability-desc">{{ __('index.cap_' . $cap['key'] . '_desc') }}</p>
+                </div>
+                @endforeach
+            </div>
+
+            <div class="section-cta">
+                <a href="{{ route('landing.tech-stack') }}" class="btn-secondary-v5" data-ga-event="cta_click" data-ga-cta="capabilities_tech">
+                    <span>{{ __('index.capabilities_cta') }}</span>
                     <span class="material-symbols-rounded">arrow_forward</span>
                 </a>
             </div>
         </div>
     </section>
 
-    <!-- Technology Stack Preview -->
-    <section style="background: var(--secondary-bg);">
+
+    {{-- 5. PROCESS --}}
+    <section id="process" aria-labelledby="heading-process">
         <div class="container-v5">
             <div class="section-header">
-                <h2 class="section-title">Technology Stack</h2>
-                <p class="section-subtitle">Enterprise-grade technologies across 8 categories, 50+ frameworks & tools</p>
+                <span class="section-label">{{ __('index.section_process') }}</span>
+                <h2 id="heading-process" class="section-title">{{ __('index.process_title') }}</h2>
+                <p class="section-subtitle">{{ __('index.process_subtitle') }}</p>
             </div>
-            
-            <!-- Tech Stack Grid -->
-            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 2rem; margin-bottom: 3rem;">
+
+            <div class="process-steps">
+                @for($i = 1; $i <= 3; $i++)
+                <div class="process-step">
+                    <div class="process-step-number">{{ str_pad($i, 2, '0', STR_PAD_LEFT) }}</div>
+                    <div class="process-step-icon">
+                        <span class="material-symbols-rounded">{{ __('index.process_step' . $i . '_icon') }}</span>
+                    </div>
+                    <h3 class="process-step-title">{{ __('index.process_step' . $i . '_title') }}</h3>
+                    <p class="process-step-desc">{{ __('index.process_step' . $i . '_desc') }}</p>
+                </div>
+                @if($i < 3)
+                <div class="process-step-connector">
+                    <span class="material-symbols-rounded">arrow_forward</span>
+                </div>
+                @endif
+                @endfor
+            </div>
+
+            <div class="section-cta">
+                <a href="{{ route('landing.scrum') }}" class="btn-primary-v5" data-ga-event="cta_click" data-ga-cta="process_scrum">
+                    <span>{{ __('index.process_cta') }}</span>
+                    <span class="material-symbols-rounded">arrow_forward</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+
+    {{-- 6. WHY US --}}
+    <section id="why-us" aria-labelledby="heading-why" class="section-alt">
+        <div class="container-v5">
+            <div class="section-header">
+                <span class="section-label">{{ __('index.section_why') }}</span>
+                <h2 id="heading-why" class="section-title">{{ __('index.why_title') }}</h2>
+                <p class="section-subtitle">{{ __('index.why_subtitle') }}</p>
+            </div>
+
+            <div class="grid-3col">
                 @php
-                $tech_categories = [
-                    [
-                        'icon' => 'web',
-                        'title' => 'Frontend & UI',
-                        'techs' => ['React, Vue, Angular', 'TypeScript, Next.js', 'TailwindCSS, Material Design', 'PWA & Performance'],
-                        'color' => 'rgb(59, 130, 246)'
-                    ],
-                    [
-                        'icon' => 'storage',
-                        'title' => 'Backend & API',
-                        'techs' => ['Node.js, Python, Java, Go', 'FastAPI, NestJS', 'GraphQL, REST APIs', 'Microservices'],
-                        'color' => 'rgb(15, 107, 158)'
-                    ],
-                    [
-                        'icon' => 'database',
-                        'title' => 'Data & Database',
-                        'techs' => ['PostgreSQL, MongoDB, MySQL', 'Redis, Elasticsearch', 'Vector Databases', 'BigQuery Data Warehouse'],
-                        'color' => 'rgb(34, 197, 94)'
-                    ],
-                    [
-                        'icon' => 'cloud',
-                        'title' => 'Cloud & Infrastructure',
-                        'techs' => ['AWS, GCP, Azure', 'Kubernetes, Docker', 'CI/CD Automation', 'Infrastructure as Code'],
-                        'color' => 'rgb(168, 85, 247)'
-                    ],
-                    [
-                        'icon' => 'shield',
-                        'title' => 'Security & Compliance',
-                        'techs' => ['SSL/TLS Encryption', 'OWASP Standards', 'GDPR Compliance', 'Penetration Testing'],
-                        'color' => 'rgb(239, 68, 68)'
-                    ],
-                    [
-                        'icon' => 'smartphone',
-                        'title' => 'Mobile Development',
-                        'techs' => ['React Native, Flutter', 'iOS (Swift), Android (Kotlin)', 'Progressive Web Apps', 'App Store Deployment'],
-                        'color' => 'rgb(249, 115, 22)'
-                    ],
-                    [
-                        'icon' => 'psychology',
-                        'title' => 'AI & Machine Learning',
-                        'techs' => ['OpenAI APIs', 'Custom ML Models', 'Computer Vision & NLP', 'RAG & Vector Search'],
-                        'color' => 'rgb(14, 165, 233)'
-                    ],
-                    [
-                        'icon' => 'settings',
-                        'title' => 'DevOps & Tools',
-                        'techs' => ['Git, GitHub, GitLab', 'Docker, Terraform', 'Monitoring & Logging', 'Performance Tools'],
-                        'color' => 'rgb(236, 72, 153)'
-                    ],
+                $whys = [
+                    ['icon' => 'star', 'color' => '#3b82f6', 'key' => 'expertise'],
+                    ['icon' => 'groups', 'color' => '#10b981', 'key' => 'team'],
+                    ['icon' => 'bolt', 'color' => '#f59e0b', 'key' => 'fast'],
+                    ['icon' => 'shield', 'color' => '#8b5cf6', 'key' => 'security'],
+                    ['icon' => 'trending_up', 'color' => '#06b6d4', 'key' => 'scalable'],
+                    ['icon' => 'handshake', 'color' => '#ef4444', 'key' => 'partnership'],
                 ];
                 @endphp
-                @foreach($tech_categories as $cat)
-                <div style="background: white; border: 1px solid var(--border); border-radius: 12px; padding: 1.75rem; transition: all 0.3s ease;" 
-                     onmouseover="this.style.borderColor='{{ $cat['color'] }}'; this.style.boxShadow='0 8px 20px rgba(15, 107, 158, 0.1)'; this.style.transform='translateY(-2px)';" 
-                     onmouseout="this.style.borderColor='var(--border)'; this.style.boxShadow=''; this.style.transform='';">
-                    <div style="display: flex; align-items: center; gap: 0.75rem; margin-bottom: 1rem;">
-                        <div style="font-size: 1.75rem; color: {{ $cat['color'] }}; line-height: 1;">
-                            <span class="material-symbols-rounded">{{ $cat['icon'] }}</span>
-                        </div>
-                        <h3 style="font-size: 1rem; font-weight: 700; color: var(--text-dark); margin: 0;">{{ $cat['title'] }}</h3>
+                @foreach($whys as $w)
+                <div class="why-card">
+                    <div class="why-card__icon" style="background: {{ $w['color'] }}12; color: {{ $w['color'] }};">
+                        <span class="material-symbols-rounded">{{ $w['icon'] }}</span>
                     </div>
-                    <div style="display: flex; flex-direction: column; gap: 0.5rem;">
-                        @foreach($cat['techs'] as $tech)
-                        <div style="font-size: 0.85rem; color: var(--text-gray); display: flex; align-items: center; gap: 0.5rem;">
-                            <span style="width: 3px; height: 3px; background: {{ $cat['color'] }}; border-radius: 50%; flex-shrink: 0;"></span>
-                            {{ $tech }}
+                    <div>
+                        <h3 class="why-card__title">{{ __('index.why_' . $w['key']) }}</h3>
+                        <p class="why-card__desc">{{ __('index.why_' . $w['key'] . '_desc') }}</p>
+                    </div>
+                </div>
+                @endforeach
+            </div>
+
+            <div class="section-cta">
+                <a href="{{ route('landing.contact') }}" class="btn-primary-v5" data-ga-event="cta_click" data-ga-cta="why_us_consultation">
+                    <span class="material-symbols-rounded">calendar_month</span>
+                    <span>{{ __('index.why_cta') }}</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+
+    {{-- 7. CASE STUDIES --}}
+    <section id="case-studies" aria-labelledby="heading-cases">
+        <div class="container-v5">
+            <div class="section-header">
+                <span class="section-label">{{ __('index.section_cases') }}</span>
+                <h2 id="heading-cases" class="section-title">{{ __('index.case_title') }}</h2>
+                <p class="section-subtitle">{{ __('index.case_subtitle') }}</p>
+            </div>
+
+            <div class="grid-3col">
+                @php
+                $cases = [
+                    ['num' => '1', 'badge_color' => 'var(--primary)', 'badge_bg' => 'var(--primary-subtle)', 'techs' => ['PHP', 'REST API', 'PostgreSQL', 'React']],
+                    ['num' => '2', 'badge_color' => '#10b981', 'badge_bg' => '#10b98115', 'techs' => ['Python', 'ML', 'PostgreSQL', 'React', 'Node.js']],
+                    ['num' => '3', 'badge_color' => '#8b5cf6', 'badge_bg' => '#8b5cf615', 'techs' => ['Node.js', 'PostgreSQL', 'React', 'AWS', 'Microservices']],
+                ];
+                @endphp
+
+                @foreach($cases as $case)
+                <div class="case-card" data-ga-event="case_study_view" data-ga-case="{{ __('index.case' . $case['num'] . '_badge') }}">
+                    <div class="case-card-badge" style="background: {{ $case['badge_bg'] }}; color: {{ $case['badge_color'] }};">{{ __('index.case' . $case['num'] . '_badge') }}</div>
+                    <h3 class="case-card-title">{{ __('index.case' . $case['num'] . '_title') }}</h3>
+                    <p class="case-card-desc">{{ __('index.case' . $case['num'] . '_desc') }}</p>
+                    <div class="case-card-metrics">
+                        @for($m = 1; $m <= 3; $m++)
+                        <div class="case-metric">
+                            <span class="case-metric-value">{{ __('index.case' . $case['num'] . '_metric' . $m . '_value') }}</span>
+                            <span class="case-metric-label">{{ __('index.case' . $case['num'] . '_metric' . $m . '_label') }}</span>
                         </div>
+                        @endfor
+                    </div>
+                    <div class="case-card-tech">
+                        @foreach($case['techs'] as $tech)
+                        <span>{{ $tech }}</span>
                         @endforeach
                     </div>
                 </div>
                 @endforeach
             </div>
-            
-            <!-- Summary Stats -->
-            <div style="background: white; border-radius: 12px; padding: 2.5rem; border: 1px solid var(--border); margin-bottom: 2.5rem;">
-                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 2rem; text-align: center;">
-                    <div>
-                        <div style="font-size: 2.5rem; font-weight: 800; color: var(--primary); margin-bottom: 0.5rem;">8</div>
-                        <div style="color: var(--text-gray); font-size: 0.9rem;">Tech Categories</div>
-                    </div>
-                    <div>
-                        <div style="font-size: 2.5rem; font-weight: 800; color: var(--primary); margin-bottom: 0.5rem;">50+</div>
-                        <div style="color: var(--text-gray); font-size: 0.9rem;">Frameworks & Tools</div>
-                    </div>
-                    <div>
-                        <div style="font-size: 2.5rem; font-weight: 800; color: var(--primary); margin-bottom: 0.5rem;">99.99%</div>
-                        <div style="color: var(--text-gray); font-size: 0.9rem;">Uptime SLA</div>
-                    </div>
-                    <div>
-                        <div style="font-size: 2.5rem; font-weight: 800; color: var(--primary); margin-bottom: 0.5rem;"><100ms</div>
-                        <div style="color: var(--text-gray); font-size: 0.9rem;">API Response Time</div>
-                    </div>
-                </div>
-            </div>
-            
-            <div style="text-align: center;">
-                <a href="{{ route('landing.tech-stack') }}" class="btn-secondary-v5" style="display: inline-flex; align-items: center; gap: 0.75rem;">
-                    <span>View Complete Tech Stack with Details</span>
+
+            <div class="section-cta">
+                <a href="{{ route('landing.case-studies') }}" class="btn-primary-v5" data-ga-event="cta_click" data-ga-cta="cases_view_all">
+                    <span>{{ __('index.case_view_more') }}</span>
                     <span class="material-symbols-rounded">arrow_forward</span>
                 </a>
             </div>
         </div>
     </section>
 
-    <!-- Scaling Journey -->
-    <section>
+
+    {{-- 8. TESTIMONIALS --}}
+    <section id="testimonials" aria-labelledby="heading-testimonials" class="section-alt">
         <div class="container-v5">
             <div class="section-header">
-                <h2 class="section-title">Scaling Architecture</h2>
-                <p class="section-subtitle">From MVP to 10M+ concurrent users - 6 enterprise-grade scaling phases</p>
+                <span class="section-label">{{ __('index.section_testimonials') }}</span>
+                <h2 id="heading-testimonials" class="section-title">{{ __('index.testimonials_title') }}</h2>
             </div>
-            
-            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 2rem;">
-                @php
-                $scaling_phases = [
-                    ['phase' => 'Phase 1', 'title' => 'MVP Launch', 'users' => '100-1K users', 'icon' => 'rocket_launch'],
-                    ['phase' => 'Phase 2', 'title' => 'Growth', 'users' => '1K-10K users', 'icon' => 'trending_up'],
-                    ['phase' => 'Phase 3', 'title' => 'Scaling', 'users' => '10K-100K users', 'icon' => 'expand'],
-                    ['phase' => 'Phase 4', 'title' => 'Multi-region', 'users' => '100K-1M users', 'icon' => 'public'],
-                    ['phase' => 'Phase 5', 'title' => 'Hyper-scale', 'users' => '1M-10M users', 'icon' => 'auto_awesome'],
-                    ['phase' => 'Phase 6', 'title' => 'Enterprise', 'users' => '10M+ users', 'icon' => 'domain'],
-                ];
-                @endphp
-                @foreach($scaling_phases as $sp)
-                <div style="background: white; border: 1px solid var(--border); border-radius: 12px; padding: 2rem 1.5rem; text-align: center; position: relative; transition: all 0.3s ease;" onmouseover="this.style.borderColor='var(--primary)'; this.style.boxShadow='0 12px 30px rgba(15, 107, 158, 0.12)'; this.style.transform='translateY(-5px)';" onmouseout="this.style.borderColor='var(--border)'; this.style.boxShadow=''; this.style.transform='';">
-                    <div style="position: absolute; top: -15px; left: 50%; transform: translateX(-50%); background: var(--primary); color: white; padding: 0.4rem 0.8rem; border-radius: 20px; font-size: 0.75rem; font-weight: 700;">
-                        {{ $sp['phase'] }}
+
+            <div class="testimonials-grid">
+                @for($t = 1; $t <= 2; $t++)
+                <div class="testimonial-card">
+                    <div class="testimonial-quote-mark">"</div>
+                    <blockquote class="testimonial-text">{{ __('index.testimonial' . $t . '_quote') }}</blockquote>
+                    <div class="testimonial-author">
+                        <div class="testimonial-avatar" style="background: linear-gradient(135deg, {{ $t === 1 ? '#3b82f6, #2563eb' : '#10b981, #059669' }});">
+                            {{ mb_substr(__('index.testimonial' . $t . '_name'), 0, 1) }}
+                        </div>
+                        <div>
+                            <div class="testimonial-name">{{ __('index.testimonial' . $t . '_name') }}</div>
+                            <div class="testimonial-role">{{ __('index.testimonial' . $t . '_title') }}</div>
+                        </div>
                     </div>
-                    <div style="font-size: 2.5rem; color: var(--primary); margin: 1rem 0;">
-                        <span class="material-symbols-rounded">{{ $sp['icon'] }}</span>
-                    </div>
-                    <h3 style="font-size: 1.1rem; font-weight: 700; color: var(--text-dark); margin-bottom: 0.5rem;">{{ $sp['title'] }}</h3>
-                    <p style="font-size: 0.85rem; color: var(--text-gray);">{{ $sp['users'] }}</p>
                 </div>
-                @endforeach
+                @endfor
             </div>
-            
-            <div style="text-align: center; margin-top: 3rem;">
-                <a href="{{ route('landing.scaling') }}" class="btn-primary-v5">
-                    <span>Explore Scaling Details</span>
+        </div>
+    </section>
+
+
+    {{-- 9. CTA --}}
+    <section id="cta" class="cta-banner" aria-labelledby="heading-cta">
+        <div class="container-v5 cta-banner__inner">
+            <span class="section-label cta-banner__label">{{ __('index.section_cta') }}</span>
+            <h2 id="heading-cta" class="cta-banner__title">
+                {{ __('index.cta_title') }}
+            </h2>
+            <p class="cta-banner__subtitle">
+                {{ __('index.cta_subtitle') }}
+            </p>
+            <div class="cta-banner__buttons">
+                <a href="{{ route('landing.contact') }}" class="btn-cta-white" data-ga-event="cta_click" data-ga-cta="bottom_consultation">
+                    <span class="material-symbols-rounded">calendar_month</span>
+                    <span>{{ __('index.cta_consultation') }}</span>
+                </a>
+                <a href="{{ route('landing.pricing') }}" class="btn-cta-ghost" data-ga-event="cta_click" data-ga-cta="bottom_pricing">
+                    <span>{{ __('index.cta_pricing') }}</span>
                     <span class="material-symbols-rounded">arrow_forward</span>
                 </a>
-            </div>
-        </div>
-    </section>
-
-    <!-- Why Choose -->
-    <section style="background: var(--secondary-bg);">
-        <div class="container-v5">
-            <div class="section-header">
-                <h2 class="section-title">Why Teams Choose HKIncotech</h2>
-                <p class="section-subtitle">The difference between a vendor and a technology partner you can depend on</p>
-            </div>
-            
-            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2rem;">
-                @php
-                $features = [
-                    ['icon' => 'verified_user', 'title' => 'Deep Expertise', 'desc' => '12+ years building enterprise-grade systems'],
-                    ['icon' => 'groups', 'title' => 'Expert Team', 'desc' => '100+ specialized engineers & architects'],
-                    ['icon' => 'speed', 'title' => 'Fast Delivery', 'desc' => 'MVP in 4-8 weeks, flexible scaling'],
-                    ['icon' => 'shield_lock', 'title' => 'High Security', 'desc' => 'ISO 27001, SOC 2, OWASP Level 3'],
-                    ['icon' => 'trending_up', 'title' => 'Scalable Architecture', 'desc' => 'From 100 to 10M+ concurrent users'],
-                    ['icon' => 'handshake', 'title' => 'True Partnership', 'desc' => 'Strategic partner, not just a vendor'],
-                ];
-                @endphp
-                @foreach($features as $f)
-                <div style="background: white; padding: 2rem; border-radius: 12px; border: 1px solid var(--border); text-align: center; transition: all 0.3s ease;" onmouseover="this.style.borderColor='var(--primary)'; this.style.boxShadow='0 12px 30px rgba(15, 107, 158, 0.12)'; this.style.transform='translateY(-5px)';" onmouseout="this.style.borderColor='var(--border)'; this.style.boxShadow=''; this.style.transform='';">
-                    <div style="font-size: 3rem; color: var(--primary); margin-bottom: 1rem;">
-                        <span class="material-symbols-rounded">{{ $f['icon'] }}</span>
-                    </div>
-                    <h3 style="font-size: 1.15rem; font-weight: 700; color: var(--text-dark); margin-bottom: 0.75rem;">{{ $f['title'] }}</h3>
-                    <p style="color: var(--text-gray); font-size: 0.95rem;">{{ $f['desc'] }}</p>
-                </div>
-                @endforeach
-            </div>
-        </div>
-    </section>
-
-    <!-- Success Stories Carousel -->
-    <section>
-        <div class="container-v5">
-            <div class="section-header">
-                <h2 class="section-title">Success Stories</h2>
-                <p class="section-subtitle">Featured case studies from our portfolio - Real results, real impact</p>
-            </div>
-            
-            <!-- Carousel Container -->
-            <div style="position: relative;">
-                <!-- Slides Wrapper -->
-                <div id="casesCarousel" style="overflow: hidden; border-radius: 12px; background: white; border: 1px solid var(--border); box-shadow: 0 10px 40px rgba(15, 107, 158, 0.08);">
-                    <div id="carouselInner" style="display: flex; transition: transform 0.5s ease-in-out;">
-                        
-                        @php
-                        $featured_cases = [
-                            [
-                                'badge' => 'Education',
-                                'badge_bg' => '#8b5cf6',
-                                'title' => 'Education Platform: Scheduling Automation',
-                                'description' => 'Comprehensive education operations platform built on a PHP REST API with PostgreSQL load balancing. Flexible timetable rules, workload balancing, and automated attendance handled peak enrollment without heavy AI.',
-                                'metrics' => [
-                                    ['value' => '21d → 2d', 'label' => 'Scheduling'],
-                                    ['value' => '99.9%', 'label' => 'Data Accuracy'],
-                                    ['value' => 'PostgreSQL', 'label' => 'Load Balanced']
-                                ],
-                                'svg_path' => 'M 30 150 Q 90 130, 150 90 Q 210 60, 270 30',
-                                'svg_points' => [
-                                    ['cx' => 30, 'cy' => 150, 'r' => 6, 'label' => 'Before', 'x' => 30, 'y' => 165],
-                                    ['cx' => 150, 'cy' => 90, 'r' => 6, 'label' => 'Phase 1', 'x' => 150, 'y' => 105],
-                                    ['cx' => 270, 'cy' => 30, 'r' => 8, 'label' => 'Result', 'x' => 270, 'y' => 45]
-                                ],
-                                'image_url' => null,
-                                'ongoing' => true,
-                            ],
-                            [
-                                'badge' => 'Logistics & Retail',
-                                'badge_bg' => '#f59e0b',
-                                'title' => 'Storage System: 1M+ Daily Transactions',
-                                'description' => 'Comprehensive WMS managing 10M SKUs across 50+ branches. Increased inventory accuracy to 99.8%, achieved 94% forecasting accuracy, handling 1M+ transactions daily.',
-                                'metrics' => [
-                                    ['value' => '99.8%', 'label' => 'Accuracy'],
-                                    ['value' => '10M', 'label' => 'SKUs'],
-                                    ['value' => '1M+', 'label' => 'Trans/Day']
-                                ],
-                                'svg_path' => 'M 30 170 L 80 140 L 130 110 L 180 80 L 230 50 L 270 25',
-                                'svg_points' => [
-                                    ['cx' => 30, 'cy' => 170, 'r' => 6, 'label' => 'Q1', 'x' => 30, 'y' => 185],
-                                    ['cx' => 130, 'cy' => 110, 'r' => 6, 'label' => 'Q2', 'x' => 130, 'y' => 125],
-                                    ['cx' => 230, 'cy' => 50, 'r' => 6, 'label' => 'Q3', 'x' => 230, 'y' => 65],
-                                    ['cx' => 270, 'cy' => 25, 'r' => 8, 'label' => '1M+', 'x' => 270, 'y' => 40]
-                                ],
-                                'image_url' => null,
-                                'ongoing' => true,
-                            ]
-                            ,[
-                                'badge' => 'Enterprise Management',
-                                'badge_bg' => '#10b981',
-                                'title' => 'ERP Management System',
-                                'description' => 'Unified accounting, procurement, inventory, e-commerce sync, and operations. Real-time consolidation, workflow automation, and BI dashboards for 100+ employees.',
-                                'metrics' => [
-                                    ['value' => '3d → 1m', 'label' => 'Consolidation'],
-                                    ['value' => '2h → 5m', 'label' => 'Reports'],
-                                    ['value' => '95%', 'label' => 'Adoption']
-                                ],
-                                'svg_path' => 'M 30 160 Q 110 120, 170 90 Q 230 60, 270 35',
-                                'svg_points' => [
-                                    ['cx' => 30, 'cy' => 160, 'r' => 6, 'label' => 'Manual', 'x' => 30, 'y' => 175],
-                                    ['cx' => 170, 'cy' => 90, 'r' => 6, 'label' => 'Unified', 'x' => 170, 'y' => 105],
-                                    ['cx' => 270, 'cy' => 35, 'r' => 8, 'label' => '1m', 'x' => 270, 'y' => 50]
-                                ],
-                                'image_url' => null,
-                                'ongoing' => true,
-                            ]
-                        ];
-                        @endphp
-                        
-                        @foreach($featured_cases as $case)
-                        <div class="carousel-slide" style="min-width: 100%; box-sizing: border-box;">
-                            <div class="case-study-grid" style="display: grid; grid-template-columns: 1fr 1fr; gap: 0;">
-                                <div style="padding: 3rem;">
-                                    <div style="display: inline-block; background: {{ $case['badge_bg'] }}15; color: {{ $case['badge_bg'] }}; padding: 0.4rem 1rem; border-radius: 20px; font-size: 0.85rem; font-weight: 700; margin-bottom: 1.5rem;">
-                                        {{ $case['badge'] }}
-                                    </div>
-                                    <h3 style="font-size: 2rem; font-weight: 800; color: var(--text-dark); margin-bottom: 1rem; line-height: 1.3;">
-                                        {{ $case['title'] }}
-                                    </h3>
-                                    <p style="color: var(--text-gray); font-size: 1rem; line-height: 1.8; margin-bottom: 2rem;">
-                                        {{ $case['description'] }}
-                                    </p>
-                                    
-                                    <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; margin-bottom: 2rem;">
-                                        @foreach($case['metrics'] as $metric)
-                                        <div>
-                                            <div style="font-size: 1.8rem; font-weight: 800; color: var(--primary);">{{ $metric['value'] }}</div>
-                                            <div style="font-size: 0.85rem; color: var(--text-gray); margin-top: 0.25rem;">{{ $metric['label'] }}</div>
-                                        </div>
-                                        @endforeach
-                                    </div>
-                                    
-                                    <a href="{{ route('landing.case-studies') }}" style="color: var(--primary); font-weight: 600; text-decoration: none; display: inline-flex; align-items: center; gap: 0.5rem;">
-                                        <span>Read Full Case Study</span>
-                                        <span class="material-symbols-rounded">arrow_forward</span>
-                                    </a>
-                                </div>
-                                
-                                <div class="position-relative @if($case['ongoing']) opacity-75 @endif" style="background: linear-gradient(135deg, {{ $case['badge_bg'] }} 0%, {{ $case['badge_bg'] }}dd 0%); padding: 5rem; display: flex; align-items: center; justify-content: center; min-height: 400px;">
-                                    @if($case['ongoing'])
-                                        <span class="badge  rounded-pill bg-warning position-absolute fs-6 top-0 mt-3 start-0 ms-3">
-                                            <span class="spinner-border spinner-border-sm me-1" role="status">
-                                                <span class="visually-hidden">Loading...</span>
-                                            </span>
-                                            Update Diagram
-                                        </span>
-                                    @endif
-
-                                    @if ($case['badge'] === 'Enterprise SaaS')
-                                        <img src="{{ asset('img/hkspace.png') }}" alt="HKSpace Dashboard Mockup" style="width: 100%; border-radius: 12px; box-shadow: 0 8px 20px rgba(0,0,0,0.1);"/>
-                                        <div class="position-absolute start-0 bottom-0 mb-4 ms-4 p-1">
-                                            <img src="{{ asset('img/hkspace_2.png') }}" alt="HKSpace Dashboard Mockup" style="width: 200px; border-radius: 12px; box-shadow: 0 8px 20px rgba(0,0,0,0.1);"/>
-                                        </div>
-                                    @elseif ($case['badge'] === 'Artificial Intelligence')
-                                        <img src="{{ asset('img/ai_face.svg') }}" width="100" />
-                                        <img src="{{ asset('img/ai_snow.svg') }}" width="100" class="mx-3" />
-                                        <img src="{{ asset('img/ai_robot.svg') }}" width="100" class="mx-3" />
-                                    @elseif ($case['badge'] === 'Education')
-                                        <img src="{{ asset('img/edu_book.svg') }}" width="100" />
-                                    @elseif ($case['badge'] === 'Logistics & Retail')
-                                        <img src="{{ asset('img/store_warehouse.svg') }}" width="100" />
-                                        <img src="{{ asset('img/store_barcode.svg') }}" width="100" class="mx-3" />
-                                        <img src="{{ asset('img/store_trolley.svg') }}" width="100" />
-                                    @elseif ($case['badge'] === 'Enterprise Management')
-                                        <img src="{{ asset('img/erp_apartment.svg') }}" width="100" />
-                                        {{-- <img src="{{ asset('img/store_barcode.svg') }}" width="100" class="mx-3" />
-                                        <img src="{{ asset('img/store_trolley.svg') }}" width="100" /> --}}
-                                    @else
-                                        <svg viewBox="0 0 300 200" style="width: 100%; max-width: 300px;">
-                                            <!-- Growth Curve -->
-                                            <path d="{{ $case['svg_path'] }}" 
-                                                fill="none" 
-                                                stroke="white" 
-                                                stroke-width="3" 
-                                                opacity="0.8"/>
-                                            
-                                            @foreach($case['svg_points'] as $point)
-                                            <circle cx="{{ $point['cx'] }}" cy="{{ $point['cy'] }}" r="{{ $point['r'] }}" fill="white" opacity="{{ $point['r'] > 6 ? '1' : '0.9' }}"/>
-                                            <text x="{{ $point['x'] }}" y="{{ $point['y'] }}" text-anchor="middle" font-size="10" fill="white" opacity="{{ $point['r'] > 6 ? '1' : '0.8' }}">{{ $point['label'] }}</text>
-                                            @endforeach
-                                        </svg>
-                                    @endif
-                                </div>
-                            </div>
-                        </div>
-                        @endforeach
-                        
-                    </div>
-                </div>
-                
-                <!-- Navigation Arrows -->
-                <button id="prevBtn" style="position: absolute; left: -20px; top: 50%; transform: translateY(-50%); background: white; border: 1px solid var(--border); width: 48px; height: 48px; border-radius: 50%; display: flex; align-items: center; justify-content: center; cursor: pointer; box-shadow: 0 4px 12px rgba(0,0,0,0.1); transition: all 0.3s ease; z-index: 10;" onmouseover="this.style.background='var(--primary)'; this.style.borderColor='var(--primary)'; this.querySelector('.material-symbols-rounded').style.color='white';" onmouseout="this.style.background='white'; this.style.borderColor='var(--border)'; this.querySelector('.material-symbols-rounded').style.color='var(--primary)';">
-                    <span class="material-symbols-rounded" style="color: var(--primary); transition: color 0.3s ease;">chevron_left</span>
-                </button>
-                
-                <button id="nextBtn" style="position: absolute; right: -20px; top: 50%; transform: translateY(-50%); background: white; border: 1px solid var(--border); width: 48px; height: 48px; border-radius: 50%; display: flex; align-items: center; justify-content: center; cursor: pointer; box-shadow: 0 4px 12px rgba(0,0,0,0.1); transition: all 0.3s ease; z-index: 10;" onmouseover="this.style.background='var(--primary)'; this.style.borderColor='var(--primary)'; this.querySelector('.material-symbols-rounded').style.color='white';" onmouseout="this.style.background='white'; this.style.borderColor='var(--border)'; this.querySelector('.material-symbols-rounded').style.color='var(--primary)';">
-                    <span class="material-symbols-rounded" style="color: var(--primary); transition: color 0.3s ease;">chevron_right</span>
-                </button>
-                
-                <!-- Dots Navigation -->
-                <div id="dotsContainer" style="display: flex; justify-content: center; gap: 0.75rem; margin-top: 2rem;">
-                    @for($i = 0; $i < count($featured_cases); $i++)
-                    <button class="carousel-dot" data-index="{{ $i }}" style="width: 12px; height: 12px; border-radius: 50%; border: 2px solid var(--primary); background: {{ $i === 0 ? 'var(--primary)' : 'transparent' }}; cursor: pointer; transition: all 0.3s ease;" onmouseover="if(this.style.background !== 'var(--primary)') this.style.background='#0f6b9e33';" onmouseout="if(this.style.background !== 'var(--primary)') this.style.background='transparent';"></button>
-                    @endfor
-                </div>
-            </div>
-        </div>
-    </section>
-    
-    <script>
-    (function() {
-        const carouselInner = document.getElementById('carouselInner');
-        const slides = document.querySelectorAll('.carousel-slide');
-        const dots = document.querySelectorAll('.carousel-dot');
-        const prevBtn = document.getElementById('prevBtn');
-        const nextBtn = document.getElementById('nextBtn');
-        
-        let currentIndex = 0;
-        const totalSlides = slides.length;
-        
-        function updateCarousel(index) {
-            currentIndex = index;
-            if (currentIndex < 0) currentIndex = totalSlides - 1;
-            if (currentIndex >= totalSlides) currentIndex = 0;
-            
-            const offset = -currentIndex * 100;
-            carouselInner.style.transform = `translateX(${offset}%)`;
-            
-            // Update dots
-            dots.forEach((dot, i) => {
-                if (i === currentIndex) {
-                    dot.style.background = 'var(--primary)';
-                    dot.style.width = '32px';
-                    dot.style.borderRadius = '6px';
-                } else {
-                    dot.style.background = 'transparent';
-                    dot.style.width = '12px';
-                    dot.style.borderRadius = '50%';
-                }
-            });
-        }
-        
-        // Previous button
-        prevBtn.addEventListener('click', () => {
-            updateCarousel(currentIndex - 1);
-        });
-        
-        // Next button
-        nextBtn.addEventListener('click', () => {
-            updateCarousel(currentIndex + 1);
-        });
-        
-        // Dots navigation
-        dots.forEach(dot => {
-            dot.addEventListener('click', () => {
-                const index = parseInt(dot.dataset.index);
-                updateCarousel(index);
-            });
-        });
-        
-        // Auto-play (optional)
-        let autoPlayInterval = setInterval(() => {
-            updateCarousel(currentIndex + 1);
-        }, 5000);
-        
-        // Pause on hover
-        const carousel = document.getElementById('casesCarousel');
-        carousel.addEventListener('mouseenter', () => {
-            clearInterval(autoPlayInterval);
-        });
-        
-        carousel.addEventListener('mouseleave', () => {
-            autoPlayInterval = setInterval(() => {
-                updateCarousel(currentIndex + 1);
-            }, 5000);
-        });
-        
-        // Keyboard navigation
-        document.addEventListener('keydown', (e) => {
-            if (e.key === 'ArrowLeft') {
-                updateCarousel(currentIndex - 1);
-            } else if (e.key === 'ArrowRight') {
-                updateCarousel(currentIndex + 1);
-            }
-        });
-    })();
-    </script>
-
-    <!-- Research & Development Section -->
-    <section style="background: linear-gradient(135deg, #f8fafc 0%, #ecfdf5 100%); padding: 5rem 0;">
-        <div class="container-v5">
-            <div class="section-header">
-                <h2 class="section-title">Research & Development</h2>
-                <p class="section-subtitle">Building foundational technology for the AI era—infrastructure and intelligence layers that enable adaptive enterprise systems</p>
-            </div>
-
-            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 2.5rem; margin-top: 3rem;">
-                
-                <!-- HKSpace R&D Card -->
-                <a href="{{ route('landing.blog.r_and_d') }}" style="text-decoration: none; display: block; background: linear-gradient(135deg, #f0f9ff 0%, #ecfdf5 100%); border-radius: 16px; padding: 2.5rem; border: 1px solid #bfdbfe; transition: all 0.3s ease; box-shadow: 0 4px 20px rgba(15, 107, 158, 0.08);" onmouseover="this.style.transform='translateY(-8px)'; this.style.boxShadow='0 12px 40px rgba(15, 107, 158, 0.15)';" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 4px 20px rgba(15, 107, 158, 0.08)';">
-                    <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1.5rem;">
-                        <div style="background: var(--primary); width: 48px; height: 48px; border-radius: 12px; display: flex; align-items: center; justify-content: center;">
-                            <span class="material-symbols-rounded" style="color: white; font-size: 28px;">hub</span>
-                        </div>
-                        <div>
-                            <h3 style="font-size: 1.5rem; font-weight: 700; color: var(--text-dark); margin: 0;">HKSpace</h3>
-                            <p style="font-size: 0.85rem; color: var(--primary); font-weight: 600; margin: 0;">Infrastructure Foundation</p>
-                        </div>
-                    </div>
-                    
-                    <p style="color: var(--text-gray); line-height: 1.7; margin-bottom: 1.5rem; font-size: 0.95rem;">
-                        Architectural substrate for adaptive enterprise systems. A general-purpose distributed platform abstracting multi-tenancy, real-time synchronization, and composable workflows—enabling systems that evolve with organizational needs.
-                    </p>
-
-                    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin-bottom: 1.5rem;">
-                        <div style="background: white; border-radius: 8px; padding: 1rem; border: 1px solid #d1e7f5;">
-                            <p style="color: var(--text-dark); font-weight: 600; font-size: 0.85rem; margin-bottom: 0.25rem;">Composable</p>
-                            <p style="color: var(--text-gray); font-size: 0.8rem; margin: 0;">Domain-agnostic layers</p>
-                        </div>
-                        <div style="background: white; border-radius: 8px; padding: 1rem; border: 1px solid #d1e7f5;">
-                            <p style="color: var(--text-dark); font-weight: 600; font-size: 0.85rem; margin-bottom: 0.25rem;">AI-Native</p>
-                            <p style="color: var(--text-gray); font-size: 0.8rem; margin: 0;">Built for intelligence</p>
-                        </div>
-                    </div>
-
-                    <div style="display: flex; align-items: center; gap: 0.5rem; color: var(--primary); font-weight: 600;">
-                        <span>Explore Research</span>
-                        <span class="material-symbols-rounded" style="font-size: 20px;">arrow_forward</span>
-                    </div>
-                </a>
-
-                <!-- AI Knowledge Platform R&D Card -->
-                <a href="{{ route('landing.blog.r_and_d') }}" style="text-decoration: none; display: block; background: linear-gradient(135deg, #fef3c7 0%, #fde68a 100%); border-radius: 16px; padding: 2.5rem; border: 1px solid #fcd34d; transition: all 0.3s ease; box-shadow: 0 4px 20px rgba(217, 119, 6, 0.08);" onmouseover="this.style.transform='translateY(-8px)'; this.style.boxShadow='0 12px 40px rgba(217, 119, 6, 0.15)';" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 4px 20px rgba(217, 119, 6, 0.08)';">
-                    <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1.5rem;">
-                        <div style="background: #d97706; width: 48px; height: 48px; border-radius: 12px; display: flex; align-items: center; justify-content: center;">
-                            <span class="material-symbols-rounded" style="color: white; font-size: 28px;">auto_awesome</span>
-                        </div>
-                        <div>
-                            <h3 style="font-size: 1.5rem; font-weight: 700; color: var(--text-dark); margin: 0;">AI Platform</h3>
-                            <p style="font-size: 0.85rem; color: #d97706; font-weight: 600; margin: 0;">Cognitive Substrate</p>
-                        </div>
-                    </div>
-                    
-                    <p style="color: var(--text-gray); line-height: 1.7; margin-bottom: 1.5rem; font-size: 0.95rem;">
-                        Long-term research into intelligent systems as enterprise force multipliers. Semantic understanding, grounded reasoning, and autonomous optimization—AI deeply integrated with distributed infrastructure rather than bolt-on features.
-                    </p>
-
-                    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin-bottom: 1.5rem;">
-                        <div style="background: white; border-radius: 8px; padding: 1rem; border: 1px solid #fde68a;">
-                            <p style="color: var(--text-dark); font-weight: 600; font-size: 0.85rem; margin-bottom: 0.25rem;">Semantic</p>
-                            <p style="color: var(--text-gray); font-size: 0.8rem; margin: 0;">Vector understanding</p>
-                        </div>
-                        <div style="background: white; border-radius: 8px; padding: 1rem; border: 1px solid #fde68a;">
-                            <p style="color: var(--text-dark); font-weight: 600; font-size: 0.85rem; margin-bottom: 0.25rem;">Adaptive</p>
-                            <p style="color: var(--text-gray); font-size: 0.8rem; margin: 0;">Context-aware</p>
-                        </div>
-                    </div>
-
-                    <div style="display: flex; align-items: center; gap: 0.5rem; color: #d97706; font-weight: 600;">
-                        <span>Explore Research</span>
-                        <span class="material-symbols-rounded" style="font-size: 20px;">arrow_forward</span>
-                    </div>
-                </a>
-
-            </div>
-
-            <div style="text-align: center; margin-top: 3rem;">
-                <p style="color: var(--text-gray); font-size: 0.95rem; line-height: 1.7; max-width: 800px; margin: 0 auto; font-style: italic;">
-                    These initiatives represent complementary research directions: HKSpace provides the infrastructure substrate, while AI provides the cognitive layer. Together, they explore what becomes possible when intelligent systems are built as native components of enterprise architecture.
-                </p>
-            </div>
-        </div>
-    </section>
-
-    <!-- Client Testimonials -->
-    <section class="opacity-75" style="background: var(--secondary-bg);">
-        <div class="container-v5">
-            <div class="section-header">
-                <h2 class="section-title">What Our Clients Say <span class="badge  rounded-pill bg-warning">Demo data</span></h2>
-                <p class="section-subtitle">Feedback from our partners and clients</p>
-            </div>
-            
-            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem;">
-                <?php
-                $testimonials = [
-                    [
-                        'name' => 'Nguyễn Văn A',
-                        'title' => 'CTO, FinTech Startup',
-                        'quote' => 'HKIncotech đã giúp chúng tôi scale từ 0 đến 100K users trong 12 tháng. Team rất pro, delivery đúng hẹn.',
-                        'rating' => 5
-                    ],
-                    [
-                        'name' => 'Sarah Johnson',
-                        'title' => 'CEO, E-commerce Platform',
-                        'quote' => 'Best development partner we\'ve worked with. Their SCRUM process is transparent and efficient.',
-                        'rating' => 5
-                    ],
-                    [
-                        'name' => 'Trần Thị B',
-                        'title' => 'Product Manager, Healthcare',
-                        'quote' => 'Kiến trúc bảo mật enterprise-grade, compliance đầy đủ. Tin cậy 100% cho healthcare data.',
-                        'rating' => 5
-                    ],
-                ];
-                foreach ($testimonials as $t):
-                ?>
-                <div style="background: white; border: 1px solid var(--border); border-radius: 12px; padding: 2rem; position: relative; transition: all 0.3s ease;" onmouseover="this.style.borderColor='var(--primary)'; this.style.boxShadow='0 12px 30px rgba(15, 107, 158, 0.12)';" onmouseout="this.style.borderColor='var(--border)'; this.style.boxShadow='';">
-                    <div style="color: var(--primary); font-size: 3rem; line-height: 1; margin-bottom: 1rem; opacity: 0.3;">"</div>
-                    <p style="color: var(--text-gray); font-size: 0.95rem; line-height: 1.7; margin-bottom: 1.5rem; font-style: italic;">
-                        <?php echo $t['quote']; ?>
-                    </p>
-                    <div style="display: flex; align-items: center; gap: 1rem;">
-                        <div style="width: 50px; height: 50px; background: linear-gradient(135deg, var(--primary), var(--accent)); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white; font-weight: 700; font-size: 1.2rem;">
-                            <?php echo substr($t['name'], 0, 1); ?>
-                        </div>
-                        <div>
-                            <div style="font-weight: 700; color: var(--text-dark);"><?php echo $t['name']; ?></div>
-                            <div style="font-size: 0.85rem; color: var(--text-gray);"><?php echo $t['title']; ?></div>
-                            <div style="color: #fbbf24; margin-top: 0.25rem;">
-                                <?php for($i = 0; $i < $t['rating']; $i++): ?>★<?php endfor; ?>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <?php endforeach; ?>
-            </div>
-            
-            <div style="text-align: center; margin-top: 3rem;">
-                <a href="{{ route('landing.case-studies') }}" style="color: var(--primary); font-weight: 600; text-decoration: none; display: inline-flex; align-items: center; gap: 0.5rem;">
-                    <span>View More Case Studies & Testimonials</span>
-                    <span class="material-symbols-rounded">arrow_forward</span>
-                </a>
-            </div>
-        </div>
-    </section>
-
-    <!-- CTA Banner -->
-    <section>
-        <div class="container-v5">
-            <div style="background: linear-gradient(135deg, var(--primary) 0%, var(--primary-light) 100%); border-radius: 12px; padding: 4rem 2rem; text-align: center; color: white; position: relative; overflow: hidden;">
-                <div style="position: absolute; top: 0; right: 0; width: 300px; height: 300px; background: rgba(255,255,255,0.05); border-radius: 50%; transform: translate(30%, -30%);"></div>
-                <div style="position: absolute; bottom: 0; left: 0; width: 200px; height: 200px; background: rgba(255,255,255,0.05); border-radius: 50%; transform: translate(-30%, 30%);"></div>
-                
-                <div style="position: relative; z-index: 1;">
-                    <h2 style="font-size: 2.5rem; font-weight: 800; margin-bottom: 1rem;">Ready to Start Your Project?</h2>
-                    <p style="font-size: 1.1rem; margin-bottom: 2.5rem; opacity: 0.95; max-width: 600px; margin-left: auto; margin-right: auto;">
-                        Schedule a free 30-minute consultation to discuss your project. We'll provide optimal solutions and detailed pricing.
-                    </p>
-                    <div style="display: flex; gap: 1.5rem; justify-content: center; flex-wrap: wrap;">
-                        <a href="{{ route('landing.contact') }}" style="background: white; color: var(--primary); padding: 1rem 2.5rem; border-radius: 8px; font-weight: 600; text-decoration: none; display: inline-flex; align-items: center; gap: 0.75rem; transition: all 0.3s ease; box-shadow: 0 4px 12px rgba(0,0,0,0.1);" onmouseover="this.style.backgroundColor='var(--secondary-bg)'; this.style.transform='translateY(-2px)'; this.style.boxShadow='0 8px 20px rgba(0,0,0,0.15)';" onmouseout="this.style.backgroundColor='white'; this.style.transform=''; this.style.boxShadow='0 4px 12px rgba(0,0,0,0.1)';">
-                            <span>Schedule Consultation</span>
-                            <span class="material-symbols-rounded">arrow_forward</span>
-                        </a>
-                        <a href="{{ route('landing.pricing') }}" style="background: transparent; color: white; padding: 1rem 2.5rem; border-radius: 8px; font-weight: 600; text-decoration: none; display: inline-flex; align-items: center; gap: 0.75rem; border: 2px solid white; transition: all 0.3s ease;" onmouseover="this.style.backgroundColor='rgba(255,255,255,0.1)';" onmouseout="this.style.backgroundColor='transparent';">
-                            <span>View Cost & Plans</span>
-                            <span class="material-symbols-rounded">receipt_long</span>
-                        </a>
-                    </div>
-                </div>
             </div>
         </div>
     </section>

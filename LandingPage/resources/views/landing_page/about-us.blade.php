@@ -3,14 +3,14 @@
 @section('content')
 
     <!-- Hero -->
-    <section style="min-height: 60vh; display: flex; align-items: center; padding: 6rem 2rem; background: linear-gradient(135deg, #ffffff 0%, var(--secondary-bg) 100%);">
+    <section style="min-height: 60vh; display: flex; align-items: center; padding: 6rem 2rem; background: linear-gradient(135deg, var(--surface) 0%, var(--secondary-bg) 100%);">
         <div class="container-v5">
             <div style="text-align: center; max-width: 900px; margin: 0 auto;">
-                <h1 style="font-size: 3.5rem; font-weight: 800; line-height: 1.15; margin-bottom: 1.5rem; color: var(--text-dark);">
-                    Built by Engineers,<br><span style="color: var(--primary);">Trusted by Enterprises.</span>
+                <h1 style="font-size: 2.75rem; font-weight: 800; line-height: 1.15; margin-bottom: 1.5rem; color: var(--text-dark);">
+                    {{ __('about.hero_title') }} <span style="color: var(--primary);">{{ __('about.hero_title_accent') }}</span>
                 </h1>
                 <p style="font-size: 1.15rem; color: var(--text-gray); line-height: 1.8;">
-                    12 years of shipping production systems. 50+ projects delivered. A team of 50+ senior engineers who've built everything from startup MVPs to platforms serving millions of users.
+                    {{ __('about.hero_desc') }}
                 </p>
             </div>
         </div>
@@ -20,67 +20,60 @@
     <section>
         <div class="container-v5">
             <div class="section-header">
-                <h2 class="section-title">HKIncotech Story</h2>
-                <p class="section-subtitle">From a small team to a trusted engineering partner</p>
+                <span class="section-label">OUR STORY</span>
+                <h2 class="section-title">{{ __('about.story_title') }}</h2>
+                <p class="section-subtitle">{{ __('about.story_subtitle') }}</p>
             </div>
-            
+
             <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: center;">
-                
+
                 <div>
                     <h3 style="font-size: 1.25rem; font-weight: 700; color: var(--text-dark); margin-bottom: 0.75rem;">
-                        Start (2012)
+                        {{ __('about.story_start_title') }}
                     </h3>
                     <p style="color: var(--text-gray); line-height: 1.8; margin-bottom: 1.25rem;">
-                        Founded with 5 engineers focused on delivering reliable software that moves business forward.
+                        {{ __('about.story_start_desc') }}
                     </p>
-                    
+
                     <h3 style="font-size: 1.25rem; font-weight: 700; color: var(--text-dark); margin-bottom: 0.75rem;">
-                        Growth (2015)
+                        {{ __('about.story_growth_title') }}
                     </h3>
                     <p style="color: var(--text-gray); line-height: 1.8; margin-bottom: 1.25rem;">
-                        Delivered 40+ projects and expanded into enterprise clients. Established presence in Singapore and Thailand serving startups and Fortune 500 companies.
+                        {{ __('about.story_growth_desc') }}
                     </p>
-                    
+
                     <h3 style="font-size: 1.25rem; font-weight: 700; color: var(--text-dark); margin-bottom: 0.75rem;">
-                        Expansion (2020)
+                        {{ __('about.story_expansion_title') }}
                     </h3>
                     <p style="color: var(--text-gray); line-height: 1.8; margin-bottom: 1.25rem;">
-                        Grew to 30+ lead engineers with global operations. Deepened expertise in SaaS, AI, and enterprise solutions across multiple regions.
+                        {{ __('about.story_expansion_desc') }}
                     </p>
-                    
+
                     <h3 style="font-size: 1.25rem; font-weight: 700; color: var(--text-dark); margin-bottom: 0.75rem;">
-                        Today (2026)
+                        {{ __('about.story_today_title') }}
                     </h3>
                     <p style="color: var(--text-gray); line-height: 1.8;">
-                        50+ senior engineers, 100+ projects delivered, and own SaaS platforms (HKSpace). Mission: Help 20+ companies achieve measurable digital transformation.
+                        {{ __('about.story_today_desc') }}
                     </p>
                 </div>
                 
-                <div style="background: white; border-radius: 12px; padding: 2rem; border: 1px solid var(--border);">
+                <div style="background: white; border-radius: var(--card-radius); padding: 2rem; border: 1px solid var(--border);">
                     <div style="position: relative; max-width: 500px; margin: 0 auto;">
-                        @php
-                        $milestones = [
-                            ['year' => '2012', 'title' => 'Start', 'desc' => '5 developers', 'highlight' => false],
-                            ['year' => '2015', 'title' => 'Growth', 'desc' => '40+ projects, enterprise clients', 'highlight' => false],
-                            ['year' => '2020', 'title' => 'Expansion', 'desc' => '30+ lead engineers, expanded globally', 'highlight' => false],
-                            ['year' => '2026', 'title' => 'Lead', 'desc' => '50+ engineers, 100+ projects, own SaaS platforms', 'highlight' => true],
-                        ];
-                        @endphp
-                        
+                        @php $milestones = __('about.milestones'); @endphp
                         @foreach($milestones as $index => $milestone)
                         <div class="d-flex align-items-start position-relative" style="margin-bottom: {{ $index < count($milestones) - 1 ? '2rem' : '0' }};">
                             <!-- Timeline Line -->
                             @if($index < count($milestones) - 1)
-                            <div style="position: absolute; left: 22px; top: 48px; width: 3px; height: calc(100% + 2rem); background: linear-gradient(180deg, var(--primary) 0%, rgba(15, 107, 158, 0.2) 100%);"></div>
+                            <div style="position: absolute; left: 22px; top: 48px; width: 3px; height: calc(100% + 2rem); background: linear-gradient(180deg, var(--primary) 0%, rgba(26, 77, 94, 0.2) 100%);"></div>
                             @endif
                             
                             <!-- Circle Number -->
-                            <div class="flex-shrink-0" style="width: 48px; height: 48px; border-radius: 50%; background: {{ $milestone['highlight'] ? 'var(--primary)' : 'white' }}; border: 3px solid var(--primary); display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 1.1rem; color: {{ $milestone['highlight'] ? 'white' : 'var(--primary)' }}; box-shadow: 0 2px 8px rgba(15, 107, 158, 0.15); position: relative; z-index: 1;">
+                            <div class="flex-shrink-0" style="width: 48px; height: 48px; border-radius: 50%; background: {{ $milestone['highlight'] ? 'var(--primary)' : 'white' }}; border: 3px solid var(--primary); display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 1.1rem; color: {{ $milestone['highlight'] ? 'white' : 'var(--primary)' }}; box-shadow: 0 2px 8px rgba(26, 77, 94, 0.15); position: relative; z-index: 1;">
                                 {{ $index + 1 }}
                             </div>
                             
                             <!-- Content Card -->
-                            <div class="flex-grow-1 ms-3" style="background: {{ $milestone['highlight'] ? 'rgba(15, 107, 158, 0.05)' : '#f9fafb' }}; border: {{ $milestone['highlight'] ? '2px solid var(--primary)' : '1px solid #e5e7eb' }}; border-radius: 8px; padding: 1rem 1.25rem;">
+                            <div class="flex-grow-1 ms-3" style="background: {{ $milestone['highlight'] ? 'rgba(26, 77, 94, 0.05)' : '#f9fafb' }}; border: {{ $milestone['highlight'] ? '2px solid var(--primary)' : '1px solid #e5e7eb' }}; border-radius: 8px; padding: 1rem 1.25rem;">
                                 <h5 class="mb-1" style="color: var(--primary); font-weight: 700; font-size: 1rem;">
                                     {{ $milestone['year'] }}: {{ $milestone['title'] }}
                                 </h5>
@@ -100,24 +93,15 @@
     <section style="background: var(--secondary-bg);">
         <div class="container-v5">
             <div class="section-header">
-                <h2 class="section-title">Mission & Values</h2>
-                <p class="section-subtitle">Principles guiding how we build and deliver</p>
+                <span class="section-label">OUR VALUES</span>
+                <h2 class="section-title">{{ __('about.values_title') }}</h2>
+                <p class="section-subtitle">{{ __('about.values_subtitle') }}</p>
             </div>
-            
+
             <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2rem;">
-                @php
-                $values = [
-                    ['icon' => 'target', 'title' => 'Mission', 'desc' => 'Help 20+ companies achieve digital transformation with tangible outcomes.'],
-                    ['icon' => 'diamond', 'title' => 'Quality', 'desc' => 'High bar for reliability and performance. Automated testing and reviews by default.'],
-                    ['icon' => 'handshake', 'title' => 'Partnership', 'desc' => 'Aligned incentives and transparency; long-term relationships over short-term gains.'],
-                    ['icon' => 'lightbulb', 'title' => 'Innovation', 'desc' => 'Continuous learning, prototyping, and adopting proven best practices.'],
-                    ['icon' => 'people', 'title' => 'People First', 'desc' => 'Invest in teams and culture; skilled, supported teams deliver better products.'],
-                    ['icon' => 'globe', 'title' => 'Transparency', 'desc' => 'Clear communication, real-time progress, no surprises.'],
-                ];
-                @endphp
-                @foreach($values as $v)
-                <div style="background: white; border-radius: 12px; padding: 2rem; text-align: center;">
-                    <div style="font-size: 2.5rem; color: var(--primary); margin-bottom: 1rem;">
+                @foreach(__('about.values') as $v)
+                <div style="background: white; border-radius: var(--card-radius); padding: 2rem; text-align: center;">
+                    <div style="font-size: 2rem; color: var(--primary); margin-bottom: 1rem;">
                         <span class="material-symbols-rounded">{{ $v['icon'] }}</span>
                     </div>
                     <h3 style="font-size: 1.1rem; font-weight: 700; color: var(--text-dark); margin-bottom: 0.75rem;">
@@ -132,123 +116,45 @@
         </div>
     </section>
 
-    <!-- Engineering Culture -->
+    <!-- Leadership Team -->
     <section>
         <div class="container-v5">
             <div class="section-header">
-                <h2 class="section-title">Engineering Culture</h2>
-                <p class="section-subtitle">How we build matters as much as what we build</p>
+                <span class="section-label">{{ __('about.section_team') }}</span>
+                <h2 class="section-title">{{ __('about.team_title') }}</h2>
+                <p class="section-subtitle">{{ __('about.team_subtitle') }}</p>
             </div>
 
-            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem;">
-                <div style="background: white; border: 1px solid var(--border); border-radius: 12px; padding: 2rem;">
-                    <div style="font-size: 2rem; color: var(--primary); margin-bottom: 1rem;">
-                        <span class="material-symbols-rounded">code_blocks</span>
-                    </div>
-                    <h3 style="font-size: 1.15rem; font-weight: 700; color: var(--text-dark); margin-bottom: 0.75rem;">High Engineering Bar</h3>
-                    <p style="color: var(--text-gray); font-size: 0.95rem; line-height: 1.7;">
-                        Every pull request goes through mandatory code review. Automated testing runs on every commit. We measure code coverage, performance budgets, and security scans — not just whether it works.
-                    </p>
-                </div>
-
-                <div style="background: white; border: 1px solid var(--border); border-radius: 12px; padding: 2rem;">
-                    <div style="font-size: 2rem; color: var(--primary); margin-bottom: 1rem;">
-                        <span class="material-symbols-rounded">school</span>
-                    </div>
-                    <h3 style="font-size: 1.15rem; font-weight: 700; color: var(--text-dark); margin-bottom: 0.75rem;">Continuous Learning</h3>
-                    <p style="color: var(--text-gray); font-size: 0.95rem; line-height: 1.7;">
-                        Weekly tech talks, certification programs, and dedicated R&D time. Our engineers stay current with AI/ML, cloud-native patterns, and emerging frameworks — so your project benefits from the latest proven approaches.
-                    </p>
-                </div>
-
-                <div style="background: white; border: 1px solid var(--border); border-radius: 12px; padding: 2rem;">
-                    <div style="font-size: 2rem; color: var(--primary); margin-bottom: 1rem;">
-                        <span class="material-symbols-rounded">monitoring</span>
-                    </div>
-                    <h3 style="font-size: 1.15rem; font-weight: 700; color: var(--text-dark); margin-bottom: 0.75rem;">Production-First Mindset</h3>
-                    <p style="color: var(--text-gray); font-size: 0.95rem; line-height: 1.7;">
-                        We don't just build features — we build systems that run reliably at scale. Observability, alerting, and incident response are built in from day one, not bolted on after launch.
-                    </p>
-                </div>
-
-                <div style="background: white; border: 1px solid var(--border); border-radius: 12px; padding: 2rem;">
-                    <div style="font-size: 2rem; color: var(--primary); margin-bottom: 1rem;">
-                        <span class="material-symbols-rounded">diversity_3</span>
-                    </div>
-                    <h3 style="font-size: 1.15rem; font-weight: 700; color: var(--text-dark); margin-bottom: 0.75rem;">Cross-Functional Teams</h3>
-                    <p style="color: var(--text-gray); font-size: 0.95rem; line-height: 1.7;">
-                        Every project gets a dedicated team: architects, senior developers, QA engineers, and a project manager. No shared resources, no context switching — your team is fully committed to your success.
-                    </p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Leadership Team -->
-    <section class="opacity-75">
-        <div class="container-v5">
-            <div class="section-header">
-                <h2 class="section-title">Leadership Team  <span class="badge  rounded-pill bg-warning">Draft</span></h2>
-                <p class="section-subtitle">Experienced leaders with delivery track records</p>
-            </div>
-            
             <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2rem;">
-                <?php
-                $leaders = [
-                    [
-                        'name' => '--- --- ---',
-                        'title' => 'Founder & CEO',
-                        'bio' => '15+ years tech leadership. Ex-Google, ex-Amazon. Led 50+ projects, $100M+ revenue.',
-                        'skills' => ['Tech Strategy', 'Team Building', 'Scaling']
-                    ],
-                    [
-                        'name' => '--- --- ---',
-                        'title' => 'CTO & Lead Architect',
-                        'bio' => '14+ years backend engineering. Microservices, Cloud, Big Data. Patent holder.',
-                        'skills' => ['Architecture', 'Cloud Infra', 'Performance']
-                    ],
-                    [
-                        'name' => '--- --- ---',
-                        'title' => 'VP Product',
-                        'bio' => '12+ years product management. Ex-Grab, ex-Gojek. 3 successful exits.',
-                        'skills' => ['Product Strategy', 'Growth', 'User Experience']
-                    ],
-                    [
-                        'name' => '--- --- ---',
-                        'title' => 'VP Engineering',
-                        'bio' => '11+ years engineering management. Certified Scrum Master. Agile expert.',
-                        'skills' => ['Team Leadership', 'DevOps', 'Quality Assurance']
-                    ],
-                ];
-                foreach ($leaders as $leader):
-                ?>
-                <div style="background: white; border: 1px solid var(--border); border-radius: 12px; overflow: hidden; transition: all 0.3s ease;" onmouseover="this.style.borderColor='var(--primary)'; this.style.boxShadow='0 12px 30px rgba(15, 107, 158, 0.1)';" onmouseout="this.style.borderColor='var(--border)'; this.style.boxShadow='';">
+                @php $leaders = __('about.team'); @endphp
+                @foreach($leaders as $leader)
+                <div style="background: white; border: 1px solid var(--border); border-radius: var(--card-radius); overflow: hidden; transition: all 0.3s ease;" onmouseover="this.style.borderColor='var(--primary)'; this.style.boxShadow='0 12px 30px rgba(26, 77, 94, 0.1)';" onmouseout="this.style.borderColor='var(--border)'; this.style.boxShadow='';">
                     <div style="background: linear-gradient(135deg, var(--primary) 0%, var(--primary-light) 100%); height: 150px;"></div>
                     <div style="padding: 1.5rem; text-align: center; margin-top: -60px;">
                         <div style="width: 120px; height: 120px; background: white; border: 3px solid var(--border); border-radius: 50%; margin: 0 auto 1rem; display: flex; align-items: center; justify-content: center;">
-                            <div style="font-size: 3rem; color: var(--primary);">
+                            <div style="font-size: 2rem; color: var(--primary);">
                                 <span class="material-symbols-rounded">account_circle</span>
                             </div>
                         </div>
                         <h3 style="font-size: 1.1rem; font-weight: 700; color: var(--text-dark); margin-bottom: 0.25rem;">
-                            <?php echo $leader['name']; ?>
+                            {{ $leader['name'] }}
                         </h3>
                         <div style="color: var(--primary); font-weight: 600; font-size: 0.9rem; margin-bottom: 1rem;">
-                            <?php echo $leader['title']; ?>
+                            {{ $leader['title'] }}
                         </div>
                         <p style="color: var(--text-gray); font-size: 0.9rem; line-height: 1.6; margin-bottom: 1rem;">
-                            <?php echo $leader['bio']; ?>
+                            {{ $leader['bio'] }}
                         </p>
                         <div style="display: flex; flex-wrap: wrap; gap: 0.5rem; justify-content: center;">
-                            <?php foreach ($leader['skills'] as $skill): ?>
+                            @foreach($leader['skills'] as $skill)
                             <span style="background: var(--secondary-bg); color: var(--primary); padding: 0.3rem 0.75rem; border-radius: 20px; font-size: 0.8rem; font-weight: 600;">
-                                <?php echo $skill; ?>
+                                {{ $skill }}
                             </span>
-                            <?php endforeach; ?>
+                            @endforeach
                         </div>
                     </div>
                 </div>
-                <?php endforeach; ?>
+                @endforeach
             </div>
         </div>
     </section>
@@ -257,24 +163,15 @@
     <section style="background: white;">
         <div class="container-v5">
             <div class="section-header">
-                <h2 class="section-title">Achievements</h2>
-                <p class="section-subtitle">Results earned through consistent delivery</p>
+                <span class="section-label">ACHIEVEMENTS</span>
+                <h2 class="section-title">{{ __('about.achievements_title') }}</h2>
+                <p class="section-subtitle">{{ __('about.achievements_subtitle') }}</p>
             </div>
-            
+
             <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem;">
-                @php
-                $achievements = [
-                    ['num' => '100+', 'title' => 'Projects Completed', 'desc' => 'From startup launches to enterprise rollouts'],
-                    ['num' => '20+', 'title' => 'Senior Engineers', 'desc' => 'Certified and experienced team'],
-                    ['num' => '99.99%', 'title' => 'Uptime Record', 'desc' => 'Reliability focus'],
-                    ['num' => '12+', 'title' => 'Years of Delivery', 'desc' => 'Proven track record'],
-                    ['num' => '$1M', 'title' => 'Project Value', 'desc' => 'Solutions delivered'],
-                    ['num' => '10+', 'title' => 'Industries Served', 'desc' => 'Cross-industry expertise'],
-                ];
-                @endphp
-                @foreach($achievements as $a)
-                <div style="background: white; border-radius: 12px; padding: 2.5rem; text-align: center; border: 1px solid var(--border);">
-                    <div style="font-size: 2.5rem; font-weight: 800; color: var(--primary); margin-bottom: 0.5rem;">
+                @foreach(__('about.achievements') as $a)
+                <div style="background: white; border-radius: var(--card-radius); padding: 2.5rem; text-align: center; border: 1px solid var(--border);">
+                    <div style="font-size: 2rem; font-weight: 800; color: var(--primary); margin-bottom: 0.5rem;">
                         {{ $a['num'] }}
                     </div>
                     <div style="font-weight: 700; color: var(--text-dark); margin-bottom: 0.5rem;">
@@ -292,13 +189,13 @@
     <!-- CTA -->
     <section style="background: var(--secondary-bg);">
         <div class="container-v5">
-            <div style="background: linear-gradient(135deg, var(--primary) 0%, var(--primary-light) 100%); border-radius: 12px; padding: 3.5rem 2rem; text-align: center; color: white;">
-                <h2 style="font-size: 2.5rem; font-weight: 800; margin-bottom: 1rem;">Build with HKIncotech</h2>
+            <div style="background: linear-gradient(135deg, var(--primary) 0%, var(--primary-light) 100%); border-radius: var(--card-radius); padding: 3.5rem 2rem; text-align: center; color: white;">
+                <h2 style="font-size: 2rem; font-weight: 800; margin-bottom: 1rem;">{{ __('about.cta_title') }}</h2>
                 <p style="font-size: 1.1rem; margin-bottom: 2rem; opacity: 0.95;">
-                    From MVP to enterprise delivery—we partner to ship dependable software.
+                    {{ __('about.cta_desc') }}
                 </p>
                 <a href="{{ route('landing.contact') }}" style="background: white; color: var(--primary); padding: 1rem 2.5rem; border-radius: 8px; font-weight: 600; text-decoration: none; display: inline-block; transition: all 0.3s ease;" onmouseover="this.style.backgroundColor='var(--secondary-bg)';" onmouseout="this.style.backgroundColor='white';">
-                    <span>Contact Us</span>
+                    <span>{{ __('about.cta_button') }}</span>
                 </a>
             </div>
         </div>

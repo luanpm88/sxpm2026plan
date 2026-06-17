@@ -135,12 +135,12 @@
             <div class="capabilities-grid">
                 @php
                 $caps = [
-                    ['key' => 'build', 'color' => '#3b82f6'],
-                    ['key' => 'scale', 'color' => '#10b981'],
-                    ['key' => 'secure', 'color' => '#8b5cf6'],
-                    ['key' => 'ai', 'color' => '#f59e0b'],
-                    ['key' => 'mfg', 'color' => '#ef4444'],
-                    ['key' => 'ship', 'color' => '#06b6d4'],
+                    ['key' => 'build', 'color' => '#0e3163'],
+                    ['key' => 'scale', 'color' => '#1a4585'],
+                    ['key' => 'secure', 'color' => '#2f6abf'],
+                    ['key' => 'ai', 'color' => '#0e3163'],
+                    ['key' => 'mfg', 'color' => '#1a4585'],
+                    ['key' => 'ship', 'color' => '#4f5965'],
                 ];
                 @endphp
 
@@ -214,12 +214,12 @@
             <div class="grid-3col">
                 @php
                 $whys = [
-                    ['icon' => 'star', 'color' => '#3b82f6', 'key' => 'expertise'],
-                    ['icon' => 'groups', 'color' => '#10b981', 'key' => 'team'],
-                    ['icon' => 'bolt', 'color' => '#f59e0b', 'key' => 'fast'],
-                    ['icon' => 'shield', 'color' => '#8b5cf6', 'key' => 'security'],
-                    ['icon' => 'trending_up', 'color' => '#06b6d4', 'key' => 'scalable'],
-                    ['icon' => 'handshake', 'color' => '#ef4444', 'key' => 'partnership'],
+                    ['icon' => 'star', 'color' => '#0e3163', 'key' => 'expertise'],
+                    ['icon' => 'groups', 'color' => '#1a4585', 'key' => 'team'],
+                    ['icon' => 'bolt', 'color' => '#2f6abf', 'key' => 'fast'],
+                    ['icon' => 'shield', 'color' => '#0e3163', 'key' => 'security'],
+                    ['icon' => 'trending_up', 'color' => '#1a4585', 'key' => 'scalable'],
+                    ['icon' => 'handshake', 'color' => '#4f5965', 'key' => 'partnership'],
                 ];
                 @endphp
                 @foreach($whys as $w)
@@ -258,8 +258,8 @@
                 @php
                 $cases = [
                     ['num' => '1', 'badge_color' => 'var(--primary)', 'badge_bg' => 'var(--primary-subtle)', 'techs' => ['PHP', 'REST API', 'PostgreSQL', 'React']],
-                    ['num' => '2', 'badge_color' => '#10b981', 'badge_bg' => '#10b98115', 'techs' => ['Python', 'ML', 'PostgreSQL', 'React', 'Node.js']],
-                    ['num' => '3', 'badge_color' => '#8b5cf6', 'badge_bg' => '#8b5cf615', 'techs' => ['Node.js', 'PostgreSQL', 'React', 'AWS', 'Microservices']],
+                    ['num' => '2', 'badge_color' => '#1a4585', 'badge_bg' => '#1a458515', 'techs' => ['Python', 'ML', 'PostgreSQL', 'React', 'Node.js']],
+                    ['num' => '3', 'badge_color' => '#2f6abf', 'badge_bg' => '#2f6abf15', 'techs' => ['Node.js', 'PostgreSQL', 'React', 'AWS', 'Microservices']],
                 ];
                 @endphp
 
@@ -309,7 +309,7 @@
                     <div class="testimonial-quote-mark">"</div>
                     <blockquote class="testimonial-text">{{ __('index.testimonial' . $t . '_quote') }}</blockquote>
                     <div class="testimonial-author">
-                        <div class="testimonial-avatar" style="background: linear-gradient(135deg, {{ $t === 1 ? '#3b82f6, #2563eb' : '#10b981, #059669' }});">
+                        <div class="testimonial-avatar" style="background: linear-gradient(135deg, {{ $t === 1 ? '#0e3163, #1a4585' : '#1a4585, #08213f' }});">
                             {{ mb_substr(__('index.testimonial' . $t . '_name'), 0, 1) }}
                         </div>
                         <div>

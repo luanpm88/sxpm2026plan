@@ -47,7 +47,7 @@ return [
         [
             'name' => '--- --- ---',
             'title' => 'Founder & CEO',
-            'bio' => '15+ years tech leadership. Ex-Google, ex-Amazon. Led 50+ projects, $100M+ revenue.',
+            'bio' => '15+ years tech leadership. Ex-Google, ex-Amazon. Led 50+ projects with significant revenue impact.',
             'skills' => ['Tech Strategy', 'Team Building', 'Scaling']
         ],
         [
@@ -76,9 +76,9 @@ return [
     'achievements' => [
         ['num' => '100+', 'title' => 'Projects Completed', 'desc' => 'From startup launches to enterprise rollouts'],
         ['num' => '20+', 'title' => 'Senior Engineers', 'desc' => 'Certified and experienced team'],
-        ['num' => '99.99%', 'title' => 'Uptime Record', 'desc' => 'Reliability focus'],
+        ['num' => 'Enterprise', 'title' => 'Grade Uptime', 'desc' => 'High availability and reliability'],
         ['num' => '12+', 'title' => 'Years of Delivery', 'desc' => 'Proven track record'],
-        ['num' => '$1M', 'title' => 'Project Value', 'desc' => 'Solutions delivered'],
+        ['num' => 'Enterprise', 'title' => 'Scale Projects', 'desc' => 'Solutions delivered at significant scale'],
         ['num' => '10+', 'title' => 'Industries Served', 'desc' => 'Cross-industry expertise'],
     ],
 

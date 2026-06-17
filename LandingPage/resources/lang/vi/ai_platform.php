@@ -22,10 +22,10 @@ return [
     'impact_title' => 'Mục Tiêu Tác Động Ngắn Hạn',
     'impact_desc' => 'Dựa trên chương trình thí điểm hiện tại và triển khai beta, chúng tôi đang hướng đến các mục tiêu đầy tham vọng trong 12-18 tháng tới khi hoàn thiện nền tảng và mở rộng người dùng.',
     'impact_items' => [
-        ['text' => 'Xử lý ', 'bold' => '50.000+ truy vấn hàng ngày', 'suffix' => ' trên các khách hàng doanh nghiệp đầu tiên khi tỷ lệ áp dụng tăng'],
-        ['text' => 'Đạt ', 'bold' => 'độ chính xác 90%+', 'suffix' => ' trong trả lời câu hỏi chuyên biệt lĩnh vực thông qua tinh chỉnh mô hình liên tục'],
-        ['text' => 'Tối ưu thời gian phản hồi xuống ', 'bold' => '<500ms', 'suffix' => ' cho truy vấn phức tạp nhiều bước trong môi trường sản xuất'],
-        ['text' => 'Chứng minh ', 'bold' => 'giảm đáng kể thời gian nghiên cứu', 'suffix' => ' (mục tiêu 50-70%) trong các nghiên cứu tổ chức thí điểm'],
+        ['text' => 'Xử lý ', 'bold' => 'thông lượng truy vấn hàng ngày lớn', 'suffix' => ' trên các khách hàng doanh nghiệp đầu tiên khi tỷ lệ áp dụng tăng'],
+        ['text' => 'Đạt ', 'bold' => 'độ chính xác cao', 'suffix' => ' trong trả lời câu hỏi chuyên biệt lĩnh vực thông qua tinh chỉnh mô hình liên tục'],
+        ['text' => 'Tối ưu thời gian phản hồi hướng tới ', 'bold' => 'phản hồi độ trễ thấp, dưới một giây', 'suffix' => ' cho truy vấn phức tạp nhiều bước trong môi trường sản xuất'],
+        ['text' => 'Chứng minh ', 'bold' => 'giảm đáng kể thời gian nghiên cứu', 'suffix' => ' trong các nghiên cứu tổ chức thí điểm'],
         ['text' => 'Xây dựng ', 'bold' => 'kiến trúc AI thích ứng', 'suffix' => ' học linh hoạt trên mọi cấp tổ chức — từ nhân viên tuyến đầu hỏi câu hỏi vận hành đến lãnh đạo tìm kiếm tầm nhìn chiến lược. Hệ thống thích ứng giọng điệu, độ sâu và ngữ cảnh theo vai trò người dùng trong khi duy trì độ tin cậy cao và suy luận có thể xác minh'],
     ],
 

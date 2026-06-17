@@ -140,7 +140,7 @@
                 <div style="background: var(--secondary-bg); border-radius: var(--card-radius); padding: 2rem; border: 1px solid var(--border); transition: all 0.3s ease;" onmouseover="this.style.backgroundColor='white';" onmouseout="this.style.backgroundColor='var(--secondary-bg)';">
                     <div style="display: flex; gap: 0.3rem; margin-bottom: 1rem;">
                         @for($i = 0; $i < 5; $i++)
-                        <span style="color: #f59e0b; font-size: 1.2rem;">★</span>
+                        <span style="color: var(--primary); font-size: 1.2rem;">★</span>
                         @endfor
                     </div>
                     <p style="color: var(--text-gray); font-size: 0.95rem; line-height: 1.7; margin-bottom: 1rem; font-style: italic;">

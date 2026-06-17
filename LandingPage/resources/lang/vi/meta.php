@@ -27,7 +27,7 @@ return [
 
     // Case Studies
     'case_studies_title' => 'Dự Án Tiêu Biểu — Kết Quả Đã Chứng Minh | HKIncotech',
-    'case_studies_description' => '100+ dự án. Tiết kiệm $15M/năm, 500+ giờ mỗi kỳ, 95% adoption trong 2 tháng. Kết quả thực tế.',
+    'case_studies_description' => '100+ dự án. Tiết kiệm chi phí đáng kể, giảm mạnh thời gian xử lý, và tỷ lệ áp dụng cao. Kết quả thực tế.',
 
     // Pricing
     'pricing_title' => 'Bảng Giá Phát Triển Phần Mềm | HKIncotech',
@@ -43,7 +43,7 @@ return [
 
     // Blog / R&D
     'blog_title' => 'Nghiên Cứu & Phát Triển — HKSpace & AI Platform | HKIncotech',
-    'blog_description' => 'Khám phá R&D: HKSpace (50K+ người dùng) và AI Knowledge Platform với RAG, LLM, tìm kiếm ngữ nghĩa.',
+    'blog_description' => 'Khám phá R&D: HKSpace (quy mô production) và AI Knowledge Platform với RAG, LLM, tìm kiếm ngữ nghĩa.',
 
     // Comparison
     'comparison_title' => 'Phần Mềm Tùy Chỉnh vs Giải Pháp Có Sẵn — Lựa Chọn Nào Phù Hợp? | HKIncotech',

@@ -113,11 +113,11 @@ return [
     'metrics_subtitle' => 'Các mục tiêu theo chuẩn doanh nghiệp',
 
     'metrics' => [
-        ['metric' => '99.99%', 'label' => 'Uptime SLA', 'desc' => '~4.26 phút downtime/năm'],
-        ['metric' => '<100ms', 'label' => 'API Response Time', 'desc' => 'Độ trễ P99'],
+        ['metric' => 'Độ Sẵn Sàng Cao', 'label' => 'Uptime SLA', 'desc' => 'Uptime đẳng cấp enterprise'],
+        ['metric' => 'Độ Trễ Thấp', 'label' => 'API Response Time', 'desc' => 'API nhanh, phản hồi tức thì'],
         ['metric' => '>95', 'label' => 'Google Lighthouse Score', 'desc' => 'Hiệu năng + SEO'],
         ['metric' => '<3s', 'label' => 'Page Load Time', 'desc' => 'Mạng 3G'],
-        ['metric' => '100/100', 'label' => 'Security Grade', 'desc' => 'Xếp hạng A+ từ SSL Labs'],
+        ['metric' => 'Xếp Hạng A+', 'label' => 'Security Grade', 'desc' => 'Theo chuẩn SSL Labs'],
         ['metric' => '>90%', 'label' => 'Test Coverage', 'desc' => 'Unit + Integration'],
     ],
 

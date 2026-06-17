@@ -476,7 +476,7 @@ return [
         ],
     ],
 
-    'roadmap_targets' => 'Operational Targets Reference: availability target 99.9%, scalable architecture for additional devices and production lines, and scheduled maintenance with monthly health checks for infrastructure and application layers.',
+    'roadmap_targets' => 'Operational Targets Reference: enterprise-grade availability, scalable architecture for additional devices and production lines, and scheduled maintenance with monthly health checks for infrastructure and application layers.',
 
     // CTA Section
     'cta_title' => 'Start Your Factory Digitalization Journey',

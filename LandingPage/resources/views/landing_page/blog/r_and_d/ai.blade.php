@@ -112,7 +112,7 @@
             <ul style="list-style: none; padding: 0; color: var(--text-gray); line-height: 1.8;">
                 @foreach(__('ai_platform.impact_items') as $item)
                 <li style="margin-bottom: 0.75rem; display: flex; gap: 0.75rem;">
-                    <span style="color: #d97706; font-weight: 700; flex-shrink: 0;">→</span>
+                    <span style="color: var(--primary); font-weight: 700; flex-shrink: 0;">→</span>
                     <span>{{ $item['text'] }}<strong>{{ $item['bold'] }}</strong>{{ $item['suffix'] }}</span>
                 </li>
                 @endforeach
@@ -125,7 +125,7 @@
             <ul style="list-style: none; padding: 0; color: var(--text-gray); line-height: 1.8;">
                 @foreach(__('ai_platform.research_items') as $item)
                 <li style="margin-bottom: 0.75rem; display: flex; gap: 0.75rem;">
-                    <span style="color: #d97706; font-weight: 700; flex-shrink: 0;">→</span>
+                    <span style="color: var(--primary); font-weight: 700; flex-shrink: 0;">→</span>
                     <span><strong>{{ $item['bold'] }}</strong> {{ $item['text'] }}</span>
                 </li>
                 @endforeach

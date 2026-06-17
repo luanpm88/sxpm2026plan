@@ -26,7 +26,7 @@
 
         <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 1.5rem;">
             @foreach(__('scrum.steps') as $step)
-            <div style="background: white; border-radius: var(--card-radius); padding: 2.5rem 2rem; border: 1px solid var(--border); transition: all 0.3s ease; text-align: center; position: relative;" onmouseover="this.style.borderColor='var(--primary)'; this.style.boxShadow='0 10px 30px rgba(26, 77, 94, 0.1)'; this.style.transform='translateY(-4px)';" onmouseout="this.style.borderColor='var(--border)'; this.style.boxShadow=''; this.style.transform='';">
+            <div style="background: white; border-radius: var(--card-radius); padding: 2.5rem 2rem; border: 1px solid var(--border); transition: all 0.3s ease; text-align: center; position: relative;" onmouseover="this.style.borderColor='var(--primary)'; this.style.boxShadow='0 10px 30px rgba(14, 49, 99, 0.1)'; this.style.transform='translateY(-4px)';" onmouseout="this.style.borderColor='var(--border)'; this.style.boxShadow=''; this.style.transform='';">
                 <div style="display: inline-flex; align-items: center; justify-content: center; width: 50px; height: 50px; background: var(--primary); color: white; border-radius: 50%; font-weight: 800; font-size: 1.5rem; margin-bottom: 1rem;">
                     {{ $step['num'] }}
                 </div>
@@ -69,7 +69,7 @@
                 </ul>
             </div>
 
-            <div class="position-relative" style="background: linear-gradient(135deg, var(--primary) 0%, #0a4a78 100%); border-radius: 16px; padding: 2.25rem 1.75rem; color: white; box-shadow: 0 12px 40px rgba(26, 77, 94, 0.25); border: 1px solid rgba(255,255,255,0.15); height: 100%; display: flex; flex-direction: column; justify-content: center;">
+            <div class="position-relative" style="background: linear-gradient(135deg, var(--primary) 0%, var(--primary-light) 100%); border-radius: 16px; padding: 2.25rem 1.75rem; color: white; box-shadow: 0 12px 40px rgba(14, 49, 99, 0.25); border: 1px solid rgba(255,255,255,0.15); height: 100%; display: flex; flex-direction: column; justify-content: center;">
                 <h3 style="font-size: 1.2rem; font-weight: 800; text-align: center; margin-bottom: 0.45rem;">Sprint Cycle</h3>
                 <p style="text-align: center; font-size: 0.92rem; margin-bottom: 1.25rem; color: rgba(255,255,255,0.92);">
                     Plan, execute, review and improve continuously in each sprint.
@@ -135,18 +135,18 @@
             <div style="display: flex; gap: 2rem; align-items: flex-start; margin-bottom: {{ $index < count(__('scrum.journey')) - 1 ? '3rem' : '0' }};">
                 <!-- Left side: Circle with connecting line -->
                 <div style="position: relative; flex-shrink: 0;">
-                    <div style="width: 110px; height: 110px; background: white; border: 3px solid var(--primary); border-radius: 50%; display: flex; align-items: center; justify-content: center; text-align: center; box-shadow: 0 4px 15px rgba(26, 77, 94, 0.15); position: relative; z-index: 2;">
+                    <div style="width: 110px; height: 110px; background: white; border: 3px solid var(--primary); border-radius: 50%; display: flex; align-items: center; justify-content: center; text-align: center; box-shadow: 0 4px 15px rgba(14, 49, 99, 0.15); position: relative; z-index: 2;">
                         <div style="font-size: 1.1rem; font-weight: 700; color: var(--primary); line-height: 1.2;">{{ __('scrum.journey_phase_label') }} {{ $index + 1 }}</div>
                     </div>
 
                     <!-- Vertical connecting line -->
                     @if($index < count(__('scrum.journey')) - 1)
-                    <div style="position: absolute; top: 110px; left: 50%; width: 3px; height: 80px; background: linear-gradient(180deg, var(--primary) 0%, rgba(26, 77, 94, 0.3) 100%); transform: translateX(-50%); z-index: 1;"></div>
+                    <div style="position: absolute; top: 110px; left: 50%; width: 3px; height: 80px; background: linear-gradient(180deg, var(--primary) 0%, rgba(14, 49, 99, 0.3) 100%); transform: translateX(-50%); z-index: 1;"></div>
                     @endif
                 </div>
 
                 <!-- Right side: Content box -->
-                <div style="flex: 1; background: white; border-radius: var(--card-radius); padding: 2rem; border: 1px solid #e2e8f0; box-shadow: 0 2px 8px rgba(0,0,0,0.05); transition: all 0.3s ease;" onmouseover="this.style.borderColor='var(--primary)'; this.style.boxShadow='0 8px 20px rgba(26, 77, 94, 0.1)'; this.style.transform='translateX(5px)';" onmouseout="this.style.borderColor='#e2e8f0'; this.style.boxShadow='0 2px 8px rgba(0,0,0,0.05)'; this.style.transform='translateX(0)';">
+                <div style="flex: 1; background: white; border-radius: var(--card-radius); padding: 2rem; border: 1px solid var(--border); box-shadow: 0 2px 8px rgba(0,0,0,0.05); transition: all 0.3s ease;" onmouseover="this.style.borderColor='var(--primary)'; this.style.boxShadow='0 8px 20px rgba(14, 49, 99, 0.1)'; this.style.transform='translateX(5px)';" onmouseout="this.style.borderColor='var(--border)'; this.style.boxShadow='0 2px 8px rgba(0,0,0,0.05)'; this.style.transform='translateX(0)';">
                     <h3 style="font-size: 1.15rem; font-weight: 700; color: var(--text-dark); margin-bottom: 0.75rem; line-height: 1.4;">
                         {{ $j['phase'] }}
                     </h3>

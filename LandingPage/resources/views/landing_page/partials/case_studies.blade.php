@@ -83,11 +83,11 @@
                 'challenge' => 'Manage schedules, class assignments, learning reports, and attendance for 10,000+ students. Manual scheduling took 3 weeks per semester with frequent conflicts.',
                 'solution' => 'Delivered a comprehensive operations platform using a PHP-based API stack, focused on reliability and scale rather than heavy AI. Implemented flexible timetable generation, workload balancing rules, automated attendance, and reporting. Added high-availability infrastructure with PostgreSQL load balancing, caching, and resilient queues to handle peak enrollment and scheduling periods.',
                 'results' => [
-                    'Scheduling time: 3 weeks → 2 days',
-                    'Data accuracy 99.9%',
+                    'Scheduling time: weeks → days',
+                    'High data accuracy',
                     '10K+ students managed',
-                    'Adoption 98%',
-                    '500+ hours/semester saved'
+                    'Strong organization-wide adoption',
+                    'Significant operational hours saved each semester'
                 ],
                 'tech' => 'PHP, REST API, PostgreSQL (Load Balancing), Redis, React, React Native'
             ],
@@ -97,12 +97,12 @@
                 'challenge' => 'Manage ~5M SKUs across 2+ branches. Pain points: inventory control, inbound/outbound, consignment, barcode scanning, monthly audits. Manual workflows led to inaccurate reports. Needed accurate demand forecasting.',
                 'solution' => 'Built a comprehensive WMS with real-time barcode scanning and automated reconciliation. Implemented demand forecasting via matrix factorization and time-series analysis. Added analytics dashboards, multi-location sync, and blockchain-backed consignment docs for transparency.',
                 'results' => [
-                    'Inventory accuracy: 85% → 99.8%',
-                    'Forecasting accuracy: 94%',
-                    'Throughput: 100K+ transactions/day',
-                    'Audit time reduced by 80%',
-                    'Dead stock reduced by 35%',
-                    // 'Cost savings: $15M/year'
+                    'Near-perfect inventory accuracy',
+                    'High forecasting accuracy',
+                    'High-volume transaction throughput',
+                    'Major reduction in audit time',
+                    'Meaningfully reduced dead stock',
+                    // 'Significant cost savings'
                 ],
                 'tech' => 'Python, Machine Learning, PostgreSQL, Redis, React, Node.js, Blockchain'
             ],
@@ -112,12 +112,12 @@
                 'challenge' => 'A 30+ employee company needed unified accounting, procurement, inventory, e-commerce, and operations. Inventory data wasn’t in sync with accounting; disparate modules slowed reporting.',
                 'solution' => 'Built an integrated ERP: accounting (GL, AR, AP), inventory, procurement, e-commerce sync (Shopify/WooCommerce), HR payroll, and reporting. Added real-time consolidation, BI dashboards, workflow automation, and a mobile app for field staff.',
                 'results' => [
-                    'Consolidation: 3 days → 1 minute',
-                    'Invoice processing effort reduced by 70%',
+                    'Consolidation reduced from days to minutes',
+                    'Major reduction in invoice processing effort',
                     'Accounting reconciliation automated',
-                    'Report generation: 2 hours → 5 minutes',
-                    'Decision speed improved by 60%',
-                    'Adoption 95% within 2 months'
+                    'Report generation reduced from hours to minutes',
+                    'Faster decision-making',
+                    'Strong adoption within the first months'
                 ],
                 'tech' => 'Node.js, PostgreSQL, React, Python, Elasticsearch, AWS, Docker, Microservices'
             ],
@@ -127,10 +127,10 @@
                 'challenge' => 'Legacy monolithic system, slow performance, 50,000+ SKUs, 100,000+ daily transactions. Need modern architecture.',
                 'solution' => 'Migrate to serverless architecture, implement headless commerce, build fast API layer. Implement caching, CDN, database optimization. Real-time inventory sync.',
                 'results' => [
-                    'Page loads 70% faster',
-                    'Transaction capacity 10x increase',
-                    'Conversion rate +25%',
-                    'Revenue growth: +$50M/year'
+                    'Significantly faster page loads',
+                    'Major increase in transaction capacity',
+                    'Improved conversion rate',
+                    'Significant revenue growth'
                 ],
                 'tech' => 'Next.js, AWS Lambda, DynamoDB, Elasticsearch',
                 'hidden' => true
@@ -138,18 +138,18 @@
             [
                 'title' => 'Mobile Banking App',
                 'industry' => 'Financial Services',
-                'challenge' => 'Build secure mobile banking app for 1M+ users. Requirements: high security, 99.99% uptime, offline functionality.',
+                'challenge' => 'Build a secure mobile banking app at consumer scale. Requirements: strong security, enterprise-grade uptime, offline functionality.',
                 'solution' => 'Native iOS/Android apps with React Native, blockchain for transaction verification, advanced encryption, offline-first architecture.',
-                'results' => 'User base: 1M+ downloads. Daily active users: 500k+. Transaction volume: $1B+/month. Security rating: A+. Retention: 95%.',
+                'results' => 'Delivered a production-scale banking app with strong user adoption, high-volume transaction throughput, bank-grade security, and high user retention.',
                 'tech' => 'React Native, Blockchain, Swift, Kotlin',
                 'hidden' => true
             ],
             [
                 'title' => 'Supply Chain Platform',
                 'industry' => 'Logistics',
-                'challenge' => 'Real-time supply chain visibility across 50 countries. 10,000+ shipments/day tracking.',
+                'challenge' => 'Real-time supply chain visibility across multiple countries, tracking high daily shipment volumes.',
                 'solution' => 'Build IoT integration platform, real-time tracking dashboard, predictive analytics, blockchain for transparency.',
-                'results' => 'Delivery time: -20% reduction. Cost savings: -$2M/year. Visibility: 99.9% real-time tracking. Partnerships: 100+ logistics companies.',
+                'results' => 'Delivered faster deliveries, significant cost savings, near-real-time shipment visibility, and a strong network of logistics partners.',
                 'tech' => 'IoT, Blockchain, Python, Real-time Data Streaming',
                 'hidden' => true
             ],
@@ -255,7 +255,7 @@
             <div style="background: var(--secondary-bg); border-radius: var(--card-radius); padding: 2rem; border: 1px solid var(--border); transition: all 0.3s ease;" onmouseover="this.style.backgroundColor='white';" onmouseout="this.style.backgroundColor='var(--secondary-bg)';">
                 <div style="display: flex; gap: 0.3rem; margin-bottom: 1rem;">
                     @for($i = 0; $i < 5; $i++)
-                    <span style="color: #f59e0b; font-size: 1.2rem;">★</span>
+                    <span style="color: var(--primary); font-size: 1.2rem;">★</span>
                     @endfor
                 </div>
                 <p style="color: var(--text-gray); font-size: 0.95rem; line-height: 1.7; margin-bottom: 1rem; font-style: italic;">

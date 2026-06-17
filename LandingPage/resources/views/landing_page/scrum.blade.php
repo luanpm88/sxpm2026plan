@@ -30,7 +30,7 @@
 
             <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 1.5rem;">
                 @foreach(__('scrum.steps') as $step)
-                <div style="background: white; border-radius: var(--card-radius); padding: 2.5rem 2rem; border: 1px solid var(--border); transition: all 0.3s ease; text-align: center; position: relative;" onmouseover="this.style.borderColor='var(--primary)'; this.style.boxShadow='0 10px 30px rgba(26, 77, 94, 0.1)'; this.style.transform='translateY(-4px)';" onmouseout="this.style.borderColor='var(--border)'; this.style.boxShadow=''; this.style.transform='';">
+                <div style="background: white; border-radius: var(--card-radius); padding: 2.5rem 2rem; border: 1px solid var(--border); transition: all 0.3s ease; text-align: center; position: relative;" onmouseover="this.style.borderColor='var(--primary)'; this.style.boxShadow='0 10px 30px rgba(14, 49, 99, 0.1)'; this.style.transform='translateY(-4px)';" onmouseout="this.style.borderColor='var(--border)'; this.style.boxShadow=''; this.style.transform='';">
                     <div style="display: inline-flex; align-items: center; justify-content: center; width: 50px; height: 50px; background: var(--primary); color: white; border-radius: 50%; font-weight: 800; font-size: 1.5rem; margin-bottom: 1rem;">
                         {{ $step['num'] }}
                     </div>
@@ -78,23 +78,23 @@
                     <svg viewBox="0 0 360 360" preserveAspectRatio="xMidYMid meet" style="width: 100%; height: 100%; max-width: 420px; flex: 1; display: block;">
                         <defs>
                             <marker id="scrum-cycle-flow-arrow-page" markerUnits="userSpaceOnUse" markerWidth="7" markerHeight="7" refX="6" refY="3.5" orient="auto">
-                                <polygon points="0 0, 7 3.5, 0 7" fill="#38bdf8"/>
+                                <polygon points="0 0, 7 3.5, 0 7" fill="#1a4585"/>
                             </marker>
                         </defs>
                         <!-- outer guide ring -->
                         
                         <!-- continuous flow loop (pentagon through phase centers, clockwise Plan → … → Deliver) -->
-                        <path d="M 180 65 L 275.1 134.1 L 238.8 245.9 L 121.2 245.9 L 84.9 134.1 Z" fill="none" stroke="#38bdf8" stroke-width="1" stroke-linejoin="round" stroke-linecap="round" opacity="0.92" marker-mid="url(#scrum-cycle-flow-arrow-page)"/>
+                        <path d="M 180 65 L 275.1 134.1 L 238.8 245.9 L 121.2 245.9 L 84.9 134.1 Z" fill="none" stroke="#1a4585" stroke-width="1" stroke-linejoin="round" stroke-linecap="round" opacity="0.92" marker-mid="url(#scrum-cycle-flow-arrow-page)"/>
 
                         <!-- phase nodes: regular pentagon, radius 100 from (180,165), Plan at top -->
-                        <circle cx="180" cy="65" r="28" fill="#0f4c66"/>
-                        <circle cx="275.1" cy="134.1" r="28" fill="#14b88c"/>
-                        <circle cx="238.8" cy="245.9" r="28" fill="#f4a300"/>
-                        <circle cx="121.2" cy="245.9" r="28" fill="#0e9f97"/>
-                        <circle cx="84.9" cy="134.1" r="28" fill="#5d8193"/>
+                        <circle cx="180" cy="65" r="28" fill="#0e3163"/>
+                        <circle cx="275.1" cy="134.1" r="28" fill="#1a4585"/>
+                        <circle cx="238.8" cy="245.9" r="28" fill="#2f6abf"/>
+                        <circle cx="121.2" cy="245.9" r="28" fill="#4f5965"/>
+                        <circle cx="84.9" cy="134.1" r="28" fill="#08213f"/>
 
                         <!-- center text -->
-                        <text x="180" y="178" text-anchor="middle" font-size="24" fill="#0e9f97" font-weight="700">Sprint</text>
+                        <text x="180" y="178" text-anchor="middle" font-size="24" fill="#0e3163" font-weight="700">Sprint</text>
 
                         <!-- labels -->
                         <text x="180" y="69" text-anchor="middle" font-size="9.5" fill="#ffffff" font-weight="700">Plan</text>
@@ -149,18 +149,18 @@
                 <div style="display: flex; gap: 2rem; align-items: flex-start; margin-bottom: {{ $index < count(__('scrum.journey')) - 1 ? '3rem' : '0' }};">
                     <!-- Left side: Circle with connecting line -->
                     <div style="position: relative; flex-shrink: 0;">
-                        <div style="width: 110px; height: 110px; background: white; border: 3px solid var(--primary); border-radius: 50%; display: flex; align-items: center; justify-content: center; text-align: center; box-shadow: 0 4px 15px rgba(26, 77, 94, 0.15); position: relative; z-index: 2;">
+                        <div style="width: 110px; height: 110px; background: white; border: 3px solid var(--primary); border-radius: 50%; display: flex; align-items: center; justify-content: center; text-align: center; box-shadow: 0 4px 15px rgba(14, 49, 99, 0.15); position: relative; z-index: 2;">
                             <div style="font-size: 1.1rem; font-weight: 700; color: var(--primary); line-height: 1.2;">{{ __('scrum.journey_phase_label') }} {{ $index + 1 }}</div>
                         </div>
 
                         <!-- Vertical connecting line -->
                         @if($index < count(__('scrum.journey')) - 1)
-                        <div style="position: absolute; top: 110px; left: 50%; width: 3px; height: 80px; background: linear-gradient(180deg, var(--primary) 0%, rgba(26, 77, 94, 0.3) 100%); transform: translateX(-50%); z-index: 1;"></div>
+                        <div style="position: absolute; top: 110px; left: 50%; width: 3px; height: 80px; background: linear-gradient(180deg, var(--primary) 0%, rgba(14, 49, 99, 0.3) 100%); transform: translateX(-50%); z-index: 1;"></div>
                         @endif
                     </div>
                     
                     <!-- Right side: Content box -->
-                    <div style="flex: 1; background: white; border-radius: var(--card-radius); padding: 2rem; border: 1px solid #e2e8f0; box-shadow: 0 2px 8px rgba(0,0,0,0.05); transition: all 0.3s ease;" onmouseover="this.style.borderColor='var(--primary)'; this.style.boxShadow='0 8px 20px rgba(26, 77, 94, 0.1)'; this.style.transform='translateX(5px)';" onmouseout="this.style.borderColor='#e2e8f0'; this.style.boxShadow='0 2px 8px rgba(0,0,0,0.05)'; this.style.transform='translateX(0)';">
+                    <div style="flex: 1; background: white; border-radius: var(--card-radius); padding: 2rem; border: 1px solid var(--border); box-shadow: 0 2px 8px rgba(0,0,0,0.05); transition: all 0.3s ease;" onmouseover="this.style.borderColor='var(--primary)'; this.style.boxShadow='0 8px 20px rgba(14, 49, 99, 0.1)'; this.style.transform='translateX(5px)';" onmouseout="this.style.borderColor='var(--border)'; this.style.boxShadow='0 2px 8px rgba(0,0,0,0.05)'; this.style.transform='translateX(0)';">
                         <h3 style="font-size: 1.15rem; font-weight: 700; color: var(--text-dark); margin-bottom: 0.75rem; line-height: 1.4;">
                             {{ $j['phase'] }}
                         </h3>

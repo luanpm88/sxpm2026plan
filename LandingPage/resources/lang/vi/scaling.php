@@ -4,7 +4,7 @@ return [
     // Hero
     'hero_title'        => 'Mở Rộng &',
     'hero_title_accent' => 'Hạ Tầng',
-    'hero_desc1'        => 'Từ MVP nhỏ lên 10 triệu người dùng. 6 giai đoạn scaling với SLA 99.99%, tự động mở rộng, giám sát 24/7.',
+    'hero_desc1'        => 'Từ MVP nhỏ lên 10 triệu người dùng. 6 giai đoạn scaling với SLA đẳng cấp enterprise, tự động mở rộng, giám sát 24/7.',
     'hero_desc2'        => 'Chúng tôi đã scale 50+ dự án từ 0 lên hàng triệu người dùng. Kinh nghiệm từ startup giai đoạn đầu đến quy mô unicorn.',
 
     // Phases section
@@ -86,13 +86,13 @@ return [
 
     // Metrics data
     'metrics' => [
-        ['metric' => '99.99%', 'label' => 'Uptime SLA',                'desc' => '~4.26 phút downtime/năm'],
-        ['metric' => '<100ms', 'label' => 'Thời Gian Phản Hồi API',    'desc' => 'P99 latency'],
-        ['metric' => '<3s',    'label' => 'Thời Gian Tải Trang',       'desc' => 'Trên mạng 3G'],
-        ['metric' => '>95',    'label' => 'Điểm Lighthouse',           'desc' => 'Chỉ số hiệu suất'],
-        ['metric' => '0ms',    'label' => 'Deploy Không Gián Đoạn',    'desc' => 'Blue-green deployment'],
-        ['metric' => '24/7',   'label' => 'Giám Sát SOC',             'desc' => 'Cảnh báo thời gian thực'],
-        ['metric' => '1sec',   'label' => 'Thời Gian Tự Phục Hồi',    'desc' => 'Tự động failover'],
-        ['metric' => '99.9%',  'label' => 'Khả Dụng Database',        'desc' => 'Sao chép đa vùng'],
+        ['metric' => 'Enterprise', 'label' => 'Uptime SLA',                'desc' => 'SLA độ sẵn sàng cao'],
+        ['metric' => 'Thấp',       'label' => 'Thời Gian Phản Hồi API',    'desc' => 'Độ trễ thấp P99'],
+        ['metric' => '<3s',        'label' => 'Thời Gian Tải Trang',       'desc' => 'Trên mạng 3G'],
+        ['metric' => '>95',        'label' => 'Điểm Lighthouse',           'desc' => 'Chỉ số hiệu suất'],
+        ['metric' => 'Zero',       'label' => 'Deploy Không Gián Đoạn',    'desc' => 'Blue-green deployment'],
+        ['metric' => '24/7',       'label' => 'Giám Sát SOC',             'desc' => 'Cảnh báo thời gian thực'],
+        ['metric' => 'Nhanh',      'label' => 'Thời Gian Tự Phục Hồi',    'desc' => 'Tự động failover'],
+        ['metric' => 'Cao',        'label' => 'Khả Dụng Database',        'desc' => 'Sao chép đa vùng'],
     ],
 ];

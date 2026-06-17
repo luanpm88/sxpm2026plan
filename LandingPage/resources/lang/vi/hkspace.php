@@ -26,9 +26,9 @@ return [
     'milestones_title' => 'Mục Tiêu Cột Mốc',
     'milestones_desc' => 'Lộ trình phát triển của chúng tôi tập trung vào đạt được các mục tiêu hiệu suất chính trong 18-24 tháng tới khi mở rộng hạ tầng hiện tại và tiến vào thị trường doanh nghiệp mới.',
     'milestones' => [
-        ['bold' => 'Mở rộng lên 50.000+ người dùng đồng thời', 'text' => 'trong khi duy trì độ trễ ổn định dưới 100ms trong tải cao điểm'],
-        ['bold' => 'Đạt SLA uptime 99.99%', 'text' => 'trên toàn bộ hạ tầng khi hoàn thiện hệ thống dự phòng'],
-        ['bold' => 'Giảm thời gian phản hồi API trung bình xuống <100ms toàn cầu', 'text' => 'thông qua tối ưu edge computing'],
+        ['bold' => 'Mở rộng tới quy mô production', 'text' => 'trong khi duy trì độ trễ thấp trong tải cao điểm'],
+        ['bold' => 'Đạt SLA uptime đẳng cấp enterprise', 'text' => 'trên toàn bộ hạ tầng khi hoàn thiện hệ thống dự phòng'],
+        ['bold' => 'Mang lại phản hồi API độ trễ thấp toàn cầu', 'text' => 'thông qua tối ưu edge computing'],
         ['bold' => 'Mở rộng áp dụng doanh nghiệp', 'text' => 'đến các công ty Fortune 500 cần nền tảng cộng tác có khả năng mở rộng'],
         ['bold' => 'Xây dựng mô hình doanh thu bền vững', 'text' => 'hỗ trợ R&D liên tục trong hạ tầng nền tảng'],
     ],

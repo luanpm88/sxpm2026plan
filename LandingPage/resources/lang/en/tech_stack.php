@@ -113,11 +113,11 @@ return [
     'metrics_subtitle' => 'Enterprise-grade targets',
 
     'metrics' => [
-        ['metric' => '99.99%', 'label' => 'Uptime SLA', 'desc' => '~4.26 minutes downtime/year'],
-        ['metric' => '<100ms', 'label' => 'API Response Time', 'desc' => 'P99 latency'],
+        ['metric' => 'High Availability', 'label' => 'Uptime SLA', 'desc' => 'Enterprise-grade uptime'],
+        ['metric' => 'Low Latency', 'label' => 'API Response Time', 'desc' => 'Fast, responsive APIs'],
         ['metric' => '>95', 'label' => 'Google Lighthouse Score', 'desc' => 'Performance + SEO'],
         ['metric' => '<3s', 'label' => 'Page Load Time', 'desc' => 'On 3G network'],
-        ['metric' => '100/100', 'label' => 'Security Grade', 'desc' => 'Grade A+ from SSL Labs'],
+        ['metric' => 'Grade A+', 'label' => 'Security Grade', 'desc' => 'SSL Labs best practices'],
         ['metric' => '>90%', 'label' => 'Test Coverage', 'desc' => 'Unit + Integration'],
     ],
 

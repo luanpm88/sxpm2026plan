@@ -9,7 +9,7 @@ return [
         ['num' => '50+', 'label' => 'Dự Án Hoàn Thành'],
         ['num' => '10+', 'label' => 'Ngành Đã Phục Vụ'],
         ['num' => '$1M', 'label' => 'Giá Trị Dự Án'],
-        ['num' => '99.99%', 'label' => 'Độ Hài Lòng Khách Hàng'],
+        ['num' => 'Cao', 'label' => 'Độ Hài Lòng Khách Hàng'],
         ['num' => '12+', 'label' => 'Năm Kinh Nghiệm'],
         ['num' => '10+', 'label' => 'Quốc Gia Phục Vụ'],
     ],
@@ -24,11 +24,11 @@ return [
             'challenge' => 'Quản lý lịch biểu, phân công lớp, báo cáo học tập và điểm danh cho 10,000+ học sinh. Lập lịch thủ công mất 3 tuần mỗi học kỳ với xung đột thường xuyên.',
             'solution' => 'Cung cấp nền tảng hoạt động toàn diện sử dụng PHP API stack, tập trung vào độ tin cậy và khả năng mở rộng. Triển khai tạo lịch biểu linh hoạt, quy tắc cân bằng tải công việc, điểm danh tự động và báo cáo. Thêm hạ tầng cao sẵn sàng với cân bằng tải PostgreSQL, bộ nhớ đệm và hàng đợi kiên cường để xử lý các thời kỳ cao điểm tuyển sinh và lập lịch.',
             'results' => [
-                'Thời gian lập lịch: 3 tuần → 2 ngày',
-                'Độ chính xác dữ liệu 99.9%',
+                'Thời gian lập lịch: tuần → ngày',
+                'Độ chính xác dữ liệu cao',
                 '10.000+ học sinh được quản lý',
-                'Tỷ lệ áp dụng 98%',
-                '500+ giờ/học kỳ được tiết kiệm'
+                'Tỷ lệ áp dụng cao',
+                'Tiết kiệm đáng kể giờ vận hành mỗi học kỳ'
             ],
             'tech' => 'PHP, REST API, PostgreSQL (Load Balancing), Redis, React, React Native'
         ],
@@ -38,12 +38,12 @@ return [
             'challenge' => 'Quản lý ~10M SKU trên 50+ chi nhánh. Những điểm đau: kiểm soát hàng tồn kho, nhập/xuất hàng, ký gửi, quét mã vạch, kiểm kê hàng tháng. Quy trình thủ công dẫn đến báo cáo không chính xác. Cần dự báo nhu cầu chính xác.',
             'solution' => 'Xây dựng WMS toàn diện với quét mã vạch thời gian thực và điều hòa tự động. Triển khai dự báo nhu cầu thông qua phân tích thừa số ma trận và chuỗi thời gian. Thêm bảng điều khiển phân tích, đồng bộ hóa đa vị trí và tài liệu ký gửi được hỗ trợ blockchain để tăng tính minh bạch.',
             'results' => [
-                'Độ chính xác hàng tồn kho: 85% → 99.8%',
-                'Độ chính xác dự báo: 94%',
-                'Thông lượng: 1M+ giao dịch/ngày',
-                'Thời gian kiểm kê giảm 80%',
-                'Hàng tồn kho chết giảm 35%',
-                'Tiết kiệm chi phí: $15M/năm'
+                'Độ chính xác hàng tồn kho cải thiện lớn',
+                'Độ chính xác dự báo cao',
+                'Thông lượng giao dịch lớn',
+                'Thời gian kiểm kê giảm đáng kể',
+                'Hàng tồn kho chết giảm đáng kể',
+                'Tiết kiệm chi phí đáng kể'
             ],
             'tech' => 'Python, Machine Learning, PostgreSQL, Redis, React, Node.js, Blockchain'
         ],
@@ -53,12 +53,12 @@ return [
             'challenge' => 'Công ty 100+ nhân viên cần tích hợp kế toán, mua hàng, tồn kho, thương mại điện tử và hoạt động. Dữ liệu tồn kho không đồng bộ với kế toán; các mô-đun rời rạc làm chậm báo cáo.',
             'solution' => 'Xây dựng ERP tích hợp: kế toán (GL, AR, AP), tồn kho, mua hàng, đồng bộ thương mại điện tử (Shopify/WooCommerce), lương HR và báo cáo. Thêm hợp nhất thời gian thực, bảng điều khiển BI, tự động hóa quy trình công việc và ứng dụng di động cho nhân viên thực địa.',
             'results' => [
-                'Hợp nhất: 3 ngày → 1 phút',
-                'Nỗ lực xử lý hóa đơn giảm 70%',
+                'Hợp nhất rút ngắn từ vài ngày xuống vài phút',
+                'Nỗ lực xử lý hóa đơn giảm đáng kể',
                 'Điều hòa kế toán tự động',
-                'Tạo báo cáo: 2 giờ → 5 phút',
-                'Tốc độ quyết định cải thiện 60%',
-                'Tỷ lệ áp dụng 95% trong 2 tháng'
+                'Tạo báo cáo rút ngắn từ vài giờ xuống vài phút',
+                'Ra quyết định nhanh hơn',
+                'Tỷ lệ áp dụng cao chỉ trong vài tháng'
             ],
             'tech' => 'Node.js, PostgreSQL, React, Python, Elasticsearch, AWS, Docker, Microservices'
         ],

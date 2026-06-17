@@ -332,7 +332,7 @@
                 <!-- Company Info -->
                 <div class="footer-section">
                     <a href="{{ route('landing.index') }}" class="logo" style="color: white; margin-bottom: 1rem; display: inline-flex;">
-                        <img src="{{ asset('img/logo.svg') }}" alt="HKIncotech" style="filter: brightness(10);">
+                        <img src="{{ asset('img/logo.svg') }}" alt="HKIncotech" style="filter: brightness(0) invert(1);">
                         <span>INCOTECH</span>
                     </a>
                     <p style="color: rgba(255, 255, 255, 0.6); font-size: 0.88rem; line-height: 1.65; margin-top: 1rem;">

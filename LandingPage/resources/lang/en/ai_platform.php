@@ -22,10 +22,10 @@ return [
     'impact_title' => 'Near-Term Impact Targets',
     'impact_desc' => 'Based on our current pilot programs and beta deployments, we\'re tracking toward these ambitious goals for the next 12-18 months as we refine the platform and expand our user base.',
     'impact_items' => [
-        ['text' => 'Process ', 'bold' => '50,000+ daily queries', 'suffix' => ' across early enterprise customers as adoption grows'],
-        ['text' => 'Achieve ', 'bold' => '90%+ accuracy', 'suffix' => ' in domain-specific question answering through continuous model refinement'],
-        ['text' => 'Optimize response time to ', 'bold' => '<500ms', 'suffix' => ' for complex multi-step queries in production'],
-        ['text' => 'Demonstrate ', 'bold' => 'significant research time reduction', 'suffix' => ' (targeting 50-70%) in pilot organization studies'],
+        ['text' => 'Process ', 'bold' => 'high-volume daily query throughput', 'suffix' => ' across early enterprise customers as adoption grows'],
+        ['text' => 'Achieve ', 'bold' => 'high accuracy', 'suffix' => ' in domain-specific question answering through continuous model refinement'],
+        ['text' => 'Optimize response time toward ', 'bold' => 'sub-second, low-latency responses', 'suffix' => ' for complex multi-step queries in production'],
+        ['text' => 'Demonstrate ', 'bold' => 'significant research time reduction', 'suffix' => ' in pilot organization studies'],
         ['text' => 'Build ', 'bold' => 'adaptive AI architecture', 'suffix' => ' that learns flexibly across all organizational levels—from frontline employees asking operational questions to executives seeking strategic insights. System adapts tone, depth, and context based on user role while maintaining high reliability and verifiable reasoning'],
     ],
 

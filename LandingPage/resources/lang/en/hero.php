@@ -7,15 +7,15 @@ return [
     'cta_primary'  => 'Book a Free Technical Consultation',
     'cta_secondary'=> 'See How We Work',
     'cta_microcopy'=> '30-minute call. No sales pressure. Technical proposal within 48 hours.',
-    'stat1_value'  => '14',
-    'stat1_label'  => 'Years of Delivery',
-    'stat2_value'  => '127',
-    'stat2_label'  => 'Projects Shipped',
-    'stat3_value'  => '99.99%',
-    'stat3_label'  => 'Uptime Guaranteed',
+    'stat1_value'  => '100+',
+    'stat1_label'  => 'Senior Engineers',
+    'stat2_value'  => 'Full-Cycle',
+    'stat2_label'  => 'Delivery & Scaling',
+    'stat3_value'  => 'Enterprise',
+    'stat3_label'  => 'Security & Compliance',
 
-    'social_proof_label' => '53 enterprise clients across 10+ industries',
-    'social_proof_source' => '4.8 on Clutch',
+    'social_proof_label' => 'Enterprise clients across 10+ industries',
+    'social_proof_source' => 'Trusted delivery partner',
 
     // Industries served (replacing fake logos)
     'industries_label' => 'Trusted across industries',

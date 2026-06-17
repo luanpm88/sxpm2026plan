@@ -47,7 +47,7 @@ return [
         [
             'name' => '--- --- ---',
             'title' => 'Nhà sáng lập & CEO',
-            'bio' => '15+ năm lãnh đạo công nghệ. Cựu Google, cựu Amazon. Dẫn dắt 50+ dự án, doanh thu $100M+.',
+            'bio' => '15+ năm lãnh đạo công nghệ. Cựu Google, cựu Amazon. Dẫn dắt 50+ dự án với tác động doanh thu đáng kể.',
             'skills' => ['Chiến lược công nghệ', 'Xây dựng đội', 'Mở rộng quy mô']
         ],
         [
@@ -76,9 +76,9 @@ return [
     'achievements' => [
         ['num' => '100+', 'title' => 'Dự án hoàn thành', 'desc' => 'Từ khởi chạy startup đến triển khai doanh nghiệp'],
         ['num' => '20+', 'title' => 'Kỹ sư cao cấp', 'desc' => 'Đội ngũ có chứng chỉ và kinh nghiệm'],
-        ['num' => '99.99%', 'title' => 'Hồ sơ thời gian hoạt động', 'desc' => 'Tập trung vào độ tin cậy'],
+        ['num' => 'Enterprise', 'title' => 'Uptime đẳng cấp', 'desc' => 'Độ sẵn sàng cao và độ tin cậy'],
         ['num' => '12+', 'title' => 'Năm cung cấp', 'desc' => 'Hồ sơ theo dõi đã chứng minh'],
-        ['num' => '$1M', 'title' => 'Giá trị dự án', 'desc' => 'Giải pháp được cung cấp'],
+        ['num' => 'Enterprise', 'title' => 'Dự án quy mô lớn', 'desc' => 'Giải pháp bàn giao ở quy mô đáng kể'],
         ['num' => '10+', 'title' => 'Ngành được phục vụ', 'desc' => 'Chuyên môn đa ngành'],
     ],
 

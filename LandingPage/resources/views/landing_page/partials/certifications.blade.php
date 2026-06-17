@@ -66,7 +66,7 @@
             ];
             @endphp
             @foreach($compliance as $cert)
-            <div style="background: white; border-radius: var(--card-radius); padding: 2.5rem 2rem; border: 1px solid var(--border); transition: all 0.3s ease; text-align: center;" onmouseover="this.style.borderColor='var(--primary)'; this.style.boxShadow='0 10px 30px rgba(26, 77, 94, 0.1)'; this.style.transform='translateY(-4px)';" onmouseout="this.style.borderColor='var(--border)'; this.style.boxShadow=''; this.style.transform='';">
+            <div style="background: white; border-radius: var(--card-radius); padding: 2.5rem 2rem; border: 1px solid var(--border); transition: all 0.3s ease; text-align: center;" onmouseover="this.style.borderColor='var(--primary)'; this.style.boxShadow='0 10px 30px rgba(14, 49, 99, 0.1)'; this.style.transform='translateY(-4px)';" onmouseout="this.style.borderColor='var(--border)'; this.style.boxShadow=''; this.style.transform='';">
                 <div style="font-size: 2rem; color: var(--primary); margin-bottom: 1rem;">
                     <span class="material-symbols-rounded">{{ $cert['icon'] }}</span>
                 </div>
@@ -139,7 +139,7 @@
             ];
             @endphp
             @foreach($cloudCerts as $cloud)
-            <div style="background: white; border-radius: var(--card-radius); padding: 2rem; border: 1px solid var(--border); transition: all 0.3s ease;" onmouseover="this.style.borderColor='var(--primary)'; this.style.boxShadow='0 10px 30px rgba(26, 77, 94, 0.1)';" onmouseout="this.style.borderColor='var(--border)'; this.style.boxShadow='';">
+            <div style="background: white; border-radius: var(--card-radius); padding: 2rem; border: 1px solid var(--border); transition: all 0.3s ease;" onmouseover="this.style.borderColor='var(--primary)'; this.style.boxShadow='0 10px 30px rgba(14, 49, 99, 0.1)';" onmouseout="this.style.borderColor='var(--border)'; this.style.boxShadow='';">
                 <div style="font-size: 1.75rem; color: var(--primary); margin-bottom: 1rem;">
                     <span class="material-symbols-rounded">{{ $cloud['icon'] }}</span>
                 </div>
@@ -274,7 +274,7 @@
             ];
             @endphp
             @foreach($technologies as $tech)
-            <div style="background: white; border-radius: var(--card-radius); padding: 2rem; border: 1px solid var(--border); transition: all 0.3s ease;" onmouseover="this.style.boxShadow='0 8px 20px rgba(26, 77, 94, 0.1)';" onmouseout="this.style.boxShadow='';">
+            <div style="background: white; border-radius: var(--card-radius); padding: 2rem; border: 1px solid var(--border); transition: all 0.3s ease;" onmouseover="this.style.boxShadow='0 8px 20px rgba(14, 49, 99, 0.1)';" onmouseout="this.style.boxShadow='';">
                 <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1.5rem;">
                     <div style="font-size: 2rem; color: var(--primary);">
                         <span class="material-symbols-rounded">{{ $tech['icon'] }}</span>
@@ -347,7 +347,7 @@
             ];
             @endphp
             @foreach($teamProfile as $profile)
-            <div style="background: white; border-radius: var(--card-radius); padding: 2.5rem 2rem; border: 1px solid var(--border); text-align: center; transition: all 0.3s ease;" onmouseover="this.style.borderColor='var(--primary)'; this.style.transform='translateY(-5px)'; this.style.boxShadow='0 10px 30px rgba(26, 77, 94, 0.1)';" onmouseout="this.style.borderColor='var(--border)'; this.style.transform=''; this.style.boxShadow='';">
+            <div style="background: white; border-radius: var(--card-radius); padding: 2.5rem 2rem; border: 1px solid var(--border); text-align: center; transition: all 0.3s ease;" onmouseover="this.style.borderColor='var(--primary)'; this.style.transform='translateY(-5px)'; this.style.boxShadow='0 10px 30px rgba(14, 49, 99, 0.1)';" onmouseout="this.style.borderColor='var(--border)'; this.style.transform=''; this.style.boxShadow='';">
                 <div style="font-size: 1.75rem; color: var(--primary); margin-bottom: 1rem;">
                     <span class="material-symbols-rounded">{{ $profile['icon'] }}</span>
                 </div>

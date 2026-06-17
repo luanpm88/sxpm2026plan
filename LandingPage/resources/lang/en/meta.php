@@ -27,7 +27,7 @@ return [
 
     // Case Studies
     'case_studies_title' => 'Client Case Studies — Proven Results | HKIncotech',
-    'case_studies_description' => '100+ projects delivered. $15M/year cost savings, 500+ hours saved per semester, 95% adoption in 2 months. Real results across education, logistics, and enterprise.',
+    'case_studies_description' => '100+ projects delivered. Significant cost savings, major time reductions, and strong user adoption. Real results across education, logistics, and enterprise.',
 
     // Pricing
     'pricing_title' => 'Software Development Pricing & Plans | HKIncotech',
@@ -43,7 +43,7 @@ return [
 
     // Blog / R&D
     'blog_title' => 'Research & Development — HKSpace & AI Platform | HKIncotech',
-    'blog_description' => 'Explore our R&D: HKSpace enterprise infrastructure platform (50K+ users) and AI Knowledge Platform with RAG, LLM, and semantic search.',
+    'blog_description' => 'Explore our R&D: HKSpace enterprise infrastructure platform at production scale and AI Knowledge Platform with RAG, LLM, and semantic search.',
 
     // Comparison
     'comparison_title' => 'Custom Software vs Off-the-Shelf — Which Is Right for You? | HKIncotech',

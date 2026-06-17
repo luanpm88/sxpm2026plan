@@ -18,7 +18,7 @@ return [
         ],
         [
             'title' => 'SaaS Platform',
-            'desc' => 'Production-ready multi-tenant platform. HKSpace currently serves 50K+ active users',
+            'desc' => 'Production-ready multi-tenant platform. HKSpace runs at production scale serving a large, active user base',
         ],
         [
             'title' => 'AI Knowledge Platform',
@@ -159,7 +159,7 @@ return [
     // SaaS Platform
     'saas' => [
         'title' => 'Enterprise SaaS Platform',
-        'subtitle' => 'Complete production-ready multi-tenant platform serving 50K+ users with enterprise-grade security & scalability',
+        'subtitle' => 'Complete production-ready multi-tenant platform operating at production scale with enterprise-grade security & scalability',
         'hkspace_title' => 'HKSpace - Flagship SaaS Platform',
         'ecosystem_title' => 'Complete SaaS Ecosystem We Build',
         'ecosystem_items' => [
@@ -169,7 +169,7 @@ return [
             ],
             [
                 'title' => 'Proven Track Record',
-                'desc' => '50K+ active users on HKSpace demonstrates real-world, production-grade SaaS capability at scale with enterprise requirements.',
+                'desc' => 'HKSpace runs in production at scale, demonstrating real-world, production-grade SaaS capability under enterprise requirements.',
             ],
             [
                 'title' => 'Future-Ready Architecture',
@@ -323,7 +323,7 @@ return [
             ],
             [
                 'title' => 'SaaS Development Expertise',
-                'desc' => 'in SaaS development: handling high concurrent users, enterprise requirements, and complex workflows with 99.99% uptime SLA',
+                'desc' => 'in SaaS development: handling high concurrent users, enterprise requirements, and complex workflows with enterprise-grade uptime SLAs',
             ],
             [
                 'title' => 'Across multiple industries',

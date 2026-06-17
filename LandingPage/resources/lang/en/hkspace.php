@@ -26,9 +26,9 @@ return [
     'milestones_title' => 'Milestone Goals We\'re Targeting',
     'milestones_desc' => 'Our development roadmap is focused on achieving these key performance targets within the next 18-24 months as we scale our current infrastructure and expand into new enterprise markets.',
     'milestones' => [
-        ['bold' => 'Scale to 50,000+ concurrent users', 'text' => 'while maintaining consistent sub-100ms latency across peak loads'],
-        ['bold' => 'Achieve 99.99% uptime SLA', 'text' => 'across our global infrastructure as we mature our redundancy systems'],
-        ['bold' => 'Reduce average API response time to <100ms globally', 'text' => 'through edge computing optimization'],
+        ['bold' => 'Scale to production-grade concurrency', 'text' => 'while maintaining low-latency responsiveness across peak loads'],
+        ['bold' => 'Reach an enterprise-grade uptime SLA', 'text' => 'across our global infrastructure as we mature our redundancy systems'],
+        ['bold' => 'Deliver low-latency API response globally', 'text' => 'through edge computing optimization'],
         ['bold' => 'Expand enterprise adoption', 'text' => 'to Fortune 500 companies seeking scalable collaboration platforms'],
         ['bold' => 'Build sustainable revenue model', 'text' => 'that supports continuous R&D in platform infrastructure'],
     ],

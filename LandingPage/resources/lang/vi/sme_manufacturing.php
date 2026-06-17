@@ -476,7 +476,7 @@ return [
         ],
     ],
 
-    'roadmap_targets' => 'Tham Chiếu Mục Tiêu Hoạt Động: mục tiêu khả năng sẵn có 99,9%, kiến trúc có khả năng mở rộng cho các thiết bị và dây chuyền sản xuất bổ sung và bảo trì theo lịch trình với các kiểm tra sức khỏe hàng tháng cho các lớp cơ sở hạ tầng và ứng dụng.',
+    'roadmap_targets' => 'Tham Chiếu Mục Tiêu Hoạt Động: độ sẵn sàng đẳng cấp enterprise, kiến trúc có khả năng mở rộng cho các thiết bị và dây chuyền sản xuất bổ sung và bảo trì theo lịch trình với các kiểm tra sức khỏe hàng tháng cho các lớp cơ sở hạ tầng và ứng dụng.',
 
     // CTA Section
     'cta_title' => 'Bắt Đầu Hành Trình Số Hóa Nhà Máy của Bạn',

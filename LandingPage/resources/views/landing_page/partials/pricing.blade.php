@@ -27,7 +27,7 @@
 
             @foreach($pricing_plans as $plan)
             <div style="background: {{ $plan['highlighted'] ? 'linear-gradient(135deg, var(--primary) 0%, var(--primary-light) 100%)' : 'white' }}; border-radius: var(--card-radius); padding: 2.5rem; border: {{ $plan['highlighted'] ? 'none' : '1px solid var(--border)' }}; position: relative; transition: all 0.3s ease;"
-                    onmouseover="this.style.transform='translateY(-5px)'; this.style.boxShadow='0 12px 30px rgba(26, 77, 94, 0.15)';"
+                    onmouseover="this.style.transform='translateY(-5px)'; this.style.boxShadow='0 12px 30px rgba(14, 49, 99, 0.15)';"
                     onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='';">
 
                 @if($plan['highlighted'])

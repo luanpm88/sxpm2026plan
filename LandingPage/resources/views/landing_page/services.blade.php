@@ -110,41 +110,41 @@
                     <h3 style="font-size: 1.1rem; font-weight: 700; color: var(--text-dark); margin-bottom: 1.5rem;">{{ __('services.service1.cycle_title') }}</h3>
                     <svg viewBox="0 0 300 280" style="width: 100%; max-width: 300px; margin: 0 auto; display: block;">
                         <!-- Sprint Cycle Circle -->
-                        <circle cx="150" cy="140" r="90" fill="none" stroke="#e5e7eb" stroke-width="3"/>
+                        <circle cx="150" cy="140" r="90" fill="none" stroke="#e7e9ee" stroke-width="3"/>
 
                         <!-- Planning -->
-                        <circle cx="150" cy="50" r="25" fill="#1a4d5e"/>
+                        <circle cx="150" cy="50" r="25" fill="#0e3163"/>
                         <text x="150" y="50" text-anchor="middle" font-size="10" fill="white" font-weight="bold" dy="5">Planning</text>
 
                         <!-- Development -->
-                        <circle cx="235" cy="100" r="25" fill="#10b981"/>
+                        <circle cx="235" cy="100" r="25" fill="#1a4585"/>
                         <text x="235" y="100" text-anchor="middle" font-size="10" fill="white" font-weight="bold" dy="5">Dev</text>
 
                         <!-- Testing -->
-                        <circle cx="235" cy="180" r="25" fill="#f59e0b"/>
+                        <circle cx="235" cy="180" r="25" fill="#1a4585"/>
                         <text x="235" y="180" text-anchor="middle" font-size="10" fill="white" font-weight="bold" dy="5">Testing</text>
 
                         <!-- Demo/Review -->
-                        <circle cx="150" cy="230" r="25" fill="#7c3aed"/>
+                        <circle cx="150" cy="230" r="25" fill="#0e3163"/>
                         <text x="150" y="230" text-anchor="middle" font-size="10" fill="white" font-weight="bold" dy="5">Demo</text>
 
                         <!-- Deploy -->
-                        <circle cx="65" cy="180" r="25" fill="#0d9488"/>
+                        <circle cx="65" cy="180" r="25" fill="#1a4585"/>
                         <text x="65" y="180" text-anchor="middle" font-size="10" fill="white" font-weight="bold" dy="5">Deploy</text>
 
                         <!-- Retrospective -->
-                        <circle cx="65" cy="100" r="25" fill="#1a4d5e" opacity="0.7"/>
+                        <circle cx="65" cy="100" r="25" fill="#0e3163" opacity="0.7"/>
                         <text x="65" y="100" text-anchor="middle" font-size="10" fill="white" font-weight="bold" dy="5">Retro</text>
 
                         <!-- Center: 2 weeks -->
-                        <text x="150" y="135" text-anchor="middle" font-size="14" fill="#1a4d5e" font-weight="bold">{{ __('services.service1.cycle_2week') }}</text>
-                        <text x="150" y="152" text-anchor="middle" font-size="13" fill="#0d9488" font-weight="bold">{{ __('services.service1.cycle_sprint') }}</text>
+                        <text x="150" y="135" text-anchor="middle" font-size="14" fill="#0e3163" font-weight="bold">{{ __('services.service1.cycle_2week') }}</text>
+                        <text x="150" y="152" text-anchor="middle" font-size="13" fill="#1a4585" font-weight="bold">{{ __('services.service1.cycle_sprint') }}</text>
 
                         <!-- Arrows -->
-                        <path d="M 150 75 L 150 85" stroke="#1a4d5e" stroke-width="2" marker-end="url(#arrowhead)"/>
+                        <path d="M 150 75 L 150 85" stroke="#0e3163" stroke-width="2" marker-end="url(#arrowhead)"/>
                         <defs>
                             <marker id="arrowhead" markerWidth="10" markerHeight="10" refX="5" refY="3" orient="auto">
-                                <polygon points="0 0, 5 3, 0 6" fill="#1a4d5e" />
+                                <polygon points="0 0, 5 3, 0 6" fill="#0e3163" />
                             </marker>
                         </defs>
                     </svg>
@@ -160,7 +160,7 @@
                         <h4 style="font-weight: 700; color: var(--text-dark); margin-bottom: 0.5rem;">{{ __('services.service1.tech_title') }}</h4>
                         <p style="color: var(--text-gray); font-size: 0.95rem; margin: 0;">{{ __('services.service1.tech_desc') }}</p>
                     </div>
-                    <a href="{{ route('landing.tech-stack') }}" style="background: var(--primary); color: white; padding: 0.75rem 1.5rem; border-radius: 8px; text-decoration: none; font-weight: 600; white-space: nowrap; display: inline-flex; align-items: center; gap: 0.5rem; transition: all 0.3s ease;" onmouseover="this.style.backgroundColor='#0a5a82';" onmouseout="this.style.backgroundColor='var(--primary)';">
+                    <a href="{{ route('landing.tech-stack') }}" style="background: var(--primary); color: white; padding: 0.75rem 1.5rem; border-radius: 8px; text-decoration: none; font-weight: 600; white-space: nowrap; display: inline-flex; align-items: center; gap: 0.5rem; transition: all 0.3s ease;" onmouseover="this.style.backgroundColor='var(--primary-light)';" onmouseout="this.style.backgroundColor='var(--primary)';">
                         <span>{{ __('services.service1.view_details') }}</span>
                         <span class="material-symbols-rounded" style="font-size: 1.2rem;">arrow_forward</span>
                     </a>
@@ -172,22 +172,22 @@
                         <div style="display: flex; align-items: center; gap: 0.75rem; margin-bottom: 1rem;">
                             <div style="width: 40px; height: 40px; background: @switch($loop->iteration)
                                 @case(1)
-                                    #1a4d5e
+                                    #0e3163
                                 @break
                                 @case(2)
-                                    #0d9488
+                                    #1a4585
                                 @break
                                 @case(3)
-                                    #10b981
+                                    #0e3163
                                 @break
                                 @case(4)
-                                    #1a4d5e
+                                    #1a4585
                                 @break
                                 @case(5)
-                                    #7c3aed
+                                    #0e3163
                                 @break
                                 @case(6)
-                                    #0d9488
+                                    #1a4585
                                 @break
                             @endswitch; border-radius: 8px; display: flex; align-items: center; justify-content: center;">
                                 <span class="material-symbols-rounded" style="color: white; font-size: 1.5rem;">
@@ -286,45 +286,44 @@
                                     </feMerge>
                                 </filter>
                                 <linearGradient id="flow-grad" x1="0%" y1="0%" x2="100%" y2="0%">
-                                    <stop offset="0%" stop-color="#0ea5e9"/>
-                                    <stop offset="50%" stop-color="#a855f7"/>
-                                    <stop offset="100%" stop-color="#f59e0b"/>
+                                    <stop offset="0%" stop-color="#0e3163"/>
+                                    <stop offset="100%" stop-color="#1a4585"/>
                                 </linearGradient>
                             </defs>
 
                             <text x="12" y="22" font-size="10" fill="var(--text-dark)" font-weight="800">AI Brain / Knowledge Flow</text>
 
                             <!-- Data Sources -->
-                            <rect x="12" y="54" width="74" height="56" rx="10" fill="#0ea5e910" stroke="#0ea5e930"/>
-                            <text x="49" y="74" text-anchor="middle" font-size="8" fill="#0ea5e9" font-weight="700">Data Sources</text>
+                            <rect x="12" y="54" width="74" height="56" rx="10" fill="rgba(14,49,99,0.05)" stroke="#e7e9ee"/>
+                            <text x="49" y="74" text-anchor="middle" font-size="8" fill="#0e3163" font-weight="700">Data Sources</text>
                             <text x="49" y="90" text-anchor="middle" font-size="6.5" fill="var(--text-gray)">Docs · APIs</text>
 
                             <!-- Processing / Knowledge Ingestion -->
-                            <rect x="94" y="54" width="74" height="56" rx="10" fill="#0ea5e910" stroke="#0ea5e930"/>
-                            <text x="131" y="74" text-anchor="middle" font-size="8" fill="#0ea5e9" font-weight="700">Processing</text>
+                            <rect x="94" y="54" width="74" height="56" rx="10" fill="rgba(14,49,99,0.05)" stroke="#e7e9ee"/>
+                            <text x="131" y="74" text-anchor="middle" font-size="8" fill="#0e3163" font-weight="700">Processing</text>
                             <text x="131" y="90" text-anchor="middle" font-size="6.5" fill="var(--text-gray)">Knowledge Ingestion</text>
 
                             <!-- Vector DB / Vector Search -->
-                            <rect x="176" y="54" width="74" height="56" rx="10" fill="#a855f710" stroke="#a855f730"/>
-                            <text x="213" y="74" text-anchor="middle" font-size="8" fill="#a855f7" font-weight="700">Vector DB</text>
+                            <rect x="176" y="54" width="74" height="56" rx="10" fill="rgba(14,49,99,0.05)" stroke="#e7e9ee"/>
+                            <text x="213" y="74" text-anchor="middle" font-size="8" fill="#1a4585" font-weight="700">Vector DB</text>
                             <text x="213" y="90" text-anchor="middle" font-size="6.5" fill="var(--text-gray)">Vector Search</text>
 
                             <!-- LLM / LLM Routing -->
-                            <rect x="258" y="54" width="74" height="56" rx="10" fill="#f59e0b10" stroke="#f59e0b30"/>
-                            <circle cx="295" cy="82" r="18" fill="#f59e0b" opacity="0.18" filter="url(#llm-glow)">
+                            <rect x="258" y="54" width="74" height="56" rx="10" fill="rgba(47,106,191,0.10)" stroke="#2f6abf"/>
+                            <circle cx="295" cy="82" r="18" fill="#2f6abf" opacity="0.18" filter="url(#llm-glow)">
                                 <animate attributeName="opacity" values="0.12;0.35;0.12" dur="2.2s" repeatCount="indefinite"/>
                             </circle>
-                            <text x="295" y="74" text-anchor="middle" font-size="8" fill="#f59e0b" font-weight="800">LLM</text>
+                            <text x="295" y="74" text-anchor="middle" font-size="8" fill="#2f6abf" font-weight="800">LLM</text>
                             <text x="295" y="90" text-anchor="middle" font-size="6.5" fill="var(--text-gray)">LLM Routing</text>
 
                             <!-- Output -->
-                            <rect x="340" y="54" width="68" height="56" rx="10" fill="#22c55e10" stroke="#22c55e30"/>
-                            <text x="374" y="74" text-anchor="middle" font-size="8" fill="#22c55e" font-weight="700">Output</text>
+                            <rect x="340" y="54" width="68" height="56" rx="10" fill="rgba(14,49,99,0.05)" stroke="#e7e9ee"/>
+                            <text x="374" y="74" text-anchor="middle" font-size="8" fill="#0e3163" font-weight="700">Output</text>
                             <text x="374" y="90" text-anchor="middle" font-size="6.5" fill="var(--text-gray)">Answer + Cite</text>
 
                             <!-- Flow line -->
                             <path id="data-flow-path" d="M 49 126 C 120 154, 304 154, 374 126" fill="none" stroke="url(#flow-grad)" stroke-width="2.5" stroke-linecap="round" opacity="0.75"/>
-                            <circle r="4" fill="#0ea5e9">
+                            <circle r="4" fill="#0e3163">
                                 <animateMotion dur="2.6s" repeatCount="indefinite" rotate="auto">
                                     <mpath href="#data-flow-path"/>
                                 </animateMotion>
@@ -354,7 +353,7 @@
                 </div>
 
                 <!-- AI Capabilities Banner -->
-                <div style="background: linear-gradient(135deg, var(--primary) 0%, #0a4a78 100%); border-radius: 16px; padding: 3rem 2rem; color: white; box-shadow: 0 12px 48px rgba(26, 77, 94, 0.25); margin-bottom: 2.5rem;">
+                <div style="background: linear-gradient(135deg, var(--primary) 0%, var(--primary-light) 100%); border-radius: 16px; padding: 3rem 2rem; color: white; box-shadow: 0 12px 48px rgba(14, 49, 99, 0.25); margin-bottom: 2.5rem;">
                     <div style="max-width: 1200px; margin: 0 auto;">
                         <h3 style="font-size: 1.6rem; font-weight: 800; text-align: center; margin-bottom: 0.5rem;">{{ __('services.ai.capabilities_title') }}</h3>
                         <p style="text-align: center; font-size: 1.02rem; margin-bottom: 2rem; opacity: 0.95;">{{ __('services.ai.capabilities_desc') }}</p>
@@ -362,7 +361,7 @@
                             @foreach(__('services.ai.components') as $comp)
                             <div style="background: rgba(255,255,255,0.12); border: 1px solid rgba(255,255,255,0.25); border-radius: var(--card-radius); padding: 1.5rem; backdrop-filter: blur(8px); transition: all 0.3s ease;" onmouseover="this.style.background='rgba(255,255,255,0.18)'; this.style.transform='translateY(-2px)';" onmouseout="this.style.background='rgba(255,255,255,0.12)'; this.style.transform='';">
                                 <div style="display: flex; align-items: center; gap: 0.75rem; margin-bottom: 0.75rem;">
-                                    <span class="material-symbols-rounded" style="font-size: 1.7rem; color: #fbbf24;">
+                                    <span class="material-symbols-rounded" style="font-size: 1.7rem; color: #ffffff;">
                                         @switch($loop->iteration)
                                             @case(1)
                                                 input
@@ -488,20 +487,20 @@
             </div>
 
             <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; align-items: center; margin-bottom: 4rem;">
-                <div class="position-relative" style="background: white; border-radius: var(--card-radius); padding: 1.5rem; border: 2px solid var(--primary); box-shadow: 0 8px 32px rgba(26, 77, 94, 0.15);">
+                <div class="position-relative" style="background: white; border-radius: var(--card-radius); padding: 1.5rem; border: 2px solid var(--primary); box-shadow: 0 8px 32px rgba(14, 49, 99, 0.15);">
                     <svg viewBox="0 0 420 300" style="width: 100%;">
                         <text x="12" y="22" font-size="10" fill="var(--text-dark)" font-weight="800">Enterprise SaaS Platform</text>
 
                         <!-- KPI row -->
-                        <rect x="12" y="34" width="126" height="56" rx="10" fill="#3b82f610" stroke="#3b82f630"/>
-                        <text x="24" y="52" font-size="8" fill="var(--text-light)">Active Users</text>
-                        <text x="24" y="72" font-size="16" fill="#3b82f6" font-weight="800">50K+</text>
-                        <rect x="146" y="34" width="126" height="56" rx="10" fill="#22c55e10" stroke="#22c55e30"/>
+                        <rect x="12" y="34" width="126" height="56" rx="10" fill="rgba(14,49,99,0.05)" stroke="#e7e9ee"/>
+                        <text x="24" y="52" font-size="8" fill="var(--text-light)">Workspaces</text>
+                        <text x="24" y="72" font-size="14" fill="#0e3163" font-weight="800">Multi-tenant</text>
+                        <rect x="146" y="34" width="126" height="56" rx="10" fill="rgba(14,49,99,0.05)" stroke="#e7e9ee"/>
                         <text x="158" y="52" font-size="8" fill="var(--text-light)">Uptime SLA</text>
-                        <text x="158" y="72" font-size="16" fill="#22c55e" font-weight="800">99.95%</text>
-                        <rect x="280" y="34" width="128" height="56" rx="10" fill="#f59e0b10" stroke="#f59e0b30"/>
+                        <text x="158" y="72" font-size="14" fill="#1a4585" font-weight="800">Resilient</text>
+                        <rect x="280" y="34" width="128" height="56" rx="10" fill="rgba(47,106,191,0.10)" stroke="#2f6abf"/>
                         <text x="292" y="52" font-size="8" fill="var(--text-light)">API Response</text>
-                        <text x="292" y="72" font-size="16" fill="#f59e0b" font-weight="800">&lt;50ms</text>
+                        <text x="292" y="72" font-size="14" fill="#2f6abf" font-weight="800">Real-time</text>
 
                         <!-- Main modules -->
                         <rect x="12" y="106" width="128" height="84" rx="10" fill="var(--secondary-bg)" stroke="var(--border)"/>
@@ -522,11 +521,11 @@
                         <!-- Tenant strip -->
                         <text x="12" y="212" font-size="9" fill="var(--text-dark)" font-weight="700">Multi-tenant Isolation</text>
                         <rect x="12" y="220" width="396" height="60" rx="10" fill="var(--secondary-bg)" stroke="var(--border)"/>
-                        <rect x="24" y="236" width="82" height="28" rx="8" fill="#3b82f6"/>
+                        <rect x="24" y="236" width="82" height="28" rx="8" fill="#0e3163"/>
                         <text x="65" y="253" text-anchor="middle" font-size="8" fill="white" font-weight="700">Tenant A</text>
-                        <rect x="116" y="236" width="82" height="28" rx="8" fill="#22c55e"/>
+                        <rect x="116" y="236" width="82" height="28" rx="8" fill="#1a4585"/>
                         <text x="157" y="253" text-anchor="middle" font-size="8" fill="white" font-weight="700">Tenant B</text>
-                        <rect x="208" y="236" width="82" height="28" rx="8" fill="#f59e0b"/>
+                        <rect x="208" y="236" width="82" height="28" rx="8" fill="#08213f"/>
                         <text x="249" y="253" text-anchor="middle" font-size="8" fill="white" font-weight="700">Tenant C</text>
                         <rect x="300" y="236" width="96" height="28" rx="8" fill="var(--surface)" stroke="var(--border)"/>
                         <text x="348" y="253" text-anchor="middle" font-size="8" fill="var(--text-gray)" font-weight="700">+ Others</text>
@@ -567,7 +566,7 @@
                 </div>
                 <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.5rem; margin-bottom: 2rem;">
                     @foreach(__('services.saas.features') as $feature)
-                    <div style="background: white; border: 1px solid var(--border); border-radius: var(--card-radius); padding: 1.75rem; transition: all 0.3s ease;" onmouseover="this.style.boxShadow='0 8px 24px rgba(26, 77, 94, 0.1)'; this.style.transform='translateY(-4px)';" onmouseout="this.style.boxShadow=''; this.style.transform='';">
+                    <div style="background: white; border: 1px solid var(--border); border-radius: var(--card-radius); padding: 1.75rem; transition: all 0.3s ease;" onmouseover="this.style.boxShadow='0 8px 24px rgba(14, 49, 99, 0.1)'; this.style.transform='translateY(-4px)';" onmouseout="this.style.boxShadow=''; this.style.transform='';">
                         <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1rem;">
                             <div style="width: 48px; height: 48px; background: var(--secondary-bg); border-radius: 10px; display: flex; align-items: center; justify-content: center;">
                                 <span class="material-symbols-rounded" style="color: var(--primary); font-size: 1.5rem;">{{ $feature['icon'] }}</span>
@@ -580,7 +579,7 @@
                 </div>
                 <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.5rem;">
                     @foreach(__('services.saas.saas_features') as $feature)
-                    <div style="background: white; border: 1px solid var(--border); border-radius: var(--card-radius); padding: 1.75rem; transition: all 0.3s ease;" onmouseover="this.style.boxShadow='0 8px 24px rgba(26, 77, 94, 0.1)'; this.style.transform='translateY(-4px)';" onmouseout="this.style.boxShadow=''; this.style.transform='';">
+                    <div style="background: white; border: 1px solid var(--border); border-radius: var(--card-radius); padding: 1.75rem; transition: all 0.3s ease;" onmouseover="this.style.boxShadow='0 8px 24px rgba(14, 49, 99, 0.1)'; this.style.transform='translateY(-4px)';" onmouseout="this.style.boxShadow=''; this.style.transform='';">
                         <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1rem;">
                             <div style="width: 48px; height: 48px; background: var(--secondary-bg); border-radius: 10px; display: flex; align-items: center; justify-content: center;">
                                 <span class="material-symbols-rounded" style="color: var(--primary); font-size: 1.5rem;">{{ $feature['icon'] }}</span>
@@ -617,7 +616,7 @@
                 <p class="section-subtitle">{{ __('services.security.subtitle') }}</p>
             </div>
 
-            <div style="background: linear-gradient(135deg, var(--primary) 0%, #0a4a78 100%); border-radius: 16px; padding: 2.5rem; color: white; margin-bottom: 2rem;">
+            <div style="background: linear-gradient(135deg, var(--primary) 0%, var(--primary-light) 100%); border-radius: 16px; padding: 2.5rem; color: white; margin-bottom: 2rem;">
                 <p style="text-align: center; font-size: 1.1rem; margin-bottom: 0; font-weight: 600;">{{ __('services.security.standards') }}</p>
             </div>
 
@@ -655,7 +654,7 @@
 
             <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 2rem;">
                 @foreach(__('services.engagement.models') as $model)
-                <div style="background: white; border: 1px solid var(--border); border-radius: var(--card-radius); padding: 2rem; text-align: center; transition: all 0.3s ease;" onmouseover="this.style.boxShadow='0 12px 30px rgba(26, 77, 94, 0.15)'; this.style.transform='translateY(-4px)';" onmouseout="this.style.boxShadow=''; this.style.transform='';">
+                <div style="background: white; border: 1px solid var(--border); border-radius: var(--card-radius); padding: 2rem; text-align: center; transition: all 0.3s ease;" onmouseover="this.style.boxShadow='0 12px 30px rgba(14, 49, 99, 0.15)'; this.style.transform='translateY(-4px)';" onmouseout="this.style.boxShadow=''; this.style.transform='';">
                     <h3 style="font-size: 1.15rem; font-weight: 700; color: var(--text-dark); margin-bottom: 0.75rem;">{{ $model['title'] }}</h3>
                     <p style="color: var(--text-gray); font-size: 0.95rem; line-height: 1.6; margin-bottom: 1.5rem;">{{ $model['desc'] }}</p>
                     <div style="background: var(--secondary-bg); padding: 1rem; border-radius: 8px;">

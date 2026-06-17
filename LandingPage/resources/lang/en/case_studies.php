@@ -9,7 +9,7 @@ return [
         ['num' => '50+', 'label' => 'Projects Delivered'],
         ['num' => '10+', 'label' => 'Industries Served'],
         ['num' => '$1M', 'label' => 'Project Value'],
-        ['num' => '99.99%', 'label' => 'Client Satisfaction'],
+        ['num' => 'High', 'label' => 'Client Satisfaction'],
         ['num' => '12+', 'label' => 'Years Expertise'],
         ['num' => '10+', 'label' => 'Countries Reach'],
     ],
@@ -24,11 +24,11 @@ return [
             'challenge' => 'Manage schedules, class assignments, learning reports, and attendance for 10,000+ students. Manual scheduling took 3 weeks per semester with frequent conflicts.',
             'solution' => 'Delivered a comprehensive operations platform using a PHP-based API stack, focused on reliability and scale rather than heavy AI. Implemented flexible timetable generation, workload balancing rules, automated attendance, and reporting. Added high-availability infrastructure with PostgreSQL load balancing, caching, and resilient queues to handle peak enrollment and scheduling periods.',
             'results' => [
-                'Scheduling time: 3 weeks → 2 days',
-                'Data accuracy 99.9%',
+                'Scheduling time: weeks → days',
+                'High data accuracy',
                 '10K+ students managed',
-                'Adoption 98%',
-                '500+ hours/semester saved'
+                'Strong user adoption',
+                'Significant operational hours saved each semester'
             ],
             'tech' => 'PHP, REST API, PostgreSQL (Load Balancing), Redis, React, React Native'
         ],
@@ -38,12 +38,12 @@ return [
             'challenge' => 'Manage ~10M SKUs across 50+ branches. Pain points: inventory control, inbound/outbound, consignment, barcode scanning, monthly audits. Manual workflows led to inaccurate reports. Needed accurate demand forecasting.',
             'solution' => 'Built a comprehensive WMS with real-time barcode scanning and automated reconciliation. Implemented demand forecasting via matrix factorization and time-series analysis. Added analytics dashboards, multi-location sync, and blockchain-backed consignment docs for transparency.',
             'results' => [
-                'Inventory accuracy: 85% → 99.8%',
-                'Forecasting accuracy: 94%',
-                'Throughput: 1M+ transactions/day',
-                'Audit time reduced by 80%',
-                'Dead stock reduced by 35%',
-                'Cost savings: $15M/year'
+                'Major inventory accuracy gains',
+                'High forecasting accuracy',
+                'High-volume transaction throughput',
+                'Audit time reduced significantly',
+                'Dead stock reduced substantially',
+                'Significant cost savings'
             ],
             'tech' => 'Python, Machine Learning, PostgreSQL, Redis, React, Node.js, Blockchain'
         ],
@@ -53,12 +53,12 @@ return [
             'challenge' => 'A 100+ employee company needed unified accounting, procurement, inventory, e-commerce, and operations. Inventory data wasn\'t in sync with accounting; disparate modules slowed reporting.',
             'solution' => 'Built an integrated ERP: accounting (GL, AR, AP), inventory, procurement, e-commerce sync (Shopify/WooCommerce), HR payroll, and reporting. Added real-time consolidation, BI dashboards, workflow automation, and a mobile app for field staff.',
             'results' => [
-                'Consolidation: 3 days → 1 minute',
-                'Invoice processing effort reduced by 70%',
+                'Consolidation reduced from days to minutes',
+                'Invoice processing effort reduced substantially',
                 'Accounting reconciliation automated',
-                'Report generation: 2 hours → 5 minutes',
-                'Decision speed improved by 60%',
-                'Adoption 95% within 2 months'
+                'Report generation reduced from hours to minutes',
+                'Faster decision-making',
+                'Strong adoption within months'
             ],
             'tech' => 'Node.js, PostgreSQL, React, Python, Elasticsearch, AWS, Docker, Microservices'
         ],

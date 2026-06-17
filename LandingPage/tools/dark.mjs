@@ -1,0 +1,11 @@
+import { chromium } from 'playwright';
+const b = await chromium.launch();
+const ctx = await b.newContext({ viewport: { width: 1440, height: 900 }, deviceScaleFactor: 2 });
+const p = await ctx.newPage();
+await p.addInitScript(() => { try { localStorage.setItem('theme','dark'); } catch(e){} });
+await p.goto('http://localhost:8788/en', { waitUntil: 'networkidle', timeout: 30000 });
+await p.evaluate(() => document.documentElement.setAttribute('data-theme','dark'));
+await p.waitForTimeout(500);
+await p.screenshot({ path: '/tmp/hkshots/dark_home.png' });
+console.log('done');
+await b.close();

@@ -7,15 +7,15 @@ return [
     'cta_primary'  => 'Tư Vấn Kỹ Thuật Miễn Phí',
     'cta_secondary'=> 'Xem Quy Trình Làm Việc',
     'cta_microcopy'=> 'Gọi 30 phút. Không áp lực bán hàng. Đề xuất kỹ thuật trong 48 giờ.',
-    'stat1_value'  => '14',
-    'stat1_label'  => 'Năm Kinh Nghiệm',
-    'stat2_value'  => '127',
-    'stat2_label'  => 'Dự Án Hoàn Thành',
-    'stat3_value'  => '99.99%',
-    'stat3_label'  => 'Uptime Đảm Bảo',
+    'stat1_value'  => '100+',
+    'stat1_label'  => 'Kỹ Sư Senior',
+    'stat2_value'  => 'Trọn Gói',
+    'stat2_label'  => 'Triển Khai & Mở Rộng',
+    'stat3_value'  => 'Enterprise',
+    'stat3_label'  => 'Bảo Mật & Tuân Thủ',
 
-    'social_proof_label' => '53 doanh nghiệp trên 10+ ngành',
-    'social_proof_source' => '4.8 trên Clutch',
+    'social_proof_label' => 'Doanh nghiệp trên 10+ ngành',
+    'social_proof_source' => 'Đối tác triển khai tin cậy',
 
     // Industries served
     'industries_label' => 'Được tin tưởng trong nhiều ngành',

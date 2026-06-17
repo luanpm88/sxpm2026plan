@@ -21,13 +21,13 @@
                 <h2 style="font-size: 1.75rem; font-weight: 700; color: var(--text-dark); margin-bottom: 2rem;">{{ __('contact.form_title') }}</h2>
 
                 @if(session('contact_success'))
-                    <div style="margin-bottom: 1rem; padding: 0.9rem 1rem; border-radius: 8px; background: #eaf8f2; border: 1px solid #bde8d4; color: #176544;">
+                    <div style="margin-bottom: 1rem; padding: 0.9rem 1rem; border-radius: 8px; background: var(--primary-subtle); border: 1px solid var(--border); color: var(--primary);">
                         {{ session('contact_success') }}
                     </div>
                 @endif
 
                 @if($errors->has('contact_form'))
-                    <div style="margin-bottom: 1rem; padding: 0.9rem 1rem; border-radius: 8px; background: #fff1f2; border: 1px solid #fecdd3; color: #9f1239;">
+                    <div style="margin-bottom: 1rem; padding: 0.9rem 1rem; border-radius: 8px; background: var(--secondary-bg); border: 1px solid var(--border); color: var(--primary);">
                         {{ $errors->first('contact_form') }}
                     </div>
                 @endif
@@ -38,7 +38,7 @@
                         <label style="display: block; font-weight: 600; color: var(--text-dark); margin-bottom: 0.5rem;">{{ __('contact.name_label') }}</label>
                         <input type="text" name="name" value="{{ old('name') }}" placeholder="{{ __('contact.name_placeholder') }}" style="width: 100%; padding: 0.75rem 1rem; border: 1px solid var(--border); border-radius: 8px; font-size: 1rem; font-family: inherit;" required>
                         @error('name')
-                            <p style="margin-top: 0.45rem; color: #b91c1c; font-size: 0.9rem;">{{ $message }}</p>
+                            <p style="margin-top: 0.45rem; color: var(--primary); font-size: 0.9rem;">{{ $message }}</p>
                         @enderror
                     </div>
 
@@ -46,7 +46,7 @@
                         <label style="display: block; font-weight: 600; color: var(--text-dark); margin-bottom: 0.5rem;">{{ __('contact.email_label') }}</label>
                         <input type="email" name="email" value="{{ old('email') }}" placeholder="{{ __('contact.email_placeholder') }}" style="width: 100%; padding: 0.75rem 1rem; border: 1px solid var(--border); border-radius: 8px; font-size: 1rem; font-family: inherit;" required>
                         @error('email')
-                            <p style="margin-top: 0.45rem; color: #b91c1c; font-size: 0.9rem;">{{ $message }}</p>
+                            <p style="margin-top: 0.45rem; color: var(--primary); font-size: 0.9rem;">{{ $message }}</p>
                         @enderror
                     </div>
 
@@ -89,7 +89,7 @@
                         <label style="display: block; font-weight: 600; color: var(--text-dark); margin-bottom: 0.5rem;">{{ __('contact.message_label') }}</label>
                         <textarea name="message" placeholder="{{ __('contact.message_placeholder') }}" style="width: 100%; padding: 0.75rem 1rem; border: 1px solid var(--border); border-radius: 8px; font-size: 1rem; font-family: inherit; min-height: 150px; resize: vertical;" required>{{ old('message') }}</textarea>
                         @error('message')
-                            <p style="margin-top: 0.45rem; color: #b91c1c; font-size: 0.9rem;">{{ $message }}</p>
+                            <p style="margin-top: 0.45rem; color: var(--primary); font-size: 0.9rem;">{{ $message }}</p>
                         @enderror
                     </div>
 

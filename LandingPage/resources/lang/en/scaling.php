@@ -4,7 +4,7 @@ return [
     // Hero
     'hero_title'        => 'Scaling &',
     'hero_title_accent' => 'Infrastructure',
-    'hero_desc1'        => 'From small MVP to 10 million users. 6 scaling phases with 99.99% SLA, auto-scaling, 24/7 monitoring.',
+    'hero_desc1'        => 'From small MVP to 10 million users. 6 scaling phases with enterprise-grade SLA, auto-scaling, 24/7 monitoring.',
     'hero_desc2'        => 'We have scaled 50+ projects from 0 to millions of users. Experience from early startup to unicorn scale.',
 
     // Phases section
@@ -86,13 +86,13 @@ return [
 
     // Metrics data
     'metrics' => [
-        ['metric' => '99.99%', 'label' => 'Uptime SLA',             'desc' => '~4.26 min downtime/year'],
-        ['metric' => '<100ms', 'label' => 'API Response Time',       'desc' => 'P99 latency'],
-        ['metric' => '<3s',    'label' => 'Page Load Time',          'desc' => 'On 3G network'],
-        ['metric' => '>95',    'label' => 'Lighthouse Score',        'desc' => 'Performance metric'],
-        ['metric' => '0ms',    'label' => 'Zero-downtime Deploy',    'desc' => 'Blue-green deployment'],
-        ['metric' => '24/7',   'label' => 'SOC Monitoring',         'desc' => 'Real-time alerts'],
-        ['metric' => '1sec',   'label' => 'Auto-recovery Time',     'desc' => 'Failover automation'],
-        ['metric' => '99.9%',  'label' => 'Database Availability',  'desc' => 'Multi-region replication'],
+        ['metric' => 'Enterprise', 'label' => 'Uptime SLA',             'desc' => 'High-availability SLA'],
+        ['metric' => 'Low',        'label' => 'API Response Time',       'desc' => 'Low-latency P99'],
+        ['metric' => '<3s',        'label' => 'Page Load Time',          'desc' => 'On 3G network'],
+        ['metric' => '>95',        'label' => 'Lighthouse Score',        'desc' => 'Performance metric'],
+        ['metric' => 'Zero',       'label' => 'Zero-downtime Deploy',    'desc' => 'Blue-green deployment'],
+        ['metric' => '24/7',       'label' => 'SOC Monitoring',         'desc' => 'Real-time alerts'],
+        ['metric' => 'Fast',       'label' => 'Auto-recovery Time',     'desc' => 'Failover automation'],
+        ['metric' => 'High',       'label' => 'Database Availability',  'desc' => 'Multi-region replication'],
     ],
 ];

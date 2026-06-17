@@ -7,22 +7,25 @@
    CSS Variables & Theme (Notion-HK Hybrid Palette)
    ========================================== */
 :root {
-    --primary: #0f6b9e;
-    --primary-light: #2f8fc3;
-    --primary-dark: #0b4e73;
-    --primary-subtle: rgba(15, 107, 158, 0.07);
-    --accent: #1a8ec7;
-    --accent-light: #ddf0fa;
-    /* Notion-inspired: more neutral off-white backgrounds */
-    --secondary-bg: #f5f7f9;
-    --text-dark: #0f172a;
-    --text-gray: #4a5f6e;
-    --text-light: #7b8fa0;
-    --border: #e4eaee;
+    /* ── HKIncotech Enterprise palette — Deep Navy + Ink ──
+       Discipline: ONE brand colour (navy). Blue is structural, never decorative.
+       No orange / teal / purple / rainbow. Text is near-black for crisp authority. */
+    --primary: #0e3163;            /* enterprise navy — strong & dark (logo, primary buttons, emphasis), a touch fresher */
+    --primary-light: #1a4585;      /* lifted navy — button hover, gradients */
+    --primary-dark: #08213f;       /* deepest navy — active/press, dark sections */
+    --primary-subtle: rgba(14, 49, 99, 0.05);   /* faint navy wash — tints, illustration fills */
+    --accent: #2f6abf;             /* single restrained steel-blue — small interactive accents only (~the 20%) */
+    --accent-light: rgba(47, 106, 191, 0.10);
+    /* Neutral, non-blue-tinted surfaces */
+    --secondary-bg: #f6f7f9;
+    --text-dark: #0c1118;          /* near-black — headings & body, crisp */
+    --text-gray: #4f5965;          /* neutral slate-gray (no blue tint) */
+    --text-light: #8a93a0;
+    --border: #e7e9ee;
     --surface: #ffffff;
     --surface-elevated: #ffffff;
-    --shadow-color: rgba(15, 107, 158, 0.07);
-    --shadow-hover: rgba(15, 107, 158, 0.13);
+    --shadow-color: rgba(14, 49, 99, 0.06);
+    --shadow-hover: rgba(14, 49, 99, 0.11);
     /* Notion-style: larger radius, generous feel */
     --card-radius: 14px;
     --section-radius: 20px;
@@ -30,21 +33,22 @@
 }
 
 html[data-theme="dark"] {
-    --primary: #47a3d4;
-    --primary-light: #73bfe6;
-    --primary-dark: #2b84b5;
-    --primary-subtle: rgba(71, 163, 212, 0.15);
-    --accent: #6ec7f0;
-    --accent-light: rgba(110, 199, 240, 0.15);
-    --secondary-bg: #0f1a24;
-    --text-dark: #e8eef5;
-    --text-gray: #b5c4d4;
-    --text-light: #8fa3b5;
-    --border: #263545;
-    --surface: #131f2b;
-    --surface-elevated: #1a2d3e;
-    --shadow-color: rgba(0, 0, 0, 0.28);
-    --shadow-hover: rgba(0, 0, 0, 0.42);
+    /* Navy reads as near-black on dark, so lift the brand to a legible steel-blue for contrast */
+    --primary: #6fa3dd;
+    --primary-light: #9bc2eb;
+    --primary-dark: #4a7fbe;
+    --primary-subtle: rgba(111, 163, 221, 0.14);
+    --accent: #6fa3dd;
+    --accent-light: rgba(111, 163, 221, 0.14);
+    --secondary-bg: #0c1622;
+    --text-dark: #e9eef4;
+    --text-gray: #aeb9c6;
+    --text-light: #7e8a98;
+    --border: #20303f;
+    --surface: #111b27;
+    --surface-elevated: #18283a;
+    --shadow-color: rgba(0, 0, 0, 0.30);
+    --shadow-hover: rgba(0, 0, 0, 0.44);
 }
 
 /* ==========================================
@@ -174,6 +178,12 @@ html[data-theme="dark"] header {
     width: auto;
 }
 
+/* Navy logo would sink into the dark header — render it crisp white in dark mode
+   (footer logo keeps its own inline brightness filter). */
+html[data-theme="dark"] .logo img {
+    filter: brightness(0) invert(1);
+}
+
 .logo span {
     display: inline-block;
     transform: translateY(5px);
@@ -243,9 +253,9 @@ nav a.nav-link-v5--active::after {
     align-items: center;
 }
 
-.nav-group--services { --nav-mega-accent: #f59e0b; --nav-mega-accent-2: #fbbf24; }
-.nav-group--expertise { --nav-mega-accent: #f59e0b; --nav-mega-accent-2: #fbbf24; }
-.nav-group--company { --nav-mega-accent: #f59e0b; --nav-mega-accent-2: #fbbf24; }
+.nav-group--services { --nav-mega-accent: var(--primary); --nav-mega-accent-2: var(--accent); }
+.nav-group--expertise { --nav-mega-accent: var(--primary); --nav-mega-accent-2: var(--accent); }
+.nav-group--company { --nav-mega-accent: var(--primary); --nav-mega-accent-2: var(--accent); }
 
 .nav-group__trigger {
     color: var(--text-gray);
@@ -376,25 +386,25 @@ html[data-theme="dark"] .nav-group__panel {
     border-radius: 14px;
     padding: 1rem 1rem 0.9rem;
     background: linear-gradient(135deg,
-        color-mix(in srgb, var(--nav-mega-accent, #f59e0b) 85%, white) 0%,
-        color-mix(in srgb, var(--nav-mega-accent-2, #fbbf24) 85%, white) 100%);
-    border: 1px solid color-mix(in srgb, var(--nav-mega-accent, #f59e0b) 35%, white);
+        color-mix(in srgb, var(--nav-mega-accent, var(--primary)) 88%, white) 0%,
+        color-mix(in srgb, var(--nav-mega-accent-2, var(--accent)) 88%, white) 100%);
+    border: 1px solid color-mix(in srgb, var(--nav-mega-accent, var(--primary)) 30%, white);
     overflow: hidden;
 }
 
 /* Fallback if color-mix unsupported */
 @supports not (background: color-mix(in srgb, red 50%, white)) {
     .nav-mega__aside {
-        background: linear-gradient(135deg, rgba(245, 158, 11, 0.95) 0%, rgba(251, 191, 36, 0.95) 100%);
-        border-color: rgba(245, 158, 11, 0.35);
+        background: linear-gradient(135deg, rgba(14, 49, 99, 0.95) 0%, rgba(26, 69, 133, 0.95) 100%);
+        border-color: rgba(14, 49, 99, 0.35);
     }
     .nav-group--expertise .nav-mega__aside {
-        background: linear-gradient(135deg, rgba(245, 158, 11, 0.95) 0%, rgba(251, 191, 36, 0.95) 100%);
-        border-color: rgba(245, 158, 11, 0.35);
+        background: linear-gradient(135deg, rgba(14, 49, 99, 0.95) 0%, rgba(26, 69, 133, 0.95) 100%);
+        border-color: rgba(14, 49, 99, 0.35);
     }
     .nav-group--company .nav-mega__aside {
-        background: linear-gradient(135deg, rgba(245, 158, 11, 0.95) 0%, rgba(251, 191, 36, 0.95) 100%);
-        border-color: rgba(245, 158, 11, 0.35);
+        background: linear-gradient(135deg, rgba(14, 49, 99, 0.95) 0%, rgba(26, 69, 133, 0.95) 100%);
+        border-color: rgba(14, 49, 99, 0.35);
     }
 }
 
@@ -515,7 +525,7 @@ html[data-theme="dark"] .nav-group__panel {
 }
 
 html[data-theme="dark"] .nav-mega__aside {
-    border-color: color-mix(in srgb, var(--nav-mega-accent, #f59e0b) 35%, rgba(255,255,255,0.1));
+    border-color: color-mix(in srgb, var(--nav-mega-accent, var(--primary)) 35%, rgba(255,255,255,0.1));
 }
 
 @media (max-width: 1024px) {
@@ -701,7 +711,7 @@ nav.mobile-open {
     right: -120px;
     width: 500px;
     height: 500px;
-    background: radial-gradient(circle, rgba(15, 107, 158, 0.06) 0%, transparent 70%);
+    background: radial-gradient(circle, rgba(14, 49, 99, 0.06) 0%, transparent 70%);
     border-radius: 50%;
     pointer-events: none;
 }
@@ -713,7 +723,7 @@ nav.mobile-open {
     left: -100px;
     width: 400px;
     height: 400px;
-    background: radial-gradient(circle, rgba(15, 107, 158, 0.04) 0%, transparent 70%);
+    background: radial-gradient(circle, rgba(14, 49, 99, 0.04) 0%, transparent 70%);
     border-radius: 50%;
     pointer-events: none;
 }
@@ -745,14 +755,14 @@ nav.mobile-open {
     font-weight: 700;
     letter-spacing: 0.03em;
     margin-bottom: 1.75rem;
-    border: 1px solid rgba(15, 107, 158, 0.12);
+    border: 1px solid rgba(14, 49, 99, 0.12);
 }
 
 .hero h1 {
-    font-size: 3.5rem;
+    font-size: 2.7rem;
     font-weight: 800;
-    line-height: 1.1;
-    letter-spacing: -0.035em;
+    line-height: 1.12;
+    letter-spacing: -0.03em;
     margin-bottom: 1.25rem;
     color: var(--text-dark);
 }
@@ -769,7 +779,7 @@ nav.mobile-open {
     right: -4px;
     bottom: 2px;
     height: 12px;
-    background: rgba(15, 107, 158, 0.12);
+    background: rgba(14, 49, 99, 0.12);
     border-radius: 4px;
     z-index: -1;
 }
@@ -849,7 +859,7 @@ nav.mobile-open {
 }
 
 .hero-stars {
-    color: #f59e0b;
+    color: var(--accent);
     font-size: 0.8rem;
     letter-spacing: 0.5px;
 }
@@ -877,7 +887,7 @@ nav.mobile-open {
     background: var(--surface);
     border-radius: 16px;
     border: 1px solid var(--border);
-    box-shadow: 0 20px 60px rgba(15, 107, 158, 0.1), 0 4px 12px rgba(0,0,0,0.04);
+    box-shadow: 0 20px 60px rgba(14, 49, 99, 0.1), 0 4px 12px rgba(0,0,0,0.04);
     overflow: hidden;
 }
 
@@ -900,6 +910,17 @@ nav.mobile-open {
     margin: 0 auto;
     object-fit: contain;
 }
+
+/* Monochrome navy line illustrations (enterprise, no rainbow) */
+.hero-illustration {
+    width: min(560px, 100%);
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    color: var(--primary);
+}
+.hero-illustration .hs-surface { fill: var(--surface); }
+.hero-illustration .hs-accent { fill: var(--accent); }
 
 .hero-dashboard-topbar {
     display: flex;
@@ -975,7 +996,7 @@ nav.mobile-open {
     border: 1px solid var(--border);
     border-radius: 12px;
     padding: 0.75rem 1rem;
-    box-shadow: 0 8px 24px rgba(15, 107, 158, 0.08);
+    box-shadow: 0 8px 24px rgba(14, 49, 99, 0.08);
     z-index: 2;
     display: flex;
     align-items: center;
@@ -1010,7 +1031,7 @@ nav.mobile-open {
     .hero-centered { max-width: 900px; text-align: center; margin: 0 auto; }
     .hero-buttons { justify-content: center; }
     .hero-social-proof { justify-content: center; }
-    .hero h1 { font-size: 2.8rem; }
+    .hero h1 { font-size: 2.4rem; }
     .hero-dashboard { max-width: 680px; }
     .hero-stats-row { gap: 2.5rem; }
     .hero-float-card { display: none; }
@@ -1088,7 +1109,7 @@ nav.mobile-open {
 }
 
 .fp-card:hover {
-    border-color: rgba(15, 107, 158, 0.25);
+    border-color: rgba(14, 49, 99, 0.25);
     box-shadow: 0 6px 24px var(--shadow-color);
     transform: translateY(-2px);
 }
@@ -1096,7 +1117,7 @@ nav.mobile-open {
 /* Why-choose-us cards: accent border color on hover */
 .why-card:hover {
     /* Fallback for browsers without color-mix() support */
-    border-color: rgba(15, 107, 158, 0.25) !important;
+    border-color: rgba(14, 49, 99, 0.25) !important;
     /* Modern: per-card accent color via CSS custom property */
     border-color: color-mix(in srgb, var(--card-accent, var(--primary)) 25%, transparent) !important;
     box-shadow: 0 8px 28px var(--shadow-color);
@@ -1325,22 +1346,22 @@ html[data-theme="dark"] div[style*="linear-gradient(135deg, #f0f9ff 0%, #ecfdf5"
 
 /* Dark mode: AI platform amber gradient sidebar */
 html[data-theme="dark"] div[style*="linear-gradient(135deg, #fef3c7 0%, #fde68a"] {
-    background: rgba(217, 119, 6, 0.1) !important;
-    border-color: rgba(217, 119, 6, 0.25) !important;
+    background: rgba(14, 49, 99, 0.1) !important;
+    border-color: rgba(14, 49, 99, 0.25) !important;
 }
 
-/* Dark mode: amber blockquotes in ai article */
+/* Dark mode: navy-tinted blockquotes in ai article */
 html[data-theme="dark"] div[style*="background: #fef3c7"][style*="border-left: 4px solid #d97706"] {
-    background: rgba(217, 119, 6, 0.1) !important;
+    background: rgba(14, 49, 99, 0.1) !important;
 }
 
-/* Dark mode: amber badge text (#92400e is too dark) */
+/* Dark mode: navy badge text (#92400e is too dark) */
 html[data-theme="dark"] [style*="color: #92400e"] {
-    color: #fcd34d !important;
+    color: var(--primary) !important;
 }
 
 html[data-theme="dark"] [style*="color: #d97706"] {
-    color: #fbbf24 !important;
+    color: var(--primary) !important;
 }
 
 /* Dark mode: hkspace blockquotes (#f8fafc) */
@@ -1363,22 +1384,22 @@ html[data-theme="dark"] section[style*="background: #f0f9ff"] {
 
 /* Dark mode: override accent pill backgrounds */
 html[data-theme="dark"] div[style*="background: #e0f2fe"] {
-    background: rgba(71, 163, 212, 0.15) !important;
+    background: var(--primary-subtle) !important;
 }
 
 html[data-theme="dark"] div[style*="background: #fef3c7"],
 html[data-theme="dark"] div[style*="background: #fde68a"] {
-    background: rgba(217, 169, 56, 0.15) !important;
+    background: var(--primary-subtle) !important;
 }
 
 html[data-theme="dark"] div[style*="background: #ecfdf5"],
 html[data-theme="dark"] div[style*="background: #d1fae5"] {
-    background: rgba(16, 185, 129, 0.12) !important;
+    background: var(--primary-subtle) !important;
 }
 
 html[data-theme="dark"] div[style*="background: #dbeafe"],
 html[data-theme="dark"] div[style*="background: #e0e7ff"] {
-    background: rgba(96, 165, 250, 0.12) !important;
+    background: var(--primary-subtle) !important;
 }
 
 /* Dark mode: override inline border colors */
@@ -1416,11 +1437,11 @@ html[data-theme="dark"] svg line[stroke="#1a4d5e"] {
     stroke: var(--primary);
 }
 
-html[data-theme="dark"] svg circle[fill="#0d9488"],
-html[data-theme="dark"] svg line[stroke="#0d9488"],
-html[data-theme="dark"] svg text[fill="#0d9488"] {
-    fill: var(--accent);
-    stroke: var(--accent);
+html[data-theme="dark"] svg circle[fill="#0e3163"],
+html[data-theme="dark"] svg line[stroke="#0e3163"],
+html[data-theme="dark"] svg text[fill="#0e3163"] {
+    fill: var(--primary);
+    stroke: var(--primary);
 }
 
 footer a {
@@ -1860,8 +1881,8 @@ html[data-theme="dark"] .services-tech-stack-block [style*="color: var(--text-gr
 }
 
 html[data-theme="dark"] .services-tech-stack-block a[style*="background: var(--primary)"] {
-    background: #2d8bc0 !important;
-    color: #f7fbff !important;
+    background: var(--primary) !important;
+    color: #ffffff !important;
 }
 
 /* Scrum page: keep sprint cycle readable in dark mode */
@@ -1885,16 +1906,16 @@ html[data-theme="dark"] .scrum-sprint-cycle-section .position-relative[style*="b
 }
 
 html[data-theme="dark"] .scrum-sprint-cycle-section svg text[fill="#1a4d5e"] {
-    fill: #79bce1 !important;
+    fill: var(--primary) !important;
 }
 
 html[data-theme="dark"] .scrum-sprint-cycle-section svg path[stroke="#1a4d5e"],
 html[data-theme="dark"] .scrum-sprint-cycle-section svg line[stroke="#1a4d5e"] {
-    stroke: #3d7597 !important;
+    stroke: var(--primary-light) !important;
 }
 
 html[data-theme="dark"] .scrum-sprint-cycle-section svg polygon[fill="#1a4d5e"] {
-    fill: #3d7597 !important;
+    fill: var(--primary-light) !important;
 }
 
 /* Dark mode: additional inline text colors not covered above */
@@ -1943,7 +1964,7 @@ html[data-theme="dark"] [style*="box-shadow: 0 2px 8px rgba(26, 77, 94"] {
 
 /* Dark mode: fix timeline gradient lines */
 html[data-theme="dark"] [style*="linear-gradient(180deg, var(--primary) 0%, rgba(26, 77, 94"] {
-    background: linear-gradient(180deg, var(--primary) 0%, rgba(71, 163, 212, 0.2) 100%) !important;
+    background: linear-gradient(180deg, var(--primary) 0%, rgba(26, 69, 133, 0.2) 100%) !important;
 }
 
 /* Dark mode: fix hardcoded dark-primary gradient banners */
@@ -1963,7 +1984,7 @@ html[data-theme="dark"] .hero-float-card {
 }
 
 html[data-theme="dark"] .hero h1 span::after {
-    background: rgba(71, 163, 212, 0.15);
+    background: var(--accent-light);
 }
 
 /* ==========================================
@@ -1999,20 +2020,20 @@ html[data-theme="dark"] select option {
 
 /* Dark mode: alert/notification boxes */
 html[data-theme="dark"] [style*="background: #eaf8f2"] {
-    background: rgba(16, 185, 129, 0.15) !important;
-    border-color: rgba(16, 185, 129, 0.3) !important;
-    color: #6ee7b7 !important;
+    background: var(--primary-subtle) !important;
+    border-color: rgba(14, 49, 99, 0.3) !important;
+    color: var(--primary) !important;
 }
 
 html[data-theme="dark"] [style*="background: #fff1f2"] {
-    background: rgba(239, 68, 68, 0.15) !important;
-    border-color: rgba(239, 68, 68, 0.3) !important;
-    color: #fca5a5 !important;
+    background: var(--primary-subtle) !important;
+    border-color: rgba(14, 49, 99, 0.3) !important;
+    color: var(--primary) !important;
 }
 
 /* Dark mode: R&D pill badge */
 html[data-theme="dark"] [style*="background: #e0f2fe"][style*="color: #0369a1"] {
-    background: rgba(71, 163, 212, 0.18) !important;
+    background: var(--primary-subtle) !important;
     color: var(--primary-light) !important;
 }
 
@@ -2040,8 +2061,9 @@ html[data-theme="dark"] a[style*="background: linear-gradient(135deg, #fef3c7"] 
 /* ── Utility classes (extracted from inline styles) ─────────────── */
 .section-alt { background: var(--secondary-bg); }
 .section-cta { text-align: center; margin-top: 2.5rem; }
-.grid-4col { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem; }
-.grid-3col { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.5rem; }
+/* Flex-center so a partial last row (orphan cards) centers instead of left-aligning */
+.grid-4col, .grid-3col { display: flex; flex-wrap: wrap; justify-content: center; gap: 1.5rem; }
+.grid-4col > *, .grid-3col > * { flex: 1 1 300px; max-width: 400px; }
 .dot { width: 5px; height: 5px; background: var(--primary); border-radius: 50%; flex-shrink: 0; }
 
 /* ── Service Cards ──────────────────────────────────────────────── */
@@ -2522,7 +2544,7 @@ html[data-theme="dark"] a[style*="background: linear-gradient(135deg, #fef3c7"] 
     background: var(--primary-subtle);
 }
 .comparison-table .check {
-    color: #10b981;
+    color: var(--primary);
     font-weight: 700;
 }
 .comparison-table .cross {
@@ -2545,10 +2567,10 @@ html[data-theme="dark"] a[style*="background: linear-gradient(135deg, #fef3c7"] 
     background: var(--surface);
     border: 1px solid var(--border);
     border-radius: var(--card-radius);
-    border-left: 3px solid #ef4444;
+    border-left: 3px solid var(--primary);
 }
 .pain-icon {
-    color: #ef4444;
+    color: var(--primary);
     font-size: 1.3rem;
     margin-top: 1px;
     flex-shrink: 0;

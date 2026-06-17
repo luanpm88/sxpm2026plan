@@ -18,7 +18,7 @@ return [
         ],
         [
             'title' => 'Nền Tảng SaaS',
-            'desc' => 'Nền tảng SaaS đa người dùng sẵn sàng sản xuất. HKSpace hiện phục vụ trên 50K+ người dùng hoạt động',
+            'desc' => 'Nền tảng SaaS đa người dùng sẵn sàng sản xuất. HKSpace vận hành ở quy mô production, phục vụ lượng người dùng hoạt động lớn',
         ],
         [
             'title' => 'Nền Tảng AI Trí Thức',
@@ -159,7 +159,7 @@ return [
     // SaaS Platform
     'saas' => [
         'title' => 'Nền Tảng SaaS Cấp Doanh Nghiệp',
-        'subtitle' => 'Nền tảng SaaS đa người dùng hoàn chỉnh sẵn sàng sản xuất phục vụ 50K+ người dùng với bảo mật & khả năng mở rộng cấp doanh nghiệp',
+        'subtitle' => 'Nền tảng SaaS đa người dùng hoàn chỉnh sẵn sàng sản xuất, vận hành ở quy mô production với bảo mật & khả năng mở rộng cấp doanh nghiệp',
         'hkspace_title' => 'HKSpace - Nền Tảng SaaS Tiêu Biểu',
         'ecosystem_title' => 'Hệ Sinh Thái SaaS Toàn Diện Chúng Tôi Triển Khai',
         'ecosystem_items' => [
@@ -169,7 +169,7 @@ return [
             ],
             [
                 'title' => 'Hồ Sơ Thành Tích Chứng Minh',
-                'desc' => '50K+ người dùng hoạt động trên HKSpace chứng minh khả năng SaaS cấp sản xuất thực tế ở quy mô lớn với yêu cầu cấp doanh nghiệp.',
+                'desc' => 'HKSpace vận hành thực tế ở quy mô production, chứng minh khả năng SaaS cấp sản xuất ở quy mô lớn với yêu cầu cấp doanh nghiệp.',
             ],
             [
                 'title' => 'Kiến Trúc Sẵn Sàng Cho Tương Lai',
@@ -323,7 +323,7 @@ return [
             ],
             [
                 'title' => 'Chuyên Môn Phát Triển SaaS',
-                'desc' => 'Chuyên môn trong phát triển SaaS: xử lý người dùng đồng thời cao, yêu cầu cấp doanh nghiệp và quy trình làm việc phức tạp với SLA uptime 99.99%',
+                'desc' => 'Chuyên môn trong phát triển SaaS: xử lý người dùng đồng thời cao, yêu cầu cấp doanh nghiệp và quy trình làm việc phức tạp với SLA uptime đẳng cấp enterprise',
             ],
             [
                 'title' => 'Trên Nhiều Lĩnh Vực',

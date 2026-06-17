@@ -24,7 +24,7 @@
                 <p class="section-subtitle">{{ __('pricing.plans_subtitle') }}</p>
             </div>
 
-            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; margin-bottom: 4rem;">
+            <div class="card-grid" style="--card-min: 300px; --card-max: 440px; --card-gap: 2rem; margin-bottom: 4rem;">
                 @php
                 $pricing_plans = __('pricing.plans');
                 @endphp
@@ -96,7 +96,7 @@
                 <p class="section-subtitle">{{ __('pricing.services_subtitle') }}</p>
             </div>
 
-            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem;">
+            <div class="card-grid" style="--card-min: 250px; --card-max: 390px; --card-gap: 2rem;">
                 @php
                 $core_services = __('pricing.core_services');
                 @endphp

@@ -18,9 +18,9 @@
     --accent-light: rgba(47, 106, 191, 0.10);
     /* Neutral, non-blue-tinted surfaces */
     --secondary-bg: #f6f7f9;
-    --text-dark: #0c1118;          /* near-black — headings & body, crisp */
-    --text-gray: #4f5965;          /* neutral slate-gray (no blue tint) */
-    --text-light: #8a93a0;
+    --text-dark: #0b0f15;          /* near-black — headings, crisp */
+    --text-gray: #313840;          /* dark slate — body & secondary text, high-contrast (not faded) */
+    --text-light: #565e69;         /* muted captions/labels — still clearly legible */
     --border: #e7e9ee;
     --surface: #ffffff;
     --surface-elevated: #ffffff;
@@ -41,9 +41,9 @@ html[data-theme="dark"] {
     --accent: #6fa3dd;
     --accent-light: rgba(111, 163, 221, 0.14);
     --secondary-bg: #0c1622;
-    --text-dark: #e9eef4;
-    --text-gray: #aeb9c6;
-    --text-light: #7e8a98;
+    --text-dark: #f1f5f9;
+    --text-gray: #c6d0dc;
+    --text-light: #9aa6b3;
     --border: #20303f;
     --surface: #111b27;
     --surface-elevated: #18283a;
@@ -2061,9 +2061,20 @@ html[data-theme="dark"] a[style*="background: linear-gradient(135deg, #fef3c7"] 
 /* ── Utility classes (extracted from inline styles) ─────────────── */
 .section-alt { background: var(--secondary-bg); }
 .section-cta { text-align: center; margin-top: 2.5rem; }
-/* Flex-center so a partial last row (orphan cards) centers instead of left-aligning */
-.grid-4col, .grid-3col { display: flex; flex-wrap: wrap; justify-content: center; gap: 1.5rem; }
-.grid-4col > *, .grid-3col > * { flex: 1 1 300px; max-width: 400px; }
+/* Card-list grids — wrap & CENTER so a partial last row (orphan cards) stays
+   centered for symmetry, instead of left-aligning with an empty gap.
+   One consistent mechanism for every card grid; tune per-section with
+   --card-min / --card-max / --card-gap (no per-place hacks). */
+.card-grid, .grid-4col, .grid-3col {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: var(--card-gap, 1.5rem);
+}
+.card-grid > *, .grid-4col > *, .grid-3col > * {
+    flex: 1 1 var(--card-min, 300px);
+    max-width: var(--card-max, 440px);
+}
 .dot { width: 5px; height: 5px; background: var(--primary); border-radius: 50%; flex-shrink: 0; }
 
 /* ── Service Cards ──────────────────────────────────────────────── */
@@ -2186,11 +2197,10 @@ html[data-theme="dark"] a[style*="background: linear-gradient(135deg, #fef3c7"] 
     display: flex;
     align-items: center;
     gap: 0.4rem;
-    color: var(--text-light);
-    opacity: 0.5;
+    color: var(--text-gray);
     font-size: 0.85rem;
     font-weight: 600;
-    transition: opacity 0.2s;
+    transition: color 0.2s;
 }
 .hero-client-logo:hover {
     opacity: 0.8;

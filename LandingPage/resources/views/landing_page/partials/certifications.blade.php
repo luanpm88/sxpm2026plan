@@ -24,7 +24,7 @@
             <p class="section-subtitle">Enterprise-grade security standards and regulatory compliance</p>
         </div>
         
-        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2rem;">
+        <div class="card-grid" style="--card-min: 280px; --card-max: 420px; --card-gap: 2rem;">
             @php
             $compliance = [
                 [
@@ -93,7 +93,7 @@
             <p class="section-subtitle">Certified expertise across leading cloud platforms</p>
         </div>
         
-        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2rem;">
+        <div class="card-grid" style="--card-min: 280px; --card-max: 420px; --card-gap: 2rem;">
             @php
             $cloudCerts = [
                 [
@@ -168,7 +168,7 @@
             <p class="section-subtitle">Professional certifications in agile methodologies and software development</p>
         </div>
         
-        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem;">
+        <div class="card-grid" style="--card-min: 300px; --card-max: 440px; --card-gap: 2rem;">
             @php
             $agile = [
                 [
@@ -238,7 +238,7 @@
             <p class="section-subtitle">Deep expertise across modern development frameworks and technologies</p>
         </div>
         
-        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2rem;">
+        <div class="card-grid" style="--card-min: 280px; --card-max: 420px; --card-gap: 2rem;">
             @php
             $technologies = [
                 [
@@ -305,7 +305,7 @@
             <p class="section-subtitle">5+ senior engineers with deep specialization and track record</p>
         </div>
         
-        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2rem;">
+        <div class="card-grid" style="--card-min: 280px; --card-max: 420px; --card-gap: 2rem;">
             @php
             $teamProfile = [
                 [
@@ -375,7 +375,7 @@
                 We invest in our team's growth through certifications, training, and knowledge sharing
             </p>
             
-            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 2rem; max-width: 1200px; margin: 0 auto;">
+            <div class="card-grid" style="--card-min: 200px; --card-max: 340px; --card-gap: 2rem; max-width: 1200px; margin: 0 auto;">
                 <div style="background: rgba(255, 255, 255, 0.1); border-radius: 8px; padding: 1.5rem;">
                     <div style="font-size: 2rem; font-weight: 800; margin-bottom: 0.5rem;">100%</div>
                     <div style="font-size: 0.9rem;">Annual Certification Budget</div>

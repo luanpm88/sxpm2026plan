@@ -39,7 +39,7 @@
             <p class="section-subtitle">Our multidisciplinary approach to building the future of enterprise software</p>
         </div>
 
-        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2rem;">
+        <div class="card-grid" style="--card-min: 280px; --card-max: 420px; --card-gap: 2rem;">
             <div style="background: white; border-radius: var(--card-radius); padding: 2rem; border: 1px solid var(--border);">
                 <div style="font-size: 1.75rem; color: var(--primary); margin-bottom: 1rem;">
                     <span class="material-symbols-rounded">architecture</span>

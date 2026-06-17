@@ -72,7 +72,7 @@
                 <p class="section-subtitle">{{ __('scaling.metrics_subtitle') }}</p>
             </div>
 
-            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 2rem;">
+            <div class="card-grid" style="--card-min: 240px; --card-max: 380px; --card-gap: 2rem;">
                 @foreach(__('scaling.metrics') as $m)
                 <div style="background: var(--secondary-bg); border-radius: var(--card-radius); padding: 2rem; border: 1px solid var(--border); text-align: center; transition: all 0.3s ease;" onmouseover="this.style.backgroundColor='white'; this.style.borderColor='var(--primary)';" onmouseout="this.style.backgroundColor='var(--secondary-bg)'; this.style.borderColor='var(--border)';">
                     <div style="font-size: 2rem; font-weight: 800; color: var(--primary); margin-bottom: 0.5rem;">{{ $m['metric'] }}</div>

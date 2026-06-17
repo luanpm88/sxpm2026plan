@@ -93,7 +93,7 @@
             <p class="section-subtitle">{{ __('about.values_subtitle') }}</p>
         </div>
 
-        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2rem;">
+        <div class="card-grid" style="--card-min: 280px; --card-max: 420px; --card-gap: 2rem;">
             @foreach(__('about.values') as $v)
             <div style="background: white; border-radius: var(--card-radius); padding: 2rem; text-align: center;">
                 <div style="font-size: 2rem; color: var(--primary); margin-bottom: 1rem;">
@@ -120,7 +120,7 @@
             <p class="section-subtitle">{{ __('about.team_subtitle') }}</p>
         </div>
 
-        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2rem;">
+        <div class="card-grid" style="--card-min: 280px; --card-max: 420px; --card-gap: 2rem;">
             @php $leaders = __('about.team'); @endphp
             @foreach($leaders as $leader)
             <div style="background: white; border: 1px solid var(--border); border-radius: var(--card-radius); overflow: hidden; transition: all 0.3s ease;" onmouseover="this.style.borderColor='var(--primary)'; this.style.boxShadow='0 12px 30px rgba(14, 49, 99, 0.1)';" onmouseout="this.style.borderColor='var(--border)'; this.style.boxShadow='';">
@@ -162,7 +162,7 @@
             <p class="section-subtitle">{{ __('about.achievements_subtitle') }}</p>
         </div>
 
-        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem;">
+        <div class="card-grid" style="--card-min: 250px; --card-max: 390px; --card-gap: 2rem;">
             @foreach(__('about.achievements') as $a)
             <div style="background: white; border-radius: var(--card-radius); padding: 2.5rem; text-align: center; border: 1px solid var(--border);">
                 <div style="font-size: 2rem; font-weight: 800; color: var(--primary); margin-bottom: 0.5rem;">

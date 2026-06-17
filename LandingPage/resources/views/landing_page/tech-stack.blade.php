@@ -24,7 +24,7 @@
                 <p class="section-subtitle">{{ __('tech_stack.stack_subtitle') }}</p>
             </div>
 
-            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2rem;">
+            <div class="card-grid" style="--card-min: 280px; --card-max: 420px; --card-gap: 2rem;">
                 @php
                 $tech_categories = __('tech_stack.categories');
                 @endphp
@@ -63,7 +63,7 @@
                 <p class="section-subtitle">{{ __('tech_stack.metrics_subtitle') }}</p>
             </div>
 
-            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 2rem; text-align: center;">
+            <div class="card-grid" style="--card-min: 220px; --card-max: 360px; --card-gap: 2rem; text-align: center;">
                 @php
                 $metrics = __('tech_stack.metrics');
                 @endphp
@@ -93,7 +93,7 @@
                 <p class="section-subtitle">{{ __('tech_stack.platforms_subtitle') }}</p>
             </div>
 
-            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2.5rem; margin-bottom: 4rem;">
+            <div class="card-grid" style="--card-min: 300px; --card-max: 440px; --card-gap: 2.5rem; margin-bottom: 4rem;">
                 @php
                 $platforms = __('tech_stack.platforms');
                 @endphp
@@ -139,7 +139,7 @@
                 <p class="section-subtitle">{{ __('tech_stack.practices_subtitle') }}</p>
             </div>
 
-            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2rem;">
+            <div class="card-grid" style="--card-min: 280px; --card-max: 420px; --card-gap: 2rem;">
                 @php
                 $practices = __('tech_stack.practices');
                 @endphp

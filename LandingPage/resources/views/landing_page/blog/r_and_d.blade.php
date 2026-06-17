@@ -36,7 +36,7 @@
                 <p class="section-subtitle">{{ __('r_and_d.capabilities_subtitle') }}</p>
             </div>
 
-            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2rem;">
+            <div class="card-grid" style="--card-min: 280px; --card-max: 420px; --card-gap: 2rem;">
                 @foreach(__('r_and_d.capabilities') as $cap)
                 <div style="background: white; border-radius: var(--card-radius); padding: 2rem; border: 1px solid var(--border);">
                     <div style="font-size: 1.75rem; color: var(--primary); margin-bottom: 1rem;">

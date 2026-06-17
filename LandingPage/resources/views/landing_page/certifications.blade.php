@@ -29,7 +29,7 @@
                 <p class="section-subtitle">{{ __('certifications.compliance_subtitle') }}</p>
             </div>
 
-            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2rem;">
+            <div class="card-grid" style="--card-min: 280px; --card-max: 420px; --card-gap: 2rem;">
                 @foreach(__('certifications.compliance') as $cert)
                 <div style="background: white; border-radius: var(--card-radius); padding: 2.5rem 2rem; border: 1px solid var(--border); transition: all 0.3s ease; text-align: center;" onmouseover="this.style.borderColor='var(--primary)'; this.style.boxShadow='0 10px 30px rgba(14, 49, 99, 0.1)'; this.style.transform='translateY(-4px)';" onmouseout="this.style.borderColor='var(--border)'; this.style.boxShadow=''; this.style.transform='';">
                     <div style="font-size: 2rem; color: var(--primary); margin-bottom: 1rem;">
@@ -53,7 +53,7 @@
                 <p class="section-subtitle">{{ __('certifications.cloud_subtitle') }}</p>
             </div>
 
-            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2rem;">
+            <div class="card-grid" style="--card-min: 280px; --card-max: 420px; --card-gap: 2rem;">
                 @foreach(__('certifications.cloud_certs') as $cloud)
                 <div style="background: white; border-radius: var(--card-radius); padding: 2rem; border: 1px solid var(--border); transition: all 0.3s ease;" onmouseover="this.style.borderColor='var(--primary)'; this.style.boxShadow='0 10px 30px rgba(14, 49, 99, 0.1)';" onmouseout="this.style.borderColor='var(--border)'; this.style.boxShadow='';">
                     <div style="font-size: 2rem; color: var(--primary); margin-bottom: 1rem;">
@@ -83,7 +83,7 @@
                 <p class="section-subtitle">{{ __('certifications.agile_subtitle') }}</p>
             </div>
 
-            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem;">
+            <div class="card-grid" style="--card-min: 300px; --card-max: 440px; --card-gap: 2rem;">
                 @foreach(__('certifications.agile') as $cat)
                 <div style="background: white; border-radius: var(--card-radius); padding: 2.5rem 2rem; border: 2px solid #e2e8f0; transition: all 0.3s ease;" onmouseover="this.style.borderColor='var(--primary)'; this.style.transform='translateX(5px)';" onmouseout="this.style.borderColor='#e2e8f0'; this.style.transform='';">
                     <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1.5rem;">
@@ -115,7 +115,7 @@
                 <p class="section-subtitle">{{ __('certifications.tech_subtitle') }}</p>
             </div>
 
-            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2rem;">
+            <div class="card-grid" style="--card-min: 280px; --card-max: 420px; --card-gap: 2rem;">
                 @foreach(__('certifications.technologies') as $tech)
                 <div style="background: white; border-radius: var(--card-radius); padding: 2rem; border: 1px solid var(--border); transition: all 0.3s ease;" onmouseover="this.style.boxShadow='0 8px 20px rgba(14, 49, 99, 0.1)';" onmouseout="this.style.boxShadow='';">
                     <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1.5rem;">
@@ -147,7 +147,7 @@
                 <p class="section-subtitle">{{ __('certifications.team_subtitle') }}</p>
             </div>
 
-            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2rem;">
+            <div class="card-grid" style="--card-min: 280px; --card-max: 420px; --card-gap: 2rem;">
                 @foreach(__('certifications.team_profile') as $profile)
                 <div style="background: white; border-radius: var(--card-radius); padding: 2.5rem 2rem; border: 1px solid var(--border); text-align: center; transition: all 0.3s ease;" onmouseover="this.style.borderColor='var(--primary)'; this.style.transform='translateY(-5px)'; this.style.boxShadow='0 10px 30px rgba(14, 49, 99, 0.1)';" onmouseout="this.style.borderColor='var(--border)'; this.style.transform=''; this.style.boxShadow='';">
                     <div style="font-size: 2rem; color: var(--primary); margin-bottom: 1rem;">
@@ -169,7 +169,7 @@
                 <h2 style="font-size: 2rem; font-weight: 800; margin-bottom: 1rem;">{{ __('certifications.learning_title') }}</h2>
                 <p style="font-size: 1.1rem; margin-bottom: 2rem; opacity: 0.95;">{{ __('certifications.learning_desc') }}</p>
 
-                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 2rem; max-width: 1200px; margin: 0 auto;">
+                <div class="card-grid" style="--card-min: 200px; --card-max: 340px; --card-gap: 2rem; max-width: 1200px; margin: 0 auto;">
                     <div style="background: rgba(255,255,255,0.1); border-radius: 8px; padding: 1.5rem;">
                         <div style="font-size: 2rem; font-weight: 800; margin-bottom: 0.5rem;">{{ __('certifications.learning_stat1_value') }}</div>
                         <div style="font-size: 0.9rem;">{{ __('certifications.learning_stat1_label') }}</div>

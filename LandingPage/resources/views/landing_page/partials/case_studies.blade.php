@@ -15,7 +15,7 @@
 <!-- Portfolio Stats -->
 {{-- <section style="background: white;">
     <div class="container-v5">
-        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 2rem; margin-bottom: 4rem;">
+        <div class="card-grid" style="--card-min: 180px; --card-max: 320px; --card-gap: 2rem; margin-bottom: 4rem;">
             @php
             $portfolio_stats = [
                 ['num' => '50+', 'label' => 'Projects Delivered'],
@@ -223,7 +223,7 @@
             <p class="section-subtitle">{{ __('case_studies.industries_subtitle') }}</p>
         </div>
         
-        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2rem;">
+        <div class="card-grid" style="--card-min: 280px; --card-max: 420px; --card-gap: 2rem;">
             @foreach(__('case_studies.industries') as $ind)
             <div style="background: white; border-radius: var(--card-radius); padding: 2rem; text-align: center; border: 1px solid var(--border); transition: all 0.3s ease;" onmouseover="this.style.borderColor='var(--primary)'; this.style.boxShadow='0 12px 30px var(--shadow-hover)';" onmouseout="this.style.borderColor='var(--border)'; this.style.boxShadow='';">
                 <div style="font-size: 2rem; color: var(--primary); margin-bottom: 1rem;">
@@ -250,7 +250,7 @@
             <p class="section-subtitle">{{ __('case_studies.testimonials_subtitle') }}</p>
         </div>
         
-        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem;">
+        <div class="card-grid" style="--card-min: 300px; --card-max: 440px; --card-gap: 2rem;">
             @foreach(__('case_studies.testimonials') as $t)
             <div style="background: var(--secondary-bg); border-radius: var(--card-radius); padding: 2rem; border: 1px solid var(--border); transition: all 0.3s ease;" onmouseover="this.style.backgroundColor='white';" onmouseout="this.style.backgroundColor='var(--secondary-bg)';">
                 <div style="display: flex; gap: 0.3rem; margin-bottom: 1rem;">

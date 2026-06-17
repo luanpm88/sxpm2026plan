@@ -1,7 +1,7 @@
 <div class="team-roadmap">
     <!-- Copy best team/roadmap content from your slides here -->
     <h3 style="text-align:center;color:var(--primary);font-weight:700;margin-bottom:18px;">{{ __('team_roadmap.title') }}</h3>
-    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:18px;">
+    <div class="card-grid" style="--card-min: 260px; --card-max: 400px; --card-gap: 18px;">
         <div class="team-card">
             <h4>{{ __('team_roadmap.ba_po_title') }}</h4>
             <ul><li>{{ __('team_roadmap.ba_po_cert1') }}</li><li>{{ __('team_roadmap.ba_po_cert2') }}</li></ul>

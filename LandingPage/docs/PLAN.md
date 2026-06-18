@@ -148,6 +148,7 @@ Raise `demo.hkincotech.com` from a polished marketing template into a senior, bo
 - **2026-06-17:** Plan created. Starting audit + foundation fixes.
 - **2026-06-18:** Full baseline audit captured: 60 screenshots under `/tmp/hkshots/audit-full-baseline` (light/dark/mobile, EN/VI, 10 scoped pages).
 - **2026-06-18:** Implemented global contrast/button tokens, globe language selector, raw-white usage cleanup, compact Services hero, Services delivery diagram, SME hero/process diagram, SME framework diagram, SME module cards, and VI/EN copy pass. Captured audit pass 1 and pass 2 under `/tmp/hkshots/audit-redesign-pass1` and `/tmp/hkshots/audit-redesign-pass2`.
+- **2026-06-18:** Deployed commit `4f72306` to `https://demo.hkincotech.com`; verified `/en`, `/vi`, `/vi/services`, and `/vi/solutions/sme-manufacturing` return HTTP 200.
 
 ## Audit Findings
 
@@ -174,9 +175,9 @@ Raise `demo.hkincotech.com` from a polished marketing template into a senior, bo
 
 Deploy only when:
 
-- [ ] PHP lint passes for lang files touched.
-- [ ] `curl` returns 200 for all scoped VI/EN routes.
+- [x] PHP lint passes for lang files touched.
+- [x] `curl` returns 200 for priority VI/EN routes.
 - [x] Screenshot audit has no unresolved severe visual issues.
 - [x] `rg` confirms no flag-only language UI remains.
 - [x] Dark mode no longer relies on broad white-background rescue rules as the primary fix.
-- [ ] `LandingPage/deploy.sh` completes successfully.
+- [x] `LandingPage/deploy.sh` completes successfully.

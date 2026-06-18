@@ -6,7 +6,7 @@
         .section-title { font-size: 2.2rem; font-weight: 800; color: var(--text-dark); margin-bottom: 30px; text-align: center; }
         .section-subtitle { font-size: 1.1rem; color: var(--text-gray); text-align: center; margin-bottom: 40px; }
         .container { max-width: 1200px; margin: 0 auto; padding: 0 24px; }
-        .onepage-navbar { position: fixed; top: 0; left: 0; width: 100%; background: #fff; z-index: 100; box-shadow: 0 2px 8px rgba(0,0,0,0.04); }
+        .onepage-navbar { position: fixed; top: 0; left: 0; width: 100%; background: var(--surface); z-index: 100; box-shadow: 0 2px 8px rgba(0,0,0,0.04); }
         .onepage-navbar .container { display: flex; gap: 30px; justify-content: center; align-items: center; height: 60px; }
         .nav-link { color: var(--primary); font-weight: 600; text-decoration: none; padding: 8px 18px; border-radius: 6px; transition: background 0.2s; }
         .nav-link:hover, .nav-link.active { background: var(--secondary-bg); color: var(--primary); }
@@ -31,7 +31,7 @@
             <div style="text-align:center; max-width:700px; margin:0 auto;">
                 <h1 class="section-title">HKIncotech — Nâng tầm giải pháp số doanh nghiệp</h1>
                 <div class="section-subtitle">12+ năm phát triển phần mềm, 50+ dự án lớn nhỏ, 10+ ngành, 10M+ queries AI/ngày, 100% real-time sync, 1M+ giao dịch logistics/ngày</div>
-                <a href="#services" class="nav-link" style="background:var(--primary);color:#fff;font-size:1.1rem;padding:14px 36px;margin-top:30px;display:inline-block;">Khám phá dịch vụ</a>
+                <a href="#services" class="nav-link" style="background:var(--primary);color: var(--contrast-panel-text);font-size:1.1rem;padding:14px 36px;margin-top:30px;display:inline-block;">Khám phá dịch vụ</a>
             </div>
         </div>
     </section>

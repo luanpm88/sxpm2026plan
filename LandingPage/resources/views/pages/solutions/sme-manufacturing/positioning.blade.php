@@ -5,38 +5,44 @@
             <p class="section-subtitle">{{ __('sme_manufacturing.positioning_subtitle') }}</p>
         </div>
 
-        <div style="background: var(--secondary-bg); border: 1px solid var(--border); border-radius: var(--card-radius); padding: 1.75rem; margin-bottom: 1.5rem;">
-            <h3 style="font-size: 1.2rem; font-weight: 700; color: var(--text-dark); margin-bottom: 0.75rem;">{{ __('sme_manufacturing.positioning_context_heading') }}</h3>
-            <p style="color: var(--text-gray); line-height: 1.8; margin-bottom: 0.75rem;">
-                {{ __('sme_manufacturing.positioning_context_p1') }}
-            </p>
-            <p style="color: var(--text-gray); line-height: 1.8; margin: 0;">
-                {{ __('sme_manufacturing.positioning_context_p2') }}
-            </p>
-        </div>
+        <div class="solution-context">
+            <div>
+                <h3>{{ __('sme_manufacturing.positioning_context_heading') }}</h3>
+                <p style="margin-bottom: 0.9rem;">{{ __('sme_manufacturing.positioning_context_p1') }}</p>
+                <p>{{ __('sme_manufacturing.positioning_context_p2') }}</p>
+            </div>
 
-        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem;">
-            @foreach(__('sme_manufacturing.positioning_items') as $item)
-                <div style="background: var(--secondary-bg); border: 1px solid var(--border); border-radius: var(--card-radius); padding: 1.75rem;">
-                    <h3 style="font-size: 1.1rem; font-weight: 700; margin-bottom: 0.75rem; color: var(--text-dark);">{{ $item['title'] }}</h3>
-                    <p style="color: var(--text-gray); margin: 0; line-height: 1.7;">{{ $item['description'] }}</p>
+            <div class="solution-panel" style="box-shadow: none;">
+                <div style="display: grid; gap: 1rem;">
+                    <div>
+                        <h3>{{ __('sme_manufacturing.positioning_buyers_title') }}</h3>
+                        <p>{{ __('sme_manufacturing.positioning_buyers_desc') }}</p>
+                    </div>
+                    <div style="border-top: 1px solid var(--border); padding-top: 1rem;">
+                        <h3>{{ __('sme_manufacturing.positioning_targets_title') }}</h3>
+                        <p>{{ __('sme_manufacturing.positioning_targets_desc') }}</p>
+                    </div>
+                    <div style="border-top: 1px solid var(--border); padding-top: 1rem;">
+                        <h3>{{ __('sme_manufacturing.positioning_model_title') }}</h3>
+                        <p>{{ __('sme_manufacturing.positioning_model_desc') }}</p>
+                    </div>
                 </div>
-            @endforeach
+            </div>
         </div>
 
-        <div style="margin-top: 1.5rem; display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 1rem;">
-            <div style="background: var(--surface); border: 1px dashed var(--border); border-radius: 10px; padding: 1rem;">
-                <h3 style="font-size: 1rem; font-weight: 700; margin-bottom: 0.4rem; color: var(--text-dark);">{{ __('sme_manufacturing.positioning_buyers_title') }}</h3>
-                <p style="margin: 0; color: var(--text-gray); font-size: 0.9rem;">{{ __('sme_manufacturing.positioning_buyers_desc') }}</p>
-            </div>
-            <div style="background: var(--surface); border: 1px dashed var(--border); border-radius: 10px; padding: 1rem;">
-                <h3 style="font-size: 1rem; font-weight: 700; margin-bottom: 0.4rem; color: var(--text-dark);">{{ __('sme_manufacturing.positioning_targets_title') }}</h3>
-                <p style="margin: 0; color: var(--text-gray); font-size: 0.9rem;">{{ __('sme_manufacturing.positioning_targets_desc') }}</p>
-            </div>
-            <div style="background: var(--surface); border: 1px dashed var(--border); border-radius: 10px; padding: 1rem;">
-                <h3 style="font-size: 1rem; font-weight: 700; margin-bottom: 0.4rem; color: var(--text-dark);">{{ __('sme_manufacturing.positioning_model_title') }}</h3>
-                <p style="margin: 0; color: var(--text-gray); font-size: 0.9rem;">{{ __('sme_manufacturing.positioning_model_desc') }}</p>
-            </div>
+        @php
+            $positioningIcons = ['manage_search', 'schema', 'view_module', 'handshake'];
+        @endphp
+        <div class="solution-card-grid" style="margin-top: 1rem;">
+            @foreach(__('sme_manufacturing.positioning_items') as $item)
+                <article class="solution-card">
+                    <div class="solution-card__icon">
+                        <span class="material-symbols-rounded" aria-hidden="true">{{ $positioningIcons[$loop->index] ?? 'check_circle' }}</span>
+                    </div>
+                    <h3>{{ $item['title'] }}</h3>
+                    <p>{{ $item['description'] }}</p>
+                </article>
+            @endforeach
         </div>
     </div>
 </section>

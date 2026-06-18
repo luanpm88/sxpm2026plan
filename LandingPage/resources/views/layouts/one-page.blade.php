@@ -26,20 +26,20 @@
         .lang-switcher-op {
             display: flex;
             align-items: center;
-            gap: 0.25rem;
+            gap: 0.35rem;
         }
         .lang-switcher-op a,
         .theme-toggle-locale {
             display: inline-flex;
             align-items: center;
-            gap: 0.2rem;
-            padding: 0.25rem 0.55rem;
-            border-radius: 5px;
+            gap: 0.25rem;
+            padding: 0.35rem 0.65rem;
+            border-radius: 999px;
             font-size: 0.78rem;
             font-weight: 600;
             text-decoration: none;
-            border: 1.5px solid rgba(255,255,255,0.3);
-            color: rgba(255,255,255,0.8);
+            border: 1.5px solid var(--contrast-glass-border);
+            color: var(--contrast-panel-muted);
             transition: all 0.2s ease;
             background: transparent;
             cursor: pointer;
@@ -51,9 +51,13 @@
         .lang-switcher-op a:hover,
         .lang-switcher-op a.active,
         .theme-toggle-locale:hover {
-            background: rgba(255,255,255,0.15);
-            border-color: rgba(255,255,255,0.7);
-            color: white;
+            background: var(--contrast-panel-border);
+            border-color: var(--contrast-panel-muted-soft);
+            color: var(--contrast-panel-text);
+        }
+        .lang-switcher-op .material-symbols-rounded {
+            font-size: 1rem;
+            line-height: 1;
         }
     </style>
     @stack('styles')
@@ -87,8 +91,14 @@
             </button>
             <!-- Language Switcher -->
             <div class="lang-switcher-op">
-                <a href="{{ route('locale.switch', 'en') }}" class="{{ app()->getLocale() === 'en' ? 'active' : '' }}" data-locale-switch>🇺🇸 EN</a>
-                <a href="{{ route('locale.switch', 'vi') }}" class="{{ app()->getLocale() === 'vi' ? 'active' : '' }}" data-locale-switch>🇻🇳 VI</a>
+                <a href="{{ route('locale.switch', 'en') }}" class="{{ app()->getLocale() === 'en' ? 'active' : '' }}" data-locale-switch>
+                    <span class="material-symbols-rounded" aria-hidden="true">language</span>
+                    English
+                </a>
+                <a href="{{ route('locale.switch', 'vi') }}" class="{{ app()->getLocale() === 'vi' ? 'active' : '' }}" data-locale-switch>
+                    <span class="material-symbols-rounded" aria-hidden="true">language</span>
+                    Tiếng Việt
+                </a>
             </div>
 
             <a href="#contact" class="btn-header nav-link">{{ __('nav.get_started') }}</a>
@@ -105,7 +115,7 @@
                 <!-- Company Info -->
                 <div class="footer-section">
                     <h3>{{ __('footer.about_title') }}</h3>
-                    <p style="color: rgba(255, 255, 255, 0.7); font-size: 0.9rem; line-height: 1.6;">
+                    <p style="color: var(--contrast-panel-muted-soft); font-size: 0.9rem; line-height: 1.6;">
                         {{ __('footer.about_desc') }}
                     </p>
                 </div>

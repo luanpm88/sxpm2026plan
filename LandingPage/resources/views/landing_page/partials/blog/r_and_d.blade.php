@@ -16,7 +16,7 @@
 </section>
 
 <!-- R&D Articles -->
-<section style="background: white; padding: 4rem 2rem;">
+<section style="background: var(--surface); padding: 4rem 2rem;">
     <div class="container-v5">
         
         <!-- HKSpace Article -->
@@ -40,7 +40,7 @@
         </div>
 
         <div class="card-grid" style="--card-min: 280px; --card-max: 420px; --card-gap: 2rem;">
-            <div style="background: white; border-radius: var(--card-radius); padding: 2rem; border: 1px solid var(--border);">
+            <div style="background: var(--surface); border-radius: var(--card-radius); padding: 2rem; border: 1px solid var(--border);">
                 <div style="font-size: 1.75rem; color: var(--primary); margin-bottom: 1rem;">
                     <span class="material-symbols-rounded">architecture</span>
                 </div>
@@ -50,7 +50,7 @@
                 </p>
             </div>
 
-            <div style="background: white; border-radius: var(--card-radius); padding: 2rem; border: 1px solid var(--border);">
+            <div style="background: var(--surface); border-radius: var(--card-radius); padding: 2rem; border: 1px solid var(--border);">
                 <div style="font-size: 1.75rem; color: var(--primary); margin-bottom: 1rem;">
                     <span class="material-symbols-rounded">psychology</span>
                 </div>
@@ -60,7 +60,7 @@
                 </p>
             </div>
 
-            <div style="background: white; border-radius: var(--card-radius); padding: 2rem; border: 1px solid var(--border);">
+            <div style="background: var(--surface); border-radius: var(--card-radius); padding: 2rem; border: 1px solid var(--border);">
                 <div style="font-size: 1.75rem; color: var(--primary); margin-bottom: 1rem;">
                     <span class="material-symbols-rounded">security</span>
                 </div>
@@ -70,7 +70,7 @@
                 </p>
             </div>
 
-            <div style="background: white; border-radius: var(--card-radius); padding: 2rem; border: 1px solid var(--border);">
+            <div style="background: var(--surface); border-radius: var(--card-radius); padding: 2rem; border: 1px solid var(--border);">
                 <div style="font-size: 1.75rem; color: var(--primary); margin-bottom: 1rem;">
                     <span class="material-symbols-rounded">cloud</span>
                 </div>
@@ -80,7 +80,7 @@
                 </p>
             </div>
 
-            <div style="background: white; border-radius: var(--card-radius); padding: 2rem; border: 1px solid var(--border);">
+            <div style="background: var(--surface); border-radius: var(--card-radius); padding: 2rem; border: 1px solid var(--border);">
                 <div style="font-size: 1.75rem; color: var(--primary); margin-bottom: 1rem;">
                     <span class="material-symbols-rounded">data_object</span>
                 </div>
@@ -90,7 +90,7 @@
                 </p>
             </div>
 
-            <div style="background: white; border-radius: var(--card-radius); padding: 2rem; border: 1px solid var(--border);">
+            <div style="background: var(--surface); border-radius: var(--card-radius); padding: 2rem; border: 1px solid var(--border);">
                 <div style="font-size: 1.75rem; color: var(--primary); margin-bottom: 1rem;">
                     <span class="material-symbols-rounded">auto_awesome</span>
                 </div>
@@ -104,14 +104,14 @@
 </section>
 
 <!-- CTA -->
-<section style="background: white;">
+<section style="background: var(--surface);">
     <div class="container-v5">
-        <div style="background: linear-gradient(135deg, var(--primary) 0%, var(--primary-light) 100%); border-radius: var(--card-radius); padding: 3.5rem 2rem; text-align: center; color: white;">
+        <div style="background: var(--contrast-panel-bg); border-radius: var(--card-radius); padding: 3.5rem 2rem; text-align: center; color: var(--contrast-panel-text);">
             <h2 style="font-size: 2rem; font-weight: 800; margin-bottom: 1rem;">Interested in Our R&D?</h2>
             <p style="font-size: 1.1rem; margin-bottom: 2rem; opacity: 0.95;">
                 Let's discuss how our research-driven platforms can power your enterprise.
             </p>
-            <a href="#contact" style="background: white; color: var(--primary); padding: 1rem 2.5rem; border-radius: 8px; font-weight: 600; text-decoration: none; display: inline-block; transition: all 0.3s ease;" onmouseover="this.style.backgroundColor='var(--secondary-bg)';" onmouseout="this.style.backgroundColor='white';">
+            <a href="#contact" style="background: var(--contrast-action-bg); color: var(--contrast-action-text); padding: 1rem 2.5rem; border-radius: 8px; font-weight: 600; text-decoration: none; display: inline-block; transition: all 0.3s ease;" onmouseover="this.style.opacity='0.9';" onmouseout="this.style.opacity='1';">
                 <span>Start a Conversation</span>
             </a>
         </div>

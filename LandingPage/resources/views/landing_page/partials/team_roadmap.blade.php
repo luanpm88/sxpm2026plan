@@ -21,7 +21,7 @@
     </div>
 </div>
 <style>
-.team-card { background: #fff; border: 2px solid var(--border); border-radius: var(--card-radius); padding: 22px 18px; box-shadow: 0 1px 3px rgba(0,0,0,0.06); transition: box-shadow .2s, border .2s; }
+.team-card { background: var(--surface); border: 2px solid var(--border); border-radius: var(--card-radius); padding: 22px 18px; box-shadow: 0 1px 3px rgba(0,0,0,0.06); transition: box-shadow .2s, border .2s; }
 .team-card:hover { border-color: var(--primary-light); box-shadow: 0 8px 24px rgba(14,49,99,0.13); }
 .team-card h4 { color: var(--primary); font-size: 1rem; font-weight: 700; margin-bottom: 8px; }
 .team-card ul { color: var(--text-gray); font-size: 0.95rem; margin: 0; padding-left: 18px; }

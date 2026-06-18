@@ -2,53 +2,73 @@
 
 return [
     // Hero Section
-    'hero_badge' => 'Structured Solution for Industrial Operations',
-    'hero_title' => 'Manufacturing Operating Framework for SME & FDI Factories',
-    'hero_description' => 'A structured, modular approach to digitalizing production, warehouse, and quality operations — built for scalable industrial environments.',
+    'hero_badge' => 'Digital capability for manufacturing operations',
+    'hero_title' => 'Custom factory operations software framework for SME & FDI manufacturers',
+    'hero_description' => 'Hoang Khang designs and builds custom manufacturing software systems that connect shopfloor data, warehouse, quality, packaging, and management reporting inside a scalable architecture.',
 
     'hero_badges' => [
-        'SME & FDI Factory Focus',
-        'Modular Architecture Approach',
-        'SLA-based Delivery & Support',
-        'Roadmap-led Transformation',
+        'Designed around real factory workflows',
+        'Modular architecture, integration-ready',
+        'Phased rollout with controlled risk',
+        'Operational handover and long-term improvement',
     ],
 
-    'hero_cta_consultation' => 'Request Consultation',
-    'hero_cta_assessment' => 'Schedule Factory Assessment',
+    'hero_cta_consultation' => 'Discuss Requirements',
+    'hero_cta_assessment' => 'Assess Current Operations',
 
-    'hero_sidebar_title' => 'Who We Are in this Solution Context',
+    'hero_sidebar_title' => 'Hoang Khang role',
     'hero_sidebar_items' => [
-        'Structured manufacturing solution architect',
-        'Process-driven system design and rollout',
-        'Integration-ready with ERP, PLC, and IoT layers',
-        'Security and compliance-first engineering discipline',
+        'Custom software analysis, architecture, and engineering team',
+        'Translate manufacturing workflows into clear operating systems',
+        'Integrate with ERP, devices, barcode, IoT, or existing data layers',
+        'Design security, access control, and audit logs from the start',
     ],
-    'hero_sidebar_audience' => 'Audience alignment: Factory Director, Operations Manager, Supply Chain Manager, IT Manager, and FDI manufacturing leadership teams.',
+    'hero_sidebar_audience' => 'Built for factory leadership, operations, supply chain, IT, and manufacturing teams that need a practical digitization roadmap that can be rolled out step by step.',
+
+    'diagram' => [
+        'shopfloor_title' => 'Shopfloor',
+        'shopfloor_desc' => 'orders, WIP',
+        'warehouse_title' => 'Warehouse',
+        'warehouse_desc' => 'material, FIFO',
+        'quality_title' => 'Quality',
+        'quality_desc' => 'QC, traceability',
+        'core_1' => 'Operations',
+        'core_2' => 'Core',
+        'core_desc_1' => 'workflow',
+        'core_desc_2' => 'RBAC + audit',
+        'dashboard_title' => 'Dashboard',
+        'dashboard_desc' => 'KPI, alerts',
+        'integration_title' => 'Integration',
+        'integration_desc' => 'ERP, PLC, API',
+        'legend_1' => 'Capture data where work happens.',
+        'legend_2' => 'Normalize workflow, permission and audit.',
+        'legend_3' => 'Expose KPIs and integrations for management.',
+    ],
 
     // Positioning Section
-    'positioning_title' => 'Positioning: Structured Manufacturing Technology Partner',
-    'positioning_subtitle' => 'We work as a long-term transformation partner with a disciplined operating framework, not as a generic one-off software vendor.',
+    'positioning_title' => 'Solution positioning: software capability for manufacturing operations',
+    'positioning_subtitle' => 'We do not sell isolated templates. We help manufacturers standardize operations, design the architecture, and implement systems according to their operational maturity.',
 
-    'positioning_context_heading' => 'What this standalone solution page represents',
-    'positioning_context_p1' => 'This page introduces our Modular Manufacturing Operating Framework for factories that need structured digitalization of production, inventory, packaging, and quality operations. The solution is designed as a reusable architecture with standardized modules and controlled rollout patterns.',
-    'positioning_context_p2' => 'We do not position this as one-off custom coding by request. We position it as a long-term operating system roadmap for factory execution, governance, and continuous improvement.',
+    'positioning_context_heading' => 'How to read this solution page',
+    'positioning_context_p1' => 'This page describes an implementation framework for manufacturers that need to digitize production, warehouse, packaging, quality, and management reporting. Each module can be adapted to actual SOPs while preserving a consistent architecture.',
+    'positioning_context_p2' => 'The goal is not one-time custom coding. The goal is to build a reliable digital operations layer with trustworthy data, access control, audit trail, and room to scale as the factory grows.',
 
     'positioning_items' => [
         [
-            'title' => 'Process Mapping First',
-            'description' => 'We start from actual factory workflows, decision points, handovers, and bottlenecks before defining system scope.',
+            'title' => 'Process discovery first',
+            'description' => 'We start from actual work: shifts, checkpoints, approvals, handovers, and data bottlenecks before system scope is finalized.',
         ],
         [
-            'title' => 'Standardized Architecture',
-            'description' => 'Core architecture patterns are standardized for consistency, maintainability, and predictable rollout across sites.',
+            'title' => 'Architecture with standards',
+            'description' => 'We keep consistent patterns for permissions, workflow, audit logs, APIs, and reporting so the system remains maintainable as lines or sites expand.',
         ],
         [
-            'title' => 'Modular Reuse',
-            'description' => 'Reusable modules and deployment templates reduce implementation risk and improve upgrade continuity over time.',
+            'title' => 'Intelligent modularization',
+            'description' => 'Modules are separated by operational value: production, warehouse, QC, packaging, devices, and dashboards. They can roll out independently while sharing one data foundation.',
         ],
         [
-            'title' => 'Long-term Partnership',
-            'description' => 'We align roadmap, operations, and support model with your multi-year digital manufacturing objectives.',
+            'title' => 'Operational partnership',
+            'description' => 'Manufacturing systems keep evolving. We design the upgrade, support, and improvement roadmap around real operational needs.',
         ],
     ],
 
@@ -102,6 +122,7 @@ return [
     'framework_subtitle' => 'A structured modular system architecture designed for repeatable deployment, operational consistency, and long-term expansion.',
 
     'framework_layer1_title' => 'Layer 1 — Core System Foundation',
+    'framework_layer1_label' => 'Core foundation',
     'framework_layer1_items' => [
         'User and role management',
         'Workflow engine',
@@ -111,6 +132,7 @@ return [
     ],
 
     'framework_layer2_title' => 'Layer 2 — Manufacturing Modules',
+    'framework_layer2_label' => 'Manufacturing modules',
     'framework_layer2_items' => [
         'Production management',
         'Inventory control',
@@ -120,6 +142,7 @@ return [
     ],
 
     'framework_layer3_title' => 'Layer 3 — Adaptation & Integration',
+    'framework_layer3_label' => 'Adaptation & integration',
     'framework_layer3_items' => [
         'SOP alignment',
         'ERP integration capability',

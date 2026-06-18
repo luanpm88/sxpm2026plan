@@ -26,8 +26,8 @@
 
         <div class="card-grid" style="--card-min: 240px; --card-max: 380px; --card-gap: 1.5rem;">
             @foreach(__('scrum.steps') as $step)
-            <div style="background: white; border-radius: var(--card-radius); padding: 2.5rem 2rem; border: 1px solid var(--border); transition: all 0.3s ease; text-align: center; position: relative;" onmouseover="this.style.borderColor='var(--primary)'; this.style.boxShadow='0 10px 30px rgba(14, 49, 99, 0.1)'; this.style.transform='translateY(-4px)';" onmouseout="this.style.borderColor='var(--border)'; this.style.boxShadow=''; this.style.transform='';">
-                <div style="display: inline-flex; align-items: center; justify-content: center; width: 50px; height: 50px; background: var(--primary); color: white; border-radius: 50%; font-weight: 800; font-size: 1.5rem; margin-bottom: 1rem;">
+            <div style="background: var(--surface); border-radius: var(--card-radius); padding: 2.5rem 2rem; border: 1px solid var(--border); transition: all 0.3s ease; text-align: center; position: relative;" onmouseover="this.style.borderColor='var(--primary)'; this.style.boxShadow='0 10px 30px rgba(14, 49, 99, 0.1)'; this.style.transform='translateY(-4px)';" onmouseout="this.style.borderColor='var(--border)'; this.style.boxShadow=''; this.style.transform='';">
+                <div style="display: inline-flex; align-items: center; justify-content: center; width: 50px; height: 50px; background: var(--button-primary-bg); color: var(--button-primary-text); border-radius: 50%; font-weight: 800; font-size: 1.5rem; margin-bottom: 1rem;">
                     {{ $step['num'] }}
                 </div>
                 <div style="font-size: 2rem; color: var(--primary); margin: 1rem 0;">
@@ -57,7 +57,7 @@
             <div>
                 <ul style="list-style: none;">
                     @foreach(__('scrum.sprint_items') as $cycle)
-                    <li style="padding: 1.5rem; background: white; margin-bottom: 1rem; border-radius: var(--card-radius); border-left: 4px solid var(--primary);">
+                    <li style="padding: 1.5rem; background: var(--surface); margin-bottom: 1rem; border-radius: var(--card-radius); border-left: 4px solid var(--primary);">
                         <strong style="display: block; color: var(--text-dark); font-weight: 700; margin-bottom: 0.5rem;">
                             {{ $cycle['title'] }}
                         </strong>
@@ -69,25 +69,25 @@
                 </ul>
             </div>
 
-            <div class="position-relative" style="background: linear-gradient(135deg, var(--primary) 0%, var(--primary-light) 100%); border-radius: 16px; padding: 2.25rem 1.75rem; color: white; box-shadow: 0 12px 40px rgba(14, 49, 99, 0.25); border: 1px solid rgba(255,255,255,0.15); height: 100%; display: flex; flex-direction: column; justify-content: center;">
+            <div class="position-relative" style="background: var(--contrast-panel-bg); border-radius: 16px; padding: 2.25rem 1.75rem; color: var(--contrast-panel-text); box-shadow: 0 12px 40px rgba(14, 49, 99, 0.25); border: 1px solid var(--contrast-panel-border); height: 100%; display: flex; flex-direction: column; justify-content: center;">
                 <h3 style="font-size: 1.2rem; font-weight: 800; text-align: center; margin-bottom: 0.45rem;">Sprint Cycle</h3>
-                <p style="text-align: center; font-size: 0.92rem; margin-bottom: 1.25rem; color: rgba(255,255,255,0.92);">
+                <p style="text-align: center; font-size: 0.92rem; margin-bottom: 1.25rem; color: var(--contrast-panel-muted-strong);">
                     Plan, execute, review and improve continuously in each sprint.
                 </p>
                 <div style="display: grid; grid-template-columns: 1fr; gap: 0.65rem;">
-                    <div style="background: rgba(255,255,255,0.12); border: 1px solid rgba(255,255,255,0.24); border-radius: 12px; padding: 0.68rem 0.9rem; display: flex; align-items: center; justify-content: space-between;">
+                    <div style="background: var(--contrast-glass-bg); border: 1px solid var(--contrast-glass-border); border-radius: 12px; padding: 0.68rem 0.9rem; display: flex; align-items: center; justify-content: space-between;">
                         <span style="font-weight: 700; font-size: 0.95rem;">Plan</span><span style="opacity: 0.9;">→</span><span style="font-weight: 700; font-size: 0.95rem;">Execute</span>
                     </div>
-                    <div style="background: rgba(255,255,255,0.12); border: 1px solid rgba(255,255,255,0.24); border-radius: 12px; padding: 0.68rem 0.9rem; display: flex; align-items: center; justify-content: space-between;">
+                    <div style="background: var(--contrast-glass-bg); border: 1px solid var(--contrast-glass-border); border-radius: 12px; padding: 0.68rem 0.9rem; display: flex; align-items: center; justify-content: space-between;">
                         <span style="font-weight: 700; font-size: 0.95rem;">Execute</span><span style="opacity: 0.9;">→</span><span style="font-weight: 700; font-size: 0.95rem;">Review</span>
                     </div>
-                    <div style="background: rgba(255,255,255,0.12); border: 1px solid rgba(255,255,255,0.24); border-radius: 12px; padding: 0.68rem 0.9rem; display: flex; align-items: center; justify-content: space-between;">
+                    <div style="background: var(--contrast-glass-bg); border: 1px solid var(--contrast-glass-border); border-radius: 12px; padding: 0.68rem 0.9rem; display: flex; align-items: center; justify-content: space-between;">
                         <span style="font-weight: 700; font-size: 0.95rem;">Review</span><span style="opacity: 0.9;">→</span><span style="font-weight: 700; font-size: 0.95rem;">Improve</span>
                     </div>
-                    <div style="background: rgba(255,255,255,0.12); border: 1px solid rgba(255,255,255,0.24); border-radius: 12px; padding: 0.68rem 0.9rem; display: flex; align-items: center; justify-content: space-between;">
+                    <div style="background: var(--contrast-glass-bg); border: 1px solid var(--contrast-glass-border); border-radius: 12px; padding: 0.68rem 0.9rem; display: flex; align-items: center; justify-content: space-between;">
                         <span style="font-weight: 700; font-size: 0.95rem;">Improve</span><span style="opacity: 0.9;">→</span><span style="font-weight: 700; font-size: 0.95rem;">Deliver</span>
                     </div>
-                    <div style="background: rgba(255,255,255,0.12); border: 1px solid rgba(255,255,255,0.24); border-radius: 12px; padding: 0.68rem 0.9rem; text-align: center; font-weight: 800; letter-spacing: 0.02em;">
+                    <div style="background: var(--contrast-glass-bg); border: 1px solid var(--contrast-glass-border); border-radius: 12px; padding: 0.68rem 0.9rem; text-align: center; font-weight: 800; letter-spacing: 0.02em;">
                         Deliver → Plan
                     </div>
                 </div>
@@ -106,7 +106,7 @@
 
         <div class="card-grid" style="--card-min: 280px; --card-max: 420px; --card-gap: 2rem;">
             @foreach(__('scrum.benefits') as $b)
-            <div style="background: white; border: 1px solid var(--border); border-radius: var(--card-radius); padding: 2rem; transition: all 0.3s ease;" onmouseover="this.style.borderColor='var(--primary)'; this.style.boxShadow='0 12px 30px var(--shadow-hover)';" onmouseout="this.style.borderColor='var(--border)'; this.style.boxShadow='';">
+            <div style="background: var(--surface); border: 1px solid var(--border); border-radius: var(--card-radius); padding: 2rem; transition: all 0.3s ease;" onmouseover="this.style.borderColor='var(--primary)'; this.style.boxShadow='0 12px 30px var(--shadow-hover)';" onmouseout="this.style.borderColor='var(--border)'; this.style.boxShadow='';">
                 <div style="font-size: 2rem; color: var(--primary); margin-bottom: 1rem;">
                     <span class="material-symbols-rounded">{{ $b['icon'] }}</span>
                 </div>
@@ -135,7 +135,7 @@
             <div style="display: flex; gap: 2rem; align-items: flex-start; margin-bottom: {{ $index < count(__('scrum.journey')) - 1 ? '3rem' : '0' }};">
                 <!-- Left side: Circle with connecting line -->
                 <div style="position: relative; flex-shrink: 0;">
-                    <div style="width: 110px; height: 110px; background: white; border: 3px solid var(--primary); border-radius: 50%; display: flex; align-items: center; justify-content: center; text-align: center; box-shadow: 0 4px 15px rgba(14, 49, 99, 0.15); position: relative; z-index: 2;">
+                    <div style="width: 110px; height: 110px; background: var(--surface); border: 3px solid var(--primary); border-radius: 50%; display: flex; align-items: center; justify-content: center; text-align: center; box-shadow: 0 4px 15px rgba(14, 49, 99, 0.15); position: relative; z-index: 2;">
                         <div style="font-size: 1.1rem; font-weight: 700; color: var(--primary); line-height: 1.2;">{{ __('scrum.journey_phase_label') }} {{ $index + 1 }}</div>
                     </div>
 
@@ -146,7 +146,7 @@
                 </div>
 
                 <!-- Right side: Content box -->
-                <div style="flex: 1; background: white; border-radius: var(--card-radius); padding: 2rem; border: 1px solid var(--border); box-shadow: 0 2px 8px rgba(0,0,0,0.05); transition: all 0.3s ease;" onmouseover="this.style.borderColor='var(--primary)'; this.style.boxShadow='0 8px 20px rgba(14, 49, 99, 0.1)'; this.style.transform='translateX(5px)';" onmouseout="this.style.borderColor='var(--border)'; this.style.boxShadow='0 2px 8px rgba(0,0,0,0.05)'; this.style.transform='translateX(0)';">
+                <div style="flex: 1; background: var(--surface); border-radius: var(--card-radius); padding: 2rem; border: 1px solid var(--border); box-shadow: 0 2px 8px rgba(0,0,0,0.05); transition: all 0.3s ease;" onmouseover="this.style.borderColor='var(--primary)'; this.style.boxShadow='0 8px 20px rgba(14, 49, 99, 0.1)'; this.style.transform='translateX(5px)';" onmouseout="this.style.borderColor='var(--border)'; this.style.boxShadow='0 2px 8px rgba(0,0,0,0.05)'; this.style.transform='translateX(0)';">
                     <h3 style="font-size: 1.15rem; font-weight: 700; color: var(--text-dark); margin-bottom: 0.75rem; line-height: 1.4;">
                         {{ $j['phase'] }}
                     </h3>
@@ -170,7 +170,7 @@
 
         <div class="card-grid" style="--card-min: 280px; --card-max: 420px; --card-gap: 2rem;">
             @foreach(__('scrum.why_items') as $w)
-            <div style="background: white; border: 1px solid var(--border); border-radius: var(--card-radius); padding: 2rem; text-align: center; transition: all 0.3s ease;" onmouseover="this.style.borderColor='var(--primary)'; this.style.boxShadow='0 12px 30px var(--shadow-hover)'; this.style.transform='translateY(-5px)';" onmouseout="this.style.borderColor='var(--border)'; this.style.boxShadow=''; this.style.transform='';">
+            <div style="background: var(--surface); border: 1px solid var(--border); border-radius: var(--card-radius); padding: 2rem; text-align: center; transition: all 0.3s ease;" onmouseover="this.style.borderColor='var(--primary)'; this.style.boxShadow='0 12px 30px var(--shadow-hover)'; this.style.transform='translateY(-5px)';" onmouseout="this.style.borderColor='var(--border)'; this.style.boxShadow=''; this.style.transform='';">
                 <h3 style="font-size: 1.1rem; font-weight: 700; color: var(--text-dark); margin-bottom: 0.75rem;">
                     {{ $w['title'] }}
                 </h3>
@@ -186,12 +186,12 @@
 <!-- CTA -->
 <section style="background: var(--secondary-bg);">
     <div class="container-v5">
-        <div style="background: linear-gradient(135deg, var(--primary) 0%, var(--primary-light) 100%); border-radius: var(--card-radius); padding: 3.5rem 2rem; text-align: center; color: white;">
+        <div style="background: var(--contrast-panel-bg); border-radius: var(--card-radius); padding: 3.5rem 2rem; text-align: center; color: var(--contrast-panel-text);">
             <h2 style="font-size: 2rem; font-weight: 800; margin-bottom: 1rem;">{{ __('scrum.cta_title') }}</h2>
             <p style="font-size: 1.1rem; margin-bottom: 2rem; opacity: 0.95;">
                 {{ __('scrum.cta_desc') }}
             </p>
-            <a href="#contact" style="background: white; color: var(--primary); padding: 1rem 2.5rem; border-radius: 8px; font-weight: 600; text-decoration: none; display: inline-block; transition: all 0.3s ease;" onmouseover="this.style.backgroundColor='var(--secondary-bg)';" onmouseout="this.style.backgroundColor='white';">
+            <a href="#contact" style="background: var(--contrast-action-bg); color: var(--contrast-action-text); padding: 1rem 2.5rem; border-radius: 8px; font-weight: 600; text-decoration: none; display: inline-block; transition: all 0.3s ease;" onmouseover="this.style.opacity='0.9';" onmouseout="this.style.opacity='1';">
                 <span>{{ __('scrum.cta_button') }}</span>
             </a>
         </div>

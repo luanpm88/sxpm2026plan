@@ -297,20 +297,30 @@
             </nav>
 
             <div class="header-actions">
-                <button class="lang-trigger theme-toggle" type="button" aria-label="Toggle dark mode" data-theme-toggle>
+                <button class="theme-toggle" type="button" aria-label="Toggle dark mode" data-theme-toggle>
                     <span class="material-symbols-rounded" data-theme-icon>dark_mode</span>
                 </button>
                 <!-- Language Switcher -->
                 <div class="lang-menu" data-lang-menu>
                     <button class="lang-trigger" type="button" aria-label="Switch language" data-lang-trigger>
-                        <span class="lang-current-flag">{{ app()->getLocale() === 'vi' ? '🇻🇳' : '🇬🇧' }}</span>
+                        <span class="material-symbols-rounded lang-globe" aria-hidden="true">language</span>
+                        <span class="lang-current-label">{{ app()->getLocale() === 'vi' ? 'Tiếng Việt' : 'English' }}</span>
+                        <span class="material-symbols-rounded lang-chevron" aria-hidden="true">expand_more</span>
                     </button>
                     <div class="lang-dropdown" data-lang-dropdown>
                         <a href="{{ route('locale.switch', 'vi') }}" class="{{ app()->getLocale() === 'vi' ? 'lang-option--active' : '' }}" data-locale-switch>
-                            <span>🇻🇳</span> VI
+                            <span class="lang-option-code">VI</span>
+                            <span class="lang-option-copy">
+                                <strong>Tiếng Việt</strong>
+                                <small>Vietnamese</small>
+                            </span>
                         </a>
                         <a href="{{ route('locale.switch', 'en') }}" class="{{ app()->getLocale() === 'en' ? 'lang-option--active' : '' }}" data-locale-switch>
-                            <span>🇬🇧</span> EN
+                            <span class="lang-option-code">EN</span>
+                            <span class="lang-option-copy">
+                                <strong>English</strong>
+                                <small>English</small>
+                            </span>
                         </a>
                     </div>
                 </div>
@@ -331,11 +341,11 @@
             <div class="footer-grid-5col" style="display: grid; grid-template-columns: 1.5fr 1fr 1fr 1fr 1fr; gap: 2.5rem; margin-bottom: 2.5rem;">
                 <!-- Company Info -->
                 <div class="footer-section">
-                    <a href="{{ route('landing.index') }}" class="logo" style="color: white; margin-bottom: 1rem; display: inline-flex;">
+                    <a href="{{ route('landing.index') }}" class="logo" style="color: var(--contrast-panel-text); margin-bottom: 1rem; display: inline-flex;">
                         <img src="{{ asset('img/logo.svg') }}" alt="HKIncotech" style="filter: brightness(0) invert(1);">
                         <span>INCOTECH</span>
                     </a>
-                    <p style="color: rgba(255, 255, 255, 0.6); font-size: 0.88rem; line-height: 1.65; margin-top: 1rem;">
+                    <p style="color: var(--footer-text); font-size: 0.88rem; line-height: 1.65; margin-top: 1rem;">
                         {{ __('footer.about_desc') }}
                     </p>
                 </div>

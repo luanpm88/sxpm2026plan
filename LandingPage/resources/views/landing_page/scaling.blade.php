@@ -29,7 +29,7 @@
 
             <div style="display: grid; gap: 2rem;">
                 @foreach(__('scaling.phases') as $index => $p)
-                <div style="background: white; border-radius: var(--card-radius); padding: 2.5rem; border: 1px solid var(--border); transition: all 0.3s ease;" onmouseover="this.style.boxShadow='0 12px 30px var(--shadow-hover)';" onmouseout="this.style.boxShadow='';">
+                <div style="background: var(--surface); border-radius: var(--card-radius); padding: 2.5rem; border: 1px solid var(--border); transition: all 0.3s ease;" onmouseover="this.style.boxShadow='0 12px 30px var(--shadow-hover)';" onmouseout="this.style.boxShadow='';">
                     <div style="display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 2rem; margin-bottom: 1.5rem;">
                         <div>
                             <div style="font-size: 2rem; font-weight: 800; color: var(--primary); margin-bottom: 0.5rem;">
@@ -65,7 +65,7 @@
     </section>
 
     <!-- Performance Metrics -->
-    <section style="background: white;">
+    <section style="background: var(--surface);">
         <div class="container-v5">
             <div class="section-header">
                 <h2 class="section-title">{{ __('scaling.metrics_title') }}</h2>
@@ -74,7 +74,7 @@
 
             <div class="card-grid" style="--card-min: 240px; --card-max: 380px; --card-gap: 2rem;">
                 @foreach(__('scaling.metrics') as $m)
-                <div style="background: var(--secondary-bg); border-radius: var(--card-radius); padding: 2rem; border: 1px solid var(--border); text-align: center; transition: all 0.3s ease;" onmouseover="this.style.backgroundColor='white'; this.style.borderColor='var(--primary)';" onmouseout="this.style.backgroundColor='var(--secondary-bg)'; this.style.borderColor='var(--border)';">
+                <div style="background: var(--secondary-bg); border-radius: var(--card-radius); padding: 2rem; border: 1px solid var(--border); text-align: center; transition: all 0.3s ease;" onmouseover="this.style.backgroundColor='var(--surface)'; this.style.borderColor='var(--primary)';" onmouseout="this.style.backgroundColor='var(--secondary-bg)'; this.style.borderColor='var(--border)';">
                     <div style="font-size: 2rem; font-weight: 800; color: var(--primary); margin-bottom: 0.5rem;">{{ $m['metric'] }}</div>
                     <div style="font-weight: 700; color: var(--text-dark); margin-bottom: 0.5rem;">{{ $m['label'] }}</div>
                     <div style="font-size: 0.9rem; color: var(--text-gray);">{{ $m['desc'] }}</div>
@@ -85,12 +85,12 @@
     </section>
 
     <!-- CTA -->
-    <section style="background: white;">
+    <section style="background: var(--surface);">
         <div class="container-v5">
-            <div style="background: linear-gradient(135deg, var(--primary) 0%, var(--primary-light) 100%); border-radius: var(--card-radius); padding: 4rem 2rem; text-align: center; color: white;">
+            <div style="background: var(--contrast-panel-bg); border-radius: var(--card-radius); padding: 4rem 2rem; text-align: center; color: var(--contrast-panel-text);">
                 <h2 style="font-size: 2rem; font-weight: 800; margin-bottom: 1rem;">{{ __('scaling.cta_title') }}</h2>
                 <p style="font-size: 1.1rem; margin-bottom: 2rem; opacity: 0.95;">{{ __('scaling.cta_desc') }}</p>
-                <a href="{{ route('landing.contact') }}" style="background: white; color: var(--primary); padding: 1rem 2.5rem; border-radius: 8px; font-weight: 600; text-decoration: none; display: inline-flex; align-items: center; gap: 0.75rem; transition: all 0.3s ease;" onmouseover="this.style.backgroundColor='var(--secondary-bg)'; this.style.transform='translateY(-2px)'; this.style.boxShadow='0 8px 20px rgba(0,0,0,0.15)';" onmouseout="this.style.backgroundColor='white'; this.style.transform=''; this.style.boxShadow='';">
+                <a href="{{ route('landing.contact') }}" style="background: var(--contrast-action-bg); color: var(--contrast-action-text); padding: 1rem 2.5rem; border-radius: 8px; font-weight: 600; text-decoration: none; display: inline-flex; align-items: center; gap: 0.75rem; transition: all 0.3s ease;" onmouseover="this.style.opacity='0.9'; this.style.transform='translateY(-2px)'; this.style.boxShadow='0 8px 20px rgba(0,0,0,0.15)';" onmouseout="this.style.opacity='1'; this.style.transform=''; this.style.boxShadow='';">
                     <span>{{ __('scaling.cta_button') }}</span>
                     <span class="material-symbols-rounded">arrow_forward</span>
                 </a>

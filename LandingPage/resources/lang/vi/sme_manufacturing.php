@@ -2,53 +2,73 @@
 
 return [
     // Hero Section
-    'hero_badge' => 'Giải Pháp Có Cấu Trúc cho Hoạt Động Công Nghiệp',
-    'hero_title' => 'Khung Hoạt Động Sản Xuất cho Nhà Máy SME & FDI',
-    'hero_description' => 'Phương pháp có cấu trúc, mô-đun hóa để số hóa các hoạt động sản xuất, kho bãi và kiểm chất lượng — được xây dựng cho các môi trường công nghiệp có khả năng mở rộng.',
+    'hero_badge' => 'Năng lực số hóa vận hành sản xuất',
+    'hero_title' => 'Khung phần mềm vận hành nhà máy cho doanh nghiệp SME & FDI',
+    'hero_description' => 'Hoàng Khang thiết kế và phát triển các hệ thống phần mềm theo yêu cầu cho sản xuất: kết nối dữ liệu sàn máy, kho, chất lượng, đóng gói và báo cáo quản trị trong một kiến trúc có thể mở rộng.',
 
     'hero_badges' => [
-        'Tập Trung vào Nhà Máy SME & FDI',
-        'Phương Pháp Kiến Trúc Mô-đun',
-        'Hỗ Trợ & Giao Hàng Dựa trên SLA',
-        'Chuyển Đổi Dẫn Đầu Lộ Trình',
+        'Thiết kế theo quy trình thực tế của nhà máy',
+        'Kiến trúc mô-đun, sẵn sàng tích hợp',
+        'Triển khai theo giai đoạn, kiểm soát rủi ro',
+        'Bàn giao vận hành và cải tiến dài hạn',
     ],
 
-    'hero_cta_consultation' => 'Yêu Cầu Tư Vấn',
-    'hero_cta_assessment' => 'Lên Lịch Đánh Giá Nhà Máy',
+    'hero_cta_consultation' => 'Trao đổi nhu cầu',
+    'hero_cta_assessment' => 'Đánh giá hiện trạng',
 
-    'hero_sidebar_title' => 'Chúng Tôi Là Ai Trong Bối Cảnh Giải Pháp Này',
+    'hero_sidebar_title' => 'Vai trò của Hoàng Khang',
     'hero_sidebar_items' => [
-        'Kiến trúc sư giải pháp sản xuất có cấu trúc',
-        'Thiết kế hệ thống và triển khai dựa trên quy trình',
-        'Sẵn sàng tích hợp với các lớp ERP, PLC và IoT',
-        'Kỹ thuật ưu tiên bảo mật và tuân thủ',
+        'Đội ngũ phân tích, kiến trúc và phát triển phần mềm theo yêu cầu',
+        'Chuẩn hóa workflow sản xuất thành hệ thống vận hành rõ ràng',
+        'Tích hợp với ERP, thiết bị, mã vạch, IoT hoặc lớp dữ liệu hiện có',
+        'Thiết kế bảo mật, phân quyền và audit log ngay từ đầu',
     ],
-    'hero_sidebar_audience' => 'Sắp xếp đối tượng: Giám đốc Nhà Máy, Trưởng Bộ Phận Vận Hành, Trưởng Quản Lý Chuỗi Cung Ứng, Trưởng Bộ Phận IT và các đội lãnh đạo sản xuất FDI.',
+    'hero_sidebar_audience' => 'Phù hợp cho ban giám đốc nhà máy, vận hành, chuỗi cung ứng, IT và các đội sản xuất cần một lộ trình số hóa thực tế, có thể triển khai từng bước.',
+
+    'diagram' => [
+        'shopfloor_title' => 'Sàn máy',
+        'shopfloor_desc' => 'lệnh, WIP',
+        'warehouse_title' => 'Kho',
+        'warehouse_desc' => 'vật tư, FIFO',
+        'quality_title' => 'Chất lượng',
+        'quality_desc' => 'QC, truy xuất',
+        'core_1' => 'Lõi',
+        'core_2' => 'vận hành',
+        'core_desc_1' => 'workflow',
+        'core_desc_2' => 'phân quyền + audit',
+        'dashboard_title' => 'Dashboard',
+        'dashboard_desc' => 'KPI, cảnh báo',
+        'integration_title' => 'Tích hợp',
+        'integration_desc' => 'ERP, PLC, API',
+        'legend_1' => 'Thu thập dữ liệu ngay tại điểm phát sinh công việc.',
+        'legend_2' => 'Chuẩn hóa workflow, phân quyền và audit trail.',
+        'legend_3' => 'Mở KPI và tích hợp cho cấp quản trị.',
+    ],
 
     // Positioning Section
-    'positioning_title' => 'Định Vị: Đối Tác Công Nghệ Sản Xuất Có Cấu Trúc',
-    'positioning_subtitle' => 'Chúng tôi hoạt động như một đối tác chuyển đổi lâu dài với một khung hoạt động kỷ luật, không phải là một nhà cung cấp phần mềm tùy tiện.',
+    'positioning_title' => 'Định vị giải pháp: năng lực phần mềm cho vận hành sản xuất',
+    'positioning_subtitle' => 'Chúng tôi không bán một template rời rạc. Chúng tôi cùng doanh nghiệp chuẩn hóa nghiệp vụ, thiết kế kiến trúc và triển khai hệ thống theo mức độ trưởng thành vận hành.',
 
-    'positioning_context_heading' => 'Trang giải pháp độc lập này đại diện cho điều gì',
-    'positioning_context_p1' => 'Trang này giới thiệu Khung Hoạt Động Sản Xuất Mô-đun của chúng tôi cho các nhà máy cần số hóa có cấu trúc các hoạt động sản xuất, tồn kho, đóng gói và kiểm chất lượng. Giải pháp được thiết kế như một kiến trúc có thể tái sử dụng với các mô-đun được tiêu chuẩn hóa và các mô hình triển khai được kiểm soát.',
-    'positioning_context_p2' => 'Chúng tôi không định vị đây là lập trình tùy chỉnh một lần theo yêu cầu. Chúng tôi định vị nó như một lộ trình hệ điều hành hoạt động dài hạn cho thực thi nhà máy, quản trị và cải tiến liên tục.',
+    'positioning_context_heading' => 'Cách tiếp cận của trang giải pháp này',
+    'positioning_context_p1' => 'Trang này mô tả một khung triển khai cho các nhà máy cần số hóa sản xuất, kho, đóng gói, chất lượng và báo cáo quản trị. Mỗi module được thiết kế để có thể tùy biến theo SOP thực tế nhưng vẫn giữ kiến trúc nhất quán.',
+    'positioning_context_p2' => 'Trọng tâm không phải là viết phần mềm một lần rồi bàn giao. Trọng tâm là xây một lớp vận hành số có dữ liệu đáng tin cậy, có phân quyền, có audit trail và có khả năng mở rộng khi nhà máy tăng quy mô.',
 
     'positioning_items' => [
         [
-            'title' => 'Lập Bản Đồ Quy Trình Trước',
-            'description' => 'Chúng tôi bắt đầu từ các quy trình công việc thực tế nhà máy, các điểm quyết định, bàn giao công việc và những nút thắt cổ chai trước khi xác định phạm vi hệ thống.',
+            'title' => 'Khảo sát quy trình trước',
+            'description' => 'Bắt đầu từ luồng công việc thật: ca sản xuất, điểm kiểm tra, phê duyệt, bàn giao và các nút nghẽn dữ liệu trước khi chốt phạm vi hệ thống.',
         ],
         [
-            'title' => 'Kiến Trúc Được Tiêu Chuẩn Hóa',
-            'description' => 'Các mẫu kiến trúc cốt lõi được tiêu chuẩn hóa để đảm bảo tính nhất quán, khả năng duy trì và triển khai có thể dự đoán trên các trang web.',
+            'title' => 'Kiến trúc có chuẩn',
+            'description' => 'Dùng pattern nhất quán cho phân quyền, workflow, audit log, API và báo cáo để hệ thống dễ bảo trì, dễ mở rộng theo nhiều dây chuyền hoặc nhà máy.',
         ],
         [
-            'title' => 'Tái Sử Dụng Mô-đun',
-            'description' => 'Các mô-đun có thể tái sử dụng và mẫu triển khai giảm rủi ro triển khai và cải thiện tính liên tục nâng cấp theo thời gian.',
+            'title' => 'Module hóa thông minh',
+            'description' => 'Tách module theo giá trị vận hành: sản xuất, kho, QC, đóng gói, thiết bị, dashboard. Triển khai từng phần nhưng giữ cùng một nền dữ liệu.',
         ],
         [
-            'title' => 'Quan Hệ Đối Tác Dài Hạn',
-            'description' => 'Chúng tôi sắp xếp lộ trình, hoạt động và mô hình hỗ trợ với các mục tiêu sản xuất kỹ thuật số nhiều năm của bạn.',
+            'title' => 'Đồng hành vận hành',
+            'description' => 'Hệ thống sản xuất luôn thay đổi. Chúng tôi thiết kế lộ trình nâng cấp, hỗ trợ và cải tiến dựa trên nhu cầu vận hành thực tế.',
         ],
     ],
 
@@ -102,6 +122,7 @@ return [
     'framework_subtitle' => 'Kiến trúc hệ thống mô-đun có cấu trúc được thiết kế cho triển khai có thể lặp lại, tính nhất quán hoạt động và mở rộng dài hạn.',
 
     'framework_layer1_title' => 'Lớp 1 — Nền Tảng Hệ Thống Cốt Lõi',
+    'framework_layer1_label' => 'Nền tảng lõi',
     'framework_layer1_items' => [
         'Quản lý người dùng và vai trò',
         'Công cụ quy trình làm việc',
@@ -111,6 +132,7 @@ return [
     ],
 
     'framework_layer2_title' => 'Lớp 2 — Các Mô-đun Sản Xuất',
+    'framework_layer2_label' => 'Module sản xuất',
     'framework_layer2_items' => [
         'Quản lý sản xuất',
         'Kiểm soát tồn kho',
@@ -120,6 +142,7 @@ return [
     ],
 
     'framework_layer3_title' => 'Lớp 3 — Thích Ứng & Tích Hợp',
+    'framework_layer3_label' => 'Thích ứng & tích hợp',
     'framework_layer3_items' => [
         'Căn chỉnh SOP',
         'Khả năng tích hợp ERP',

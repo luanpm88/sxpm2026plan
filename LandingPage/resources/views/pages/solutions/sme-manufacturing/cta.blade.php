@@ -1,11 +1,11 @@
 <section style="background: var(--surface);">
     <div class="container-v5">
-        <div style="background: linear-gradient(135deg, var(--primary) 0%, var(--primary-light) 100%); border-radius: var(--card-radius); padding: 3rem 2rem; text-align: center; color: white;">
+        <div style="background: var(--contrast-panel-bg); border-radius: var(--card-radius); padding: 3rem 2rem; text-align: center; color: var(--contrast-panel-text);">
             <h2 style="font-size: 2rem; font-weight: 800; margin-bottom: 1rem;">{{ __('sme_manufacturing.cta_title') }}</h2>
             <p style="font-size: 1.05rem; margin-bottom: 1.8rem; opacity: 0.95;">
                 {{ __('sme_manufacturing.cta_description') }}
             </p>
-            <a href="https://calendly.com/hkincotech/consultation" style="background: var(--surface); color: var(--primary); padding: 1rem 2.25rem; border-radius: 8px; font-weight: 700; text-decoration: none; display: inline-flex; align-items: center; gap: 0.5rem;">
+            <a href="https://calendly.com/hkincotech/consultation" style="background: var(--contrast-action-bg); color: var(--contrast-action-text); padding: 1rem 2.25rem; border-radius: 8px; font-weight: 700; text-decoration: none; display: inline-flex; align-items: center; gap: 0.5rem;">
                 <span>{{ __('sme_manufacturing.cta_button') }}</span>
                 <span class="material-symbols-rounded" style="font-size: 1.2rem;">arrow_forward</span>
             </a>

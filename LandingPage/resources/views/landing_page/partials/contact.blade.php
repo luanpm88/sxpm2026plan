@@ -13,7 +13,7 @@
 </section>
 
 <!-- Contact Form & Info -->
-<section style="background: white;">
+<section style="background: var(--surface);">
     <div class="container-v5">
         <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: start;">
             <!-- Contact Form -->
@@ -93,7 +93,7 @@
                         @enderror
                     </div>
 
-                    <button type="submit" style="background: var(--primary); color: white; padding: 1rem 2rem; border: none; border-radius: 8px; font-weight: 600; font-size: 1rem; cursor: pointer; transition: all 0.3s ease;" onmouseover="this.style.backgroundColor='var(--primary-light)';" onmouseout="this.style.backgroundColor='var(--primary)';">
+                    <button type="submit" style="background: var(--button-primary-bg); color: var(--button-primary-text); padding: 1rem 2rem; border: none; border-radius: 8px; font-weight: 600; font-size: 1rem; cursor: pointer; transition: all 0.3s ease;" onmouseover="this.style.backgroundColor='var(--button-primary-hover-bg)';" onmouseout="this.style.backgroundColor='var(--button-primary-bg)';">
                         {{ __('contact.send_message') }}
                     </button>
                 </form>
@@ -179,14 +179,14 @@
 <!-- Map -->
 <section style="background: var(--secondary-bg);">
     <div class="container-v5">
-        <div style="background: white; border-radius: var(--card-radius); overflow: hidden; height: 400px;">
+        <div style="background: var(--surface); border-radius: var(--card-radius); overflow: hidden; height: 400px;">
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.6047467284906!2d106.6576869!3d10.8475931!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x317529bc96bc31d5%3A0xb45cb7e22ebf8fda!2z188IEvSG0bEgU8OzLCBQaOG7nW5nIEFuIEjhu5lpIMSQ8O0gbiwgVHAuIEjhu5kgQ2jDrSBNaW5o!5e0!3m2!1svi!2svn!4v1705816000000" style="width: 100%; height: 100%; border: none;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
     </div>
 </section>
 
 <!-- FAQ -->
-<section style="background: white;">
+<section style="background: var(--surface);">
     <div class="container-v5">
         <div class="section-header">
             <h2 class="section-title">{{ __('contact.faq_title') }}</h2>
@@ -210,18 +210,18 @@
 </section>
 
 <!-- CTA -->
-<section style="background: white;">
+<section style="background: var(--surface);">
     <div class="container-v5">
-        <div style="background: linear-gradient(135deg, var(--primary) 0%, var(--primary-light) 100%); border-radius: var(--card-radius); padding: 3.5rem 2rem; text-align: center; color: white;">
+        <div style="background: var(--contrast-panel-bg); border-radius: var(--card-radius); padding: 3.5rem 2rem; text-align: center; color: var(--contrast-panel-text);">
             <h2 style="font-size: 2rem; font-weight: 800; margin-bottom: 1rem;">{{ __('contact.learn_more_title') }}</h2>
             <p style="font-size: 1rem; margin-bottom: 2rem; opacity: 0.95;">
                 {{ __('contact.learn_more_subtitle') }}
             </p>
             <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
-                <a href="https://calendly.com/hkincotech/consultation" style="background: white; color: var(--primary); padding: 0.75rem 2rem; border-radius: 8px; font-weight: 600; text-decoration: none; transition: all 0.3s ease;" onmouseover="this.style.backgroundColor='var(--secondary-bg)';" onmouseout="this.style.backgroundColor='white';">
+                <a href="https://calendly.com/hkincotech/consultation" style="background: var(--contrast-action-bg); color: var(--contrast-action-text); padding: 0.75rem 2rem; border-radius: 8px; font-weight: 600; text-decoration: none; transition: all 0.3s ease;" onmouseover="this.style.opacity='0.9';" onmouseout="this.style.opacity='1';">
                     <span>{{ __('contact.schedule_call') }}</span>
                 </a>
-                <a href="mailto:hello@hkincotech.com" style="background: rgba(255,255,255,0.2); color: white; padding: 0.75rem 2rem; border-radius: 8px; font-weight: 600; text-decoration: none; transition: all 0.3s ease;" onmouseover="this.style.backgroundColor='rgba(255,255,255,0.3)';" onmouseout="this.style.backgroundColor='rgba(255,255,255,0.2)';">
+                <a href="mailto:hello@hkincotech.com" style="background: var(--contrast-glass-bg-hover); color: var(--contrast-panel-text); padding: 0.75rem 2rem; border-radius: 8px; font-weight: 600; text-decoration: none; transition: all 0.3s ease;" onmouseover="this.style.backgroundColor='var(--contrast-glass-border)';" onmouseout="this.style.backgroundColor='var(--contrast-glass-bg-hover)';">
                     <span>{{ __('contact.email_us') }}</span>
                 </a>
             </div>

@@ -20,7 +20,7 @@
     </section>
 
     <!-- R&D Articles -->
-    <section style="background: white; padding: 4rem 2rem;">
+    <section style="background: var(--surface); padding: 4rem 2rem;">
         <div class="container-v5">
             @include('landing_page.blog.r_and_d.hkspace')
             <div style="height: 1px; background: var(--border); margin: 4rem 0;"></div>
@@ -38,7 +38,7 @@
 
             <div class="card-grid" style="--card-min: 280px; --card-max: 420px; --card-gap: 2rem;">
                 @foreach(__('r_and_d.capabilities') as $cap)
-                <div style="background: white; border-radius: var(--card-radius); padding: 2rem; border: 1px solid var(--border);">
+                <div style="background: var(--surface); border-radius: var(--card-radius); padding: 2rem; border: 1px solid var(--border);">
                     <div style="font-size: 1.75rem; color: var(--primary); margin-bottom: 1rem;">
                         <span class="material-symbols-rounded">{{ $cap['icon'] }}</span>
                     </div>
@@ -51,12 +51,12 @@
     </section>
 
     <!-- CTA -->
-    <section style="background: white;">
+    <section style="background: var(--surface);">
         <div class="container-v5">
-            <div style="background: linear-gradient(135deg, var(--primary) 0%, var(--primary-light) 100%); border-radius: var(--card-radius); padding: 3.5rem 2rem; text-align: center; color: white;">
+            <div style="background: var(--contrast-panel-bg); border-radius: var(--card-radius); padding: 3.5rem 2rem; text-align: center; color: var(--contrast-panel-text);">
                 <h2 style="font-size: 2rem; font-weight: 800; margin-bottom: 1rem;">{{ __('r_and_d.cta_title') }}</h2>
                 <p style="font-size: 1.1rem; margin-bottom: 2rem; opacity: 0.95;">{{ __('r_and_d.cta_desc') }}</p>
-                <a href="{{ route('landing.contact') }}" style="background: white; color: var(--primary); padding: 1rem 2.5rem; border-radius: 8px; font-weight: 600; text-decoration: none; display: inline-block; transition: all 0.3s ease;" onmouseover="this.style.backgroundColor='var(--secondary-bg)';" onmouseout="this.style.backgroundColor='white';">
+                <a href="{{ route('landing.contact') }}" style="background: var(--contrast-action-bg); color: var(--contrast-action-text); padding: 1rem 2.5rem; border-radius: 8px; font-weight: 600; text-decoration: none; display: inline-block; transition: all 0.3s ease;" onmouseover="this.style.opacity='0.9';" onmouseout="this.style.opacity='1';">
                     {{ __('r_and_d.cta_button') }}
                 </a>
             </div>

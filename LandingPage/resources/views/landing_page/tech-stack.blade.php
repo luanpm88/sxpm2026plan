@@ -29,8 +29,8 @@
                 $tech_categories = __('tech_stack.categories');
                 @endphp
                 @foreach($tech_categories as $cat)
-                <div style="background: white; border: 1px solid var(--border); border-radius: var(--card-radius); overflow: hidden; transition: all 0.3s ease;" onmouseover="this.style.borderColor='var(--primary)'; this.style.boxShadow='0 12px 30px var(--shadow-hover)';" onmouseout="this.style.borderColor='var(--border)'; this.style.boxShadow='';">
-                    <div style="background: linear-gradient(135deg, var(--primary) 0%, var(--primary-light) 100%); color: white; padding: 2rem; display: flex; align-items: center; gap: 1rem;">
+                <div style="background: var(--surface); border: 1px solid var(--border); border-radius: var(--card-radius); overflow: hidden; transition: all 0.3s ease;" onmouseover="this.style.borderColor='var(--primary)'; this.style.boxShadow='0 12px 30px var(--shadow-hover)';" onmouseout="this.style.borderColor='var(--border)'; this.style.boxShadow='';">
+                    <div style="background: var(--contrast-panel-bg); color: var(--contrast-panel-text); padding: 2rem; display: flex; align-items: center; gap: 1rem;">
                         <div style="font-size: 1.75rem;">
                             <span class="material-symbols-rounded">{{ $cat['icon'] }}</span>
                         </div>
@@ -68,7 +68,7 @@
                 $metrics = __('tech_stack.metrics');
                 @endphp
                 @foreach($metrics as $m)
-                <div style="background: white; border: 1px solid var(--border); border-radius: var(--card-radius); padding: 2rem; transition: all 0.3s ease;" onmouseover="this.style.boxShadow='0 12px 30px rgba(14, 49, 99, 0.1)';" onmouseout="this.style.boxShadow='';">
+                <div style="background: var(--surface); border: 1px solid var(--border); border-radius: var(--card-radius); padding: 2rem; transition: all 0.3s ease;" onmouseover="this.style.boxShadow='0 12px 30px rgba(14, 49, 99, 0.1)';" onmouseout="this.style.boxShadow='';">
                     <div style="font-size: 2rem; font-weight: 800; color: var(--primary); margin-bottom: 0.5rem;">
                         {{ $m['metric'] }}
                     </div>
@@ -98,7 +98,7 @@
                 $platforms = __('tech_stack.platforms');
                 @endphp
                 @foreach($platforms as $platform)
-                <div style="background: white; border-radius: var(--card-radius); padding: 2.5rem; transition: all 0.3s ease; border: 1px solid var(--border);" onmouseover="this.style.transform='translateY(-8px)'; this.style.boxShadow='0 20px 40px rgba(14, 49, 99, 0.15)';" onmouseout="this.style.transform=''; this.style.boxShadow='';">
+                <div style="background: var(--surface); border-radius: var(--card-radius); padding: 2.5rem; transition: all 0.3s ease; border: 1px solid var(--border);" onmouseover="this.style.transform='translateY(-8px)'; this.style.boxShadow='0 20px 40px rgba(14, 49, 99, 0.15)';" onmouseout="this.style.transform=''; this.style.boxShadow='';">
                     <div style="font-size: 2rem; color: var(--primary); margin-bottom: 1.5rem;">
                         <span class="material-symbols-rounded" style="font-size: 2rem;">{{ $platform['icon'] }}</span>
                     </div>
@@ -131,7 +131,7 @@
     </section>
 
     <!-- Best Practices -->
-    <section style="background: white;">
+    <section style="background: var(--surface);">
         <div class="container-v5">
             <div class="section-header">
                 <span class="section-label">BEST PRACTICES</span>
@@ -144,7 +144,7 @@
                 $practices = __('tech_stack.practices');
                 @endphp
                 @foreach($practices as $p)
-                <div style="background: white; border-radius: var(--card-radius); padding: 2rem; transition: all 0.3s ease; border: 1px solid var(--border);" onmouseover="this.style.borderColor='var(--primary)'; this.style.boxShadow='0 12px 30px rgba(14, 49, 99, 0.1)';" onmouseout="this.style.borderColor='var(--border)'; this.style.boxShadow='';">
+                <div style="background: var(--surface); border-radius: var(--card-radius); padding: 2rem; transition: all 0.3s ease; border: 1px solid var(--border);" onmouseover="this.style.borderColor='var(--primary)'; this.style.boxShadow='0 12px 30px rgba(14, 49, 99, 0.1)';" onmouseout="this.style.borderColor='var(--border)'; this.style.boxShadow='';">
                     <div style="font-size: 1.75rem; color: var(--primary); margin-bottom: 1rem;">
                         <span class="material-symbols-rounded">{{ $p['icon'] }}</span>
                     </div>
@@ -166,12 +166,12 @@
     <!-- CTA -->
     <section>
         <div class="container-v5">
-            <div style="background: linear-gradient(135deg, var(--primary) 0%, var(--primary-light) 100%); border-radius: var(--card-radius); padding: 3.5rem 2rem; text-align: center; color: white;">
+            <div style="background: var(--contrast-panel-bg); border-radius: var(--card-radius); padding: 3.5rem 2rem; text-align: center; color: var(--contrast-panel-text);">
                 <h2 style="font-size: 2rem; font-weight: 800; margin-bottom: 1rem;">{{ __('tech_stack.cta_title') }}</h2>
                 <p style="font-size: 1.1rem; margin-bottom: 2rem; opacity: 0.95;">
                     {{ __('tech_stack.cta_desc') }}
                 </p>
-                <a href="{{ route('landing.contact') }}" style="background: white; color: var(--primary); padding: 1rem 2.5rem; border-radius: 8px; font-weight: 600; text-decoration: none; display: inline-block; transition: all 0.3s ease;" onmouseover="this.style.backgroundColor='var(--secondary-bg)';" onmouseout="this.style.backgroundColor='white';">
+                <a href="{{ route('landing.contact') }}" style="background: var(--contrast-action-bg); color: var(--contrast-action-text); padding: 1rem 2.5rem; border-radius: 8px; font-weight: 600; text-decoration: none; display: inline-block; transition: all 0.3s ease;" onmouseover="this.style.opacity='0.9';" onmouseout="this.style.opacity='1';">
                     <span>{{ __('tech_stack.cta_button') }}</span>
                 </a>
             </div>

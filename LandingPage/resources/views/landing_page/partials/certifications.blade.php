@@ -66,7 +66,7 @@
             ];
             @endphp
             @foreach($compliance as $cert)
-            <div style="background: white; border-radius: var(--card-radius); padding: 2.5rem 2rem; border: 1px solid var(--border); transition: all 0.3s ease; text-align: center;" onmouseover="this.style.borderColor='var(--primary)'; this.style.boxShadow='0 10px 30px rgba(14, 49, 99, 0.1)'; this.style.transform='translateY(-4px)';" onmouseout="this.style.borderColor='var(--border)'; this.style.boxShadow=''; this.style.transform='';">
+            <div style="background: var(--surface); border-radius: var(--card-radius); padding: 2.5rem 2rem; border: 1px solid var(--border); transition: all 0.3s ease; text-align: center;" onmouseover="this.style.borderColor='var(--primary)'; this.style.boxShadow='0 10px 30px rgba(14, 49, 99, 0.1)'; this.style.transform='translateY(-4px)';" onmouseout="this.style.borderColor='var(--border)'; this.style.boxShadow=''; this.style.transform='';">
                 <div style="font-size: 2rem; color: var(--primary); margin-bottom: 1rem;">
                     <span class="material-symbols-rounded">{{ $cert['icon'] }}</span>
                 </div>
@@ -139,7 +139,7 @@
             ];
             @endphp
             @foreach($cloudCerts as $cloud)
-            <div style="background: white; border-radius: var(--card-radius); padding: 2rem; border: 1px solid var(--border); transition: all 0.3s ease;" onmouseover="this.style.borderColor='var(--primary)'; this.style.boxShadow='0 10px 30px rgba(14, 49, 99, 0.1)';" onmouseout="this.style.borderColor='var(--border)'; this.style.boxShadow='';">
+            <div style="background: var(--surface); border-radius: var(--card-radius); padding: 2rem; border: 1px solid var(--border); transition: all 0.3s ease;" onmouseover="this.style.borderColor='var(--primary)'; this.style.boxShadow='0 10px 30px rgba(14, 49, 99, 0.1)';" onmouseout="this.style.borderColor='var(--border)'; this.style.boxShadow='';">
                 <div style="font-size: 1.75rem; color: var(--primary); margin-bottom: 1rem;">
                     <span class="material-symbols-rounded">{{ $cloud['icon'] }}</span>
                 </div>
@@ -207,7 +207,7 @@
             ];
             @endphp
             @foreach($agile as $category)
-            <div style="background: white; border-radius: var(--card-radius); padding: 2.5rem 2rem; border: 2px solid #e2e8f0; transition: all 0.3s ease;" onmouseover="this.style.borderColor='var(--primary)'; this.style.transform='translateX(5px)';" onmouseout="this.style.borderColor='#e2e8f0'; this.style.transform='';">
+            <div style="background: var(--surface); border-radius: var(--card-radius); padding: 2.5rem 2rem; border: 2px solid #e2e8f0; transition: all 0.3s ease;" onmouseover="this.style.borderColor='var(--primary)'; this.style.transform='translateX(5px)';" onmouseout="this.style.borderColor='#e2e8f0'; this.style.transform='';">
                 <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1.5rem;">
                     <div style="font-size: 2rem; color: var(--primary);">
                         <span class="material-symbols-rounded">{{ $category['icon'] }}</span>
@@ -274,7 +274,7 @@
             ];
             @endphp
             @foreach($technologies as $tech)
-            <div style="background: white; border-radius: var(--card-radius); padding: 2rem; border: 1px solid var(--border); transition: all 0.3s ease;" onmouseover="this.style.boxShadow='0 8px 20px rgba(14, 49, 99, 0.1)';" onmouseout="this.style.boxShadow='';">
+            <div style="background: var(--surface); border-radius: var(--card-radius); padding: 2rem; border: 1px solid var(--border); transition: all 0.3s ease;" onmouseover="this.style.boxShadow='0 8px 20px rgba(14, 49, 99, 0.1)';" onmouseout="this.style.boxShadow='';">
                 <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1.5rem;">
                     <div style="font-size: 2rem; color: var(--primary);">
                         <span class="material-symbols-rounded">{{ $tech['icon'] }}</span>
@@ -347,7 +347,7 @@
             ];
             @endphp
             @foreach($teamProfile as $profile)
-            <div style="background: white; border-radius: var(--card-radius); padding: 2.5rem 2rem; border: 1px solid var(--border); text-align: center; transition: all 0.3s ease;" onmouseover="this.style.borderColor='var(--primary)'; this.style.transform='translateY(-5px)'; this.style.boxShadow='0 10px 30px rgba(14, 49, 99, 0.1)';" onmouseout="this.style.borderColor='var(--border)'; this.style.transform=''; this.style.boxShadow='';">
+            <div style="background: var(--surface); border-radius: var(--card-radius); padding: 2.5rem 2rem; border: 1px solid var(--border); text-align: center; transition: all 0.3s ease;" onmouseover="this.style.borderColor='var(--primary)'; this.style.transform='translateY(-5px)'; this.style.boxShadow='0 10px 30px rgba(14, 49, 99, 0.1)';" onmouseout="this.style.borderColor='var(--border)'; this.style.transform=''; this.style.boxShadow='';">
                 <div style="font-size: 1.75rem; color: var(--primary); margin-bottom: 1rem;">
                     <span class="material-symbols-rounded">{{ $profile['icon'] }}</span>
                 </div>
@@ -369,26 +369,26 @@
 <!-- Continuous Learning Culture -->
 <section style="background: var(--secondary-bg);">
     <div class="container-v5">
-        <div style="background: linear-gradient(135deg, var(--primary) 0%, var(--primary-light) 100%); border-radius: var(--card-radius); padding: 3.5rem 2rem; text-align: center; color: white;">
+        <div style="background: var(--contrast-panel-bg); border-radius: var(--card-radius); padding: 3.5rem 2rem; text-align: center; color: var(--contrast-panel-text);">
             <h2 style="font-size: 2rem; font-weight: 800; margin-bottom: 1rem;">Continuous Learning Culture</h2>
             <p style="font-size: 1.1rem; margin-bottom: 2rem; opacity: 0.95;">
                 We invest in our team's growth through certifications, training, and knowledge sharing
             </p>
             
             <div class="card-grid" style="--card-min: 200px; --card-max: 340px; --card-gap: 2rem; max-width: 1200px; margin: 0 auto;">
-                <div style="background: rgba(255, 255, 255, 0.1); border-radius: 8px; padding: 1.5rem;">
+                <div style="background: var(--contrast-decoration-bg); border-radius: 8px; padding: 1.5rem;">
                     <div style="font-size: 2rem; font-weight: 800; margin-bottom: 0.5rem;">100%</div>
                     <div style="font-size: 0.9rem;">Annual Certification Budget</div>
                 </div>
-                <div style="background: rgba(255, 255, 255, 0.1); border-radius: 8px; padding: 1.5rem;">
+                <div style="background: var(--contrast-decoration-bg); border-radius: 8px; padding: 1.5rem;">
                     <div style="font-size: 2rem; font-weight: 800; margin-bottom: 0.5rem;">Monthly</div>
                     <div style="font-size: 0.9rem;">Tech Talks & Knowledge Sharing</div>
                 </div>
-                <div style="background: rgba(255, 255, 255, 0.1); border-radius: 8px; padding: 1.5rem;">
+                <div style="background: var(--contrast-decoration-bg); border-radius: 8px; padding: 1.5rem;">
                     <div style="font-size: 2rem; font-weight: 800; margin-bottom: 0.5rem;">R&D Time</div>
                     <div style="font-size: 0.9rem;">Emerging Technologies Focus</div>
                 </div>
-                <div style="background: rgba(255, 255, 255, 0.1); border-radius: 8px; padding: 1.5rem;">
+                <div style="background: var(--contrast-decoration-bg); border-radius: 8px; padding: 1.5rem;">
                     <div style="font-size: 2rem; font-weight: 800; margin-bottom: 0.5rem;">Mentorship</div>
                     <div style="font-size: 0.9rem;">Senior-to-Junior Developer Program</div>
                 </div>
@@ -400,12 +400,12 @@
 <!-- CTA -->
 <section>
     <div class="container-v5">
-        <div style="background: linear-gradient(135deg, var(--primary) 0%, var(--primary-light) 100%); border-radius: var(--card-radius); padding: 3.5rem 2rem; text-align: center; color: white;">
+        <div style="background: var(--contrast-panel-bg); border-radius: var(--card-radius); padding: 3.5rem 2rem; text-align: center; color: var(--contrast-panel-text);">
             <h2 style="font-size: 2rem; font-weight: 800; margin-bottom: 1rem;">Partner with HKIncotech</h2>
             <p style="font-size: 1.1rem; margin-bottom: 2rem; opacity: 0.95;">
                 Enterprise-grade team with industry certifications and proven expertise
             </p>
-            <a href="#contact" style="background: white; color: var(--primary); padding: 1rem 2.5rem; border-radius: 8px; font-weight: 600; text-decoration: none; display: inline-block; transition: all 0.3s ease;" onmouseover="this.style.backgroundColor='var(--secondary-bg)';" onmouseout="this.style.backgroundColor='white';">
+            <a href="#contact" style="background: var(--contrast-action-bg); color: var(--contrast-action-text); padding: 1rem 2.5rem; border-radius: 8px; font-weight: 600; text-decoration: none; display: inline-block; transition: all 0.3s ease;" onmouseover="this.style.opacity='0.9';" onmouseout="this.style.opacity='1';">
                 <span>Start Your Project</span>
             </a>
         </div>

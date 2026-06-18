@@ -1,4 +1,4 @@
-<section style="background: #ffffff;">
+<section style="background: var(--surface);">
     <div class="container-v5">
         <div class="section-header">
             <h2 class="section-title">{{ __('sme_manufacturing.roadmap_title') }}</h2>
@@ -31,7 +31,7 @@
             <h3 style="font-size: 1.2rem; font-weight: 700; margin-bottom: 0.75rem;">{{ __('sme_manufacturing.roadmap_hardware_title') }}</h3>
             <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 0.75rem;">
                 @foreach(__('sme_manufacturing.roadmap_hardware_items') as $item)
-                    <div style="background: #fff; border: 1px solid var(--border); border-radius: 8px; padding: 0.75rem; color: var(--text-gray);">
+                    <div style="background: var(--surface); border: 1px solid var(--border); border-radius: 8px; padding: 0.75rem; color: var(--text-gray);">
                         <strong style="color: var(--text-dark);">{{ $item['title'] }}</strong><br>
                         {{ $item['description'] }}
                     </div>
@@ -43,7 +43,7 @@
             <h3 style="font-size: 1.2rem; font-weight: 700; margin-bottom: 0.75rem;">{{ __('sme_manufacturing.roadmap_risk_title') }}</h3>
             <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 0.75rem;">
                 @foreach(__('sme_manufacturing.roadmap_risk_items') as $item)
-                    <div style="background: #fff; border: 1px solid var(--border); border-radius: 8px; padding: 0.75rem; color: var(--text-gray);">
+                    <div style="background: var(--surface); border: 1px solid var(--border); border-radius: 8px; padding: 0.75rem; color: var(--text-gray);">
                         <strong style="color: var(--text-dark);">{{ $item['title'] }}</strong><br>
                         {{ $item['description'] }}
                     </div>
@@ -51,7 +51,7 @@
             </div>
         </div>
 
-        <div style="margin-top: 1rem; background: #fff; border: 1px solid var(--border); border-radius: var(--card-radius); padding: 1.25rem; color: var(--text-gray); line-height: 1.8;">
+        <div style="margin-top: 1rem; background: var(--surface); border: 1px solid var(--border); border-radius: var(--card-radius); padding: 1.25rem; color: var(--text-gray); line-height: 1.8;">
             <strong style="color: var(--text-dark);">{{ __('sme_manufacturing.roadmap_targets') }}</strong>
         </div>
     </div>

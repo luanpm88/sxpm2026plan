@@ -16,7 +16,7 @@
     </section>
 
     <!-- Portfolio Stats -->
-    <section style="background: white;">
+    <section style="background: var(--surface);">
         <div class="container-v5">
             <div class="card-grid" style="--card-min: 180px; --card-max: 320px; --card-gap: 2rem; margin-bottom: 4rem;">
                 @foreach(__('case_studies.stats') as $stat)
@@ -43,7 +43,7 @@
             </div>
 
             @foreach(__('case_studies.case_studies') as $cs)
-            <div style="background: white; border-radius: var(--card-radius); padding: 3rem; margin-bottom: 2rem; border: 1px solid var(--border); transition: all 0.3s ease;" onmouseover="this.style.boxShadow='0 12px 30px var(--shadow-hover)';" onmouseout="this.style.boxShadow='';">
+            <div style="background: var(--surface); border-radius: var(--card-radius); padding: 3rem; margin-bottom: 2rem; border: 1px solid var(--border); transition: all 0.3s ease;" onmouseover="this.style.boxShadow='0 12px 30px var(--shadow-hover)';" onmouseout="this.style.boxShadow='';">
                 <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; align-items: start;">
                     <div>
                         <div style="display: inline-block; background: var(--secondary-bg); padding: 0.5rem 1rem; border-radius: 6px; color: var(--primary); font-size: 0.85rem; font-weight: 600; margin-bottom: 1.5rem;">
@@ -76,14 +76,14 @@
                         </div>
                     </div>
                     
-                    <div style="background: linear-gradient(135deg, var(--primary) 0%, var(--primary-light) 100%); border-radius: 8px; padding: 2rem; color: white;">
+                    <div style="background: var(--contrast-panel-bg); border-radius: 8px; padding: 2rem; color: var(--contrast-panel-text);">
                         <h4 style="font-size: 0.9rem; font-weight: 700; text-transform: uppercase; margin-bottom: 1.5rem; opacity: 0.95;">{{ __('case_studies.label_results') }}</h4>
                         @if(is_array($cs['results']))
                         <ul style="list-style: none; padding: 0; margin: 0; display: grid; gap: 0.65rem;">
                             @foreach($cs['results'] as $item)
                             <li style="display: flex; align-items: center; gap: 0.6rem; font-size: 0.95rem; line-height: 1.5; opacity: 0.95;">
-                                <span class="material-symbols-rounded" style="font-size: 1.2rem; color: white;">check_circle</span>
-                                <span style="color: white;">{{ $item }}</span>
+                                <span class="material-symbols-rounded" style="font-size: 1.2rem; color: var(--contrast-panel-text);">check_circle</span>
+                                <span style="color: var(--contrast-panel-text);">{{ $item }}</span>
                             </li>
                             @endforeach
                         </ul>
@@ -110,7 +110,7 @@
             
             <div class="card-grid" style="--card-min: 280px; --card-max: 420px; --card-gap: 2rem;">
                 @foreach(__('case_studies.industries') as $ind)
-                <div style="background: white; border-radius: var(--card-radius); padding: 2rem; text-align: center; border: 1px solid var(--border); transition: all 0.3s ease;" onmouseover="this.style.borderColor='var(--primary)'; this.style.boxShadow='0 12px 30px var(--shadow-hover)';" onmouseout="this.style.borderColor='var(--border)'; this.style.boxShadow='';">
+                <div style="background: var(--surface); border-radius: var(--card-radius); padding: 2rem; text-align: center; border: 1px solid var(--border); transition: all 0.3s ease;" onmouseover="this.style.borderColor='var(--primary)'; this.style.boxShadow='0 12px 30px var(--shadow-hover)';" onmouseout="this.style.borderColor='var(--border)'; this.style.boxShadow='';">
                     <div style="font-size: 2rem; color: var(--primary); margin-bottom: 1rem;">
                         <span class="material-symbols-rounded">{{ $ind['icon'] }}</span>
                     </div>
@@ -127,7 +127,7 @@
     </section>
 
     <!-- Client Testimonials -->
-    <section style="background: white;">
+    <section style="background: var(--surface);">
         <div class="container-v5">
             <div class="section-header">
                 <span class="section-label">{{ __('case_studies.section_testimonials') }}</span>
@@ -137,7 +137,7 @@
             
             <div class="card-grid" style="--card-min: 300px; --card-max: 440px; --card-gap: 2rem;">
                 @foreach(__('case_studies.testimonials') as $t)
-                <div style="background: var(--secondary-bg); border-radius: var(--card-radius); padding: 2rem; border: 1px solid var(--border); transition: all 0.3s ease;" onmouseover="this.style.backgroundColor='white';" onmouseout="this.style.backgroundColor='var(--secondary-bg)';">
+                <div style="background: var(--secondary-bg); border-radius: var(--card-radius); padding: 2rem; border: 1px solid var(--border); transition: all 0.3s ease;" onmouseover="this.style.backgroundColor='var(--surface)';" onmouseout="this.style.backgroundColor='var(--secondary-bg)';">
                     <div style="display: flex; gap: 0.3rem; margin-bottom: 1rem;">
                         @for($i = 0; $i < 5; $i++)
                         <span style="color: var(--primary); font-size: 1.2rem;">★</span>
@@ -156,14 +156,14 @@
     </section>
 
     <!-- CTA -->
-    <section style="background: white;">
+    <section style="background: var(--surface);">
         <div class="container-v5">
-            <div style="background: linear-gradient(135deg, var(--primary) 0%, var(--primary-light) 100%); border-radius: var(--card-radius); padding: 3.5rem 2rem; text-align: center; color: white;">
+            <div style="background: var(--contrast-panel-bg); border-radius: var(--card-radius); padding: 3.5rem 2rem; text-align: center; color: var(--contrast-panel-text);">
                 <h2 style="font-size: 2rem; font-weight: 800; margin-bottom: 1rem;">{{ __('case_studies.cta_title') }}</h2>
                 <p style="font-size: 1.1rem; margin-bottom: 2rem; opacity: 0.95;">
                     {{ __('case_studies.cta_desc') }}
                 </p>
-                <a href="{{ route('landing.contact') }}" style="background: white; color: var(--primary); padding: 1rem 2.5rem; border-radius: 8px; font-weight: 600; text-decoration: none; display: inline-block; transition: all 0.3s ease;" onmouseover="this.style.backgroundColor='var(--secondary-bg)';" onmouseout="this.style.backgroundColor='white';">
+                <a href="{{ route('landing.contact') }}" style="background: var(--contrast-action-bg); color: var(--contrast-action-text); padding: 1rem 2.5rem; border-radius: 8px; font-weight: 600; text-decoration: none; display: inline-block; transition: all 0.3s ease;" onmouseover="this.style.opacity='0.9';" onmouseout="this.style.opacity='1';">
                     <span>{{ __('case_studies.cta_button') }}</span>
                 </a>
             </div>

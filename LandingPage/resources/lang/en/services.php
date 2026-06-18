@@ -2,31 +2,31 @@
 
 return [
     // Hero Section
-    'hero_title' => 'Services & Solutions',
-    'hero_desc' => 'Four core service areas covering the full spectrum of enterprise software needs — from initial MVP to large-scale production systems.',
-    'hero_subtitle' => 'We combine modern technology, global engineering best practices, and deep domain expertise to deliver solutions built for long-term performance.',
+    'hero_title' => 'Enterprise Software Engineering Capabilities',
+    'hero_desc' => 'Hoang Khang designs, builds, and operates custom software for organizations: core systems, internal workflows, SaaS platforms, AI enablement, and secure production operations.',
+    'hero_subtitle' => 'We work as a long-term engineering team: understand the business context, design the architecture, deliver in controlled phases, and hand over systems that can scale.',
 
     // Services Overview Section
-    'overview_title' => 'Four Core Services',
-    'overview_subtitle' => 'Complete solutions from development to deployment & scaling',
+    'overview_title' => 'Four Core Capability Areas',
+    'overview_subtitle' => 'From custom software delivery to platform operations, AI enablement, and secure system engineering',
 
     // Service Overview Items
     'services' => [
         [
             'title' => 'Custom Software Development',
-            'desc' => 'Build applications from scratch with cloud-native architecture, microservices, and optimized performance',
+            'desc' => 'Analysis, architecture, and system development aligned with the organization’s real operating model',
         ],
         [
             'title' => 'SaaS Platform',
-            'desc' => 'Production-ready multi-tenant platform. HKSpace runs at production scale serving a large, active user base',
+            'desc' => 'Multi-tenant platform architecture for subscription, access control, billing, and production operations, informed by HK-owned platforms such as HKSpace and Yolius',
         ],
         [
             'title' => 'AI Knowledge Platform',
-            'desc' => 'NLP, RAG, LLM integration. Build intelligent AI-powered solutions',
+            'desc' => 'NLP, RAG, LLM, and workflow automation integrated into internal systems or digital products',
         ],
         [
             'title' => 'Security & Compliance',
-            'desc' => 'Enterprise security architecture. ISO 27001, SOC 2, GDPR, PCI DSS compliant',
+            'desc' => 'Security architecture, access control, audit logs, and compliance patterns tailored to business context',
         ],
     ],
 
@@ -51,6 +51,14 @@ return [
         'cycle_desc' => '2-week cycles with client participation in each phase to ensure product alignment',
         'cycle_2week' => '2-Week',
         'cycle_sprint' => 'Sprint',
+        'delivery_map' => [
+            ['num' => '01', 'title' => 'Discovery', 'desc' => 'Goals, workflow, data'],
+            ['num' => '02', 'title' => 'Architecture', 'desc' => 'Scope, APIs, security'],
+            ['num' => '03', 'title' => 'Sprint build', 'desc' => 'Design, code, review'],
+            ['num' => '04', 'title' => 'Validation', 'desc' => 'Demo, UAT, quality'],
+            ['num' => '05', 'title' => 'Operations', 'desc' => 'Release, support, improve'],
+        ],
+        'delivery_governance' => 'Project governance, progress visibility, and quality control',
         'tech_title' => 'Tech Stack & Technologies',
         'tech_desc' => 'Full-stack development with modern tech stack suitable for MVP to Enterprise projects',
         'tech_details' => '10+ tech categories',

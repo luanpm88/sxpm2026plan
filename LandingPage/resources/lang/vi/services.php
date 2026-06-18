@@ -2,31 +2,31 @@
 
 return [
     // Hero Section
-    'hero_title' => 'Dịch Vụ & Giải Pháp',
-    'hero_desc' => 'Bốn dịch vụ cốt lõi bao phủ toàn bộ nhu cầu phần mềm doanh nghiệp — từ MVP ban đầu đến các hệ thống vận hành quy mô lớn.',
-    'hero_subtitle' => 'Chúng tôi kết hợp công nghệ hiện đại, thực tiễn kỹ thuật tốt nhất toàn cầu và chuyên môn sâu về lĩnh vực để xây dựng các giải pháp có hiệu suất lâu dài.',
+    'hero_title' => 'Năng Lực Phát Triển Phần Mềm Doanh Nghiệp',
+    'hero_desc' => 'Hoàng Khang thiết kế, xây dựng và vận hành phần mềm theo yêu cầu cho doanh nghiệp: từ hệ thống lõi, workflow nội bộ, nền tảng SaaS đến tích hợp AI và bảo mật.',
+    'hero_subtitle' => 'Chúng tôi làm việc như một đội kỹ thuật dài hạn: hiểu nghiệp vụ, thiết kế kiến trúc, triển khai có kiểm soát và bàn giao hệ thống có thể mở rộng.',
 
     // Services Overview Section
-    'overview_title' => 'Bốn Dịch Vụ Cốt Lõi',
-    'overview_subtitle' => 'Giải pháp hoàn chỉnh từ phát triển đến triển khai & mở rộng',
+    'overview_title' => 'Bốn Nhóm Năng Lực Chính',
+    'overview_subtitle' => 'Từ xây dựng phần mềm theo yêu cầu đến vận hành nền tảng, AI enablement và bảo mật hệ thống',
 
     // Service Overview Items
     'services' => [
         [
             'title' => 'Phát Triển Phần Mềm Tùy Chỉnh',
-            'desc' => 'Xây dựng ứng dụng từ đầu với kiến trúc cloud-native, microservices và hiệu suất tối ưu',
+            'desc' => 'Phân tích, thiết kế kiến trúc và phát triển hệ thống theo đúng nghiệp vụ vận hành của doanh nghiệp',
         ],
         [
             'title' => 'Nền Tảng SaaS',
-            'desc' => 'Nền tảng SaaS đa người dùng sẵn sàng sản xuất. HKSpace vận hành ở quy mô production, phục vụ lượng người dùng hoạt động lớn',
+            'desc' => 'Thiết kế nền tảng đa tenant, subscription, phân quyền, billing và vận hành production, tích lũy từ các platform Hoàng Khang sở hữu như HKSpace và Yolius',
         ],
         [
             'title' => 'Nền Tảng AI Trí Thức',
-            'desc' => 'Tích hợp NLP, RAG, LLM. Xây dựng các giải pháp AI thông minh',
+            'desc' => 'Tích hợp NLP, RAG, LLM và workflow automation vào hệ thống nội bộ hoặc sản phẩm số',
         ],
         [
             'title' => 'Bảo Mật & Tuân Thủ',
-            'desc' => 'Kiến trúc bảo mật cấp doanh nghiệp. Tuân thủ ISO 27001, SOC 2, GDPR, PCI DSS',
+            'desc' => 'Thiết kế bảo mật, phân quyền, audit log và tiêu chuẩn tuân thủ phù hợp bối cảnh doanh nghiệp',
         ],
     ],
 
@@ -51,6 +51,14 @@ return [
         'cycle_desc' => 'Các chu kỳ 2 tuần với sự tham gia của khách hàng trong mỗi giai đoạn để đảm bảo sự liên kết sản phẩm',
         'cycle_2week' => '2 Tuần',
         'cycle_sprint' => 'Sprint',
+        'delivery_map' => [
+            ['num' => '01', 'title' => 'Khảo sát', 'desc' => 'Mục tiêu, quy trình, dữ liệu'],
+            ['num' => '02', 'title' => 'Kiến trúc', 'desc' => 'Scope, API, bảo mật'],
+            ['num' => '03', 'title' => 'Sprint build', 'desc' => 'Thiết kế, code, review'],
+            ['num' => '04', 'title' => 'Kiểm chứng', 'desc' => 'Demo, UAT, chất lượng'],
+            ['num' => '05', 'title' => 'Vận hành', 'desc' => 'Release, support, cải tiến'],
+        ],
+        'delivery_governance' => 'Quản trị dự án, minh bạch tiến độ, kiểm soát chất lượng',
         'tech_title' => 'Tech Stack & Công Nghệ',
         'tech_desc' => 'Phát triển full-stack với tech stack hiện đại phù hợp cho các dự án từ MVP đến Doanh Nghiệp',
         'tech_details' => '10+ danh mục công nghệ',

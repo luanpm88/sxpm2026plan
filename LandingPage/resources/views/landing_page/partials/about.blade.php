@@ -52,7 +52,7 @@
                 </p>
             </div>
             
-            <div style="background: white; border-radius: var(--card-radius); padding: 2rem; border: 1px solid var(--border);">
+            <div style="background: var(--surface); border-radius: var(--card-radius); padding: 2rem; border: 1px solid var(--border);">
                 <div style="position: relative; max-width: 500px; margin: 0 auto;">
                     @php $milestones = __('about.milestones'); @endphp
 
@@ -64,7 +64,7 @@
                         @endif
                         
                         <!-- Circle Number -->
-                        <div class="flex-shrink-0" style="width: 48px; height: 48px; border-radius: 50%; background: {{ $milestone['highlight'] ? 'var(--primary)' : 'white' }}; border: 3px solid var(--primary); display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 1.1rem; color: {{ $milestone['highlight'] ? 'white' : 'var(--primary)' }}; box-shadow: 0 2px 8px rgba(14, 49, 99, 0.15); position: relative; z-index: 1;">
+                        <div class="flex-shrink-0" style="width: 48px; height: 48px; border-radius: 50%; background: {{ $milestone['highlight'] ? 'var(--primary)' : 'var(--surface)' }}; border: 3px solid var(--primary); display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 1.1rem; color: {{ $milestone['highlight'] ? 'var(--surface)' : 'var(--primary)' }}; box-shadow: 0 2px 8px rgba(14, 49, 99, 0.15); position: relative; z-index: 1;">
                             {{ $index + 1 }}
                         </div>
                         
@@ -95,7 +95,7 @@
 
         <div class="card-grid" style="--card-min: 280px; --card-max: 420px; --card-gap: 2rem;">
             @foreach(__('about.values') as $v)
-            <div style="background: white; border-radius: var(--card-radius); padding: 2rem; text-align: center;">
+            <div style="background: var(--surface); border-radius: var(--card-radius); padding: 2rem; text-align: center;">
                 <div style="font-size: 2rem; color: var(--primary); margin-bottom: 1rem;">
                     <span class="material-symbols-rounded">{{ $v['icon'] }}</span>
                 </div>
@@ -123,10 +123,10 @@
         <div class="card-grid" style="--card-min: 280px; --card-max: 420px; --card-gap: 2rem;">
             @php $leaders = __('about.team'); @endphp
             @foreach($leaders as $leader)
-            <div style="background: white; border: 1px solid var(--border); border-radius: var(--card-radius); overflow: hidden; transition: all 0.3s ease;" onmouseover="this.style.borderColor='var(--primary)'; this.style.boxShadow='0 12px 30px rgba(14, 49, 99, 0.1)';" onmouseout="this.style.borderColor='var(--border)'; this.style.boxShadow='';">
-                <div style="background: linear-gradient(135deg, var(--primary) 0%, var(--primary-light) 100%); height: 150px;"></div>
+            <div style="background: var(--surface); border: 1px solid var(--border); border-radius: var(--card-radius); overflow: hidden; transition: all 0.3s ease;" onmouseover="this.style.borderColor='var(--primary)'; this.style.boxShadow='0 12px 30px rgba(14, 49, 99, 0.1)';" onmouseout="this.style.borderColor='var(--border)'; this.style.boxShadow='';">
+                <div style="background: var(--contrast-panel-bg); height: 150px;"></div>
                 <div style="padding: 1.5rem; text-align: center; margin-top: -60px;">
-                    <div style="width: 120px; height: 120px; background: white; border: 3px solid var(--border); border-radius: 50%; margin: 0 auto 1rem; display: flex; align-items: center; justify-content: center;">
+                    <div style="width: 120px; height: 120px; background: var(--surface); border: 3px solid var(--border); border-radius: 50%; margin: 0 auto 1rem; display: flex; align-items: center; justify-content: center;">
                         <div style="font-size: 2rem; color: var(--primary);">
                             <span class="material-symbols-rounded">account_circle</span>
                         </div>
@@ -155,7 +155,7 @@
 </section>
 
 <!-- Achievements -->
-<section style="background: white;">
+<section style="background: var(--surface);">
     <div class="container-v5">
         <div class="section-header">
             <h2 class="section-title">{{ __('about.achievements_title') }}</h2>
@@ -164,7 +164,7 @@
 
         <div class="card-grid" style="--card-min: 250px; --card-max: 390px; --card-gap: 2rem;">
             @foreach(__('about.achievements') as $a)
-            <div style="background: white; border-radius: var(--card-radius); padding: 2.5rem; text-align: center; border: 1px solid var(--border);">
+            <div style="background: var(--surface); border-radius: var(--card-radius); padding: 2.5rem; text-align: center; border: 1px solid var(--border);">
                 <div style="font-size: 2rem; font-weight: 800; color: var(--primary); margin-bottom: 0.5rem;">
                     {{ $a['num'] }}
                 </div>
@@ -183,12 +183,12 @@
 <!-- CTA -->
 <section style="background: var(--secondary-bg);">
     <div class="container-v5">
-        <div style="background: linear-gradient(135deg, var(--primary) 0%, var(--primary-light) 100%); border-radius: var(--card-radius); padding: 3.5rem 2rem; text-align: center; color: white;">
+        <div style="background: var(--contrast-panel-bg); border-radius: var(--card-radius); padding: 3.5rem 2rem; text-align: center; color: var(--contrast-panel-text);">
             <h2 style="font-size: 2rem; font-weight: 800; margin-bottom: 1rem;">{{ __('about.cta_title') }}</h2>
             <p style="font-size: 1.1rem; margin-bottom: 2rem; opacity: 0.95;">
                 {{ __('about.cta_desc') }}
             </p>
-            <a href="#contact" style="background: white; color: var(--primary); padding: 1rem 2.5rem; border-radius: 8px; font-weight: 600; text-decoration: none; display: inline-block; transition: all 0.3s ease;" onmouseover="this.style.backgroundColor='var(--secondary-bg)';" onmouseout="this.style.backgroundColor='white';">
+            <a href="#contact" style="background: var(--contrast-action-bg); color: var(--contrast-action-text); padding: 1rem 2.5rem; border-radius: 8px; font-weight: 600; text-decoration: none; display: inline-block; transition: all 0.3s ease;" onmouseover="this.style.opacity='0.9';" onmouseout="this.style.opacity='1';">
                 <span>{{ __('about.cta_button') }}</span>
             </a>
         </div>

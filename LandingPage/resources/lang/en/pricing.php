@@ -107,7 +107,7 @@ return [
     'faq_subtitle' => 'Everything you need to know about pricing',
 
     'faqs' => [
-        ['q' => 'How do I know what scope my project falls into?', 'a' => 'We conduct a detailed 30-minute free consultation to assess scope, complexity, timeline. From this we provide accurate pricing and timeline recommendations.'],
+        ['q' => 'How do I know what scope my project falls into?', 'a' => 'We discuss the project context directly to assess scope, complexity, technical risk, and timeline. From there we provide pricing and delivery recommendations that fit the project.'],
         ['q' => 'Can the displayed prices change?', 'a' => 'Yes. Prices are reference only. Actual pricing depends on: detailed scope, technology choices, timeline, team size, post-launch support.'],
         ['q' => 'Can we do fixed-price projects?', 'a' => 'Yes, but only when scope is 100% defined. We recommend time & materials for exploratory projects or those with evolving requirements.'],
         ['q' => 'Are there hidden fees?', 'a' => 'No hidden fees. Infrastructure costs (AWS, hosting, domains) are listed separately. All costs disclosed upfront.'],

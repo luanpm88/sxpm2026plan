@@ -6,7 +6,7 @@ return [
     'description'  => 'Dành cho startup cần ship sản phẩm đầu tiên, doanh nghiệp đang vướng trần tăng trưởng, và tập đoàn cần thay thế hệ thống cũ. 100+ kỹ sư. Chứng nhận ISO 27001 & SOC 2. Đội ngũ chuyên trách từ tuần đầu tiên.',
     'cta_primary'  => 'Tư Vấn Kỹ Thuật Miễn Phí',
     'cta_secondary'=> 'Xem Quy Trình Làm Việc',
-    'cta_microcopy'=> 'Gọi 30 phút. Không áp lực bán hàng. Đề xuất kỹ thuật trong 48 giờ.',
+    'cta_microcopy'=> 'Trao đổi kỹ thuật rõ phạm vi. Đề xuất giải pháp theo bối cảnh thực tế.',
     'stat1_value'  => '100+',
     'stat1_label'  => 'Kỹ Sư Senior',
     'stat2_value'  => 'Trọn Gói',

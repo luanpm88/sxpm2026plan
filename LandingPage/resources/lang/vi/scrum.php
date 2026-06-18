@@ -174,6 +174,6 @@ return [
 
     // CTA Section
     'cta_title' => 'Bắt Đầu Hợp Tác Theo Quy Trình SCRUM',
-    'cta_desc' => 'Đặt lịch tư vấn miễn phí 30 phút để trao đổi phạm vi dự án và phương thức triển khai SCRUM phù hợp.',
+    'cta_desc' => 'Trao đổi phạm vi dự án, mô hình phối hợp và cách triển khai SCRUM phù hợp với mức độ trưởng thành của đội ngũ.',
     'cta_button' => 'Đặt Lịch Tư Vấn',
 ];

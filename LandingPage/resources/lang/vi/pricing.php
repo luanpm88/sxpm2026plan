@@ -107,7 +107,7 @@ return [
     'faq_subtitle' => 'Mọi thông tin bạn cần biết về báo giá',
 
     'faqs' => [
-        ['q' => 'Làm sao biết dự án của tôi thuộc phạm vi nào?', 'a' => 'Chúng tôi có buổi tư vấn miễn phí 30 phút để đánh giá phạm vi, độ phức tạp và timeline. Từ đó đưa ra đề xuất chi phí và tiến độ chính xác.'],
+        ['q' => 'Làm sao biết dự án của tôi thuộc phạm vi nào?', 'a' => 'Chúng tôi trao đổi trực tiếp để đánh giá phạm vi, độ phức tạp, rủi ro kỹ thuật và timeline. Từ đó đưa ra đề xuất chi phí và tiến độ phù hợp với bối cảnh dự án.'],
         ['q' => 'Giá hiển thị có thể thay đổi không?', 'a' => 'Có. Giá hiển thị chỉ mang tính tham khảo. Chi phí thực tế phụ thuộc vào phạm vi chi tiết, lựa chọn công nghệ, timeline, quy mô đội ngũ và mức hỗ trợ sau triển khai.'],
         ['q' => 'Có làm dự án fixed-price không?', 'a' => 'Có, nhưng chỉ khi phạm vi được định nghĩa 100%. Với dự án còn cần khám phá hoặc thay đổi yêu cầu, chúng tôi khuyến nghị time & materials.'],
         ['q' => 'Có phí ẩn không?', 'a' => 'Không có phí ẩn. Chi phí hạ tầng (AWS, hosting, domain) được tách riêng và công khai từ đầu.'],

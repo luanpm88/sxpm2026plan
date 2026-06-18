@@ -174,6 +174,6 @@ return [
 
     // CTA Section
     'cta_title' => 'Begin Your SCRUM Engagement',
-    'cta_desc' => 'Schedule a complimentary 30-minute consultation to discuss your project scope and SCRUM delivery approach.',
+    'cta_desc' => 'Discuss project scope, collaboration model, and a SCRUM delivery approach that fits your team maturity.',
     'cta_button' => 'Schedule a Consultation',
 ];

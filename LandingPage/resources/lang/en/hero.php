@@ -6,7 +6,7 @@ return [
     'description'  => 'For startups shipping their first product, scale-ups hitting growth ceilings, and enterprises replacing legacy systems. 100+ engineers. ISO 27001 & SOC 2 certified. Your dedicated team from week one.',
     'cta_primary'  => 'Book a Free Technical Consultation',
     'cta_secondary'=> 'See How We Work',
-    'cta_microcopy'=> '30-minute call. No sales pressure. Technical proposal within 48 hours.',
+    'cta_microcopy'=> 'Technical scope discussion. Practical solution proposal for the real operating context.',
     'stat1_value'  => '100+',
     'stat1_label'  => 'Senior Engineers',
     'stat2_value'  => 'Full-Cycle',

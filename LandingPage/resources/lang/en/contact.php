@@ -40,7 +40,7 @@ return [
     'schedule_call'       => 'Schedule Call',
     'email_us'            => 'Email Us',
     'learn_more_title'    => 'Want to Learn More?',
-    'learn_more_subtitle' => 'Schedule a free 30-minute consultation with our team to discuss your project requirements',
+    'learn_more_subtitle' => 'Speak directly with our engineering team to clarify requirements, scope, and the right delivery direction',
     'submit_success'      => 'Thanks! Your request has been received. Our team will get back to you shortly.',
     'submit_failed'       => 'Sorry, we could not submit your request right now. Please try again in a moment.',
     'integration_not_configured' => 'Contact form integration is not configured yet. Please set up Google Sheets or Telegram.',

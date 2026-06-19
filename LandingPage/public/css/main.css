@@ -256,7 +256,7 @@ html[data-theme="dark"] header {
     /* gap: 0.4rem; */
     font-weight: 800;
     font-size: 1rem;
-    color: var(--primary);
+    color: var(--primary-dark);
     text-decoration: none;
     flex-shrink: 0;
     letter-spacing: 0;

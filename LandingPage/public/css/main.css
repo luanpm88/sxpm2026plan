@@ -470,12 +470,14 @@ html[data-theme="dark"] .nav-group__panel {
    ========================================== */
 .nav-mega {
     display: grid;
-    grid-template-columns: 0.95fr 1.25fr;
+    grid-template-columns: minmax(340px, 1.15fr) minmax(260px, 0.85fr);
+    grid-template-areas: "main aside";
     gap: 0.75rem;
     align-items: stretch;
 }
 
 .nav-mega__aside {
+    grid-area: aside;
     position: relative;
     border-radius: 14px;
     padding: 1rem 1rem 0.9rem;
@@ -560,6 +562,7 @@ html[data-theme="dark"] .nav-group__panel {
 }
 
 .nav-mega__main {
+    grid-area: main;
     padding: 0.3rem 0.2rem;
     min-width: 0;
 }
@@ -641,6 +644,11 @@ html[data-theme="dark"] .nav-mega__tag {
 
     .nav-mega {
         display: block;
+    }
+
+    .nav-mega__aside,
+    .nav-mega__main {
+        grid-area: auto;
     }
 
     .nav-mega__aside,

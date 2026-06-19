@@ -2492,6 +2492,7 @@ div[style*="border-radius: 16px"] {
         right: 0;
         background: var(--surface);
         flex-direction: column;
+        align-items: stretch;
         gap: 0;
         width: 100%;
         text-align: left;
@@ -2511,9 +2512,13 @@ div[style*="border-radius: 16px"] {
 
     nav a.nav-link-v5 {
         padding: 0.85rem 1.5rem;
-        display: block;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        width: 100%;
         font-size: 0.9rem;
         border-bottom: 1px solid var(--border);
+        text-align: left;
         white-space: normal;
         max-width: none;
         border-radius: 0;

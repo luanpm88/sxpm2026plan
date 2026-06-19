@@ -2,17 +2,33 @@
 
 Production demo: **https://demo.hkincotech.com**
 
-## TL;DR — one command
+## TL;DR — standard deploy
 
 ```bash
-# from the repo root, on a machine with the `hkspace-ssd` SSH alias + git push access
-./LandingPage/deploy.sh -m "what changed"   # commit everything, push, deploy, verify
-# or, if you've already committed:
-./LandingPage/deploy.sh
+# from /Users/luan/apps/ppm/LandingPage
+git status --short
+git add <only-the-files-for-this-change>
+git commit -m "short deploy message"
+git push
+./deploy.sh
 ```
 
 The script pushes branch `clean`, pulls it on the app host, clears Laravel caches,
 reloads php-fpm, and curls the site to confirm HTTP 200.
+
+Avoid `./deploy.sh -m` during normal work. That mode commits **all** local changes
+from the repo root, which is risky when unrelated files such as slides, workshop
+notes, tmp folders, or screenshots are dirty. Use it only when the whole worktree
+is intentionally part of the deploy.
+
+## Last verified deploy
+
+- Date: 2026-06-20 ICT
+- Commit: `ba8d0ec` (`upgrade landing brand and delivery sections`)
+- Verified live URL: `https://demo.hkincotech.com`
+- Verified routes: `/vi`, `/vi/scrum`, `/vi/contact`, `/en`
+- Verified logo asset on server: `/home/hkincotech/hkincotech/LandingPage/public/img/logo.svg`
+- Official logo / primary brand navy: `#183060`
 
 ## How it's hosted (topology)
 
@@ -40,8 +56,11 @@ demo.hkincotech.com (DNS → 115.79.28.112)
 ## Manual steps (what the script does)
 
 ```bash
-# 1. locally: commit + push
-git add -A && git commit -m "..." && git push origin clean
+# 1. locally: commit + push only the intended files
+git status --short
+git add <only-the-files-for-this-change>
+git commit -m "..."
+git push origin clean
 
 # 2. on the app host
 ssh hkspace-ssd
@@ -57,6 +76,28 @@ sudo systemctl reload php8.3-fpm               # drop opcache (adjust version if
 # 3. verify
 curl -I https://demo.hkincotech.com/en         # expect 200
 ```
+
+## Post-deploy verification checklist
+
+```bash
+# public routes
+curl -I -s https://demo.hkincotech.com/en
+curl -I -s https://demo.hkincotech.com/vi
+curl -I -s https://demo.hkincotech.com/vi/scrum
+curl -I -s https://demo.hkincotech.com/vi/contact
+
+# deployed commit; safe.directory is needed when checking as hkadmin
+ssh hkspace-ssd "cd /home/hkincotech/hkincotech && git -c safe.directory=/home/hkincotech/hkincotech rev-parse --short HEAD"
+
+# logo color check; current official brand navy should appear in the SVG
+ssh hkspace-ssd "grep -o '#183060' /home/hkincotech/hkincotech/LandingPage/public/img/logo.svg | wc -l"
+```
+
+Expected:
+
+- HTTP routes return `200`.
+- Git HEAD matches the pushed deploy commit.
+- Logo color grep returns a positive count. On 2026-06-20 it returned `13`.
 
 ## Rollback
 

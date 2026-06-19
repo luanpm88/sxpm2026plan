@@ -4,8 +4,13 @@ return [
     // Hero
     'hero_title'       => 'Chứng Chỉ & Tiêu Chuẩn',
     'hero_title_accent'=> 'Ngành',
-    'hero_desc'        => 'Tuân thủ cấp doanh nghiệp, chứng chỉ bảo mật và phát triển chuyên môn liên tục trên toàn đội ngũ',
+    'hero_desc'        => 'Năng lực bảo mật, tuân thủ, cloud, Agile và phát triển chuyên môn được duy trì trong đội ngũ kỹ thuật.',
     'hero_cta'         => 'Xác Minh Năng Lực',
+    'section_compliance' => 'BẢO MẬT & TUÂN THỦ',
+    'section_cloud' => 'CHỨNG CHỈ CLOUD',
+    'section_agile' => 'NĂNG LỰC AGILE',
+    'section_tech' => 'NỀN TẢNG CÔNG NGHỆ',
+    'section_team' => 'NĂNG LỰC ĐỘI NGŨ',
 
     // Compliance section
     'compliance_title'       => 'Tuân Thủ & Bảo Mật',
@@ -34,19 +39,19 @@ return [
 
     // Learning section
     'learning_title'    => 'Văn Hóa Học Hỏi Liên Tục',
-    'learning_desc'     => 'Chúng tôi đầu tư vào sự phát triển của đội ngũ thông qua chứng chỉ, đào tạo và chia sẻ kiến thức',
+    'learning_desc'     => 'Chúng tôi đầu tư vào năng lực đội ngũ thông qua chứng chỉ, đào tạo nội bộ, chia sẻ kỹ thuật và thực hành dự án.',
     'learning_stat1_value'=> '100%',
     'learning_stat1_label'=> 'Ngân Sách Chứng Chỉ Hàng Năm',
     'learning_stat2_value'=> 'Hàng Tháng',
-    'learning_stat2_label'=> 'Tech Talks & Chia Sẻ Kiến Thức',
+    'learning_stat2_label'=> 'Chia Sẻ Kỹ Thuật Nội Bộ',
     'learning_stat3_value'=> 'R&D',
     'learning_stat3_label'=> 'Thời Gian Nghiên Cứu Công Nghệ Mới',
-    'learning_stat4_value'=> 'Mentorship',
+    'learning_stat4_value'=> 'Kèm Cặp',
     'learning_stat4_label'=> 'Chương Trình Kèm Cặp Senior–Junior',
 
     // CTA
     'cta_title'  => 'Hợp Tác với HKIncotech',
-    'cta_desc'   => 'Đội ngũ kỹ thuật cấp doanh nghiệp với chứng chỉ ngành được công nhận và thành tích bàn giao được kiểm chứng qua 100+ dự án thực tế.',
+    'cta_desc'   => 'Đội ngũ kỹ thuật có kinh nghiệm triển khai hệ thống doanh nghiệp, bảo mật, cloud, AI và quy trình bàn giao có kiểm soát.',
     'cta_button' => 'Bắt Đầu Dự Án',
 
     // Compliance certs
@@ -71,13 +76,13 @@ return [
     'agile' => [
         ['category'=>'Khung Scrum','icon'=>'groups','items'=>['Certified Scrum Master (CSM)','Certified Scrum Product Owner (CSPO)','Professional Scrum Developer (PSD)','Certified Scrum Trainer (CST)','Advanced Scrum Master (A-CSM)']],
         ['category'=>'Scaled Agile','icon'=>'trending_up','items'=>['SAFe Agilist (Scaled Agile Framework)','SAFe Program Consultant','SAFe Scrum Master','SAFe Release Train Engineer','Disciplined Agile Scrum Master']],
-        ['category'=>'Xuất Sắc Kỹ Thuật','icon'=>'code','items'=>['Continuous Delivery & DevOps','Test-Driven Development (TDD)','Behavior-Driven Development (BDD)','Domain-Driven Design (DDD)','Microservices Architecture']],
+        ['category'=>'Thực Hành Kỹ Thuật','icon'=>'code','items'=>['Continuous Delivery & DevOps','Test-Driven Development (TDD)','Behavior-Driven Development (BDD)','Domain-Driven Design (DDD)','Microservices Architecture']],
     ],
 
     // Tech expertise
     'technologies' => [
-        ['category'=>'Công Nghệ Frontend','icon'=>'palette','items'=>['React.js Certified','Vue.js Professional','Angular Expert','TypeScript Master','PWA Specialist']],
-        ['category'=>'Công Nghệ Backend','icon'=>'storage','items'=>['Node.js Expert','Python/Django Master','Java Enterprise','Go Professional','GraphQL Specialist']],
+        ['category'=>'Giao Diện & Trải Nghiệm','icon'=>'palette','items'=>['React.js Certified','Vue.js Professional','Angular Expert','TypeScript Master','PWA Specialist']],
+        ['category'=>'Dịch Vụ Máy Chủ & API','icon'=>'storage','items'=>['Node.js Expert','Python/Django Master','Java Enterprise','Go Professional','GraphQL Specialist']],
         ['category'=>'Database & Dữ Liệu','icon'=>'database','items'=>['PostgreSQL Expert','MongoDB Professional','Redis Specialist','Elasticsearch Master','Data Architecture']],
         ['category'=>'AI & Machine Learning','icon'=>'smart_toy','items'=>['OpenAI Integration','LLM Specialist','TensorFlow Professional','PyTorch Expert','RAG Pipeline Architect']],
         ['category'=>'DevOps & Hạ Tầng','icon'=>'settings','items'=>['Kubernetes Expert','Docker Master','Terraform Professional','CI/CD Specialist','Infrastructure as Code']],
@@ -90,7 +95,7 @@ return [
         ['icon'=>'shield','title'=>'Chuyên Gia Bảo Mật','count'=>'8+','desc'=>'Kiến trúc sư bảo mật được chứng nhận. Kiểm thử xâm nhập, chuyên gia tuân thủ. Chuyên môn Zero Trust & OWASP.'],
         ['icon'=>'smart_toy','title'=>'Chuyên Gia AI/ML','count'=>'6+','desc'=>'Chuyên gia tích hợp LLM. Kiến trúc sư NLP, semantic search, RAG pipeline với nền tảng nghiên cứu.'],
         ['icon'=>'architecture','title'=>'Kiến Trúc Sư Giải Pháp','count'=>'12+','desc'=>'Kiến trúc sư giải pháp doanh nghiệp. Chuyên thiết kế hệ thống microservices, cloud-native, có khả năng mở rộng.'],
-        ['icon'=>'trending_up','title'=>'Tech Lead','count'=>'15+','desc'=>'Trưởng nhóm có trách nhiệm P&L. Chuyên môn về tầm nhìn sản phẩm, chiến lược kỹ thuật và mentoring.'],
-        ['icon'=>'school','title'=>'Học Hỏi Liên Tục','count'=>'100%','desc'=>'Ngân sách chứng chỉ hàng năm cho mỗi kỹ sư. Chia sẻ kiến thức nội bộ, tech talks, phân bổ thời gian R&D.'],
+        ['icon'=>'trending_up','title'=>'Tech Lead','count'=>'15+','desc'=>'Trưởng nhóm kỹ thuật phụ trách định hướng giải pháp, chất lượng triển khai và kèm cặp đội ngũ.'],
+        ['icon'=>'school','title'=>'Học Hỏi Liên Tục','count'=>'100%','desc'=>'Ngân sách chứng chỉ hằng năm cho kỹ sư, chia sẻ kiến thức nội bộ và thời gian dành cho R&D.'],
     ],
 ];

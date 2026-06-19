@@ -30,7 +30,7 @@
         <div class="container">
             <div style="text-align:center; max-width:700px; margin:0 auto;">
                 <h1 class="section-title">HKIncotech — Nâng tầm giải pháp số doanh nghiệp</h1>
-                <div class="section-subtitle">12+ năm phát triển phần mềm, 50+ dự án lớn nhỏ, 10+ ngành, 10M+ queries AI/ngày, 100% real-time sync, 1M+ giao dịch logistics/ngày</div>
+                <div class="section-subtitle">Kinh nghiệm phát triển phần mềm theo yêu cầu, nền tảng SaaS, AI ứng dụng và hệ thống vận hành doanh nghiệp trong nhiều lĩnh vực.</div>
                 <a href="#services" class="nav-link" style="background:var(--primary);color: var(--contrast-panel-text);font-size:1.1rem;padding:14px 36px;margin-top:30px;display:inline-block;">Khám phá dịch vụ</a>
             </div>
         </div>

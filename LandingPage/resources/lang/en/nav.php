@@ -41,7 +41,7 @@ return [
             'tag_3' => 'Security',
             'tag_4' => 'Quality',
             'main_label' => 'EXPERTISE',
-            'item_scrum_desc' => 'Sprint planning, demos, and measurable outcomes.',
+            'item_scrum_desc' => 'Sprint planning, review rhythm, and acceptance checkpoints.',
             'item_tech_desc' => 'Tools and platforms we implement end-to-end.',
             'item_certs_desc' => 'Standards, compliance, and training.',
         ],

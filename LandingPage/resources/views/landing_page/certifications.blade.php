@@ -24,7 +24,7 @@
     <section id="compliance">
         <div class="container-v5">
             <div class="section-header">
-                <span class="section-label">COMPLIANCE & SECURITY</span>
+                <span class="section-label">{{ __('certifications.section_compliance') }}</span>
                 <h2 class="section-title">{{ __('certifications.compliance_title') }} <span style="color: var(--primary);">{{ __('certifications.compliance_title_accent') }}</span></h2>
                 <p class="section-subtitle">{{ __('certifications.compliance_subtitle') }}</p>
             </div>
@@ -48,7 +48,7 @@
     <section style="background: var(--secondary-bg);">
         <div class="container-v5">
             <div class="section-header">
-                <span class="section-label">CLOUD CERTIFICATIONS</span>
+                <span class="section-label">{{ __('certifications.section_cloud') }}</span>
                 <h2 class="section-title">{{ __('certifications.cloud_title') }} <span style="color: var(--primary);">{{ __('certifications.cloud_title_accent') }}</span></h2>
                 <p class="section-subtitle">{{ __('certifications.cloud_subtitle') }}</p>
             </div>
@@ -78,7 +78,7 @@
     <section>
         <div class="container-v5">
             <div class="section-header">
-                <span class="section-label">AGILE EXPERTISE</span>
+                <span class="section-label">{{ __('certifications.section_agile') }}</span>
                 <h2 class="section-title">{{ __('certifications.agile_title') }} <span style="color: var(--primary);">{{ __('certifications.agile_title_accent') }}</span></h2>
                 <p class="section-subtitle">{{ __('certifications.agile_subtitle') }}</p>
             </div>
@@ -110,7 +110,7 @@
     <section style="background: var(--secondary-bg);">
         <div class="container-v5">
             <div class="section-header">
-                <span class="section-label">TECHNOLOGY STACK</span>
+                <span class="section-label">{{ __('certifications.section_tech') }}</span>
                 <h2 class="section-title">{{ __('certifications.tech_title') }} <span style="color: var(--primary);">{{ __('certifications.tech_title_accent') }}</span></h2>
                 <p class="section-subtitle">{{ __('certifications.tech_subtitle') }}</p>
             </div>
@@ -142,7 +142,7 @@
     <section>
         <div class="container-v5">
             <div class="section-header">
-                <span class="section-label">TEAM EXPERTISE</span>
+                <span class="section-label">{{ __('certifications.section_team') }}</span>
                 <h2 class="section-title">{{ __('certifications.team_title') }} <span style="color: var(--primary);">{{ __('certifications.team_title_accent') }}</span></h2>
                 <p class="section-subtitle">{{ __('certifications.team_subtitle') }}</p>
             </div>

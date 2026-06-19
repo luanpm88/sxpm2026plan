@@ -4,8 +4,8 @@ return [
     // Hero
     'hero_title'        => 'Scaling &',
     'hero_title_accent' => 'Infrastructure',
-    'hero_desc1'        => 'From small MVP to 10 million users. 6 scaling phases with enterprise-grade SLA, auto-scaling, 24/7 monitoring.',
-    'hero_desc2'        => 'We have scaled 50+ projects from 0 to millions of users. Experience from early startup to unicorn scale.',
+    'hero_desc1'        => 'A practical scaling roadmap from first release to high-volume production systems, with infrastructure planned by stage.',
+    'hero_desc2'        => 'We help teams prepare architecture, operations, monitoring, and cost controls before growth becomes a rewrite problem.',
 
     // Phases section
     'phases_title'      => '6 Scaling Phases',
@@ -19,12 +19,12 @@ return [
 
     // Metrics section
     'metrics_title'     => 'Performance Benchmarks',
-    'metrics_subtitle'  => 'Enterprise-grade SLA and performance standards',
+    'metrics_subtitle'  => 'Operating targets for availability, latency, deployment, and recovery.',
 
     // CTA
-    'cta_title'         => 'Ready to Scale?',
-    'cta_desc'          => 'We have experience scaling from 0 to 100 million users. Let\'s build solid infrastructure for your future together.',
-    'cta_button'        => 'Scaling Consultation',
+    'cta_title'         => 'Plan Your Scaling Architecture',
+    'cta_desc'          => 'HKIncotech can help assess the current system, identify scaling risks, and define the next infrastructure stage.',
+    'cta_button'        => 'Discuss Scaling Requirements',
 
     // Phase data
     'phases' => [
@@ -91,7 +91,7 @@ return [
         ['metric' => '<3s',        'label' => 'Page Load Time',          'desc' => 'On 3G network'],
         ['metric' => '>95',        'label' => 'Lighthouse Score',        'desc' => 'Performance metric'],
         ['metric' => 'Zero',       'label' => 'Zero-downtime Deploy',    'desc' => 'Blue-green deployment'],
-        ['metric' => '24/7',       'label' => 'SOC Monitoring',         'desc' => 'Real-time alerts'],
+        ['metric' => 'Continuous', 'label' => 'SOC Monitoring',         'desc' => 'Real-time alerts'],
         ['metric' => 'Fast',       'label' => 'Auto-recovery Time',     'desc' => 'Failover automation'],
         ['metric' => 'High',       'label' => 'Database Availability',  'desc' => 'Multi-region replication'],
     ],

@@ -4,54 +4,59 @@ return [
     // Hero Section
     'hero_title' => 'SCRUM Development',
     'hero_title_highlight' => 'Process',
-    'hero_desc' => 'A structured Agile delivery methodology providing real-time progress visibility, adaptive planning, and consistently faster time-to-market.',
-    'hero_cta' => 'Consult on SCRUM Process',
+    'hero_desc' => 'A sprint-based delivery model that helps clients control priorities, review working increments, manage risks, and accept scope by stage.',
+    'hero_cta' => 'Discuss Delivery Model',
+    'section_process' => 'DELIVERY PROCESS',
+    'section_sprint' => 'SPRINT CYCLE',
+    'section_benefits' => 'KEY BENEFITS',
+    'section_journey' => 'CLIENT JOURNEY',
+    'section_why' => 'HOW WE WORK',
 
     // 6 Steps Section
     'steps_title' => '6 Steps in SCRUM Process',
-    'steps_subtitle' => 'From idea discovery to successful product deployment',
+    'steps_subtitle' => 'From requirement discovery to controlled deployment and operations.',
     'steps' => [
         [
             'num' => 1,
             'icon' => 'lightbulb',
-            'title' => 'Discovery & Consulting',
-            'desc' => 'Strategic approach to project. Requirements analysis, detailed planning',
+            'title' => 'Discovery & Scope Framing',
+            'desc' => 'Clarify goals, users, workflows, risks, and delivery priorities.',
         ],
         [
             'num' => 2,
             'icon' => 'architecture',
             'title' => 'Design & Planning',
-            'desc' => 'System architecture, UI/UX wireframes, sprint planning',
+            'desc' => 'System architecture, product flows, data model, and sprint plan.',
         ],
         [
             'num' => 3,
             'icon' => 'code',
             'title' => 'Sprint Development',
-            'desc' => 'Team development across 2-4 week sprints, product demo each sprint',
+            'desc' => 'Feature development through short cycles with review, testing, and progress updates.',
         ],
         [
             'num' => 4,
             'icon' => 'verified',
             'title' => 'QA & Testing',
-            'desc' => 'Comprehensive testing: unit, integration, UAT, performance',
+            'desc' => 'Functional, integration, UAT, performance, and edge-case testing.',
         ],
         [
             'num' => 5,
             'icon' => 'cloud_upload',
-            'title' => 'Deployment & Launch',
-            'desc' => 'Automated CI/CD deployment, monitoring, incident response',
+            'title' => 'Deployment & Release',
+            'desc' => 'CI/CD deployment, monitoring setup, rollback planning, and incident readiness.',
         ],
         [
             'num' => 6,
             'icon' => 'support_agent',
             'title' => 'Support & Development',
-            'desc' => '24/7 support, optimization, feature additions, scaling',
+            'desc' => 'Operational support, performance improvement, issue handling, and staged expansion.',
         ],
     ],
 
     // Sprint Cycle Section
     'sprint_title' => 'Sprint Cycle Details',
-    'sprint_subtitle' => 'Each sprint 2–4 weeks: Plan > Execute > Review > Improve',
+    'sprint_subtitle' => 'Each sprint covers planning, development, review, testing, and improvement.',
     'sprint_items' => [
         [
             'title' => 'Sprint Planning',
@@ -59,7 +64,7 @@ return [
         ],
         [
             'title' => 'Daily Standup',
-            'desc' => '15-minute daily sync with the team',
+            'desc' => 'Short team sync to surface progress, blockers, and coordination needs.',
         ],
         [
             'title' => 'Development',
@@ -113,67 +118,67 @@ return [
 
     // Journey Section
     'journey_title' => 'Your Journey with HKIncotech',
-    'journey_subtitle' => '6 phases from first contact to product live in production',
+    'journey_subtitle' => 'Six phases from discovery to controlled release and ongoing operation.',
     'journey_phase_label' => 'Phase',
     'journey' => [
         [
-            'phase' => 'Phase 1: Initial Consultation (1 Week)',
-            'content' => 'We listen to your idea, understand business goals, analyze market, competitors. Provide detailed plan and estimate.',
+            'phase' => 'Phase 1: Initial Discovery',
+            'content' => 'Clarify business goals, operating context, users, constraints, and assumptions that need validation.',
         ],
         [
             'phase' => 'Phase 2: Discovery & Design (2-3 Weeks)',
-            'content' => 'Detailed design: wireframes > mockups > prototypes. You review and provide feedback before coding starts.',
+            'content' => 'Design product flows, data model, interface direction, and technical architecture before full development begins.',
         ],
         [
             'phase' => 'Phase 3: Sprint Development (6-12 Weeks)',
-            'content' => 'Development across 2-4 week sprints. Each sprint ends with completed, deployable features.',
+            'content' => 'Develop by sprint. Each sprint closes with working scope that can be reviewed, tested, and accepted.',
         ],
         [
             'phase' => 'Phase 4: QA & Testing (2-3 Weeks)',
-            'content' => 'Comprehensive testing: functional, performance, security, UAT. Fix bugs, optimize, ensure quality.',
+            'content' => 'Run functional, performance, security, and UAT checks; resolve defects and optimize before release.',
         ],
         [
-            'phase' => 'Phase 5: Launch & Deployment (1 Week)',
-            'content' => 'Prepare production. Deploy, monitoring setup, incident response. Soft launch to full launch.',
+            'phase' => 'Phase 5: Release & Deployment',
+            'content' => 'Prepare the production environment, deploy, set up monitoring, plan rollback, and support release readiness.',
         ],
         [
             'phase' => 'Phase 6: Support & Growth (Ongoing)',
-            'content' => '24/7 support. Monitoring, optimization, adding features, scaling. We are your long-term partner.',
+            'content' => 'Monitor operations, improve performance, support issues, and expand the system according to real needs.',
         ],
     ],
 
     // Why Choose Section
-    'why_title' => 'Why Choose HKIncotech for SCRUM Development?',
-    'why_subtitle' => 'Certified Scrum Masters with proven track record',
+    'why_title' => 'How HKIncotech Organizes Agile Delivery',
+    'why_subtitle' => 'Sprint governance, quality control, and staged handover for custom software projects.',
     'why_items' => [
         [
-            'title' => 'Scrum Experts',
-            'desc' => 'Certified Scrum Masters (CSM), 12+ years agile experience, best practices from tech giants.',
+            'title' => 'Disciplined sprint governance',
+            'desc' => 'Backlog, acceptance criteria, reviews, and sign-off are managed clearly within each sprint.',
         ],
         [
             'title' => 'Transparent Process',
-            'desc' => 'Real-time dashboard, daily standups, weekly demos. You always know project status.',
+            'desc' => 'Progress, blockers, scope, and risks are visible to stakeholders throughout the project.',
         ],
         [
             'title' => 'Flexible & Adaptive',
-            'desc' => 'Easy pivots, add/remove features, adjust scope based on feedback.',
+            'desc' => 'Requirement changes are assessed, prioritized, and brought into the backlog with clear impact.',
         ],
         [
             'title' => 'Quality First',
-            'desc' => 'Automated testing, code review, CI/CD. Early & frequent defect detection.',
+            'desc' => 'Automated testing, code review, and CI/CD protect delivery quality through each stage.',
         ],
         [
-            'title' => 'Fast Delivery',
-            'desc' => 'Frequent deployments, reduced time-to-market. MVP in 4-8 weeks.',
+            'title' => 'Staged Handover',
+            'desc' => 'High-value scope is delivered first, validated with users, and expanded through controlled increments.',
         ],
         [
             'title' => 'Long-term Partnership',
-            'desc' => 'Support & scaling beyond launch. We invest in your success.',
+            'desc' => 'After release, the team continues supporting operations, optimization, and future expansion.',
         ],
     ],
 
     // CTA Section
     'cta_title' => 'Begin Your SCRUM Engagement',
     'cta_desc' => 'Discuss project scope, collaboration model, and a SCRUM delivery approach that fits your team maturity.',
-    'cta_button' => 'Schedule a Consultation',
+    'cta_button' => 'Discuss the Process',
 ];

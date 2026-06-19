@@ -19,7 +19,7 @@ return [
     'hero_sidebar_title' => 'Vai trò của Hoàng Khang',
     'hero_sidebar_items' => [
         'Đội ngũ phân tích, kiến trúc và phát triển phần mềm theo yêu cầu',
-        'Chuẩn hóa workflow sản xuất thành hệ thống vận hành rõ ràng',
+        'Chuẩn hóa quy trình sản xuất thành hệ thống vận hành rõ ràng',
         'Tích hợp với ERP, thiết bị, mã vạch, IoT hoặc lớp dữ liệu hiện có',
         'Thiết kế bảo mật, phân quyền và audit log ngay từ đầu',
     ],
@@ -34,24 +34,24 @@ return [
         'quality_desc' => 'QC, truy xuất',
         'core_1' => 'Lõi',
         'core_2' => 'vận hành',
-        'core_desc_1' => 'workflow',
+        'core_desc_1' => 'quy trình',
         'core_desc_2' => 'phân quyền + audit',
-        'dashboard_title' => 'Dashboard',
+        'dashboard_title' => 'Điều hành',
         'dashboard_desc' => 'KPI, cảnh báo',
         'integration_title' => 'Tích hợp',
         'integration_desc' => 'ERP, PLC, API',
         'legend_1' => 'Thu thập dữ liệu ngay tại điểm phát sinh công việc.',
-        'legend_2' => 'Chuẩn hóa workflow, phân quyền và audit trail.',
+        'legend_2' => 'Chuẩn hóa quy trình, phân quyền và nhật ký kiểm toán.',
         'legend_3' => 'Mở KPI và tích hợp cho cấp quản trị.',
     ],
 
     // Positioning Section
     'positioning_title' => 'Định vị giải pháp: năng lực phần mềm cho vận hành sản xuất',
-    'positioning_subtitle' => 'Chúng tôi không bán một template rời rạc. Chúng tôi cùng doanh nghiệp chuẩn hóa nghiệp vụ, thiết kế kiến trúc và triển khai hệ thống theo mức độ trưởng thành vận hành.',
+    'positioning_subtitle' => 'Chúng tôi không bán một mẫu phần mềm đóng gói. HKIncotech cùng doanh nghiệp chuẩn hóa nghiệp vụ, thiết kế kiến trúc và triển khai hệ thống theo mức độ trưởng thành vận hành.',
 
     'positioning_context_heading' => 'Cách tiếp cận của trang giải pháp này',
-    'positioning_context_p1' => 'Trang này mô tả một khung triển khai cho các nhà máy cần số hóa sản xuất, kho, đóng gói, chất lượng và báo cáo quản trị. Mỗi module được thiết kế để có thể tùy biến theo SOP thực tế nhưng vẫn giữ kiến trúc nhất quán.',
-    'positioning_context_p2' => 'Trọng tâm không phải là viết phần mềm một lần rồi bàn giao. Trọng tâm là xây một lớp vận hành số có dữ liệu đáng tin cậy, có phân quyền, có audit trail và có khả năng mở rộng khi nhà máy tăng quy mô.',
+    'positioning_context_p1' => 'Trang này mô tả một khung triển khai cho các nhà máy cần số hóa sản xuất, kho, đóng gói, chất lượng và báo cáo quản trị. Mỗi mô-đun được thiết kế để có thể tùy biến theo SOP thực tế nhưng vẫn giữ kiến trúc nhất quán.',
+    'positioning_context_p2' => 'Trọng tâm không phải là viết phần mềm một lần rồi bàn giao. Trọng tâm là xây một lớp vận hành số có dữ liệu đáng tin cậy, có phân quyền, có nhật ký kiểm toán và có khả năng mở rộng khi nhà máy tăng quy mô.',
 
     'positioning_items' => [
         [
@@ -60,11 +60,11 @@ return [
         ],
         [
             'title' => 'Kiến trúc có chuẩn',
-            'description' => 'Dùng pattern nhất quán cho phân quyền, workflow, audit log, API và báo cáo để hệ thống dễ bảo trì, dễ mở rộng theo nhiều dây chuyền hoặc nhà máy.',
+            'description' => 'Dùng mẫu kiến trúc nhất quán cho phân quyền, quy trình, nhật ký kiểm toán, API và báo cáo để hệ thống dễ bảo trì, dễ mở rộng theo nhiều dây chuyền hoặc nhà máy.',
         ],
         [
-            'title' => 'Module hóa thông minh',
-            'description' => 'Tách module theo giá trị vận hành: sản xuất, kho, QC, đóng gói, thiết bị, dashboard. Triển khai từng phần nhưng giữ cùng một nền dữ liệu.',
+            'title' => 'Mô-đun hóa có kiểm soát',
+            'description' => 'Tách mô-đun theo giá trị vận hành: sản xuất, kho, QC, đóng gói, thiết bị và báo cáo điều hành. Triển khai từng phần nhưng giữ cùng một nền dữ liệu.',
         ],
         [
             'title' => 'Đồng hành vận hành',
@@ -80,40 +80,55 @@ return [
     'positioning_model_desc' => 'Kiến trúc dựa trên đánh giá, triển khai mô-đun, bảo trì được hỗ trợ bởi quản trị và lộ trình nâng cấp.',
 
     // Challenges Section
-    'challenges_title' => 'Những Thách Thức Hoạt Động Phổ Biến trong Nhà Máy SME & FDI',
-    'challenges_subtitle' => 'Khung được thiết kế để giải quyết những ràng buộc hoạt động thực tế thường thấy trong các môi trường sản xuất nhiều dây chuyền và nhiều trang web.',
+    'challenges_title' => 'Những Điểm Nghẽn Vận Hành trong Nhà Máy SME & FDI',
+    'challenges_subtitle' => 'Khung giải pháp tập trung vào các ràng buộc thật của môi trường sản xuất nhiều dây chuyền, nhiều ca và nhiều địa điểm.',
 
-    'challenges_symptoms_heading' => 'Các triệu chứng hoạt động chúng tôi thường thấy',
-    'challenges_symptoms_text' => 'Dữ liệu sản xuất thường tồn tại ở các hình thức phân mảnh: hồ sơ giấy tờ, bảng tính ca, nhật ký thiết bị độc lập và báo cáo trễ hạn. Điều này tạo ra những khoảng trống trong ra quyết định, khả năng truy xuất chất lượng và thời gian phản ứng khi các sự cố xảy ra trên sàn sản xuất.',
+    'challenges_kicker' => 'Bản đồ hiện trạng',
+    'challenges_symptoms_heading' => 'Tín hiệu thường gặp trước khi số hóa',
+    'challenges_symptoms_text' => 'Dữ liệu sản xuất thường nằm rải rác trong giấy tờ, bảng tính theo ca, nhật ký thiết bị riêng lẻ và báo cáo gửi muộn. Khi không có một nguồn dữ liệu thống nhất, ban vận hành khó ra quyết định nhanh, khó truy xuất chất lượng và khó phản ứng kịp thời khi sự cố xuất hiện trên sàn sản xuất.',
+    'challenges_flow' => [
+        [
+            'icon' => 'edit_document',
+            'text' => 'Ca sản xuất ghi nhận bằng giấy, Excel hoặc biểu mẫu rời rạc.',
+        ],
+        [
+            'icon' => 'sync_problem',
+            'text' => 'Kho, QC, sản xuất và quản lý dùng những phiên bản dữ liệu khác nhau.',
+        ],
+        [
+            'icon' => 'monitoring',
+            'text' => 'Báo cáo quản trị đến muộn, làm giảm khả năng điều phối và xử lý ngoại lệ.',
+        ],
+    ],
 
     'challenges_items' => [
         [
-            'title' => 'Tầm nhìn sản xuất thời gian thực hạn chế',
-            'description' => 'Những người giám sát nhận được các cập nhật trạng thái muộn, làm cho cân bằng dây chuyền và leo thang vấn đề trở nên phản ứng thay vì chủ động.',
+            'title' => 'Thiếu tầm nhìn vận hành gần thời gian thực',
+            'description' => 'Giám sát nhận cập nhật muộn, khiến cân bằng chuyền và xử lý phát sinh thường diễn ra theo kiểu phản ứng.',
         ],
         [
-            'title' => 'Phụ thuộc Excel nặng nề',
-            'description' => 'Các tập tin thủ công tăng xung đột phiên bản, sửa lại và không nhất quán giữa dữ liệu lập kế hoạch và thực thi thực tế.',
+            'title' => 'Phụ thuộc nhiều vào Excel',
+            'description' => 'Tập tin thủ công dễ tạo xung đột phiên bản, nhập lại dữ liệu và lệch giữa kế hoạch với thực tế sản xuất.',
         ],
         [
-            'title' => 'Dữ liệu kho bãi và sản xuất bị ngắt kết nối',
-            'description' => 'Tính sẵn có vật liệu, trạng thái WIP và cập nhật hàng hóa hoàn thiện không được đồng bộ hóa trong một bối cảnh hoạt động.',
+            'title' => 'Kho và sản xuất chưa nối dữ liệu',
+            'description' => 'Tình trạng nguyên vật liệu, WIP và thành phẩm không được đồng bộ trong cùng một ngữ cảnh vận hành.',
         ],
         [
-            'title' => 'Theo dõi chất lượng không nhất quán',
-            'description' => 'QC đến, QC trong quá trình và QC cuối cùng thường được quản lý bởi các biểu mẫu và đội ngũ bị ngắt kết nối.',
+            'title' => 'Theo dõi chất lượng thiếu nhất quán',
+            'description' => 'IQC, QC trong công đoạn và FQC thường được quản lý bằng biểu mẫu hoặc nhóm dữ liệu tách rời.',
         ],
         [
-            'title' => 'Gánh nặng báo cáo thủ công',
-            'description' => 'Các báo cáo hoạt động được biên soạn thủ công, giảm khả năng phản ứng của quản lý và chất lượng lập kế hoạch.',
+            'title' => 'Báo cáo thủ công tốn nhiều công sức',
+            'description' => 'Báo cáo vận hành phải tổng hợp bằng tay, làm chậm phản ứng của quản lý và giảm chất lượng lập kế hoạch.',
         ],
         [
-            'title' => 'Áp lực kiểm toán và tuân thủ',
-            'description' => 'Các bản ghi phân mảnh khiến việc chứng minh khả năng truy xuất và kiểm soát trong các cuộc kiểm toán của khách hàng hoặc quy định trở nên khó khăn.',
+            'title' => 'Áp lực kiểm toán và truy xuất',
+            'description' => 'Bản ghi phân mảnh khiến việc chứng minh truy xuất, kiểm soát và trách nhiệm trong audit trở nên khó khăn.',
         ],
         [
-            'title' => 'Độ phức tạp đa ngôn ngữ và đa trang web',
-            'description' => 'Các hoạt động FDI yêu cầu quy trình làm việc và thuật ngữ nhất quán trên các đội, ca và địa điểm.',
+            'title' => 'Độ phức tạp đa ngôn ngữ, đa địa điểm',
+            'description' => 'Nhà máy FDI cần quy trình, thuật ngữ và dữ liệu nhất quán giữa đội ngũ, ca làm và địa điểm vận hành.',
         ],
     ],
 
@@ -150,20 +165,20 @@ return [
         'Hỗ trợ đa ngôn ngữ',
     ],
 
-    'framework_note' => 'Đây là một cách tiếp cận hệ thống mô-đun có cấu trúc, không phải là lập trình một lần.',
+    'framework_note' => 'Nền tảng mô-đun, không phải bản lập trình dùng một lần.',
 
-    'framework_tech_title' => 'Tờ Dữ Liệu Công Nghệ Được Đề Xuất',
-    'framework_tech_subtitle' => 'Ngăn xếp bên dưới được chọn cho các hoạt động nhà máy có khả năng mở rộng, tích hợp thiết bị do API điều khiển và sở hữu dài hạn có thể duy trì được.',
+    'framework_tech_title' => 'Bộ Công Nghệ Tham Chiếu',
+    'framework_tech_subtitle' => 'Các lớp công nghệ được lựa chọn cho hệ thống nhà máy có khả năng mở rộng, tích hợp thiết bị qua API và dễ duy trì trong dài hạn.',
 
-    'framework_backend_title' => '1) Phía Máy Chủ (Backend)',
+    'framework_backend_title' => '1) Dịch Vụ Máy Chủ & API',
     'framework_backend_items' => [
-        'Laravel (PHP) như khung lõi cho logic kinh doanh mô-đun hóa và quản lý quy trình làm việc RBAC.',
+        'Laravel (PHP) làm khung lõi cho logic nghiệp vụ mô-đun, phân quyền và quy trình vận hành.',
         'MySQL cho dữ liệu sản xuất giao dịch và tính nhất quán báo cáo.',
-        'REST API (Laravel API Resources) và tùy chọn GraphQL (Lighthouse) cho các máy khách di động/thiết bị.',
+        'REST API (Laravel API Resources) và tùy chọn GraphQL (Lighthouse) cho ứng dụng di động hoặc thiết bị.',
         'Cập nhật thời gian thực thông qua Laravel Echo + WebSocket/Pusher cho bảng điều khiển dây chuyền và bảng trạng thái.',
     ],
 
-    'framework_frontend_title' => '2) Phía Máy Khách (Web + Di Động)',
+    'framework_frontend_title' => '2) Giao Diện Web & Di Động',
     'framework_frontend_items' => [
         'Ứng dụng web: Vue.js hoặc React cho bảng điều khiển giám sát/quản lý và chế độ xem lập kế hoạch.',
         'Ứng dụng di động: Flutter hoặc React Native cho Android/iOS tại các trạm làm việc và các điểm kiểm tra sàn.',
@@ -186,7 +201,7 @@ return [
         'Lớp báo cáo với Laravel Excel, Chart.js hoặc tích hợp Power BI.',
     ],
 
-    'framework_cloud_title' => '5) Đám Mây, Giao Hàng & Hoạt Động',
+    'framework_cloud_title' => '5) Hạ Tầng, Triển Khai & Vận Hành',
     'framework_cloud_items' => [
         'Lưu trữ trên AWS, Google Cloud hoặc DigitalOcean với các mô hình mở rộng có thể dự đoán.',
         'Lớp CDN bằng Cloudflare hoặc AWS CloudFront cho các tài sản tĩnh và hiệu suất toàn cầu.',
@@ -195,32 +210,32 @@ return [
     ],
 
     // Modules Section
-    'modules_title' => 'Các Mô-đun Chức Năng Cốt Lõi',
-    'modules_subtitle' => 'Các mô-đun được tổ chức để hỗ trợ các hoạt động hàng ngày của nhà máy và khả năng hiển thị quyết định ở cấp quản lý điều hành.',
+    'modules_title' => 'Các Mô-đun Vận Hành Cốt Lõi',
+    'modules_subtitle' => 'Các mô-đun được tổ chức theo luồng công việc hằng ngày của nhà máy, giúp cấp quản lý nhìn rõ tình trạng sản xuất, chất lượng và tồn kho.',
 
     'modules_production_title' => 'Quản Lý Sản Xuất',
     'modules_production_items' => [
         'Kiểm soát lệnh công việc',
         'Theo dõi thời gian thực',
-        'Khả năng hiển thị OEE',
-        'Phân tích thời gian chết',
+        'Theo dõi OEE',
+        'Phân tích thời gian dừng máy',
     ],
 
     'modules_warehouse_title' => 'Kho Bãi & Tồn Kho',
     'modules_warehouse_items' => [
         'Theo dõi nguyên liệu thô',
-        'Theo dõi WIP',
-        'Kiểm soát hàng hóa hoàn thiện',
+        'Theo dõi bán thành phẩm WIP',
+        'Kiểm soát thành phẩm',
         'Hỗ trợ mã vạch',
         'Logic FIFO / FEFO',
     ],
 
     'modules_quality_title' => 'Quản Lý Chất Lượng',
     'modules_quality_items' => [
-        'QC đến',
-        'QC trong quá trình',
-        'QC cuối cùng',
-        'Theo dõi không phù hợp',
+        'Kiểm tra đầu vào',
+        'Kiểm tra trong quá trình',
+        'Kiểm tra cuối công đoạn',
+        'Theo dõi lỗi không phù hợp',
         'Nhật ký kiểm toán',
     ],
 
@@ -229,232 +244,239 @@ return [
         'Tổng quan hiệu suất sản xuất',
         'Giám sát trạng thái tồn kho',
         'Tỷ lệ hoàn thành đơn hàng',
-        'Hiệu suất KPI hoạt động',
+        'KPI vận hành',
     ],
 
-    'modules_packaging_title' => 'Kiểm Soát Đóng Gói & Gửi Đi',
+    'modules_packaging_title' => 'Kiểm Soát Đóng Gói & Gửi Hàng',
     'modules_packaging_items' => [
-        'Các điểm kiểm tra quy trình làm việc đóng gói',
-        'Khả năng truy xuất lô và sê ri',
-        'Xác minh sẵn sàng gửi',
-        'Đồng bộ hóa trạng thái gửi đi',
+        'Điểm kiểm tra trong quy trình đóng gói',
+        'Truy xuất lô và số sê-ri',
+        'Xác minh điều kiện sẵn sàng giao hàng',
+        'Đồng bộ trạng thái xuất hàng',
     ],
 
     'modules_barcode_title' => 'Hoạt Động Mã Vạch / QR',
     'modules_barcode_items' => [
         'Xác định sản phẩm và vật liệu',
-        'Luồng quét trạm làm việc',
+        'Luồng quét tại trạm thao tác',
         'Giảm lỗi nhập dữ liệu thủ công',
-        'Tích hợp SDK máy quét (sẵn sàng công nghiệp)',
+        'Tích hợp SDK máy quét phù hợp môi trường công nghiệp',
     ],
 
-    'modules_workforce_title' => 'Lực Lượng Lao Động & Thực Thi Ca',
+    'modules_workforce_title' => 'Nhân Sự Sản Xuất & Thực Thi Ca',
     'modules_workforce_items' => [
         'Gán ca và trách nhiệm sản xuất',
-        'Nắm bắt thực thi cấp độ người vận hành',
-        'Quy trình làm việc leo thang cho các sự cố',
-        'Phê duyệt dựa trên vai trò và ký hiệu',
+        'Ghi nhận thao tác theo từng người vận hành',
+        'Quy trình báo cáo và leo thang khi có sự cố',
+        'Phê duyệt theo vai trò và chữ ký xác nhận',
     ],
 
     'modules_reporting_title' => 'Báo Cáo & Lớp BI',
     'modules_reporting_items' => [
         'Bảng điều khiển thời gian thực với quyền truy cập dựa trên vai trò',
-        'Tóm tắt sản xuất hàng ngày và cấp độ ca',
+        'Tóm tắt sản xuất theo ngày và theo ca',
         'Phân tích xu hướng lỗi, thời gian chết và chất lượng',
         'Định dạng xuất cho Excel, PDF và công cụ BI',
     ],
 
-    'modules_shopfloor_title' => 'Phạm Vi Thiết Bị Sàn Cửa Hàng',
-    'modules_shopfloor_desc' => 'Khung hỗ trợ các hoạt động điểm cuối hỗn hợp ở mỗi giai đoạn sản xuất, bao gồm nhập dữ liệu bảng tính, giám sát trạm làm việc, theo dõi dựa trên quét mã vạch và đồng bộ hóa dữ liệu máy.',
+    'modules_shopfloor_title' => 'Phạm Vi Thiết Bị Sàn Sản Xuất',
+    'modules_shopfloor_desc' => 'Khung hỗ trợ nhiều loại điểm nhập liệu trong từng giai đoạn sản xuất: máy tính bảng, trạm thao tác, mã vạch, QR, cổng IoT và đồng bộ dữ liệu máy.',
     'modules_shopfloor_items' => [
-        'Máy tính bảng Android (10 inch+) cho quy trình làm việc của người vận hành',
+        'Máy tính bảng Android (10 inch+) cho thao tác của công nhân vận hành',
         'Máy tính bảng iOS cho các tác vụ giám sát và phê duyệt',
-        'Giao diện trạm làm việc PC cho chế độ xem lập kế hoạch và báo cáo',
+        'Giao diện máy trạm PC cho lập kế hoạch và báo cáo',
         'Máy quét mã vạch/QR để kiểm soát vật liệu và lô',
-        'Các kênh cổng IoT cho dữ liệu môi trường và máy',
+        'Cổng IoT cho dữ liệu môi trường và dữ liệu máy',
         'Giao diện PLC/CNC thông qua tích hợp OPC-UA / Modbus',
     ],
 
     // Implementation Section
-    'implementation_title' => 'Phương Pháp Triển Khai',
-    'implementation_subtitle' => 'Triển khai theo một mô hình pha kỷ luật để đảm bảo ổn định hoạt động, chấp nhận và kết quả có thể đo lường.',
+    'implementation_title' => 'Phương Pháp Triển Khai Có Kiểm Soát',
+    'implementation_subtitle' => 'Triển khai theo từng pha để giữ ổn định vận hành, kiểm soát phạm vi và tạo kết quả có thể nghiệm thu.',
 
     'implementation_steps' => [
         [
             'number' => '1',
-            'title' => 'Đánh Giá & Lập Bản Đồ Quy Trình',
-            'description' => 'Ghi lại quy trình làm việc, bàn giao công việc, nút thắt cổ chai và các điều khiển hoạt động theo bộ phận.',
+            'title' => 'Đánh giá & lập bản đồ quy trình',
+            'description' => 'Ghi nhận luồng việc, điểm bàn giao, nút thắt và các kiểm soát vận hành theo từng bộ phận.',
         ],
         [
             'number' => '2',
-            'title' => 'Thiết Kế Kiến Trúc Hệ Thống',
-            'description' => 'Xác định các cấu trúc dữ liệu, mô hình công cụ quy trình làm việc, điều khiển truy cập và giao diện tích hợp.',
+            'title' => 'Thiết kế kiến trúc hệ thống',
+            'description' => 'Xác định mô hình dữ liệu, công cụ quy trình, phân quyền, nhật ký kiểm toán và giao diện tích hợp.',
         ],
         [
             'number' => '3',
-            'title' => 'Triển Khai Mô-đun',
-            'description' => 'Triển khai các mô-đun ưu tiên theo trình tự trong khi duy trì tính liên tục hoạt động.',
+            'title' => 'Triển khai mô-đun ưu tiên',
+            'description' => 'Đưa các mô-đun có tác động cao vào vận hành theo thứ tự, không làm gián đoạn hoạt động nhà máy.',
         ],
         [
             'number' => '4',
-            'title' => 'Kiểm Tra & Xác Thực',
-            'description' => 'Thực hiện xác thực quy trình, kiểm tra dữ liệu và xác minh kịch bản ngoại lệ với các bên liên quan.',
+            'title' => 'Kiểm thử & xác thực nghiệp vụ',
+            'description' => 'Kiểm tra dữ liệu, xác minh quy trình và chạy các kịch bản ngoại lệ cùng người phụ trách nghiệp vụ.',
         ],
         [
             'number' => '5',
-            'title' => 'Huấn Luyện & Khởi Chạy',
-            'description' => 'Tiến hành hỗ trợ dựa trên vai trò, cập nhật SOP hoạt động và khởi chạy sản xuất có kiểm soát.',
+            'title' => 'Huấn luyện & đưa vào vận hành',
+            'description' => 'Đào tạo theo vai trò, cập nhật SOP và hỗ trợ vận hành trong giai đoạn chuyển đổi ban đầu.',
         ],
         [
             'number' => '6',
-            'title' => 'Cải Tiến Liên Tục',
-            'description' => 'Lặp lại dựa trên hiệu suất KPI, xu hướng chất lượng và các yêu cầu nhà máy đang phát triển.',
+            'title' => 'Cải tiến liên tục',
+            'description' => 'Tối ưu dựa trên KPI, xu hướng chất lượng, phản hồi người dùng và nhu cầu mở rộng của nhà máy.',
         ],
     ],
 
-    'implementation_scrum_title' => 'Luồng Giao Hàng SCRUM cho Các Dự Án Công Nghiệp',
+    'implementation_flow_kicker' => 'Nhịp triển khai',
+    'implementation_scrum_title' => 'Nhịp Giao Hàng Agile cho Dự Án Công Nghiệp',
     'implementation_scrum_steps' => [
-        '1) Khởi Tạo Dự Án: mục tiêu, phạm vi, mô hình quản trị, đường cơ sở cột mốc.',
-        '2) Phân Tích Yêu Cầu & Thiết Kế: yêu cầu chức năng/phi chức năng, phê duyệt kiến trúc và mô hình dữ liệu.',
-        '3) Sprint 0: thiết lập môi trường, backlog ban đầu, Definition of Done, chuẩn bị hộp cát tích hợp.',
-        '4) Thực Thi Sprint: lập kế hoạch, cuộp thảo hàng ngày, phát triển, kiểm tra, xem xét, hồi tưởng.',
-        '5) Quản Lý Rủi Ro & Thay Đổi: cập nhật backlog được kiểm soát và đánh giá tác động đến lịch trình/chi phí.',
-        '6) Phát Hành & Bảo Trì: triển khai được kiểm soát, siêu chăm sóc, hỗ trợ SLA, cải tiến lặp đi lặp lại.',
+        'Khởi tạo mục tiêu, phạm vi, mô hình quản trị và đường cơ sở mốc nghiệm thu.',
+        'Phân tích yêu cầu chức năng, phi chức năng, kiến trúc và mô hình dữ liệu.',
+        'Thiết lập Sprint 0: môi trường, backlog ban đầu, Definition of Done và sandbox tích hợp.',
+        'Thực thi sprint: lập kế hoạch, trao đổi hằng ngày, phát triển, kiểm thử, review và retrospective.',
+        'Quản lý thay đổi bằng backlog có kiểm soát và đánh giá tác động đến lịch trình, chi phí, vận hành.',
+        'Phát hành có kiểm soát, hỗ trợ giai đoạn đầu, vận hành SLA và cải tiến theo vòng lặp.',
     ],
 
-    'implementation_governance_title' => 'Quản Trị Sprint và Vai Trò',
+    'implementation_roles_kicker' => 'Vai trò quản trị',
+    'implementation_governance_title' => 'Cấu Trúc Trách Nhiệm Dự Án',
     'implementation_roles' => [
         [
-            'title' => 'Chủ Sở Hữu Sản Phẩm',
-            'description' => 'Sở hữu các ưu tiên, tiêu chí chấp nhận và sự căn chỉnh kinh doanh.',
+            'title' => 'Product Owner',
+            'description' => 'Chịu trách nhiệm ưu tiên, tiêu chí nghiệm thu và căn chỉnh mục tiêu kinh doanh.',
         ],
         [
-            'title' => 'Thạc Sĩ SCRUM',
-            'description' => 'Tạo điều kiện thực thi, loại bỏ các bộ chắn, bảo vệ nhịp độ đội.',
+            'title' => 'SCRUM Master / PM',
+            'description' => 'Điều phối thực thi, xử lý điểm nghẽn và giữ nhịp bàn giao của đội dự án.',
         ],
         [
-            'title' => 'Phân Tích Hệ Thống / Kiến Trúc Sư',
-            'description' => 'Duy trì tính toàn vẹn quy trình giữa các nhu cầu sàn và thiết kế hệ thống.',
+            'title' => 'System Analyst / Architect',
+            'description' => 'Bảo toàn logic quy trình giữa nhu cầu sàn sản xuất và thiết kế hệ thống.',
         ],
         [
-            'title' => 'Đội Kỹ Thuật',
-            'description' => 'Backend, frontend, di động, QA, DevOps, chuyên gia tích hợp.',
+            'title' => 'Đội kỹ thuật',
+            'description' => 'Kỹ sư máy chủ, giao diện, di động, QA, DevOps và chuyên gia tích hợp khi cần.',
         ],
     ],
 
     // Why Us Section
-    'why_us_title' => 'Tại Sao HKIncotech cho Các Giải Pháp Sản Xuất',
-    'why_us_subtitle' => 'Mô hình giao hàng của chúng tôi nhấn mạnh cấu trúc, khả năng truy xuất và khả năng phục hồi hoạt động dài hạn.',
+    'why_us_title' => 'Vì Sao HKIncotech Phù Hợp cho Hệ Thống Sản Xuất',
+    'why_us_subtitle' => 'Chúng tôi tiếp cận bài toán nhà máy bằng kỷ luật kỹ thuật, quản trị triển khai và trách nhiệm vận hành dài hạn.',
+    'why_us_kicker' => 'Năng lực triển khai',
 
     'why_us_items' => [
         [
             'title' => 'Phương pháp kỹ thuật có cấu trúc',
-            'description' => 'Các quyết định về kiến trúc và triển khai được điều chỉnh bởi các nguyên tắc quy trình và hệ thống, không phải các yêu cầu tùy tiện.',
+            'description' => 'Quyết định kiến trúc và triển khai dựa trên nguyên tắc quy trình, dữ liệu và hệ thống, không chạy theo yêu cầu rời rạc.',
         ],
         [
             'title' => 'Tư duy hệ thống dài hạn',
-            'description' => 'Các lựa chọn thiết kế được thực hiện cho khả năng duy trì, mở rộng và tính liên tục hoạt động trên các giai đoạn trong tương lai.',
+            'description' => 'Thiết kế hướng tới khả năng bảo trì, mở rộng và duy trì vận hành ổn định qua nhiều giai đoạn.',
         ],
         [
             'title' => 'Thiết kế kiến trúc có khả năng mở rộng',
-            'description' => 'Các mô-đun và mô hình dữ liệu được cấu trúc để hỗ trợ các nhà máy bổ sung, dây chuyền và các lớp tích hợp.',
+            'description' => 'Mô-đun và mô hình dữ liệu được cấu trúc để hỗ trợ thêm nhà máy, dây chuyền và lớp tích hợp.',
         ],
         [
             'title' => 'Kỷ luật tài liệu',
-            'description' => 'Bản đồ quy trình, thông số kỹ thuật và các tạo tác bàn giao được quản lý như các đầu ra giao hàng hạng nhất.',
+            'description' => 'Bản đồ quy trình, đặc tả kỹ thuật và tài liệu bàn giao được quản lý như deliverable chính thức.',
         ],
         [
             'title' => 'Mô hình hỗ trợ dựa trên SLA',
-            'description' => 'Hỗ trợ sau khi khởi chạy tuân theo các cam kết phản hồi và giải quyết được sắp xếp với hoạt động nhà máy.',
+            'description' => 'Hỗ trợ sau triển khai được tổ chức theo mức độ ảnh hưởng, thời gian phản hồi và phạm vi SLA.',
         ],
         [
             'title' => 'Kinh nghiệm hệ thống phức tạp',
-            'description' => 'Chúng tôi áp dụng các thực tiễn kỹ thuật được chứng minh từ việc xây dựng các hệ thống kinh doanh phức tạp, đa mô-đun.',
+            'description' => 'Chúng tôi áp dụng kinh nghiệm từ các hệ thống nghiệp vụ đa mô-đun, nhiều vai trò và yêu cầu vận hành dài hạn.',
         ],
     ],
 
+    'why_us_security_kicker' => 'Kiểm soát nền tảng',
     'why_us_security_title' => 'Đường Cơ Sở Bảo Mật & Tuân Thủ',
     'why_us_security_items' => [
-        'TLS 1.2 / 1.3 được thực thi cho bảo mật dữ liệu trong quá trình vận chuyển.',
-        'Mô hình truy cập dựa trên vai trò và các chính sách bảo mật phiên được kiểm soát.',
-        'Các thực tiễn bảo mật ứng dụng phù hợp với OWASP (kiểm soát XSS, CSRF, SQLi).',
-        'Nhật ký kiểm toán và khả năng truy xuất để xem xét hoạt động và tuân thủ.',
-        'Lộ trình sắp xếp tùy chọn cho các bối cảnh tuân thủ ISO/IEC 27001, IEC 62443 và chất lượng ô tô.',
+        'TLS 1.2 / 1.3 cho dữ liệu truyền tải giữa trình duyệt, API và dịch vụ máy chủ.',
+        'Phân quyền theo vai trò, chính sách phiên và kiểm soát truy cập theo nghiệp vụ.',
+        'Thực hành bảo mật ứng dụng theo OWASP cho XSS, CSRF, SQL injection và quản lý phiên.',
+        'Nhật ký kiểm toán và truy xuất phục vụ rà soát vận hành, kiểm toán và cải tiến quy trình.',
+        'Có thể căn chỉnh lộ trình với ISO/IEC 27001, IEC 62443 hoặc bối cảnh chất lượng ngành ô tô.',
     ],
 
+    'why_us_delivery_kicker' => 'Đội hình thực thi',
     'why_us_delivery_title' => 'Cấu Trúc Đội Giao Hàng',
     'why_us_delivery_items' => [
-        'PM / SCRUM Master để lập kế hoạch, quản trị và giao tiếp với các bên liên quan.',
-        'Phân tích hệ thống để lập bản đồ quy trình và dịch kiến trúc.',
-        'Các kỹ sư backend, frontend và di động để thực thi đa nền tảng.',
-        'QA và DevOps cho chất lượng phát hành, CI/CD và tính ổn định.',
-        'Chuyên gia tích hợp cho các giao diện IoT/PLC/ERP khi cần thiết.',
+        'PM / SCRUM Master phụ trách kế hoạch, quản trị và giao tiếp với các bên liên quan.',
+        'System Analyst lập bản đồ quy trình và chuyển hóa yêu cầu thành thiết kế hệ thống.',
+        'Kỹ sư máy chủ, giao diện và di động triển khai trải nghiệm đa nền tảng.',
+        'QA và DevOps bảo vệ chất lượng phát hành, CI/CD và ổn định vận hành.',
+        'Chuyên gia tích hợp phụ trách giao diện IoT, PLC hoặc ERP khi phạm vi yêu cầu.',
     ],
 
-    'why_us_capability_title' => 'Tóm Tắt Khả Năng cho Các Bên Liên Quan FDI',
-    'why_us_capability_desc' => 'Chúng tôi kết hợp hiểu biết quy trình làm việc nhà máy, kỷ luật kỹ thuật và quản trị có cấu trúc để cung cấp một khung hoạt động có thể duy trì. Cách tiếp cận của chúng tôi được thiết kế cho triển khai có kiểm soát, kết quả có thể đo lường và mở rộng dài hạn, thay vì giao hàng tính năng tùy tiện.',
+    'why_us_capability_title' => 'Hồ Sơ Năng Lực cho Ban Lãnh Đạo Nhà Máy',
+    'why_us_capability_desc' => 'HKIncotech kết hợp hiểu biết quy trình nhà máy, năng lực phát triển phần mềm theo yêu cầu và quản trị triển khai có cấu trúc. Mục tiêu là xây dựng nền tảng vận hành có thể duy trì, nghiệm thu được và mở rộng dài hạn, thay vì chỉ giao từng tính năng rời rạc.',
 
     // Roadmap Section
-    'roadmap_title' => 'Lộ Trình Giải Pháp',
-    'roadmap_subtitle' => 'Lộ trình pha để phát triển từ kiểm soát hoạt động đến tối ưu hóa hiệu suất liên tục.',
+    'roadmap_title' => 'Lộ Trình Triển Khai & Mở Rộng',
+    'roadmap_subtitle' => 'Một lộ trình theo pha giúp nhà máy đi từ kiểm soát vận hành đến tối ưu hóa hiệu suất dựa trên dữ liệu.',
 
     'roadmap_phases' => [
         [
-            'title' => 'Giai Đoạn 1 — Nền Tảng & Các Mô-đun Cốt Lõi',
-            'description' => 'Thiết lập quản trị, vai trò người dùng, quy trình làm việc cốt lõi và các mô-đun ưu tiên sản xuất và tồn kho.',
+            'title' => 'Nền tảng & mô-đun lõi',
+            'description' => 'Thiết lập quản trị, vai trò người dùng, quy trình cốt lõi và các mô-đun ưu tiên cho sản xuất, kho và chất lượng.',
         ],
         [
-            'title' => 'Giai Đoạn 2 — Tích Hợp & Tự Động Hóa',
-            'description' => 'Tích hợp các hệ thống hỗ trợ, giảm bàn giao công việc thủ công và chuẩn hóa quy trình làm việc liên bộ phận.',
+            'title' => 'Tích hợp & tự động hóa',
+            'description' => 'Kết nối hệ thống liên quan, giảm bàn giao thủ công và chuẩn hóa luồng việc giữa bộ phận.',
         ],
         [
-            'title' => 'Giai Đoạn 3 — Trí Tuệ Dữ Liệu & Tối Ưu Hóa',
-            'description' => 'Mở rộng phân tích, cải thiện vận tốc quyết định và liên tục tối ưu hóa các kết quả hoạt động và chất lượng.',
+            'title' => 'Dữ liệu & tối ưu hóa',
+            'description' => 'Mở rộng phân tích, tăng tốc độ ra quyết định và tối ưu liên tục kết quả vận hành, chất lượng.',
         ],
     ],
 
-    'roadmap_note' => 'Cách tiếp cận của chúng tôi xây dựng hướng tới một nền tảng sản xuất cải tiến liên tục theo thời gian.',
+    'roadmap_note' => 'Cách tiếp cận này giúp nhà máy xây dựng nền tảng cải tiến liên tục thay vì một hệ thống chỉ giải quyết nhu cầu ngắn hạn.',
 
-    'roadmap_infrastructure_title' => 'Đường Cơ Sở Cơ Sở Hạ Tầng (Phần Cứng + Phần Mềm)',
+    'roadmap_infrastructure_kicker' => 'Nền tảng vận hành',
+    'roadmap_infrastructure_title' => 'Đường Cơ Sở Hạ Tầng Phần Mềm',
     'roadmap_infrastructure_items' => [
         [
-            'title' => 'Máy Chủ Trung Tâm',
-            'description' => 'Lưu trữ ứng dụng dựa trên Linux cho các dịch vụ backend và API của Laravel.',
+            'title' => 'Máy chủ ứng dụng',
+            'description' => 'Môi trường Linux cho dịch vụ máy chủ, API, worker và dịch vụ tích hợp.',
         ],
         [
-            'title' => 'Tầng Cơ Sở Dữ Liệu',
-            'description' => 'MySQL/MariaDB với chính sách sao lưu và kiểm soát truy cập tách biệt theo vai trò.',
+            'title' => 'Tầng cơ sở dữ liệu',
+            'description' => 'MySQL/MariaDB với sao lưu, phân quyền và kiểm soát truy cập theo vai trò.',
         ],
         [
-            'title' => 'Điểm Cuối Sàn Cửa Hàng',
-            'description' => 'Các máy tính bảng Android/iOS và thiết bị đầu cuối trạm làm việc trên các điểm kiểm tra sản xuất.',
+            'title' => 'Điểm cuối sàn sản xuất',
+            'description' => 'Tablet Android/iOS, workstation và thiết bị nhập liệu tại các trạm sản xuất.',
         ],
         [
-            'title' => 'Mạng Công Nghiệp',
-            'description' => 'Công tắc được quản lý, Wi-Fi an toàn, mạng nhà máy phân đoạn, VPN để truy cập từ xa.',
+            'title' => 'Mạng công nghiệp',
+            'description' => 'Switch quản lý, Wi-Fi an toàn, phân đoạn mạng nhà máy và VPN truy cập từ xa.',
         ],
         [
             'title' => 'Kết Nối IoT / PLC',
-            'description' => 'Tích hợp OPC-UA/Modbus thông qua cổng hoặc dịch vụ phần mềm trung gian.',
+            'description' => 'Tích hợp OPC-UA/Modbus thông qua gateway hoặc middleware phù hợp với hiện trạng máy.',
         ],
         [
             'title' => 'Lưu Trữ & DR',
-            'description' => 'Sao lưu NAS/đám mây, khoan phục hồi định kỳ và quản trị giữ dữ liệu.',
+            'description' => 'Sao lưu NAS/cloud, diễn tập phục hồi và chính sách lưu giữ dữ liệu.',
         ],
     ],
 
+    'roadmap_hardware_kicker' => 'Tham chiếu thiết bị',
     'roadmap_hardware_title' => 'Cấu Hình Tham Chiếu Phần Cứng',
     'roadmap_hardware_items' => [
         [
-            'title' => 'Máy Chủ Web/Ứng Dụng',
+            'title' => 'Máy chủ web/ứng dụng',
             'description' => 'Tham chiếu: CPU 8+ lõi, RAM ECC 32GB, SSD doanh nghiệp RAID 1/10, máy chủ Linux.',
         ],
         [
-            'title' => 'Máy Chủ Cơ Sở Dữ Liệu',
+            'title' => 'Máy chủ cơ sở dữ liệu',
             'description' => 'Tham chiếu: CPU lớp 16+ lõi, RAM ECC 64GB, SSD doanh nghiệp RAID 5/10.',
         ],
         [
-            'title' => 'Tầng Mạng',
+            'title' => 'Tầng mạng',
             'description' => 'Công tắc được quản lý, Wi-Fi công nghiệp, tường lửa với VPN/IPSec, mạng sản xuất phân đoạn.',
         ],
         [
@@ -462,109 +484,113 @@ return [
             'description' => 'Điểm bắt đầu: 5TB+, các khối lượng giao dịch/nhật ký/sao lưu được tách biệt, mở rộng sao lưu NAS hoặc đám mây.',
         ],
         [
-            'title' => 'Thiết Bị Sàn Cửa Hàng',
-            'description' => 'Máy tính bảng Android/iOS 10 inch+, máy quét mã vạch (1D/2D), thiết bị đầu cuối trạm làm việc, máy in công nghiệp.',
+            'title' => 'Thiết bị sàn sản xuất',
+            'description' => 'Tablet Android/iOS 10 inch+, máy quét mã vạch 1D/2D, workstation và máy in công nghiệp.',
         ],
         [
-            'title' => 'Năng Lượng & Tính Liên Tục',
-            'description' => 'Sao lưu UPS cho lớp máy chủ/mạng và kiểm tra tính sẵn sàng DR định kỳ.',
+            'title' => 'Nguồn điện & liên tục vận hành',
+            'description' => 'UPS cho lớp máy chủ/mạng và kiểm tra sẵn sàng DR định kỳ.',
         ],
     ],
 
+    'roadmap_risk_kicker' => 'Quản trị rủi ro',
     'roadmap_risk_title' => 'Đường Cơ Sở Quản Lý Rủi Ro',
     'roadmap_risk_items' => [
         [
             'title' => 'Biến động yêu cầu',
-            'description' => 'Được kiểm soát thông qua quản trị backlog pha và xem xét tác động thay đổi chính thức.',
+            'description' => 'Kiểm soát bằng backlog theo pha và đánh giá tác động thay đổi chính thức.',
         ],
         [
             'title' => 'Độ phức tạp của tích hợp',
-            'description' => 'Giảm rủi ro thông qua hộc cách ly giao thức, kiểm tra giao diện và onboarding máy được dàn xếp.',
+            'description' => 'Giảm rủi ro bằng cách cô lập giao thức, kiểm thử interface và onboarding máy theo giai đoạn.',
         ],
         [
             'title' => 'Sự cố bảo mật dữ liệu',
-            'description' => 'Giảm thiểu bằng các điều khiển mã hóa, phân đoạn, giám sát nhật ký và playbook sự cố.',
+            'description' => 'Giảm thiểu bằng mã hóa, phân đoạn, giám sát log và playbook xử lý sự cố.',
         ],
         [
             'title' => 'Áp lực hiệu suất và quy mô',
-            'description' => 'Giải quyết bằng các bài kiểm tra tải, kế hoạch điều chỉnh và các tùy chọn cơ sở hạ tầng có khả năng mở rộng.',
+            'description' => 'Xử lý bằng kiểm thử tải, kế hoạch tuning và tùy chọn hạ tầng có thể mở rộng.',
         ],
         [
             'title' => 'Khoảng cách áp dụng người dùng',
-            'description' => 'Giảm bằng huấn luyện dựa trên vai trò, cập nhật SOP và siêu chăm sóc tại chỗ trong giai đoạn khởi chạy.',
+            'description' => 'Giảm bằng huấn luyện theo vai trò, cập nhật SOP và hỗ trợ sát trong giai đoạn đưa vào vận hành.',
         ],
         [
             'title' => 'Quá tải lịch trình và ngân sách',
-            'description' => 'Được quản lý thông qua khả năng hiển thị cấp sprint, các điểm kiểm tra cột mốc và kỷ luật phạm vi.',
+            'description' => 'Quản lý bằng minh bạch cấp sprint, mốc kiểm tra và kỷ luật phạm vi.',
         ],
     ],
 
-    'roadmap_targets' => 'Tham Chiếu Mục Tiêu Hoạt Động: độ sẵn sàng đẳng cấp enterprise, kiến trúc có khả năng mở rộng cho các thiết bị và dây chuyền sản xuất bổ sung và bảo trì theo lịch trình với các kiểm tra sức khỏe hàng tháng cho các lớp cơ sở hạ tầng và ứng dụng.',
+    'roadmap_targets' => 'Tham chiếu mục tiêu vận hành: độ sẵn sàng cấp doanh nghiệp, kiến trúc có thể mở rộng cho thêm thiết bị và dây chuyền, cùng lịch bảo trì định kỳ cho hạ tầng và ứng dụng.',
 
     // CTA Section
-    'cta_title' => 'Bắt Đầu Hành Trình Số Hóa Nhà Máy của Bạn',
-    'cta_description' => 'Xây dựng một nền tảng hoạt động có cấu trúc ngày hôm nay và mở rộng quy mô với sự tự tin trên các giai đoạn sản xuất trong tương lai.',
-    'cta_button' => 'Đặt Lịch Tư Vấn',
+    'cta_title' => 'Trao Đổi Lộ Trình Số Hóa Nhà Máy',
+    'cta_description' => 'HKIncotech có thể cùng đội ngũ vận hành rà soát hiện trạng, xác định phạm vi ưu tiên và đề xuất lộ trình triển khai phù hợp với cách nhà máy đang vận hành.',
+    'cta_button' => 'Trao đổi lộ trình',
 
     // Solution Packages Section
-    'packages_title' => 'Gói Giải Pháp & Tham Chiếu Ngân Sách',
-    'packages_subtitle' => 'Các dải đầu tư dự kiến cho lập kế hoạch và chuẩn bị mua hàng. Phạm vi và giá cuối cùng được xác nhận sau khi đánh giá quy trình.',
+    'packages_title' => 'Phạm Vi Giải Pháp & Tham Chiếu Ngân Sách',
+    'packages_subtitle' => 'Các dải đầu tư dùng cho lập kế hoạch ngân sách ban đầu. Phạm vi và chi phí cuối cùng được xác nhận sau khi đánh giá quy trình.',
 
     'packages' => [
         [
-            'title' => 'Gói A — Thí Điểm Nền Tảng',
-            'price' => 'Ước Tính: 120 Triệu – 280 Triệu VND',
+            'title' => 'Gói A — Thí điểm nền tảng',
+            'price' => 'Ước tính: 120 triệu - 280 triệu VND',
             'items' => [
-                'Thiết lập quy trình làm việc cốt lõi cho một dây chuyền thí điểm',
-                'Các mô-đun đường cơ sở sản xuất + tồn kho',
-                'Các mẫu bảng điều khiển và báo cáo cơ bản',
+                'Thiết lập quy trình cốt lõi cho một dây chuyền thí điểm',
+                'Mô-đun nền tảng cho sản xuất và tồn kho',
+                'Bảng điều khiển và mẫu báo cáo cơ bản',
                 'Huấn luyện người dùng ban đầu và hỗ trợ khởi chạy',
             ],
         ],
         [
-            'title' => 'Gói B — Triển Khai Nhà Máy Tiêu Chuẩn',
-            'price' => 'Ước Tính: 320 Triệu – 850 Triệu VND',
+            'title' => 'Gói B — Triển khai nhà máy tiêu chuẩn',
+            'price' => 'Ước tính: 320 triệu - 850 triệu VND',
             'items' => [
                 'Triển khai đa mô-đun cho hoạt động nhà máy',
-                'Phạm vi bảng điều khiển chất lượng, đóng gói và KPI',
+                'Bảng điều khiển cho chất lượng, đóng gói và KPI',
                 'Hoạt động mã vạch/QR và mô hình truy cập dựa trên vai trò',
-                'Kiểm tra, huấn luyện và khởi chạy được dàn xếp có cấu trúc',
+                'Kiểm thử, huấn luyện và đưa vào vận hành có cấu trúc',
             ],
         ],
         [
-            'title' => 'Gói C — Tích Hợp Nhiều Nhà Máy',
-            'price' => 'Ước Tính: 900 Triệu+ VND',
+            'title' => 'Gói C — Tích hợp nhiều nhà máy',
+            'price' => 'Ước tính: từ 900 triệu VND',
             'items' => [
-                'Chuẩn hóa liên trang web và mô hình quản trị',
+                'Chuẩn hóa đa địa điểm và mô hình quản trị',
                 'Triển khai lộ trình tích hợp ERP / PLC / IoT',
-                'Lớp phân tích nâng cao và tối ưu hóa pha',
-                'Mô hình hoạt động SLA với các tùy chọn hỗ trợ mở rộng',
+                'Lớp phân tích nâng cao và tối ưu theo pha',
+                'Mô hình vận hành SLA với tùy chọn hỗ trợ mở rộng',
             ],
         ],
     ],
 
+    'maintenance_kicker' => 'Sau triển khai',
     'maintenance_title' => 'Mô Hình Bảo Trì & Hỗ Trợ',
     'maintenance_items' => [
         'Gói bảo trì mặc định cho ổn định nền tảng và xử lý sự cố.',
-        'Gói mở rộng cho các cửa sổ phản hồi nhanh hơn và tăng khả năng hỗ trợ hàng tháng.',
-        'Các mục tiêu phản hồi vấn đề phần mềm dựa trên lớp tác động và phạm vi SLA.',
-        'Hỗ trợ điều chỉnh dữ liệu được ủy quyền theo vai trò và xem xét nhật ký.',
-        'Giám sát hiệu suất định kỳ, bảo trì bộ nhớ cache và kiểm tra tối ưu hóa.',
+        'Gói mở rộng cho nhu cầu phản hồi nhanh hơn và dung lượng hỗ trợ lớn hơn theo tháng.',
+        'Mục tiêu phản hồi sự cố phần mềm dựa trên mức ảnh hưởng và phạm vi SLA.',
+        'Hỗ trợ điều chỉnh dữ liệu có thẩm quyền theo vai trò và rà soát nhật ký.',
+        'Giám sát hiệu suất định kỳ, bảo trì cache và kiểm tra tối ưu hóa.',
     ],
 
-    'backup_title' => 'Đường Cơ Sở Sao Lưu & Phục Hồi',
+    'backup_kicker' => 'Duy trì liên tục',
+    'backup_title' => 'Nền Tảng Sao Lưu & Phục Hồi',
     'backup_items' => [
-        'Sao lưu hệ thống tự động mỗi 2 giờ (điểm kiểm tra phía máy chủ).',
-        'Lịch trình sao lưu tải đám mây ít nhất hai lần mỗi ngày.',
-        'Tham chiếu khối lượng sao lưu đám mây tiêu chuẩn: đường cơ sở 50GB.',
+        'Sao lưu hệ thống tự động mỗi 2 giờ ở lớp máy chủ.',
+        'Lịch tải bản sao lưu lên cloud tối thiểu hai lần mỗi ngày.',
+        'Tham chiếu dung lượng sao lưu cloud tiêu chuẩn: nền tảng 50GB.',
         'Tham chiếu mục tiêu phục hồi: phục hồi dịch vụ trong ~60 phút cho các sự cố phần mềm.',
-        'Tham chiếu kích hoạt dự phòng: môi trường phục hồi tạm thời trong ~60 phút trong các sự cố nghiêm trọng.',
+        'Tham chiếu kích hoạt dự phòng: môi trường phục hồi tạm thời trong ~60 phút với sự cố nghiêm trọng.',
     ],
 
+    'commercial_notes_kicker' => 'Nguyên tắc thương mại',
     'commercial_notes_title' => 'Lưu Ý Thương Mại Quan Trọng',
     'commercial_notes_items' => [
-        'Tất cả các giá trị ngân sách là các dải tư vấn cho lập kế hoạch và chuẩn bị mua hàng.',
-        'Chi phí cuối cùng được xác định bằng độ phức tạp phạm vi, độ sâu tích hợp, nhu cầu di chuyển dữ liệu và lịch trình mục tiêu.',
-        'Các yêu cầu thay đổi bổ sung ngoài phạm vi được phê duyệt được ước tính riêng theo nỗ lực và phụ lục hợp đồng.',
+        'Tất cả giá trị ngân sách là dải tham chiếu phục vụ lập kế hoạch và chuẩn bị mua hàng.',
+        'Chi phí cuối cùng phụ thuộc vào độ phức tạp phạm vi, độ sâu tích hợp, nhu cầu chuyển đổi dữ liệu và lịch trình mục tiêu.',
+        'Yêu cầu thay đổi ngoài phạm vi đã duyệt sẽ được ước tính riêng theo nỗ lực và phụ lục hợp đồng.',
     ],
 ];

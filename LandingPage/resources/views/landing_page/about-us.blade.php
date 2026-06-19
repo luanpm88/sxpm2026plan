@@ -20,7 +20,7 @@
     <section>
         <div class="container-v5">
             <div class="section-header">
-                <span class="section-label">OUR STORY</span>
+                <span class="section-label">{{ __('about.section_story') }}</span>
                 <h2 class="section-title">{{ __('about.story_title') }}</h2>
                 <p class="section-subtitle">{{ __('about.story_subtitle') }}</p>
             </div>
@@ -93,7 +93,7 @@
     <section style="background: var(--secondary-bg);">
         <div class="container-v5">
             <div class="section-header">
-                <span class="section-label">OUR VALUES</span>
+                <span class="section-label">{{ __('about.section_values') }}</span>
                 <h2 class="section-title">{{ __('about.values_title') }}</h2>
                 <p class="section-subtitle">{{ __('about.values_subtitle') }}</p>
             </div>
@@ -163,7 +163,7 @@
     <section style="background: var(--surface);">
         <div class="container-v5">
             <div class="section-header">
-                <span class="section-label">ACHIEVEMENTS</span>
+                <span class="section-label">{{ __('about.section_achievements') }}</span>
                 <h2 class="section-title">{{ __('about.achievements_title') }}</h2>
                 <p class="section-subtitle">{{ __('about.achievements_subtitle') }}</p>
             </div>

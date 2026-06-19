@@ -27,9 +27,9 @@ return [
     'milestones_desc' => 'Our development roadmap is focused on achieving these key performance targets within the next 18-24 months as we scale our current infrastructure and expand into new enterprise markets.',
     'milestones' => [
         ['bold' => 'Scale to production-grade concurrency', 'text' => 'while maintaining low-latency responsiveness across peak loads'],
-        ['bold' => 'Reach an enterprise-grade uptime SLA', 'text' => 'across our global infrastructure as we mature our redundancy systems'],
+        ['bold' => 'Strengthen high-availability operations', 'text' => 'across our infrastructure as redundancy systems mature'],
         ['bold' => 'Deliver low-latency API response globally', 'text' => 'through edge computing optimization'],
-        ['bold' => 'Expand enterprise adoption', 'text' => 'to Fortune 500 companies seeking scalable collaboration platforms'],
+        ['bold' => 'Expand enterprise adoption', 'text' => 'for organizations that need scalable collaboration and operations platforms'],
         ['bold' => 'Build sustainable revenue model', 'text' => 'that supports continuous R&D in platform infrastructure'],
     ],
 

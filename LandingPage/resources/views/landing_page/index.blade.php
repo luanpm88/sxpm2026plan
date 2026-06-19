@@ -19,7 +19,7 @@
             "name": "How long does it take to build an MVP?",
             "acceptedAnswer": {
                 "@@type": "Answer",
-                "text": "MVP delivery typically takes 4-8 weeks using our SCRUM process with 2-week sprints and live demos every cycle. Full products take 4-12 months depending on complexity."
+                "text": "Timeline depends on scope, business complexity, integrations, and operating requirements. HKIncotech proposes a staged roadmap after discovery."
             }
         },
         {
@@ -27,7 +27,7 @@
             "name": "What technologies does HKIncotech use?",
             "acceptedAnswer": {
                 "@@type": "Answer",
-                "text": "We use 50+ enterprise-grade technologies including React, Node.js, Python, AWS, Kubernetes, PostgreSQL, GPT-4, Flutter, and Terraform across 8 technology categories."
+                "text": "We choose technology according to architecture, maintainability, security, operating model, and growth requirements. Common stacks include React, Node.js, Python, Laravel, PostgreSQL, AWS/GCP, mobile technologies, and applied AI."
             }
         },
         {
@@ -35,7 +35,7 @@
             "name": "Do I own the source code?",
             "acceptedAnswer": {
                 "@@type": "Answer",
-                "text": "Yes. Full IP and source code ownership belongs to you. No licensing fees, no royalties. You can walk away with everything at any time."
+                "text": "Yes. Source-code ownership, project documentation, and handover scope are defined clearly in the engagement agreement."
             }
         },
         {

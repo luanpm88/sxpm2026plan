@@ -336,13 +336,13 @@
                     'icon' => 'trending_up',
                     'title' => 'Tech Leads',
                     'count' => '15+',
-                    'desc' => 'Team leaders with P&L responsibility. Product vision, technical strategy, mentorship expertise.'
+                    'desc' => 'Technical leaders responsible for solution direction, delivery quality, and mentoring across project teams.'
                 ],
                 [
                     'icon' => 'school',
                     'title' => 'Continuous Learning',
-                    'count' => '100%',
-                    'desc' => 'Annual certification budget per engineer. Internal knowledge sharing, tech talks, R&D time allocation.'
+                    'count' => 'Ongoing',
+                    'desc' => 'Internal knowledge sharing, technical mentoring, and continuous R&D practice across the engineering team.'
                 ],
             ];
             @endphp

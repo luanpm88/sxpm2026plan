@@ -23,7 +23,7 @@
     <section id="process">
         <div class="container-v5">
             <div class="section-header">
-                <span class="section-label">OUR PROCESS</span>
+                <span class="section-label">{{ __('scrum.section_process') }}</span>
                 <h2 class="section-title">{{ __('scrum.steps_title') }}</h2>
                 <p class="section-subtitle">{{ __('scrum.steps_subtitle') }}</p>
             </div>
@@ -53,7 +53,7 @@
     <section class="scrum-sprint-cycle-section" style="background: var(--secondary-bg);">
         <div class="container-v5">
             <div class="section-header">
-                <span class="section-label">SPRINT CYCLE</span>
+                <span class="section-label">{{ __('scrum.section_sprint') }}</span>
                 <h2 class="section-title">{{ __('scrum.sprint_title') }}</h2>
                 <p class="section-subtitle">{{ __('scrum.sprint_subtitle') }}</p>
             </div>
@@ -112,7 +112,7 @@
     <section id="benefits">
         <div class="container-v5">
             <div class="section-header">
-                <span class="section-label">KEY BENEFITS</span>
+                <span class="section-label">{{ __('scrum.section_benefits') }}</span>
                 <h2 class="section-title">{{ __('scrum.benefits_title') }}</h2>
                 <p class="section-subtitle">{{ __('scrum.benefits_subtitle') }}</p>
             </div>
@@ -139,7 +139,7 @@
     <section style="background: var(--secondary-bg);">
         <div class="container-v5">
             <div class="section-header">
-                <span class="section-label">CLIENT JOURNEY</span>
+                <span class="section-label">{{ __('scrum.section_journey') }}</span>
                 <h2 class="section-title">{{ __('scrum.journey_title') }}</h2>
                 <p class="section-subtitle">{{ __('scrum.journey_subtitle') }}</p>
             </div>
@@ -178,7 +178,7 @@
     <section id="why">
         <div class="container-v5">
             <div class="section-header">
-                <span class="section-label">WHY CHOOSE US</span>
+                <span class="section-label">{{ __('scrum.section_why') }}</span>
                 <h2 class="section-title">{{ __('scrum.why_title') }}</h2>
                 <p class="section-subtitle">{{ __('scrum.why_subtitle') }}</p>
             </div>

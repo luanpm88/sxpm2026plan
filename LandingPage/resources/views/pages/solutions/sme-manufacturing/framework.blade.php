@@ -65,7 +65,7 @@
                 ];
             @endphp
 
-            <div class="solution-module-grid">
+            <div class="solution-module-grid solution-module-grid--center-five">
                 @foreach($techCards as $card)
                     <article class="solution-module-card">
                         <div class="solution-module-card__icon">

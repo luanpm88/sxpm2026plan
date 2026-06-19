@@ -19,7 +19,7 @@
     <section>
         <div class="container-v5">
             <div class="section-header">
-                <span class="section-label">OUR STACK</span>
+                <span class="section-label">{{ __('tech_stack.section_stack') }}</span>
                 <h2 class="section-title">{{ __('tech_stack.stack_title') }}</h2>
                 <p class="section-subtitle">{{ __('tech_stack.stack_subtitle') }}</p>
             </div>
@@ -58,7 +58,7 @@
     <section>
         <div class="container-v5">
             <div class="section-header">
-                <span class="section-label">PERFORMANCE</span>
+                <span class="section-label">{{ __('tech_stack.section_metrics') }}</span>
                 <h2 class="section-title">{{ __('tech_stack.metrics_title') }}</h2>
                 <p class="section-subtitle">{{ __('tech_stack.metrics_subtitle') }}</p>
             </div>
@@ -88,7 +88,7 @@
     <section style="background: var(--secondary-bg);">
         <div class="container-v5">
             <div class="section-header">
-                <span class="section-label">PLATFORMS</span>
+                <span class="section-label">{{ __('tech_stack.section_platforms') }}</span>
                 <h2 class="section-title">{{ __('tech_stack.platforms_title') }}</h2>
                 <p class="section-subtitle">{{ __('tech_stack.platforms_subtitle') }}</p>
             </div>
@@ -134,7 +134,7 @@
     <section style="background: var(--surface);">
         <div class="container-v5">
             <div class="section-header">
-                <span class="section-label">BEST PRACTICES</span>
+                <span class="section-label">{{ __('tech_stack.section_practices') }}</span>
                 <h2 class="section-title">{{ __('tech_stack.practices_title') }}</h2>
                 <p class="section-subtitle">{{ __('tech_stack.practices_subtitle') }}</p>
             </div>

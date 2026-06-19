@@ -3,30 +3,32 @@
 return [
     'hero_title' => 'Dự Án',
     'hero_title_highlight' => 'Tiêu Biểu',
-    'hero_desc' => '50+ dự án hoàn thành trên 10+ lĩnh vực. Từ MVP startup đến hệ thống doanh nghiệp quy mô lớn — mỗi hợp tác được đánh giá bằng kết quả đo lường cụ thể.',
+    'hero_desc' => 'Một số dự án tiêu biểu thể hiện cách HKIncotech tiếp cận bài toán phần mềm theo yêu cầu: hiểu bối cảnh, thiết kế hệ thống, triển khai có kiểm soát và bàn giao để vận hành lâu dài.',
+    'section_work' => 'DỰ ÁN CHỌN LỌC',
+    'section_industries' => 'LĨNH VỰC ĐÃ THAM GIA',
 
     'stats' => [
-        ['num' => '50+', 'label' => 'Dự Án Hoàn Thành'],
-        ['num' => '10+', 'label' => 'Ngành Đã Phục Vụ'],
-        ['num' => '$1M', 'label' => 'Giá Trị Dự Án'],
-        ['num' => 'Cao', 'label' => 'Độ Hài Lòng Khách Hàng'],
-        ['num' => '12+', 'label' => 'Năm Kinh Nghiệm'],
-        ['num' => '10+', 'label' => 'Quốc Gia Phục Vụ'],
+        ['num' => '50+', 'label' => 'Dự án chọn lọc'],
+        ['num' => 'Đa ngành', 'label' => 'Kinh nghiệm triển khai'],
+        ['num' => 'Nền tảng thật', 'label' => 'Sản phẩm đã vận hành'],
+        ['num' => 'Dài hạn', 'label' => 'Đồng hành sau triển khai'],
+        ['num' => '12+', 'label' => 'Năm kinh nghiệm'],
+        ['num' => 'Regional', 'label' => 'Phạm vi khu vực'],
     ],
 
-    'featured_title' => 'Dự Án Nổi Bật',
-    'featured_subtitle' => 'Giải pháp tiêu biểu và kết quả đạt được',
+    'featured_title' => 'Dự Án Chọn Lọc',
+    'featured_subtitle' => 'Bối cảnh triển khai, hướng giải pháp và kết quả vận hành.',
 
     'case_studies' => [
         [
             'title' => 'Nền Tảng Giáo Dục: Tự Động Hóa Lịch Biểu',
             'industry' => 'Giáo Dục',
-            'challenge' => 'Quản lý lịch biểu, phân công lớp, báo cáo học tập và điểm danh cho 10,000+ học sinh. Lập lịch thủ công mất 3 tuần mỗi học kỳ với xung đột thường xuyên.',
-            'solution' => 'Cung cấp nền tảng hoạt động toàn diện sử dụng PHP API stack, tập trung vào độ tin cậy và khả năng mở rộng. Triển khai tạo lịch biểu linh hoạt, quy tắc cân bằng tải công việc, điểm danh tự động và báo cáo. Thêm hạ tầng cao sẵn sàng với cân bằng tải PostgreSQL, bộ nhớ đệm và hàng đợi kiên cường để xử lý các thời kỳ cao điểm tuyển sinh và lập lịch.',
+            'challenge' => 'Đơn vị giáo dục cần quản lý lịch học, phân công lớp, điểm danh và báo cáo trên quy mô lớn. Quy trình thủ công dễ phát sinh xung đột, mất nhiều thời gian kiểm tra và khó theo dõi trách nhiệm.',
+            'solution' => 'HKIncotech xây dựng nền tảng vận hành giáo dục với API trung tâm, cơ chế lập lịch linh hoạt, quy tắc phân bổ tải, điểm danh tự động và báo cáo theo vai trò. Hạ tầng được thiết kế để xử lý các giai đoạn cao điểm như tuyển sinh và xếp lịch đầu kỳ.',
             'results' => [
                 'Thời gian lập lịch: tuần → ngày',
                 'Độ chính xác dữ liệu cao',
-                '10.000+ học sinh được quản lý',
+                'Quản lý dữ liệu học viên ở quy mô lớn',
                 'Tỷ lệ áp dụng cao',
                 'Tiết kiệm đáng kể giờ vận hành mỗi học kỳ'
             ],
@@ -35,12 +37,12 @@ return [
         [
             'title' => 'Hệ Thống Quản Lý Kho Hàng',
             'industry' => 'Logistics & Bán Lẻ',
-            'challenge' => 'Quản lý ~10M SKU trên 50+ chi nhánh. Những điểm đau: kiểm soát hàng tồn kho, nhập/xuất hàng, ký gửi, quét mã vạch, kiểm kê hàng tháng. Quy trình thủ công dẫn đến báo cáo không chính xác. Cần dự báo nhu cầu chính xác.',
-            'solution' => 'Xây dựng WMS toàn diện với quét mã vạch thời gian thực và điều hòa tự động. Triển khai dự báo nhu cầu thông qua phân tích thừa số ma trận và chuỗi thời gian. Thêm bảng điều khiển phân tích, đồng bộ hóa đa vị trí và tài liệu ký gửi được hỗ trợ blockchain để tăng tính minh bạch.',
+            'challenge' => 'Doanh nghiệp cần kiểm soát tồn kho, nhập xuất, ký gửi, quét mã vạch và kiểm kê định kỳ trên nhiều chi nhánh. Dữ liệu thủ công khiến báo cáo chậm và khó đối chiếu.',
+            'solution' => 'HKIncotech xây dựng hệ thống quản lý kho với quét mã vạch, đồng bộ dữ liệu nhiều địa điểm, đối soát tự động và báo cáo phân tích. Các mô hình dự báo được triển khai để hỗ trợ lập kế hoạch tồn kho và giảm thao tác thủ công.',
             'results' => [
                 'Độ chính xác hàng tồn kho cải thiện lớn',
                 'Độ chính xác dự báo cao',
-                'Thông lượng giao dịch lớn',
+                'Năng lực xử lý giao dịch lớn hơn',
                 'Thời gian kiểm kê giảm đáng kể',
                 'Hàng tồn kho chết giảm đáng kể',
                 'Tiết kiệm chi phí đáng kể'
@@ -50,8 +52,8 @@ return [
         [
             'title' => 'Hệ Thống ERP Quản Lý Doanh Nghiệp',
             'industry' => 'Quản Lý Doanh Nghiệp',
-            'challenge' => 'Công ty 100+ nhân viên cần tích hợp kế toán, mua hàng, tồn kho, thương mại điện tử và hoạt động. Dữ liệu tồn kho không đồng bộ với kế toán; các mô-đun rời rạc làm chậm báo cáo.',
-            'solution' => 'Xây dựng ERP tích hợp: kế toán (GL, AR, AP), tồn kho, mua hàng, đồng bộ thương mại điện tử (Shopify/WooCommerce), lương HR và báo cáo. Thêm hợp nhất thời gian thực, bảng điều khiển BI, tự động hóa quy trình công việc và ứng dụng di động cho nhân viên thực địa.',
+            'challenge' => 'Doanh nghiệp cần kết nối kế toán, mua hàng, tồn kho, thương mại điện tử và vận hành. Dữ liệu giữa các bộ phận không đồng bộ, khiến báo cáo chậm và khó kiểm soát.',
+            'solution' => 'HKIncotech xây dựng nền tảng ERP tích hợp kế toán, tồn kho, mua hàng, thương mại điện tử, nhân sự và báo cáo quản trị. Hệ thống bổ sung đồng bộ dữ liệu, bảng điều khiển BI, tự động hóa quy trình và ứng dụng di động cho đội hiện trường.',
             'results' => [
                 'Hợp nhất rút ngắn từ vài ngày xuống vài phút',
                 'Nỗ lực xử lý hóa đơn giảm đáng kể',
@@ -69,36 +71,36 @@ return [
     'label_results' => 'Kết Quả',
     'label_tech' => 'Công Nghệ',
 
-    'industries_title' => 'Ngành Đã Triển Khai',
-    'industries_subtitle' => 'Kinh nghiệm đa ngành và năng lực theo từng domain',
+    'industries_title' => 'Lĩnh Vực Đã Tham Gia',
+    'industries_subtitle' => 'Kinh nghiệm triển khai trong nhiều bối cảnh nghiệp vụ và mô hình vận hành khác nhau.',
 
     'industries' => [
-        ['icon' => 'shopping_cart', 'name' => 'Thương Mại Điện Tử & Bán Lẻ', 'description' => 'Xây dựng cửa hàng trực tuyến tinh gọn, tích hợp POS và phân tích để giúp các nhà bán lẻ nhỏ hiện đại hóa bán hàng.'],
-        ['icon' => 'trending_up', 'name' => 'FinTech & Ngân Hàng', 'description' => 'Phát triển bảng điều khiển thân thiện với tuân thủ, luồng thanh toán và báo cáo cho các nhóm fintech giai đoạn đầu.'],
-        ['icon' => 'local_hospital', 'name' => 'Y Tế & Chăm Sóc Sức Khỏe', 'description' => 'Tạo công cụ đặt lịch hẹn, tiếp nhận và theo dõi dữ liệu với tập trung vào bảo mật và quyền riêng tư bệnh nhân.'],
-        ['icon' => 'school', 'name' => 'EdTech & Đào Tạo', 'description' => 'Xây dựng cổng thông tin khóa học và công cụ đánh giá để số hóa các chương trình đào tạo và cải thiện sự tham gia của người học.'],
-        ['icon' => 'local_shipping', 'name' => 'Logistics & Chuỗi Cung Ứng', 'description' => 'Triển khai bảng điều khiển theo dõi vận chuyển và dự báo đơn giản để giảm bớt điều phối thủ công.'],
-        ['icon' => 'factory', 'name' => 'Sản Xuất & IoT', 'description' => 'Tạo mẫu giám sát thiết bị và bảng KPI để hiển thị những hiểu biết về sản xuất thời gian thực.'],
-        ['icon' => 'apartment', 'name' => 'Bất Động Sản & Xây Dựng', 'description' => 'Cung cấp công cụ danh sách, theo dõi khách hàng tiềm năng và hiển thị tiến độ cho các nhóm bất động sản nhỏ.'],
-        ['icon' => 'sports_esports', 'name' => 'Trò Chơi & Giải Trí', 'description' => 'Phát hành các cổng thông tin sự kiện, cộng đồng và nội dung nhẹ cho các khán giả trò chơi thích hợp.'],
-        ['icon' => 'psychology', 'name' => 'AI & Khoa Học Dữ Liệu', 'description' => 'Xây dựng các trợ lý AI thực tế và đường ống dữ liệu để tự động hóa các quy trình làm việc lặp đi lặp lại.'],
-        ['icon' => 'cloud', 'name' => 'SaaS & Điện Toán Đám Mây', 'description' => 'Giúp các nhóm khởi chạy MVP với các chủ đề đa người dùng cơ bản, xác thực và thanh toán sẵn sàng phát triển.'],
+        ['icon' => 'shopping_cart', 'name' => 'Bán Lẻ & Thương Mại Điện Tử', 'description' => 'Hệ thống bán hàng, tồn kho, POS, tích hợp kênh bán và báo cáo vận hành.'],
+        ['icon' => 'trending_up', 'name' => 'FinTech & Dịch Vụ Tài Chính', 'description' => 'Luồng thanh toán, bảng điều khiển quản trị, báo cáo và kiểm soát tuân thủ.'],
+        ['icon' => 'local_hospital', 'name' => 'Y Tế & Chăm Sóc Sức Khỏe', 'description' => 'Đặt lịch, tiếp nhận, quản lý dữ liệu và bảo mật thông tin người dùng.'],
+        ['icon' => 'school', 'name' => 'Giáo Dục & Đào Tạo', 'description' => 'Cổng học tập, lập lịch, đánh giá, điểm danh và báo cáo đào tạo.'],
+        ['icon' => 'local_shipping', 'name' => 'Logistics & Chuỗi Cung Ứng', 'description' => 'Theo dõi vận chuyển, quản lý kho, đối soát dữ liệu và điều phối vận hành.'],
+        ['icon' => 'factory', 'name' => 'Sản Xuất & IoT', 'description' => 'Giám sát thiết bị, dữ liệu sàn sản xuất, KPI và tích hợp máy móc.'],
+        ['icon' => 'apartment', 'name' => 'Bất Động Sản & Xây Dựng', 'description' => 'Quản lý danh mục, khách hàng tiềm năng, tiến độ và dữ liệu dự án.'],
+        ['icon' => 'sports_esports', 'name' => 'Nội Dung & Cộng Đồng', 'description' => 'Cổng sự kiện, cộng đồng, nội dung số và trải nghiệm người dùng.'],
+        ['icon' => 'psychology', 'name' => 'AI & Dữ Liệu', 'description' => 'Trợ lý AI, pipeline dữ liệu, tìm kiếm ngữ nghĩa và tự động hóa quy trình.'],
+        ['icon' => 'cloud', 'name' => 'SaaS & Hạ Tầng Cloud', 'description' => 'Nền tảng đa khách hàng, xác thực, thanh toán, phân quyền và vận hành hạ tầng cloud.'],
     ],
 
     'section_testimonials' => 'PHẢN HỒI KHÁCH HÀNG',
     'testimonials_title' => 'Phản Hồi Khách Hàng',
-    'testimonials_subtitle' => 'Chia sẻ từ các đối tác và khách hàng đã hợp tác cùng chúng tôi.',
+    'testimonials_subtitle' => 'Góc nhìn từ các đội ngũ đã cùng HKIncotech triển khai hệ thống.',
 
     'testimonials' => [
-        ['name' => 'CEO, E-Commerce Startup', 'text' => 'HKIncotech không chỉ cung cấp phạm vi công việc mà còn chủ động đề xuất cải tiến. Giao tiếp xuất sắc và đáp ứng nhanh.'],
-        ['name' => 'Founder, FinTech Startup', 'text' => 'Kinh nghiệm bảo mật và tuân thủ của họ giúp chúng tôi vượt qua ISO 27001 và PCI DSS ngay lần đầu tiên.'],
-        ['name' => 'Director, Healthcare Provider', 'text' => 'Kiến thức chuyên môn y tế sâu sắc. Hiệu suất ML vượt quá kỳ vọng.'],
-        ['name' => 'VP Product, Logistics Company', 'text' => 'Tăng từ 100 lên 2.000 vận chuyển/ngày mà không bị gián đoạn. Lập kế hoạch hạ tầng mạnh mẽ.'],
-        ['name' => 'CTO, Retail Chain', 'text' => 'Phân tích thời gian thực cho phép đưa ra quyết định dựa trên dữ liệu. ROI tích cực trong 3 tháng.'],
-        ['name' => 'Founder, SaaS Startup', 'text' => 'Hỗ trợ sau khi ra mắt rất xuất sắc: phản hồi 24/7, xử lý nhanh và luôn tập trung vào giải pháp.'],
+        ['name' => 'CEO, doanh nghiệp thương mại điện tử', 'text' => 'HKIncotech không chỉ nhận yêu cầu rồi triển khai. Đội ngũ đặt câu hỏi đúng, đề xuất cải tiến và giữ tiến độ rất rõ ràng.'],
+        ['name' => 'Nhà sáng lập, công ty FinTech', 'text' => 'Cách tiếp cận bảo mật và tuân thủ giúp chúng tôi chuẩn hóa hệ thống ngay từ giai đoạn đầu.'],
+        ['name' => 'Giám đốc vận hành, đơn vị y tế', 'text' => 'Đội ngũ hiểu yêu cầu bảo mật dữ liệu và triển khai quy trình một cách thận trọng.'],
+        ['name' => 'Phó giám đốc sản phẩm, logistics', 'text' => 'Hệ thống được chuẩn bị tốt cho giai đoạn mở rộng, từ dữ liệu vận hành đến hạ tầng.'],
+        ['name' => 'CTO, chuỗi bán lẻ', 'text' => 'Bảng điều khiển vận hành giúp đội ngũ ra quyết định nhanh hơn và kiểm soát dữ liệu tốt hơn.'],
+        ['name' => 'Nhà sáng lập, nền tảng SaaS', 'text' => 'Sau khi hệ thống vận hành chính thức, đội ngũ vẫn đồng hành sát sao trong tối ưu và xử lý các yêu cầu phát sinh.'],
     ],
 
-    'cta_title' => 'Sẵn Sàng Cho Dự Án Tiếp Theo?',
-    'cta_desc' => 'Bắt đầu trao đổi với chúng tôi ngay hôm nay.',
-    'cta_button' => 'Liên Hệ Ngay',
+    'cta_title' => 'Trao Đổi Về Bài Toán Của Doanh Nghiệp',
+    'cta_desc' => 'HKIncotech có thể cùng đội ngũ của bạn làm rõ phạm vi, rủi ro kỹ thuật và lộ trình triển khai phù hợp.',
+    'cta_button' => 'Liên hệ đội ngũ',
 ];

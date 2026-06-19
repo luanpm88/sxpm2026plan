@@ -80,15 +80,30 @@ return [
     'positioning_model_desc' => 'Assessment-driven architecture, modular rollout, governance-backed maintenance and upgrade path.',
 
     // Challenges Section
-    'challenges_title' => 'Common Operational Challenges in SME & FDI Factories',
-    'challenges_subtitle' => 'The framework is designed to address practical operational constraints typically seen in multi-line and multi-site manufacturing environments.',
+    'challenges_title' => 'Operational Bottlenecks in SME & FDI Factories',
+    'challenges_subtitle' => 'The framework addresses real operating constraints in multi-line, multi-shift, and multi-site manufacturing environments.',
 
-    'challenges_symptoms_heading' => 'Operational symptoms we frequently see',
-    'challenges_symptoms_text' => 'Production data often exists in fragmented forms: paper records, shift spreadsheets, independent device logs, and delayed reports. This creates gaps in decision making, quality traceability, and response time when incidents occur on the production floor.',
+    'challenges_kicker' => 'Current-state map',
+    'challenges_symptoms_heading' => 'Signals that appear before digitization',
+    'challenges_symptoms_text' => 'Production data often lives across paper records, shift spreadsheets, isolated device logs, and delayed reports. Without a shared operating source of truth, factory teams struggle to make timely decisions, trace quality issues, and respond quickly when exceptions occur on the production floor.',
+    'challenges_flow' => [
+        [
+            'icon' => 'edit_document',
+            'text' => 'Production shifts record activity through paper, Excel, or disconnected forms.',
+        ],
+        [
+            'icon' => 'sync_problem',
+            'text' => 'Warehouse, QC, production, and management teams work from different data versions.',
+        ],
+        [
+            'icon' => 'monitoring',
+            'text' => 'Management reporting arrives late, weakening coordination and exception handling.',
+        ],
+    ],
 
     'challenges_items' => [
         [
-            'title' => 'Limited real-time production visibility',
+            'title' => 'Limited near-real-time visibility',
             'description' => 'Supervisors receive status updates late, making line balancing and issue escalation reactive instead of proactive.',
         ],
         [
@@ -97,7 +112,7 @@ return [
         ],
         [
             'title' => 'Disconnected warehouse and production data',
-            'description' => 'Material availability, WIP status, and finished goods updates are not synchronized in one operating context.',
+            'description' => 'Material availability, WIP status, and finished-goods updates are not synchronized in one operational context.',
         ],
         [
             'title' => 'Inconsistent quality tracking',
@@ -150,7 +165,7 @@ return [
         'Multi-language support',
     ],
 
-    'framework_note' => 'This is a structured modular system approach, not one-off coding.',
+    'framework_note' => 'A modular foundation, not one-off coding.',
 
     'framework_tech_title' => 'Recommended Technology Datasheet',
     'framework_tech_subtitle' => 'The stack below is selected for scalable factory operations, API-driven device integration, and maintainable long-term ownership.',
@@ -276,8 +291,8 @@ return [
     ],
 
     // Implementation Section
-    'implementation_title' => 'Implementation Approach',
-    'implementation_subtitle' => 'Deployment follows a disciplined phase model to ensure operational stability, adoption, and measurable outcomes.',
+    'implementation_title' => 'Controlled Implementation Approach',
+    'implementation_subtitle' => 'Deployment follows phased governance to protect operational stability, control scope, and produce reviewable outcomes.',
 
     'implementation_steps' => [
         [
@@ -312,25 +327,27 @@ return [
         ],
     ],
 
-    'implementation_scrum_title' => 'SCRUM Delivery Flow for Industrial Projects',
+    'implementation_flow_kicker' => 'Delivery cadence',
+    'implementation_scrum_title' => 'Agile Delivery Cadence for Industrial Projects',
     'implementation_scrum_steps' => [
-        '1) Project Initiation: objectives, scope, governance model, milestone baseline.',
-        '2) Requirement Analysis & Design: functional/non-functional requirements, architecture and data model approval.',
-        '3) Sprint 0: environment setup, initial backlog, Definition of Done, integration sandbox preparation.',
-        '4) Sprint Execution: planning, daily standup, development, testing, review, retrospective.',
-        '5) Risk & Change Management: controlled backlog updates and impact assessment on timeline/cost.',
-        '6) Release & Maintenance: controlled deployment, hypercare, SLA support, iterative improvement.',
+        'Initiate objectives, scope, governance model, and milestone acceptance baseline.',
+        'Analyze functional and non-functional requirements, architecture, and data model.',
+        'Prepare Sprint 0: environments, initial backlog, Definition of Done, and integration sandbox.',
+        'Execute sprint cycles through planning, daily coordination, development, testing, review, and retrospective.',
+        'Manage change through controlled backlog updates and impact reviews for timeline, cost, and operations.',
+        'Release through controlled deployment, hypercare, SLA operation, and iterative improvement.',
     ],
 
-    'implementation_governance_title' => 'Sprint Governance and Roles',
+    'implementation_roles_kicker' => 'Governance roles',
+    'implementation_governance_title' => 'Project Responsibility Structure',
     'implementation_roles' => [
         [
             'title' => 'Product Owner',
             'description' => 'Owns priorities, acceptance criteria, and business alignment.',
         ],
         [
-            'title' => 'SCRUM Master',
-            'description' => 'Facilitates execution, removes blockers, protects team cadence.',
+            'title' => 'SCRUM Master / PM',
+            'description' => 'Facilitates execution, resolves blockers, and protects delivery cadence.',
         ],
         [
             'title' => 'System Analyst / Architect',
@@ -338,41 +355,43 @@ return [
         ],
         [
             'title' => 'Engineering Team',
-            'description' => 'Backend, frontend, mobile, QA, DevOps, integration specialists.',
+            'description' => 'Backend, frontend, mobile, QA, DevOps, and integration specialists when required.',
         ],
     ],
 
     // Why Us Section
-    'why_us_title' => 'Why HKIncotech for Manufacturing Solutions',
-    'why_us_subtitle' => 'Our delivery model emphasizes structure, traceability, and long-term operational resilience.',
+    'why_us_title' => 'Why HKIncotech Fits Manufacturing Systems',
+    'why_us_subtitle' => 'We approach factory software through engineering discipline, delivery governance, and long-term operating responsibility.',
+    'why_us_kicker' => 'Delivery capability',
 
     'why_us_items' => [
         [
             'title' => 'Structured engineering approach',
-            'description' => 'Architecture and implementation decisions are governed by process and system principles, not ad-hoc requests.',
+            'description' => 'Architecture and implementation decisions follow process, data, and system principles rather than isolated feature requests.',
         ],
         [
             'title' => 'Long-term system thinking',
-            'description' => 'Design choices are made for maintainability, expansion, and operational continuity across future phases.',
+            'description' => 'Design choices support maintainability, expansion, and stable operations across future phases.',
         ],
         [
             'title' => 'Scalable architecture design',
-            'description' => 'Modules and data models are structured to support additional plants, lines, and integration layers.',
+            'description' => 'Modules and data models are structured to support additional plants, production lines, and integration layers.',
         ],
         [
             'title' => 'Documentation discipline',
-            'description' => 'Process maps, specifications, and handover artifacts are managed as first-class delivery outputs.',
+            'description' => 'Process maps, specifications, and handover artifacts are managed as formal delivery outputs.',
         ],
         [
             'title' => 'SLA-based support model',
-            'description' => 'Post go-live support follows response and resolution commitments aligned with plant operations.',
+            'description' => 'Post-launch support is organized by impact level, response expectations, and SLA scope.',
         ],
         [
             'title' => 'Complex systems experience',
-            'description' => 'We apply proven engineering practices from building high-complexity, multi-module business systems.',
+            'description' => 'We apply experience from multi-module business systems with many roles and long-term operating requirements.',
         ],
     ],
 
+    'why_us_security_kicker' => 'Platform controls',
     'why_us_security_title' => 'Security & Compliance Baseline',
     'why_us_security_items' => [
         'TLS 1.2 / 1.3 enforced for data-in-transit security.',
@@ -382,6 +401,7 @@ return [
         'Optional alignment roadmap for ISO/IEC 27001, IEC 62443, and automotive quality compliance contexts.',
     ],
 
+    'why_us_delivery_kicker' => 'Execution team',
     'why_us_delivery_title' => 'Delivery Team Structure',
     'why_us_delivery_items' => [
         'PM / SCRUM Master for planning, governance, and stakeholder communication.',
@@ -391,70 +411,72 @@ return [
         'Integration specialists for IoT/PLC/ERP interfaces where required.',
     ],
 
-    'why_us_capability_title' => 'Capability Summary for FDI Stakeholders',
-    'why_us_capability_desc' => 'We combine factory workflow understanding, engineering discipline, and structured governance to deliver a maintainable operating framework. Our approach is designed for controlled deployment, measurable outcomes, and long-term expansion, rather than ad-hoc feature delivery.',
+    'why_us_capability_title' => 'Capability Profile for Factory Leadership',
+    'why_us_capability_desc' => 'HKIncotech combines factory process understanding, custom software engineering capability, and structured delivery governance. The goal is to build an operating platform that can be maintained, accepted, and expanded over time, rather than delivering disconnected features.',
 
     // Roadmap Section
-    'roadmap_title' => 'Solution Roadmap',
-    'roadmap_subtitle' => 'A phased roadmap to evolve from operational control to continuous performance optimization.',
+    'roadmap_title' => 'Implementation & Expansion Roadmap',
+    'roadmap_subtitle' => 'A phased path that moves the factory from operational control to data-led performance improvement.',
 
     'roadmap_phases' => [
         [
-            'title' => 'Phase 1 — Foundation & Core Modules',
-            'description' => 'Establish governance, user roles, core workflows, and priority production and inventory modules.',
+            'title' => 'Foundation & core modules',
+            'description' => 'Establish governance, user roles, core workflows, and priority modules for production, warehouse, and quality.',
         ],
         [
-            'title' => 'Phase 2 — Integration & Automation',
-            'description' => 'Integrate supporting systems, reduce manual handoffs, and standardize cross-department workflows.',
+            'title' => 'Integration & automation',
+            'description' => 'Connect related systems, reduce manual handoffs, and standardize cross-department workflows.',
         ],
         [
-            'title' => 'Phase 3 — Data Intelligence & Optimization',
+            'title' => 'Data & optimization',
             'description' => 'Expand analytics, improve decision velocity, and continuously optimize operational and quality outcomes.',
         ],
     ],
 
-    'roadmap_note' => 'Our approach builds toward a continuously improving manufacturing platform over time.',
+    'roadmap_note' => 'This approach helps the factory build a continuously improving platform rather than a system that only answers short-term requirements.',
 
-    'roadmap_infrastructure_title' => 'Infrastructure Baseline (Hardware + Software)',
+    'roadmap_infrastructure_kicker' => 'Operating foundation',
+    'roadmap_infrastructure_title' => 'Software Infrastructure Baseline',
     'roadmap_infrastructure_items' => [
         [
-            'title' => 'Central Server',
-            'description' => 'Linux-based application hosting for Laravel backend and API services.',
+            'title' => 'Application server',
+            'description' => 'Linux environment for backend services, APIs, workers, and integration services.',
         ],
         [
             'title' => 'Database Tier',
-            'description' => 'MySQL/MariaDB with backup policy and role-separated access controls.',
+            'description' => 'MySQL/MariaDB with backup policy, authorization, and role-separated access controls.',
         ],
         [
-            'title' => 'Shopfloor Endpoints',
-            'description' => 'Android/iOS tablets and workstation terminals across production checkpoints.',
+            'title' => 'Shopfloor endpoints',
+            'description' => 'Android/iOS tablets, workstation terminals, and data-entry devices across production checkpoints.',
         ],
         [
             'title' => 'Industrial Network',
-            'description' => 'Managed switch, secure Wi-Fi, segmented factory network, VPN for remote access.',
+            'description' => 'Managed switches, secure Wi-Fi, segmented factory network, and VPN for remote access.',
         ],
         [
             'title' => 'IoT / PLC Connectivity',
-            'description' => 'OPC-UA/Modbus integration via gateway or middleware service.',
+            'description' => 'OPC-UA/Modbus integration through gateways or middleware aligned with the current machine estate.',
         ],
         [
             'title' => 'Storage & DR',
-            'description' => 'NAS/cloud backup, periodic recovery drills, and data retention governance.',
+            'description' => 'NAS/cloud backups, periodic recovery drills, and data-retention governance.',
         ],
     ],
 
+    'roadmap_hardware_kicker' => 'Device reference',
     'roadmap_hardware_title' => 'Hardware Reference Configuration',
     'roadmap_hardware_items' => [
         [
-            'title' => 'Web/App Server',
+            'title' => 'Web/application server',
             'description' => 'Reference: 8+ cores CPU, 32GB RAM ECC, enterprise SSD RAID 1/10, Linux server.',
         ],
         [
-            'title' => 'Database Server',
+            'title' => 'Database server',
             'description' => 'Reference: 16+ cores class CPU, 64GB RAM ECC, enterprise SSD RAID 5/10.',
         ],
         [
-            'title' => 'Network Layer',
+            'title' => 'Network layer',
             'description' => 'Managed switch, industrial Wi-Fi, firewall with VPN/IPSec, segmented production network.',
         ],
         [
@@ -462,15 +484,16 @@ return [
             'description' => 'Starting point: 5TB+, separated transaction/log/backup volumes, NAS or cloud backup extension.',
         ],
         [
-            'title' => 'Shopfloor Devices',
+            'title' => 'Shopfloor devices',
             'description' => 'Android/iOS tablets 10"+, barcode scanners (1D/2D), workstation terminals, industrial printers.',
         ],
         [
-            'title' => 'Power & Continuity',
+            'title' => 'Power & continuity',
             'description' => 'UPS backup for server/network layer and periodic DR readiness checks.',
         ],
     ],
 
+    'roadmap_risk_kicker' => 'Risk governance',
     'roadmap_risk_title' => 'Risk Management Baseline',
     'roadmap_risk_items' => [
         [
@@ -491,7 +514,7 @@ return [
         ],
         [
             'title' => 'User adoption gap',
-            'description' => 'Reduced by role-based training, SOP updates, and on-site hypercare in go-live stage.',
+            'description' => 'Reduced by role-based training, SOP updates, and hypercare during launch.',
         ],
         [
             'title' => 'Timeline and budget overrun',
@@ -499,12 +522,12 @@ return [
         ],
     ],
 
-    'roadmap_targets' => 'Operational Targets Reference: enterprise-grade availability, scalable architecture for additional devices and production lines, and scheduled maintenance with monthly health checks for infrastructure and application layers.',
+    'roadmap_targets' => 'Operating target reference: enterprise-grade availability, scalable architecture for additional devices and production lines, and scheduled maintenance for infrastructure and application layers.',
 
     // CTA Section
-    'cta_title' => 'Start Your Factory Digitalization Journey',
-    'cta_description' => 'Build a structured operational foundation today and scale with confidence across future manufacturing phases.',
-    'cta_button' => 'Book a Consultation',
+    'cta_title' => 'Discuss a Factory Digitization Roadmap',
+    'cta_description' => 'HKIncotech can work with your operations team to assess the current state, identify priority scope, and propose an implementation roadmap aligned with the way your factory actually operates.',
+    'cta_button' => 'Discuss the roadmap',
 
     // Solution Packages Section
     'packages_title' => 'Solution Packages & Budget Reference',
@@ -543,6 +566,7 @@ return [
         ],
     ],
 
+    'maintenance_kicker' => 'After go-live',
     'maintenance_title' => 'Maintenance & Support Model',
     'maintenance_items' => [
         'Default maintenance package for platform stability and incident handling.',
@@ -552,6 +576,7 @@ return [
         'Periodic performance monitoring, cache maintenance, and optimization checks.',
     ],
 
+    'backup_kicker' => 'Operational continuity',
     'backup_title' => 'Backup & Recovery Baseline',
     'backup_items' => [
         'Automated system backup every 2 hours (server-side checkpoint).',
@@ -561,6 +586,7 @@ return [
         'Contingency activation reference: temporary recovery environment under ~60 minutes in severe incidents.',
     ],
 
+    'commercial_notes_kicker' => 'Commercial principles',
     'commercial_notes_title' => 'Important Commercial Notes',
     'commercial_notes_items' => [
         'All budget values are advisory ranges for planning and procurement preparation.',

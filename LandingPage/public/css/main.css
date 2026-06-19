@@ -1566,6 +1566,24 @@ nav.mobile-open {
     gap: 1rem;
 }
 
+@media (min-width: 992px) {
+    .solution-module-grid--center-five {
+        grid-template-columns: repeat(6, minmax(0, 1fr));
+    }
+
+    .solution-module-grid--center-five > .solution-module-card {
+        grid-column: span 2;
+    }
+
+    .solution-module-grid--center-five > .solution-module-card:nth-last-child(2) {
+        grid-column: 2 / span 2;
+    }
+
+    .solution-module-grid--center-five > .solution-module-card:last-child {
+        grid-column: 4 / span 2;
+    }
+}
+
 .shopfloor-matrix {
     margin-top: 1.5rem;
     background: var(--surface);
@@ -1595,6 +1613,501 @@ nav.mobile-open {
     color: var(--text-gray);
     font-size: 0.88rem;
     line-height: 1.45;
+}
+
+.solution-section--surface {
+    background: var(--surface);
+}
+
+.solution-section--muted {
+    background: var(--secondary-bg);
+}
+
+.solution-pain-map {
+    display: grid;
+    grid-template-columns: minmax(280px, 0.82fr) minmax(0, 1.18fr);
+    gap: 1.25rem;
+    align-items: start;
+}
+
+.solution-pain-map__narrative,
+.solution-flow-panel,
+.solution-role-panel,
+.solution-proof-feature,
+.solution-assurance-panel,
+.solution-baseline-panel,
+.solution-note-panel {
+    border: 1px solid var(--border);
+    border-radius: var(--card-radius);
+    background: var(--surface);
+    padding: 1.45rem;
+}
+
+.solution-pain-map__narrative {
+    position: relative;
+    overflow: hidden;
+}
+
+.solution-kicker {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.45rem;
+    color: var(--primary);
+    font-size: 0.78rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    margin-bottom: 0.75rem;
+}
+
+.solution-pain-map__narrative h3,
+.solution-flow-panel h3,
+.solution-role-panel h3,
+.solution-assurance-panel h3,
+.solution-baseline-panel h3,
+.solution-note-panel h3,
+.solution-cta-panel h2 {
+    color: var(--text-dark);
+    font-weight: 800;
+    letter-spacing: 0;
+    margin-bottom: 0.7rem;
+}
+
+.solution-pain-map__narrative h3 {
+    font-size: 1.2rem;
+}
+
+.solution-pain-map__narrative p,
+.solution-flow-panel p,
+.solution-role-panel p,
+.solution-assurance-panel p,
+.solution-baseline-panel p,
+.solution-note-panel p {
+    color: var(--text-gray);
+    line-height: 1.75;
+    margin: 0;
+}
+
+.solution-pain-flow {
+    display: grid;
+    gap: 0.7rem;
+    margin-top: 1.25rem;
+}
+
+.solution-pain-flow__item {
+    display: flex;
+    gap: 0.7rem;
+    align-items: flex-start;
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    background: var(--secondary-bg);
+    padding: 0.8rem;
+    color: var(--text-gray);
+    font-size: 0.88rem;
+    line-height: 1.45;
+}
+
+.solution-pain-flow__item .material-symbols-rounded {
+    color: var(--primary);
+    font-size: 1.1rem;
+    margin-top: 0.08rem;
+}
+
+.solution-pain-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1rem;
+}
+
+.solution-pain-card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--card-radius);
+    padding: 1.2rem;
+    min-height: 100%;
+}
+
+.solution-pain-card__icon,
+.solution-principle-card__icon {
+    width: 36px;
+    height: 36px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    background: var(--primary-subtle);
+    color: var(--primary);
+    margin-bottom: 0.8rem;
+}
+
+.solution-pain-card h3,
+.solution-principle-card h3,
+.solution-roadmap-stage h3,
+.solution-package-card h3 {
+    color: var(--text-dark);
+    font-size: 1rem;
+    font-weight: 800;
+    line-height: 1.35;
+    letter-spacing: 0;
+    margin-bottom: 0.5rem;
+}
+
+.solution-pain-card p,
+.solution-principle-card p,
+.solution-roadmap-stage p,
+.solution-package-card p {
+    color: var(--text-gray);
+    line-height: 1.68;
+    margin: 0;
+}
+
+.solution-implementation-grid {
+    display: grid;
+    grid-template-columns: minmax(0, 1.08fr) minmax(300px, 0.92fr);
+    gap: 1.35rem;
+    align-items: start;
+}
+
+.solution-timeline {
+    position: relative;
+    display: grid;
+    gap: 0.85rem;
+}
+
+.solution-timeline::before {
+    content: "";
+    position: absolute;
+    top: 1.1rem;
+    bottom: 1.1rem;
+    left: 1.1rem;
+    width: 2px;
+    background: var(--border);
+}
+
+.solution-timeline__item {
+    position: relative;
+    display: grid;
+    grid-template-columns: auto minmax(0, 1fr);
+    gap: 0.9rem;
+    align-items: start;
+}
+
+.solution-timeline__num {
+    width: 2.2rem;
+    height: 2.2rem;
+    border-radius: 999px;
+    background: var(--button-primary-bg);
+    color: var(--button-primary-text);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 800;
+    font-size: 0.86rem;
+    z-index: 1;
+}
+
+.solution-timeline__content {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--card-radius);
+    padding: 1rem 1.1rem;
+}
+
+.solution-timeline__content h3 {
+    color: var(--text-dark);
+    font-size: 0.98rem;
+    font-weight: 800;
+    margin-bottom: 0.35rem;
+}
+
+.solution-timeline__content p {
+    color: var(--text-gray);
+    line-height: 1.62;
+    margin: 0;
+    font-size: 0.9rem;
+}
+
+.solution-delivery-stack {
+    display: grid;
+    gap: 1rem;
+}
+
+.solution-flow-list,
+.solution-role-grid,
+.solution-principle-grid,
+.solution-assurance-grid,
+.solution-roadmap-rail,
+.solution-baseline-grid,
+.solution-mini-grid,
+.solution-risk-grid,
+.solution-packages-grid,
+.solution-support-grid {
+    display: grid;
+    gap: 1rem;
+}
+
+.solution-flow-list {
+    counter-reset: delivery-flow;
+    gap: 0.65rem;
+}
+
+.solution-flow-list li {
+    list-style: none;
+    display: grid;
+    grid-template-columns: auto minmax(0, 1fr);
+    gap: 0.7rem;
+    align-items: start;
+    color: var(--text-gray);
+    line-height: 1.55;
+}
+
+.solution-flow-list li::before {
+    counter-increment: delivery-flow;
+    content: counter(delivery-flow, decimal-leading-zero);
+    color: var(--primary);
+    font-size: 0.78rem;
+    font-weight: 800;
+    margin-top: 0.1rem;
+}
+
+.solution-role-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.solution-role-card,
+.solution-mini-card,
+.solution-risk-card {
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    background: var(--secondary-bg);
+    padding: 0.9rem;
+}
+
+.solution-role-card strong,
+.solution-mini-card strong,
+.solution-risk-card strong {
+    display: block;
+    color: var(--text-dark);
+    font-size: 0.9rem;
+    margin-bottom: 0.25rem;
+}
+
+.solution-role-card span,
+.solution-mini-card span,
+.solution-risk-card span {
+    color: var(--text-gray);
+    display: block;
+    font-size: 0.86rem;
+    line-height: 1.5;
+}
+
+.solution-proof-layout {
+    display: grid;
+    grid-template-columns: minmax(280px, 0.9fr) minmax(0, 1.1fr);
+    gap: 1.25rem;
+    align-items: start;
+}
+
+.solution-proof-feature {
+    background: var(--contrast-panel-bg);
+    border-color: var(--contrast-panel-border);
+    color: var(--contrast-panel-text);
+}
+
+.solution-proof-feature h3,
+.solution-proof-feature p {
+    color: inherit;
+}
+
+.solution-proof-feature .solution-kicker {
+    color: var(--contrast-panel-text);
+    opacity: 0.82;
+}
+
+.solution-proof-feature p {
+    opacity: 0.92;
+}
+
+.solution-proof-feature__icon {
+    width: 42px;
+    height: 42px;
+    border-radius: 12px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--contrast-action-bg);
+    color: var(--contrast-action-text);
+    margin-bottom: 1rem;
+}
+
+.solution-principle-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.solution-principle-card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--card-radius);
+    padding: 1.1rem;
+}
+
+.solution-assurance-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    margin-top: 1.25rem;
+}
+
+.solution-check-list {
+    display: grid;
+    gap: 0.6rem;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.solution-check-list li {
+    display: grid;
+    grid-template-columns: auto minmax(0, 1fr);
+    gap: 0.55rem;
+    color: var(--text-gray);
+    line-height: 1.55;
+}
+
+.solution-check-list li::before {
+    content: "";
+    width: 0.42rem;
+    height: 0.42rem;
+    border-radius: 999px;
+    background: var(--primary);
+    margin-top: 0.58em;
+}
+
+.solution-roadmap-rail {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    position: relative;
+}
+
+.solution-roadmap-stage {
+    position: relative;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--card-radius);
+    padding: 1.3rem;
+}
+
+.solution-roadmap-stage__num {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 2.15rem;
+    height: 2.15rem;
+    border-radius: 10px;
+    background: var(--button-primary-bg);
+    color: var(--button-primary-text);
+    font-weight: 800;
+    margin-bottom: 0.85rem;
+}
+
+.solution-roadmap-note {
+    margin-top: 1rem;
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    background: var(--primary-subtle);
+    color: var(--text-dark);
+    font-weight: 700;
+    line-height: 1.6;
+    padding: 1rem 1.1rem;
+}
+
+.solution-baseline-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    margin-top: 1.5rem;
+}
+
+.solution-mini-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.solution-risk-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.solution-note-panel {
+    margin-top: 1rem;
+    background: var(--secondary-bg);
+}
+
+.solution-note-panel strong {
+    color: var(--text-dark);
+    line-height: 1.7;
+}
+
+.solution-cta-panel {
+    background: var(--contrast-panel-bg);
+    color: var(--contrast-panel-text);
+    border: 1px solid var(--contrast-panel-border);
+    border-radius: var(--card-radius);
+    padding: 2.6rem 2rem;
+    text-align: center;
+}
+
+.solution-cta-panel h2 {
+    color: inherit;
+    font-size: 1.8rem;
+}
+
+.solution-cta-panel p {
+    color: inherit;
+    opacity: 0.92;
+    font-size: 1rem;
+    line-height: 1.7;
+    margin: 0 auto 1.4rem;
+    max-width: 760px;
+}
+
+.solution-cta-panel__button {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    background: var(--contrast-action-bg);
+    color: var(--contrast-action-text);
+    border-radius: 8px;
+    font-weight: 800;
+    text-decoration: none;
+    padding: 0.9rem 1.35rem;
+}
+
+.solution-commercial {
+    margin-top: 2rem;
+}
+
+.solution-packages-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.solution-package-card {
+    background: var(--secondary-bg);
+    border: 1px solid var(--border);
+    border-radius: var(--card-radius);
+    padding: 1.35rem;
+}
+
+.solution-package-card__price {
+    color: var(--primary);
+    font-weight: 800;
+    margin-bottom: 0.75rem;
+}
+
+.solution-package-card ul {
+    display: grid;
+    gap: 0.55rem;
+    color: var(--text-gray);
+    line-height: 1.55;
+    margin: 0;
+    padding-left: 1.1rem;
+}
+
+.solution-support-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    margin-top: 1.25rem;
 }
 
 /* Bento Grid (Notion-HK style) */
@@ -2119,13 +2632,20 @@ div[style*="border-radius: 16px"] {
     .solution-hero__grid,
     .solution-context,
     .solution-framework,
-    .shopfloor-matrix__grid {
+    .shopfloor-matrix__grid,
+    .solution-pain-map,
+    .solution-implementation-grid,
+    .solution-proof-layout,
+    .solution-baseline-grid,
+    .solution-support-grid {
         grid-template-columns: 1fr;
     }
 
     .solution-card-grid,
     .solution-module-grid,
-    .shopfloor-matrix__items {
+    .shopfloor-matrix__items,
+    .solution-risk-grid,
+    .solution-packages-grid {
         grid-template-columns: repeat(2, minmax(0, 1fr));
     }
 }
@@ -2245,14 +2765,46 @@ div[style*="border-radius: 16px"] {
     .solution-card-grid,
     .solution-module-grid,
     .factory-map__legend,
-    .shopfloor-matrix__items {
+    .shopfloor-matrix__items,
+    .solution-pain-grid,
+    .solution-role-grid,
+    .solution-principle-grid,
+    .solution-assurance-grid,
+    .solution-roadmap-rail,
+    .solution-mini-grid,
+    .solution-risk-grid,
+    .solution-packages-grid {
         grid-template-columns: 1fr;
     }
 
     .solution-context,
     .solution-panel,
-    .shopfloor-matrix {
+    .shopfloor-matrix,
+    .solution-pain-map__narrative,
+    .solution-flow-panel,
+    .solution-role-panel,
+    .solution-proof-feature,
+    .solution-assurance-panel,
+    .solution-baseline-panel,
+    .solution-note-panel {
         padding: 1.25rem;
+    }
+
+    .solution-timeline::before {
+        left: 1rem;
+    }
+
+    .solution-timeline__num {
+        width: 2rem;
+        height: 2rem;
+    }
+
+    .solution-cta-panel {
+        padding: 2rem 1.25rem;
+    }
+
+    .solution-cta-panel h2 {
+        font-size: 1.45rem;
     }
 
     .container-v5 {

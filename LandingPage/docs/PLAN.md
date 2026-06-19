@@ -132,9 +132,10 @@ Raise `demo.hkincotech.com` from a polished marketing template into a senior, bo
 
 #### Loop 3 — Section Zoom Review
 
-- [ ] Crop every high-risk section at desktop.
-- [ ] Check heading scale, line length, card rhythm, icon size, diagram clarity.
-- [ ] Fix spacing gaps and awkward orphan layouts.
+- [x] Crop/review high-risk SME sections at desktop.
+- [x] Check heading scale, line length, card rhythm, icon size, diagram clarity.
+- [x] Fix spacing gaps and awkward orphan layouts found in the SME framework/module area.
+- [ ] Re-run full screenshot pack after final copy/layout pass.
 
 #### Loop 4 — Dark/Mobile/Language Review
 
@@ -143,12 +144,21 @@ Raise `demo.hkincotech.com` from a polished marketing template into a senior, bo
 - [ ] Check language dropdown behavior and scroll preservation.
 - [ ] Fix all remaining issues before deploy.
 
+#### Loop 5 — Vietnamese + English Voice Review
+
+- [x] Vietnamese pass 1: replace literal translations and low-trust marketing phrases such as "Nghe Quen Không?", "Đối tác triển khai tin cậy", "Doanh nghiệp trên 10+ ngành", "go-live", "dashboard", "backend/mobile" in prose.
+- [x] Vietnamese pass 2: read priority sections for executive tone, especially SME Manufacturing, Home, Services, SCRUM, Pricing, About, Case Studies, HKSpace, and Contact.
+- [x] English pass 1: remove product-marketing language such as "free consultation", "why 50+ enterprises trust us", "never rewrite again", "pass any audit", "competitors ship", and "walk away anytime".
+- [x] English pass 2: remove unsupported/fabricated prestige claims, including fake leadership bios and over-specific case-study/testimonial claims.
+- [ ] Final browser review of rendered EN/VI pages for line breaks, CTA tone, and mixed-language leftovers.
+
 ## Progress Log
 
 - **2026-06-17:** Plan created. Starting audit + foundation fixes.
 - **2026-06-18:** Full baseline audit captured: 60 screenshots under `/tmp/hkshots/audit-full-baseline` (light/dark/mobile, EN/VI, 10 scoped pages).
 - **2026-06-18:** Implemented global contrast/button tokens, globe language selector, raw-white usage cleanup, compact Services hero, Services delivery diagram, SME hero/process diagram, SME framework diagram, SME module cards, and VI/EN copy pass. Captured audit pass 1 and pass 2 under `/tmp/hkshots/audit-redesign-pass1` and `/tmp/hkshots/audit-redesign-pass2`.
 - **2026-06-18:** Deployed commit `4f72306` to `https://demo.hkincotech.com`; verified `/en`, `/vi`, `/vi/services`, and `/vi/solutions/sme-manufacturing` return HTTP 200.
+- **2026-06-18:** Continued post-deploy audit: centered the 5-card SME technology grid as a 3+2 desktop layout, changed the logo SVG inner wordmark to the primary navy, rebuilt lower SME sections with reusable component classes, and ran deeper Vietnamese/English voice passes across live language files.
 
 ## Audit Findings
 
@@ -169,7 +179,10 @@ Raise `demo.hkincotech.com` from a polished marketing template into a senior, bo
 - **Closed:** Sprint cycle SVG replaced with a delivery operating model diagram using localized labels.
 - **Closed:** SME Manufacturing top sections now include a factory operations map, layer framework diagram, module icons/cards, and revised VI/EN executive copy.
 - **Closed:** Dark home CTA bug found in pass 1 fixed by moving shared CTA banners to `--contrast-panel-bg`.
-- **Residual:** Lower SME sections still contain dense content blocks. They are readable after token cleanup, but a future pass should convert roadmap/implementation/why-us sections into richer timeline and proof visuals.
+- **Closed:** SME lower sections now use richer reusable layouts for pain map, implementation timeline, roles, proof, roadmap, risk, support, and CTA sections.
+- **Closed:** SME framework technology grid now centers five cards as 3+2 on desktop instead of leaving the final card orphaned on the left.
+- **Closed:** Logo SVG light-mode mark is normalized to the same primary navy; dark-mode filter still produces the required white treatment.
+- **In progress:** Final browser screenshot pass after copy/layout updates.
 
 ## Deployment Gate
 
@@ -181,3 +194,4 @@ Deploy only when:
 - [x] `rg` confirms no flag-only language UI remains.
 - [x] Dark mode no longer relies on broad white-background rescue rules as the primary fix.
 - [x] `LandingPage/deploy.sh` completes successfully.
+- [ ] Latest post-deploy fixes are committed, pushed, deployed, and verified on `demo.hkincotech.com`.

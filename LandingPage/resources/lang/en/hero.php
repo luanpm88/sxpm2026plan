@@ -3,8 +3,8 @@
 return [
     'title_line1'  => 'Enterprise Software',
     'title_line2'  => 'Engineering Partner',
-    'description'  => 'For startups shipping their first product, scale-ups hitting growth ceilings, and enterprises replacing legacy systems. 100+ engineers. ISO 27001 & SOC 2 certified. Your dedicated team from week one.',
-    'cta_primary'  => 'Book a Free Technical Consultation',
+    'description'  => 'For organizations building custom systems, modernizing legacy workflows, or scaling digital platforms. Hoang Khang brings engineering, architecture, QA, DevOps, and long-term ownership into one delivery model.',
+    'cta_primary'  => 'Discuss Technical Requirements',
     'cta_secondary'=> 'See How We Work',
     'cta_microcopy'=> 'Technical scope discussion. Practical solution proposal for the real operating context.',
     'stat1_value'  => '100+',
@@ -14,8 +14,8 @@ return [
     'stat3_value'  => 'Enterprise',
     'stat3_label'  => 'Security & Compliance',
 
-    'social_proof_label' => 'Enterprise clients across 10+ industries',
-    'social_proof_source' => 'Trusted delivery partner',
+    'social_proof_label' => 'Software delivery experience across multiple industries',
+    'social_proof_source' => 'Engineering partner for long-term systems',
 
     // Industries served (replacing fake logos)
     'industries_label' => 'Trusted across industries',

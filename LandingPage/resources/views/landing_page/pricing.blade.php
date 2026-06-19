@@ -19,7 +19,7 @@
     <section style="background: var(--surface);">
         <div class="container-v5">
             <div class="section-header">
-                <span class="section-label">PRICING PLANS</span>
+                <span class="section-label">{{ __('pricing.section_plans') }}</span>
                 <h2 class="section-title">{{ __('pricing.plans_title') }}</h2>
                 <p class="section-subtitle">{{ __('pricing.plans_subtitle') }}</p>
             </div>
@@ -91,7 +91,7 @@
     <section style="background: var(--secondary-bg);">
         <div class="container-v5">
             <div class="section-header">
-                <span class="section-label">WHAT'S INCLUDED</span>
+                <span class="section-label">{{ __('pricing.section_included') }}</span>
                 <h2 class="section-title">{{ __('pricing.services_title') }}</h2>
                 <p class="section-subtitle">{{ __('pricing.services_subtitle') }}</p>
             </div>
@@ -122,7 +122,7 @@
     <section style="background: var(--surface);">
         <div class="container-v5">
             <div class="section-header">
-                <span class="section-label">COMPARISON</span>
+                <span class="section-label">{{ __('pricing.section_comparison') }}</span>
                 <h2 class="section-title">{{ __('pricing.comparison_title') }}</h2>
                 <p class="section-subtitle">{{ __('pricing.comparison_subtitle') }}</p>
             </div>
@@ -160,7 +160,7 @@
     <section style="background: var(--secondary-bg);">
         <div class="container-v5">
             <div class="section-header">
-                <span class="section-label">FREQUENTLY ASKED</span>
+                <span class="section-label">{{ __('pricing.section_faq') }}</span>
                 <h2 class="section-title">{{ __('pricing.faq_title') }}</h2>
                 <p class="section-subtitle">{{ __('pricing.faq_subtitle') }}</p>
             </div>

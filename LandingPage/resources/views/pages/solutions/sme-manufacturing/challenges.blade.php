@@ -1,24 +1,52 @@
-<section style="background: var(--secondary-bg);">
+<section class="solution-section--muted">
     <div class="container-v5">
         <div class="section-header">
             <h2 class="section-title">{{ __('sme_manufacturing.challenges_title') }}</h2>
             <p class="section-subtitle">{{ __('sme_manufacturing.challenges_subtitle') }}</p>
         </div>
 
-        <div style="background: var(--surface); border: 1px solid var(--border); border-radius: var(--card-radius); padding: 1.5rem; margin-bottom: 1.25rem;">
-            <h3 style="font-size: 1.1rem; font-weight: 700; color: var(--text-dark); margin-bottom: 0.5rem;">{{ __('sme_manufacturing.challenges_symptoms_heading') }}</h3>
-            <p style="margin: 0; color: var(--text-gray); line-height: 1.8;">
-                {{ __('sme_manufacturing.challenges_symptoms_text') }}
-            </p>
-        </div>
+        @php
+            $challengeIcons = [
+                'visibility',
+                'table_chart',
+                'sync_problem',
+                'fact_check',
+                'assignment',
+                'policy',
+                'language',
+            ];
+        @endphp
 
-        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1rem;">
-            @foreach(__('sme_manufacturing.challenges_items') as $challenge)
-                <div style="background: var(--surface); border: 1px solid var(--border); border-radius: var(--card-radius); padding: 1.25rem;">
-                    <h3 style="font-size: 1rem; margin-bottom: 0.4rem;">{{ $challenge['title'] }}</h3>
-                    <p style="margin: 0; color: var(--text-gray);">{{ $challenge['description'] }}</p>
+        <div class="solution-pain-map">
+            <aside class="solution-pain-map__narrative">
+                <div class="solution-kicker">
+                    <span class="material-symbols-rounded" aria-hidden="true">troubleshoot</span>
+                    {{ __('sme_manufacturing.challenges_kicker') }}
                 </div>
-            @endforeach
+                <h3>{{ __('sme_manufacturing.challenges_symptoms_heading') }}</h3>
+                <p>{{ __('sme_manufacturing.challenges_symptoms_text') }}</p>
+
+                <div class="solution-pain-flow">
+                    @foreach(__('sme_manufacturing.challenges_flow') as $item)
+                        <div class="solution-pain-flow__item">
+                            <span class="material-symbols-rounded" aria-hidden="true">{{ $item['icon'] }}</span>
+                            <span>{{ $item['text'] }}</span>
+                        </div>
+                    @endforeach
+                </div>
+            </aside>
+
+            <div class="solution-pain-grid">
+                @foreach(__('sme_manufacturing.challenges_items') as $challenge)
+                    <article class="solution-pain-card">
+                        <div class="solution-pain-card__icon">
+                            <span class="material-symbols-rounded" aria-hidden="true">{{ $challengeIcons[$loop->index] ?? 'error' }}</span>
+                        </div>
+                        <h3>{{ $challenge['title'] }}</h3>
+                        <p>{{ $challenge['description'] }}</p>
+                    </article>
+                @endforeach
+            </div>
         </div>
     </div>
 </section>

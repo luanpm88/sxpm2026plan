@@ -3,10 +3,14 @@
 return [
     'hero_title' => 'Investment Plans',
     'hero_title_highlight' => 'Tailored to Your Needs',
-    'hero_desc' => 'Every engagement is unique. Pricing is structured around your scope, complexity, and delivery timeline — no rigid packages, only solutions that fit your actual requirements.',
+    'hero_desc' => 'Every software engagement has its own scope, risk profile, and operating requirements. Budget is shaped around the real context, not a rigid package.',
+    'section_plans' => 'REFERENCE PLANS',
+    'section_included' => 'DELIVERY FOUNDATION',
+    'section_comparison' => 'SCOPE COMPARISON',
+    'section_faq' => 'FREQUENTLY ASKED',
 
     'plans_title' => 'Price Reference Guide',
-    'plans_subtitle' => 'Prices below are reference only. Actual pricing depends on project-specific requirements',
+    'plans_subtitle' => 'The ranges below are directional. Actual pricing depends on scope, complexity, timeline, team model, and support requirements.',
 
     'plans' => [
         [
@@ -14,15 +18,15 @@ return [
             'price_from' => '$6,300',
             'price_to' => '$12,000',
             'period' => 'Typical monthly investment',
-            'desc' => 'MVP projects, prototypes, small web apps',
+            'desc' => 'First releases, validation products, small web applications, or an initial business module',
             'highlighted' => false,
             'features' => [
-                '1-2 Full Stack Developer',
-                'Agile/Sprint Based (2-week sprints)',
-                'Core Features Development',
-                'Weekly Status Updates',
-                'Git Repo & Documentation',
-                'Basic Performance Optimization',
+                '1-2 full-stack engineers',
+                'Sprint-based delivery',
+                'Core feature development',
+                'Weekly status updates',
+                'Source repository and handover documentation',
+                'Baseline performance optimization',
                 'Post-launch Support (30 days)'
             ]
         ],
@@ -31,18 +35,18 @@ return [
             'price_from' => '$12,000',
             'price_to' => '$25,000',
             'period' => 'Typical monthly investment',
-            'desc' => 'Medium-sized apps, SaaS, platforms',
+            'desc' => 'Mid-sized applications, SaaS platforms, or systems with several business modules',
             'highlighted' => true,
             'features' => [
-                '2-4 Full Stack Developers',
-                'Dedicated Project Manager',
-                'Advanced Architecture Design',
-                'Bi-weekly Demo & Review',
-                'Custom API Development',
-                'Performance Optimization',
-                'Security Best Practices',
-                '90 Days Post-launch Support',
-                'Agile Ceremonies'
+                '2-4 full-stack engineers',
+                'Dedicated project manager',
+                'Advanced architecture design',
+                'Regular demo and review rhythm',
+                'Custom API development',
+                'Performance optimization',
+                'Security practices aligned to project scope',
+                '90 days post-launch support',
+                'Agile governance rhythm'
             ]
         ],
         [
@@ -53,15 +57,15 @@ return [
             'desc' => 'Complex systems, ERP, multi-module platforms',
             'highlighted' => false,
             'features' => [
-                '4-8+ Full Stack Developers',
-                'Dedicated Team & Scrum Master',
-                'Enterprise-Grade Architecture',
-                'Daily Standups & Code Reviews',
-                'Microservices / Advanced Design',
-                'Security & Compliance Audit',
-                'Advanced Analytics & Reporting',
-                '6-12 Months Support',
-                'Flexible Scaling'
+                '4-8+ full-stack engineers',
+                'Dedicated team and Scrum Master',
+                'Enterprise architecture',
+                'Daily coordination and code reviews',
+                'Microservices or advanced system design',
+                'Security and compliance review',
+                'Advanced analytics and reporting',
+                '6-12 months support',
+                'Stage-based team scaling'
             ]
         ]
     ],
@@ -69,18 +73,18 @@ return [
     'label_popular' => 'Most Popular',
     'label_to' => 'to',
     'label_per_month' => 'per month, varies by scope',
-    'plan_cta' => 'Get Pricing Consultation',
+    'plan_cta' => 'Request Pricing Guidance',
 
-    'services_title' => 'Included in Every Project',
-    'services_subtitle' => 'Core services included in all projects',
+    'services_title' => 'Delivery Foundation in Every Project',
+    'services_subtitle' => 'Core engineering practices required for clear handover, operation, and future expansion.',
 
     'core_services' => [
-        ['icon' => 'computer', 'title' => 'Modern Tech Stack', 'desc' => 'React, Node.js, AWS, TypeScript, Python, latest technologies.'],
-        ['icon' => 'security', 'title' => 'Security First', 'desc' => 'SSL, encryption, security audit, compliance standards.'],
-        ['icon' => 'api', 'title' => 'Clean APIs', 'desc' => 'RESTful APIs, well-documented, scalable, production-ready.'],
-        ['icon' => 'storage', 'title' => 'Cloud Infrastructure', 'desc' => 'AWS/GCP deployment, CDN, auto-scaling, automated backups.'],
-        ['icon' => 'analytics', 'title' => 'Performance Tracking', 'desc' => 'Real-time monitoring, alert systems, performance analytics.'],
-        ['icon' => 'assignment', 'title' => 'Full Documentation', 'desc' => 'Code docs, API docs, deployment guides, best practices.'],
+        ['icon' => 'computer', 'title' => 'Fit-for-purpose technology', 'desc' => 'Technology is selected according to architecture, operating team, and growth requirements.'],
+        ['icon' => 'security', 'title' => 'Security foundation', 'desc' => 'Encryption, access control, auditability, and security review aligned to project scope.'],
+        ['icon' => 'api', 'title' => 'Documented APIs', 'desc' => 'Clear API contracts for integration, maintenance, and future development.'],
+        ['icon' => 'storage', 'title' => 'Deployment infrastructure', 'desc' => 'Cloud, CDN, automated deployment, backup, and monitoring according to project needs.'],
+        ['icon' => 'analytics', 'title' => 'Operational visibility', 'desc' => 'Logs, alerts, performance indicators, and tooling for issue handling.'],
+        ['icon' => 'assignment', 'title' => 'Handover documentation', 'desc' => 'Technical documents, deployment guides, and operational references for the client team.'],
     ],
 
     'comparison_title' => 'Detailed Comparison',
@@ -114,10 +118,10 @@ return [
         ['q' => 'What is the payment structure?', 'a' => 'Typically monthly invoicing with Net-30 payment terms. Custom arrangements negotiable for enterprise clients.'],
         ['q' => 'Can we scale the team up/down during the project?', 'a' => 'Absolutely. You can increase or decrease team size based on needs with advance notice.'],
         ['q' => 'Does pricing include post-launch support?', 'a' => 'Yes. Post-launch support duration varies by plan: 30 days (MVP), 90 days (Growth), 6-12 months (Enterprise).'],
-        ['q' => 'Who owns the code after the project?', 'a' => 'You own 100% of the code. We provide full source code, documentation, deployment guides. No licensing fees or royalties.'],
+        ['q' => 'Who owns the code after the project?', 'a' => 'Source-code ownership is defined clearly in the agreement. For custom development engagements, HKIncotech hands over source code, documentation, and deployment guidance according to the agreed scope.'],
     ],
 
     'cta_title' => 'Does Your Project Fall Outside These Plans?',
     'cta_desc' => 'That is perfectly normal. We tailor pricing to your specific requirements, complexity, and timeline. Let us discuss your needs.',
-    'cta_button' => 'Request a Free Consultation',
+    'cta_button' => 'Discuss Pricing Scope',
 ];

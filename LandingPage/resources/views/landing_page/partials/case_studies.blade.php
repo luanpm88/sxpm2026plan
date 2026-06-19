@@ -138,18 +138,18 @@
             [
                 'title' => 'Mobile Banking App',
                 'industry' => 'Financial Services',
-                'challenge' => 'Build a secure mobile banking app at consumer scale. Requirements: strong security, enterprise-grade uptime, offline functionality.',
+                'challenge' => 'Build a secure mobile banking app with strong access control, reliability, and offline-capable workflows.',
                 'solution' => 'Native iOS/Android apps with React Native, blockchain for transaction verification, advanced encryption, offline-first architecture.',
-                'results' => 'Delivered a production-scale banking app with strong user adoption, high-volume transaction throughput, bank-grade security, and high user retention.',
+                'results' => 'Delivered a secure mobile banking experience with stronger operating controls, reliable transaction workflows, and clearer user journeys.',
                 'tech' => 'React Native, Blockchain, Swift, Kotlin',
                 'hidden' => true
             ],
             [
                 'title' => 'Supply Chain Platform',
                 'industry' => 'Logistics',
-                'challenge' => 'Real-time supply chain visibility across multiple countries, tracking high daily shipment volumes.',
+                'challenge' => 'Improve supply-chain visibility across locations and reduce manual coordination in shipment tracking.',
                 'solution' => 'Build IoT integration platform, real-time tracking dashboard, predictive analytics, blockchain for transparency.',
-                'results' => 'Delivered faster deliveries, significant cost savings, near-real-time shipment visibility, and a strong network of logistics partners.',
+                'results' => 'Improved shipment visibility, reduced manual coordination, and gave operating teams clearer exception tracking.',
                 'tech' => 'IoT, Blockchain, Python, Real-time Data Streaming',
                 'hidden' => true
             ],

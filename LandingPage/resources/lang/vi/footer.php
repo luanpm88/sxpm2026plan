@@ -2,11 +2,11 @@
 
 return [
     'about_title' => 'Về HKIncotech',
-    'about_desc'  => 'Công ty phát triển phần mềm doanh nghiệp hàng đầu Đông Nam Á. Chuyên về giải pháp phần mềm tùy chỉnh, nền tảng SaaS và giải pháp AI với hơn 12 năm kinh nghiệm.',
+    'about_desc'  => 'Đơn vị phát triển phần mềm theo yêu cầu, nền tảng SaaS và giải pháp AI cho hệ thống doanh nghiệp.',
 
     'services_title' => 'Dịch Vụ',
     'services' => [
-        'custom'   => 'Phát Triển Phần Mềm Tùy Chỉnh',
+        'custom'   => 'Phần Mềm Theo Yêu Cầu',
         'saas'     => 'Nền Tảng SaaS',
         'ai'       => 'Nền Tảng Kiến Thức AI',
         'security' => 'Bảo Mật & Tuân Thủ',
@@ -15,8 +15,8 @@ return [
     'tech_title' => 'Công Nghệ',
     'tech' => [
         'cloud'    => 'Cloud & DevOps',
-        'frontend' => 'Công Nghệ Frontend',
-        'backend'  => 'Công Nghệ Backend',
+        'frontend' => 'Giao Diện & Trải Nghiệm',
+        'backend'  => 'Dịch Vụ Máy Chủ & API',
         'data'     => 'Dữ Liệu & Phân Tích',
     ],
 

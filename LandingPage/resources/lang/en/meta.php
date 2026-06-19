@@ -3,43 +3,43 @@
 return [
     // Homepage
     'home_title' => 'HKIncotech — Enterprise Software Engineering | Vietnam',
-    'home_description' => 'Build & scale business-critical software with HKIncotech. 14 years, 100+ engineers. Custom dev, SaaS, AI. Free technical consultation within 48h.',
+    'home_description' => 'Build and operate business-critical software with HKIncotech: custom systems, SaaS platforms, applied AI, and long-term engineering ownership.',
 
     // Services
     'services_title' => 'Enterprise Software Development Services | HKIncotech',
-    'services_description' => 'Custom software, SaaS platforms, AI knowledge systems, and security solutions. Cloud-native architecture from MVP to 10M+ users. ISO 27001 & SOC 2 certified.',
+    'services_description' => 'Custom software, SaaS platforms, AI knowledge systems, and security solutions designed for maintainability, operations, and scale.',
 
     // SCRUM
     'scrum_title' => 'Agile SCRUM Development Process | HKIncotech',
-    'scrum_description' => 'Transparent 6-step SCRUM process with 2-week sprints, live demos, and real-time project tracking. Full client ownership of roadmap and IP.',
+    'scrum_description' => 'A sprint-based delivery process with clear scope, reviews, acceptance criteria, quality control, and staged handover.',
 
     // Tech Stack
-    'tech_stack_title' => 'Technology Stack — 50+ Enterprise Frameworks | HKIncotech',
-    'tech_stack_description' => 'React, Node.js, Python, AWS, Kubernetes, GPT-4, Flutter, and 40+ more. 8 technology categories powering enterprise-grade applications.',
+    'tech_stack_title' => 'Technology Stack — Enterprise Software Engineering | HKIncotech',
+    'tech_stack_description' => 'Technology areas across interface, API, data, cloud infrastructure, security, mobile, AI, and DevOps.',
 
     // Scaling
-    'scaling_title' => 'Scaling Architecture — MVP to 10M+ Users | HKIncotech',
+    'scaling_title' => 'Scaling Architecture — Enterprise Software Infrastructure | HKIncotech',
     'scaling_description' => '6-phase scaling roadmap with predictable costs. From monolithic MVP to multi-region Kubernetes with zero re-engineering.',
 
     // About Us
     'about_us_title' => 'About HKIncotech — 12+ Years of Enterprise Software Delivery',
-    'about_us_description' => 'Founded in 2012, HKIncotech has grown to 100+ engineers delivering enterprise software across 10+ industries. Vietnam & Singapore offices.',
+    'about_us_description' => 'Founded in 2012, HKIncotech develops custom software, SaaS platforms, applied AI, and long-term engineering systems from Vietnam and Singapore.',
 
     // Case Studies
-    'case_studies_title' => 'Client Case Studies — Proven Results | HKIncotech',
-    'case_studies_description' => '100+ projects delivered. Significant cost savings, major time reductions, and strong user adoption. Real results across education, logistics, and enterprise.',
+    'case_studies_title' => 'Client Case Studies — Selected Software Projects | HKIncotech',
+    'case_studies_description' => 'Representative project contexts across education, logistics, enterprise operations, manufacturing, and digital platforms.',
 
     // Pricing
     'pricing_title' => 'Software Development Pricing & Plans | HKIncotech',
-    'pricing_description' => 'Transparent pricing from $6,300/month. MVP, Growth, and Enterprise tiers. Full source code ownership, no licensing fees. Get a free estimate.',
+    'pricing_description' => 'Software delivery models from $6,300/month. MVP, Growth, and Enterprise tiers with clear scope, source-code ownership, and support options.',
 
     // Certifications
     'certifications_title' => 'Certifications & Security Standards | HKIncotech',
     'certifications_description' => 'ISO 27001, SOC 2, GDPR, PCI DSS, HIPAA certified. AWS, GCP, Azure cloud certifications. Certified Scrum Masters and SAFe Agilists.',
 
     // Contact
-    'contact_title' => 'Contact Us — Free Technical Consultation | HKIncotech',
-    'contact_description' => 'Get a comprehensive technical proposal with cost estimate within 48 hours. No obligation. Ho Chi Minh City & Singapore offices.',
+    'contact_title' => 'Contact HKIncotech — Enterprise Software Engineering',
+    'contact_description' => 'Discuss project context, technical scope, delivery model, and long-term software ownership with HKIncotech.',
 
     // Blog / R&D
     'blog_title' => 'Research & Development — HKSpace & AI Platform | HKIncotech',

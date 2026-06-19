@@ -254,37 +254,37 @@
             <div class="position-relative" style="background: var(--surface); border-radius: var(--card-radius); padding: 2.5rem; border: 1px solid var(--border); text-align: center;">
                 <svg viewBox="0 0 280 280" style="width: 100%; max-width: 280px;">
                     <!-- Query -->
-                    <rect x="120" y="40" width="40" height="25" fill="#0e3163" rx="6"/>
-                    <text x="140" y="57" text-anchor="middle" font-size="10" fill="var(--contrast-panel-text)" font-weight="bold">Query</text>
+                    <rect x="120" y="40" width="40" height="25" fill="var(--primary)" rx="6"/>
+                    <text x="140" y="57" text-anchor="middle" font-size="10" fill="var(--contrast-panel-text)" font-weight="bold">{{ __('services.ai.diagram_query') }}</text>
 
                     <!-- NLP -->
-                    <circle cx="140" cy="90" r="18" fill="#1a4585"/>
+                    <circle cx="140" cy="90" r="18" fill="var(--primary-light)"/>
                     <text x="140" y="95" text-anchor="middle" font-size="9" fill="var(--contrast-panel-text)" font-weight="bold">NLP</text>
-                    <text x="140" y="106" text-anchor="middle" font-size="8" fill="var(--contrast-panel-text)" opacity="0.9">Processing</text>
+                    <text x="140" y="106" text-anchor="middle" font-size="8" fill="var(--contrast-panel-text)" opacity="0.9">{{ __('services.ai.diagram_processing') }}</text>
 
                     <!-- Branches -->
-                    <rect x="30" y="140" width="80" height="35" fill="#1a4585" rx="8"/>
+                    <rect x="30" y="140" width="80" height="35" fill="var(--primary-light)" rx="8"/>
                     <text x="70" y="160" text-anchor="middle" font-size="9" fill="var(--contrast-panel-text)" font-weight="bold">Vector DB</text>
-                    <text x="70" y="170" text-anchor="middle" font-size="8" fill="var(--contrast-panel-text)">Storage</text>
+                    <text x="70" y="170" text-anchor="middle" font-size="8" fill="var(--contrast-panel-text)">{{ __('services.ai.diagram_storage') }}</text>
 
-                    <circle cx="140" cy="160" r="22" fill="#2f6abf"/>
+                    <circle cx="140" cy="160" r="22" fill="var(--accent)"/>
                     <text x="140" y="160" text-anchor="middle" font-size="9" fill="var(--contrast-panel-text)" font-weight="bold">LLM</text>
-                    <text x="140" y="172" text-anchor="middle" font-size="8" fill="var(--contrast-panel-text)" opacity="0.9">Generation</text>
+                    <text x="140" y="172" text-anchor="middle" font-size="8" fill="var(--contrast-panel-text)" opacity="0.9">{{ __('services.ai.diagram_generation') }}</text>
 
-                    <rect x="200" y="140" width="60" height="35" fill="#4f5965" rx="8"/>
+                    <rect x="200" y="140" width="60" height="35" fill="var(--text-gray)" rx="8"/>
                     <text x="230" y="160" text-anchor="middle" font-size="9" fill="var(--contrast-panel-text)" font-weight="bold">RAG</text>
-                    <text x="230" y="170" text-anchor="middle" font-size="8" fill="var(--contrast-panel-text)">Pipeline</text>
+                    <text x="230" y="170" text-anchor="middle" font-size="8" fill="var(--contrast-panel-text)">{{ __('services.ai.diagram_pipeline') }}</text>
 
-                    <!-- Output -->
-                    <rect x="110" y="240" width="60" height="25" fill="#0e3163" rx="6"/>
-                    <text x="140" y="257" text-anchor="middle" font-size="9" fill="var(--contrast-panel-text)" font-weight="bold">Intelligent Response</text>
+                    <!-- Response node -->
+                    <rect x="110" y="240" width="60" height="25" fill="var(--primary)" rx="6"/>
+                    <text x="140" y="257" text-anchor="middle" font-size="9" fill="var(--contrast-panel-text)" font-weight="bold">{{ __('services.ai.diagram_response') }}</text>
 
                     <!-- Lines -->
-                    <line x1="140" y1="65" x2="140" y2="72" stroke="#0e3163" stroke-width="2"/>
-                    <line x1="140" y1="85" x2="50" y2="150" stroke="#1a4585" stroke-width="2"/>
-                    <line x1="140" y1="85" x2="140" y2="140" stroke="#1a4585" stroke-width="2"/>
-                    <line x1="140" y1="85" x2="230" y2="150" stroke="#1a4585" stroke-width="2"/>
-                    <line x1="140" y1="210" x2="140" y2="240" stroke="#0e3163" stroke-width="2"/>
+                    <line x1="140" y1="65" x2="140" y2="72" stroke="var(--primary)" stroke-width="2"/>
+                    <line x1="140" y1="85" x2="50" y2="150" stroke="var(--primary-light)" stroke-width="2"/>
+                    <line x1="140" y1="85" x2="140" y2="140" stroke="var(--primary-light)" stroke-width="2"/>
+                    <line x1="140" y1="85" x2="230" y2="150" stroke="var(--primary-light)" stroke-width="2"/>
+                    <line x1="140" y1="210" x2="140" y2="240" stroke="var(--primary)" stroke-width="2"/>
                 </svg>
             </div>
         </div>
@@ -430,28 +430,28 @@
             <div class="position-relative" style="background: var(--surface); border-radius: var(--card-radius); padding: 2.5rem; border: 2px solid var(--primary); box-shadow: 0 8px 32px rgba(14, 49, 99, 0.15);">
                 <svg viewBox="0 0 280 280" style="width: 100%; max-width: 280px;">
                     <!-- Multiple users -->
-                    <circle cx="60" cy="60" r="15" fill="#0e3163" opacity="0.7"/>
-                    <circle cx="100" cy="40" r="15" fill="#0e3163" opacity="0.7"/>
-                    <circle cx="140" cy="35" r="15" fill="#0e3163" opacity="0.7"/>
-                    <circle cx="180" cy="50" r="15" fill="#0e3163" opacity="0.7"/>
-                    <circle cx="210" cy="85" r="15" fill="#0e3163" opacity="0.7"/>
+                    <circle cx="60" cy="60" r="15" fill="var(--primary)" opacity="0.7"/>
+                    <circle cx="100" cy="40" r="15" fill="var(--primary)" opacity="0.7"/>
+                    <circle cx="140" cy="35" r="15" fill="var(--primary)" opacity="0.7"/>
+                    <circle cx="180" cy="50" r="15" fill="var(--primary)" opacity="0.7"/>
+                    <circle cx="210" cy="85" r="15" fill="var(--primary)" opacity="0.7"/>
 
                     <!-- Central Platform -->
-                    <rect x="80" y="120" width="120" height="80" fill="#0e3163" rx="8"/>
-                    <text x="140" y="155" text-anchor="middle" font-size="12" fill="var(--contrast-panel-text)" font-weight="bold">Multi-Tenant</text>
-                    <text x="140" y="170" text-anchor="middle" font-size="12" fill="var(--contrast-panel-text)" font-weight="bold">Platform</text>
+                    <rect x="80" y="120" width="120" height="80" fill="var(--primary)" rx="8"/>
+                    <text x="140" y="155" text-anchor="middle" font-size="12" fill="var(--contrast-panel-text)" font-weight="bold">{{ __('services.saas.diagram_platform_line_1') }}</text>
+                    <text x="140" y="170" text-anchor="middle" font-size="12" fill="var(--contrast-panel-text)" font-weight="bold">{{ __('services.saas.diagram_platform_line_2') }}</text>
 
                     <!-- Database -->
-                    <rect x="100" y="240" width="80" height="20" fill="#1a4585" rx="4"/>
-                    <text x="140" y="253" text-anchor="middle" font-size="9" fill="var(--contrast-panel-text)" font-weight="bold">Shared Infrastructure</text>
+                    <rect x="100" y="240" width="80" height="20" fill="var(--primary-light)" rx="4"/>
+                    <text x="140" y="253" text-anchor="middle" font-size="9" fill="var(--contrast-panel-text)" font-weight="bold">{{ __('services.saas.diagram_shared_infra') }}</text>
 
                     <!-- Connections -->
-                    <line x1="80" y1="75" x2="100" y2="125" stroke="#1a4585" stroke-width="2" stroke-dasharray="4"/>
-                    <line x1="120" y1="55" x2="110" y2="125" stroke="#1a4585" stroke-width="2" stroke-dasharray="4"/>
-                    <line x1="140" y1="50" x2="140" y2="125" stroke="#1a4585" stroke-width="2" stroke-dasharray="4"/>
-                    <line x1="160" y1="60" x2="170" y2="125" stroke="#1a4585" stroke-width="2" stroke-dasharray="4"/>
-                    <line x1="200" y1="100" x2="180" y2="125" stroke="#1a4585" stroke-width="2" stroke-dasharray="4"/>
-                    <line x1="140" y1="200" x2="140" y2="240" stroke="#1a4585" stroke-width="2"/>
+                    <line x1="80" y1="75" x2="100" y2="125" stroke="var(--primary-light)" stroke-width="2" stroke-dasharray="4"/>
+                    <line x1="120" y1="55" x2="110" y2="125" stroke="var(--primary-light)" stroke-width="2" stroke-dasharray="4"/>
+                    <line x1="140" y1="50" x2="140" y2="125" stroke="var(--primary-light)" stroke-width="2" stroke-dasharray="4"/>
+                    <line x1="160" y1="60" x2="170" y2="125" stroke="var(--primary-light)" stroke-width="2" stroke-dasharray="4"/>
+                    <line x1="200" y1="100" x2="180" y2="125" stroke="var(--primary-light)" stroke-width="2" stroke-dasharray="4"/>
+                    <line x1="140" y1="200" x2="140" y2="240" stroke="var(--primary-light)" stroke-width="2"/>
                 </svg>
             </div>
 
@@ -542,7 +542,7 @@
         </div>
 
         <div style="background: var(--secondary-bg); border-radius: var(--card-radius); padding: 2rem; margin-top: 2rem;">
-            <h3 style="font-weight: 700; color: var(--text-dark); margin-bottom: 1rem;">Compliance Highlights</h3>
+            <h3 style="font-weight: 700; color: var(--text-dark); margin-bottom: 1rem;">{{ __('services.security.compliance_highlights_title') }}</h3>
             <ul class="card-grid" style="list-style: none; margin: 0; --card-min: 250px; --card-max: 390px; --card-gap: 1rem;">
                 @foreach(__('services.security.compliance_highlights') as $item)
                 <li style="color: var(--text-gray); display: flex; align-items: flex-start; gap: 0.75rem;">

@@ -6,6 +6,11 @@ return [
     'hero_title_accent'=> 'Standards',
     'hero_desc'        => 'Enterprise-grade compliance, security certifications, and continuous professional development across our team',
     'hero_cta'         => 'Verify Our Credentials',
+    'section_compliance' => 'COMPLIANCE & SECURITY',
+    'section_cloud' => 'CLOUD CERTIFICATIONS',
+    'section_agile' => 'AGILE EXPERTISE',
+    'section_tech' => 'TECHNOLOGY STACK',
+    'section_team' => 'TEAM EXPERTISE',
 
     // Compliance section
     'compliance_title'       => 'Compliance & Security',
@@ -46,7 +51,7 @@ return [
 
     // CTA
     'cta_title'  => 'Partner with HKIncotech',
-    'cta_desc'   => 'An enterprise-grade engineering team with recognized industry certifications and a proven delivery record across 100+ projects.',
+    'cta_desc'   => 'An enterprise-grade engineering team with disciplined security, cloud, AI, and controlled delivery practices.',
     'cta_button' => 'Start Your Project',
 
     // Compliance certs
@@ -90,7 +95,7 @@ return [
         ['icon'=>'shield','title'=>'Security Experts','count'=>'8+','desc'=>'Certified security architects. Penetration testers, compliance specialists. Zero Trust & OWASP expertise.'],
         ['icon'=>'smart_toy','title'=>'AI/ML Specialists','count'=>'6+','desc'=>'LLM integration experts. NLP, semantic search, RAG pipeline architects with research background.'],
         ['icon'=>'architecture','title'=>'Solution Architects','count'=>'12+','desc'=>'Enterprise solution architects. Microservices, cloud-native, scalable systems design specialists.'],
-        ['icon'=>'trending_up','title'=>'Tech Leads','count'=>'15+','desc'=>'Team leaders with P&L responsibility. Product vision, technical strategy, mentorship expertise.'],
+        ['icon'=>'trending_up','title'=>'Tech Leads','count'=>'15+','desc'=>'Technical leaders responsible for solution direction, delivery quality, and mentoring across project teams.'],
         ['icon'=>'school','title'=>'Continuous Learning','count'=>'100%','desc'=>'Annual certification budget per engineer. Internal knowledge sharing, tech talks, R&D time allocation.'],
     ],
 ];

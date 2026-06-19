@@ -37,7 +37,7 @@
     <section style="background: var(--secondary-bg);">
         <div class="container-v5">
             <div class="section-header">
-                <span class="section-label">OUR WORK</span>
+                <span class="section-label">{{ __('case_studies.section_work') }}</span>
                 <h2 class="section-title">{{ __('case_studies.featured_title') }}</h2>
                 <p class="section-subtitle">{{ __('case_studies.featured_subtitle') }}</p>
             </div>
@@ -103,7 +103,7 @@
     <section style="background: var(--secondary-bg);">
         <div class="container-v5">
             <div class="section-header">
-                <span class="section-label">INDUSTRIES SERVED</span>
+                <span class="section-label">{{ __('case_studies.section_industries') }}</span>
                 <h2 class="section-title">{{ __('case_studies.industries_title') }}</h2>
                 <p class="section-subtitle">{{ __('case_studies.industries_subtitle') }}</p>
             </div>

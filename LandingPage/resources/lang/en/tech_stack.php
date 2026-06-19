@@ -3,11 +3,15 @@
 return [
     // Hero Section
     'hero_title' => 'Technology Stack',
-    'hero_desc' => 'Enterprise-grade technologies selected for scalability, security, and long-term reliability — applied across 8 categories and validated in production environments.',
+    'hero_desc' => 'Technology choices are mapped to scalability, security, reliability, and long-term maintainability for each business system.',
+    'section_stack' => 'TECHNOLOGY AREAS',
+    'section_metrics' => 'PERFORMANCE',
+    'section_platforms' => 'PLATFORMS',
+    'section_practices' => 'ENGINEERING PRINCIPLES',
 
     // Tech Stack Matrix
-    'stack_title' => 'Complete Tech Stack',
-    'stack_subtitle' => 'From frontend to cloud infrastructure',
+    'stack_title' => 'Core Technology Areas',
+    'stack_subtitle' => 'From user interface and APIs to data, cloud infrastructure, and security.',
 
     'categories' => [
         [

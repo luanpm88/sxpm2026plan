@@ -3,31 +3,33 @@
 return [
     'hero_title' => 'Client',
     'hero_title_highlight' => 'Case Studies',
-    'hero_desc' => '50+ delivered projects across 10+ industries. From startup MVPs to large-scale enterprise systems — each engagement is measured by real, demonstrable outcomes.',
+    'hero_desc' => 'Representative projects showing how HKIncotech approaches custom software delivery: understand the context, design the system, implement with control, and hand over for long-term operation.',
+    'section_work' => 'SELECTED WORK',
+    'section_industries' => 'INDUSTRIES SERVED',
 
     'stats' => [
-        ['num' => '50+', 'label' => 'Projects Delivered'],
-        ['num' => '10+', 'label' => 'Industries Served'],
-        ['num' => '$1M', 'label' => 'Project Value'],
-        ['num' => 'High', 'label' => 'Client Satisfaction'],
+        ['num' => 'Selected', 'label' => 'Project Contexts'],
+        ['num' => 'Multi-domain', 'label' => 'Industry Experience'],
+        ['num' => 'Platform', 'label' => 'Operated Products'],
+        ['num' => 'Long-term', 'label' => 'Post-launch Support'],
         ['num' => '12+', 'label' => 'Years Expertise'],
-        ['num' => '10+', 'label' => 'Countries Reach'],
+        ['num' => 'Regional', 'label' => 'Delivery Scope'],
     ],
 
-    'featured_title' => 'Featured Projects',
-    'featured_subtitle' => 'Representative solutions and outcomes',
+    'featured_title' => 'Selected Projects',
+    'featured_subtitle' => 'Delivery context, solution direction, and operating outcomes.',
 
     'case_studies' => [
         [
             'title' => 'Education Platform: Scheduling Automation',
             'industry' => 'Education',
-            'challenge' => 'Manage schedules, class assignments, learning reports, and attendance for 10,000+ students. Manual scheduling took 3 weeks per semester with frequent conflicts.',
-            'solution' => 'Delivered a comprehensive operations platform using a PHP-based API stack, focused on reliability and scale rather than heavy AI. Implemented flexible timetable generation, workload balancing rules, automated attendance, and reporting. Added high-availability infrastructure with PostgreSQL load balancing, caching, and resilient queues to handle peak enrollment and scheduling periods.',
+            'challenge' => 'Manage schedules, class assignments, attendance, and operating reports in a large education environment. Manual scheduling created conflicts, long review cycles, and weak accountability.',
+            'solution' => 'Built an education operations platform with a central API, flexible scheduling rules, workload balancing, automated attendance, and role-based reporting. Infrastructure was designed for peak enrollment and scheduling periods.',
             'results' => [
                 'Scheduling time: weeks → days',
                 'High data accuracy',
-                '10K+ students managed',
-                'Strong user adoption',
+                'Large-scale student data management',
+                'Strong adoption',
                 'Significant operational hours saved each semester'
             ],
             'tech' => 'PHP, REST API, PostgreSQL (Load Balancing), Redis, React, React Native'
@@ -35,8 +37,8 @@ return [
         [
             'title' => 'Storage Management System',
             'industry' => 'Logistics & Retail',
-            'challenge' => 'Manage ~10M SKUs across 50+ branches. Pain points: inventory control, inbound/outbound, consignment, barcode scanning, monthly audits. Manual workflows led to inaccurate reports. Needed accurate demand forecasting.',
-            'solution' => 'Built a comprehensive WMS with real-time barcode scanning and automated reconciliation. Implemented demand forecasting via matrix factorization and time-series analysis. Added analytics dashboards, multi-location sync, and blockchain-backed consignment docs for transparency.',
+            'challenge' => 'Control inventory, inbound/outbound flows, consignment, barcode scanning, and periodic audits across multiple branches. Manual workflows slowed reporting and made reconciliation difficult.',
+            'solution' => 'Built a warehouse management system with barcode scanning, multi-location data sync, automated reconciliation, analytics dashboards, and forecasting support.',
             'results' => [
                 'Major inventory accuracy gains',
                 'High forecasting accuracy',
@@ -50,7 +52,7 @@ return [
         [
             'title' => 'ERP Management System',
             'industry' => 'Enterprise Management',
-            'challenge' => 'A 100+ employee company needed unified accounting, procurement, inventory, e-commerce, and operations. Inventory data wasn\'t in sync with accounting; disparate modules slowed reporting.',
+            'challenge' => 'A business needed unified accounting, procurement, inventory, e-commerce, and operations. Inventory data was not synchronized with accounting, and disconnected modules slowed reporting.',
             'solution' => 'Built an integrated ERP: accounting (GL, AR, AP), inventory, procurement, e-commerce sync (Shopify/WooCommerce), HR payroll, and reporting. Added real-time consolidation, BI dashboards, workflow automation, and a mobile app for field staff.',
             'results' => [
                 'Consolidation reduced from days to minutes',
@@ -70,19 +72,19 @@ return [
     'label_tech' => 'Tech',
 
     'industries_title' => 'Industries Served',
-    'industries_subtitle' => 'Cross-industry experience and domain expertise',
+    'industries_subtitle' => 'Experience across different business contexts and operating models.',
 
     'industries' => [
-        ['icon' => 'shopping_cart', 'name' => 'E-commerce & Retail', 'description' => 'Built lean storefronts, POS integrations, and analytics to help small retailers modernize sales.'],
-        ['icon' => 'trending_up', 'name' => 'FinTech & Banking', 'description' => 'Developed compliance-friendly dashboards, payment flows, and reporting for early-stage fintech teams.'],
-        ['icon' => 'local_hospital', 'name' => 'Healthcare & Medical', 'description' => 'Created appointment, intake, and data-tracking tools with a focus on security and patient privacy.'],
-        ['icon' => 'school', 'name' => 'EdTech & Training', 'description' => 'Built course portals and assessment tooling to digitize training programs and improve learner engagement.'],
-        ['icon' => 'local_shipping', 'name' => 'Logistics & Supply Chain', 'description' => 'Implemented shipment tracking dashboards and simple forecasting to cut manual coordination.'],
-        ['icon' => 'factory', 'name' => 'Manufacturing & IoT', 'description' => 'Prototyped equipment monitoring and KPI boards to surface real-time production insights.'],
+        ['icon' => 'shopping_cart', 'name' => 'E-commerce & Retail', 'description' => 'Sales systems, inventory, POS integrations, channel operations, and reporting.'],
+        ['icon' => 'trending_up', 'name' => 'FinTech & Financial Services', 'description' => 'Payment flows, management dashboards, reporting, and compliance controls.'],
+        ['icon' => 'local_hospital', 'name' => 'Healthcare & Medical', 'description' => 'Scheduling, intake, data management, and privacy-focused user flows.'],
+        ['icon' => 'school', 'name' => 'Education & Training', 'description' => 'Learning portals, scheduling, assessment, attendance, and reporting.'],
+        ['icon' => 'local_shipping', 'name' => 'Logistics & Supply Chain', 'description' => 'Shipment tracking, warehouse management, data reconciliation, and operations coordination.'],
+        ['icon' => 'factory', 'name' => 'Manufacturing & IoT', 'description' => 'Shopfloor data, equipment monitoring, KPI reporting, and machine integration.'],
         ['icon' => 'apartment', 'name' => 'Real Estate & Construction', 'description' => 'Delivered listing, lead-tracking, and progress visibility tools for small property teams.'],
         ['icon' => 'sports_esports', 'name' => 'Gaming & Entertainment', 'description' => 'Shipped lightweight event, community, and content portals for niche gaming audiences.'],
         ['icon' => 'psychology', 'name' => 'AI & Data Science', 'description' => 'Built pragmatic AI assistants and data pipelines to automate repetitive workflows.'],
-        ['icon' => 'cloud', 'name' => 'SaaS & Cloud', 'description' => 'Helped teams launch MVPs with multi-tenant basics, auth, and billing ready to grow.'],
+        ['icon' => 'cloud', 'name' => 'SaaS & Cloud', 'description' => 'Multi-user platforms with authentication, billing, access control, and cloud operations.'],
     ],
 
     'section_testimonials' => 'CLIENT TESTIMONIALS',
@@ -90,15 +92,15 @@ return [
     'testimonials_subtitle' => 'What our partners and clients say about working with us.',
 
     'testimonials' => [
-        ['name' => 'CEO, E-Commerce Startup', 'text' => 'HKIncotech not only delivered the scope, but proactively suggested improvements. Communication was excellent and responsive.'],
-        ['name' => 'Founder, FinTech Startup', 'text' => 'Their security and compliance experience helped us pass ISO 27001 and PCI DSS on the first attempt.'],
-        ['name' => 'Director, Healthcare Provider', 'text' => 'Deep healthcare domain knowledge. ML performance exceeded expectations.'],
-        ['name' => 'VP Product, Logistics Company', 'text' => 'Scaled from 100 to 2,000 shipments/day without downtime. Strong infrastructure planning.'],
-        ['name' => 'CTO, Retail Chain', 'text' => 'Real-time analytics enabled data-driven decisions. Positive ROI in 3 months.'],
-        ['name' => 'Founder, SaaS Startup', 'text' => 'Post-launch support was exceptional: 24/7 availability, quick response, solution-oriented.'],
+        ['name' => 'CEO, e-commerce company', 'text' => 'HKIncotech did not just implement requirements. The team asked the right questions, proposed improvements, and kept delivery transparent.'],
+        ['name' => 'Founder, fintech company', 'text' => 'Their security and compliance approach helped us structure the system correctly from the beginning.'],
+        ['name' => 'Operations director, healthcare provider', 'text' => 'The team understood data privacy requirements and implemented the workflow carefully.'],
+        ['name' => 'VP Product, logistics company', 'text' => 'The system was prepared well for expansion, from operating data to infrastructure planning.'],
+        ['name' => 'CTO, retail chain', 'text' => 'The operating dashboard helped our team make faster decisions and control data more effectively.'],
+        ['name' => 'Founder, SaaS platform', 'text' => 'After release, the team stayed close to operations, optimization, and follow-up requirements.'],
     ],
 
-    'cta_title' => 'Ready for the Next Project?',
-    'cta_desc' => 'Start the conversation with us today.',
-    'cta_button' => 'Contact Us',
+    'cta_title' => 'Discuss Your Business Context',
+    'cta_desc' => 'HKIncotech can help clarify scope, technical risk, and the right delivery roadmap for your system.',
+    'cta_button' => 'Contact the Team',
 ];

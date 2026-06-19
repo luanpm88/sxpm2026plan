@@ -26,6 +26,16 @@
                 <h3>{{ __('sme_manufacturing.challenges_symptoms_heading') }}</h3>
                 <p>{{ __('sme_manufacturing.challenges_symptoms_text') }}</p>
 
+                <div class="solution-data-map" aria-label="{{ __('sme_manufacturing.challenges_data_map_title') }}">
+                    @foreach(__('sme_manufacturing.challenges_data_map') as $node)
+                        <div class="solution-data-map__node">
+                            <span class="material-symbols-rounded" aria-hidden="true">{{ $node['icon'] }}</span>
+                            <strong>{{ $node['title'] }}</strong>
+                            <small>{{ $node['description'] }}</small>
+                        </div>
+                    @endforeach
+                </div>
+
                 <div class="solution-pain-flow">
                     @foreach(__('sme_manufacturing.challenges_flow') as $item)
                         <div class="solution-pain-flow__item">
@@ -39,8 +49,11 @@
             <div class="solution-pain-grid">
                 @foreach(__('sme_manufacturing.challenges_items') as $challenge)
                     <article class="solution-pain-card">
-                        <div class="solution-pain-card__icon">
-                            <span class="material-symbols-rounded" aria-hidden="true">{{ $challengeIcons[$loop->index] ?? 'error' }}</span>
+                        <div class="solution-card-head">
+                            <div class="solution-pain-card__icon">
+                                <span class="material-symbols-rounded" aria-hidden="true">{{ $challengeIcons[$loop->index] ?? 'error' }}</span>
+                            </div>
+                            <span class="solution-card-index">{{ sprintf('%02d', $loop->iteration) }}</span>
                         </div>
                         <h3>{{ $challenge['title'] }}</h3>
                         <p>{{ $challenge['description'] }}</p>

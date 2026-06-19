@@ -1,4 +1,4 @@
-<section style="background: var(--secondary-bg);">
+<section class="solution-section--muted">
     <div class="container-v5">
         <div class="section-header">
             <h2 class="section-title">{{ __('sme_manufacturing.modules_title') }}</h2>
@@ -37,7 +37,7 @@
             @endforeach
         </div>
 
-        <div class="solution-module-grid" style="margin-top: 1rem;">
+        <div class="solution-module-grid solution-module-grid--spaced">
             @foreach($extendedModules as $module)
                 <article class="solution-module-card">
                     <div class="solution-module-card__icon">
@@ -56,11 +56,11 @@
         <div class="shopfloor-matrix">
             <div class="shopfloor-matrix__grid">
                 <div>
-                    <h3 style="font-size: 1.15rem; font-weight: 800; color: var(--text-dark); margin-bottom: 0.65rem;">{{ __('sme_manufacturing.modules_shopfloor_title') }}</h3>
-                    <p style="color: var(--text-gray); line-height: 1.7; margin: 0;">{{ __('sme_manufacturing.modules_shopfloor_desc') }}</p>
+                    <h3>{{ __('sme_manufacturing.modules_shopfloor_title') }}</h3>
+                    <p>{{ __('sme_manufacturing.modules_shopfloor_desc') }}</p>
                 </div>
 
-                <div class="shopfloor-matrix__items" style="margin-top: 0;">
+                <div class="shopfloor-matrix__items shopfloor-matrix__items--flush">
                     @foreach(__('sme_manufacturing.modules_shopfloor_items') as $item)
                         <div class="shopfloor-matrix__item">{{ $item }}</div>
                     @endforeach

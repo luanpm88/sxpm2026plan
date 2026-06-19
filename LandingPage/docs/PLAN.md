@@ -12,9 +12,11 @@ Raise `demo.hkincotech.com` from a polished marketing template into a senior, bo
 ## Quality Bar
 
 - **Voice:** professional, specific, executive-readable. No generic SaaS hype, fake metrics, or "book a 30-minute call" style sales copy on capability pages.
+- **Vietnamese voice:** write as senior Vietnamese business prose, not translated English. Prefer "đối tượng ra quyết định", "cách tổ chức triển khai", "khung kiểm soát", "lộ trình triển khai" over literal phrases such as "người mua chính", "đường cơ sở", "tổ dữ liệu", or slogan-like questions.
+- **English voice:** concise enterprise engineering language. Avoid inflated adjectives, fake benchmark posture, or consumer SaaS urgency.
 - **Typography:** all navigation, body, labels, captions, and cards must be clearly legible. Muted text still reads as black/slate, not washed-out gray.
 - **Spacing:** section headers must not float in excessive empty space; each first viewport should communicate hierarchy, proof, and a next action.
-- **Visuals:** every SVG/diagram must explain an engineering idea: architecture, delivery governance, platform ownership, security, data flow, integration, manufacturing process, or rollout model.
+- **Visuals:** every SVG/diagram/icon cluster must explain an engineering idea: architecture, delivery governance, platform ownership, security, data flow, integration, manufacturing process, rollout model, or operating control. Avoid plain card walls.
 - **Dark mode:** no patchwork selector hacks. Dark mode must be token/component driven and audited section by section.
 - **Language switcher:** use a globe + explicit language names. Avoid flag-only UI.
 - **Implementation style:** design-system first. Prefer CSS variables and reusable component classes over one-off inline styling.
@@ -115,6 +117,9 @@ Raise `demo.hkincotech.com` from a polished marketing template into a senior, bo
   - data/security/maintenance model
   - proof and fit criteria
 - [x] Verify light/dark/mobile rendering.
+- [x] Replace remaining inline SME section styling with reusable CSS classes.
+- [x] Add richer visual primitives for current-state data flow, delivery operating model, capability profile, and expansion architecture.
+- [x] Re-audit SME Vietnamese copy for translated-title artifacts and executive tone.
 
 ### 6. Audit Loops
 
@@ -159,6 +164,7 @@ Raise `demo.hkincotech.com` from a polished marketing template into a senior, bo
 - **2026-06-18:** Implemented global contrast/button tokens, globe language selector, raw-white usage cleanup, compact Services hero, Services delivery diagram, SME hero/process diagram, SME framework diagram, SME module cards, and VI/EN copy pass. Captured audit pass 1 and pass 2 under `/tmp/hkshots/audit-redesign-pass1` and `/tmp/hkshots/audit-redesign-pass2`.
 - **2026-06-18:** Deployed commit `4f72306` to `https://demo.hkincotech.com`; verified `/en`, `/vi`, `/vi/services`, and `/vi/solutions/sme-manufacturing` return HTTP 200.
 - **2026-06-18:** Continued post-deploy audit: centered the 5-card SME technology grid as a 3+2 desktop layout, changed the logo SVG inner wordmark to the primary navy, rebuilt lower SME sections with reusable component classes, and ran deeper Vietnamese/English voice passes across live language files.
+- **2026-06-19:** Started max-effort SME visual/language pass: removed remaining SME inline styles, added data-flow/delivery/capability/expansion visual components, and rewrote remaining Vietnamese title-case/literal phrasing in the SME page.
 
 ## Audit Findings
 

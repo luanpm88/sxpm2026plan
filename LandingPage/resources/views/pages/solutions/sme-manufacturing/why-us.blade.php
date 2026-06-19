@@ -22,18 +22,28 @@
                     <span class="material-symbols-rounded" aria-hidden="true">verified</span>
                 </div>
                 <div class="solution-kicker">
-                    <span class="material-symbols-rounded" aria-hidden="true">domain_verification</span>
                     {{ __('sme_manufacturing.why_us_kicker') }}
                 </div>
                 <h3>{{ __('sme_manufacturing.why_us_capability_title') }}</h3>
                 <p>{{ __('sme_manufacturing.why_us_capability_desc') }}</p>
+                <div class="solution-capability-board">
+                    @foreach(__('sme_manufacturing.why_us_capability_points') as $point)
+                        <div class="solution-capability-board__row">
+                            <strong>{{ $point['label'] }}</strong>
+                            <span>{{ $point['text'] }}</span>
+                        </div>
+                    @endforeach
+                </div>
             </aside>
 
             <div class="solution-principle-grid">
                 @foreach(__('sme_manufacturing.why_us_items') as $item)
                     <article class="solution-principle-card">
-                        <div class="solution-principle-card__icon">
-                            <span class="material-symbols-rounded" aria-hidden="true">{{ $principleIcons[$loop->index] ?? 'check_circle' }}</span>
+                        <div class="solution-card-head">
+                            <div class="solution-principle-card__icon">
+                                <span class="material-symbols-rounded" aria-hidden="true">{{ $principleIcons[$loop->index] ?? 'check_circle' }}</span>
+                            </div>
+                            <span class="solution-card-index">{{ sprintf('%02d', $loop->iteration) }}</span>
                         </div>
                         <h3>{{ $item['title'] }}</h3>
                         <p>{{ $item['description'] }}</p>

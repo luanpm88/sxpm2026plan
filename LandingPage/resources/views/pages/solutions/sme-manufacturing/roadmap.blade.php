@@ -5,10 +5,17 @@
             <p class="section-subtitle">{{ __('sme_manufacturing.roadmap_subtitle') }}</p>
         </div>
 
+        @php
+            $roadmapIcons = ['foundation', 'sync_alt', 'query_stats'];
+        @endphp
+
         <div class="solution-roadmap-rail">
             @foreach(__('sme_manufacturing.roadmap_phases') as $phase)
                 <article class="solution-roadmap-stage">
-                    <span class="solution-roadmap-stage__num">{{ $loop->iteration }}</span>
+                    <div class="solution-roadmap-stage__head">
+                        <span class="solution-roadmap-stage__num">{{ $loop->iteration }}</span>
+                        <span class="material-symbols-rounded" aria-hidden="true">{{ $roadmapIcons[$loop->index] ?? 'timeline' }}</span>
+                    </div>
                     <h3>{{ $phase['title'] }}</h3>
                     <p>{{ $phase['description'] }}</p>
                 </article>
@@ -17,6 +24,25 @@
 
         <div class="solution-roadmap-note">
             {{ __('sme_manufacturing.roadmap_note') }}
+        </div>
+
+        <div class="solution-expansion-map" aria-label="{{ __('sme_manufacturing.roadmap_architecture_title') }}">
+            <div>
+                <div class="solution-kicker">
+                    <span class="material-symbols-rounded" aria-hidden="true">lan</span>
+                    {{ __('sme_manufacturing.roadmap_architecture_kicker') }}
+                </div>
+                <h3>{{ __('sme_manufacturing.roadmap_architecture_title') }}</h3>
+            </div>
+            <div class="solution-expansion-map__grid">
+                @foreach(__('sme_manufacturing.roadmap_architecture_items') as $item)
+                    <div class="solution-expansion-map__node">
+                        <span class="material-symbols-rounded" aria-hidden="true">{{ $item['icon'] }}</span>
+                        <strong>{{ $item['title'] }}</strong>
+                        <small>{{ $item['description'] }}</small>
+                    </div>
+                @endforeach
+            </div>
         </div>
 
         <div class="solution-baseline-grid">

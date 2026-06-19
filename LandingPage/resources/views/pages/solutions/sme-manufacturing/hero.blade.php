@@ -22,7 +22,7 @@
                     @endforeach
                 </div>
 
-                <div style="display: flex; gap: 0.8rem; flex-wrap: wrap;">
+                <div class="solution-action-row">
                     <a href="https://calendly.com/hkincotech/consultation" class="btn-primary-v5">
                         <span>{{ __('sme_manufacturing.hero_cta_consultation') }}</span>
                         <span class="material-symbols-rounded" aria-hidden="true">arrow_forward</span>
@@ -38,10 +38,10 @@
                 <div class="factory-map">
                     <div>
                         <h2 class="solution-panel__title">{{ __('sme_manufacturing.hero_sidebar_title') }}</h2>
-                        <div style="display: grid; gap: 0.65rem;">
+                        <div class="solution-sidebar-list">
                             @foreach(__('sme_manufacturing.hero_sidebar_items') as $item)
-                                <div style="display: flex; align-items: flex-start; gap: 0.6rem; color: var(--text-gray); font-size: 0.88rem; line-height: 1.55;">
-                                    <span class="material-symbols-rounded" style="color: var(--primary); font-size: 1.1rem; margin-top: 0.12rem;" aria-hidden="true">engineering</span>
+                                <div class="solution-sidebar-list__item">
+                                    <span class="material-symbols-rounded" aria-hidden="true">engineering</span>
                                     <span>{{ $item }}</span>
                                 </div>
                             @endforeach
@@ -97,7 +97,7 @@
                         <div class="factory-map__legend-item">{{ __('sme_manufacturing.diagram.legend_3') }}</div>
                     </div>
 
-                    <p style="color: var(--text-gray); font-size: 0.86rem; line-height: 1.65; margin: 0;">
+                    <p class="factory-map__audience">
                         {{ __('sme_manufacturing.hero_sidebar_audience') }}
                     </p>
                 </div>

@@ -73,11 +73,11 @@ return [
     ],
 
     'positioning_buyers_title' => 'Primary buyers',
-    'positioning_buyers_desc' => 'Factory Director, Operations Manager, Supply Chain Manager, IT Manager.',
-    'positioning_targets_title' => 'Target environments',
+    'positioning_buyers_desc' => 'Factory leadership, operations, supply chain, IT, and teams accountable for manufacturing data standardization.',
+    'positioning_targets_title' => 'Fit-for-purpose environments',
     'positioning_targets_desc' => 'Industrial zones, multi-line factories, SME growth plants, FDI manufacturing operations.',
     'positioning_model_title' => 'Operating model',
-    'positioning_model_desc' => 'Assessment-driven architecture, modular rollout, governance-backed maintenance and upgrade path.',
+    'positioning_model_desc' => 'Current-state assessment, system architecture, modular rollout, and governed maintenance over time.',
 
     // Challenges Section
     'challenges_title' => 'Operational Bottlenecks in SME & FDI Factories',
@@ -86,6 +86,29 @@ return [
     'challenges_kicker' => 'Current-state map',
     'challenges_symptoms_heading' => 'Signals that appear before digitization',
     'challenges_symptoms_text' => 'Production data often lives across paper records, shift spreadsheets, isolated device logs, and delayed reports. Without a shared operating source of truth, factory teams struggle to make timely decisions, trace quality issues, and respond quickly when exceptions occur on the production floor.',
+    'challenges_data_map_title' => 'Data flow before standardization',
+    'challenges_data_map' => [
+        [
+            'icon' => 'edit_note',
+            'title' => 'Fragmented capture',
+            'description' => 'Forms, spreadsheets, machine logs, and shift handovers follow different structures.',
+        ],
+        [
+            'icon' => 'rule_settings',
+            'title' => 'Distributed controls',
+            'description' => 'Approval, accountability, and checkpoints are not governed through one flow.',
+        ],
+        [
+            'icon' => 'schema',
+            'title' => 'Unnormalized data',
+            'description' => 'Warehouse, production, QC, and management see different operating views.',
+        ],
+        [
+            'icon' => 'monitoring',
+            'title' => 'Delayed decisions',
+            'description' => 'KPIs and exceptions arrive after the coordination moment has passed.',
+        ],
+    ],
     'challenges_flow' => [
         [
             'icon' => 'edit_document',
@@ -327,6 +350,31 @@ return [
         ],
     ],
 
+    'implementation_model_kicker' => 'Operating model',
+    'implementation_model_title' => 'From controlled scope to stable operations',
+    'implementation_model_items' => [
+        [
+            'icon' => 'fact_check',
+            'title' => 'Controlled scope',
+            'description' => 'Backlog, acceptance criteria, and change requests are governed by phase.',
+        ],
+        [
+            'icon' => 'account_tree',
+            'title' => 'Unified architecture',
+            'description' => 'Data, access control, integration, and reporting follow one model.',
+        ],
+        [
+            'icon' => 'deployed_code',
+            'title' => 'Tested delivery',
+            'description' => 'Each release is validated across process, data, and exception scenarios.',
+        ],
+        [
+            'icon' => 'support_agent',
+            'title' => 'Post-launch continuity',
+            'description' => 'Operations teams receive documentation, enablement, and support governance.',
+        ],
+    ],
+
     'implementation_flow_kicker' => 'Delivery cadence',
     'implementation_scrum_title' => 'Agile Delivery Cadence for Industrial Projects',
     'implementation_scrum_steps' => [
@@ -413,6 +461,24 @@ return [
 
     'why_us_capability_title' => 'Capability Profile for Factory Leadership',
     'why_us_capability_desc' => 'HKIncotech combines factory process understanding, custom software engineering capability, and structured delivery governance. The goal is to build an operating platform that can be maintained, accepted, and expanded over time, rather than delivering disconnected features.',
+    'why_us_capability_points' => [
+        [
+            'label' => 'Process',
+            'text' => 'Start from SOPs, control points, accountability, and data created on the floor.',
+        ],
+        [
+            'label' => 'Architecture',
+            'text' => 'Standardize data model, access control, API, and scalability from design.',
+        ],
+        [
+            'label' => 'Delivery',
+            'text' => 'Ship in phases with validation, documentation, and acceptance criteria.',
+        ],
+        [
+            'label' => 'Operations',
+            'text' => 'Sustain through SLA, monitoring, support, and post-launch improvement planning.',
+        ],
+    ],
 
     // Roadmap Section
     'roadmap_title' => 'Implementation & Expansion Roadmap',
@@ -436,6 +502,31 @@ return [
     'roadmap_note' => 'This approach helps the factory build a continuously improving platform rather than a system that only answers short-term requirements.',
 
     'roadmap_infrastructure_kicker' => 'Operating foundation',
+    'roadmap_architecture_kicker' => 'Expansion architecture',
+    'roadmap_architecture_title' => 'System layers that must scale together',
+    'roadmap_architecture_items' => [
+        [
+            'icon' => 'precision_manufacturing',
+            'title' => 'Shopfloor',
+            'description' => 'Workstations, barcode, tablets, equipment, and machine data.',
+        ],
+        [
+            'icon' => 'database',
+            'title' => 'Core data',
+            'description' => 'Orders, WIP, inventory, quality, users, and audit logs.',
+        ],
+        [
+            'icon' => 'api',
+            'title' => 'Integration',
+            'description' => 'ERP, PLC, IoT, BI, and internal or partner services.',
+        ],
+        [
+            'icon' => 'admin_panel_settings',
+            'title' => 'Governance',
+            'description' => 'Access control, SLA, maintenance, backup, and change control.',
+        ],
+    ],
+
     'roadmap_infrastructure_title' => 'Software Infrastructure Baseline',
     'roadmap_infrastructure_items' => [
         [

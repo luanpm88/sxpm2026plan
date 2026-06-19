@@ -19,6 +19,23 @@
             </div>
 
             <aside class="solution-delivery-stack">
+                <div class="solution-delivery-model">
+                    <div class="solution-kicker">
+                        <span class="material-symbols-rounded" aria-hidden="true">account_tree</span>
+                        {{ __('sme_manufacturing.implementation_model_kicker') }}
+                    </div>
+                    <h3>{{ __('sme_manufacturing.implementation_model_title') }}</h3>
+                    <div class="solution-delivery-model__grid">
+                        @foreach(__('sme_manufacturing.implementation_model_items') as $item)
+                            <div class="solution-delivery-model__item">
+                                <span class="material-symbols-rounded" aria-hidden="true">{{ $item['icon'] }}</span>
+                                <strong>{{ $item['title'] }}</strong>
+                                <small>{{ $item['description'] }}</small>
+                            </div>
+                        @endforeach
+                    </div>
+                </div>
+
                 <div class="solution-flow-panel">
                     <div class="solution-kicker">
                         <span class="material-symbols-rounded" aria-hidden="true">cycle</span>

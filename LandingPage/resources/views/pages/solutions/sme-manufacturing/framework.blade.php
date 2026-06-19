@@ -1,4 +1,4 @@
-<section style="background: var(--surface);">
+<section class="solution-section--surface">
     <div class="container-v5">
         <div class="section-header">
             <h2 class="section-title">{{ __('sme_manufacturing.framework_title') }}</h2>
@@ -37,7 +37,7 @@
                     <article class="framework-layer">
                         <span class="framework-layer__num">{{ $layer['num'] }}</span>
                         <div>
-                            <h3 style="font-size: 1rem; font-weight: 800; color: var(--text-dark); margin-bottom: 0.55rem;">{{ $layer['title'] }}</h3>
+                            <h3>{{ $layer['title'] }}</h3>
                             <ul>
                                 @foreach($layer['items'] as $item)
                                     <li>{{ $item }}</li>
@@ -49,9 +49,9 @@
             </div>
         </div>
 
-        <div style="margin-top: 3rem;">
-            <div class="section-header" style="margin-bottom: 1.6rem;">
-                <h3 class="section-title" style="font-size: 1.65rem;">{{ __('sme_manufacturing.framework_tech_title') }}</h3>
+        <div class="solution-technology-section">
+            <div class="section-header section-header--compact">
+                <h3 class="section-title section-title--small">{{ __('sme_manufacturing.framework_tech_title') }}</h3>
                 <p class="section-subtitle">{{ __('sme_manufacturing.framework_tech_subtitle') }}</p>
             </div>
 

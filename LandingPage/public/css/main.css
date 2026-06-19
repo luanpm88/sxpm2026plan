@@ -10,10 +10,11 @@
     /* ── HKIncotech Enterprise palette — Deep Navy + Ink ──
        Discipline: ONE brand colour (navy). Blue is structural, never decorative.
        No orange / teal / purple / rainbow. Text is near-black for crisp authority. */
-    --primary: #0e3163;            /* enterprise navy — strong & dark (logo, primary buttons, emphasis), a touch fresher */
+    --primary: #183060;            /* official HKIncotech navy — logo, primary buttons, highlight text */
     --primary-light: #1a4585;      /* lifted navy — button hover, gradients */
-    --primary-dark: #08213f;       /* deepest navy — active/press, dark sections */
-    --primary-subtle: rgba(14, 49, 99, 0.05);   /* faint navy wash — tints, illustration fills */
+    --primary-dark: #0F203D;       /* deepest navy — active/press, dark sections */
+    --logo-color: var(--primary);  /* keep HK mark + INCOTECH wordmark synced with brand navy */
+    --primary-subtle: rgba(24, 48, 96, 0.05);   /* faint navy wash — tints, illustration fills */
     --accent: #2f6abf;             /* single restrained steel-blue — small interactive accents only (~the 20%) */
     --accent-light: rgba(47, 106, 191, 0.10);
     /* Neutral, non-blue-tinted surfaces */
@@ -49,8 +50,8 @@
     --button-secondary-text: var(--primary);
     --button-secondary-border: var(--border);
     --button-secondary-hover-bg: var(--primary-subtle);
-    --shadow-color: rgba(14, 49, 99, 0.06);
-    --shadow-hover: rgba(14, 49, 99, 0.11);
+    --shadow-color: rgba(24, 48, 96, 0.06);
+    --shadow-hover: rgba(24, 48, 96, 0.11);
     /* Notion-style: larger radius, generous feel */
     --card-radius: 14px;
     --section-radius: 20px;
@@ -256,7 +257,7 @@ html[data-theme="dark"] header {
     /* gap: 0.4rem; */
     font-weight: 800;
     font-size: 1rem;
-    color: var(--primary-dark);
+    color: var(--logo-color);
     text-decoration: none;
     flex-shrink: 0;
     letter-spacing: 0;
@@ -488,16 +489,16 @@ html[data-theme="dark"] .nav-group__panel {
 /* Fallback if color-mix unsupported */
 @supports not (background: color-mix(in srgb, var(--primary) 50%, var(--surface))) {
     .nav-mega__aside {
-        background: linear-gradient(135deg, rgba(14, 49, 99, 0.95) 0%, rgba(26, 69, 133, 0.95) 100%);
-        border-color: rgba(14, 49, 99, 0.35);
+        background: linear-gradient(135deg, rgba(24, 48, 96, 0.95) 0%, rgba(26, 69, 133, 0.95) 100%);
+        border-color: rgba(24, 48, 96, 0.35);
     }
     .nav-group--expertise .nav-mega__aside {
-        background: linear-gradient(135deg, rgba(14, 49, 99, 0.95) 0%, rgba(26, 69, 133, 0.95) 100%);
-        border-color: rgba(14, 49, 99, 0.35);
+        background: linear-gradient(135deg, rgba(24, 48, 96, 0.95) 0%, rgba(26, 69, 133, 0.95) 100%);
+        border-color: rgba(24, 48, 96, 0.35);
     }
     .nav-group--company .nav-mega__aside {
-        background: linear-gradient(135deg, rgba(14, 49, 99, 0.95) 0%, rgba(26, 69, 133, 0.95) 100%);
-        border-color: rgba(14, 49, 99, 0.35);
+        background: linear-gradient(135deg, rgba(24, 48, 96, 0.95) 0%, rgba(26, 69, 133, 0.95) 100%);
+        border-color: rgba(24, 48, 96, 0.35);
     }
 }
 
@@ -860,7 +861,7 @@ nav.mobile-open {
     right: -120px;
     width: 500px;
     height: 500px;
-    background: radial-gradient(circle, rgba(14, 49, 99, 0.06) 0%, transparent 70%);
+    background: radial-gradient(circle, rgba(24, 48, 96, 0.06) 0%, transparent 70%);
     border-radius: 50%;
     pointer-events: none;
 }
@@ -872,7 +873,7 @@ nav.mobile-open {
     left: -100px;
     width: 400px;
     height: 400px;
-    background: radial-gradient(circle, rgba(14, 49, 99, 0.04) 0%, transparent 70%);
+    background: radial-gradient(circle, rgba(24, 48, 96, 0.04) 0%, transparent 70%);
     border-radius: 50%;
     pointer-events: none;
 }
@@ -904,7 +905,7 @@ nav.mobile-open {
     font-weight: 700;
     letter-spacing: 0.03em;
     margin-bottom: 1.75rem;
-    border: 1px solid rgba(14, 49, 99, 0.12);
+    border: 1px solid rgba(24, 48, 96, 0.12);
 }
 
 .hero h1 {
@@ -928,7 +929,7 @@ nav.mobile-open {
     right: -4px;
     bottom: 2px;
     height: 12px;
-    background: rgba(14, 49, 99, 0.12);
+    background: rgba(24, 48, 96, 0.12);
     border-radius: 4px;
     z-index: -1;
 }
@@ -1036,7 +1037,7 @@ nav.mobile-open {
     background: var(--surface);
     border-radius: 16px;
     border: 1px solid var(--border);
-    box-shadow: 0 20px 60px rgba(14, 49, 99, 0.1), 0 4px 12px rgba(0,0,0,0.04);
+    box-shadow: 0 20px 60px rgba(24, 48, 96, 0.1), 0 4px 12px rgba(0,0,0,0.04);
     overflow: hidden;
 }
 
@@ -1145,7 +1146,7 @@ nav.mobile-open {
     border: 1px solid var(--border);
     border-radius: 12px;
     padding: 0.75rem 1rem;
-    box-shadow: 0 8px 24px rgba(14, 49, 99, 0.08);
+    box-shadow: 0 8px 24px rgba(24, 48, 96, 0.08);
     z-index: 2;
     display: flex;
     align-items: center;
@@ -1258,7 +1259,7 @@ nav.mobile-open {
 }
 
 .fp-card:hover {
-    border-color: rgba(14, 49, 99, 0.25);
+    border-color: rgba(24, 48, 96, 0.25);
     box-shadow: 0 6px 24px var(--shadow-color);
     transform: translateY(-2px);
 }
@@ -1266,7 +1267,7 @@ nav.mobile-open {
 /* Why-choose-us cards: accent border color on hover */
 .why-card:hover {
     /* Fallback for browsers without color-mix() support */
-    border-color: rgba(14, 49, 99, 0.25) !important;
+    border-color: rgba(24, 48, 96, 0.25) !important;
     /* Modern: per-card accent color via CSS custom property */
     border-color: color-mix(in srgb, var(--card-accent, var(--primary)) 25%, transparent) !important;
     box-shadow: 0 8px 28px var(--shadow-color);
@@ -2440,6 +2441,181 @@ nav.mobile-open {
     margin-top: 1.25rem;
 }
 
+/* SCRUM delivery operating model */
+.scrum-operating-section {
+    background: var(--secondary-bg);
+    padding: 4.8rem 0;
+}
+
+.scrum-operating-section .section-header {
+    margin-bottom: 2.4rem;
+}
+
+.scrum-operating-grid {
+    display: grid;
+    grid-template-columns: minmax(0, 0.95fr) minmax(360px, 1.05fr);
+    gap: 1.35rem;
+    align-items: start;
+}
+
+.scrum-sprint-stack {
+    display: grid;
+    gap: 0.85rem;
+}
+
+.scrum-sprint-card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--card-radius);
+    padding: 1.15rem;
+    box-shadow: 0 10px 28px var(--shadow-color);
+}
+
+.scrum-sprint-card__head {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 0.8rem;
+    margin-bottom: 0.75rem;
+}
+
+.scrum-sprint-card__icon {
+    width: 2.25rem;
+    height: 2.25rem;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    background: var(--primary-subtle);
+    color: var(--primary);
+    font-size: 1.08rem;
+}
+
+.scrum-sprint-card__index {
+    color: var(--text-light);
+    font-size: 0.78rem;
+    font-weight: 800;
+    letter-spacing: 0.08em;
+}
+
+.scrum-sprint-card h3 {
+    color: var(--text-dark);
+    font-size: 1rem;
+    font-weight: 800;
+    line-height: 1.35;
+    margin-bottom: 0.42rem;
+}
+
+.scrum-sprint-card p {
+    color: var(--text-gray);
+    line-height: 1.58;
+    margin: 0;
+    font-size: 0.9rem;
+}
+
+.scrum-sprint-card__artifact {
+    margin-top: 0.85rem;
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    background: var(--secondary-bg);
+    color: var(--text-dark);
+    font-size: 0.8rem;
+    font-weight: 800;
+    line-height: 1.4;
+    padding: 0.62rem 0.75rem;
+}
+
+.scrum-operating-model {
+    background: var(--contrast-panel-bg);
+    border: 1px solid var(--contrast-panel-border);
+    border-radius: var(--card-radius);
+    color: var(--contrast-panel-text);
+    padding: 1.45rem;
+    box-shadow: 0 18px 42px var(--shadow-hover);
+}
+
+.scrum-operating-model .solution-kicker,
+.scrum-operating-model h3 {
+    color: var(--contrast-panel-text);
+}
+
+.scrum-operating-model h3 {
+    font-size: 1.25rem;
+    font-weight: 800;
+    line-height: 1.3;
+    margin-bottom: 0.65rem;
+}
+
+.scrum-operating-model p {
+    color: var(--contrast-panel-muted-strong);
+    line-height: 1.65;
+    margin: 0;
+}
+
+.scrum-flow-board {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 0.65rem;
+    margin-top: 1.2rem;
+}
+
+.scrum-flow-node,
+.scrum-control-card {
+    border: 1px solid var(--contrast-glass-border);
+    border-radius: 12px;
+    background: var(--contrast-glass-bg);
+    padding: 0.78rem;
+}
+
+.scrum-flow-node {
+    position: relative;
+    min-height: 100%;
+}
+
+.scrum-flow-node::before {
+    content: "";
+    position: absolute;
+    top: 1.35rem;
+    left: -0.65rem;
+    width: 0.65rem;
+    height: 1px;
+    background: var(--contrast-glass-border);
+}
+
+.scrum-flow-node:first-child::before {
+    content: none;
+}
+
+.scrum-flow-node .material-symbols-rounded,
+.scrum-control-card .material-symbols-rounded {
+    color: var(--contrast-panel-text);
+    font-size: 1.05rem;
+    margin-bottom: 0.45rem;
+}
+
+.scrum-flow-node strong,
+.scrum-control-card strong {
+    display: block;
+    color: var(--contrast-panel-text);
+    font-size: 0.86rem;
+    margin-bottom: 0.22rem;
+}
+
+.scrum-flow-node small,
+.scrum-control-card small {
+    display: block;
+    color: var(--contrast-panel-muted);
+    font-size: 0.76rem;
+    line-height: 1.42;
+}
+
+.scrum-control-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 0.7rem;
+    margin-top: 0.8rem;
+}
+
 /* Bento Grid (Notion-HK style) */
 .bento-grid {
     display: grid;
@@ -2611,13 +2787,13 @@ html[data-theme="dark"] div[style*="linear-gradient(135deg, #f0f9ff 0%, #ecfdf5"
 
 /* Dark mode: AI platform amber gradient sidebar */
 html[data-theme="dark"] div[style*="linear-gradient(135deg, #fef3c7 0%, #fde68a"] {
-    background: rgba(14, 49, 99, 0.1) !important;
-    border-color: rgba(14, 49, 99, 0.25) !important;
+    background: rgba(24, 48, 96, 0.1) !important;
+    border-color: rgba(24, 48, 96, 0.25) !important;
 }
 
 /* Dark mode: navy-tinted blockquotes in ai article */
 html[data-theme="dark"] div[style*="background: #fef3c7"][style*="border-left: 4px solid #d97706"] {
-    background: rgba(14, 49, 99, 0.1) !important;
+    background: rgba(24, 48, 96, 0.1) !important;
 }
 
 /* Dark mode: navy badge text (#92400e is too dark) */
@@ -2702,9 +2878,9 @@ html[data-theme="dark"] svg line[stroke="#1a4d5e"] {
     stroke: var(--primary);
 }
 
-html[data-theme="dark"] svg circle[fill="#0e3163"],
-html[data-theme="dark"] svg line[stroke="#0e3163"],
-html[data-theme="dark"] svg text[fill="#0e3163"] {
+html[data-theme="dark"] svg circle[fill="#183060"],
+html[data-theme="dark"] svg line[stroke="#183060"],
+html[data-theme="dark"] svg text[fill="#183060"] {
     fill: var(--primary);
     stroke: var(--primary);
 }
@@ -2972,6 +3148,7 @@ div[style*="border-radius: 16px"] {
     .solution-implementation-grid,
     .solution-proof-layout,
     .solution-expansion-map,
+    .scrum-operating-grid,
     .solution-baseline-grid,
     .solution-support-grid {
         grid-template-columns: 1fr;
@@ -2981,6 +3158,7 @@ div[style*="border-radius: 16px"] {
     .solution-module-grid,
     .shopfloor-matrix__items,
     .solution-expansion-map__grid,
+    .scrum-flow-board,
     .solution-risk-grid,
     .solution-packages-grid {
         grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -3115,9 +3293,24 @@ div[style*="border-radius: 16px"] {
     .solution-roadmap-rail,
     .solution-expansion-map__grid,
     .solution-mini-grid,
+    .scrum-flow-board,
+    .scrum-control-grid,
     .solution-risk-grid,
     .solution-packages-grid {
         grid-template-columns: 1fr;
+    }
+
+    .scrum-operating-section {
+        padding: 3.5rem 0;
+    }
+
+    .scrum-operating-model,
+    .scrum-sprint-card {
+        padding: 1.15rem;
+    }
+
+    .scrum-flow-node::before {
+        content: none;
     }
 
     .solution-context,
@@ -3257,27 +3450,6 @@ html[data-theme="dark"] .services-tech-stack-block a[style*="background: var(--p
     color: var(--button-primary-text) !important;
 }
 
-html[data-theme="dark"] .scrum-sprint-cycle-section li strong {
-    color: var(--text-dark) !important;
-}
-
-html[data-theme="dark"] .scrum-sprint-cycle-section li span {
-    color: var(--text-gray) !important;
-}
-
-html[data-theme="dark"] .scrum-sprint-cycle-section svg text[fill="#1a4d5e"] {
-    fill: var(--primary) !important;
-}
-
-html[data-theme="dark"] .scrum-sprint-cycle-section svg path[stroke="#1a4d5e"],
-html[data-theme="dark"] .scrum-sprint-cycle-section svg line[stroke="#1a4d5e"] {
-    stroke: var(--primary-light) !important;
-}
-
-html[data-theme="dark"] .scrum-sprint-cycle-section svg polygon[fill="#1a4d5e"] {
-    fill: var(--primary-light) !important;
-}
-
 /* Dark mode: additional inline text colors not covered above */
 html[data-theme="dark"] [style*="color: #1a4d5e"],
 html[data-theme="dark"] [style*="color:#1a4d5e"] {
@@ -3370,7 +3542,7 @@ html[data-theme="dark"] select option {
 /* Dark mode: alert/notification boxes */
 html[data-theme="dark"] [style*="background: #eaf8f2"] {
     background: var(--primary-subtle) !important;
-    border-color: rgba(14, 49, 99, 0.3) !important;
+    border-color: rgba(24, 48, 96, 0.3) !important;
     color: var(--primary) !important;
 }
 
@@ -3938,6 +4110,241 @@ html[data-theme="dark"] a[style*="background: linear-gradient(135deg, #fef3c7"] 
 @media (max-width: 600px) {
     .pain-grid {
         grid-template-columns: 1fr;
+    }
+}
+
+/* ── Contact Location Panel ─────────────────────────────────────── */
+.contact-location-section {
+    background: var(--secondary-bg);
+    padding: 0 0 6rem;
+}
+.contact-location-panel {
+    display: grid;
+    grid-template-columns: minmax(0, 1.15fr) minmax(360px, 0.85fr);
+    gap: 0;
+    min-height: 430px;
+    overflow: hidden;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--section-radius);
+    box-shadow: 0 18px 48px var(--shadow-color);
+}
+.contact-location-map {
+    position: relative;
+    min-height: 430px;
+    background:
+        radial-gradient(circle at 28% 28%, var(--primary-subtle), transparent 30%),
+        radial-gradient(circle at 76% 62%, var(--accent-light), transparent 28%),
+        var(--surface-elevated);
+    border-right: 1px solid var(--border);
+    overflow: hidden;
+}
+.contact-location-grid {
+    position: absolute;
+    inset: 0;
+    background-image:
+        linear-gradient(var(--border) 1px, transparent 1px),
+        linear-gradient(90deg, var(--border) 1px, transparent 1px);
+    background-size: 56px 56px;
+    opacity: 0.34;
+}
+.contact-location-map::before,
+.contact-location-map::after {
+    content: '';
+    position: absolute;
+    border-radius: 999px;
+    border: 1px solid var(--border);
+}
+.contact-location-map::before {
+    width: 280px;
+    height: 280px;
+    left: 12%;
+    top: 18%;
+}
+.contact-location-map::after {
+    width: 190px;
+    height: 190px;
+    right: 12%;
+    bottom: 16%;
+}
+.contact-location-node {
+    position: absolute;
+    z-index: 2;
+    display: grid;
+    gap: 0.2rem;
+    width: 188px;
+    padding: 1rem;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    box-shadow: 0 14px 30px var(--shadow-color);
+}
+.contact-location-node .material-symbols-rounded {
+    width: 38px;
+    height: 38px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--contrast-action-text);
+    background: var(--button-secondary-hover-bg);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    font-size: 1.2rem;
+}
+.contact-location-node strong {
+    color: var(--text-dark);
+    font-size: 0.95rem;
+    line-height: 1.25;
+}
+.contact-location-node small {
+    color: var(--text-gray);
+    font-size: 0.78rem;
+    line-height: 1.45;
+}
+.contact-location-node--hq {
+    left: 11%;
+    top: 17%;
+}
+.contact-location-node--client {
+    right: 11%;
+    top: 18%;
+}
+.contact-location-node--delivery {
+    left: 41%;
+    bottom: 13%;
+}
+.contact-location-route {
+    position: absolute;
+    z-index: 1;
+    height: 1px;
+    background: var(--primary);
+    opacity: 0.38;
+    transform-origin: left center;
+}
+.contact-location-route::after {
+    content: '';
+    position: absolute;
+    right: -5px;
+    top: -4px;
+    width: 9px;
+    height: 9px;
+    border-radius: 999px;
+    background: var(--primary);
+}
+.contact-location-route--one {
+    left: 30%;
+    top: 33%;
+    width: 34%;
+    transform: rotate(5deg);
+}
+.contact-location-route--two {
+    left: 31%;
+    top: 50%;
+    width: 26%;
+    transform: rotate(34deg);
+}
+.contact-location-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: clamp(2rem, 4vw, 4rem);
+}
+.contact-location-content h2 {
+    margin: 0.6rem 0 1rem;
+    color: var(--text-dark);
+    font-size: clamp(1.6rem, 2vw, 2.2rem);
+    line-height: 1.12;
+    letter-spacing: 0;
+}
+.contact-location-content p {
+    color: var(--text-gray);
+    line-height: 1.75;
+    margin-bottom: 1.7rem;
+}
+.contact-location-list {
+    display: grid;
+    gap: 0.85rem;
+}
+.contact-location-item {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 0.85rem;
+    align-items: flex-start;
+    padding: 1rem;
+    background: var(--secondary-bg);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+}
+.contact-location-item .material-symbols-rounded {
+    width: 36px;
+    height: 36px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--primary);
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    font-size: 1.1rem;
+}
+.contact-location-item strong {
+    display: block;
+    color: var(--text-dark);
+    font-size: 0.95rem;
+    line-height: 1.35;
+    margin-bottom: 0.2rem;
+}
+.contact-location-item small {
+    display: block;
+    color: var(--text-gray);
+    font-size: 0.84rem;
+    line-height: 1.55;
+}
+@media (max-width: 992px) {
+    .contact-location-panel {
+        grid-template-columns: 1fr;
+    }
+    .contact-location-map {
+        border-right: 0;
+        border-bottom: 1px solid var(--border);
+    }
+}
+@media (max-width: 600px) {
+    .contact-location-section {
+        padding-bottom: 4rem;
+    }
+    .contact-location-panel {
+        border-radius: 14px;
+    }
+    .contact-location-map {
+        min-height: 360px;
+    }
+    .contact-location-node {
+        width: 148px;
+        padding: 0.8rem;
+    }
+    .contact-location-node--hq {
+        left: 7%;
+        top: 13%;
+    }
+    .contact-location-node--client {
+        right: 6%;
+        top: 20%;
+    }
+    .contact-location-node--delivery {
+        left: 27%;
+        bottom: 10%;
+    }
+    .contact-location-route--one {
+        left: 28%;
+        width: 32%;
+    }
+    .contact-location-route--two {
+        left: 27%;
+        width: 30%;
+    }
+    .contact-location-content {
+        padding: 1.5rem;
     }
 }
 

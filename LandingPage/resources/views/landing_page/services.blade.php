@@ -318,7 +318,7 @@
                 </div>
 
                 <!-- AI Capabilities Banner -->
-                <div style="background: var(--contrast-panel-bg); border-radius: 16px; padding: 3rem 2rem; color: var(--contrast-panel-text); box-shadow: 0 12px 48px rgba(14, 49, 99, 0.25); margin-bottom: 2.5rem;">
+                <div style="background: var(--contrast-panel-bg); border-radius: 16px; padding: 3rem 2rem; color: var(--contrast-panel-text); box-shadow: 0 12px 48px rgba(24, 48, 96, 0.25); margin-bottom: 2.5rem;">
                     <div style="max-width: 1200px; margin: 0 auto;">
                         <h3 style="font-size: 1.6rem; font-weight: 800; text-align: center; margin-bottom: 0.5rem;">{{ __('services.ai.capabilities_title') }}</h3>
                         <p style="text-align: center; font-size: 1.02rem; margin-bottom: 2rem; opacity: 0.95;">{{ __('services.ai.capabilities_desc') }}</p>
@@ -452,7 +452,7 @@
             </div>
 
             <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; align-items: center; margin-bottom: 4rem;">
-                <div class="position-relative" style="background: var(--surface); border-radius: var(--card-radius); padding: 1.5rem; border: 2px solid var(--primary); box-shadow: 0 8px 32px rgba(14, 49, 99, 0.15);">
+                <div class="position-relative" style="background: var(--surface); border-radius: var(--card-radius); padding: 1.5rem; border: 2px solid var(--primary); box-shadow: 0 8px 32px rgba(24, 48, 96, 0.15);">
                     <svg viewBox="0 0 420 300" style="width: 100%;">
                         <text x="12" y="22" font-size="10" fill="var(--text-dark)" font-weight="800">{{ __('services.saas.diagram_title') }}</text>
 
@@ -531,7 +531,7 @@
                 </div>
                 <div class="card-grid" style="--card-min: 300px; --card-max: 440px; --card-gap: 1.5rem; margin-bottom: 2rem;">
                     @foreach(__('services.saas.features') as $feature)
-                    <div style="background: var(--surface); border: 1px solid var(--border); border-radius: var(--card-radius); padding: 1.75rem; transition: all 0.3s ease;" onmouseover="this.style.boxShadow='0 8px 24px rgba(14, 49, 99, 0.1)'; this.style.transform='translateY(-4px)';" onmouseout="this.style.boxShadow=''; this.style.transform='';">
+                    <div style="background: var(--surface); border: 1px solid var(--border); border-radius: var(--card-radius); padding: 1.75rem; transition: all 0.3s ease;" onmouseover="this.style.boxShadow='0 8px 24px rgba(24, 48, 96, 0.1)'; this.style.transform='translateY(-4px)';" onmouseout="this.style.boxShadow=''; this.style.transform='';">
                         <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1rem;">
                             <div style="width: 48px; height: 48px; background: var(--secondary-bg); border-radius: 10px; display: flex; align-items: center; justify-content: center;">
                                 <span class="material-symbols-rounded" style="color: var(--primary); font-size: 1.5rem;">{{ $feature['icon'] }}</span>
@@ -544,7 +544,7 @@
                 </div>
                 <div class="card-grid" style="--card-min: 300px; --card-max: 440px; --card-gap: 1.5rem;">
                     @foreach(__('services.saas.saas_features') as $feature)
-                    <div style="background: var(--surface); border: 1px solid var(--border); border-radius: var(--card-radius); padding: 1.75rem; transition: all 0.3s ease;" onmouseover="this.style.boxShadow='0 8px 24px rgba(14, 49, 99, 0.1)'; this.style.transform='translateY(-4px)';" onmouseout="this.style.boxShadow=''; this.style.transform='';">
+                    <div style="background: var(--surface); border: 1px solid var(--border); border-radius: var(--card-radius); padding: 1.75rem; transition: all 0.3s ease;" onmouseover="this.style.boxShadow='0 8px 24px rgba(24, 48, 96, 0.1)'; this.style.transform='translateY(-4px)';" onmouseout="this.style.boxShadow=''; this.style.transform='';">
                         <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1rem;">
                             <div style="width: 48px; height: 48px; background: var(--secondary-bg); border-radius: 10px; display: flex; align-items: center; justify-content: center;">
                                 <span class="material-symbols-rounded" style="color: var(--primary); font-size: 1.5rem;">{{ $feature['icon'] }}</span>
@@ -619,7 +619,7 @@
 
             <div class="card-grid" style="--card-min: 320px; --card-max: 460px; --card-gap: 2rem;">
                 @foreach(__('services.engagement.models') as $model)
-                <div style="background: var(--surface); border: 1px solid var(--border); border-radius: var(--card-radius); padding: 2rem; text-align: center; transition: all 0.3s ease;" onmouseover="this.style.boxShadow='0 12px 30px rgba(14, 49, 99, 0.15)'; this.style.transform='translateY(-4px)';" onmouseout="this.style.boxShadow=''; this.style.transform='';">
+                <div style="background: var(--surface); border: 1px solid var(--border); border-radius: var(--card-radius); padding: 2rem; text-align: center; transition: all 0.3s ease;" onmouseover="this.style.boxShadow='0 12px 30px rgba(24, 48, 96, 0.15)'; this.style.transform='translateY(-4px)';" onmouseout="this.style.boxShadow=''; this.style.transform='';">
                     <h3 style="font-size: 1.15rem; font-weight: 700; color: var(--text-dark); margin-bottom: 0.75rem;">{{ $model['title'] }}</h3>
                     <p style="color: var(--text-gray); font-size: 0.95rem; line-height: 1.6; margin-bottom: 1.5rem;">{{ $model['desc'] }}</p>
                     <div style="background: var(--secondary-bg); padding: 1rem; border-radius: 8px;">

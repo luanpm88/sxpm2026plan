@@ -55,28 +55,85 @@ return [
     ],
 
     // Sprint Cycle Section
-    'sprint_title' => 'Chi Tiết Chu Kỳ Sprint',
-    'sprint_subtitle' => 'Mỗi sprint gồm lập kế hoạch, phát triển, review, kiểm thử và rút kinh nghiệm.',
+    'sprint_title' => 'Mô hình vận hành sprint',
+    'sprint_subtitle' => 'Mỗi sprint được quản trị như một vòng giao hàng có kiểm soát: làm rõ phạm vi, triển khai kỹ thuật, kiểm thử, review với stakeholder và chuẩn bị phát hành.',
     'sprint_items' => [
         [
-            'title' => 'Lập kế hoạch sprint',
-            'desc' => 'Xác định mục tiêu, chia nhỏ công việc và thống nhất tiêu chí hoàn thành.',
+            'icon' => 'fact_check',
+            'title' => 'Chốt phạm vi & kế hoạch sprint',
+            'desc' => 'Thống nhất ưu tiên kinh doanh, mục tiêu sprint, tiêu chí nghiệm thu, phụ thuộc và rủi ro trước khi bắt đầu triển khai.',
+            'artifact' => 'Mục tiêu sprint + tiêu chí nghiệm thu',
         ],
         [
-            'title' => 'Đồng bộ hằng ngày',
-            'desc' => 'Cập nhật tiến độ, điểm nghẽn và việc cần phối hợp trong đội dự án.',
+            'icon' => 'sync_alt',
+            'title' => 'Nhịp điều phối thực thi',
+            'desc' => 'Giữ sản phẩm, kỹ thuật, QA và quản trị dự án cùng nhịp bằng cập nhật ngắn, xử lý blocker và rà soát rủi ro.',
+            'artifact' => 'Cập nhật tiến độ + risk log',
         ],
         [
-            'title' => 'Phát triển',
-            'desc' => 'Lập trình, review mã nguồn, kiểm thử tự động và CI/CD.',
+            'icon' => 'deployed_code',
+            'title' => 'Xây dựng kỹ thuật',
+            'desc' => 'Triển khai phạm vi đã chốt bằng review mã nguồn, kỷ luật branch, CI/CD và kiểm tra ở mức kiến trúc.',
+            'artifact' => 'Increment có thể chạy được',
         ],
         [
-            'title' => 'Review sprint',
-            'desc' => 'Trình bày kết quả cho các bên liên quan và ghi nhận phản hồi.',
+            'icon' => 'verified',
+            'title' => 'QA, review & nghiệm thu',
+            'desc' => 'Xác thực chức năng, tích hợp, dữ liệu, kịch bản ngoại lệ và phản hồi stakeholder trước khi sign-off.',
+            'artifact' => 'Kết quả test + biên bản review',
         ],
         [
-            'title' => 'Rút kinh nghiệm',
-            'desc' => 'Đánh giá cách làm việc và cải thiện nhịp triển khai cho sprint tiếp theo.',
+            'icon' => 'published_with_changes',
+            'title' => 'Sẵn sàng phát hành & cải tiến',
+            'desc' => 'Chuẩn bị triển khai, cập nhật tài liệu, chốt bài học và đưa thay đổi có kiểm soát vào sprint kế tiếp.',
+            'artifact' => 'Checklist release + backlog kế tiếp',
+        ],
+    ],
+    'sprint_model_kicker' => 'Quản trị giao hàng',
+    'sprint_model_title' => 'Cách một sprint trở thành phần mềm có thể review và nghiệm thu',
+    'sprint_model_desc' => 'Sprint không chỉ là một khung thời gian phát triển. Đó là vòng quản trị biến phạm vi thành phần mềm đã kiểm thử, quyết định rõ ràng và bàn giao có kiểm soát.',
+    'sprint_model_stages' => [
+        [
+            'icon' => 'assignment',
+            'title' => 'Backlog',
+            'desc' => 'Ưu tiên, phạm vi, tiêu chí nghiệm thu',
+        ],
+        [
+            'icon' => 'terminal',
+            'title' => 'Build',
+            'desc' => 'Kỹ thuật, review, CI/CD',
+        ],
+        [
+            'icon' => 'rule',
+            'title' => 'Verify',
+            'desc' => 'QA, UAT, kiểm tra tích hợp',
+        ],
+        [
+            'icon' => 'rocket_launch',
+            'title' => 'Release',
+            'desc' => 'Triển khai, giám sát, bàn giao',
+        ],
+    ],
+    'sprint_controls' => [
+        [
+            'icon' => 'groups',
+            'title' => 'Review với stakeholder',
+            'desc' => 'Phần việc đã chạy được được trình bày đủ sớm để nhận phản hồi nghiệp vụ.',
+        ],
+        [
+            'icon' => 'shield',
+            'title' => 'Cổng kiểm soát chất lượng',
+            'desc' => 'Definition of Done, test và defect được minh bạch trước khi phát hành.',
+        ],
+        [
+            'icon' => 'monitoring',
+            'title' => 'Kiểm soát tiến độ',
+            'desc' => 'Rủi ro, blocker và tác động thay đổi được theo dõi trong suốt sprint.',
+        ],
+        [
+            'icon' => 'inventory',
+            'title' => 'Tài sản bàn giao',
+            'desc' => 'Tài liệu, ghi chú phát hành và bước kế tiếp đi cùng từng increment.',
         ],
     ],
 

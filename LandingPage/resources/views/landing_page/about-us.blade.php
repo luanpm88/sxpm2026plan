@@ -64,16 +64,16 @@
                         <div class="d-flex align-items-start position-relative" style="margin-bottom: {{ $index < count($milestones) - 1 ? '2rem' : '0' }};">
                             <!-- Timeline Line -->
                             @if($index < count($milestones) - 1)
-                            <div style="position: absolute; left: 22px; top: 48px; width: 3px; height: calc(100% + 2rem); background: linear-gradient(180deg, var(--primary) 0%, rgba(14, 49, 99, 0.2) 100%);"></div>
+                            <div style="position: absolute; left: 22px; top: 48px; width: 3px; height: calc(100% + 2rem); background: linear-gradient(180deg, var(--primary) 0%, rgba(24, 48, 96, 0.2) 100%);"></div>
                             @endif
                             
                             <!-- Circle Number -->
-                            <div class="flex-shrink-0" style="width: 48px; height: 48px; border-radius: 50%; background: {{ $milestone['highlight'] ? 'var(--primary)' : 'var(--surface)' }}; border: 3px solid var(--primary); display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 1.1rem; color: {{ $milestone['highlight'] ? 'var(--surface)' : 'var(--primary)' }}; box-shadow: 0 2px 8px rgba(14, 49, 99, 0.15); position: relative; z-index: 1;">
+                            <div class="flex-shrink-0" style="width: 48px; height: 48px; border-radius: 50%; background: {{ $milestone['highlight'] ? 'var(--primary)' : 'var(--surface)' }}; border: 3px solid var(--primary); display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 1.1rem; color: {{ $milestone['highlight'] ? 'var(--surface)' : 'var(--primary)' }}; box-shadow: 0 2px 8px rgba(24, 48, 96, 0.15); position: relative; z-index: 1;">
                                 {{ $index + 1 }}
                             </div>
                             
                             <!-- Content Card -->
-                            <div class="flex-grow-1 ms-3" style="background: {{ $milestone['highlight'] ? 'rgba(14, 49, 99, 0.05)' : '#f9fafb' }}; border: {{ $milestone['highlight'] ? '2px solid var(--primary)' : '1px solid #e5e7eb' }}; border-radius: 8px; padding: 1rem 1.25rem;">
+                            <div class="flex-grow-1 ms-3" style="background: {{ $milestone['highlight'] ? 'rgba(24, 48, 96, 0.05)' : '#f9fafb' }}; border: {{ $milestone['highlight'] ? '2px solid var(--primary)' : '1px solid #e5e7eb' }}; border-radius: 8px; padding: 1rem 1.25rem;">
                                 <h5 class="mb-1" style="color: var(--primary); font-weight: 700; font-size: 1rem;">
                                     {{ $milestone['year'] }}: {{ $milestone['title'] }}
                                 </h5>
@@ -128,7 +128,7 @@
             <div class="card-grid" style="--card-min: 280px; --card-max: 420px; --card-gap: 2rem;">
                 @php $leaders = __('about.team'); @endphp
                 @foreach($leaders as $leader)
-                <div style="background: var(--surface); border: 1px solid var(--border); border-radius: var(--card-radius); overflow: hidden; transition: all 0.3s ease;" onmouseover="this.style.borderColor='var(--primary)'; this.style.boxShadow='0 12px 30px rgba(14, 49, 99, 0.1)';" onmouseout="this.style.borderColor='var(--border)'; this.style.boxShadow='';">
+                <div style="background: var(--surface); border: 1px solid var(--border); border-radius: var(--card-radius); overflow: hidden; transition: all 0.3s ease;" onmouseover="this.style.borderColor='var(--primary)'; this.style.boxShadow='0 12px 30px rgba(24, 48, 96, 0.1)';" onmouseout="this.style.borderColor='var(--border)'; this.style.boxShadow='';">
                     <div style="background: var(--contrast-panel-bg); height: 150px;"></div>
                     <div style="padding: 1.5rem; text-align: center; margin-top: -60px;">
                         <div style="width: 120px; height: 120px; background: var(--surface); border: 3px solid var(--border); border-radius: 50%; margin: 0 auto 1rem; display: flex; align-items: center; justify-content: center;">

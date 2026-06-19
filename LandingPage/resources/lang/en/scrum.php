@@ -55,28 +55,85 @@ return [
     ],
 
     // Sprint Cycle Section
-    'sprint_title' => 'Sprint Cycle Details',
-    'sprint_subtitle' => 'Each sprint covers planning, development, review, testing, and improvement.',
+    'sprint_title' => 'Sprint Delivery Operating Model',
+    'sprint_subtitle' => 'Each sprint is managed as a controlled delivery loop with backlog ownership, engineering execution, quality gates, stakeholder review, and release readiness.',
     'sprint_items' => [
         [
-            'title' => 'Sprint Planning',
-            'desc' => 'Define goals, break down tasks, estimate effort',
+            'icon' => 'fact_check',
+            'title' => 'Scope & sprint planning',
+            'desc' => 'Confirm business priority, sprint goal, acceptance criteria, dependencies, and delivery risk before engineering begins.',
+            'artifact' => 'Sprint goal + acceptance baseline',
         ],
         [
-            'title' => 'Daily Standup',
-            'desc' => 'Short team sync to surface progress, blockers, and coordination needs.',
+            'icon' => 'sync_alt',
+            'title' => 'Execution cadence',
+            'desc' => 'Keep product, engineering, QA, and project coordination aligned through short status loops and blocker handling.',
+            'artifact' => 'Daily status + risk log',
         ],
         [
-            'title' => 'Development',
-            'desc' => 'Coding, code review, CI/CD',
+            'icon' => 'deployed_code',
+            'title' => 'Engineering build',
+            'desc' => 'Implement the agreed scope with code review, branch discipline, CI/CD, and architecture-level checks.',
+            'artifact' => 'Working increment',
         ],
         [
-            'title' => 'Sprint Review',
-            'desc' => 'Demo the product to stakeholders',
+            'icon' => 'verified',
+            'title' => 'QA, review & acceptance',
+            'desc' => 'Validate functionality, integration points, data behavior, edge cases, and stakeholder feedback before sign-off.',
+            'artifact' => 'Test result + review notes',
         ],
         [
-            'title' => 'Sprint Retrospective',
-            'desc' => 'Reflect and identify improvements',
+            'icon' => 'published_with_changes',
+            'title' => 'Release readiness & improvement',
+            'desc' => 'Prepare deployment, update documentation, close learnings, and feed the next sprint with controlled changes.',
+            'artifact' => 'Release checklist + next backlog',
+        ],
+    ],
+    'sprint_model_kicker' => 'Delivery governance',
+    'sprint_model_title' => 'How a sprint becomes a reviewable software increment',
+    'sprint_model_desc' => 'The sprint is not just a development timebox. It is a governance loop that turns scope into tested software, visible decisions, and controlled handover.',
+    'sprint_model_stages' => [
+        [
+            'icon' => 'assignment',
+            'title' => 'Backlog',
+            'desc' => 'Priority, scope, acceptance criteria',
+        ],
+        [
+            'icon' => 'terminal',
+            'title' => 'Build',
+            'desc' => 'Engineering, review, CI/CD',
+        ],
+        [
+            'icon' => 'rule',
+            'title' => 'Verify',
+            'desc' => 'QA, UAT, integration checks',
+        ],
+        [
+            'icon' => 'rocket_launch',
+            'title' => 'Release',
+            'desc' => 'Deploy, monitor, hand over',
+        ],
+    ],
+    'sprint_controls' => [
+        [
+            'icon' => 'groups',
+            'title' => 'Stakeholder review',
+            'desc' => 'Working scope is shown early enough for business feedback.',
+        ],
+        [
+            'icon' => 'shield',
+            'title' => 'Quality gate',
+            'desc' => 'Definition of Done, tests, and defects are visible before release.',
+        ],
+        [
+            'icon' => 'monitoring',
+            'title' => 'Progress control',
+            'desc' => 'Risks, blockers, and change impact are tracked through the sprint.',
+        ],
+        [
+            'icon' => 'inventory',
+            'title' => 'Handover asset',
+            'desc' => 'Documents, release notes, and next actions are maintained with the increment.',
         ],
     ],
 

@@ -176,11 +176,48 @@
     </div>
 </section>
 
-<!-- Map -->
-<section style="background: var(--secondary-bg);">
+<!-- Location -->
+<section class="contact-location-section">
     <div class="container-v5">
-        <div style="background: var(--surface); border-radius: var(--card-radius); overflow: hidden; height: 400px;">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.6047467284906!2d106.6576869!3d10.8475931!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x317529bc96bc31d5%3A0xb45cb7e22ebf8fda!2z188IEvSG0bEgU8OzLCBQaOG7nW5nIEFuIEjhu5lpIMSQ8O0gbiwgVHAuIEjhu5kgQ2jDrSBNaW5o!5e0!3m2!1svi!2svn!4v1705816000000" style="width: 100%; height: 100%; border: none;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <div class="contact-location-panel">
+            <div class="contact-location-map" aria-hidden="true">
+                <div class="contact-location-grid"></div>
+                <div class="contact-location-node contact-location-node--hq">
+                    <span class="material-symbols-rounded">business</span>
+                    <strong>{{ __('contact.location_hq_label') }}</strong>
+                    <small>{{ __('contact.hq_city') }}</small>
+                </div>
+                <div class="contact-location-node contact-location-node--client">
+                    <span class="material-symbols-rounded">groups</span>
+                    <strong>{{ __('contact.location_client_label') }}</strong>
+                    <small>{{ __('contact.location_client_scope') }}</small>
+                </div>
+                <div class="contact-location-node contact-location-node--delivery">
+                    <span class="material-symbols-rounded">hub</span>
+                    <strong>{{ __('contact.location_delivery_label') }}</strong>
+                    <small>{{ __('contact.location_delivery_scope') }}</small>
+                </div>
+                <div class="contact-location-route contact-location-route--one"></div>
+                <div class="contact-location-route contact-location-route--two"></div>
+            </div>
+
+            <div class="contact-location-content">
+                <span class="solution-kicker">{{ __('contact.location_kicker') }}</span>
+                <h2>{{ __('contact.location_title') }}</h2>
+                <p>{{ __('contact.location_desc') }}</p>
+
+                <div class="contact-location-list">
+                    @foreach(__('contact.location_points') as $point)
+                        <div class="contact-location-item">
+                            <span class="material-symbols-rounded">{{ $point['icon'] }}</span>
+                            <div>
+                                <strong>{{ $point['title'] }}</strong>
+                                <small>{{ $point['desc'] }}</small>
+                            </div>
+                        </div>
+                    @endforeach
+                </div>
+            </div>
         </div>
     </div>
 </section>

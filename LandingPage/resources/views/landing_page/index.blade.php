@@ -135,10 +135,10 @@
             <div class="capabilities-grid">
                 @php
                 $caps = [
-                    ['key' => 'build', 'color' => '#0e3163'],
+                    ['key' => 'build', 'color' => '#183060'],
                     ['key' => 'scale', 'color' => '#1a4585'],
                     ['key' => 'secure', 'color' => '#2f6abf'],
-                    ['key' => 'ai', 'color' => '#0e3163'],
+                    ['key' => 'ai', 'color' => '#183060'],
                     ['key' => 'mfg', 'color' => '#1a4585'],
                     ['key' => 'ship', 'color' => '#4f5965'],
                 ];
@@ -214,10 +214,10 @@
             <div class="grid-3col">
                 @php
                 $whys = [
-                    ['icon' => 'star', 'color' => '#0e3163', 'key' => 'expertise'],
+                    ['icon' => 'star', 'color' => '#183060', 'key' => 'expertise'],
                     ['icon' => 'groups', 'color' => '#1a4585', 'key' => 'team'],
                     ['icon' => 'bolt', 'color' => '#2f6abf', 'key' => 'fast'],
-                    ['icon' => 'shield', 'color' => '#0e3163', 'key' => 'security'],
+                    ['icon' => 'shield', 'color' => '#183060', 'key' => 'security'],
                     ['icon' => 'trending_up', 'color' => '#1a4585', 'key' => 'scalable'],
                     ['icon' => 'handshake', 'color' => '#4f5965', 'key' => 'partnership'],
                 ];
@@ -309,7 +309,7 @@
                     <div class="testimonial-quote-mark">"</div>
                     <blockquote class="testimonial-text">{{ __('index.testimonial' . $t . '_quote') }}</blockquote>
                     <div class="testimonial-author">
-                        <div class="testimonial-avatar" style="background: linear-gradient(135deg, {{ $t === 1 ? '#0e3163, #1a4585' : '#1a4585, #08213f' }});">
+                        <div class="testimonial-avatar" style="background: linear-gradient(135deg, {{ $t === 1 ? '#183060, #1a4585' : '#1a4585, #0F203D' }});">
                             {{ mb_substr(__('index.testimonial' . $t . '_name'), 0, 1) }}
                         </div>
                         <div>

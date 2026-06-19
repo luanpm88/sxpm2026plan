@@ -68,7 +68,7 @@
                 $metrics = __('tech_stack.metrics');
                 @endphp
                 @foreach($metrics as $m)
-                <div style="background: var(--surface); border: 1px solid var(--border); border-radius: var(--card-radius); padding: 2rem; transition: all 0.3s ease;" onmouseover="this.style.boxShadow='0 12px 30px rgba(14, 49, 99, 0.1)';" onmouseout="this.style.boxShadow='';">
+                <div style="background: var(--surface); border: 1px solid var(--border); border-radius: var(--card-radius); padding: 2rem; transition: all 0.3s ease;" onmouseover="this.style.boxShadow='0 12px 30px rgba(24, 48, 96, 0.1)';" onmouseout="this.style.boxShadow='';">
                     <div style="font-size: 2rem; font-weight: 800; color: var(--primary); margin-bottom: 0.5rem;">
                         {{ $m['metric'] }}
                     </div>
@@ -98,7 +98,7 @@
                 $platforms = __('tech_stack.platforms');
                 @endphp
                 @foreach($platforms as $platform)
-                <div style="background: var(--surface); border-radius: var(--card-radius); padding: 2.5rem; transition: all 0.3s ease; border: 1px solid var(--border);" onmouseover="this.style.transform='translateY(-8px)'; this.style.boxShadow='0 20px 40px rgba(14, 49, 99, 0.15)';" onmouseout="this.style.transform=''; this.style.boxShadow='';">
+                <div style="background: var(--surface); border-radius: var(--card-radius); padding: 2.5rem; transition: all 0.3s ease; border: 1px solid var(--border);" onmouseover="this.style.transform='translateY(-8px)'; this.style.boxShadow='0 20px 40px rgba(24, 48, 96, 0.15)';" onmouseout="this.style.transform=''; this.style.boxShadow='';">
                     <div style="font-size: 2rem; color: var(--primary); margin-bottom: 1.5rem;">
                         <span class="material-symbols-rounded" style="font-size: 2rem;">{{ $platform['icon'] }}</span>
                     </div>
@@ -144,7 +144,7 @@
                 $practices = __('tech_stack.practices');
                 @endphp
                 @foreach($practices as $p)
-                <div style="background: var(--surface); border-radius: var(--card-radius); padding: 2rem; transition: all 0.3s ease; border: 1px solid var(--border);" onmouseover="this.style.borderColor='var(--primary)'; this.style.boxShadow='0 12px 30px rgba(14, 49, 99, 0.1)';" onmouseout="this.style.borderColor='var(--border)'; this.style.boxShadow='';">
+                <div style="background: var(--surface); border-radius: var(--card-radius); padding: 2rem; transition: all 0.3s ease; border: 1px solid var(--border);" onmouseover="this.style.borderColor='var(--primary)'; this.style.boxShadow='0 12px 30px rgba(24, 48, 96, 0.1)';" onmouseout="this.style.borderColor='var(--border)'; this.style.boxShadow='';">
                     <div style="font-size: 1.75rem; color: var(--primary); margin-bottom: 1rem;">
                         <span class="material-symbols-rounded">{{ $p['icon'] }}</span>
                     </div>

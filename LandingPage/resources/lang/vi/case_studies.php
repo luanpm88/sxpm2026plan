@@ -8,12 +8,12 @@ return [
     'section_industries' => 'LĨNH VỰC ĐÃ THAM GIA',
 
     'stats' => [
-        ['num' => '50+', 'label' => 'Dự án chọn lọc'],
+        ['num' => '50+', 'label' => 'Dự án đã tham gia'],
         ['num' => 'Đa ngành', 'label' => 'Kinh nghiệm triển khai'],
-        ['num' => 'Nền tảng thật', 'label' => 'Sản phẩm đã vận hành'],
+        ['num' => 'Vận hành', 'label' => 'Sản phẩm đã bàn giao'],
         ['num' => 'Dài hạn', 'label' => 'Đồng hành sau triển khai'],
         ['num' => '12+', 'label' => 'Năm kinh nghiệm'],
-        ['num' => 'Regional', 'label' => 'Phạm vi khu vực'],
+        ['num' => 'Khu vực', 'label' => 'Phạm vi triển khai'],
     ],
 
     'featured_title' => 'Dự Án Chọn Lọc',

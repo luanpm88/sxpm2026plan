@@ -90,15 +90,22 @@
             <div class="grid-4col">
                 @php
                 $services = [
-                    ['icon' => 'code', 'key' => 'custom', 'cta_key' => 'custom_cta'],
-                    ['icon' => 'workspace_premium', 'key' => 'saas', 'cta_key' => 'saas_cta'],
-                    ['icon' => 'psychology', 'key' => 'ai', 'cta_key' => 'ai_cta'],
-                    ['icon' => 'shield', 'key' => 'security', 'cta_key' => 'security_cta'],
+                    ['icon' => 'account_tree', 'key' => 'industry', 'cta_key' => 'industry_cta', 'route' => 'landing.scrum', 'featured' => true, 'badge_key' => 'industry_badge'],
+                    ['icon' => 'code', 'key' => 'custom', 'cta_key' => 'custom_cta', 'route' => 'landing.services'],
+                    ['icon' => 'workspace_premium', 'key' => 'saas', 'cta_key' => 'saas_cta', 'route' => 'landing.services'],
+                    ['icon' => 'psychology', 'key' => 'ai', 'cta_key' => 'ai_cta', 'route' => 'landing.services'],
+                    ['icon' => 'shield', 'key' => 'security', 'cta_key' => 'security_cta', 'route' => 'landing.services'],
                 ];
                 @endphp
 
                 @foreach($services as $svc)
-                <div class="service-card">
+                <div class="service-card {{ !empty($svc['featured']) ? 'service-card--featured' : '' }}">
+                    @if(!empty($svc['badge_key']))
+                    <div class="service-card__badge">
+                        <span class="material-symbols-rounded">verified</span>
+                        {{ __('index.' . $svc['badge_key']) }}
+                    </div>
+                    @endif
                     <div class="service-card__icon">
                         <span class="material-symbols-rounded">{{ $svc['icon'] }}</span>
                     </div>
@@ -112,7 +119,7 @@
                         </li>
                         @endfor
                     </ul>
-                    <a href="{{ route('landing.services') }}" class="service-card__link" data-ga-event="service_explore" data-ga-service="{{ $svc['key'] }}">
+                    <a href="{{ route($svc['route']) }}" class="service-card__link" data-ga-event="service_explore" data-ga-service="{{ $svc['key'] }}">
                         {{ __('index.' . $svc['cta_key']) }}
                         <span class="material-symbols-rounded">arrow_forward</span>
                     </a>

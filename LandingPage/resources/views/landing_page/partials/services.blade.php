@@ -26,7 +26,7 @@
         <div class="card-grid" style="--card-min: 280px; --card-max: 420px; --card-gap: 2rem;">
             @foreach(__('services.services') as $s)
             <div style="background: var(--surface); border: 1px solid var(--border); border-radius: var(--card-radius); padding: 2rem; text-align: center; transition: all 0.3s ease;" onmouseover="this.style.borderColor='var(--primary)'; this.style.boxShadow='0 12px 30px var(--shadow-hover)'; this.style.transform='translateY(-4px)';" onmouseout="this.style.borderColor='var(--border)'; this.style.boxShadow=''; this.style.transform='';">
-                <div style="display: inline-flex; align-items: center; justify-content: center; width: 50px; height: 50px; background: var(--button-primary-bg); color: var(--button-primary-text); border-radius: 50%; font-weight: 800; font-size: 1.3rem; margin-bottom: 1rem;">
+                <div style="display: inline-flex; align-items: center; justify-content: center; width: 50px; height: 50px; background: var(--button-primary-bg); color: var(--button-primary-text); border-radius: 50%; font-weight: 600; font-size: 1.3rem; margin-bottom: 1rem;">
                     {{ $loop->iteration }}
                 </div>
                 <div style="font-size: 2rem; color: var(--primary); margin-bottom: 1rem;">
@@ -47,7 +47,7 @@
                         @endswitch
                     </span>
                 </div>
-                <h3 style="font-size: 1.1rem; font-weight: 700; color: var(--text-dark); margin-bottom: 0.75rem;">
+                <h3 style="font-size: 1.1rem; font-weight: 600; color: var(--text-dark); margin-bottom: 0.75rem;">
                     {{ $s['title'] }}
                 </h3>
                 <p style="color: var(--text-gray); font-size: 0.95rem; line-height: 1.6;">
@@ -69,12 +69,12 @@
 
         <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; align-items: center; margin-bottom: 4rem;">
             <div style="background: var(--surface); border-radius: var(--card-radius); padding: 2.5rem; border: 1px solid var(--border);">
-                <h3 style="font-size: 1.1rem; font-weight: 700; color: var(--text-dark); margin-bottom: 1.5rem;">{{ __('services.service1.process_title') }}</h3>
+                <h3 style="font-size: 1.1rem; font-weight: 600; color: var(--text-dark); margin-bottom: 1.5rem;">{{ __('services.service1.process_title') }}</h3>
                 <p style="color: var(--text-gray); line-height: 1.8; margin-bottom: 1.5rem;">
                     {{ __('services.service1.process_desc') }}
                 </p>
                 <div style="background: var(--secondary-bg); padding: 1.5rem; border-radius: 8px; margin-bottom: 1.5rem;">
-                    <h4 style="font-size: 1.1rem; font-weight: 700; color: var(--primary); margin-bottom: 1rem;">{{ __('services.service1.transparency_title') }}</h4>
+                    <h4 style="font-size: 1.1rem; font-weight: 600; color: var(--primary); margin-bottom: 1rem;">{{ __('services.service1.transparency_title') }}</h4>
                     <ul style="list-style: none; margin: 0;">
                         <li style="padding: 0.5rem 0; color: var(--text-gray); display: flex; align-items: flex-start; gap: 0.75rem;">
                             <span class="material-symbols-rounded" style="color: var(--primary); font-size: 1.2rem; flex-shrink: 0;">verified</span>
@@ -101,7 +101,7 @@
             </div>
 
             <div style="background: var(--surface); border-radius: var(--card-radius); padding: 2.5rem; border: 1px solid var(--border);">
-                <h3 style="font-size: 1.1rem; font-weight: 700; color: var(--text-dark); margin-bottom: 1.5rem;">{{ __('services.service1.cycle_title') }}</h3>
+                <h3 style="font-size: 1.1rem; font-weight: 600; color: var(--text-dark); margin-bottom: 1.5rem;">{{ __('services.service1.cycle_title') }}</h3>
                 @php($deliveryMap = __('services.service1.delivery_map'))
                 <svg viewBox="0 0 520 310" style="width: 100%; max-width: 520px; margin: 0 auto; display: block;" role="img" aria-label="{{ __('services.service1.cycle_title') }}">
                     <defs>
@@ -116,15 +116,15 @@
                         @php($x = 78 + ($index * 90))
                         <g>
                             <circle cx="{{ $x }}" cy="118" r="28" fill="{{ $index === 2 ? 'var(--button-primary-bg)' : 'var(--surface)' }}" stroke="var(--primary)" stroke-width="2" />
-                            <text x="{{ $x }}" y="123" text-anchor="middle" font-size="12" font-weight="800" fill="{{ $index === 2 ? 'var(--button-primary-text)' : 'var(--primary)' }}">{{ $step['num'] }}</text>
+                            <text x="{{ $x }}" y="123" text-anchor="middle" font-size="12" font-weight="600" fill="{{ $index === 2 ? 'var(--button-primary-text)' : 'var(--primary)' }}">{{ $step['num'] }}</text>
                             <rect x="{{ $x - 48 }}" y="158" width="96" height="56" rx="10" fill="var(--surface)" stroke="var(--border)" />
-                            <text x="{{ $x }}" y="180" text-anchor="middle" font-size="10" font-weight="800" fill="var(--text-dark)">{{ $step['title'] }}</text>
+                            <text x="{{ $x }}" y="180" text-anchor="middle" font-size="10" font-weight="600" fill="var(--text-dark)">{{ $step['title'] }}</text>
                             <text x="{{ $x }}" y="198" text-anchor="middle" font-size="8.5" fill="var(--text-gray)">{{ $step['desc'] }}</text>
                         </g>
                     @endforeach
 
                     <rect x="72" y="260" width="376" height="30" rx="15" fill="var(--primary-subtle)" stroke="var(--border)" />
-                    <text x="260" y="280" text-anchor="middle" font-size="10" font-weight="700" fill="var(--primary)">{{ __('services.service1.delivery_governance') }}</text>
+                    <text x="260" y="280" text-anchor="middle" font-size="10" font-weight="600" fill="var(--primary)">{{ __('services.service1.delivery_governance') }}</text>
                 </svg>
                 <p style="text-align: center; color: var(--text-gray); font-size: 0.9rem; margin-top: 1rem; line-height: 1.6;">
                     {{ __('services.service1.cycle_desc') }}
@@ -135,7 +135,7 @@
         <div class="services-tech-stack-block" style="background: var(--surface); border-radius: var(--card-radius); padding: 2.5rem; border: 1px solid var(--border);">
             <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 2rem;">
                 <div>
-                    <h4 style="font-weight: 700; color: var(--text-dark); margin-bottom: 0.5rem;">{{ __('services.service1.tech_title') }}</h4>
+                    <h4 style="font-weight: 600; color: var(--text-dark); margin-bottom: 0.5rem;">{{ __('services.service1.tech_title') }}</h4>
                     <p style="color: var(--text-gray); font-size: 0.95rem; margin: 0;">{{ __('services.service1.tech_desc') }}</p>
                 </div>
                 <a href="{{ route('landing.tech-stack') }}" style="background: var(--button-primary-bg); color: var(--button-primary-text); padding: 0.75rem 1.5rem; border-radius: 8px; text-decoration: none; font-weight: 600; white-space: nowrap; display: inline-flex; align-items: center; gap: 0.5rem; transition: all 0.3s ease;" onmouseover="this.style.backgroundColor='var(--button-primary-hover-bg)';" onmouseout="this.style.backgroundColor='var(--button-primary-bg)';">
@@ -191,7 +191,7 @@
                                 @endswitch
                             </span>
                         </div>
-                        <h5 style="font-weight: 700; color: var(--text-dark); margin: 0; font-size: 1rem;">{{ $cat['title'] }}</h5>
+                        <h5 style="font-weight: 600; color: var(--text-dark); margin: 0; font-size: 1rem;">{{ $cat['title'] }}</h5>
                     </div>
                     <div style="display: flex; flex-wrap: wrap; gap: 0.5rem;">
                         @foreach($cat['techs'] as $tech)
@@ -237,7 +237,7 @@
         <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; align-items: center; margin-bottom: 3rem;">
 
             <div style="background: var(--surface); border-radius: var(--card-radius); padding: 2.5rem; border: 1px solid var(--border);">
-                <h3 style="font-size: 1.1rem; font-weight: 700; color: var(--text-dark); margin-bottom: 1rem;">{{ __('services.ai.foundation_title') }}</h3>
+                <h3 style="font-size: 1.1rem; font-weight: 600; color: var(--text-dark); margin-bottom: 1rem;">{{ __('services.ai.foundation_title') }}</h3>
                 <p style="color: var(--text-gray); line-height: 1.8; margin-bottom: 1rem;">
                     {{ __('services.ai.foundation_desc') }}
                 </p>
@@ -255,29 +255,29 @@
                 <svg viewBox="0 0 280 280" style="width: 100%; max-width: 280px;">
                     <!-- Query -->
                     <rect x="120" y="40" width="40" height="25" fill="var(--primary)" rx="6"/>
-                    <text x="140" y="57" text-anchor="middle" font-size="10" fill="var(--contrast-panel-text)" font-weight="bold">{{ __('services.ai.diagram_query') }}</text>
+                    <text x="140" y="57" text-anchor="middle" font-size="10" fill="var(--contrast-panel-text)" font-weight="600">{{ __('services.ai.diagram_query') }}</text>
 
                     <!-- NLP -->
                     <circle cx="140" cy="90" r="18" fill="var(--primary-light)"/>
-                    <text x="140" y="95" text-anchor="middle" font-size="9" fill="var(--contrast-panel-text)" font-weight="bold">NLP</text>
+                    <text x="140" y="95" text-anchor="middle" font-size="9" fill="var(--contrast-panel-text)" font-weight="600">NLP</text>
                     <text x="140" y="106" text-anchor="middle" font-size="8" fill="var(--contrast-panel-text)" opacity="0.9">{{ __('services.ai.diagram_processing') }}</text>
 
                     <!-- Branches -->
                     <rect x="30" y="140" width="80" height="35" fill="var(--primary-light)" rx="8"/>
-                    <text x="70" y="160" text-anchor="middle" font-size="9" fill="var(--contrast-panel-text)" font-weight="bold">Vector DB</text>
+                    <text x="70" y="160" text-anchor="middle" font-size="9" fill="var(--contrast-panel-text)" font-weight="600">Vector DB</text>
                     <text x="70" y="170" text-anchor="middle" font-size="8" fill="var(--contrast-panel-text)">{{ __('services.ai.diagram_storage') }}</text>
 
                     <circle cx="140" cy="160" r="22" fill="var(--accent)"/>
-                    <text x="140" y="160" text-anchor="middle" font-size="9" fill="var(--contrast-panel-text)" font-weight="bold">LLM</text>
+                    <text x="140" y="160" text-anchor="middle" font-size="9" fill="var(--contrast-panel-text)" font-weight="600">LLM</text>
                     <text x="140" y="172" text-anchor="middle" font-size="8" fill="var(--contrast-panel-text)" opacity="0.9">{{ __('services.ai.diagram_generation') }}</text>
 
                     <rect x="200" y="140" width="60" height="35" fill="var(--text-gray)" rx="8"/>
-                    <text x="230" y="160" text-anchor="middle" font-size="9" fill="var(--contrast-panel-text)" font-weight="bold">RAG</text>
+                    <text x="230" y="160" text-anchor="middle" font-size="9" fill="var(--contrast-panel-text)" font-weight="600">RAG</text>
                     <text x="230" y="170" text-anchor="middle" font-size="8" fill="var(--contrast-panel-text)">{{ __('services.ai.diagram_pipeline') }}</text>
 
                     <!-- Response node -->
                     <rect x="110" y="240" width="60" height="25" fill="var(--primary)" rx="6"/>
-                    <text x="140" y="257" text-anchor="middle" font-size="9" fill="var(--contrast-panel-text)" font-weight="bold">{{ __('services.ai.diagram_response') }}</text>
+                    <text x="140" y="257" text-anchor="middle" font-size="9" fill="var(--contrast-panel-text)" font-weight="600">{{ __('services.ai.diagram_response') }}</text>
 
                     <!-- Lines -->
                     <line x1="140" y1="65" x2="140" y2="72" stroke="var(--primary)" stroke-width="2"/>
@@ -292,7 +292,7 @@
         <!-- AI Capabilities Banner -->
         <div style="background: var(--contrast-panel-bg); border-radius: 16px; padding: 3rem 2rem; color: var(--contrast-panel-text); box-shadow: 0 12px 48px rgba(24, 48, 96, 0.25); margin-bottom: 2.5rem;">
             <div style="max-width: 1200px; margin: 0 auto;">
-                <h3 style="font-size: 1.6rem; font-weight: 800; text-align: center; margin-bottom: 0.5rem;">{{ __('services.ai.capabilities_title') }}</h3>
+                <h3 style="font-size: 1.6rem; font-weight: 600; text-align: center; margin-bottom: 0.5rem;">{{ __('services.ai.capabilities_title') }}</h3>
                 <p style="text-align: center; font-size: 1.02rem; margin-bottom: 2rem; opacity: 0.95;">{{ __('services.ai.capabilities_desc') }}</p>
                 <div class="card-grid" style="--card-min: 260px; --card-max: 400px; --card-gap: 1.75rem;">
                     @foreach(__('services.ai.components') as $comp)
@@ -320,7 +320,7 @@
                                     @break
                                 @endswitch
                             </span>
-                            <h4 style="font-size: 1.05rem; font-weight: 700; margin: 0; color: var(--contrast-panel-text);">{{ $comp['title'] }}</h4>
+                            <h4 style="font-size: 1.05rem; font-weight: 600; margin: 0; color: var(--contrast-panel-text);">{{ $comp['title'] }}</h4>
                         </div>
                         <p style="color: var(--contrast-panel-muted-strong); font-size: 0.9rem; line-height: 1.6; margin: 0;">{{ $comp['desc'] }}</p>
                     </div>
@@ -331,7 +331,7 @@
 
         <!-- Reference Tech Stack -->
         <div style="background: var(--surface); border-radius: var(--card-radius); padding: 2rem; border: 1px solid var(--border); margin-bottom: 2.5rem;">
-            <h3 style="font-size: 1.2rem; font-weight: 800; color: var(--text-dark); margin-bottom: 0.75rem;">{{ __('services.ai.reference_tech_title') }}</h3>
+            <h3 style="font-size: 1.2rem; font-weight: 600; color: var(--text-dark); margin-bottom: 0.75rem;">{{ __('services.ai.reference_tech_title') }}</h3>
             <p style="color: var(--text-gray); font-size: 0.95rem; line-height: 1.7;">
                 {{ __('services.ai.reference_tech_desc') }}
             </p>
@@ -339,7 +339,7 @@
 
         <!-- Example Flow -->
         <div style="background: var(--surface); border-radius: var(--card-radius); padding: 2rem; border: 1px solid var(--border);">
-            <h3 style="font-size: 1.2rem; font-weight: 800; color: var(--text-dark); margin-bottom: 1rem; text-align: center;">{{ __('services.ai.flow_title') }}</h3>
+            <h3 style="font-size: 1.2rem; font-weight: 600; color: var(--text-dark); margin-bottom: 1rem; text-align: center;">{{ __('services.ai.flow_title') }}</h3>
             <div class="card-grid" style="--card-min: 260px; --card-max: 400px; --card-gap: 1rem;">
                 @foreach(__('services.ai.flow_steps') as $step)
                 <div style="display: flex; align-items: center; gap: 0.75rem; padding: 0.9rem 1rem; border: 1px solid var(--border); border-radius: 10px;">
@@ -372,7 +372,7 @@
         <section id="ai-how-it-works" style="scroll-margin-top: 120px; background: var(--surface); border-radius: var(--section-radius); padding: 3rem 2.5rem; border: 1px solid var(--border); margin-bottom: 4rem;">
             <div style="max-width: 1200px; margin: 0 auto;">
                 <div style="text-align: center; margin-bottom: 2rem;">
-                    <h3 style="font-size: 1.6rem; font-weight: 900; color: var(--text-dark); margin-bottom: 0.75rem; letter-spacing: 0;">
+                    <h3 style="font-size: 1.6rem; font-weight: 600; color: var(--text-dark); margin-bottom: 0.75rem; letter-spacing: 0;">
                         {{ __('services.ai.how_it_works_title') }}
                     </h3>
                     <p style="color: var(--text-gray); font-size: 1.02rem; line-height: 1.8; margin: 0 auto; max-width: 760px;">
@@ -382,7 +382,7 @@
 
                 <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; align-items: start;">
                     <div style="background: var(--secondary-bg); border: 1px solid var(--border); border-radius: var(--card-radius); padding: 1.75rem;">
-                        <h4 style="font-size: 1.05rem; font-weight: 800; color: var(--text-dark); margin-bottom: 1rem;">
+                        <h4 style="font-size: 1.05rem; font-weight: 600; color: var(--text-dark); margin-bottom: 1rem;">
                             {{ __('services.ai.how_it_works_foundation_title') }}
                         </h4>
                         <ul style="list-style: none; padding: 0; margin: 0; color: var(--text-gray); line-height: 1.9;">
@@ -396,13 +396,13 @@
                     </div>
 
                     <div style="background: var(--surface); border: 1px solid var(--border); border-radius: var(--card-radius); padding: 1.75rem;">
-                        <h4 style="font-size: 1.05rem; font-weight: 800; color: var(--text-dark); margin-bottom: 1rem;">
+                        <h4 style="font-size: 1.05rem; font-weight: 600; color: var(--text-dark); margin-bottom: 1rem;">
                             {{ __('services.ai.how_it_works_flow_title') }}
                         </h4>
                         <div style="display: grid; gap: 0.9rem;">
                             @foreach(__('services.ai.flow_steps') as $step)
                                 <div style="display: flex; align-items: center; gap: 0.9rem; padding: 0.9rem 1rem; border: 1px solid var(--border); border-radius: 12px;">
-                                    <div style="width: 28px; height: 28px; border-radius: 10px; background: var(--primary-subtle); color: var(--primary); display: flex; align-items: center; justify-content: center; font-weight: 900;">
+                                    <div style="width: 28px; height: 28px; border-radius: 10px; background: var(--primary-subtle); color: var(--primary); display: flex; align-items: center; justify-content: center; font-weight: 600;">
                                         {{ $loop->iteration }}
                                     </div>
                                     <div style="color: var(--text-gray); font-weight: 600;">
@@ -438,12 +438,12 @@
 
                     <!-- Central Platform -->
                     <rect x="80" y="120" width="120" height="80" fill="var(--primary)" rx="8"/>
-                    <text x="140" y="155" text-anchor="middle" font-size="12" fill="var(--contrast-panel-text)" font-weight="bold">{{ __('services.saas.diagram_platform_line_1') }}</text>
-                    <text x="140" y="170" text-anchor="middle" font-size="12" fill="var(--contrast-panel-text)" font-weight="bold">{{ __('services.saas.diagram_platform_line_2') }}</text>
+                    <text x="140" y="155" text-anchor="middle" font-size="12" fill="var(--contrast-panel-text)" font-weight="600">{{ __('services.saas.diagram_platform_line_1') }}</text>
+                    <text x="140" y="170" text-anchor="middle" font-size="12" fill="var(--contrast-panel-text)" font-weight="600">{{ __('services.saas.diagram_platform_line_2') }}</text>
 
                     <!-- Database -->
                     <rect x="100" y="240" width="80" height="20" fill="var(--primary-light)" rx="4"/>
-                    <text x="140" y="253" text-anchor="middle" font-size="9" fill="var(--contrast-panel-text)" font-weight="bold">{{ __('services.saas.diagram_shared_infra') }}</text>
+                    <text x="140" y="253" text-anchor="middle" font-size="9" fill="var(--contrast-panel-text)" font-weight="600">{{ __('services.saas.diagram_shared_infra') }}</text>
 
                     <!-- Connections -->
                     <line x1="80" y1="75" x2="100" y2="125" stroke="var(--primary-light)" stroke-width="2" stroke-dasharray="4"/>
@@ -456,7 +456,7 @@
             </div>
 
             <div>
-                <h3 style="font-size: 1.1rem; font-weight: 700; color: var(--text-dark); margin-bottom: 1rem;">{{ __('services.saas.hkspace_title') }}</h3>
+                <h3 style="font-size: 1.1rem; font-weight: 600; color: var(--text-dark); margin-bottom: 1rem;">{{ __('services.saas.hkspace_title') }}</h3>
                 <p style="color: var(--text-gray); line-height: 1.8; margin-bottom: 1.5rem;">
                     {{ __('services.saas.subtitle') }}
                 </p>
@@ -464,7 +464,7 @@
                 <div style="display: grid; gap: 1.5rem;">
                     @foreach(__('services.saas.ecosystem_items') as $item)
                     <div style="background: var(--surface); border-left: 4px solid var(--primary); padding: 1.25rem; border-radius: 6px;">
-                        <h4 style="font-weight: 700; color: var(--text-dark); margin-bottom: 0.5rem;">{{ $item['title'] }}</h4>
+                        <h4 style="font-weight: 600; color: var(--text-dark); margin-bottom: 0.5rem;">{{ $item['title'] }}</h4>
                         <p style="color: var(--text-gray); font-size: 0.9rem; line-height: 1.6; margin: 0;">{{ $item['desc'] }}</p>
                     </div>
                     @endforeach
@@ -475,7 +475,7 @@
         <!-- SaaS Capabilities Banner -->
         <div style="margin-bottom: 3rem;">
             <div style="text-align: center; margin-bottom: 2rem;">
-                <h3 style="font-size: 1.4rem; font-weight: 800; color: var(--text-dark); margin-bottom: 0.5rem;">{{ __('services.saas.ecosystem_title') }}</h3>
+                <h3 style="font-size: 1.4rem; font-weight: 600; color: var(--text-dark); margin-bottom: 0.5rem;">{{ __('services.saas.ecosystem_title') }}</h3>
             </div>
             <div class="card-grid" style="--card-min: 300px; --card-max: 440px; --card-gap: 1.5rem; margin-bottom: 2rem;">
                 @foreach(__('services.saas.features') as $feature)
@@ -484,7 +484,7 @@
                         <div style="width: 48px; height: 48px; background: var(--secondary-bg); border-radius: 10px; display: flex; align-items: center; justify-content: center;">
                             <span class="material-symbols-rounded" style="color: var(--primary); font-size: 1.5rem;">{{ $feature['icon'] }}</span>
                         </div>
-                        <h4 style="font-weight: 700; color: var(--text-dark); margin: 0; font-size: 1rem;">{{ $feature['title'] }}</h4>
+                        <h4 style="font-weight: 600; color: var(--text-dark); margin: 0; font-size: 1rem;">{{ $feature['title'] }}</h4>
                     </div>
                     <p style="color: var(--text-gray); font-size: 0.9rem; line-height: 1.6; margin: 0;">{{ $feature['desc'] }}</p>
                 </div>
@@ -497,7 +497,7 @@
                         <div style="width: 48px; height: 48px; background: var(--secondary-bg); border-radius: 10px; display: flex; align-items: center; justify-content: center;">
                             <span class="material-symbols-rounded" style="color: var(--primary); font-size: 1.5rem;">{{ $feature['icon'] }}</span>
                         </div>
-                        <h4 style="font-weight: 700; color: var(--text-dark); margin: 0; font-size: 1rem;">{{ $feature['title'] }}</h4>
+                        <h4 style="font-weight: 600; color: var(--text-dark); margin: 0; font-size: 1rem;">{{ $feature['title'] }}</h4>
                     </div>
                     <p style="color: var(--text-gray); font-size: 0.9rem; line-height: 1.6; margin: 0;">{{ $feature['desc'] }}</p>
                 </div>
@@ -507,11 +507,11 @@
 
         <!-- Why Choose HKIncotech for SaaS -->
         <div style="background: linear-gradient(135deg, var(--secondary-bg) 0%, var(--surface) 100%); border-radius: 16px; padding: 3rem; border: 1px solid var(--border);">
-            <h3 style="font-size: 1.1rem; font-weight: 800; color: var(--text-dark); text-align: center; margin-bottom: 2rem;">{{ __('services.why_us.title') }}</h3>
+            <h3 style="font-size: 1.1rem; font-weight: 600; color: var(--text-dark); text-align: center; margin-bottom: 2rem;">{{ __('services.why_us.title') }}</h3>
             <div class="card-grid" style="--card-min: 300px; --card-max: 440px; --card-gap: 2rem;">
                 @foreach(__('services.why_us.highlights') as $highlight)
                 <div style="text-align: center;">
-                    <h4 style="font-weight: 700; color: var(--primary); margin-bottom: 0.5rem;">{{ $highlight['title'] }}</h4>
+                    <h4 style="font-weight: 600; color: var(--primary); margin-bottom: 0.5rem;">{{ $highlight['title'] }}</h4>
                     <p style="color: var(--text-gray); font-size: 0.95rem; line-height: 1.6;">{{ $highlight['desc'] }}</p>
                 </div>
                 @endforeach
@@ -535,14 +535,14 @@
         <div class="card-grid" style="--card-min: 300px; --card-max: 440px; --card-gap: 1.5rem;">
             @foreach(__('services.security.features') as $feature)
             <div style="background: var(--surface); border: 1px solid var(--border); border-radius: var(--card-radius); padding: 1.75rem;">
-                <h4 style="font-weight: 700; color: var(--text-dark); margin-bottom: 0.75rem;">{{ $feature['title'] }}</h4>
+                <h4 style="font-weight: 600; color: var(--text-dark); margin-bottom: 0.75rem;">{{ $feature['title'] }}</h4>
                 <p style="color: var(--text-gray); font-size: 0.9rem; line-height: 1.6; margin: 0;">{{ $feature['desc'] }}</p>
             </div>
             @endforeach
         </div>
 
         <div style="background: var(--secondary-bg); border-radius: var(--card-radius); padding: 2rem; margin-top: 2rem;">
-            <h3 style="font-weight: 700; color: var(--text-dark); margin-bottom: 1rem;">{{ __('services.security.compliance_highlights_title') }}</h3>
+            <h3 style="font-weight: 600; color: var(--text-dark); margin-bottom: 1rem;">{{ __('services.security.compliance_highlights_title') }}</h3>
             <ul class="card-grid" style="list-style: none; margin: 0; --card-min: 250px; --card-max: 390px; --card-gap: 1rem;">
                 @foreach(__('services.security.compliance_highlights') as $item)
                 <li style="color: var(--text-gray); display: flex; align-items: flex-start; gap: 0.75rem;">
@@ -566,7 +566,7 @@
         <div class="card-grid" style="--card-min: 320px; --card-max: 460px; --card-gap: 2rem;">
             @foreach(__('services.engagement.models') as $model)
             <div style="background: var(--surface); border: 1px solid var(--border); border-radius: var(--card-radius); padding: 2rem; text-align: center; transition: all 0.3s ease;" onmouseover="this.style.boxShadow='0 12px 30px rgba(24, 48, 96, 0.15)'; this.style.transform='translateY(-4px)';" onmouseout="this.style.boxShadow=''; this.style.transform='';">
-                <h3 style="font-size: 1.15rem; font-weight: 700; color: var(--text-dark); margin-bottom: 0.75rem;">{{ $model['title'] }}</h3>
+                <h3 style="font-size: 1.15rem; font-weight: 600; color: var(--text-dark); margin-bottom: 0.75rem;">{{ $model['title'] }}</h3>
                 <p style="color: var(--text-gray); font-size: 0.95rem; line-height: 1.6; margin-bottom: 1.5rem;">{{ $model['desc'] }}</p>
                 <div style="background: var(--secondary-bg); padding: 1rem; border-radius: 8px;">
                     <p style="color: var(--primary); font-weight: 600; margin: 0; font-size: 0.95rem;">{{ $model['timeline'] }}</p>

@@ -3,7 +3,7 @@
     <style>
         /* html, body { scroll-behavior: smooth; }
         .onepage-section { padding: 80px 0 60px; }
-        .section-title { font-size: 2.2rem; font-weight: 800; color: var(--text-dark); margin-bottom: 30px; text-align: center; }
+        .section-title { font-size: 2.2rem; font-weight: 600; color: var(--text-dark); margin-bottom: 30px; text-align: center; }
         .section-subtitle { font-size: 1.1rem; color: var(--text-gray); text-align: center; margin-bottom: 40px; }
         .container { max-width: 1200px; margin: 0 auto; padding: 0 24px; }
         .onepage-navbar { position: fixed; top: 0; left: 0; width: 100%; background: var(--surface); z-index: 100; box-shadow: 0 2px 8px rgba(0,0,0,0.04); }

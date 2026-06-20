@@ -5,7 +5,7 @@
     <section style="min-height: 60vh; display: flex; align-items: center; padding: 6rem 2rem; background: linear-gradient(135deg, var(--surface) 0%, var(--secondary-bg) 100%);">
         <div class="container-v5">
             <div style="text-align: center; max-width: 900px; margin: 0 auto;">
-                <h1 style="font-size: 2.75rem; font-weight: 800; line-height: 1.15; margin-bottom: 1.5rem; color: var(--text-dark);">
+                <h1 style="font-size: 2.75rem; font-weight: 600; line-height: 1.15; margin-bottom: 1.5rem; color: var(--text-dark);">
                     {{ __('case_studies.hero_title') }} <span style="color: var(--primary);">{{ __('case_studies.hero_title_highlight') }}</span>
                 </h1>
                 <p style="font-size: 1.15rem; color: var(--text-gray); line-height: 1.8;">
@@ -21,7 +21,7 @@
             <div class="card-grid" style="--card-min: 180px; --card-max: 320px; --card-gap: 2rem; margin-bottom: 4rem;">
                 @foreach(__('case_studies.stats') as $stat)
                 <div style="text-align: center;">
-                    <div style="font-size: 2rem; font-weight: 800; color: var(--primary);">
+                    <div style="font-size: 2rem; font-weight: 600; color: var(--primary);">
                         {{ $stat['num'] }}
                     </div>
                     <div style="color: var(--text-gray); margin-top: 0.5rem;">
@@ -49,35 +49,44 @@
                         <div style="display: inline-block; background: var(--secondary-bg); padding: 0.5rem 1rem; border-radius: 6px; color: var(--primary); font-size: 0.85rem; font-weight: 600; margin-bottom: 1.5rem;">
                             {{ $cs['industry'] }}
                         </div>
-                        <h3 style="font-size: 1.3rem; font-weight: 700; color: var(--text-dark); margin-bottom: 1.5rem;">
+                        <h3 style="font-size: 1.3rem; font-weight: 600; color: var(--text-dark); margin-bottom: 1.5rem;">
                             {{ $cs['title'] }}
                         </h3>
                         
                         <div style="margin-bottom: 1.5rem;">
-                            <h4 style="font-size: 0.9rem; font-weight: 700; color: var(--primary); text-transform: uppercase; margin-bottom: 0.5rem;">{{ __('case_studies.label_challenge') }}</h4>
+                            <h4 style="font-size: 0.9rem; font-weight: 600; color: var(--primary); text-transform: uppercase; margin-bottom: 0.5rem;">{{ __('case_studies.label_challenge') }}</h4>
                             <p style="color: var(--text-gray); line-height: 1.6;">
                                 {{ $cs['challenge'] }}
                             </p>
                         </div>
 
                         <div style="margin-bottom: 1.5rem;">
-                            <h4 style="font-size: 0.9rem; font-weight: 700; color: var(--primary); text-transform: uppercase; margin-bottom: 0.5rem;">{{ __('case_studies.label_solution') }}</h4>
+                            <h4 style="font-size: 0.9rem; font-weight: 600; color: var(--primary); text-transform: uppercase; margin-bottom: 0.5rem;">{{ __('case_studies.label_solution') }}</h4>
                             <p style="color: var(--text-gray); line-height: 1.6;">
                                 {{ $cs['solution'] }}
                             </p>
                         </div>
                         
-                        <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
-                            @foreach(explode(', ', $cs['tech']) as $tech)
-                            <span style="background: var(--secondary-bg); color: var(--primary); padding: 0.4rem 0.8rem; border-radius: 4px; font-size: 0.85rem;">
-                                {{ $tech }}
-                            </span>
-                            @endforeach
+                        <div class="case-study-practices">
+                            <div class="case-study-practices__label">{{ __('case_studies.label_tech') }}</div>
+                            <div class="case-study-practices__tags">
+                                @foreach(explode(', ', $cs['tech']) as $tech)
+                                <span>{{ $tech }}</span>
+                                @endforeach
+                            </div>
+                            @if(!empty($cs['patterns']))
+                            <div class="case-study-practices__label">{{ __('case_studies.label_practices') }}</div>
+                            <div class="case-study-practices__tags case-study-practices__tags--patterns">
+                                @foreach($cs['patterns'] as $pattern)
+                                <span>{{ $pattern }}</span>
+                                @endforeach
+                            </div>
+                            @endif
                         </div>
                     </div>
                     
                     <div style="background: var(--contrast-panel-bg); border-radius: 8px; padding: 2rem; color: var(--contrast-panel-text);">
-                        <h4 style="font-size: 0.9rem; font-weight: 700; text-transform: uppercase; margin-bottom: 1.5rem; opacity: 0.95;">{{ __('case_studies.label_results') }}</h4>
+                        <h4 style="font-size: 0.9rem; font-weight: 600; text-transform: uppercase; margin-bottom: 1.5rem; opacity: 0.95;">{{ __('case_studies.label_results') }}</h4>
                         @if(is_array($cs['results']))
                         <ul style="list-style: none; padding: 0; margin: 0; display: grid; gap: 0.65rem;">
                             @foreach($cs['results'] as $item)
@@ -114,7 +123,7 @@
                     <div style="font-size: 2rem; color: var(--primary); margin-bottom: 1rem;">
                         <span class="material-symbols-rounded">{{ $ind['icon'] }}</span>
                     </div>
-                    <h3 style="font-size: 1.1rem; font-weight: 700; color: var(--text-dark); margin-bottom: 0.5rem;">
+                    <h3 style="font-size: 1.1rem; font-weight: 600; color: var(--text-dark); margin-bottom: 0.5rem;">
                         {{ $ind['name'] }}
                     </h3>
                     <p style="color: var(--text-gray); font-size: 0.95rem;">
@@ -159,7 +168,7 @@
     <section style="background: var(--surface);">
         <div class="container-v5">
             <div style="background: var(--contrast-panel-bg); border-radius: var(--card-radius); padding: 3.5rem 2rem; text-align: center; color: var(--contrast-panel-text);">
-                <h2 style="font-size: 2rem; font-weight: 800; margin-bottom: 1rem;">{{ __('case_studies.cta_title') }}</h2>
+                <h2 style="font-size: 2rem; font-weight: 600; margin-bottom: 1rem;">{{ __('case_studies.cta_title') }}</h2>
                 <p style="font-size: 1.1rem; margin-bottom: 2rem; opacity: 0.95;">
                     {{ __('case_studies.cta_desc') }}
                 </p>

@@ -11,20 +11,20 @@
                     <rect x="22" y="22" width="476" height="346" rx="18" fill="var(--secondary-bg)" stroke="var(--border)" />
 
                     <rect x="62" y="70" width="396" height="74" rx="14" fill="var(--surface)" stroke="var(--border)" />
-                    <text x="260" y="102" text-anchor="middle" font-size="14" font-weight="800" fill="var(--text-dark)">Layer 3</text>
+                    <text x="260" y="102" text-anchor="middle" font-size="14" font-weight="600" fill="var(--text-dark)">Layer 3</text>
                     <text x="260" y="124" text-anchor="middle" font-size="11" fill="var(--text-gray)">{{ __('sme_manufacturing.framework_layer3_label') }}</text>
 
                     <rect x="82" y="158" width="356" height="74" rx="14" fill="var(--surface)" stroke="var(--border)" />
-                    <text x="260" y="190" text-anchor="middle" font-size="14" font-weight="800" fill="var(--text-dark)">Layer 2</text>
+                    <text x="260" y="190" text-anchor="middle" font-size="14" font-weight="600" fill="var(--text-dark)">Layer 2</text>
                     <text x="260" y="212" text-anchor="middle" font-size="11" fill="var(--text-gray)">{{ __('sme_manufacturing.framework_layer2_label') }}</text>
 
                     <rect x="102" y="246" width="316" height="74" rx="14" fill="var(--button-primary-bg)" />
-                    <text x="260" y="278" text-anchor="middle" font-size="14" font-weight="800" fill="var(--button-primary-text)">Layer 1</text>
+                    <text x="260" y="278" text-anchor="middle" font-size="14" font-weight="600" fill="var(--button-primary-text)">Layer 1</text>
                     <text x="260" y="300" text-anchor="middle" font-size="11" fill="var(--button-primary-text)">{{ __('sme_manufacturing.framework_layer1_label') }}</text>
 
                     <path d="M 260 246 L 260 232" stroke="var(--primary)" stroke-width="2.5" />
                     <path d="M 260 158 L 260 144" stroke="var(--primary)" stroke-width="2.5" />
-                    <text x="260" y="350" text-anchor="middle" font-size="11" font-weight="700" fill="var(--primary)">{{ __('sme_manufacturing.framework_note') }}</text>
+                    <text x="260" y="350" text-anchor="middle" font-size="11" font-weight="600" fill="var(--primary)">{{ __('sme_manufacturing.framework_note') }}</text>
                 </svg>
             </div>
 

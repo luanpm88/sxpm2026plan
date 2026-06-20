@@ -2,7 +2,7 @@
 <section id="about" style="min-height: 60vh; display: flex; align-items: center; padding: 6rem 2rem; background: linear-gradient(135deg, var(--surface) 0%, var(--secondary-bg) 100%);">
     <div class="container-v5">
         <div style="text-align: center; max-width: 900px; margin: 0 auto;">
-            <h1 style="font-size: 2.75rem; font-weight: 800; line-height: 1.15; margin-bottom: 1.5rem; color: var(--text-dark);">
+            <h1 style="font-size: 2.75rem; font-weight: 600; line-height: 1.15; margin-bottom: 1.5rem; color: var(--text-dark);">
                 {{ __('about.hero_title') }} <span style="color: var(--primary);">{{ __('about.hero_title_accent') }}</span>
             </h1>
             <p style="font-size: 1.15rem; color: var(--text-gray); line-height: 1.8;">
@@ -23,28 +23,28 @@
         <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: center;">
 
             <div>
-                <h3 style="font-size: 1.25rem; font-weight: 700; color: var(--text-dark); margin-bottom: 0.75rem;">
+                <h3 style="font-size: 1.25rem; font-weight: 600; color: var(--text-dark); margin-bottom: 0.75rem;">
                     {{ __('about.story_start_title') }}
                 </h3>
                 <p style="color: var(--text-gray); line-height: 1.8; margin-bottom: 1.25rem;">
                     {{ __('about.story_start_desc') }}
                 </p>
 
-                <h3 style="font-size: 1.25rem; font-weight: 700; color: var(--text-dark); margin-bottom: 0.75rem;">
+                <h3 style="font-size: 1.25rem; font-weight: 600; color: var(--text-dark); margin-bottom: 0.75rem;">
                     {{ __('about.story_growth_title') }}
                 </h3>
                 <p style="color: var(--text-gray); line-height: 1.8; margin-bottom: 1.25rem;">
                     {{ __('about.story_growth_desc') }}
                 </p>
 
-                <h3 style="font-size: 1.25rem; font-weight: 700; color: var(--text-dark); margin-bottom: 0.75rem;">
+                <h3 style="font-size: 1.25rem; font-weight: 600; color: var(--text-dark); margin-bottom: 0.75rem;">
                     {{ __('about.story_expansion_title') }}
                 </h3>
                 <p style="color: var(--text-gray); line-height: 1.8; margin-bottom: 1.25rem;">
                     {{ __('about.story_expansion_desc') }}
                 </p>
 
-                <h3 style="font-size: 1.25rem; font-weight: 700; color: var(--text-dark); margin-bottom: 0.75rem;">
+                <h3 style="font-size: 1.25rem; font-weight: 600; color: var(--text-dark); margin-bottom: 0.75rem;">
                     {{ __('about.story_today_title') }}
                 </h3>
                 <p style="color: var(--text-gray); line-height: 1.8;">
@@ -64,13 +64,13 @@
                         @endif
                         
                         <!-- Circle Number -->
-                        <div class="flex-shrink-0" style="width: 48px; height: 48px; border-radius: 50%; background: {{ $milestone['highlight'] ? 'var(--primary)' : 'var(--surface)' }}; border: 3px solid var(--primary); display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 1.1rem; color: {{ $milestone['highlight'] ? 'var(--surface)' : 'var(--primary)' }}; box-shadow: 0 2px 8px rgba(24, 48, 96, 0.15); position: relative; z-index: 1;">
+                        <div class="flex-shrink-0" style="width: 48px; height: 48px; border-radius: 50%; background: {{ $milestone['highlight'] ? 'var(--primary)' : 'var(--surface)' }}; border: 3px solid var(--primary); display: flex; align-items: center; justify-content: center; font-weight: 600; font-size: 1.1rem; color: {{ $milestone['highlight'] ? 'var(--surface)' : 'var(--primary)' }}; box-shadow: 0 2px 8px rgba(24, 48, 96, 0.15); position: relative; z-index: 1;">
                             {{ $index + 1 }}
                         </div>
                         
                         <!-- Content Card -->
                         <div class="flex-grow-1 ms-3" style="background: {{ $milestone['highlight'] ? 'rgba(24, 48, 96, 0.05)' : '#f9fafb' }}; border: {{ $milestone['highlight'] ? '2px solid var(--primary)' : '1px solid #e5e7eb' }}; border-radius: 8px; padding: 1rem 1.25rem;">
-                            <h5 class="mb-1" style="color: var(--primary); font-weight: 700; font-size: 1rem;">
+                            <h5 class="mb-1" style="color: var(--primary); font-weight: 600; font-size: 1rem;">
                                 {{ $milestone['year'] }}: {{ $milestone['title'] }}
                             </h5>
                             <p class="mb-0" style="color: {{ $milestone['highlight'] ? 'var(--primary)' : '#6b7280' }}; font-size: 0.9rem; {{ $milestone['highlight'] ? 'font-weight: 600;' : '' }}">
@@ -99,7 +99,7 @@
                 <div style="font-size: 2rem; color: var(--primary); margin-bottom: 1rem;">
                     <span class="material-symbols-rounded">{{ $v['icon'] }}</span>
                 </div>
-                <h3 style="font-size: 1.1rem; font-weight: 700; color: var(--text-dark); margin-bottom: 0.75rem;">
+                <h3 style="font-size: 1.1rem; font-weight: 600; color: var(--text-dark); margin-bottom: 0.75rem;">
                     {{ $v['title'] }}
                 </h3>
                 <p style="color: var(--text-gray); font-size: 0.95rem; line-height: 1.6;">
@@ -131,7 +131,7 @@
                             <span class="material-symbols-rounded">account_circle</span>
                         </div>
                     </div>
-                    <h3 style="font-size: 1.1rem; font-weight: 700; color: var(--text-dark); margin-bottom: 0.25rem;">
+                    <h3 style="font-size: 1.1rem; font-weight: 600; color: var(--text-dark); margin-bottom: 0.25rem;">
                         {{ $leader['name'] }}
                     </h3>
                     <div style="color: var(--primary); font-weight: 600; font-size: 0.9rem; margin-bottom: 1rem;">
@@ -165,10 +165,10 @@
         <div class="card-grid" style="--card-min: 250px; --card-max: 390px; --card-gap: 2rem;">
             @foreach(__('about.achievements') as $a)
             <div style="background: var(--surface); border-radius: var(--card-radius); padding: 2.5rem; text-align: center; border: 1px solid var(--border);">
-                <div style="font-size: 2rem; font-weight: 800; color: var(--primary); margin-bottom: 0.5rem;">
+                <div style="font-size: 2rem; font-weight: 600; color: var(--primary); margin-bottom: 0.5rem;">
                     {{ $a['num'] }}
                 </div>
-                <div style="font-weight: 700; color: var(--text-dark); margin-bottom: 0.5rem;">
+                <div style="font-weight: 600; color: var(--text-dark); margin-bottom: 0.5rem;">
                     {{ $a['title'] }}
                 </div>
                 <div style="font-size: 0.9rem; color: var(--text-gray);">
@@ -184,7 +184,7 @@
 <section style="background: var(--secondary-bg);">
     <div class="container-v5">
         <div style="background: var(--contrast-panel-bg); border-radius: var(--card-radius); padding: 3.5rem 2rem; text-align: center; color: var(--contrast-panel-text);">
-            <h2 style="font-size: 2rem; font-weight: 800; margin-bottom: 1rem;">{{ __('about.cta_title') }}</h2>
+            <h2 style="font-size: 2rem; font-weight: 600; margin-bottom: 1rem;">{{ __('about.cta_title') }}</h2>
             <p style="font-size: 1.1rem; margin-bottom: 2rem; opacity: 0.95;">
                 {{ __('about.cta_desc') }}
             </p>

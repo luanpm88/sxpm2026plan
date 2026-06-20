@@ -40,8 +40,8 @@ return [
     // Learning section
     'learning_title'    => 'Continuous Learning Culture',
     'learning_desc'     => 'We invest in our team\'s growth through certifications, training, and knowledge sharing',
-    'learning_stat1_value'=> '100%',
-    'learning_stat1_label'=> 'Annual Certification Budget',
+    'learning_stat1_value'=> 'Dedicated',
+    'learning_stat1_label'=> 'Certification & Training Budget',
     'learning_stat2_value'=> 'Monthly',
     'learning_stat2_label'=> 'Tech Talks & Knowledge Sharing',
     'learning_stat3_value'=> 'R&D Time',
@@ -96,6 +96,6 @@ return [
         ['icon'=>'smart_toy','title'=>'AI/ML Specialists','count'=>'6+','desc'=>'LLM integration experts. NLP, semantic search, RAG pipeline architects with research background.'],
         ['icon'=>'architecture','title'=>'Solution Architects','count'=>'12+','desc'=>'Enterprise solution architects. Microservices, cloud-native, scalable systems design specialists.'],
         ['icon'=>'trending_up','title'=>'Tech Leads','count'=>'15+','desc'=>'Technical leaders responsible for solution direction, delivery quality, and mentoring across project teams.'],
-        ['icon'=>'school','title'=>'Continuous Learning','count'=>'100%','desc'=>'Annual certification budget per engineer. Internal knowledge sharing, tech talks, R&D time allocation.'],
+        ['icon'=>'school','title'=>'Continuous Learning','count'=>'Ongoing','desc'=>'Training budget, internal knowledge sharing, and R&D practice are maintained across the engineering team.'],
     ],
 ];

@@ -2,7 +2,7 @@
 <section id="certifications" style="min-height: 70vh; display: flex; align-items: center; padding: 6rem 2rem; background: linear-gradient(135deg, var(--surface) 0%, var(--secondary-bg) 100%);">
     <div class="container-v5">
         <div style="text-align: center; max-width: 900px; margin: 0 auto;">
-            <h1 style="font-size: 2.75rem; font-weight: 800; line-height: 1.15; margin-bottom: 1.5rem; color: var(--text-dark);">
+            <h1 style="font-size: 2.75rem; font-weight: 600; line-height: 1.15; margin-bottom: 1.5rem; color: var(--text-dark);">
                 Certifications & Industry <span style="color: var(--primary);">Standards</span>
             </h1>
             <p style="font-size: 1.15rem; color: var(--text-gray); line-height: 1.8; margin-bottom: 2rem;">
@@ -70,7 +70,7 @@
                 <div style="font-size: 2rem; color: var(--primary); margin-bottom: 1rem;">
                     <span class="material-symbols-rounded">{{ $cert['icon'] }}</span>
                 </div>
-                <h3 style="font-size: 1.3rem; font-weight: 700; color: var(--text-dark); margin-bottom: 0.5rem;">
+                <h3 style="font-size: 1.3rem; font-weight: 600; color: var(--text-dark); margin-bottom: 0.5rem;">
                     {{ $cert['name'] }}
                 </h3>
                 <p style="font-size: 0.85rem; color: var(--primary); font-weight: 600; margin-bottom: 1rem;">
@@ -143,7 +143,7 @@
                 <div style="font-size: 1.75rem; color: var(--primary); margin-bottom: 1rem;">
                     <span class="material-symbols-rounded">{{ $cloud['icon'] }}</span>
                 </div>
-                <h3 style="font-size: 1.15rem; font-weight: 700; color: var(--text-dark); margin-bottom: 1.5rem;">
+                <h3 style="font-size: 1.15rem; font-weight: 600; color: var(--text-dark); margin-bottom: 1.5rem;">
                     {{ $cloud['provider'] }}
                 </h3>
                 <ul style="list-style: none; padding: 0; margin: 0;">
@@ -212,7 +212,7 @@
                     <div style="font-size: 2rem; color: var(--primary);">
                         <span class="material-symbols-rounded">{{ $category['icon'] }}</span>
                     </div>
-                    <h3 style="font-size: 1.15rem; font-weight: 700; color: var(--text-dark); margin: 0;">
+                    <h3 style="font-size: 1.15rem; font-weight: 600; color: var(--text-dark); margin: 0;">
                         {{ $category['category'] }}
                     </h3>
                 </div>
@@ -279,14 +279,14 @@
                     <div style="font-size: 2rem; color: var(--primary);">
                         <span class="material-symbols-rounded">{{ $tech['icon'] }}</span>
                     </div>
-                    <h3 style="font-size: 1rem; font-weight: 700; color: var(--text-dark); margin: 0;">
+                    <h3 style="font-size: 1rem; font-weight: 600; color: var(--text-dark); margin: 0;">
                         {{ $tech['category'] }}
                     </h3>
                 </div>
                 <ul style="list-style: none; padding: 0; margin: 0;">
                     @foreach($tech['items'] as $item)
                     <li style="padding: 0.5rem 0; color: var(--text-gray); font-size: 0.85rem; display: flex; align-items: center; gap: 0.5rem;">
-                        <span style="color: var(--primary); font-weight: 700;">•</span>
+                        <span style="color: var(--primary); font-weight: 600;">•</span>
                         {{ $item }}
                     </li>
                     @endforeach
@@ -351,10 +351,10 @@
                 <div style="font-size: 1.75rem; color: var(--primary); margin-bottom: 1rem;">
                     <span class="material-symbols-rounded">{{ $profile['icon'] }}</span>
                 </div>
-                <h3 style="font-size: 1.1rem; font-weight: 700; color: var(--text-dark); margin-bottom: 0.5rem;">
+                <h3 style="font-size: 1.1rem; font-weight: 600; color: var(--text-dark); margin-bottom: 0.5rem;">
                     {{ $profile['title'] }}
                 </h3>
-                <p style="font-size: 2rem; font-weight: 800; color: var(--primary); margin: 0.75rem 0;">
+                <p style="font-size: 2rem; font-weight: 600; color: var(--primary); margin: 0.75rem 0;">
                     {{ $profile['count'] }}
                 </p>
                 <p style="color: var(--text-gray); font-size: 0.9rem; line-height: 1.6;">
@@ -369,29 +369,17 @@
 <!-- Continuous Learning Culture -->
 <section style="background: var(--secondary-bg);">
     <div class="container-v5">
-        <div style="background: var(--contrast-panel-bg); border-radius: var(--card-radius); padding: 3.5rem 2rem; text-align: center; color: var(--contrast-panel-text);">
-            <h2 style="font-size: 2rem; font-weight: 800; margin-bottom: 1rem;">Continuous Learning Culture</h2>
-            <p style="font-size: 1.1rem; margin-bottom: 2rem; opacity: 0.95;">
-                We invest in our team's growth through certifications, training, and knowledge sharing
-            </p>
-            
-            <div class="card-grid" style="--card-min: 200px; --card-max: 340px; --card-gap: 2rem; max-width: 1200px; margin: 0 auto;">
-                <div style="background: var(--contrast-decoration-bg); border-radius: 8px; padding: 1.5rem;">
-                    <div style="font-size: 2rem; font-weight: 800; margin-bottom: 0.5rem;">100%</div>
-                    <div style="font-size: 0.9rem;">Annual Certification Budget</div>
+        <div class="learning-panel">
+            <h2>{{ __('certifications.learning_title') }}</h2>
+            <p>{{ __('certifications.learning_desc') }}</p>
+
+            <div class="learning-panel__grid">
+                @for($i = 1; $i <= 4; $i++)
+                <div class="learning-panel__item">
+                    <div class="learning-panel__value">{{ __('certifications.learning_stat' . $i . '_value') }}</div>
+                    <div class="learning-panel__label">{{ __('certifications.learning_stat' . $i . '_label') }}</div>
                 </div>
-                <div style="background: var(--contrast-decoration-bg); border-radius: 8px; padding: 1.5rem;">
-                    <div style="font-size: 2rem; font-weight: 800; margin-bottom: 0.5rem;">Monthly</div>
-                    <div style="font-size: 0.9rem;">Tech Talks & Knowledge Sharing</div>
-                </div>
-                <div style="background: var(--contrast-decoration-bg); border-radius: 8px; padding: 1.5rem;">
-                    <div style="font-size: 2rem; font-weight: 800; margin-bottom: 0.5rem;">R&D Time</div>
-                    <div style="font-size: 0.9rem;">Emerging Technologies Focus</div>
-                </div>
-                <div style="background: var(--contrast-decoration-bg); border-radius: 8px; padding: 1.5rem;">
-                    <div style="font-size: 2rem; font-weight: 800; margin-bottom: 0.5rem;">Mentorship</div>
-                    <div style="font-size: 0.9rem;">Senior-to-Junior Developer Program</div>
-                </div>
+                @endfor
             </div>
         </div>
     </div>
@@ -401,12 +389,12 @@
 <section>
     <div class="container-v5">
         <div style="background: var(--contrast-panel-bg); border-radius: var(--card-radius); padding: 3.5rem 2rem; text-align: center; color: var(--contrast-panel-text);">
-            <h2 style="font-size: 2rem; font-weight: 800; margin-bottom: 1rem;">Partner with HKIncotech</h2>
+            <h2 style="font-size: 2rem; font-weight: 600; margin-bottom: 1rem;">{{ __('certifications.cta_title') }}</h2>
             <p style="font-size: 1.1rem; margin-bottom: 2rem; opacity: 0.95;">
-                Enterprise-grade team with industry certifications and proven expertise
+                {{ __('certifications.cta_desc') }}
             </p>
             <a href="#contact" style="background: var(--contrast-action-bg); color: var(--contrast-action-text); padding: 1rem 2.5rem; border-radius: 8px; font-weight: 600; text-decoration: none; display: inline-block; transition: all 0.3s ease;" onmouseover="this.style.opacity='0.9';" onmouseout="this.style.opacity='1';">
-                <span>Start Your Project</span>
+                <span>{{ __('certifications.cta_button') }}</span>
             </a>
         </div>
     </div>

@@ -1,9 +1,9 @@
 <?php
 
 return [
-    'title_line1'  => 'Phần Mềm Theo Yêu Cầu',
-    'title_line2'  => 'Cho Doanh Nghiệp Vận Hành Thực',
-    'description'  => 'Hoàng Khang thiết kế, phát triển và vận hành hệ thống phần mềm theo yêu cầu cho doanh nghiệp: từ sản phẩm số, nền tảng SaaS, hệ thống nội bộ đến tích hợp AI và hiện đại hóa hạ tầng.',
+    'title_line1'  => 'Đối Tác Kỹ Thuật',
+    'title_line2'  => 'Cho Hệ Thống Phần Mềm Doanh Nghiệp',
+    'description'  => 'Hoàng Khang thiết kế, phát triển và vận hành các hệ thống phần mềm doanh nghiệp: nền tảng nội bộ, sản phẩm số, SaaS, tích hợp dữ liệu, AI ứng dụng và hiện đại hóa hạ tầng.',
     'cta_primary'  => 'Trao Đổi Nhu Cầu Kỹ Thuật',
     'cta_secondary'=> 'Xem Quy Trình Làm Việc',
     'cta_microcopy'=> 'Trao đổi kỹ thuật rõ phạm vi. Đề xuất giải pháp theo bối cảnh thực tế.',
@@ -36,6 +36,18 @@ return [
     'float_uptime'       => 'Đánh giá KH',
     'float_engineers'    => 'Đội kỹ thuật',
     'dashboard_title'    => 'Tổng quan năng lực triển khai',
+
+    // Hero enterprise systems map
+    'svg_system_core' => 'Lõi hệ thống',
+    'svg_domain' => 'Quy trình',
+    'svg_architecture' => 'Kiến trúc',
+    'svg_delivery' => 'Bàn giao',
+    'svg_operations' => 'Vận hành',
+    'svg_security' => 'Bảo mật',
+    'svg_data_ai' => 'Dữ liệu + AI',
+    'svg_api' => 'API',
+    'svg_acceptance' => 'Nghiệm thu',
+    'svg_scale' => 'Mở rộng',
 
     // SVG dashboard labels
     'svg_active_users' => 'Kỹ sư',

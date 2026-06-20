@@ -338,14 +338,14 @@
     <!-- Footer -->
     <footer>
         <div class="container-v5">
-            <div class="footer-grid-5col" style="display: grid; grid-template-columns: 1.5fr 1fr 1fr 1fr 1fr; gap: 2.5rem; margin-bottom: 2.5rem;">
+            <div class="footer-grid-5col">
                 <!-- Company Info -->
                 <div class="footer-section">
-                    <a href="{{ route('landing.index') }}" class="logo" style="color: var(--contrast-panel-text); margin-bottom: 1rem; display: inline-flex;">
-                        <img src="{{ asset('img/logo.svg') }}" alt="HKIncotech" style="filter: brightness(0) invert(1);">
+                    <a href="{{ route('landing.index') }}" class="logo footer-logo">
+                        <img src="{{ asset('img/logo.svg') }}" alt="HKIncotech">
                         <span>INCOTECH</span>
                     </a>
-                    <p style="color: var(--footer-text); font-size: 0.88rem; line-height: 1.65; margin-top: 1rem;">
+                    <p class="footer-about">
                         {{ __('footer.about_desc') }}
                     </p>
                 </div>

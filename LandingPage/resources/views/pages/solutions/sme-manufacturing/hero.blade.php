@@ -58,29 +58,29 @@
 
                             <rect x="18" y="18" width="484" height="314" rx="18" fill="var(--surface)" stroke="var(--border)" />
                             <rect x="42" y="48" width="126" height="66" rx="12" fill="var(--primary-subtle)" stroke="var(--border)" />
-                            <text x="105" y="74" text-anchor="middle" font-size="12" font-weight="800" fill="var(--text-dark)">{{ __('sme_manufacturing.diagram.shopfloor_title') }}</text>
+                            <text x="105" y="74" text-anchor="middle" font-size="12" font-weight="600" fill="var(--text-dark)">{{ __('sme_manufacturing.diagram.shopfloor_title') }}</text>
                             <text x="105" y="94" text-anchor="middle" font-size="10" fill="var(--text-gray)">{{ __('sme_manufacturing.diagram.shopfloor_desc') }}</text>
 
                             <rect x="42" y="142" width="126" height="66" rx="12" fill="var(--primary-subtle)" stroke="var(--border)" />
-                            <text x="105" y="168" text-anchor="middle" font-size="12" font-weight="800" fill="var(--text-dark)">{{ __('sme_manufacturing.diagram.warehouse_title') }}</text>
+                            <text x="105" y="168" text-anchor="middle" font-size="12" font-weight="600" fill="var(--text-dark)">{{ __('sme_manufacturing.diagram.warehouse_title') }}</text>
                             <text x="105" y="188" text-anchor="middle" font-size="10" fill="var(--text-gray)">{{ __('sme_manufacturing.diagram.warehouse_desc') }}</text>
 
                             <rect x="42" y="236" width="126" height="66" rx="12" fill="var(--primary-subtle)" stroke="var(--border)" />
-                            <text x="105" y="262" text-anchor="middle" font-size="12" font-weight="800" fill="var(--text-dark)">{{ __('sme_manufacturing.diagram.quality_title') }}</text>
+                            <text x="105" y="262" text-anchor="middle" font-size="12" font-weight="600" fill="var(--text-dark)">{{ __('sme_manufacturing.diagram.quality_title') }}</text>
                             <text x="105" y="282" text-anchor="middle" font-size="10" fill="var(--text-gray)">{{ __('sme_manufacturing.diagram.quality_desc') }}</text>
 
                             <rect x="214" y="108" width="112" height="134" rx="16" fill="var(--button-primary-bg)" />
-                            <text x="270" y="153" text-anchor="middle" font-size="13" font-weight="800" fill="var(--button-primary-text)">{{ __('sme_manufacturing.diagram.core_1') }}</text>
-                            <text x="270" y="172" text-anchor="middle" font-size="13" font-weight="800" fill="var(--button-primary-text)">{{ __('sme_manufacturing.diagram.core_2') }}</text>
+                            <text x="270" y="153" text-anchor="middle" font-size="13" font-weight="600" fill="var(--button-primary-text)">{{ __('sme_manufacturing.diagram.core_1') }}</text>
+                            <text x="270" y="172" text-anchor="middle" font-size="13" font-weight="600" fill="var(--button-primary-text)">{{ __('sme_manufacturing.diagram.core_2') }}</text>
                             <text x="270" y="198" text-anchor="middle" font-size="10" fill="var(--button-primary-text)">{{ __('sme_manufacturing.diagram.core_desc_1') }}</text>
                             <text x="270" y="214" text-anchor="middle" font-size="10" fill="var(--button-primary-text)">{{ __('sme_manufacturing.diagram.core_desc_2') }}</text>
 
                             <rect x="370" y="58" width="104" height="78" rx="14" fill="var(--surface)" stroke="var(--border)" />
-                            <text x="422" y="88" text-anchor="middle" font-size="12" font-weight="800" fill="var(--text-dark)">{{ __('sme_manufacturing.diagram.dashboard_title') }}</text>
+                            <text x="422" y="88" text-anchor="middle" font-size="12" font-weight="600" fill="var(--text-dark)">{{ __('sme_manufacturing.diagram.dashboard_title') }}</text>
                             <text x="422" y="108" text-anchor="middle" font-size="10" fill="var(--text-gray)">{{ __('sme_manufacturing.diagram.dashboard_desc') }}</text>
 
                             <rect x="370" y="206" width="104" height="78" rx="14" fill="var(--surface)" stroke="var(--border)" />
-                            <text x="422" y="236" text-anchor="middle" font-size="12" font-weight="800" fill="var(--text-dark)">{{ __('sme_manufacturing.diagram.integration_title') }}</text>
+                            <text x="422" y="236" text-anchor="middle" font-size="12" font-weight="600" fill="var(--text-dark)">{{ __('sme_manufacturing.diagram.integration_title') }}</text>
                             <text x="422" y="256" text-anchor="middle" font-size="10" fill="var(--text-gray)">{{ __('sme_manufacturing.diagram.integration_desc') }}</text>
 
                             <path d="M 168 81 C 190 92, 198 116, 214 138" fill="none" stroke="var(--primary)" stroke-width="2.4" marker-end="url(#sme-flow-arrow)" />

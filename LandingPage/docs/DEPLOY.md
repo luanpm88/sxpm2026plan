@@ -21,6 +21,31 @@ from the repo root, which is risky when unrelated files such as slides, workshop
 notes, tmp folders, or screenshots are dirty. Use it only when the whole worktree
 is intentionally part of the deploy.
 
+## Pre-deploy QA used for landing/design changes
+
+```bash
+# 1. PHP / Blade syntax
+php -l resources/lang/vi/index.php
+php -l resources/lang/en/index.php
+php -l resources/views/landing_page/index.blade.php
+
+# 2. Design-system checks for the landing scope
+rg -n "font-weight:\s*(7[0-9]{2}|8[0-9]{2}|9[0-9]{2}|bold)|font-weight=\"(7|8|9|bold)" public/css/main.css resources/views/landing_page resources/views/pages/solutions resources/views/layouts
+rg -n "color:\s*white|fill=\"white|stroke=\"white|background:\s*white" public/css/main.css resources/views/landing_page resources/views/pages/solutions resources/views/layouts
+git diff --check
+
+# 3. Screenshot audit
+php artisan serve --host=127.0.0.1 --port=8765
+BASE_URL=http://127.0.0.1:8765 node tools/audit-site.mjs codex-enterprise-pass
+```
+
+Expected:
+
+- The `rg` checks should return no matches in the landing scope.
+- `git diff --check` should return no output.
+- The screenshot audit should return HTTP `200` for VI/EN light, dark, and mobile routes.
+- Review at least home, pricing, certifications, case studies, SME manufacturing, and one dark-mode page before deploy.
+
 ## Last verified deploy
 
 - Date: 2026-06-20 ICT

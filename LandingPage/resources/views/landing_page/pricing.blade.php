@@ -5,7 +5,7 @@
     <section style="min-height: 60vh; display: flex; align-items: center; padding: 6rem 2rem; background: linear-gradient(135deg, var(--surface) 0%, var(--secondary-bg) 100%);">
         <div class="container-v5">
             <div style="text-align: center; max-width: 900px; margin: 0 auto;">
-                <h1 style="font-size: 2.75rem; font-weight: 800; line-height: 1.15; margin-bottom: 1.5rem; color: var(--text-dark);">
+                <h1 style="font-size: 2.75rem; font-weight: 600; line-height: 1.15; margin-bottom: 1.5rem; color: var(--text-dark);">
                     {{ __('pricing.hero_title') }} <span style="color: var(--primary);">{{ __('pricing.hero_title_highlight') }}</span>
                 </h1>
                 <p style="font-size: 1.15rem; color: var(--text-gray); line-height: 1.8;">
@@ -35,12 +35,12 @@
                      onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='';">
                     
                     @if($plan['highlighted'])
-                    <div style="position: absolute; top: -15px; left: 50%; transform: translateX(-50%); background: var(--contrast-action-bg); color: var(--contrast-action-text); padding: 0.4rem 1rem; border-radius: 20px; font-size: 0.8rem; font-weight: 700; text-transform: uppercase; border: 1px solid var(--contrast-panel-border);">
+                    <div style="position: absolute; top: -15px; left: 50%; transform: translateX(-50%); background: var(--contrast-action-bg); color: var(--contrast-action-text); padding: 0.4rem 1rem; border-radius: 20px; font-size: 0.8rem; font-weight: 600; text-transform: uppercase; border: 1px solid var(--contrast-panel-border);">
                         {{ __('pricing.label_popular') }}
                     </div>
                     @endif
                     
-                    <h3 style="font-size: 1.3rem; font-weight: 700; color: {{ $plan['highlighted'] ? 'var(--contrast-panel-text)' : 'var(--text-dark)' }}; margin-bottom: 0.5rem;">
+                    <h3 style="font-size: 1.3rem; font-weight: 600; color: {{ $plan['highlighted'] ? 'var(--contrast-panel-text)' : 'var(--text-dark)' }}; margin-bottom: 0.5rem;">
                         {{ $plan['name'] }}
                     </h3>
                     <p style="color: {{ $plan['highlighted'] ? 'var(--contrast-panel-muted-strong)' : 'var(--text-gray)' }}; margin-bottom: 1.5rem;">
@@ -48,16 +48,16 @@
                     </p>
                     
                     <div style="margin-bottom: 2rem;">
-                        <div style="font-size: 0.9rem; letter-spacing: 0.5px; text-transform: uppercase; font-weight: 700; color: {{ $plan['highlighted'] ? 'var(--contrast-panel-muted)' : 'var(--text-gray)' }}; margin-bottom: 0.35rem;">
+                        <div style="font-size: 0.9rem; letter-spacing: 0.5px; text-transform: uppercase; font-weight: 600; color: {{ $plan['highlighted'] ? 'var(--contrast-panel-muted)' : 'var(--text-gray)' }}; margin-bottom: 0.35rem;">
                             {{ $plan['period'] }}
                         </div>
                         <div style="display: flex; align-items: baseline; gap: 0.5rem; flex-wrap: wrap; margin-bottom: 0.35rem;">
-                            <span style="font-size: 2.4rem; font-weight: 800; color: {{ $plan['highlighted'] ? 'var(--contrast-panel-text)' : 'var(--primary)' }};">
+                            <span style="font-size: 2.4rem; font-weight: 600; color: {{ $plan['highlighted'] ? 'var(--contrast-panel-text)' : 'var(--primary)' }};">
                                 {{ $plan['price_from'] }}
                             </span>
                             @if($plan['price_to'])
                             <span style="font-size: 0.95rem; font-weight: 600; color: {{ $plan['highlighted'] ? 'var(--contrast-panel-muted)' : 'var(--text-gray)' }};">{{ __('pricing.label_to') }}</span>
-                            <span style="font-size: 2.05rem; font-weight: 700; color: {{ $plan['highlighted'] ? 'var(--contrast-panel-text)' : 'var(--primary)' }};">
+                            <span style="font-size: 2.05rem; font-weight: 600; color: {{ $plan['highlighted'] ? 'var(--contrast-panel-text)' : 'var(--primary)' }};">
                                 {{ $plan['price_to'] }}
                             </span>
                             @endif
@@ -106,7 +106,7 @@
                     <div style="font-size: 2rem; color: var(--primary); margin-bottom: 1rem;">
                         <span class="material-symbols-rounded">{{ $service['icon'] }}</span>
                     </div>
-                    <h3 style="font-size: 1.1rem; font-weight: 700; color: var(--text-dark); margin-bottom: 0.75rem;">
+                    <h3 style="font-size: 1.1rem; font-weight: 600; color: var(--text-dark); margin-bottom: 0.75rem;">
                         {{ $service['title'] }}
                     </h3>
                     <p style="color: var(--text-gray); font-size: 0.95rem; line-height: 1.6;">
@@ -131,10 +131,10 @@
                 <table style="width: 100%; border-collapse: collapse;">
                     <thead>
                         <tr style="background: var(--secondary-bg);">
-                            <th style="padding: 1rem; text-align: left; font-weight: 700; color: var(--text-dark); border-bottom: 2px solid var(--border);">{{ __('pricing.comparison_feature') }}</th>
-                            <th style="padding: 1rem; text-align: center; font-weight: 700; color: var(--text-dark); border-bottom: 2px solid var(--border);">{{ __('pricing.comparison_mvp') }}</th>
-                            <th style="padding: 1rem; text-align: center; font-weight: 700; color: var(--text-dark); border-bottom: 2px solid var(--border);">{{ __('pricing.comparison_growth') }}</th>
-                            <th style="padding: 1rem; text-align: center; font-weight: 700; color: var(--text-dark); border-bottom: 2px solid var(--border);">{{ __('pricing.comparison_enterprise') }}</th>
+                            <th style="padding: 1rem; text-align: left; font-weight: 600; color: var(--text-dark); border-bottom: 2px solid var(--border);">{{ __('pricing.comparison_feature') }}</th>
+                            <th style="padding: 1rem; text-align: center; font-weight: 600; color: var(--text-dark); border-bottom: 2px solid var(--border);">{{ __('pricing.comparison_mvp') }}</th>
+                            <th style="padding: 1rem; text-align: center; font-weight: 600; color: var(--text-dark); border-bottom: 2px solid var(--border);">{{ __('pricing.comparison_growth') }}</th>
+                            <th style="padding: 1rem; text-align: center; font-weight: 600; color: var(--text-dark); border-bottom: 2px solid var(--border);">{{ __('pricing.comparison_enterprise') }}</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -165,20 +165,18 @@
                 <p class="section-subtitle">{{ __('pricing.faq_subtitle') }}</p>
             </div>
 
-            <div style="max-width: 800px; margin: 0 auto;">
+            <div class="pricing-faq-list">
                 @php
                 $faqs = __('pricing.faqs');
                 @endphp
                 
                 @foreach($faqs as $faq)
-                <div style="background: var(--surface); border-radius: 8px; padding: 1.5rem; margin-bottom: 1rem;">
-                    <div style="font-weight: 700; color: var(--text-dark); margin-bottom: 0.75rem; cursor: pointer; display: flex; align-items: center; gap: 0.75rem;">
-                        <span class="material-symbols-rounded" style="color: var(--primary);">expand_more</span>
-                        {{ $faq['q'] }}
+                <div class="pricing-faq-card">
+                    <span class="material-symbols-rounded pricing-faq-card__icon">expand_more</span>
+                    <div class="pricing-faq-card__content">
+                        <h3>{{ $faq['q'] }}</h3>
+                        <p>{{ $faq['a'] }}</p>
                     </div>
-                    <p style="color: var(--text-gray); line-height: 1.6; margin-left: 2.5rem;">
-                        {{ $faq['a'] }}
-                    </p>
                 </div>
                 @endforeach
             </div>
@@ -189,7 +187,7 @@
     <section style="background: var(--surface);">
         <div class="container-v5">
             <div style="background: var(--contrast-panel-bg); border-radius: var(--card-radius); padding: 3.5rem 2rem; text-align: center; color: var(--contrast-panel-text);">
-                <h2 style="font-size: 2rem; font-weight: 800; margin-bottom: 1rem;">{{ __('pricing.cta_title') }}</h2>
+                <h2 style="font-size: 2rem; font-weight: 600; margin-bottom: 1rem;">{{ __('pricing.cta_title') }}</h2>
                 <p style="font-size: 1.1rem; margin-bottom: 2rem; opacity: 0.95;">
                     {{ __('pricing.cta_desc') }}
                 </p>

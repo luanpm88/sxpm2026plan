@@ -2,7 +2,7 @@
 <section id="scrum" style="min-height: 70vh; display: flex; align-items: center; padding: 6rem 2rem; background: linear-gradient(135deg, var(--surface) 0%, var(--secondary-bg) 100%);">
     <div class="container-v5">
         <div style="text-align: center; max-width: 900px; margin: 0 auto;">
-            <h1 style="font-size: 2.75rem; font-weight: 800; line-height: 1.15; margin-bottom: 1.5rem; color: var(--text-dark);">
+            <h1 style="font-size: 2.75rem; font-weight: 600; line-height: 1.15; margin-bottom: 1.5rem; color: var(--text-dark);">
                 {{ __('scrum.hero_title') }} <span style="color: var(--primary);">{{ __('scrum.hero_title_highlight') }}</span>
             </h1>
             <p style="font-size: 1.15rem; color: var(--text-gray); line-height: 1.8; margin-bottom: 2rem;">
@@ -27,13 +27,13 @@
         <div class="card-grid" style="--card-min: 240px; --card-max: 380px; --card-gap: 1.5rem;">
             @foreach(__('scrum.steps') as $step)
             <div style="background: var(--surface); border-radius: var(--card-radius); padding: 2.5rem 2rem; border: 1px solid var(--border); transition: all 0.3s ease; text-align: center; position: relative;" onmouseover="this.style.borderColor='var(--primary)'; this.style.boxShadow='0 10px 30px rgba(24, 48, 96, 0.1)'; this.style.transform='translateY(-4px)';" onmouseout="this.style.borderColor='var(--border)'; this.style.boxShadow=''; this.style.transform='';">
-                <div style="display: inline-flex; align-items: center; justify-content: center; width: 50px; height: 50px; background: var(--button-primary-bg); color: var(--button-primary-text); border-radius: 50%; font-weight: 800; font-size: 1.5rem; margin-bottom: 1rem;">
+                <div style="display: inline-flex; align-items: center; justify-content: center; width: 50px; height: 50px; background: var(--button-primary-bg); color: var(--button-primary-text); border-radius: 50%; font-weight: 600; font-size: 1.5rem; margin-bottom: 1rem;">
                     {{ $step['num'] }}
                 </div>
                 <div style="font-size: 2rem; color: var(--primary); margin: 1rem 0;">
                     <span class="material-symbols-rounded">{{ $step['icon'] }}</span>
                 </div>
-                <h3 style="font-size: 1.1rem; font-weight: 700; color: var(--text-dark); margin-bottom: 0.75rem;">
+                <h3 style="font-size: 1.1rem; font-weight: 600; color: var(--text-dark); margin-bottom: 0.75rem;">
                     {{ $step['title'] }}
                 </h3>
                 <p style="font-size: 0.9rem; color: var(--text-gray); line-height: 1.6;">
@@ -114,7 +114,7 @@
                 <div style="font-size: 2rem; color: var(--primary); margin-bottom: 1rem;">
                     <span class="material-symbols-rounded">{{ $b['icon'] }}</span>
                 </div>
-                <h3 style="font-size: 1.1rem; font-weight: 700; color: var(--text-dark); margin-bottom: 0.75rem;">
+                <h3 style="font-size: 1.1rem; font-weight: 600; color: var(--text-dark); margin-bottom: 0.75rem;">
                     {{ $b['title'] }}
                 </h3>
                 <p style="color: var(--text-gray); font-size: 0.95rem; line-height: 1.6;">
@@ -140,7 +140,7 @@
                 <!-- Left side: Circle with connecting line -->
                 <div style="position: relative; flex-shrink: 0;">
                     <div style="width: 110px; height: 110px; background: var(--surface); border: 3px solid var(--primary); border-radius: 50%; display: flex; align-items: center; justify-content: center; text-align: center; box-shadow: 0 4px 15px rgba(24, 48, 96, 0.15); position: relative; z-index: 2;">
-                        <div style="font-size: 1.1rem; font-weight: 700; color: var(--primary); line-height: 1.2;">{{ __('scrum.journey_phase_label') }} {{ $index + 1 }}</div>
+                        <div style="font-size: 1.1rem; font-weight: 600; color: var(--primary); line-height: 1.2;">{{ __('scrum.journey_phase_label') }} {{ $index + 1 }}</div>
                     </div>
 
                     <!-- Vertical connecting line -->
@@ -151,7 +151,7 @@
 
                 <!-- Right side: Content box -->
                 <div style="flex: 1; background: var(--surface); border-radius: var(--card-radius); padding: 2rem; border: 1px solid var(--border); box-shadow: 0 2px 8px rgba(0,0,0,0.05); transition: all 0.3s ease;" onmouseover="this.style.borderColor='var(--primary)'; this.style.boxShadow='0 8px 20px rgba(24, 48, 96, 0.1)'; this.style.transform='translateX(5px)';" onmouseout="this.style.borderColor='var(--border)'; this.style.boxShadow='0 2px 8px rgba(0,0,0,0.05)'; this.style.transform='translateX(0)';">
-                    <h3 style="font-size: 1.15rem; font-weight: 700; color: var(--text-dark); margin-bottom: 0.75rem; line-height: 1.4;">
+                    <h3 style="font-size: 1.15rem; font-weight: 600; color: var(--text-dark); margin-bottom: 0.75rem; line-height: 1.4;">
                         {{ $j['phase'] }}
                     </h3>
                     <p style="color: var(--text-gray); font-size: 0.95rem; line-height: 1.7; margin: 0;">
@@ -175,7 +175,7 @@
         <div class="card-grid" style="--card-min: 280px; --card-max: 420px; --card-gap: 2rem;">
             @foreach(__('scrum.why_items') as $w)
             <div style="background: var(--surface); border: 1px solid var(--border); border-radius: var(--card-radius); padding: 2rem; text-align: center; transition: all 0.3s ease;" onmouseover="this.style.borderColor='var(--primary)'; this.style.boxShadow='0 12px 30px var(--shadow-hover)'; this.style.transform='translateY(-5px)';" onmouseout="this.style.borderColor='var(--border)'; this.style.boxShadow=''; this.style.transform='';">
-                <h3 style="font-size: 1.1rem; font-weight: 700; color: var(--text-dark); margin-bottom: 0.75rem;">
+                <h3 style="font-size: 1.1rem; font-weight: 600; color: var(--text-dark); margin-bottom: 0.75rem;">
                     {{ $w['title'] }}
                 </h3>
                 <p style="color: var(--text-gray); font-size: 0.95rem;">
@@ -191,7 +191,7 @@
 <section style="background: var(--secondary-bg);">
     <div class="container-v5">
         <div style="background: var(--contrast-panel-bg); border-radius: var(--card-radius); padding: 3.5rem 2rem; text-align: center; color: var(--contrast-panel-text);">
-            <h2 style="font-size: 2rem; font-weight: 800; margin-bottom: 1rem;">{{ __('scrum.cta_title') }}</h2>
+            <h2 style="font-size: 2rem; font-weight: 600; margin-bottom: 1rem;">{{ __('scrum.cta_title') }}</h2>
             <p style="font-size: 1.1rem; margin-bottom: 2rem; opacity: 0.95;">
                 {{ __('scrum.cta_desc') }}
             </p>

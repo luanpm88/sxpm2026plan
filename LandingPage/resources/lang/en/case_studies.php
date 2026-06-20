@@ -32,7 +32,8 @@ return [
                 'Strong adoption',
                 'Significant operational hours saved each semester'
             ],
-            'tech' => 'PHP, REST API, PostgreSQL (Load Balancing), Redis, React, React Native'
+            'tech' => 'Laravel, REST API, PostgreSQL, Redis, React, React Native, Queue Worker, RBAC',
+            'patterns' => ['Domain Modeling', 'Workflow Rules', 'Audit Log', 'Data Validation', 'Role-based Reports', 'Peak-period Scaling']
         ],
         [
             'title' => 'Storage Management System',
@@ -47,7 +48,8 @@ return [
                 'Dead stock reduced substantially',
                 'Significant cost savings'
             ],
-            'tech' => 'Python, Machine Learning, PostgreSQL, Redis, React, Node.js, Blockchain'
+            'tech' => 'Python, Node.js, PostgreSQL, Redis, React, Barcode, Forecasting, Warehouse API',
+            'patterns' => ['Inventory Reconciliation', 'Event Queue', 'Branch Sync', 'Exception Handling', 'Dashboard KPI', 'Access Control']
         ],
         [
             'title' => 'ERP Management System',
@@ -62,14 +64,16 @@ return [
                 'Faster decision-making',
                 'Strong adoption within months'
             ],
-            'tech' => 'Node.js, PostgreSQL, React, Python, Elasticsearch, AWS, Docker, Microservices'
+            'tech' => 'Node.js, PostgreSQL, React, Python, Elasticsearch, AWS, Docker, BI Dashboard, Microservices',
+            'patterns' => ['Bounded Context', 'Approval Flow', 'Ledger Sync', 'Audit Trail', 'Integration API', 'Observability']
         ],
     ],
 
     'label_challenge' => 'Challenge',
     'label_solution' => 'Solution',
     'label_results' => 'Results',
-    'label_tech' => 'Tech',
+    'label_tech' => 'Delivery Stack',
+    'label_practices' => 'Engineering Practices',
 
     'industries_title' => 'Industries Served',
     'industries_subtitle' => 'Experience across different business contexts and operating models.',

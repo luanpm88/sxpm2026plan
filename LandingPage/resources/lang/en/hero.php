@@ -1,9 +1,9 @@
 <?php
 
 return [
-    'title_line1'  => 'Enterprise Software',
-    'title_line2'  => 'Engineering Partner',
-    'description'  => 'For organizations building custom systems, modernizing legacy workflows, or scaling digital platforms. Hoang Khang brings engineering, architecture, QA, DevOps, and long-term ownership into one delivery model.',
+    'title_line1'  => 'Engineering Partner',
+    'title_line2'  => 'For Enterprise Software Systems',
+    'description'  => 'Hoang Khang designs, builds, and operates enterprise software systems across internal platforms, digital products, SaaS, data integration, applied AI, and infrastructure modernization.',
     'cta_primary'  => 'Discuss Technical Requirements',
     'cta_secondary'=> 'See How We Work',
     'cta_microcopy'=> 'Technical scope discussion. Practical solution proposal for the real operating context.',
@@ -36,6 +36,18 @@ return [
     'float_uptime'       => 'Client Rating',
     'float_engineers'    => 'Specialists',
     'dashboard_title'    => 'Project Delivery Dashboard',
+
+    // Hero enterprise systems map
+    'svg_system_core' => 'System core',
+    'svg_domain' => 'Domain',
+    'svg_architecture' => 'Architecture',
+    'svg_delivery' => 'Delivery',
+    'svg_operations' => 'Operations',
+    'svg_security' => 'Security',
+    'svg_data_ai' => 'Data + AI',
+    'svg_api' => 'API',
+    'svg_acceptance' => 'Acceptance',
+    'svg_scale' => 'Scale',
 
     // SVG dashboard labels (kept for backward compat)
     'svg_active_users' => 'Engineers',

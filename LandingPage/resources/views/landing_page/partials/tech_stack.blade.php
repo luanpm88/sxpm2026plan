@@ -2,7 +2,7 @@
 <section id="tech-stack" style="min-height: 60vh; display: flex; align-items: center; padding: 6rem 2rem; background: linear-gradient(135deg, var(--surface) 0%, var(--secondary-bg) 100%);">
     <div class="container-v5">
         <div style="text-align: center; max-width: 900px; margin: 0 auto;">
-            <h1 style="font-size: 2.75rem; font-weight: 800; line-height: 1.15; margin-bottom: 1.5rem; color: var(--text-dark);">
+            <h1 style="font-size: 2.75rem; font-weight: 600; line-height: 1.15; margin-bottom: 1.5rem; color: var(--text-dark);">
                 {{ __('tech_stack.hero_title') }}
             </h1>
             <p style="font-size: 1.15rem; color: var(--text-gray); line-height: 1.8; margin-bottom: 2rem;">
@@ -30,7 +30,7 @@
                     <div style="font-size: 1.75rem;">
                         <span class="material-symbols-rounded">{{ $cat['icon'] }}</span>
                     </div>
-                    <h3 style="font-size: 1.25rem; font-weight: 700; margin: 0;">
+                    <h3 style="font-size: 1.25rem; font-weight: 600; margin: 0;">
                         {{ $cat['name'] }}
                     </h3>
                 </div>
@@ -64,10 +64,10 @@
             @endphp
             @foreach($metrics as $m)
             <div style="background: var(--surface); border: 1px solid var(--border); border-radius: var(--card-radius); padding: 2rem; transition: all 0.3s ease;" onmouseover="this.style.boxShadow='0 12px 30px rgba(24, 48, 96, 0.1)';" onmouseout="this.style.boxShadow='';">
-                <div style="font-size: 2rem; font-weight: 800; color: var(--primary); margin-bottom: 0.5rem;">
+                <div style="font-size: 2rem; font-weight: 600; color: var(--primary); margin-bottom: 0.5rem;">
                     {{ $m['metric'] }}
                 </div>
-                <div style="font-weight: 700; color: var(--text-dark); margin-bottom: 0.5rem;">
+                <div style="font-weight: 600; color: var(--text-dark); margin-bottom: 0.5rem;">
                     {{ $m['label'] }}
                 </div>
                 <div style="font-size: 0.85rem; color: var(--text-gray);">
@@ -96,7 +96,7 @@
                 <div style="font-size: 2rem; color: var(--primary); margin-bottom: 1.5rem;">
                     <span class="material-symbols-rounded" style="font-size: 2rem;">{{ $platform['icon'] }}</span>
                 </div>
-                <h3 style="font-size: 1.4rem; font-weight: 700; color: var(--text-dark); margin-bottom: 1rem;">
+                <h3 style="font-size: 1.4rem; font-weight: 600; color: var(--text-dark); margin-bottom: 1rem;">
                     {{ $platform['title'] }}
                 </h3>
                 <p style="color: var(--text-gray); font-size: 0.95rem; line-height: 1.7; margin-bottom: 1.5rem;">
@@ -141,7 +141,7 @@
                 <div style="font-size: 1.75rem; color: var(--primary); margin-bottom: 1rem;">
                     <span class="material-symbols-rounded">{{ $p['icon'] }}</span>
                 </div>
-                <h3 style="font-size: 1.1rem; font-weight: 700; color: var(--text-dark); margin-bottom: 0.3rem;">
+                <h3 style="font-size: 1.1rem; font-weight: 600; color: var(--text-dark); margin-bottom: 0.3rem;">
                     {{ $p['title'] }}
                 </h3>
                 {{-- <div style="font-size: 0.85rem; color: var(--primary); font-weight: 600; margin-bottom: 0.75rem;">
@@ -160,7 +160,7 @@
 <section>
     <div class="container-v5">
         <div style="background: var(--contrast-panel-bg); border-radius: var(--card-radius); padding: 3.5rem 2rem; text-align: center; color: var(--contrast-panel-text);">
-            <h2 style="font-size: 2rem; font-weight: 800; margin-bottom: 1rem;">{{ __('tech_stack.cta_title') }}</h2>
+            <h2 style="font-size: 2rem; font-weight: 600; margin-bottom: 1rem;">{{ __('tech_stack.cta_title') }}</h2>
             <p style="font-size: 1.1rem; margin-bottom: 2rem; opacity: 0.95;">
                 {{ __('tech_stack.cta_desc') }}
             </p>

@@ -32,7 +32,8 @@ return [
                 'Tỷ lệ áp dụng cao',
                 'Tiết kiệm đáng kể giờ vận hành mỗi học kỳ'
             ],
-            'tech' => 'PHP, REST API, PostgreSQL (Load Balancing), Redis, React, React Native'
+            'tech' => 'Laravel, REST API, PostgreSQL, Redis, React, React Native, Queue Worker, RBAC',
+            'patterns' => ['Domain Modeling', 'Workflow Rules', 'Audit Log', 'Data Validation', 'Role-based Reports', 'Peak-period Scaling']
         ],
         [
             'title' => 'Hệ Thống Quản Lý Kho Hàng',
@@ -47,7 +48,8 @@ return [
                 'Hàng tồn kho chết giảm đáng kể',
                 'Tiết kiệm chi phí đáng kể'
             ],
-            'tech' => 'Python, Machine Learning, PostgreSQL, Redis, React, Node.js, Blockchain'
+            'tech' => 'Python, Node.js, PostgreSQL, Redis, React, Barcode, Forecasting, Warehouse API',
+            'patterns' => ['Inventory Reconciliation', 'Event Queue', 'Branch Sync', 'Exception Handling', 'Dashboard KPI', 'Access Control']
         ],
         [
             'title' => 'Hệ Thống ERP Quản Lý Doanh Nghiệp',
@@ -62,14 +64,16 @@ return [
                 'Ra quyết định nhanh hơn',
                 'Tỷ lệ áp dụng cao chỉ trong vài tháng'
             ],
-            'tech' => 'Node.js, PostgreSQL, React, Python, Elasticsearch, AWS, Docker, Microservices'
+            'tech' => 'Node.js, PostgreSQL, React, Python, Elasticsearch, AWS, Docker, BI Dashboard, Microservices',
+            'patterns' => ['Bounded Context', 'Approval Flow', 'Ledger Sync', 'Audit Trail', 'Integration API', 'Observability']
         ],
     ],
 
     'label_challenge' => 'Bài Toán',
     'label_solution' => 'Giải Pháp',
     'label_results' => 'Kết Quả',
-    'label_tech' => 'Công Nghệ',
+    'label_tech' => 'Stack Triển Khai',
+    'label_practices' => 'Thực Hành Kỹ Thuật',
 
     'industries_title' => 'Lĩnh Vực Đã Tham Gia',
     'industries_subtitle' => 'Kinh nghiệm triển khai trong nhiều bối cảnh nghiệp vụ và mô hình vận hành khác nhau.',

@@ -40,8 +40,8 @@ return [
     // Learning section
     'learning_title'    => 'Văn Hóa Học Hỏi Liên Tục',
     'learning_desc'     => 'Chúng tôi đầu tư vào năng lực đội ngũ thông qua chứng chỉ, đào tạo nội bộ, chia sẻ kỹ thuật và thực hành dự án.',
-    'learning_stat1_value'=> '100%',
-    'learning_stat1_label'=> 'Ngân Sách Chứng Chỉ Hàng Năm',
+    'learning_stat1_value'=> 'Ngân Sách Riêng',
+    'learning_stat1_label'=> 'Chứng Chỉ & Đào Tạo',
     'learning_stat2_value'=> 'Hàng Tháng',
     'learning_stat2_label'=> 'Chia Sẻ Kỹ Thuật Nội Bộ',
     'learning_stat3_value'=> 'R&D',
@@ -96,6 +96,6 @@ return [
         ['icon'=>'smart_toy','title'=>'Chuyên Gia AI/ML','count'=>'6+','desc'=>'Chuyên gia tích hợp LLM. Kiến trúc sư NLP, semantic search, RAG pipeline với nền tảng nghiên cứu.'],
         ['icon'=>'architecture','title'=>'Kiến Trúc Sư Giải Pháp','count'=>'12+','desc'=>'Kiến trúc sư giải pháp doanh nghiệp. Chuyên thiết kế hệ thống microservices, cloud-native, có khả năng mở rộng.'],
         ['icon'=>'trending_up','title'=>'Tech Lead','count'=>'15+','desc'=>'Trưởng nhóm kỹ thuật phụ trách định hướng giải pháp, chất lượng triển khai và kèm cặp đội ngũ.'],
-        ['icon'=>'school','title'=>'Học Hỏi Liên Tục','count'=>'100%','desc'=>'Ngân sách chứng chỉ hằng năm cho kỹ sư, chia sẻ kiến thức nội bộ và thời gian dành cho R&D.'],
+        ['icon'=>'school','title'=>'Học Hỏi Liên Tục','count'=>'Liên tục','desc'=>'Ngân sách đào tạo, chia sẻ kiến thức nội bộ và thời gian dành cho R&D được duy trì trong đội ngũ.'],
     ],
 ];

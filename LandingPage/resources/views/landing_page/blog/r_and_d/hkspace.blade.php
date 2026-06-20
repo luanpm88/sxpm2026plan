@@ -8,7 +8,7 @@
                 {{ __('hkspace.badge') }}
             </div>
             
-            <h2 style="font-size: 2rem; font-weight: 800; color: var(--text-dark); margin-bottom: 1.5rem; line-height: 1.2;">
+            <h2 style="font-size: 2rem; font-weight: 600; color: var(--text-dark); margin-bottom: 1.5rem; line-height: 1.2;">
                 {{ __('hkspace.title') }}
             </h2>
             
@@ -16,20 +16,20 @@
                 {{ __('hkspace.intro') }}
             </p>
 
-            <h3 style="font-size: 1.4rem; font-weight: 700; color: var(--text-dark); margin-bottom: 1rem; margin-top: 2rem;">{{ __('hkspace.challenge_title') }}</h3>
+            <h3 style="font-size: 1.4rem; font-weight: 600; color: var(--text-dark); margin-bottom: 1rem; margin-top: 2rem;">{{ __('hkspace.challenge_title') }}</h3>
             <p style="color: var(--text-gray); line-height: 1.8; margin-bottom: 1.5rem;">
                 {{ __('hkspace.challenge_desc') }}
             </p>
             <ul style="list-style: none; padding: 0; margin-bottom: 2rem; color: var(--text-gray); line-height: 1.8;">
                 @foreach(__('hkspace.challenge_items') as $item)
                 <li style="margin-bottom: 0.75rem; display: flex; gap: 0.75rem;">
-                    <span style="color: var(--primary); font-weight: 700; flex-shrink: 0;">✓</span>
+                    <span style="color: var(--primary); font-weight: 600; flex-shrink: 0;">✓</span>
                     <span>{{ $item }}</span>
                 </li>
                 @endforeach
             </ul>
 
-            <h3 style="font-size: 1.4rem; font-weight: 700; color: var(--text-dark); margin-bottom: 1rem; margin-top: 2rem;">{{ __('hkspace.strategy_title') }}</h3>
+            <h3 style="font-size: 1.4rem; font-weight: 600; color: var(--text-dark); margin-bottom: 1rem; margin-top: 2rem;">{{ __('hkspace.strategy_title') }}</h3>
             <p style="color: var(--text-gray); line-height: 1.8; margin-bottom: 1.5rem;">
                 {{ __('hkspace.strategy_desc') }}
             </p>
@@ -55,27 +55,27 @@
                 </p>
             </div>
 
-            <h3 style="font-size: 1.4rem; font-weight: 700; color: var(--text-dark); margin-bottom: 1rem; margin-top: 2rem;">{{ __('hkspace.milestones_title') }}</h3>
+            <h3 style="font-size: 1.4rem; font-weight: 600; color: var(--text-dark); margin-bottom: 1rem; margin-top: 2rem;">{{ __('hkspace.milestones_title') }}</h3>
             <p style="color: var(--text-gray); line-height: 1.8; margin-bottom: 1.5rem; font-size: 0.95rem;">
                 {{ __('hkspace.milestones_desc') }}
             </p>
             <ul style="list-style: none; padding: 0; color: var(--text-gray); line-height: 1.8;">
                 @foreach(__('hkspace.milestones') as $m)
                 <li style="margin-bottom: 0.75rem; display: flex; gap: 0.75rem;">
-                    <span style="color: var(--primary); font-weight: 700; flex-shrink: 0;">→</span>
+                    <span style="color: var(--primary); font-weight: 600; flex-shrink: 0;">→</span>
                     <span><strong>{{ $m['bold'] }}</strong> {{ $m['text'] }}</span>
                 </li>
                 @endforeach
             </ul>
 
-            <h3 style="font-size: 1.4rem; font-weight: 700; color: var(--text-dark); margin-bottom: 1rem; margin-top: 2rem;">{{ __('hkspace.directions_title') }}</h3>
+            <h3 style="font-size: 1.4rem; font-weight: 600; color: var(--text-dark); margin-bottom: 1rem; margin-top: 2rem;">{{ __('hkspace.directions_title') }}</h3>
             <p style="color: var(--text-gray); line-height: 1.8; margin-bottom: 1rem;">
                 {{ __('hkspace.directions_desc') }}
             </p>
             <ul style="list-style: none; padding: 0; color: var(--text-gray); line-height: 1.8;">
                 @foreach(__('hkspace.directions') as $d)
                 <li style="margin-bottom: 0.75rem; display: flex; gap: 0.75rem;">
-                    <span style="color: var(--primary); font-weight: 700; flex-shrink: 0;">→</span>
+                    <span style="color: var(--primary); font-weight: 600; flex-shrink: 0;">→</span>
                     <span><strong>{{ $d['bold'] }}</strong> {{ $d['text'] }}</span>
                 </li>
                 @endforeach
@@ -88,14 +88,14 @@
                 <div style="font-size: 2.5rem; color: var(--primary); margin-bottom: 1.5rem;">
                     <span class="material-symbols-rounded">hub</span>
                 </div>
-                <h4 style="font-size: 1.5rem; font-weight: 700; color: var(--text-dark); margin-bottom: 0.75rem;">{{ __('hkspace.sidebar_title') }}</h4>
+                <h4 style="font-size: 1.5rem; font-weight: 600; color: var(--text-dark); margin-bottom: 0.75rem;">{{ __('hkspace.sidebar_title') }}</h4>
                 <p style="color: var(--text-gray); font-size: 0.95rem; line-height: 1.6; margin-bottom: 1.5rem;">
                     {{ __('hkspace.sidebar_desc') }}
                 </p>
             </div>
 
             <div style="background: var(--surface); border-radius: 10px; padding: 1.75rem; margin-bottom: 1.5rem; border: 1px solid var(--border);">
-                <h5 style="font-size: 1rem; font-weight: 700; color: var(--text-dark); margin-bottom: 1.25rem;">{{ __('hkspace.sidebar_principles_title') }}</h5>
+                <h5 style="font-size: 1rem; font-weight: 600; color: var(--text-dark); margin-bottom: 1.25rem;">{{ __('hkspace.sidebar_principles_title') }}</h5>
                 
                 <div style="margin-bottom: 1.25rem; padding-bottom: 1.25rem; border-bottom: 1px solid #e5f1ff;">
                     <p style="color: var(--text-dark); font-weight: 600; font-size: 0.9rem; margin-bottom: 0.4rem;">{{ __('hkspace.sidebar_p1_title') }}</p>

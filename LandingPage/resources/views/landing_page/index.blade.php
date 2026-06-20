@@ -81,10 +81,32 @@
     {{-- 3. SERVICES --}}
     <section id="services" aria-labelledby="heading-services">
         <div class="container-v5">
-            <div class="section-header">
+            <div class="section-header section-header--with-visual">
                 <span class="section-label">{{ __('index.section_services') }}</span>
                 <h2 id="heading-services" class="section-title">{{ __('index.services_title') }}</h2>
                 <p class="section-subtitle">{{ __('index.services_subtitle') }}</p>
+                <svg class="section-header__visual-row" viewBox="0 0 720 96" aria-hidden="true" focusable="false">
+                    @php
+                    $visualSteps = [
+                        ['icon' => 'M22 34h30M22 46h22M22 58h30', 'label' => __('index.services_visual_1')],
+                        ['icon' => 'M24 56l20-12 20 12M24 42l20-12 20 12', 'label' => __('index.services_visual_2')],
+                        ['icon' => 'M34 30l-14 18 14 18M50 30l14 18-14 18', 'label' => __('index.services_visual_3')],
+                        ['icon' => 'M44 26l18 8v14c0 12-8 20-18 24-10-4-18-12-18-24V34l18-8z', 'label' => __('index.services_visual_4')],
+                        ['icon' => 'M24 52c8-18 16-24 28-24s18 16 20 34M30 62h36', 'label' => __('index.services_visual_5')],
+                    ];
+                    @endphp
+                    @foreach($visualSteps as $i => $step)
+                        @php $x = 44 + ($i * 150); @endphp
+                        @if($i > 0)
+                            <path class="section-header__visual-link" d="M{{ $x - 78 }} 48H{{ $x - 14 }}" />
+                        @endif
+                        <g class="section-header__visual-step" transform="translate({{ $x }} 4)">
+                            <rect width="72" height="72" rx="18" />
+                            <path d="{{ $step['icon'] }}" />
+                            <text x="36" y="88" text-anchor="middle">{{ $step['label'] }}</text>
+                        </g>
+                    @endforeach
+                </svg>
             </div>
 
             <div class="grid-4col">
@@ -218,20 +240,46 @@
                 <p class="section-subtitle">{{ __('index.why_subtitle') }}</p>
             </div>
 
+            <div class="governance-panel">
+                <div class="governance-panel__intro">
+                    <span class="material-symbols-rounded">rule_settings</span>
+                    <div>
+                        <h3>{{ __('index.governance_title') }}</h3>
+                        <p>{{ __('index.governance_desc') }}</p>
+                    </div>
+                </div>
+                <div class="governance-panel__grid">
+                    @php
+                    $governance = [
+                        ['icon' => 'account_tree', 'key' => '1'],
+                        ['icon' => 'monitoring', 'key' => '2'],
+                        ['icon' => 'verified_user', 'key' => '3'],
+                    ];
+                    @endphp
+                    @foreach($governance as $item)
+                    <div class="governance-panel__item">
+                        <span class="material-symbols-rounded">{{ $item['icon'] }}</span>
+                        <h4>{{ __('index.governance_' . $item['key'] . '_title') }}</h4>
+                        <p>{{ __('index.governance_' . $item['key'] . '_desc') }}</p>
+                    </div>
+                    @endforeach
+                </div>
+            </div>
+
             <div class="grid-3col">
                 @php
                 $whys = [
-                    ['icon' => 'star', 'color' => '#183060', 'key' => 'expertise'],
-                    ['icon' => 'groups', 'color' => '#1a4585', 'key' => 'team'],
-                    ['icon' => 'bolt', 'color' => '#2f6abf', 'key' => 'fast'],
-                    ['icon' => 'shield', 'color' => '#183060', 'key' => 'security'],
-                    ['icon' => 'trending_up', 'color' => '#1a4585', 'key' => 'scalable'],
-                    ['icon' => 'handshake', 'color' => '#4f5965', 'key' => 'partnership'],
+                    ['icon' => 'travel_explore', 'key' => 'expertise'],
+                    ['icon' => 'hub', 'key' => 'team'],
+                    ['icon' => 'conversion_path', 'key' => 'fast'],
+                    ['icon' => 'shield_lock', 'key' => 'security'],
+                    ['icon' => 'query_stats', 'key' => 'scalable'],
+                    ['icon' => 'handshake', 'key' => 'partnership'],
                 ];
                 @endphp
                 @foreach($whys as $w)
                 <div class="why-card">
-                    <div class="why-card__icon" style="background: {{ $w['color'] }}12; color: {{ $w['color'] }};">
+                    <div class="why-card__icon">
                         <span class="material-symbols-rounded">{{ $w['icon'] }}</span>
                     </div>
                     <div>
@@ -264,15 +312,27 @@
             <div class="grid-3col">
                 @php
                 $cases = [
-                    ['num' => '1', 'badge_color' => 'var(--primary)', 'badge_bg' => 'var(--primary-subtle)', 'techs' => ['PHP', 'REST API', 'PostgreSQL', 'React']],
-                    ['num' => '2', 'badge_color' => '#1a4585', 'badge_bg' => '#1a458515', 'techs' => ['Python', 'ML', 'PostgreSQL', 'React', 'Node.js']],
-                    ['num' => '3', 'badge_color' => '#2f6abf', 'badge_bg' => '#2f6abf15', 'techs' => ['Node.js', 'PostgreSQL', 'React', 'AWS', 'Microservices']],
+                    [
+                        'num' => '1',
+                        'stack' => ['Laravel', 'REST API', 'PostgreSQL', 'Redis', 'React', 'React Native', 'Queue Worker', 'RBAC'],
+                        'patterns' => ['Domain Modeling', 'Workflow Rules', 'Audit Log', 'Data Validation', 'Role-based Reports', 'Peak-period Scaling'],
+                    ],
+                    [
+                        'num' => '2',
+                        'stack' => ['Python', 'Node.js', 'PostgreSQL', 'Redis', 'React', 'Barcode', 'Forecasting', 'Warehouse API'],
+                        'patterns' => ['Inventory Reconciliation', 'Event Queue', 'Branch Sync', 'Exception Handling', 'Dashboard KPI', 'Access Control'],
+                    ],
+                    [
+                        'num' => '3',
+                        'stack' => ['Node.js', 'PostgreSQL', 'React', 'AWS', 'Docker', 'Elasticsearch', 'Microservices', 'BI Dashboard'],
+                        'patterns' => ['Bounded Context', 'Approval Flow', 'Ledger Sync', 'Audit Trail', 'Integration API', 'Observability'],
+                    ],
                 ];
                 @endphp
 
                 @foreach($cases as $case)
                 <div class="case-card" data-ga-event="case_study_view" data-ga-case="{{ __('index.case' . $case['num'] . '_badge') }}">
-                    <div class="case-card-badge" style="background: {{ $case['badge_bg'] }}; color: {{ $case['badge_color'] }};">{{ __('index.case' . $case['num'] . '_badge') }}</div>
+                    <div class="case-card-badge">{{ __('index.case' . $case['num'] . '_badge') }}</div>
                     <h3 class="case-card-title">{{ __('index.case' . $case['num'] . '_title') }}</h3>
                     <p class="case-card-desc">{{ __('index.case' . $case['num'] . '_desc') }}</p>
                     <div class="case-card-metrics">
@@ -283,10 +343,22 @@
                         </div>
                         @endfor
                     </div>
-                    <div class="case-card-tech">
-                        @foreach($case['techs'] as $tech)
-                        <span>{{ $tech }}</span>
-                        @endforeach
+                    <div class="case-card-practices">
+                        <div class="case-card-practices__head">
+                            <span>{{ __('index.case_stack_label') }}</span>
+                            <small>{{ __('index.case_practice_hint') }}</small>
+                        </div>
+                        <div class="case-card-tech">
+                            @foreach($case['stack'] as $tech)
+                            <span>{{ $tech }}</span>
+                            @endforeach
+                        </div>
+                        <div class="case-card-practices__label">{{ __('index.case_patterns_label') }}</div>
+                        <div class="case-card-tech case-card-tech--patterns">
+                            @foreach($case['patterns'] as $pattern)
+                            <span>{{ $pattern }}</span>
+                            @endforeach
+                        </div>
                     </div>
                 </div>
                 @endforeach

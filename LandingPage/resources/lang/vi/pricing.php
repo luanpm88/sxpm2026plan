@@ -1,20 +1,20 @@
 <?php
 
 return [
-    'hero_title' => 'Gói Đầu Tư',
-    'hero_title_highlight' => 'Phù Hợp Với Nhu Cầu',
+    'hero_title' => 'Ngân sách',
+    'hero_title_highlight' => 'Theo phạm vi dự án',
     'hero_desc' => 'Mỗi dự án phần mềm có phạm vi, rủi ro và yêu cầu vận hành riêng. Ngân sách được xây dựng dựa trên bối cảnh thực tế, không áp dụng một gói cứng cho mọi khách hàng.',
     'section_plans' => 'GÓI THAM KHẢO',
     'section_included' => 'NỀN TẢNG BÀN GIAO',
     'section_comparison' => 'SO SÁNH PHẠM VI',
     'section_faq' => 'CÂU HỎI THƯỜNG GẶP',
 
-    'plans_title' => 'Bảng Giá Tham Khảo',
+    'plans_title' => 'Ngân sách tham khảo',
     'plans_subtitle' => 'Mức giá dưới đây chỉ mang tính tham khảo. Chi phí thực tế phụ thuộc vào yêu cầu cụ thể của dự án.',
 
     'plans' => [
         [
-            'name' => 'Phiên Bản Đầu Tiên',
+            'name' => 'Phiên bản đầu tiên',
             'price_from' => '$6,300',
             'price_to' => '$12,000',
             'period' => 'Mức đầu tư theo tháng',
@@ -31,7 +31,7 @@ return [
             ]
         ],
         [
-            'name' => 'Tăng Trưởng & Mở Rộng',
+            'name' => 'Tăng trưởng & mở rộng',
             'price_from' => '$12,000',
             'price_to' => '$25,000',
             'period' => 'Mức đầu tư theo tháng',
@@ -50,7 +50,7 @@ return [
             ]
         ],
         [
-            'name' => 'Doanh Nghiệp & Hệ Thống Phức Tạp',
+            'name' => 'Doanh nghiệp & hệ thống phức tạp',
             'price_from' => '$25,000+',
             'price_to' => null,
             'period' => 'Mức đầu tư theo tháng',
@@ -58,11 +58,11 @@ return [
             'highlighted' => false,
             'features' => [
                 '4-8+ kỹ sư full-stack',
-                'Đội chuyên trách và SCRUM Master',
+                'Đội chuyên trách và quản lý dự án',
                 'Kiến trúc cấp doanh nghiệp',
                 'Đồng bộ hằng ngày và review mã nguồn',
                 'Microservices / thiết kế nâng cao',
-                'Rà soát bảo mật và tuân thủ',
+                'Rà soát bảo mật và kiểm soát dữ liệu',
                 'Phân tích dữ liệu và báo cáo nâng cao',
                 'Hỗ trợ 6-12 tháng',
                 'Điều chỉnh nguồn lực theo giai đoạn'
@@ -70,12 +70,12 @@ return [
         ]
     ],
 
-    'label_popular' => 'Phổ Biến Nhất',
+    'label_popular' => 'Phù hợp nhiều dự án',
     'label_to' => 'đến',
     'label_per_month' => 'theo tháng, thay đổi theo phạm vi',
-    'plan_cta' => 'Trao Đổi Phạm Vi Báo Giá',
+    'plan_cta' => 'Trao đổi phạm vi báo giá',
 
-    'services_title' => 'Nền Tảng Bàn Giao Trong Mỗi Dự Án',
+    'services_title' => 'Nền tảng bàn giao trong mỗi dự án',
     'services_subtitle' => 'Các hạng mục kỹ thuật cơ bản để hệ thống có thể phát triển, bàn giao và vận hành rõ ràng.',
 
     'core_services' => [
@@ -87,7 +87,7 @@ return [
         ['icon' => 'assignment', 'title' => 'Tài liệu bàn giao', 'desc' => 'Tài liệu kỹ thuật, hướng dẫn triển khai và thông tin cần thiết cho đội vận hành.'],
     ],
 
-    'comparison_title' => 'So Sánh Chi Tiết',
+    'comparison_title' => 'So sánh phạm vi',
     'comparison_subtitle' => 'Phân tách phạm vi theo từng gói',
     'comparison_feature' => 'Hạng mục',
     'comparison_mvp' => 'MVP',
@@ -96,9 +96,9 @@ return [
 
     'features' => [
         ['feature' => 'Quy mô đội ngũ', 'startup' => '1-2 kỹ sư', 'growth' => '2-4 kỹ sư', 'enterprise' => '4-8+ kỹ sư'],
-        ['feature' => 'Project Manager', 'startup' => 'Dùng chung', 'growth' => 'Chuyên trách', 'enterprise' => 'Chuyên trách'],
+        ['feature' => 'Quản lý dự án', 'startup' => 'Dùng chung', 'growth' => 'Chuyên trách', 'enterprise' => 'Chuyên trách'],
         ['feature' => 'Thời lượng sprint', 'startup' => '2 tuần', 'growth' => '2 tuần', 'enterprise' => 'Linh hoạt'],
-        ['feature' => 'Code Review', 'startup' => 'Hàng tuần', 'growth' => '2 lần/tuần', 'enterprise' => 'Hàng ngày'],
+        ['feature' => 'Rà soát mã nguồn', 'startup' => 'Hàng tuần', 'growth' => '2 lần/tuần', 'enterprise' => 'Hàng ngày'],
         ['feature' => 'Phát triển API', 'startup' => 'Cơ bản', 'growth' => 'Nâng cao', 'enterprise' => 'Tùy chỉnh'],
         ['feature' => 'Kiến trúc', 'startup' => 'Tiêu chuẩn', 'growth' => 'Nâng cao', 'enterprise' => 'Doanh nghiệp'],
         ['feature' => 'Hỗ trợ sau triển khai', 'startup' => '30 ngày', 'growth' => '90 ngày', 'enterprise' => '6-12 tháng'],
@@ -107,8 +107,8 @@ return [
         ['feature' => 'Thời gian triển khai', 'startup' => '3-6 tháng', 'growth' => '6-12 tháng', 'enterprise' => '12+ tháng'],
     ],
 
-    'faq_title' => 'Câu Hỏi Thường Gặp',
-    'faq_subtitle' => 'Mọi thông tin bạn cần biết về báo giá',
+    'faq_title' => 'Câu hỏi thường gặp',
+    'faq_subtitle' => 'Các nguyên tắc chung trước khi xác định chi phí chính thức.',
 
     'faqs' => [
         ['q' => 'Làm sao biết dự án của tôi thuộc phạm vi nào?', 'a' => 'Chúng tôi trao đổi trực tiếp để đánh giá phạm vi, độ phức tạp, rủi ro kỹ thuật và tiến độ mục tiêu. Từ đó đưa ra đề xuất chi phí và lộ trình phù hợp với bối cảnh dự án.'],
@@ -121,7 +121,7 @@ return [
         ['q' => 'Ai sở hữu mã nguồn sau dự án?', 'a' => 'Quyền sở hữu mã nguồn được quy định rõ trong hợp đồng. Với dự án phát triển theo yêu cầu, HKIncotech bàn giao mã nguồn, tài liệu và hướng dẫn triển khai theo phạm vi đã thống nhất.'],
     ],
 
-    'cta_title' => 'Dự Án Của Bạn Có Phạm Vi Riêng?',
+    'cta_title' => 'Dự án của bạn có phạm vi riêng?',
     'cta_desc' => 'HKIncotech có thể cùng bạn làm rõ phạm vi, độ phức tạp, mô hình đội ngũ và lộ trình triển khai trước khi đề xuất ngân sách.',
-    'cta_button' => 'Trao Đổi Phạm Vi Báo Giá',
+    'cta_button' => 'Trao đổi phạm vi báo giá',
 ];

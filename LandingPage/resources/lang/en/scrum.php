@@ -139,37 +139,37 @@ return [
 
     // Benefits Section
     'benefits_title' => 'SCRUM Process Benefits',
-    'benefits_subtitle' => 'Why SCRUM is the optimal development methodology',
+    'benefits_subtitle' => 'What sprint-based delivery helps control in a custom software project.',
     'benefits' => [
         [
             'icon' => 'visibility',
             'title' => 'Transparency & Control',
-            'desc' => 'Sprint demos provide real-time progress visibility with no project surprises. Clients maintain full control over prioritization at every stage.',
+            'desc' => 'Sprint reviews show working progress early, surface risks, and keep priorities visible throughout each stage.',
         ],
         [
             'icon' => 'tune',
             'title' => 'Flexible & Adaptive',
-            'desc' => 'Feedback after each sprint, easy pivots. Reduced risk from changing requirements.',
+            'desc' => 'Feedback after each sprint helps adjust scope with clear impact and reduced change risk.',
         ],
         [
             'icon' => 'check_circle',
-            'title' => 'High Quality',
-            'desc' => 'Continuous code review, testing. Early bug detection, low fix costs.',
+            'title' => 'Delivery Quality',
+            'desc' => 'Code review, testing, and CI/CD help detect issues earlier and protect delivery quality.',
         ],
         [
             'icon' => 'speed',
-            'title' => 'Efficient Team',
-            'desc' => 'Daily standups, clear priorities. 30-50% faster delivery speed.',
+            'title' => 'Coordinated Team',
+            'desc' => 'Clear priorities, short coordination loops, and visible blockers reduce waiting time between roles.',
         ],
         [
             'icon' => 'shield',
-            'title' => 'Risk Reduction',
-            'desc' => 'Deploy each sprint, identify issues early. No all-or-nothing risk.',
+            'title' => 'Reduced End-Project Risk',
+            'desc' => 'Staged delivery helps identify issues early instead of concentrating risk at the end.',
         ],
         [
             'icon' => 'trending_up',
-            'title' => 'Optimal ROI',
-            'desc' => 'Prioritize features by value. Maximize return on investment.',
+            'title' => 'Clear Investment Value',
+            'desc' => 'Features are prioritized by operating value and business impact instead of broad, unfocused scope.',
         ],
     ],
 
@@ -235,7 +235,7 @@ return [
     ],
 
     // CTA Section
-    'cta_title' => 'Begin Your SCRUM Engagement',
+    'cta_title' => 'Discuss Agile Delivery Model',
     'cta_desc' => 'Discuss project scope, collaboration model, and a SCRUM delivery approach that fits your team maturity.',
     'cta_button' => 'Discuss the Process',
 ];

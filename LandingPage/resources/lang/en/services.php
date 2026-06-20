@@ -9,12 +9,12 @@ return [
     'section_custom' => 'CUSTOM SOFTWARE',
     'section_ai' => 'AI SOLUTIONS',
     'section_saas' => 'SAAS PLATFORMS',
-    'section_security' => 'SECURITY & COMPLIANCE',
+    'section_security' => 'SECURITY & CONTROLS',
     'section_engagement' => 'ENGAGEMENT MODELS',
 
     // Services Overview Section
     'overview_title' => 'Four Core Capability Areas',
-    'overview_subtitle' => 'From custom software delivery to platform operations, AI enablement, and secure system engineering',
+    'overview_subtitle' => 'From domain-specific software to platform operations, controlled AI enablement, and secure system engineering',
 
     // Service Overview Items
     'services' => [
@@ -28,11 +28,11 @@ return [
         ],
         [
             'title' => 'AI Knowledge Platform',
-            'desc' => 'NLP, RAG, LLM, and workflow automation integrated into internal systems or digital products',
+            'desc' => 'RAG, LLM, semantic search, and controlled workflow automation integrated into internal systems or digital products',
         ],
         [
-            'title' => 'Security & Compliance',
-            'desc' => 'Security architecture, access control, audit logs, and compliance patterns tailored to business context',
+            'title' => 'Security & Controls',
+            'desc' => 'Security architecture, access control, audit logs, data protection, and risk controls tailored to business context',
         ],
     ],
 
@@ -96,7 +96,7 @@ return [
             'techs' => ['OpenAI GPT-4', 'Claude', 'LangChain', 'TensorFlow', 'PyTorch'],
         ],
         [
-            'title' => 'Security & Compliance',
+            'title' => 'Security & Controls',
             'techs' => ['OAuth 2.0', 'JWT', 'Encryption', 'OWASP', 'Zero Trust'],
         ],
     ],
@@ -272,8 +272,8 @@ return [
             ],
             [
                 'icon' => 'support_agent',
-                'title' => '24/7 Support',
-                'desc' => 'Dedicated support team, SLA guarantees, incident response, regular updates & patches',
+                'title' => 'Operational Support',
+                'desc' => 'Support aligned to SLA scope, incident handling, regular updates, and patches',
             ],
         ],
         'saas_features' => [
@@ -290,7 +290,7 @@ return [
             [
                 'icon' => 'integration_instructions',
                 'title' => 'Third-party Integrations',
-                'desc' => 'Webhooks, REST APIs, OAuth, Slack, Teams, Salesforce, HubSpot, and 100+ platforms',
+                'desc' => 'Webhooks, REST APIs, OAuth, collaboration tools, CRM systems, and business platforms',
             ],
             [
                 'icon' => 'security',
@@ -300,7 +300,7 @@ return [
             [
                 'icon' => 'storage',
                 'title' => 'Data Management',
-                'desc' => 'Multi-database support, backup & disaster recovery, data residency, GDPR compliance',
+                'desc' => 'Multi-database support, backup and disaster recovery, data residency, and privacy principles',
             ],
             [
                 'icon' => 'monitoring',
@@ -348,10 +348,10 @@ return [
         ],
     ],
 
-    // Security & Compliance
+    // Security & Controls
     'security' => [
-        'title' => 'Security & Compliance',
-        'subtitle' => 'Enterprise security architecture with comprehensive compliance standards',
+        'title' => 'Security & Controls',
+        'subtitle' => 'Security architecture, access control, and data governance aligned to enterprise operating requirements.',
         'features' => [
             [
                 'title' => 'Enterprise Security',
@@ -359,7 +359,7 @@ return [
             ],
             [
                 'title' => 'Data Management',
-                'desc' => 'Multi-database support, backup & disaster recovery, data residency, GDPR compliance',
+                'desc' => 'Multi-database support, backup and disaster recovery, data residency, and privacy principles',
             ],
             [
                 'title' => 'Monitoring & Analytics',
@@ -370,13 +370,13 @@ return [
                 'desc' => 'Operational support, optimization, and staged scaling',
             ],
         ],
-        'standards' => 'ISO 27001, SOC 2, GDPR, PCI DSS compliant',
-        'compliance_highlights_title' => 'Compliance Highlights',
+        'standards' => 'ISO/IEC 27001, SOC 2, GDPR, and PCI DSS used as references when required by scope',
+        'compliance_highlights_title' => 'Control Highlights',
         'compliance_highlights' => [
             'Encryption: SSL/TLS, end-to-end encryption',
             'Authentication: OAuth 2.0, JWT, multi-factor authentication',
             'Authorization: RBAC/ABAC with fine-grained controls',
-            'Compliance: GDPR, HIPAA, SOC 2 Type II, ISO 27001',
+            'Reference frameworks: GDPR, HIPAA, SOC 2, ISO/IEC 27001 when relevant',
             'Audit & Monitoring: Complete audit trails, real-time monitoring',
             'Incident Response: 24/7 monitoring and incident response team',
         ],

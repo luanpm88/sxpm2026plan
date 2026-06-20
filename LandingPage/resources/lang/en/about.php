@@ -78,7 +78,7 @@ return [
     'achievements_subtitle' => 'Capabilities formed through real project delivery and operations.',
     'achievements' => [
         ['num' => '100+', 'title' => 'Projects Completed', 'desc' => 'From startup launches to enterprise rollouts'],
-        ['num' => '20+', 'title' => 'Senior Engineers', 'desc' => 'Certified and experienced team'],
+        ['num' => '20+', 'title' => 'Engineering Team', 'desc' => 'Multi-role team across architecture, delivery, QA, and DevOps'],
         ['num' => 'Enterprise', 'title' => 'Stable operations', 'desc' => 'Focus on availability, maintainability, and growth'],
         ['num' => '12+', 'title' => 'Years of Delivery', 'desc' => 'Proven track record'],
         ['num' => 'Platforms', 'title' => 'Owned products', 'desc' => 'HKSpace, Yolius, and ongoing R&D directions'],

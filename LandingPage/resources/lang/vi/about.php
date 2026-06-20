@@ -4,29 +4,29 @@ return [
     // Hero Section
     'hero_title' => 'Về',
     'hero_title_accent' => 'HKIncotech',
-    'hero_desc' => 'HKIncotech là đơn vị phát triển phần mềm theo yêu cầu, tập trung vào hệ thống doanh nghiệp, nền tảng SaaS, AI ứng dụng và hạ tầng vận hành dài hạn.',
+    'hero_desc' => 'HKIncotech là đối tác kỹ thuật thiết kế, phát triển và vận hành hệ thống phần mềm doanh nghiệp, nền tảng SaaS, AI ứng dụng và hạ tầng dài hạn.',
     'section_story' => 'HÀNH TRÌNH',
     'section_values' => 'GIÁ TRỊ CỐT LÕI',
     'section_achievements' => 'NĂNG LỰC TÍCH LŨY',
 
     // Company Story Section
-    'story_title' => 'Hành Trình Phát Triển',
+    'story_title' => 'Hành trình phát triển',
     'story_subtitle' => 'Từ đội kỹ thuật chuyên sâu đến đơn vị triển khai hệ thống doanh nghiệp',
     'story_start_title' => 'Khởi đầu (2012)',
-    'story_start_desc' => 'Khởi đầu từ một nhóm kỹ sư tập trung vào phần mềm theo yêu cầu, giải quyết các bài toán vận hành cụ thể của doanh nghiệp.',
+    'story_start_desc' => 'Khởi đầu từ một nhóm kỹ sư tập trung giải quyết các bài toán vận hành cụ thể bằng hệ thống phần mềm được thiết kế theo bối cảnh doanh nghiệp.',
     'story_growth_title' => 'Tăng trưởng (2015)',
     'story_growth_desc' => 'Mở rộng năng lực triển khai cho khách hàng doanh nghiệp, xây dựng kinh nghiệm trong hệ thống quản trị, dữ liệu, vận hành và sản phẩm số.',
     'story_expansion_title' => 'Mở rộng (2020)',
     'story_expansion_desc' => 'Phát triển đội ngũ chuyên trách, tăng cường năng lực SaaS, cloud, AI và kiến trúc hệ thống cho các dự án nhiều bộ phận tham gia.',
     'story_today_title' => 'Hiện tại (2026)',
-    'story_today_desc' => 'Tiếp tục phát triển các nền tảng do Hoàng Khang sở hữu như HKSpace và Yolius, đồng thời triển khai phần mềm theo yêu cầu cho khách hàng tại Việt Nam và khu vực.',
+    'story_today_desc' => 'Tiếp tục phát triển các nền tảng do Hoàng Khang sở hữu như HKSpace và Yolius, đồng thời triển khai hệ thống phần mềm doanh nghiệp cho khách hàng tại Việt Nam và khu vực.',
 
     // Milestones Timeline
     'milestones' => [
         ['year' => '2012', 'title' => 'Khởi đầu', 'desc' => '5 nhà phát triển', 'highlight' => false],
         ['year' => '2015', 'title' => 'Tăng trưởng', 'desc' => '40+ dự án, khách hàng doanh nghiệp', 'highlight' => false],
         ['year' => '2020', 'title' => 'Mở rộng', 'desc' => 'Tăng năng lực đội ngũ, cloud và SaaS', 'highlight' => false],
-        ['year' => '2026', 'title' => 'Hiện tại', 'desc' => 'Phát triển sản phẩm nền tảng và hệ thống theo yêu cầu', 'highlight' => true],
+        ['year' => '2026', 'title' => 'Hiện tại', 'desc' => 'Phát triển sản phẩm nền tảng và hệ thống doanh nghiệp', 'highlight' => true],
     ],
 
     // Mission & Values Section
@@ -43,7 +43,7 @@ return [
 
     // Leadership Team Section
     'section_team' => 'ĐỘI NGŨ',
-    'team_title' => 'Đội Ngũ Dẫn Dắt',
+    'team_title' => 'Đội ngũ dẫn dắt',
     'team_subtitle' => 'Những vai trò chịu trách nhiệm về chiến lược kỹ thuật, kiến trúc, sản phẩm và chất lượng bàn giao.',
     'team_draft_badge' => 'Bản nháp',
     'team' => [
@@ -55,7 +55,7 @@ return [
         ],
         [
             'name' => '--- --- ---',
-            'title' => 'CTO & Kiến trúc sư hàng đầu',
+            'title' => 'CTO & Kiến trúc sư trưởng',
             'bio' => 'Phụ trách kiến trúc hệ thống, tiêu chuẩn kỹ thuật, cloud, dữ liệu và khả năng vận hành của các nền tảng.',
             'skills' => ['Kiến trúc', 'Cơ sở hạ tầng đám mây', 'Hiệu suất']
         ],
@@ -74,7 +74,7 @@ return [
     ],
 
     // Achievements Section
-    'achievements_title' => 'Năng Lực Tích Lũy',
+    'achievements_title' => 'Năng lực tích lũy',
     'achievements_subtitle' => 'Những năng lực hình thành từ quá trình triển khai và vận hành dự án thực tế.',
     'achievements' => [
         ['num' => '100+', 'title' => 'Dự án đã triển khai', 'desc' => 'Từ sản phẩm số đến hệ thống vận hành nội bộ'],

@@ -1,7 +1,7 @@
 <?php
 
 return [
-    'title' => 'Lộ Trình Phát Triển Năng Lực Đội Ngũ',
+    'title' => 'Lộ trình phát triển năng lực đội ngũ',
 
     'ba_po_title' => 'BA/PO',
     'ba_po_cert1' => 'CBAP/CCBA, PSPO I/II, Agile/Scrum',

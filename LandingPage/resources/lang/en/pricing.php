@@ -1,20 +1,20 @@
 <?php
 
 return [
-    'hero_title' => 'Investment Plans',
-    'hero_title_highlight' => 'Tailored to Your Needs',
+    'hero_title' => 'Project Budget',
+    'hero_title_highlight' => 'By Delivery Scope',
     'hero_desc' => 'Every software engagement has its own scope, risk profile, and operating requirements. Budget is shaped around the real context, not a rigid package.',
     'section_plans' => 'REFERENCE PLANS',
     'section_included' => 'DELIVERY FOUNDATION',
     'section_comparison' => 'SCOPE COMPARISON',
     'section_faq' => 'FREQUENTLY ASKED',
 
-    'plans_title' => 'Price Reference Guide',
+    'plans_title' => 'Budget Reference Guide',
     'plans_subtitle' => 'The ranges below are directional. Actual pricing depends on scope, complexity, timeline, team model, and support requirements.',
 
     'plans' => [
         [
-            'name' => 'MVP / Startup',
+            'name' => 'First Release',
             'price_from' => '$6,300',
             'price_to' => '$12,000',
             'period' => 'Typical monthly investment',
@@ -31,7 +31,7 @@ return [
             ]
         ],
         [
-            'name' => 'Growth / Scale-up',
+            'name' => 'Growth & Expansion',
             'price_from' => '$12,000',
             'price_to' => '$25,000',
             'period' => 'Typical monthly investment',
@@ -58,11 +58,11 @@ return [
             'highlighted' => false,
             'features' => [
                 '4-8+ full-stack engineers',
-                'Dedicated team and Scrum Master',
+                'Dedicated team and project manager',
                 'Enterprise architecture',
                 'Daily coordination and code reviews',
                 'Microservices or advanced system design',
-                'Security and compliance review',
+                'Security and data-control review',
                 'Advanced analytics and reporting',
                 '6-12 months support',
                 'Stage-based team scaling'
@@ -70,7 +70,7 @@ return [
         ]
     ],
 
-    'label_popular' => 'Most Popular',
+    'label_popular' => 'Common fit',
     'label_to' => 'to',
     'label_per_month' => 'per month, varies by scope',
     'plan_cta' => 'Request Pricing Guidance',
@@ -87,7 +87,7 @@ return [
         ['icon' => 'assignment', 'title' => 'Handover documentation', 'desc' => 'Technical documents, deployment guides, and operational references for the client team.'],
     ],
 
-    'comparison_title' => 'Detailed Comparison',
+    'comparison_title' => 'Scope Comparison',
     'comparison_subtitle' => 'Plan-by-plan scope breakdown',
     'comparison_feature' => 'Feature',
     'comparison_mvp' => 'MVP',
@@ -96,9 +96,9 @@ return [
 
     'features' => [
         ['feature' => 'Team Size', 'startup' => '1-2 devs', 'growth' => '2-4 devs', 'enterprise' => '4-8+ devs'],
-        ['feature' => 'Project Manager', 'startup' => 'Shared', 'growth' => 'Dedicated', 'enterprise' => 'Dedicated'],
+        ['feature' => 'Project management', 'startup' => 'Shared', 'growth' => 'Dedicated', 'enterprise' => 'Dedicated'],
         ['feature' => 'Sprint Duration', 'startup' => '2 weeks', 'growth' => '2 weeks', 'enterprise' => 'Flexible'],
-        ['feature' => 'Code Review', 'startup' => 'Weekly', 'growth' => '2x Weekly', 'enterprise' => 'Daily'],
+        ['feature' => 'Code review', 'startup' => 'Weekly', 'growth' => '2x weekly', 'enterprise' => 'Daily'],
         ['feature' => 'API Development', 'startup' => 'Basic', 'growth' => 'Advanced', 'enterprise' => 'Custom'],
         ['feature' => 'Architecture', 'startup' => 'Standard', 'growth' => 'Advanced', 'enterprise' => 'Enterprise'],
         ['feature' => 'Post-launch Support', 'startup' => '30 days', 'growth' => '90 days', 'enterprise' => '6-12 months'],
@@ -108,20 +108,20 @@ return [
     ],
 
     'faq_title' => 'Frequently Asked Questions',
-    'faq_subtitle' => 'Everything you need to know about pricing',
+    'faq_subtitle' => 'General principles before final scope and cost are confirmed.',
 
     'faqs' => [
         ['q' => 'How do I know what scope my project falls into?', 'a' => 'We discuss the project context directly to assess scope, complexity, technical risk, and timeline. From there we provide pricing and delivery recommendations that fit the project.'],
         ['q' => 'Can the displayed prices change?', 'a' => 'Yes. Prices are reference only. Actual pricing depends on: detailed scope, technology choices, timeline, team size, post-launch support.'],
-        ['q' => 'Can we do fixed-price projects?', 'a' => 'Yes, but only when scope is 100% defined. We recommend time & materials for exploratory projects or those with evolving requirements.'],
-        ['q' => 'Are there hidden fees?', 'a' => 'No hidden fees. Infrastructure costs (AWS, hosting, domains) are listed separately. All costs disclosed upfront.'],
-        ['q' => 'What is the payment structure?', 'a' => 'Typically monthly invoicing with Net-30 payment terms. Custom arrangements negotiable for enterprise clients.'],
+        ['q' => 'Can we do fixed-price projects?', 'a' => 'Yes, when scope, acceptance criteria, and technical risks are clear. For exploratory or frequently changing projects, a time-and-materials model is usually more suitable.'],
+        ['q' => 'Are there hidden fees?', 'a' => 'No hidden fees. Infrastructure costs such as cloud, hosting, and domains are listed separately and discussed before implementation.'],
+        ['q' => 'What is the payment structure?', 'a' => 'Usually monthly invoicing or milestone-based billing. Enterprise clients can align terms with their procurement process.'],
         ['q' => 'Can we scale the team up/down during the project?', 'a' => 'Absolutely. You can increase or decrease team size based on needs with advance notice.'],
         ['q' => 'Does pricing include post-launch support?', 'a' => 'Yes. Post-launch support duration varies by plan: 30 days (MVP), 90 days (Growth), 6-12 months (Enterprise).'],
         ['q' => 'Who owns the code after the project?', 'a' => 'Source-code ownership is defined clearly in the agreement. For custom development engagements, HKIncotech hands over source code, documentation, and deployment guidance according to the agreed scope.'],
     ],
 
-    'cta_title' => 'Does Your Project Fall Outside These Plans?',
-    'cta_desc' => 'That is perfectly normal. We tailor pricing to your specific requirements, complexity, and timeline. Let us discuss your needs.',
+    'cta_title' => 'Does your project have a specific scope?',
+    'cta_desc' => 'HKIncotech can clarify scope, complexity, team model, and delivery roadmap before proposing a realistic budget.',
     'cta_button' => 'Discuss Pricing Scope',
 ];

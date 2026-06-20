@@ -2,7 +2,7 @@
 
 return [
     // Hero Section
-    'hero_title' => 'Nền Tảng Công Nghệ',
+    'hero_title' => 'Nền tảng công nghệ',
     'hero_desc' => 'Bộ công nghệ được lựa chọn theo yêu cầu mở rộng, bảo mật, độ tin cậy và khả năng bảo trì lâu dài của từng hệ thống doanh nghiệp.',
     'section_stack' => 'NHÓM CÔNG NGHỆ',
     'section_metrics' => 'HIỆU NĂNG',
@@ -10,12 +10,12 @@ return [
     'section_practices' => 'NGUYÊN TẮC KỸ THUẬT',
 
     // Tech Stack Matrix
-    'stack_title' => 'Các Nhóm Công Nghệ Chính',
+    'stack_title' => 'Các nhóm công nghệ chính',
     'stack_subtitle' => 'Từ giao diện, API, dữ liệu đến hạ tầng cloud và bảo mật.',
 
     'categories' => [
         [
-            'name' => 'Giao Diện Web',
+            'name' => 'Giao diện web',
             'icon' => 'web',
             'technologies' => [
                 'React, Vue, Angular',
@@ -27,7 +27,7 @@ return [
             ]
         ],
         [
-            'name' => 'Dịch Vụ Máy Chủ & API',
+            'name' => 'Dịch vụ máy chủ & API',
             'icon' => 'storage',
             'technologies' => [
                 'Node.js, Python, Java, Go',
@@ -39,7 +39,7 @@ return [
             ]
         ],
         [
-            'name' => 'Data & Database',
+            'name' => 'Dữ liệu & cơ sở dữ liệu',
             'icon' => 'database',
             'technologies' => [
                 'PostgreSQL, MySQL, MongoDB',
@@ -63,15 +63,15 @@ return [
             ]
         ],
         [
-            'name' => 'Security & Compliance',
+            'name' => 'Bảo mật & kiểm soát',
             'icon' => 'shield',
             'technologies' => [
-                'SSL/TLS encryption',
-                'OWASP security standards',
-                'GDPR & data privacy compliance',
-                'Security scanning & penetration testing',
+                'Mã hóa SSL/TLS',
+                'Thực hành bảo mật theo OWASP',
+                'Quyền riêng tư & bảo vệ dữ liệu',
+                'Quét lỗ hổng & kiểm thử bảo mật',
                 'DDoS protection & WAF',
-                'Audit logging & compliance reporting'
+                'Audit log & báo cáo kiểm soát'
             ]
         ],
         [
@@ -87,7 +87,7 @@ return [
             ]
         ],
         [
-            'name' => 'Di Động & Đa Nền Tảng',
+            'name' => 'Di động & đa nền tảng',
             'icon' => 'smartphone',
             'technologies' => [
                 'React Native, Flutter',
@@ -99,7 +99,7 @@ return [
             ]
         ],
         [
-            'name' => 'AI & Machine Learning',
+            'name' => 'AI ứng dụng',
             'icon' => 'psychology',
             'technologies' => [
                 'OpenAI GPT, Claude, Gemini APIs',
@@ -113,16 +113,16 @@ return [
     ],
 
     // Performance Metrics
-    'metrics_title' => 'Chỉ Số Hiệu Năng',
+    'metrics_title' => 'Chỉ số hiệu năng',
     'metrics_subtitle' => 'Các mục tiêu theo chuẩn doanh nghiệp',
 
     'metrics' => [
-        ['metric' => 'Độ Sẵn Sàng Cao', 'label' => 'SLA vận hành', 'desc' => 'Mục tiêu sẵn sàng theo yêu cầu hệ thống'],
+        ['metric' => 'Độ sẵn sàng cao', 'label' => 'SLA vận hành', 'desc' => 'Mục tiêu sẵn sàng theo yêu cầu hệ thống'],
         ['metric' => 'Độ Trễ Thấp', 'label' => 'Thời gian phản hồi API', 'desc' => 'API phản hồi ổn định dưới tải thực tế'],
         ['metric' => '>95', 'label' => 'Google Lighthouse Score', 'desc' => 'Hiệu năng + SEO'],
         ['metric' => '<3s', 'label' => 'Thời gian tải trang', 'desc' => 'Tối ưu cho mạng di động'],
-        ['metric' => 'Xếp Hạng A+', 'label' => 'Security Grade', 'desc' => 'Theo chuẩn SSL Labs'],
-        ['metric' => '>90%', 'label' => 'Test Coverage', 'desc' => 'Unit + Integration'],
+        ['metric' => 'A/A+', 'label' => 'Cấu hình bảo mật', 'desc' => 'Mục tiêu theo kiểm tra TLS và ứng dụng'],
+        ['metric' => 'Theo phạm vi', 'label' => 'Test Coverage', 'desc' => 'Unit + Integration cho phần lõi'],
     ],
 
     // Multi-Platform Coverage
@@ -157,7 +157,7 @@ return [
     ],
 
     // Best Practices
-    'practices_title' => 'Nguyên Tắc Kỹ Thuật',
+    'practices_title' => 'Nguyên tắc kỹ thuật',
     'practices_subtitle' => 'Các nguyên tắc được áp dụng để hệ thống dễ mở rộng, dễ kiểm soát và dễ vận hành.',
 
     'practices' => [
@@ -170,7 +170,7 @@ return [
     ],
 
     // CTA Section
-    'cta_title' => 'Xây Dựng Trên Nền Tảng Công Nghệ Đúng Đắn',
+    'cta_title' => 'Xây dựng trên nền tảng công nghệ đúng đắn',
     'cta_desc' => 'Các quyết định kiến trúc đúng đắn từ đầu sẽ quyết định hiệu suất, khả năng bảo trì và khả năng mở rộng của hệ thống trong dài hạn.',
-    'cta_button' => 'Trao Đổi Kiến Trúc',
+    'cta_button' => 'Trao đổi kiến trúc',
 ];

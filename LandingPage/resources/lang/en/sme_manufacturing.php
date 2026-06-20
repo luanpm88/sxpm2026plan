@@ -146,7 +146,7 @@ return [
             'description' => 'Operational reports are compiled manually, reducing management responsiveness and planning quality.',
         ],
         [
-            'title' => 'Audit and compliance pressure',
+            'title' => 'Audit and traceability pressure',
             'description' => 'Fragmented logs make it difficult to demonstrate traceability and control during customer or regulatory audits.',
         ],
         [
@@ -440,13 +440,13 @@ return [
     ],
 
     'why_us_security_kicker' => 'Platform controls',
-    'why_us_security_title' => 'Security & Compliance Baseline',
+    'why_us_security_title' => 'Security & Traceability Baseline',
     'why_us_security_items' => [
         'TLS 1.2 / 1.3 enforced for data-in-transit security.',
         'Role-based access model and controlled session security policies.',
         'OWASP-aligned application security practices (XSS, CSRF, SQLi controls).',
-        'Audit logs and traceability for operational and compliance review.',
-        'Optional alignment roadmap for ISO/IEC 27001, IEC 62443, and automotive quality compliance contexts.',
+        'Audit logs and traceability for operational review and customer audits.',
+        'Optional alignment roadmap for ISO/IEC 27001, IEC 62443, or automotive quality-control contexts when required.',
     ],
 
     'why_us_delivery_kicker' => 'Execution team',

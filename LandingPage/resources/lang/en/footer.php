@@ -2,14 +2,14 @@
 
 return [
     'about_title' => 'About HKIncotech',
-    'about_desc'  => 'Leading enterprise software development company in Southeast Asia. Specializing in custom software solutions, SaaS platforms, and AI solutions with 12+ years of experience.',
+    'about_desc'  => 'Engineering partner for enterprise software systems, SaaS platforms, applied AI, and long-term operating foundations.',
 
     'services_title' => 'Services',
     'services' => [
         'custom'   => 'Custom Software Development',
         'saas'     => 'SaaS Platform',
         'ai'       => 'AI Knowledge Platform',
-        'security' => 'Security & Compliance',
+        'security' => 'Security & Controls',
     ],
 
     'tech_title' => 'Technology',
@@ -26,7 +26,7 @@ return [
         'solutions'      => 'Solutions',
         'case_studies'   => 'Case Studies',
         'rd'             => 'Research & Development',
-        'certifications' => 'Certifications',
+        'certifications' => 'Standards',
         'contact'        => 'Contact',
         'pricing'        => 'Pricing',
     ],

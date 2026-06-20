@@ -4,7 +4,7 @@ return [
     // Hero Section
     'hero_badge' => 'Năng lực số hóa vận hành sản xuất',
     'hero_title' => 'Khung phần mềm vận hành nhà máy cho doanh nghiệp SME & FDI',
-    'hero_description' => 'Hoàng Khang thiết kế và phát triển các hệ thống phần mềm theo yêu cầu cho sản xuất: kết nối dữ liệu sàn máy, kho, chất lượng, đóng gói và báo cáo quản trị trong một kiến trúc có thể mở rộng.',
+    'hero_description' => 'Hoàng Khang thiết kế và phát triển hệ thống vận hành số cho sản xuất: kết nối dữ liệu sàn máy, kho, chất lượng, đóng gói và báo cáo quản trị trong một kiến trúc có thể mở rộng.',
 
     'hero_badges' => [
         'Thiết kế theo quy trình thực tế của nhà máy',
@@ -18,7 +18,7 @@ return [
 
     'hero_sidebar_title' => 'Vai trò của Hoàng Khang',
     'hero_sidebar_items' => [
-        'Đội ngũ phân tích, kiến trúc và phát triển phần mềm theo yêu cầu',
+        'Đội ngũ phân tích, kiến trúc và phát triển hệ thống doanh nghiệp',
         'Chuẩn hóa quy trình sản xuất thành hệ thống vận hành rõ ràng',
         'Tích hợp với ERP, thiết bị, mã vạch, IoT hoặc lớp dữ liệu hiện có',
         'Thiết kế bảo mật, phân quyền và audit log ngay từ đầu',
@@ -440,7 +440,7 @@ return [
     ],
 
     'why_us_security_kicker' => 'Kiểm soát nền tảng',
-    'why_us_security_title' => 'Khung kiểm soát bảo mật & tuân thủ',
+    'why_us_security_title' => 'Khung kiểm soát bảo mật & truy xuất',
     'why_us_security_items' => [
         'TLS 1.2 / 1.3 cho dữ liệu truyền tải giữa trình duyệt, API và dịch vụ máy chủ.',
         'Phân quyền theo vai trò, chính sách phiên và kiểm soát truy cập theo nghiệp vụ.',
@@ -460,7 +460,7 @@ return [
     ],
 
     'why_us_capability_title' => 'Hồ sơ năng lực cho ban lãnh đạo nhà máy',
-    'why_us_capability_desc' => 'HKIncotech kết hợp hiểu biết quy trình nhà máy, năng lực phát triển phần mềm theo yêu cầu và quản trị triển khai có cấu trúc. Mục tiêu là xây dựng nền tảng vận hành có thể duy trì, nghiệm thu được và mở rộng dài hạn, thay vì chỉ giao từng tính năng rời rạc.',
+    'why_us_capability_desc' => 'HKIncotech kết hợp hiểu biết quy trình nhà máy, năng lực phát triển hệ thống doanh nghiệp và quản trị triển khai có cấu trúc. Mục tiêu là xây dựng nền tảng vận hành có thể duy trì, nghiệm thu được và mở rộng dài hạn, thay vì chỉ giao từng tính năng rời rạc.',
     'why_us_capability_points' => [
         [
             'label' => 'Quy trình',

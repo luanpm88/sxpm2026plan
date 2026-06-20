@@ -8,11 +8,11 @@ return [
     'cta_secondary'=> 'See How We Work',
     'cta_microcopy'=> 'Technical scope discussion. Practical solution proposal for the real operating context.',
     'stat1_value'  => '100+',
-    'stat1_label'  => 'Senior Engineers',
+    'stat1_label'  => 'Project Contexts',
     'stat2_value'  => 'Full-Cycle',
     'stat2_label'  => 'Delivery & Scaling',
     'stat3_value'  => 'Enterprise',
-    'stat3_label'  => 'Security & Compliance',
+    'stat3_label'  => 'Security & Controls',
 
     'social_proof_label' => 'Software delivery experience across multiple industries',
     'social_proof_source' => 'Engineering partner for long-term systems',
@@ -27,7 +27,7 @@ return [
     'industry_6' => 'Healthcare',
 
     // Trust badges
-    'badges_label' => 'Certified & compliant',
+    'badges_label' => 'Reference engineering standards',
 
     // Tech badge bar
     'tech_badge_more' => '+40 more',

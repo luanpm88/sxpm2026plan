@@ -1,18 +1,18 @@
 <?php
 
 return [
-    'title_line1'  => 'Đối Tác Kỹ Thuật',
-    'title_line2'  => 'Cho Hệ Thống Phần Mềm Doanh Nghiệp',
+    'title_line1'  => 'Đối tác kỹ thuật',
+    'title_line2'  => 'cho hệ thống phần mềm doanh nghiệp',
     'description'  => 'Hoàng Khang thiết kế, phát triển và vận hành các hệ thống phần mềm doanh nghiệp: nền tảng nội bộ, sản phẩm số, SaaS, tích hợp dữ liệu, AI ứng dụng và hiện đại hóa hạ tầng.',
-    'cta_primary'  => 'Trao Đổi Nhu Cầu Kỹ Thuật',
-    'cta_secondary'=> 'Xem Quy Trình Làm Việc',
+    'cta_primary'  => 'Trao đổi nhu cầu kỹ thuật',
+    'cta_secondary'=> 'Xem quy trình làm việc',
     'cta_microcopy'=> 'Trao đổi kỹ thuật rõ phạm vi. Đề xuất giải pháp theo bối cảnh thực tế.',
     'stat1_value'  => '100+',
-    'stat1_label'  => 'Kỹ Sư Kinh Nghiệm',
-    'stat2_value'  => 'Trọn Vòng Đời',
-    'stat2_label'  => 'Từ Kiến Trúc Đến Vận Hành',
-    'stat3_value'  => 'Cấp Doanh Nghiệp',
-    'stat3_label'  => 'Bảo Mật & Tuân Thủ',
+    'stat1_label'  => 'Dự án đã tham gia',
+    'stat2_value'  => 'Trọn vòng đời',
+    'stat2_label'  => 'Từ kiến trúc đến vận hành',
+    'stat3_value'  => 'Cấp doanh nghiệp',
+    'stat3_label'  => 'Bảo mật & kiểm soát',
 
     'social_proof_label' => 'Kinh nghiệm triển khai trong nhiều ngành',
     'social_proof_source' => 'Năng lực đã kiểm chứng qua dự án thực tế',
@@ -27,13 +27,13 @@ return [
     'industry_6' => 'Y tế',
 
     // Trust badges
-    'badges_label' => 'Chứng nhận & tuân thủ',
+    'badges_label' => 'Chuẩn kỹ thuật tham chiếu',
 
     // Tech badge bar
     'tech_badge_more' => '+40 công nghệ',
 
     'float_performance'  => 'Đúng tiến độ',
-    'float_uptime'       => 'Đánh giá KH',
+    'float_uptime'       => 'Phản hồi khách hàng',
     'float_engineers'    => 'Đội kỹ thuật',
     'dashboard_title'    => 'Tổng quan năng lực triển khai',
 

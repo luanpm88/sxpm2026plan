@@ -2,100 +2,100 @@
 
 return [
     // Hero
-    'hero_title'       => 'Certifications & Industry',
-    'hero_title_accent'=> 'Standards',
-    'hero_desc'        => 'Enterprise-grade compliance, security certifications, and continuous professional development across our team',
-    'hero_cta'         => 'Verify Our Credentials',
-    'section_compliance' => 'COMPLIANCE & SECURITY',
-    'section_cloud' => 'CLOUD CERTIFICATIONS',
-    'section_agile' => 'AGILE EXPERTISE',
+    'hero_title'       => 'Standards & Engineering',
+    'hero_title_accent'=> 'Capability',
+    'hero_desc'        => 'Security, operations, cloud, and delivery frameworks used as reference points for controllable, long-lived enterprise systems.',
+    'hero_cta'         => 'Discuss Security Requirements',
+    'section_compliance' => 'REFERENCE STANDARDS',
+    'section_cloud' => 'CLOUD CAPABILITY',
+    'section_agile' => 'DELIVERY PRACTICE',
     'section_tech' => 'TECHNOLOGY STACK',
     'section_team' => 'TEAM EXPERTISE',
 
     // Compliance section
-    'compliance_title'       => 'Compliance & Security',
-    'compliance_title_accent'=> 'Certifications',
-    'compliance_subtitle'    => 'Enterprise-grade security standards and regulatory compliance',
+    'compliance_title'       => 'Security & Controls',
+    'compliance_title_accent'=> 'Reference Frameworks',
+    'compliance_subtitle'    => 'Standards commonly used to frame security, data, audit, and operating requirements for enterprise systems.',
 
     // Cloud section
-    'cloud_title'       => 'Cloud Provider',
-    'cloud_title_accent'=> 'Certifications',
-    'cloud_subtitle'    => 'Certified expertise across leading cloud platforms',
+    'cloud_title'       => 'Cloud & Infrastructure',
+    'cloud_title_accent'=> 'Capability',
+    'cloud_subtitle'    => 'Experience designing, deploying, and operating systems across common cloud platforms.',
 
     // Agile section
-    'agile_title'       => 'Agile & Development',
-    'agile_title_accent'=> 'Expertise',
-    'agile_subtitle'    => 'Professional certifications in agile methodologies and software development',
+    'agile_title'       => 'Delivery & Engineering',
+    'agile_title_accent'=> 'Practice',
+    'agile_subtitle'    => 'Scrum, Agile, and technical practices that keep delivery visible, testable, and ready for handover.',
 
     // Tech section
-    'tech_title'        => 'Technology & Framework',
-    'tech_title_accent' => 'Expertise',
-    'tech_subtitle'     => 'Deep expertise across modern development frameworks and technologies',
+    'tech_title'        => 'Technology',
+    'tech_title_accent' => 'Capability',
+    'tech_subtitle'     => 'Technology groups selected according to operating context, data needs, security requirements, and scalability.',
 
     // Team section
-    'team_title'        => 'Team Expertise &',
-    'team_title_accent' => 'Experience',
-    'team_subtitle'     => '50+ senior engineers with deep domain specialization and a proven track record across enterprise engagements',
+    'team_title'        => 'Team Capability &',
+    'team_title_accent' => 'Engineering Discipline',
+    'team_subtitle'     => 'Project teams are organized around clear roles: architecture, development, QA, DevOps, business analysis, and operations.',
 
     // Learning section
     'learning_title'    => 'Continuous Learning Culture',
-    'learning_desc'     => 'We invest in our team\'s growth through certifications, training, and knowledge sharing',
+    'learning_desc'     => 'Team capability is maintained through internal training, engineering reviews, technology research, and lessons learned from real projects.',
     'learning_stat1_value'=> 'Dedicated',
-    'learning_stat1_label'=> 'Certification & Training Budget',
-    'learning_stat2_value'=> 'Monthly',
+    'learning_stat1_label'=> 'Training & Engineering Standards',
+    'learning_stat2_value'=> 'Regular',
     'learning_stat2_label'=> 'Tech Talks & Knowledge Sharing',
     'learning_stat3_value'=> 'R&D Time',
     'learning_stat3_label'=> 'Emerging Technologies Focus',
     'learning_stat4_value'=> 'Mentorship',
-    'learning_stat4_label'=> 'Senior-to-Junior Developer Program',
+    'learning_stat4_label'=> 'Project-Based Engineering Mentorship',
 
     // CTA
     'cta_title'  => 'Partner with HKIncotech',
     'cta_desc'   => 'An enterprise-grade engineering team with disciplined security, cloud, AI, and controlled delivery practices.',
-    'cta_button' => 'Start Your Project',
+    'cta_button' => 'Discuss a Project',
 
     // Compliance certs
     'compliance' => [
-        ['icon'=>'shield_lock','name'=>'ISO 27001','subtitle'=>'Information Security Management','desc'=>'International standard for information security management systems. Ensures confidentiality, integrity, and availability of data.'],
-        ['icon'=>'verified','name'=>'SOC 2 Type II','subtitle'=>'Service Organization Control','desc'=>'Validates security, availability, processing integrity, confidentiality, and privacy controls over time.'],
-        ['icon'=>'gavel','name'=>'GDPR Compliant','subtitle'=>'General Data Protection Regulation','desc'=>'Ensures data protection and privacy rights for EU citizens. Full compliance with data processing and storage requirements.'],
-        ['icon'=>'credit_card','name'=>'PCI DSS','subtitle'=>'Payment Card Industry Data Security','desc'=>'Secures payment card data and systems. Required for any company processing payment cards.'],
-        ['icon'=>'health_and_safety','name'=>'HIPAA','subtitle'=>'Health Insurance Portability','desc'=>'Protects healthcare data privacy and security. Ensures patient information confidentiality and integrity.'],
-        ['icon'=>'lock','name'=>'OWASP Standards','subtitle'=>'Web Application Security','desc'=>'Follows industry best practices for secure web application development and vulnerability prevention.'],
+        ['icon'=>'shield_lock','name'=>'ISO/IEC 27001','subtitle'=>'Information Security Management','desc'=>'Used as a reference for access control, risk governance, data protection, and operational security management.'],
+        ['icon'=>'verified','name'=>'SOC 2','subtitle'=>'Service Controls','desc'=>'Referenced when framing controls for security, availability, processing integrity, confidentiality, and privacy.'],
+        ['icon'=>'gavel','name'=>'GDPR / Data Privacy','subtitle'=>'Privacy-by-design','desc'=>'Guides collection, storage, processing, and deletion of personal data with minimization and control principles.'],
+        ['icon'=>'credit_card','name'=>'PCI DSS','subtitle'=>'Payment Data','desc'=>'Referenced for systems involving payment flows, tokenization, access control, and sensitive-data handling.'],
+        ['icon'=>'health_and_safety','name'=>'HIPAA / Health Data','subtitle'=>'Healthcare Data','desc'=>'Considered for healthcare-related systems requiring role-based access and auditability around sensitive records.'],
+        ['icon'=>'lock','name'=>'OWASP ASVS','subtitle'=>'Web Application Security','desc'=>'A practical review framework for authentication, sessions, APIs, input handling, and deployment configuration.'],
     ],
 
     // Cloud certs
     'cloud_certs' => [
-        ['icon'=>'cloud','provider'=>'Amazon Web Services (AWS)','certs'=>['AWS Certified Solutions Architect','AWS Certified DevOps Engineer','AWS Certified Solutions Architect – Professional','AWS Certified Advanced Networking']],
-        ['icon'=>'cloud','provider'=>'Google Cloud Platform','certs'=>['Google Cloud Professional Cloud Architect','Google Cloud Associate Cloud Engineer','Google Cloud Professional Data Engineer','Google Cloud Professional Cloud Network Engineer']],
-        ['icon'=>'cloud','provider'=>'Microsoft Azure','certs'=>['Azure Solutions Architect','Azure Administrator','Azure Developer Associate','Azure Security Engineer']],
-        ['icon'=>'settings','provider'=>'Kubernetes & Container','certs'=>['Kubernetes Certified Application Developer (CKAD)','Certified Kubernetes Administrator (CKA)','Docker Certified Associate','Linux Foundation Certified']],
+        ['icon'=>'cloud','provider'=>'Amazon Web Services (AWS)','certs'=>['Cloud application architecture','CI/CD and infrastructure operations','Networking, security, and IAM','Cost and observability optimization']],
+        ['icon'=>'cloud','provider'=>'Google Cloud Platform','certs'=>['Cloud infrastructure architecture','Data and analytics workloads','Cloud networking','Monitored service operations']],
+        ['icon'=>'cloud','provider'=>'Microsoft Azure','certs'=>['Azure solution architecture','Cloud resource administration','Enterprise application deployment','Security and monitoring']],
+        ['icon'=>'settings','provider'=>'Kubernetes & Container','certs'=>['Application containerization','Service orchestration','Cluster administration','CI/CD and observability']],
     ],
 
     // Agile certs
     'agile' => [
-        ['category'=>'Scrum Framework','icon'=>'groups','items'=>['Certified Scrum Master (CSM)','Certified Scrum Product Owner (CSPO)','Professional Scrum Developer (PSD)','Certified Scrum Trainer (CST)','Advanced Scrum Master (A-CSM)']],
-        ['category'=>'Scaled Agile','icon'=>'trending_up','items'=>['SAFe Agilist (Scaled Agile Framework)','SAFe Program Consultant','SAFe Scrum Master','SAFe Release Train Engineer','Disciplined Agile Scrum Master']],
-        ['category'=>'Technical Excellence','icon'=>'code','items'=>['Continuous Delivery & DevOps','Test-Driven Development (TDD)','Behavior-Driven Development (BDD)','Domain-Driven Design (DDD)','Microservices Architecture']],
+        ['category'=>'Sprint governance','icon'=>'groups','items'=>['Sprint planning','Prioritized backlog','Regular demo and acceptance','Risk and dependency tracking','Retrospectives for process improvement']],
+        ['category'=>'Phased delivery','icon'=>'trending_up','items'=>['Scope split by value','Validation with real users','Milestones with acceptance criteria','Change-impact governance','Post-launch hypercare']],
+        ['category'=>'Technical practice','icon'=>'code','items'=>['Continuous Delivery & DevOps','Test-Driven Development (TDD)','Behavior-Driven Development (BDD)','Domain-Driven Design (DDD)','Microservices Architecture']],
     ],
 
     // Tech expertise
     'technologies' => [
-        ['category'=>'Frontend Technologies','icon'=>'palette','items'=>['React.js Certified','Vue.js Professional','Angular Expert','TypeScript Master','PWA Specialist']],
-        ['category'=>'Backend Technologies','icon'=>'storage','items'=>['Node.js Expert','Python/Django Master','Java Enterprise','Go Professional','GraphQL Specialist']],
-        ['category'=>'Database & Data','icon'=>'database','items'=>['PostgreSQL Expert','MongoDB Professional','Redis Specialist','Elasticsearch Master','Data Architecture']],
-        ['category'=>'AI & Machine Learning','icon'=>'smart_toy','items'=>['OpenAI Integration','LLM Specialist','TensorFlow Professional','PyTorch Expert','RAG Pipeline Architect']],
-        ['category'=>'DevOps & Infrastructure','icon'=>'settings','items'=>['Kubernetes Expert','Docker Master','Terraform Professional','CI/CD Specialist','Infrastructure as Code']],
-        ['category'=>'Security & Performance','icon'=>'security','items'=>['Security Architecture','Penetration Testing','Performance Optimization','Load Testing','Monitoring Expert']],
+        ['category'=>'Frontend & UX','icon'=>'palette','items'=>['React / Vue / Angular','TypeScript','PWA and responsive UI','Design-system implementation','Frontend performance optimization']],
+        ['category'=>'Backend & API','icon'=>'storage','items'=>['Node.js / PHP / Python / Java / Go','REST / GraphQL','Modular or microservice architecture','Authentication and authorization','Versioned API design']],
+        ['category'=>'Data & Database','icon'=>'database','items'=>['PostgreSQL / MySQL / MongoDB','Redis / Elasticsearch','Domain data modeling','ETL and real-time processing','Backup and recovery design']],
+        ['category'=>'Applied AI','icon'=>'smart_toy','items'=>['Controlled LLM integration','RAG and vector databases','Semantic search','Workflow automation','Answer-quality evaluation']],
+        ['category'=>'DevOps & Infrastructure','icon'=>'settings','items'=>['Docker / Kubernetes','CI/CD pipelines','Infrastructure as Code','Monitoring and alerting','Operating-cost optimization']],
+        ['category'=>'Security & Performance','icon'=>'security','items'=>['Security architecture','Application security testing','Performance tuning','Load testing','Monitoring and incident response']],
     ],
 
     // Team profile
     'team_profile' => [
-        ['icon'=>'person','title'=>'Senior Engineers','count'=>'50+','desc'=>'Average 10+ years enterprise software experience. Certified architects and specialists across all domains.'],
-        ['icon'=>'shield','title'=>'Security Experts','count'=>'8+','desc'=>'Certified security architects. Penetration testers, compliance specialists. Zero Trust & OWASP expertise.'],
-        ['icon'=>'smart_toy','title'=>'AI/ML Specialists','count'=>'6+','desc'=>'LLM integration experts. NLP, semantic search, RAG pipeline architects with research background.'],
-        ['icon'=>'architecture','title'=>'Solution Architects','count'=>'12+','desc'=>'Enterprise solution architects. Microservices, cloud-native, scalable systems design specialists.'],
-        ['icon'=>'trending_up','title'=>'Tech Leads','count'=>'15+','desc'=>'Technical leaders responsible for solution direction, delivery quality, and mentoring across project teams.'],
+        ['icon'=>'person','title'=>'Core Engineers','count'=>'Core team','desc'=>'Engineering teams experienced in enterprise systems, digital products, APIs, data, and long-term operations.'],
+        ['icon'=>'shield','title'=>'Security & Controls','count'=>'By design','desc'=>'Access control, audit logging, data protection, permission models, and incident response are considered from architecture.'],
+        ['icon'=>'smart_toy','title'=>'Applied AI','count'=>'Controlled','desc'=>'LLM, RAG, semantic search, and automation are integrated with clear data sources, permissions, and quality evaluation.'],
+        ['icon'=>'architecture','title'=>'Solution Architecture','count'=>'Long-term','desc'=>'Modular, microservice, or structured monolith designs are selected according to scope, scale, and operating capability.'],
+        ['icon'=>'trending_up','title'=>'Technical Leadership','count'=>'By sprint','desc'=>'Tech leads guide solution direction, review engineering decisions, control quality, and mentor the project team.'],
         ['icon'=>'school','title'=>'Continuous Learning','count'=>'Ongoing','desc'=>'Training budget, internal knowledge sharing, and R&D practice are maintained across the engineering team.'],
     ],
 ];

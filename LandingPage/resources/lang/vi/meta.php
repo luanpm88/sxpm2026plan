@@ -3,18 +3,18 @@
 return [
     // Homepage
     'home_title' => 'HKIncotech — Phần Mềm Doanh Nghiệp | Việt Nam',
-    'home_description' => 'HKIncotech phát triển phần mềm theo yêu cầu, nền tảng SaaS, AI và hệ thống vận hành doanh nghiệp với đội ngũ kỹ thuật chuyên trách.',
+    'home_description' => 'HKIncotech thiết kế, phát triển và vận hành hệ thống phần mềm doanh nghiệp, nền tảng SaaS và AI ứng dụng với đội ngũ kỹ thuật chuyên trách.',
 
     // Services
     'services_title' => 'Dịch Vụ Phát Triển Phần Mềm Doanh Nghiệp | HKIncotech',
-    'services_description' => 'Năng lực phát triển phần mềm theo yêu cầu, SaaS, AI, bảo mật và kiến trúc cloud-native cho hệ thống doanh nghiệp.',
+    'services_description' => 'Năng lực xây dựng hệ thống doanh nghiệp, nền tảng SaaS, AI ứng dụng, bảo mật và kiến trúc cloud-native.',
 
     // SCRUM
     'scrum_title' => 'Quy Trình Phát Triển Agile SCRUM | HKIncotech',
     'scrum_description' => 'Mô hình phát triển Agile/SCRUM có kế hoạch, review định kỳ, nghiệm thu rõ ràng và kiểm soát tiến độ theo từng sprint.',
 
     // Tech Stack
-    'tech_stack_title' => 'Nền Tảng Công Nghệ — 50+ Framework | HKIncotech',
+    'tech_stack_title' => 'Nền Tảng Công Nghệ — Kiến Trúc Phần Mềm Doanh Nghiệp | HKIncotech',
     'tech_stack_description' => 'React, Node.js, Python, AWS, Kubernetes, Flutter, AI và các công nghệ phục vụ phần mềm doanh nghiệp.',
 
     // Scaling
@@ -23,10 +23,10 @@ return [
 
     // About Us
     'about_us_title' => 'Về HKIncotech — 12+ Năm Phát Triển Phần Mềm Doanh Nghiệp',
-    'about_us_description' => 'HKIncotech là đơn vị phát triển phần mềm theo yêu cầu, sở hữu nền tảng nội bộ và triển khai hệ thống cho nhiều lĩnh vực.',
+    'about_us_description' => 'HKIncotech là đối tác kỹ thuật phát triển hệ thống phần mềm doanh nghiệp, sở hữu các nền tảng như HKSpace và Yolius.',
 
     // Case Studies
-    'case_studies_title' => 'Dự Án Tiêu Biểu — Kết Quả Đã Chứng Minh | HKIncotech',
+    'case_studies_title' => 'Dự Án Tiêu Biểu — Bài Toán & Hướng Triển Khai | HKIncotech',
     'case_studies_description' => 'Dự án tiêu biểu trong giáo dục, logistics, vận hành doanh nghiệp, SaaS và sản xuất với bối cảnh triển khai rõ ràng.',
 
     // Pricing
@@ -34,8 +34,8 @@ return [
     'pricing_description' => 'Tham chiếu ngân sách phát triển phần mềm theo phạm vi, quy mô đội ngũ, độ phức tạp kỹ thuật và mức hỗ trợ sau triển khai.',
 
     // Certifications
-    'certifications_title' => 'Chứng Chỉ & Tiêu Chuẩn Bảo Mật | HKIncotech',
-    'certifications_description' => 'ISO 27001, SOC 2, GDPR, PCI DSS, HIPAA. Chứng chỉ AWS, GCP, Azure. Scrum Master & SAFe Agilist.',
+    'certifications_title' => 'Tiêu Chuẩn & Năng Lực Kỹ Thuật | HKIncotech',
+    'certifications_description' => 'Khung tham chiếu về bảo mật, dữ liệu, cloud, quy trình bàn giao và vận hành hệ thống doanh nghiệp.',
 
     // Contact
     'contact_title' => 'Liên Hệ — Trao Đổi Nhu Cầu Kỹ Thuật | HKIncotech',

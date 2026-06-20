@@ -63,15 +63,15 @@ return [
             ]
         ],
         [
-            'name' => 'Security & Compliance',
+            'name' => 'Security & Controls',
             'icon' => 'shield',
             'technologies' => [
                 'SSL/TLS encryption',
-                'OWASP security standards',
-                'GDPR & data privacy compliance',
+                'OWASP security practices',
+                'Privacy and data protection controls',
                 'Security scanning & penetration testing',
                 'DDoS protection & WAF',
-                'Audit logging & compliance reporting'
+                'Audit logging & control reporting'
             ]
         ],
         [
@@ -117,17 +117,17 @@ return [
     'metrics_subtitle' => 'Enterprise-grade targets',
 
     'metrics' => [
-        ['metric' => 'High Availability', 'label' => 'Uptime SLA', 'desc' => 'Enterprise-grade uptime'],
-        ['metric' => 'Low Latency', 'label' => 'API Response Time', 'desc' => 'Fast, responsive APIs'],
+        ['metric' => 'High Availability', 'label' => 'Operating SLA', 'desc' => 'Availability targets by system scope'],
+        ['metric' => 'Low Latency', 'label' => 'API Response Time', 'desc' => 'Stable response under real load'],
         ['metric' => '>95', 'label' => 'Google Lighthouse Score', 'desc' => 'Performance + SEO'],
         ['metric' => '<3s', 'label' => 'Page Load Time', 'desc' => 'On 3G network'],
-        ['metric' => 'Grade A+', 'label' => 'Security Grade', 'desc' => 'SSL Labs best practices'],
-        ['metric' => '>90%', 'label' => 'Test Coverage', 'desc' => 'Unit + Integration'],
+        ['metric' => 'A/A+', 'label' => 'Security Configuration', 'desc' => 'Target for TLS and application checks'],
+        ['metric' => 'Scope-based', 'label' => 'Test Coverage', 'desc' => 'Unit + Integration for core flows'],
     ],
 
     // Multi-Platform Coverage
     'platforms_title' => 'Multi-Platform Coverage',
-    'platforms_subtitle' => 'Web, mobile, desktop — build once, deploy anywhere',
+    'platforms_subtitle' => 'Web, mobile, and desktop applications designed with consistent experience and operating standards.',
 
     'platforms' => [
         [
@@ -157,16 +157,16 @@ return [
     ],
 
     // Best Practices
-    'practices_title' => 'Engineering Best Practices',
-    'practices_subtitle' => 'Applying lessons learned from industry leaders',
+    'practices_title' => 'Engineering Principles',
+    'practices_subtitle' => 'Practical principles for systems that can scale, be controlled, and remain maintainable.',
 
     'practices' => [
-        ['icon' => 'psychology', 'title' => 'Microservices Architecture', 'company' => 'Reference: Netflix', 'desc' => 'Decompose into independent services for scale and isolated deployments.'],
-        ['icon' => 'auto_fix_high', 'title' => 'CI/CD Automation', 'company' => 'Reference: Amazon', 'desc' => 'Automated testing before deploy; high deployment frequency.'],
-        ['icon' => 'security', 'title' => 'Security by Design', 'company' => 'Reference: Google', 'desc' => 'Security checks from development stage; avoid post‑production patching.'],
-        ['icon' => 'analytics', 'title' => 'Data-Driven Decisions', 'company' => 'Reference: Meta', 'desc' => 'A/B testing, metrics tracking, centralized analytics.'],
-        ['icon' => 'trending_up', 'title' => 'Infrastructure as Code', 'company' => 'Reference: AWS', 'desc' => 'Terraform/CloudFormation for versionable, reproducible infrastructure.'],
-        ['icon' => 'manage_accounts', 'title' => 'Team Collaboration', 'company' => 'Reference: Google', 'desc' => 'Async communication, clear documentation, knowledge sharing.'],
+        ['icon' => 'psychology', 'title' => 'Clear Service Architecture', 'company' => 'Design principle', 'desc' => 'Separate important business domains so systems can be scaled, tested, and deployed with less coupling.'],
+        ['icon' => 'auto_fix_high', 'title' => 'CI/CD Automation', 'company' => 'Operations principle', 'desc' => 'Automate testing and deployment to reduce manual errors and improve repeatability.'],
+        ['icon' => 'security', 'title' => 'Security by Design', 'company' => 'Security principle', 'desc' => 'Bring access control, data protection, and security review into architecture instead of adding them late.'],
+        ['icon' => 'analytics', 'title' => 'Data-Informed Decisions', 'company' => 'Product principle', 'desc' => 'Track metrics, observe user behavior, and measure changes using operating data.'],
+        ['icon' => 'trending_up', 'title' => 'Infrastructure as Code', 'company' => 'Infrastructure principle', 'desc' => 'Keep infrastructure versioned, reproducible, and reviewable as part of the delivery process.'],
+        ['icon' => 'manage_accounts', 'title' => 'Documented Collaboration', 'company' => 'Team principle', 'desc' => 'Maintain documentation, decisions, and project knowledge to reduce dependency on individuals.'],
     ],
 
     // CTA Section

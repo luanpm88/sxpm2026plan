@@ -2,10 +2,10 @@
 
 return [
     // Hero Section
-    'hero_title' => 'Quy Trình Phát Triển',
+    'hero_title' => 'Quy trình phát triển',
     'hero_title_highlight' => 'SCRUM',
     'hero_desc' => 'Mô hình phát triển theo sprint giúp khách hàng kiểm soát ưu tiên, theo dõi tiến độ, review kết quả và nghiệm thu theo từng giai đoạn rõ ràng.',
-    'hero_cta' => 'Trao Đổi Mô Hình Triển Khai',
+    'hero_cta' => 'Trao đổi mô hình triển khai',
     'section_process' => 'QUY TRÌNH',
     'section_sprint' => 'CHU KỲ SPRINT',
     'section_benefits' => 'LỢI ÍCH CHÍNH',
@@ -13,7 +13,7 @@ return [
     'section_why' => 'CÁCH CHÚNG TÔI LÀM VIỆC',
 
     // 6 Steps Section
-    'steps_title' => '6 Bước Trong Quy Trình SCRUM',
+    'steps_title' => '6 bước trong quy trình SCRUM',
     'steps_subtitle' => 'Từ khảo sát yêu cầu đến triển khai và vận hành chính thức.',
     'steps' => [
         [
@@ -43,7 +43,7 @@ return [
         [
             'num' => 5,
             'icon' => 'cloud_upload',
-            'title' => 'Triển Khai & Phát Hành',
+            'title' => 'Triển khai & phát hành',
             'desc' => 'Triển khai CI/CD, thiết lập giám sát, chuẩn bị phương án quay lui và xử lý sự cố.',
         ],
         [
@@ -138,37 +138,37 @@ return [
     ],
 
     // Benefits Section
-    'benefits_title' => 'Lợi Ích Của Quy Trình SCRUM',
-    'benefits_subtitle' => 'Lợi ích của mô hình phát triển theo sprint khi triển khai phần mềm theo yêu cầu.',
+    'benefits_title' => 'Lợi ích của quy trình SCRUM',
+    'benefits_subtitle' => 'Lợi ích của mô hình phát triển theo sprint khi triển khai hệ thống phần mềm doanh nghiệp.',
     'benefits' => [
         [
             'icon' => 'visibility',
-            'title' => 'Minh Bạch & Kiểm Soát',
+            'title' => 'Minh bạch & kiểm soát',
             'desc' => 'Review sprint giúp khách hàng thấy kết quả thật, nắm rủi ro sớm và kiểm soát thứ tự ưu tiên trong từng giai đoạn.',
         ],
         [
             'icon' => 'tune',
-            'title' => 'Linh Hoạt & Thích Ứng',
+            'title' => 'Linh hoạt & thích ứng',
             'desc' => 'Phản hồi sau mỗi sprint giúp điều chỉnh phạm vi có kiểm soát và giảm rủi ro khi yêu cầu thay đổi.',
         ],
         [
             'icon' => 'check_circle',
-            'title' => 'Chất Lượng Cao',
+            'title' => 'Chất lượng bàn giao',
             'desc' => 'Review mã nguồn, kiểm thử và CI/CD giúp phát hiện lỗi sớm và giảm chi phí sửa chữa.',
         ],
         [
             'icon' => 'speed',
-            'title' => 'Đội Ngũ Hiệu Quả',
+            'title' => 'Đội ngũ phối hợp hiệu quả',
             'desc' => 'Đội ngũ có ưu tiên rõ ràng, trao đổi đều đặn và giảm thời gian chờ giữa các vai trò.',
         ],
         [
             'icon' => 'shield',
-            'title' => 'Giảm Thiểu Rủi Ro',
+            'title' => 'Giảm rủi ro cuối dự án',
             'desc' => 'Triển khai theo từng phần giúp phát hiện vấn đề sớm, tránh dồn rủi ro vào cuối dự án.',
         ],
         [
             'icon' => 'trending_up',
-            'title' => 'Giá Trị Đầu Tư Rõ Ràng',
+            'title' => 'Giá trị đầu tư rõ ràng',
             'desc' => 'Ưu tiên tính năng theo giá trị vận hành và tác động kinh doanh thay vì phát triển dàn trải.',
         ],
     ],
@@ -179,33 +179,33 @@ return [
     'journey_phase_label' => 'GĐ',
     'journey' => [
         [
-            'phase' => 'Giai Đoạn 1: Khảo Sát Ban Đầu',
+            'phase' => 'Giai đoạn 1: Khảo sát ban đầu',
             'content' => 'Làm rõ mục tiêu kinh doanh, bối cảnh vận hành, ràng buộc kỹ thuật và các giả định cần kiểm chứng.',
         ],
         [
-            'phase' => 'Giai Đoạn 2: Khám Phá & Thiết Kế (2-3 Tuần)',
+            'phase' => 'Giai đoạn 2: Khám phá & thiết kế (2-3 tuần)',
             'content' => 'Thiết kế luồng nghiệp vụ, giao diện, dữ liệu và kiến trúc kỹ thuật trước khi bước vào phát triển chính thức.',
         ],
         [
-            'phase' => 'Giai Đoạn 3: Phát Triển Sprint (6-12 Tuần)',
+            'phase' => 'Giai đoạn 3: Phát triển theo sprint (6-12 tuần)',
             'content' => 'Phát triển theo sprint. Mỗi sprint kết thúc bằng phần việc có thể review, kiểm thử và nghiệm thu.',
         ],
         [
-            'phase' => 'Giai Đoạn 4: QA & Kiểm Thử (2-3 Tuần)',
+            'phase' => 'Giai đoạn 4: QA & kiểm thử (2-3 tuần)',
             'content' => 'Kiểm thử chức năng, hiệu năng, bảo mật và UAT; xử lý lỗi và tối ưu trước khi phát hành.',
         ],
         [
-            'phase' => 'Giai Đoạn 5: Phát Hành & Triển Khai (1 Tuần)',
+            'phase' => 'Giai đoạn 5: Phát hành & triển khai (1 tuần)',
             'content' => 'Chuẩn bị môi trường vận hành, triển khai, thiết lập giám sát, kế hoạch quay lui và hỗ trợ phát hành chính thức.',
         ],
         [
-            'phase' => 'Giai Đoạn 6: Hỗ Trợ & Phát Triển (Liên Tục)',
+            'phase' => 'Giai đoạn 6: Hỗ trợ & phát triển (liên tục)',
             'content' => 'Theo dõi vận hành, tối ưu hệ thống, bổ sung tính năng và mở rộng theo nhu cầu thực tế.',
         ],
     ],
 
     // Why Choose Section
-    'why_title' => 'Cách HKIncotech Tổ Chức Dự Án Agile',
+    'why_title' => 'Cách HKIncotech tổ chức dự án Agile',
     'why_subtitle' => 'Quản trị sprint, kiểm soát chất lượng và bàn giao phần mềm theo từng giai đoạn rõ ràng.',
     'why_items' => [
         [
@@ -213,15 +213,15 @@ return [
             'desc' => 'Backlog, tiêu chí hoàn thành, review và nghiệm thu được quản lý rõ ràng trong từng sprint.',
         ],
         [
-            'title' => 'Quy Trình Minh Bạch',
+            'title' => 'Quy trình minh bạch',
             'desc' => 'Báo cáo tiến độ, điểm nghẽn, phạm vi và rủi ro được cập nhật đều đặn cho các bên liên quan.',
         ],
         [
-            'title' => 'Linh Hoạt & Thích Ứng',
+            'title' => 'Linh hoạt & thích ứng',
             'desc' => 'Thay đổi yêu cầu được đưa vào backlog, đánh giá tác động và ưu tiên theo giá trị.',
         ],
         [
-            'title' => 'Chất Lượng Trước Tiên',
+            'title' => 'Chất lượng trước tiên',
             'desc' => 'Kiểm thử tự động, review mã nguồn và CI/CD giúp bảo vệ chất lượng bàn giao.',
         ],
         [
@@ -229,13 +229,13 @@ return [
             'desc' => 'Ưu tiên các phần giá trị cao trước, kiểm chứng với người dùng và mở rộng sau khi có dữ liệu.',
         ],
         [
-            'title' => 'Đối Tác Lâu Dài',
+            'title' => 'Đồng hành dài hạn',
             'desc' => 'Sau khi hệ thống vận hành chính thức, đội ngũ tiếp tục hỗ trợ, tối ưu và mở rộng theo nhu cầu.',
         ],
     ],
 
     // CTA Section
-    'cta_title' => 'Trao Đổi Mô Hình Triển Khai Agile',
+    'cta_title' => 'Trao đổi mô hình triển khai Agile',
     'cta_desc' => 'Trao đổi phạm vi dự án, mô hình phối hợp và cách triển khai SCRUM phù hợp với mức độ trưởng thành của đội ngũ.',
-    'cta_button' => 'Trao Đổi Quy Trình',
+    'cta_button' => 'Trao đổi quy trình',
 ];

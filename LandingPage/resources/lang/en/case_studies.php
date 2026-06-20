@@ -80,7 +80,7 @@ return [
 
     'industries' => [
         ['icon' => 'shopping_cart', 'name' => 'E-commerce & Retail', 'description' => 'Sales systems, inventory, POS integrations, channel operations, and reporting.'],
-        ['icon' => 'trending_up', 'name' => 'FinTech & Financial Services', 'description' => 'Payment flows, management dashboards, reporting, and compliance controls.'],
+        ['icon' => 'trending_up', 'name' => 'FinTech & Financial Services', 'description' => 'Payment flows, management dashboards, reporting, and data controls.'],
         ['icon' => 'local_hospital', 'name' => 'Healthcare & Medical', 'description' => 'Scheduling, intake, data management, and privacy-focused user flows.'],
         ['icon' => 'school', 'name' => 'Education & Training', 'description' => 'Learning portals, scheduling, assessment, attendance, and reporting.'],
         ['icon' => 'local_shipping', 'name' => 'Logistics & Supply Chain', 'description' => 'Shipment tracking, warehouse management, data reconciliation, and operations coordination.'],
@@ -97,7 +97,7 @@ return [
 
     'testimonials' => [
         ['name' => 'CEO, e-commerce company', 'text' => 'HKIncotech did not just implement requirements. The team asked the right questions, proposed improvements, and kept delivery transparent.'],
-        ['name' => 'Founder, fintech company', 'text' => 'Their security and compliance approach helped us structure the system correctly from the beginning.'],
+        ['name' => 'Founder, fintech company', 'text' => 'Their security and data-control approach helped us structure the system correctly from the beginning.'],
         ['name' => 'Operations director, healthcare provider', 'text' => 'The team understood data privacy requirements and implemented the workflow carefully.'],
         ['name' => 'VP Product, logistics company', 'text' => 'The system was prepared well for expansion, from operating data to infrastructure planning.'],
         ['name' => 'CTO, retail chain', 'text' => 'The operating dashboard helped our team make faster decisions and control data more effectively.'],

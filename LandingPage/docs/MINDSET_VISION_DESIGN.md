@@ -48,6 +48,12 @@ Avoid:
 - Fabricated metrics, exact percentages, and large money claims unless backed by real data.
 - Repeating "phan mem theo yeu cau" as the only value proposition.
 
+Before publishing Vietnamese copy, do one final read as if the reader is a CEO, CTO, or operations director. A good sentence should explain what HKIncotech helps control, deliver, measure, or hand over. If a sentence only sounds impressive but does not clarify operating value, rewrite it.
+
+Use sentence case for Vietnamese labels where possible. Title Case Vietnamese often feels translated and heavy unless the text is a short navigation label or a deliberate visual badge.
+
+Prefer "kiem soat", "truy xuat", "audit log", "khung tham chieu", and "bao ve du lieu" over broad "tuan thu" claims unless a real certification or legal scope is being stated.
+
 ## Design Principles
 
 - Palette: official logo/brand navy is `#183060`. Use CSS variables, not hardcoded colors, except in source logo assets where required.
@@ -78,6 +84,8 @@ The site can reference standards as a design mindset, not as unsupported certifi
 - OWASP ASVS: application security verification, authentication, access control, data protection, and secure APIs.
 - WCAG: accessibility, contrast, keyboard access, readable content, and usable interfaces.
 
+Do not imply HKIncotech is certified for ISO, SOC 2, PCI DSS, HIPAA, or GDPR unless documentation is available. Phrase these as references used for requirement framing, architecture review, and delivery controls.
+
 ## Use Case Content Model
 
 Each use case should answer:
@@ -87,4 +95,3 @@ Each use case should answer:
 - Architecture: what type of system was built.
 - Practices: which engineering patterns and controls were applied.
 - Outcome: qualitative or backed result, written without false precision.
-

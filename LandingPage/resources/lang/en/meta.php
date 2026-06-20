@@ -19,7 +19,7 @@ return [
 
     // Scaling
     'scaling_title' => 'Scaling Architecture — Enterprise Software Infrastructure | HKIncotech',
-    'scaling_description' => '6-phase scaling roadmap with predictable costs. From monolithic MVP to multi-region Kubernetes with zero re-engineering.',
+    'scaling_description' => 'A staged scaling roadmap from first release to larger production systems, with attention to cost, reliability, and operating risk.',
 
     // About Us
     'about_us_title' => 'About HKIncotech — 12+ Years of Enterprise Software Delivery',
@@ -31,11 +31,11 @@ return [
 
     // Pricing
     'pricing_title' => 'Software Development Pricing & Plans | HKIncotech',
-    'pricing_description' => 'Software delivery models from $6,300/month. MVP, Growth, and Enterprise tiers with clear scope, source-code ownership, and support options.',
+    'pricing_description' => 'Software delivery models for MVP, growth, and enterprise scopes with clear responsibilities, source-code ownership, and support options.',
 
     // Certifications
-    'certifications_title' => 'Certifications & Security Standards | HKIncotech',
-    'certifications_description' => 'ISO 27001, SOC 2, GDPR, PCI DSS, HIPAA certified. AWS, GCP, Azure cloud certifications. Certified Scrum Masters and SAFe Agilists.',
+    'certifications_title' => 'Standards & Engineering Capability | HKIncotech',
+    'certifications_description' => 'Reference frameworks for security, data, cloud, delivery governance, and long-term enterprise system operations.',
 
     // Contact
     'contact_title' => 'Contact HKIncotech — Enterprise Software Engineering',

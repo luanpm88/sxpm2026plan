@@ -11,7 +11,7 @@
             "name": "What does HKIncotech do?",
             "acceptedAnswer": {
                 "@@type": "Answer",
-                "text": "HKIncotech is an enterprise software engineering company based in Southeast Asia. We build custom software, SaaS platforms, AI solutions, and provide security & compliance services for startups, scale-ups, and enterprises."
+                "text": "HKIncotech is an enterprise software engineering company based in Southeast Asia. We design, build, and operate enterprise software systems, SaaS platforms, applied AI solutions, and security controls for organizations."
             }
         },
         {
@@ -43,7 +43,7 @@
             "name": "What security certifications does HKIncotech have?",
             "acceptedAnswer": {
                 "@@type": "Answer",
-                "text": "We are ISO 27001, SOC 2 Type II, GDPR, PCI DSS, and HIPAA certified. Our team includes 8+ security experts and we follow OWASP standards with Zero Trust architecture."
+                "text": "HKIncotech references recognized standards such as ISO/IEC 27001, OWASP, NIST CSF, SOC 2, GDPR, PCI DSS, and HIPAA when framing security requirements, architecture reviews, and delivery controls. Formal certification or regulated compliance scope should be confirmed during project discovery."
             }
         }
     ]

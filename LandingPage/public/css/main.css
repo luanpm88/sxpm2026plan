@@ -1186,6 +1186,13 @@ nav.mobile-open {
     opacity: 0.78;
     marker-start: none;
 }
+.hero-illustration .hs-port {
+    fill: var(--surface);
+    stroke: currentColor;
+    stroke-width: 1.2;
+    opacity: 0.92;
+    vector-effect: non-scaling-stroke;
+}
 .hero-illustration .hs-arrow-head {
     fill: currentColor;
 }
@@ -1228,7 +1235,7 @@ nav.mobile-open {
 .hero-illustration .hs-chip,
 .hero-illustration .hs-strip,
 .hero-illustration .hs-card--side {
-    filter: drop-shadow(0 7px 16px var(--shadow-color));
+    filter: drop-shadow(0 6px 14px var(--shadow-color));
 }
 .hero-illustration .hs-strip {
     fill: color-mix(in srgb, var(--primary-subtle) 70%, var(--surface));
@@ -1274,18 +1281,6 @@ nav.mobile-open {
     fill: var(--accent);
     opacity: 0.86;
 }
-.hero-illustration .hs-deco {
-    fill: none;
-    stroke: currentColor;
-    stroke-width: 1.7;
-    stroke-linecap: round;
-    stroke-linejoin: round;
-    opacity: 0.82;
-    vector-effect: non-scaling-stroke;
-}
-.hero-illustration .hs-deco ellipse {
-    fill: color-mix(in srgb, var(--primary-subtle) 74%, var(--surface));
-}
 
 html[data-theme="dark"] .hero-illustration .hs-card,
 html[data-theme="dark"] .hero-illustration .hs-strip {
@@ -1293,6 +1288,10 @@ html[data-theme="dark"] .hero-illustration .hs-strip {
 }
 
 html[data-theme="dark"] .hero-illustration .hs-card--side {
+    fill: var(--surface-elevated);
+}
+
+html[data-theme="dark"] .hero-illustration .hs-port {
     fill: var(--surface-elevated);
 }
 

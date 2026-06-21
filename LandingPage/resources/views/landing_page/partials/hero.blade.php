@@ -59,37 +59,28 @@
 
                         <g class="hs-side-stack">
                             <g>
-                                <path class="hs-flow" d="M178 140H272" marker-end="url(#hero-arrow)" />
-                                <rect class="hs-card hs-card--side" x="42" y="102" width="136" height="76" rx="18" />
-                                <path class="hs-card-divider" d="M72 134h76" />
-                                <text class="hs-label" x="110" y="128" text-anchor="middle">{{ __('hero.svg_domain') }}</text>
-                                <text class="hs-label-muted" x="110" y="155" text-anchor="middle">{{ __('hero.svg_acceptance') }}</text>
+                                <path class="hs-flow" d="M202 140H272" marker-end="url(#hero-arrow)" />
+                                <circle class="hs-port" cx="202" cy="140" r="4" />
+                                <rect class="hs-card hs-card--side" x="58" y="102" width="144" height="76" rx="18" />
+                                <path class="hs-card-divider" d="M92 134h76" />
+                                <text class="hs-label" x="130" y="128" text-anchor="middle">{{ __('hero.svg_domain') }}</text>
+                                <text class="hs-label-muted" x="130" y="155" text-anchor="middle">{{ __('hero.svg_acceptance') }}</text>
                             </g>
                             <g>
-                                <path class="hs-flow" d="M178 250H272" marker-end="url(#hero-arrow)" />
-                                <rect class="hs-card hs-card--side" x="42" y="212" width="136" height="76" rx="18" />
-                                <path class="hs-card-divider" d="M72 244h76" />
-                                <text class="hs-label" x="110" y="238" text-anchor="middle">{{ __('hero.svg_data_ai') }}</text>
-                                <text class="hs-label-muted" x="110" y="265" text-anchor="middle">{{ __('hero.svg_api') }}</text>
+                                <path class="hs-flow" d="M202 250H272" marker-end="url(#hero-arrow)" />
+                                <circle class="hs-port" cx="202" cy="250" r="4" />
+                                <rect class="hs-card hs-card--side" x="58" y="212" width="144" height="76" rx="18" />
+                                <path class="hs-card-divider" d="M92 244h76" />
+                                <text class="hs-label" x="130" y="238" text-anchor="middle">{{ __('hero.svg_data_ai') }}</text>
+                                <text class="hs-label-muted" x="130" y="265" text-anchor="middle">{{ __('hero.svg_api') }}</text>
                             </g>
                             <g>
-                                <path class="hs-flow" d="M178 360H272" marker-end="url(#hero-arrow)" />
-                                <rect class="hs-card hs-card--side" x="42" y="322" width="136" height="76" rx="18" />
-                                <path class="hs-card-divider" d="M72 354h76" />
-                                <text class="hs-label" x="110" y="348" text-anchor="middle">{{ __('hero.svg_security') }}</text>
-                                <text class="hs-label-muted" x="110" y="375" text-anchor="middle">{{ __('hero.svg_operations') }}</text>
-                            </g>
-                            <g class="hs-deco hs-deco--data" transform="translate(6 218)">
-                                <ellipse cx="18" cy="8" rx="15" ry="5" />
-                                <path d="M3 8v22c0 3 7 5 15 5s15-2 15-5V8M3 19c0 3 7 5 15 5s15-2 15-5" />
-                                <circle cx="48" cy="34" r="12" />
-                                <path d="M36 34H23M60 34h12M48 22V10M41 27l-9-9M55 27l9-9" />
-                            </g>
-                            <g class="hs-deco hs-deco--shield" transform="translate(4 335)">
-                                <path d="M22 4l20 8v16c0 13-8 22-20 27C10 50 2 41 2 28V12L22 4z" />
-                                <path d="M22 20v14M16 28h12" />
-                                <circle cx="54" cy="42" r="12" />
-                                <path d="M63 51l11 11" />
+                                <path class="hs-flow" d="M202 360H272" marker-end="url(#hero-arrow)" />
+                                <circle class="hs-port" cx="202" cy="360" r="4" />
+                                <rect class="hs-card hs-card--side" x="58" y="322" width="144" height="76" rx="18" />
+                                <path class="hs-card-divider" d="M92 354h76" />
+                                <text class="hs-label" x="130" y="348" text-anchor="middle">{{ __('hero.svg_security') }}</text>
+                                <text class="hs-label-muted" x="130" y="375" text-anchor="middle">{{ __('hero.svg_operations') }}</text>
                             </g>
                         </g>
 
@@ -110,47 +101,40 @@
 
                         <g class="hs-side-stack">
                             <g>
-                                <path class="hs-flow" d="M538 140H446" marker-end="url(#hero-arrow-left)" />
-                                <rect class="hs-card hs-card--side" x="538" y="102" width="136" height="76" rx="18" />
-                                <path class="hs-card-divider" d="M568 134h76" />
-                                <text class="hs-label" x="606" y="128" text-anchor="middle">SaaS</text>
-                                <text class="hs-label-muted" x="606" y="155" text-anchor="middle">ERP</text>
+                                <path class="hs-flow" d="M518 140H446" marker-end="url(#hero-arrow-left)" />
+                                <circle class="hs-port" cx="518" cy="140" r="4" />
+                                <rect class="hs-card hs-card--side" x="518" y="102" width="144" height="76" rx="18" />
+                                <path class="hs-card-divider" d="M552 134h76" />
+                                <text class="hs-label" x="590" y="128" text-anchor="middle">SaaS</text>
+                                <text class="hs-label-muted" x="590" y="155" text-anchor="middle">ERP</text>
                             </g>
                             <g>
-                                <path class="hs-flow" d="M538 250H446" marker-end="url(#hero-arrow-left)" />
-                                <rect class="hs-card hs-card--side" x="538" y="212" width="136" height="76" rx="18" />
-                                <path class="hs-card-divider" d="M568 244h76" />
-                                <text class="hs-label" x="606" y="238" text-anchor="middle">AI</text>
-                                <text class="hs-label-muted" x="606" y="265" text-anchor="middle">{{ __('hero.svg_data_ai') }}</text>
+                                <path class="hs-flow" d="M518 250H446" marker-end="url(#hero-arrow-left)" />
+                                <circle class="hs-port" cx="518" cy="250" r="4" />
+                                <rect class="hs-card hs-card--side" x="518" y="212" width="144" height="76" rx="18" />
+                                <path class="hs-card-divider" d="M552 244h76" />
+                                <text class="hs-label" x="590" y="238" text-anchor="middle">AI</text>
+                                <text class="hs-label-muted" x="590" y="265" text-anchor="middle">{{ __('hero.svg_data_ai') }}</text>
                             </g>
                             <g>
-                                <path class="hs-flow" d="M538 360H446" marker-end="url(#hero-arrow-left)" />
-                                <rect class="hs-card hs-card--side" x="538" y="322" width="136" height="76" rx="18" />
-                                <path class="hs-card-divider" d="M568 354h76" />
-                                <text class="hs-label" x="606" y="348" text-anchor="middle">{{ __('hero.svg_scale') }}</text>
-                                <text class="hs-label-muted" x="606" y="375" text-anchor="middle">{{ __('hero.svg_operations') }}</text>
-                            </g>
-                            <g class="hs-deco hs-deco--ai" transform="translate(648 224)">
-                                <path d="M24 8c-9 0-16 7-16 16 0 6 3 11 8 14v11M24 8c9 0 16 7 16 16 0 6-3 11-8 14v11" />
-                                <path d="M16 23h16M13 34h22M24 38v12" />
-                                <circle cx="4" cy="25" r="2" />
-                                <circle cx="44" cy="25" r="2" />
-                            </g>
-                            <g class="hs-deco hs-deco--scale" transform="translate(646 344)">
-                                <path d="M4 54h56M14 54V36M28 54V26M42 54V15M10 30l15-13 11 8 18-19" />
-                                <path d="M51 6h13v13" />
+                                <path class="hs-flow" d="M518 360H446" marker-end="url(#hero-arrow-left)" />
+                                <circle class="hs-port" cx="518" cy="360" r="4" />
+                                <rect class="hs-card hs-card--side" x="518" y="322" width="144" height="76" rx="18" />
+                                <path class="hs-card-divider" d="M552 354h76" />
+                                <text class="hs-label" x="590" y="348" text-anchor="middle">{{ __('hero.svg_scale') }}</text>
+                                <text class="hs-label-muted" x="590" y="375" text-anchor="middle">{{ __('hero.svg_operations') }}</text>
                             </g>
                         </g>
 
                         <g class="hs-governance-strip">
-                            <rect class="hs-strip" x="218" y="406" width="284" height="58" rx="22" />
+                            <rect class="hs-strip" x="204" y="404" width="312" height="62" rx="22" />
                             <path class="hs-axis" d="M360 342V406" />
-                            <path class="hs-icon-line" d="M246 435h50M296 435l-12-10M296 435l-12 10" />
-                            <path class="hs-strip-divider" d="M316 425h36M452 425h28" />
-                            <text class="hs-label" x="390" y="428" text-anchor="middle">{{ __('hero.svg_delivery') }}</text>
-                            <text class="hs-label-muted" x="390" y="450" text-anchor="middle">Sprint</text>
-                            <text class="hs-label" x="460" y="428" text-anchor="middle">{{ __('hero.svg_acceptance') }}</text>
-                            <text class="hs-label-muted" x="460" y="450" text-anchor="middle">QA / SLA</text>
+                            <path class="hs-icon-line" d="M234 435h50M284 435l-12-10M284 435l-12 10" />
+                            <path class="hs-strip-divider" d="M312 416v38M414 416v38" />
+                            <text class="hs-label" x="362" y="428" text-anchor="middle">{{ __('hero.svg_delivery') }}</text>
+                            <text class="hs-label-muted" x="362" y="450" text-anchor="middle">Sprint</text>
+                            <text class="hs-label" x="466" y="428" text-anchor="middle">{{ __('hero.svg_acceptance') }}</text>
+                            <text class="hs-label-muted" x="466" y="450" text-anchor="middle">QA / SLA</text>
                         </g>
                     </svg>
                 </div>

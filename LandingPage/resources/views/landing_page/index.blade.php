@@ -85,28 +85,26 @@
                 <span class="section-label">{{ __('index.section_services') }}</span>
                 <h2 id="heading-services" class="section-title">{{ __('index.services_title') }}</h2>
                 <p class="section-subtitle">{{ __('index.services_subtitle') }}</p>
-                <svg class="section-header__visual-row" viewBox="0 0 720 96" aria-hidden="true" focusable="false">
+                <div class="section-header__visual-row" aria-hidden="true">
                     @php
                     $visualSteps = [
-                        ['icon' => 'M22 34h30M22 46h22M22 58h30', 'label' => __('index.services_visual_1')],
-                        ['icon' => 'M24 56l20-12 20 12M24 42l20-12 20 12', 'label' => __('index.services_visual_2')],
-                        ['icon' => 'M34 30l-14 18 14 18M50 30l14 18-14 18', 'label' => __('index.services_visual_3')],
-                        ['icon' => 'M44 26l18 8v14c0 12-8 20-18 24-10-4-18-12-18-24V34l18-8z', 'label' => __('index.services_visual_4')],
-                        ['icon' => 'M24 52c8-18 16-24 28-24s18 16 20 34M30 62h36', 'label' => __('index.services_visual_5')],
+                        ['icon' => 'checklist', 'label' => __('index.services_visual_1')],
+                        ['icon' => 'architecture', 'label' => __('index.services_visual_2')],
+                        ['icon' => 'code', 'label' => __('index.services_visual_3')],
+                        ['icon' => 'shield', 'label' => __('index.services_visual_4')],
+                        ['icon' => 'monitoring', 'label' => __('index.services_visual_5')],
                     ];
                     @endphp
                     @foreach($visualSteps as $i => $step)
-                        @php $x = 44 + ($i * 150); @endphp
-                        @if($i > 0)
-                            <path class="section-header__visual-link" d="M{{ $x - 78 }} 48H{{ $x - 14 }}" />
+                        <div class="section-header__visual-step">
+                            <span class="section-header__visual-icon material-symbols-rounded">{{ $step['icon'] }}</span>
+                            <span class="section-header__visual-label">{{ $step['label'] }}</span>
+                        </div>
+                        @if($i < count($visualSteps) - 1)
+                            <span class="section-header__visual-connector"></span>
                         @endif
-                        <g class="section-header__visual-step" transform="translate({{ $x }} 4)">
-                            <rect width="72" height="72" rx="18" />
-                            <path d="{{ $step['icon'] }}" />
-                            <text x="36" y="88" text-anchor="middle">{{ $step['label'] }}</text>
-                        </g>
                     @endforeach
-                </svg>
+                </div>
             </div>
 
             <div class="grid-4col">

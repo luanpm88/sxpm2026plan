@@ -48,10 +48,12 @@ Expected:
 
 ## Last verified deploy
 
-- Date: 2026-06-20 ICT
-- Commit: `ba8d0ec` (`upgrade landing brand and delivery sections`)
+- Date: 2026-06-21 ICT
+- Commit: `b624be5` (`Refine HKIncotech enterprise copy`)
 - Verified live URL: `https://demo.hkincotech.com`
-- Verified routes: `/vi`, `/vi/scrum`, `/vi/contact`, `/en`
+- Verified routes: `/vi`, `/en`, `/vi/services`, `/en/services`
+- Verified live body: `/vi` returns the updated enterprise positioning copy
+  (`Đối tác kỹ thuật`, `Năm nhóm năng lực triển khai phần mềm`, `Tư vấn quy trình & chuẩn ngành`).
 - Verified logo asset on server: `/home/hkincotech/hkincotech/LandingPage/public/img/logo.svg`
 - Official logo / primary brand navy: `#183060`
 

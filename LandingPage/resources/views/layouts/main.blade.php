@@ -298,7 +298,8 @@
 
             <div class="header-actions">
                 <button class="theme-toggle" type="button" aria-label="Toggle dark mode" data-theme-toggle>
-                    <span class="material-symbols-rounded" data-theme-icon>dark_mode</span>
+                    <span class="material-symbols-rounded theme-toggle__moon" aria-hidden="true">dark_mode</span>
+                    <span class="material-symbols-rounded theme-toggle__sun" aria-hidden="true">light_mode</span>
                 </button>
                 <!-- Language Switcher -->
                 <div class="lang-menu" data-lang-menu>
@@ -464,22 +465,18 @@
 
         (function () {
             const toggleButton = document.querySelector('[data-theme-toggle]');
-            const icon = document.querySelector('[data-theme-icon]');
-            if (!toggleButton || !icon) return;
+            if (!toggleButton) return;
 
-            const applyTheme = (theme) => {
-                document.documentElement.setAttribute('data-theme', theme);
-                localStorage.setItem('theme', theme);
-                icon.textContent = theme === 'dark' ? 'light_mode' : 'dark_mode';
-                toggleButton.setAttribute('aria-label', theme === 'dark' ? 'Switch to light mode' : 'Switch to dark mode');
-            };
-
-            const currentTheme = document.documentElement.getAttribute('data-theme') || 'light';
-            applyTheme(currentTheme);
+            // Icon is CSS-driven from html[data-theme]; JS only flips the theme + label.
+            const setLabel = (theme) => toggleButton.setAttribute('aria-label',
+                theme === 'dark' ? 'Switch to light mode' : 'Switch to dark mode');
+            setLabel(document.documentElement.getAttribute('data-theme') || 'light');
 
             toggleButton.addEventListener('click', () => {
-                const nextTheme = document.documentElement.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
-                applyTheme(nextTheme);
+                const next = document.documentElement.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
+                document.documentElement.setAttribute('data-theme', next);
+                localStorage.setItem('theme', next);
+                setLabel(next);
             });
         })();
 

@@ -820,6 +820,14 @@ html[data-theme="dark"] .nav-mega__tag {
     box-shadow: 0 4px 12px var(--shadow-hover);
 }
 
+/* Icon reflects current theme — CSS-driven from html[data-theme] so it shows the
+   right glyph instantly on load (no JS ligature swap). Light: moon (→ go dark);
+   dark: sun (→ go light). */
+.theme-toggle__moon { display: inline-flex; }
+.theme-toggle__sun  { display: none; }
+html[data-theme="dark"] .theme-toggle__moon { display: none; }
+html[data-theme="dark"] .theme-toggle__sun  { display: inline-flex; }
+
 /* Language Menu */
 .lang-menu {
     position: relative;

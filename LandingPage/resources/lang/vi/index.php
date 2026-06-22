@@ -16,6 +16,7 @@ return [
     'pain_4_kicker' => 'Sở hữu & chuyển giao',
     'pain_4_title' => 'Hệ thống phụ thuộc vào vài cá nhân',
     'pain_4_desc' => 'Mã nguồn thiếu tài liệu, logic nghiệp vụ không được chuẩn hóa và đội vận hành khó tiếp nhận, khiến chi phí bảo trì tăng theo thời gian.',
+    'pain_note' => 'Và còn nhiều nguyên nhân khác. Hoàng Khang lắng nghe bối cảnh vận hành, truy dấu dữ liệu và xác định gốc rễ trước khi đề xuất hướng xử lý phù hợp chuẩn ngành.',
     'section_pain' => 'VẤN ĐỀ VẬN HÀNH',
 
     'services_title' => 'Năm nhóm năng lực triển khai phần mềm',

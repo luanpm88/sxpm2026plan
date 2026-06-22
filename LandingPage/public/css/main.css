@@ -4871,6 +4871,29 @@ html[data-theme="dark"] a[style*="background: linear-gradient(135deg, #fef3c7"] 
     line-height: 1.6;
     font-weight: 400;
 }
+.pain-note {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 0.55rem;
+    max-width: 760px;
+    margin: 1.65rem auto 0;
+    color: var(--text-gray);
+    text-align: center;
+}
+.pain-note__icon {
+    flex: 0 0 auto;
+    color: var(--primary);
+    font-size: 1.25rem;
+    line-height: 1.55;
+    font-variation-settings: 'FILL' 0, 'wght' 500, 'GRAD' 0, 'opsz' 24;
+}
+.pain-note p {
+    margin: 0;
+    font-size: 0.98rem;
+    line-height: 1.7;
+    font-weight: 400;
+}
 html[data-theme="dark"] .pain-card {
     background: var(--surface-elevated);
     border-color: color-mix(in srgb, var(--border) 82%, var(--primary));
@@ -4889,6 +4912,16 @@ html[data-theme="dark"] .pain-icon {
     .pain-card {
         min-height: auto;
         padding: 1.15rem;
+    }
+    .pain-note {
+        flex-direction: column;
+        align-items: center;
+        gap: 0.35rem;
+        margin-top: 1.35rem;
+        text-align: center;
+    }
+    .pain-note p {
+        font-size: 0.92rem;
     }
 }
 

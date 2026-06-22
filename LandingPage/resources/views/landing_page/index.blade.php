@@ -92,6 +92,11 @@
                 </article>
                 @endforeach
             </div>
+
+            <div class="pain-note" role="note">
+                <span class="pain-note__icon material-symbols-rounded" aria-hidden="true">manage_search</span>
+                <p>{{ __('index.pain_note') }}</p>
+            </div>
         </div>
     </section>
 

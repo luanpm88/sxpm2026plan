@@ -16,6 +16,7 @@ return [
     'pain_4_kicker' => 'Ownership & handover',
     'pain_4_title' => 'The platform depends on a few key people',
     'pain_4_desc' => 'Documentation is thin, business logic is not explicit, and operations teams struggle to take ownership, making maintenance more expensive over time.',
+    'pain_note' => 'There are always other underlying causes. HKIncotech listens to the operating context, traces the data, and identifies the root issue before recommending an industry-aligned response.',
     'section_pain' => 'OPERATIONAL RISKS',
 
     'services_title' => 'Five Core Software Delivery Capabilities',

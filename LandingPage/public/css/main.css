@@ -125,6 +125,18 @@ body {
     -moz-osx-font-smoothing: grayscale;
 }
 
+/* ==========================================
+   Weight ceiling — never render heavier than 600 (semibold).
+   Keeps the whole site to normal / 500 / 600 for a smoother look,
+   capping UA + Bootstrap defaults (b, strong, th, fw-bold, …).
+   ========================================== */
+b, strong, th, dt, optgroup, legend {
+    font-weight: 600;
+}
+.fw-bold, .fw-bolder, .fw-semibold {
+    font-weight: 600 !important;
+}
+
 html[data-theme="dark"] body {
     background: #0d141d;
     color-scheme: dark;
@@ -831,7 +843,7 @@ html[data-theme="dark"] .nav-mega__tag {
     cursor: pointer;
     font-family: inherit;
     font-size: 0.78rem;
-    font-weight: 650;
+    font-weight: 600;
     letter-spacing: 0;
     white-space: nowrap;
     transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease, background 0.2s ease;

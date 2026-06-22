@@ -108,8 +108,8 @@
     <!-- Header Navigation -->
     <header>
         <div class="header-container">
-            <a href="{{ route('landing.index') }}" class="logo">
-                <img src="{{ asset('img/logo.svg') }}" alt="HKIncotech">
+            <a href="{{ route('landing.index') }}" class="logo" aria-label="HKIncotech">
+                @include('partials.brand-logo')
                 <span>INCOTECH</span>
             </a>
             <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Toggle menu">
@@ -341,8 +341,8 @@
             <div class="footer-grid-5col">
                 <!-- Company Info -->
                 <div class="footer-section">
-                    <a href="{{ route('landing.index') }}" class="logo footer-logo">
-                        <img src="{{ asset('img/logo.svg') }}" alt="HKIncotech">
+                    <a href="{{ route('landing.index') }}" class="logo footer-logo" aria-label="HKIncotech">
+                        @include('partials.brand-logo')
                         <span>INCOTECH</span>
                     </a>
                     <p class="footer-about">

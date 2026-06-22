@@ -67,8 +67,8 @@
     <!-- OnePage Navigation -->
     <header>
         <div class="header-container">
-            <a href="#hero" class="logo nav-link">
-                <img src="/img/logo.svg" alt="HKIncotech">
+            <a href="#hero" class="logo nav-link" aria-label="HKIncotech">
+                @include('partials.brand-logo')
                 <span>INCOTECH</span>
             </a>
             <button class="mobile-menu-toggle" onclick="document.querySelector('nav').classList.toggle('mobile-open')">

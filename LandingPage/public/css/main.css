@@ -14,6 +14,7 @@
     --primary-light: #1a4585;      /* lifted navy — button hover, gradients */
     --primary-dark: #0F203D;       /* deepest navy — active/press, dark sections */
     --logo-color: var(--primary);  /* keep HK mark + INCOTECH wordmark synced with brand navy */
+    --brand-orange: #f5821f;       /* HK mark accent — the middle bar under the monogram */
     --primary-subtle: rgba(24, 48, 96, 0.05);   /* faint navy wash — tints, illustration fills */
     --accent: #2f6abf;             /* single restrained steel-blue — small interactive accents only (~the 20%) */
     --accent-light: rgba(47, 106, 191, 0.10);
@@ -367,17 +368,16 @@ html[data-theme="dark"] header {
     letter-spacing: 0;
 }
 
-.logo img {
+.logo img,
+.logo svg {
     height: 30px;
     width: auto;
+    display: block;
 }
 
-/* Navy logo would sink into the dark header — render it crisp white in dark mode
-   (footer logo keeps its own inline brightness filter). */
-html[data-theme="dark"] .logo img {
-    filter: brightness(0) invert(1);
-}
-
+/* Logo is inline SVG (partials/brand-logo): navy parts follow currentColor —
+   var(--logo-color) in light, white in dark/footer — while the accent bar
+   stays orange in every context. No whitening filter needed. */
 html[data-theme="dark"] .logo {
     color: var(--contrast-panel-text);
 }
@@ -3503,10 +3503,6 @@ footer a:hover {
     color: var(--contrast-panel-text);
     margin-bottom: 1rem;
     display: inline-flex;
-}
-
-.footer-logo img {
-    filter: brightness(0) invert(1);
 }
 
 .footer-about {

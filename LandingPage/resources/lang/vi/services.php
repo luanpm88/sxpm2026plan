@@ -55,6 +55,7 @@ return [
         'full_visibility_desc' => 'Theo dõi danh sách việc, mã nguồn và tiến độ qua công cụ dự án',
         'cycle_title' => 'Chu kỳ phát triển SCRUM',
         'cycle_desc' => 'Các chu kỳ 2 tuần có sự tham gia của khách hàng để phần mềm bám sát mục tiêu vận hành.',
+        'cycle_kicker' => 'Chu kỳ có kiểm soát',
         'cycle_2week' => '2 Tuần',
         'cycle_sprint' => 'Sprint',
         'delivery_map' => [

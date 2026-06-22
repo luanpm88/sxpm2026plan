@@ -65,7 +65,7 @@
     </section>
 
     <!-- Service 1: Custom Software Development (DETAILED) -->
-    <section style="background: var(--secondary-bg);">
+    <section class="custom-delivery-section">
         <div class="container-v5">
             <div class="section-header">
                 <span class="section-label">{{ __('services.section_custom') }}</span>
@@ -73,69 +73,69 @@
                 <p class="section-subtitle">{{ __('services.service1.subtitle') }}</p>
             </div>
 
-            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; align-items: center; margin-bottom: 4rem;">
-                <div style="background: var(--surface); border-radius: var(--card-radius); padding: 2.5rem; border: 1px solid var(--border);">
-                    <h3 style="font-size: 1.1rem; font-weight: 600; color: var(--text-dark); margin-bottom: 1.5rem;">{{ __('services.service1.process_title') }}</h3>
-                    <p style="color: var(--text-gray); line-height: 1.8; margin-bottom: 1.5rem;">
-                        {{ __('services.service1.process_desc') }}
-                    </p>
-                    <div style="background: var(--secondary-bg); padding: 1.5rem; border-radius: 8px; margin-bottom: 1.5rem;">
-                        <h4 style="font-size: 1.1rem; font-weight: 600; color: var(--primary); margin-bottom: 1rem;">{{ __('services.service1.transparency_title') }}</h4>
-                        <ul style="list-style: none; margin: 0;">
-                            <li style="padding: 0.5rem 0; color: var(--text-gray); display: flex; align-items: flex-start; gap: 0.75rem;">
-                                <span class="material-symbols-rounded" style="color: var(--primary); font-size: 1.2rem; flex-shrink: 0;">verified</span>
+            <div class="custom-delivery-stack">
+                <article class="custom-process-panel">
+                    <div class="custom-process-panel__intro">
+                        <span class="custom-process-panel__icon material-symbols-rounded" aria-hidden="true">account_tree</span>
+                        <h3>{{ __('services.service1.process_title') }}</h3>
+                        <p>{{ __('services.service1.process_desc') }}</p>
+                    </div>
+
+                    <div class="custom-transparency-card">
+                        <h4>{{ __('services.service1.transparency_title') }}</h4>
+                        <ul class="custom-transparency-list">
+                            <li class="custom-transparency-item">
+                                <span class="custom-transparency-icon material-symbols-rounded" aria-hidden="true">verified</span>
                                 <span><strong>{{ __('services.service1.sprint_planning_title') }}:</strong> {{ __('services.service1.sprint_planning_desc') }}</span>
                             </li>
-                            <li style="padding: 0.5rem 0; color: var(--text-gray); display: flex; align-items: flex-start; gap: 0.75rem;">
-                                <span class="material-symbols-rounded" style="color: var(--primary); font-size: 1.2rem; flex-shrink: 0;">visibility</span>
+                            <li class="custom-transparency-item">
+                                <span class="custom-transparency-icon material-symbols-rounded" aria-hidden="true">visibility</span>
                                 <span><strong>{{ __('services.service1.daily_updates_title') }}:</strong> {{ __('services.service1.daily_updates_desc') }}</span>
                             </li>
-                            <li style="padding: 0.5rem 0; color: var(--text-gray); display: flex; align-items: flex-start; gap: 0.75rem;">
-                                <span class="material-symbols-rounded" style="color: var(--primary); font-size: 1.2rem; flex-shrink: 0;">preview</span>
+                            <li class="custom-transparency-item">
+                                <span class="custom-transparency-icon material-symbols-rounded" aria-hidden="true">preview</span>
                                 <span><strong>{{ __('services.service1.sprint_demo_title') }}:</strong> {{ __('services.service1.sprint_demo_desc') }}</span>
                             </li>
-                            <li style="padding: 0.5rem 0; color: var(--text-gray); display: flex; align-items: flex-start; gap: 0.75rem;">
-                                <span class="material-symbols-rounded" style="color: var(--primary); font-size: 1.2rem; flex-shrink: 0;">code</span>
+                            <li class="custom-transparency-item">
+                                <span class="custom-transparency-icon material-symbols-rounded" aria-hidden="true">code</span>
                                 <span><strong>{{ __('services.service1.code_quality_title') }}:</strong> {{ __('services.service1.code_quality_desc') }}</span>
                             </li>
-                            <li style="padding: 0.5rem 0; color: var(--text-gray); display: flex; align-items: flex-start; gap: 0.75rem;">
-                                <span class="material-symbols-rounded" style="color: var(--primary); font-size: 1.2rem; flex-shrink: 0;">track_changes</span>
+                            <li class="custom-transparency-item">
+                                <span class="custom-transparency-icon material-symbols-rounded" aria-hidden="true">track_changes</span>
                                 <span><strong>{{ __('services.service1.full_visibility_title') }}:</strong> {{ __('services.service1.full_visibility_desc') }}</span>
                             </li>
                         </ul>
                     </div>
-                </div>
+                </article>
 
-                <div style="background: var(--surface); border-radius: var(--card-radius); padding: 2.5rem; border: 1px solid var(--border);">
-                    <h3 style="font-size: 1.1rem; font-weight: 600; color: var(--text-dark); margin-bottom: 1.5rem;">{{ __('services.service1.cycle_title') }}</h3>
+                <article class="custom-scrum-panel">
+                    <div class="custom-scrum-panel__head">
+                        <div>
+                            <span class="custom-scrum-panel__eyebrow">{{ __('services.service1.cycle_kicker') }}</span>
+                            <h3>{{ __('services.service1.cycle_title') }}</h3>
+                        </div>
+                        <p>{{ __('services.service1.cycle_desc') }}</p>
+                    </div>
+
                     @php($deliveryMap = __('services.service1.delivery_map'))
-                    <svg viewBox="0 0 520 310" style="width: 100%; max-width: 520px; margin: 0 auto; display: block;" role="img" aria-label="{{ __('services.service1.cycle_title') }}">
-                        <defs>
-                            <marker id="delivery-arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto">
-                                <path d="M 0 0 L 10 5 L 0 10 z" fill="var(--primary)" />
-                            </marker>
-                        </defs>
-                        <rect x="18" y="24" width="484" height="230" rx="18" fill="var(--secondary-bg)" stroke="var(--border)" />
-                        <path d="M 78 118 H 438" stroke="var(--primary)" stroke-width="3" marker-end="url(#delivery-arrow)" />
-
+                    <div class="custom-scrum-flow" role="img" aria-label="{{ __('services.service1.cycle_title') }}">
+                        <span class="custom-scrum-flow__line" aria-hidden="true"></span>
                         @foreach($deliveryMap as $index => $step)
-                            @php($x = 78 + ($index * 90))
-                            <g>
-                                <circle cx="{{ $x }}" cy="118" r="28" fill="{{ $index === 2 ? 'var(--button-primary-bg)' : 'var(--surface)' }}" stroke="var(--primary)" stroke-width="2" />
-                                <text x="{{ $x }}" y="123" text-anchor="middle" font-size="12" font-weight="600" fill="{{ $index === 2 ? 'var(--button-primary-text)' : 'var(--primary)' }}">{{ $step['num'] }}</text>
-                                <rect x="{{ $x - 48 }}" y="158" width="96" height="56" rx="10" fill="var(--surface)" stroke="var(--border)" />
-                                <text x="{{ $x }}" y="180" text-anchor="middle" font-size="10" font-weight="600" fill="var(--text-dark)">{{ $step['title'] }}</text>
-                                <text x="{{ $x }}" y="198" text-anchor="middle" font-size="8.5" fill="var(--text-gray)">{{ $step['desc'] }}</text>
-                            </g>
+                            <div class="custom-scrum-step {{ $index === 2 ? 'is-active' : '' }}">
+                                <span class="custom-scrum-step__num">{{ $step['num'] }}</span>
+                                <div class="custom-scrum-step__card">
+                                    <h4>{{ $step['title'] }}</h4>
+                                    <p>{{ $step['desc'] }}</p>
+                                </div>
+                            </div>
                         @endforeach
+                    </div>
 
-                        <rect x="72" y="260" width="376" height="30" rx="15" fill="var(--primary-subtle)" stroke="var(--border)" />
-                        <text x="260" y="280" text-anchor="middle" font-size="10" font-weight="600" fill="var(--primary)">{{ __('services.service1.delivery_governance') }}</text>
-                    </svg>
-                    <p style="text-align: center; color: var(--text-gray); font-size: 0.9rem; margin-top: 1rem; line-height: 1.6;">
-                        {{ __('services.service1.cycle_desc') }}
-                    </p>
-                </div>
+                    <div class="custom-scrum-governance">
+                        <span class="material-symbols-rounded" aria-hidden="true">fact_check</span>
+                        <strong>{{ __('services.service1.delivery_governance') }}</strong>
+                    </div>
+                </article>
             </div>
 
             <div class="services-tech-stack-block" style="background: var(--surface); border-radius: var(--card-radius); padding: 2.5rem; border: 1px solid var(--border);">
@@ -154,8 +154,8 @@
                     @foreach(__('services.tech_categories') as $cat)
                     <div style="background: var(--secondary-bg); border-radius: 10px; padding: 1.5rem; transition: all 0.3s ease; border: 1px solid transparent;" onmouseover="this.style.borderColor='var(--primary)'; this.style.boxShadow='0 4px 12px rgba(0,0,0,0.08)';" onmouseout="this.style.borderColor='transparent'; this.style.boxShadow='';">
                         <div style="display: flex; align-items: center; gap: 0.75rem; margin-bottom: 1rem;">
-                            <div style="width: 40px; height: 40px; background: {{ $loop->odd ? 'var(--primary)' : 'var(--primary-light)' }}; border-radius: 8px; display: flex; align-items: center; justify-content: center;">
-                                <span class="material-symbols-rounded" style="color: var(--contrast-panel-text); font-size: 1.5rem;">
+                            <div class="services-tech-icon {{ $loop->even ? 'services-tech-icon--subtle' : '' }}">
+                                <span class="material-symbols-rounded">
                                     @switch($loop->iteration)
                                         @case(1)
                                             web

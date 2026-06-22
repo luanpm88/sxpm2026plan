@@ -2722,6 +2722,307 @@ html[data-theme="dark"] .topoflow {
     margin-top: 1.25rem;
 }
 
+/* Custom software delivery module */
+.custom-delivery-section {
+    background: var(--secondary-bg);
+}
+
+.custom-delivery-stack {
+    display: grid;
+    gap: 1.35rem;
+    margin-bottom: 4rem;
+}
+
+.custom-process-panel,
+.custom-scrum-panel {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--card-radius);
+    box-shadow: 0 16px 42px var(--shadow-color);
+}
+
+.custom-process-panel {
+    display: grid;
+    grid-template-columns: minmax(18rem, 0.9fr) minmax(0, 1.35fr);
+    gap: clamp(1.25rem, 2.4vw, 2.25rem);
+    align-items: stretch;
+    padding: clamp(1.35rem, 2.4vw, 2rem);
+}
+
+.custom-process-panel__intro,
+.custom-transparency-card {
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    background: var(--secondary-bg);
+}
+
+.custom-process-panel__intro {
+    position: relative;
+    overflow: hidden;
+    padding: clamp(1.35rem, 2vw, 1.8rem);
+}
+
+.custom-process-panel__intro::after {
+    content: "";
+    position: absolute;
+    right: -3.5rem;
+    bottom: -3.5rem;
+    width: 10rem;
+    height: 10rem;
+    border: 1px solid var(--border);
+    border-radius: 999px;
+    background: var(--primary-subtle);
+}
+
+.custom-process-panel__icon {
+    position: relative;
+    z-index: 1;
+    width: 2.75rem;
+    height: 2.75rem;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1.15rem;
+    border-radius: 12px;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    color: var(--primary);
+    font-size: 1.35rem;
+}
+
+.custom-process-panel__intro h3,
+.custom-scrum-panel__head h3 {
+    position: relative;
+    z-index: 1;
+    color: var(--text-dark);
+    font-size: clamp(1.08rem, 1.5vw, 1.28rem);
+    font-weight: 600;
+    line-height: 1.32;
+    margin-bottom: 0.75rem;
+}
+
+.custom-process-panel__intro p,
+.custom-scrum-panel__head p {
+    position: relative;
+    z-index: 1;
+    color: var(--text-gray);
+    line-height: 1.7;
+    margin: 0;
+}
+
+.custom-transparency-card {
+    padding: clamp(1.25rem, 2vw, 1.65rem);
+}
+
+.custom-transparency-card h4 {
+    color: var(--primary);
+    font-size: 1.05rem;
+    font-weight: 600;
+    line-height: 1.35;
+    margin-bottom: 1rem;
+}
+
+.custom-transparency-list {
+    display: grid;
+    gap: 0.85rem;
+    list-style: none;
+    margin: 0;
+}
+
+.custom-transparency-item {
+    display: grid;
+    grid-template-columns: 2.1rem minmax(0, 1fr);
+    gap: 0.85rem;
+    align-items: start;
+    color: var(--text-gray);
+    line-height: 1.62;
+}
+
+.custom-transparency-icon {
+    width: 1.65rem;
+    height: 1.65rem;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 0.22rem;
+    color: var(--primary);
+    font-size: 1.22rem;
+    line-height: 1;
+}
+
+.custom-transparency-item strong {
+    color: var(--text-dark);
+    font-weight: 600;
+}
+
+.custom-scrum-panel {
+    padding: clamp(1.35rem, 2.6vw, 2.1rem);
+}
+
+.custom-scrum-panel__head {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 2rem;
+    margin-bottom: 1.65rem;
+}
+
+.custom-scrum-panel__head > div {
+    flex: 0 0 auto;
+}
+
+.custom-scrum-panel__head p {
+    max-width: 34rem;
+    text-align: right;
+}
+
+.custom-scrum-panel__eyebrow {
+    display: inline-flex;
+    align-items: center;
+    margin-bottom: 0.5rem;
+    color: var(--primary);
+    font-size: 0.76rem;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+}
+
+.custom-scrum-flow {
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+    gap: clamp(0.55rem, 1.3vw, 0.95rem);
+    isolation: isolate;
+}
+
+.custom-scrum-flow__line {
+    position: absolute;
+    z-index: 0;
+    top: 2rem;
+    left: 10%;
+    right: 10%;
+    height: 2px;
+    background: var(--border);
+}
+
+.custom-scrum-step {
+    position: relative;
+    z-index: 1;
+    display: grid;
+    justify-items: center;
+    gap: 0.8rem;
+    min-width: 0;
+    text-align: center;
+}
+
+.custom-scrum-step__num {
+    width: 4rem;
+    height: 4rem;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid var(--primary);
+    border-radius: 999px;
+    background: var(--surface);
+    color: var(--primary);
+    font-size: 0.9rem;
+    font-weight: 600;
+    line-height: 1;
+}
+
+.custom-scrum-step.is-active .custom-scrum-step__num {
+    background: var(--button-primary-bg);
+    color: var(--button-primary-text);
+    border-color: var(--button-primary-bg);
+}
+
+.custom-scrum-step__card {
+    width: 100%;
+    min-height: 6.15rem;
+    display: grid;
+    align-content: start;
+    padding: 0.9rem 0.75rem;
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    background: var(--secondary-bg);
+}
+
+.custom-scrum-step.is-active .custom-scrum-step__card {
+    border-color: var(--primary);
+    background: var(--primary-subtle);
+}
+
+.custom-scrum-step__card h4 {
+    color: var(--text-dark);
+    font-size: 0.92rem;
+    font-weight: 600;
+    line-height: 1.25;
+    margin-bottom: 0.38rem;
+}
+
+.custom-scrum-step__card p {
+    min-height: 2.55em;
+    color: var(--text-gray);
+    font-size: 0.78rem;
+    line-height: 1.34;
+    margin: 0;
+    overflow: hidden;
+    overflow-wrap: anywhere;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+
+.custom-scrum-governance {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.65rem;
+    width: min(100%, 46rem);
+    margin: 1.25rem auto 0;
+    padding: 0.85rem 1rem;
+    border: 1px solid var(--border);
+    border-radius: 999px;
+    background: var(--primary-subtle);
+    color: var(--primary);
+    text-align: center;
+}
+
+.custom-scrum-governance .material-symbols-rounded {
+    font-size: 1.15rem;
+    line-height: 1;
+}
+
+.custom-scrum-governance strong {
+    color: var(--primary);
+    font-size: 0.9rem;
+    font-weight: 600;
+    line-height: 1.35;
+}
+
+.services-tech-icon {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 0 0 auto;
+    border-radius: 8px;
+    background: var(--button-primary-bg);
+    color: var(--button-primary-text);
+}
+
+.services-tech-icon--subtle {
+    background: var(--primary-subtle);
+    color: var(--primary);
+    border: 1px solid var(--border);
+}
+
+.services-tech-icon .material-symbols-rounded {
+    color: currentColor;
+    font-size: 1.5rem;
+}
+
 /* SCRUM delivery operating model */
 .scrum-operating-section {
     background: var(--secondary-bg);
@@ -3498,6 +3799,20 @@ div[style*="border-radius: 16px"] {
     .solution-expansion-map__node::before {
         content: none;
     }
+
+    .custom-process-panel {
+        grid-template-columns: 1fr;
+    }
+
+    .custom-scrum-panel__head {
+        flex-direction: column;
+        gap: 0.85rem;
+    }
+
+    .custom-scrum-panel__head p {
+        max-width: none;
+        text-align: left;
+    }
 }
 
 /* Footer responsive grid */
@@ -3642,6 +3957,72 @@ div[style*="border-radius: 16px"] {
 
     .scrum-flow-node::before {
         content: none;
+    }
+
+    .custom-delivery-stack {
+        margin-bottom: 3rem;
+    }
+
+    .custom-process-panel,
+    .custom-scrum-panel {
+        padding: 1.15rem;
+    }
+
+    .custom-transparency-card,
+    .custom-process-panel__intro {
+        padding: 1.1rem;
+    }
+
+    .custom-transparency-item {
+        grid-template-columns: 1.85rem minmax(0, 1fr);
+        gap: 0.72rem;
+    }
+
+    .custom-transparency-icon {
+        width: 1.45rem;
+        height: 1.45rem;
+        margin-top: 0.25rem;
+        font-size: 1.1rem;
+    }
+
+    .custom-scrum-flow {
+        grid-template-columns: 1fr;
+        gap: 0.72rem;
+    }
+
+    .custom-scrum-flow__line {
+        top: 1.35rem;
+        bottom: 1.35rem;
+        left: 1.35rem;
+        right: auto;
+        width: 2px;
+        height: auto;
+    }
+
+    .custom-scrum-step {
+        grid-template-columns: 2.7rem minmax(0, 1fr);
+        gap: 0.75rem;
+        justify-items: start;
+        align-items: start;
+        text-align: left;
+    }
+
+    .custom-scrum-step__num {
+        width: 2.7rem;
+        height: 2.7rem;
+        font-size: 0.76rem;
+    }
+
+    .custom-scrum-step__card {
+        min-height: auto;
+        padding: 0.85rem;
+    }
+
+    .custom-scrum-governance {
+        border-radius: 14px;
+        align-items: flex-start;
+        justify-content: flex-start;
+        text-align: left;
     }
 
     .solution-context,

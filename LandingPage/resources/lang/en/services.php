@@ -55,6 +55,7 @@ return [
         'full_visibility_desc' => 'Visibility into backlog, source control, delivery status, and open risks',
         'cycle_title' => 'SCRUM Development Cycle',
         'cycle_desc' => 'Short cycles with client participation to keep the system aligned with operating goals.',
+        'cycle_kicker' => 'Controlled delivery cycle',
         'cycle_2week' => '2-Week',
         'cycle_sprint' => 'Sprint',
         'delivery_map' => [

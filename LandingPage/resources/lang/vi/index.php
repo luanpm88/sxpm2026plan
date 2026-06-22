@@ -2,13 +2,21 @@
 
 return [
     // Pain section
-    'pain_title' => 'Khi phần mềm trở thành điểm nghẽn vận hành',
-    'pain_subtitle' => 'Những vấn đề này thường xuất hiện khi hệ thống phát triển nhanh hơn nền tảng kỹ thuật và mô hình quản trị.',
-    'pain_1' => 'Dự án chậm tiến độ nhưng ban lãnh đạo không có đủ dữ liệu để nhìn rõ nguyên nhân.',
-    'pain_2' => 'Hệ thống quá tải khi lưu lượng tăng; mở rộng đồng nghĩa với sửa chữa lớn hoặc viết lại.',
-    'pain_3' => 'Công cụ có sẵn không khớp quy trình thật, khiến đội ngũ phải làm việc vòng qua hệ thống.',
-    'pain_4' => 'Mã nguồn thiếu tài liệu, phụ thuộc vào vài cá nhân và khó chuyển giao cho đội vận hành.',
-    'section_pain' => 'VẤN ĐỀ',
+    'pain_title' => 'Khi hệ thống phần mềm bắt đầu cản nhịp vận hành',
+    'pain_subtitle' => 'Những tín hiệu này thường xuất hiện khi quy mô vận hành, dữ liệu và yêu cầu kiểm soát phát triển nhanh hơn nền tảng kỹ thuật hiện có.',
+    'pain_1_kicker' => 'Minh bạch điều hành',
+    'pain_1_title' => 'Tiến độ lệch nhưng khó thấy nguyên nhân thật',
+    'pain_1_desc' => 'Ban lãnh đạo phải ra quyết định từ báo cáo rời rạc, thiếu dấu vết dữ liệu và không nhìn được điểm nghẽn nằm ở quy trình, con người hay hệ thống.',
+    'pain_2_kicker' => 'Hiệu năng & mở rộng',
+    'pain_2_title' => 'Tăng trưởng kéo theo sửa chữa lớn',
+    'pain_2_desc' => 'Khi người dùng, dữ liệu hoặc giao dịch tăng, hệ thống bắt đầu chậm, khó tích hợp và mỗi lần mở rộng lại giống một dự án tái cấu trúc tốn kém.',
+    'pain_3_kicker' => 'Phù hợp nghiệp vụ',
+    'pain_3_title' => 'Công cụ có sẵn không theo đúng cách doanh nghiệp vận hành',
+    'pain_3_desc' => 'Quy trình thực tế bị ép vào phần mềm đóng gói, khiến đội ngũ phải xử lý ngoài hệ thống bằng Excel, chat, email hoặc thao tác thủ công.',
+    'pain_4_kicker' => 'Sở hữu & chuyển giao',
+    'pain_4_title' => 'Hệ thống phụ thuộc vào vài cá nhân',
+    'pain_4_desc' => 'Mã nguồn thiếu tài liệu, logic nghiệp vụ không được chuẩn hóa và đội vận hành khó tiếp nhận, khiến chi phí bảo trì tăng theo thời gian.',
+    'section_pain' => 'VẤN ĐỀ VẬN HÀNH',
 
     'services_title' => 'Năm nhóm năng lực triển khai phần mềm',
     'services_subtitle' => 'Từ tư vấn quy trình ngành, hệ thống theo nghiệp vụ riêng, nền tảng SaaS, AI ứng dụng đến bảo mật và vận hành hệ thống doanh nghiệp.',

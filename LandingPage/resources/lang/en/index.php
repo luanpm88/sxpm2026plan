@@ -2,13 +2,21 @@
 
 return [
     // Pain section
-    'pain_title' => 'When Software Becomes an Operational Bottleneck',
-    'pain_subtitle' => 'These issues usually appear when the system grows faster than the engineering foundation and governance model.',
-    'pain_1' => 'Projects slip, but leadership does not have enough visibility to see the real cause.',
-    'pain_2' => 'The system struggles under higher traffic, and scaling starts to mean major repair or rewrite.',
-    'pain_3' => 'Off-the-shelf tools do not match the real workflow, so teams work around the system.',
-    'pain_4' => 'The codebase lacks documentation, depends on a few people, and is hard to hand over.',
-    'section_pain' => 'THE PROBLEM',
+    'pain_title' => 'When software starts slowing the business down',
+    'pain_subtitle' => 'These signals usually appear when operations, data, and control requirements grow faster than the system foundation behind them.',
+    'pain_1_kicker' => 'Management visibility',
+    'pain_1_title' => 'Delays happen, but the real cause stays unclear',
+    'pain_1_desc' => 'Leadership has to act on fragmented reports, weak audit trails, and limited visibility into whether the constraint is process, people, data, or software.',
+    'pain_2_kicker' => 'Performance & scale',
+    'pain_2_title' => 'Growth turns into recurring repair work',
+    'pain_2_desc' => 'As users, data, and transactions increase, the system slows down, integrations become harder, and every expansion begins to look like a costly rebuild.',
+    'pain_3_kicker' => 'Workflow fit',
+    'pain_3_title' => 'Generic tools do not match the way teams operate',
+    'pain_3_desc' => 'Real workflows are forced into rigid software, so teams fall back to spreadsheets, chat, email, and manual work outside the system.',
+    'pain_4_kicker' => 'Ownership & handover',
+    'pain_4_title' => 'The platform depends on a few key people',
+    'pain_4_desc' => 'Documentation is thin, business logic is not explicit, and operations teams struggle to take ownership, making maintenance more expensive over time.',
+    'section_pain' => 'OPERATIONAL RISKS',
 
     'services_title' => 'Five Core Software Delivery Capabilities',
     'services_subtitle' => 'From industry process consulting and custom systems to SaaS platforms, applied AI, and secure enterprise operations.',

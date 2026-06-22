@@ -4743,35 +4743,115 @@ html[data-theme="dark"] a[style*="background: linear-gradient(135deg, #fef3c7"] 
 .pain-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 1.25rem;
-    max-width: 800px;
+    gap: 1rem;
+    max-width: 940px;
     margin: 0 auto;
 }
 .pain-card {
+    position: relative;
     display: flex;
     align-items: flex-start;
-    gap: 0.85rem;
-    padding: 1.25rem 1.5rem;
+    gap: 1rem;
+    min-height: 188px;
+    padding: 1.35rem;
     background: var(--surface);
-    border: 1px solid var(--border);
-    border-radius: var(--card-radius);
-    border-left: 3px solid var(--primary);
+    border: 1px solid color-mix(in srgb, var(--border) 82%, var(--primary));
+    border-radius: calc(var(--card-radius) + 2px);
+    box-shadow: 0 18px 44px color-mix(in srgb, var(--primary) 6%, transparent);
+    overflow: hidden;
+    transition: transform 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease;
+}
+.pain-card::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    background:
+        linear-gradient(135deg, color-mix(in srgb, var(--primary-subtle) 52%, transparent), transparent 44%),
+        radial-gradient(circle at 92% 18%, color-mix(in srgb, var(--primary) 9%, transparent), transparent 34%);
+    opacity: 0.72;
+}
+.pain-card::after {
+    content: "";
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    width: 4.25rem;
+    height: 4.25rem;
+    border: 1px solid color-mix(in srgb, var(--primary) 10%, transparent);
+    border-radius: 50%;
+    opacity: 0.42;
+}
+.pain-card:hover {
+    transform: translateY(-2px);
+    border-color: color-mix(in srgb, var(--primary) 24%, var(--border));
+    box-shadow: 0 22px 56px color-mix(in srgb, var(--primary) 10%, transparent);
 }
 .pain-icon {
+    position: relative;
+    z-index: 1;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 3rem;
+    height: 3rem;
+    flex: 0 0 3rem;
+    background: color-mix(in srgb, var(--primary-subtle) 74%, var(--surface));
+    border: 1px solid color-mix(in srgb, var(--primary) 12%, var(--border));
+    border-radius: 0.9rem;
     color: var(--primary);
-    font-size: 1.3rem;
-    margin-top: 1px;
-    flex-shrink: 0;
+}
+.pain-icon .material-symbols-rounded {
+    font-size: 1.45rem;
+    font-variation-settings: 'FILL' 0, 'wght' 500, 'GRAD' 0, 'opsz' 24;
+}
+.pain-card__body {
+    position: relative;
+    z-index: 1;
+    min-width: 0;
+}
+.pain-kicker {
+    display: inline-flex;
+    margin-bottom: 0.35rem;
+    color: var(--primary);
+    font-size: 0.72rem;
+    font-weight: 600;
+    line-height: 1.2;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+}
+.pain-card__title {
+    margin: 0 0 0.45rem;
+    color: var(--text-dark);
+    font-size: clamp(1rem, 1.35vw, 1.14rem);
+    font-weight: 600;
+    line-height: 1.32;
 }
 .pain-text {
-    font-size: 0.9rem;
-    color: var(--text-dark);
+    margin: 0;
+    color: var(--text-gray);
+    font-size: 0.94rem;
     line-height: 1.6;
-    font-weight: 500;
+    font-weight: 400;
+}
+html[data-theme="dark"] .pain-card {
+    background: var(--surface-elevated);
+    border-color: color-mix(in srgb, var(--border) 82%, var(--primary));
+    box-shadow: 0 18px 44px color-mix(in srgb, var(--surface-contrast) 34%, transparent);
+}
+html[data-theme="dark"] .pain-card::before {
+    opacity: 0.28;
+}
+html[data-theme="dark"] .pain-icon {
+    background: color-mix(in srgb, var(--surface) 82%, var(--primary-subtle));
 }
 @media (max-width: 600px) {
     .pain-grid {
         grid-template-columns: 1fr;
+    }
+    .pain-card {
+        min-height: auto;
+        padding: 1.15rem;
     }
 }
 

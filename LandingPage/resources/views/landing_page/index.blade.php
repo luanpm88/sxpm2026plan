@@ -66,13 +66,31 @@
                 <p class="section-subtitle">{{ __('index.pain_subtitle') }}</p>
             </div>
 
+            @php
+                $painItems = [
+                    ['icon' => 'query_stats', 'tone' => 'visibility'],
+                    ['icon' => 'speed', 'tone' => 'scale'],
+                    ['icon' => 'account_tree', 'tone' => 'workflow'],
+                    ['icon' => 'assignment_late', 'tone' => 'handover'],
+                ];
+            @endphp
+
             <div class="pain-grid">
-                @for($i = 1; $i <= 4; $i++)
-                <div class="pain-card">
-                    <span class="pain-icon material-symbols-rounded">warning</span>
-                    <p class="pain-text">{{ __('index.pain_' . $i) }}</p>
-                </div>
-                @endfor
+                @foreach($painItems as $index => $item)
+                @php
+                    $painIndex = $index + 1;
+                @endphp
+                <article class="pain-card pain-card--{{ $item['tone'] }}">
+                    <div class="pain-icon" aria-hidden="true">
+                        <span class="material-symbols-rounded">{{ $item['icon'] }}</span>
+                    </div>
+                    <div class="pain-card__body">
+                        <span class="pain-kicker">{{ __('index.pain_' . $painIndex . '_kicker') }}</span>
+                        <h3 class="pain-card__title">{{ __('index.pain_' . $painIndex . '_title') }}</h3>
+                        <p class="pain-text">{{ __('index.pain_' . $painIndex . '_desc') }}</p>
+                    </div>
+                </article>
+                @endforeach
             </div>
         </div>
     </section>

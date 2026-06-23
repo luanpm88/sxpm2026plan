@@ -48,12 +48,13 @@ Expected:
 
 ## Last verified deploy
 
-- Date: 2026-06-21 ICT
-- Commit: `b624be5` (`Refine HKIncotech enterprise copy`)
+- Date: 2026-06-23 ICT
+- Commit: `28e7c85` (`Block crawler indexing on demo`)
 - Verified live URL: `https://demo.hkincotech.com`
-- Verified routes: `/vi`, `/en`, `/vi/services`, `/en/services`
-- Verified live body: `/vi` returns the updated enterprise positioning copy
-  (`Đối tác kỹ thuật`, `Năm nhóm năng lực triển khai phần mềm`, `Tư vấn quy trình & chuẩn ngành`).
+- Verified routes: `/en`, `/vi/pricing`
+- Verified demo indexing guard:
+  - `https://demo.hkincotech.com/robots.txt` returns `User-agent: *` and `Disallow: /`.
+  - Demo host pages render `<meta name="robots" content="noindex, nofollow, noarchive, nosnippet">`.
 - Verified logo asset on server: `/home/hkincotech/hkincotech/LandingPage/public/img/logo.svg`
 - Official logo / primary brand navy: `#183060`
 
@@ -116,6 +117,10 @@ curl -I -s https://demo.hkincotech.com/vi/contact
 # deployed commit; safe.directory is needed when checking as hkadmin
 ssh hkspace-ssd "cd /home/hkincotech/hkincotech && git -c safe.directory=/home/hkincotech/hkincotech rev-parse --short HEAD"
 
+# demo must stay non-indexable while public content is still being reviewed
+curl -fsSL https://demo.hkincotech.com/robots.txt
+curl -fsSL https://demo.hkincotech.com/vi/pricing | rg -n '<meta name="robots"'
+
 # logo color check; current official brand navy should appear in the SVG
 ssh hkspace-ssd "grep -o '#183060' /home/hkincotech/hkincotech/LandingPage/public/img/logo.svg | wc -l"
 ```
@@ -124,6 +129,7 @@ Expected:
 
 - HTTP routes return `200`.
 - Git HEAD matches the pushed deploy commit.
+- Demo robots is `Disallow: /`, and demo pages include `noindex, nofollow, noarchive, nosnippet`.
 - Logo color grep returns a positive count. On 2026-06-20 it returned `13`.
 
 ## Rollback

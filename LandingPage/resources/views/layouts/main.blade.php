@@ -1,12 +1,15 @@
 <!DOCTYPE html>
 <html lang="{{ app()->getLocale() }}">
 <head>
+    @php
+        $isDemoHost = request()->getHost() === 'demo.hkincotech.com';
+    @endphp
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="{{ $pageDescription ?? 'HKIncotech - Enterprise Software Engineering' }}">
     <title>{{ $pageTitle ?? 'HKIncotech' }}</title>
     <meta name="keywords" content="enterprise software development Vietnam, custom software development Southeast Asia, SaaS development company, offshore development team Vietnam, MVP development service, cloud-native application development, AI integration enterprise software">
-    <meta name="robots" content="index, follow">
+    <meta name="robots" content="{{ $isDemoHost ? 'noindex, nofollow, noarchive, nosnippet' : 'index, follow' }}">
     <link rel="canonical" href="{{ url()->current() }}">
 
     <!-- Hreflang for multilingual SEO -->

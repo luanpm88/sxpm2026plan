@@ -622,7 +622,7 @@ return [
 
     // Solution Packages Section
     'packages_title' => 'Solution Packages & Budget Reference',
-    'packages_subtitle' => 'Indicative investment ranges for planning and budgeting. Final scope and pricing are confirmed after process assessment.',
+    'packages_subtitle' => 'Indicative investment ranges for planning and budgeting, not an official quotation. Final scope, taxes, infrastructure costs, and pricing are confirmed after process assessment.',
 
     'packages' => [
         [
@@ -680,8 +680,8 @@ return [
     'commercial_notes_kicker' => 'Commercial principles',
     'commercial_notes_title' => 'Important Commercial Notes',
     'commercial_notes_items' => [
-        'All budget values are advisory ranges for planning and procurement preparation.',
-        'Final cost is defined by scope complexity, integration depth, data migration needs, and target timeline.',
+        'All budget values are advisory ranges for planning and procurement preparation, not a quotation or commercial commitment.',
+        'Final cost is defined by scope complexity, integration depth, data migration needs, taxes, infrastructure costs, and target timeline.',
         'Additional change requests outside approved scope are estimated separately by effort and contract appendix.',
     ],
 ];

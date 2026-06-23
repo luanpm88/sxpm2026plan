@@ -622,7 +622,7 @@ return [
 
     // Solution Packages Section
     'packages_title' => 'Phạm vi giải pháp & ngân sách tham chiếu',
-    'packages_subtitle' => 'Các dải đầu tư dùng cho lập kế hoạch ngân sách ban đầu. Phạm vi và chi phí cuối cùng được xác nhận sau khi đánh giá quy trình.',
+    'packages_subtitle' => 'Các dải đầu tư dùng cho lập kế hoạch ngân sách ban đầu, chưa phải báo giá chính thức. Phạm vi, VAT, hạ tầng và chi phí cuối cùng được xác nhận sau khi đánh giá quy trình.',
 
     'packages' => [
         [
@@ -680,8 +680,8 @@ return [
     'commercial_notes_kicker' => 'Nguyên tắc thương mại',
     'commercial_notes_title' => 'Lưu ý thương mại quan trọng',
     'commercial_notes_items' => [
-        'Tất cả giá trị ngân sách là dải tham chiếu phục vụ lập kế hoạch và chuẩn bị mua hàng.',
-        'Chi phí cuối cùng phụ thuộc vào độ phức tạp phạm vi, độ sâu tích hợp, nhu cầu chuyển đổi dữ liệu và lịch trình mục tiêu.',
+        'Tất cả giá trị ngân sách là dải tham chiếu phục vụ lập kế hoạch và chuẩn bị mua hàng, không phải báo giá hay cam kết thương mại.',
+        'Chi phí cuối cùng phụ thuộc vào độ phức tạp phạm vi, độ sâu tích hợp, nhu cầu chuyển đổi dữ liệu, VAT, hạ tầng và lịch trình mục tiêu.',
         'Yêu cầu thay đổi ngoài phạm vi đã duyệt sẽ được ước tính riêng theo nỗ lực và phụ lục hợp đồng.',
     ],
 ];

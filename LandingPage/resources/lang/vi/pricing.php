@@ -10,7 +10,7 @@ return [
     'section_faq' => 'CÂU HỎI THƯỜNG GẶP',
 
     'plans_title' => 'Ngân sách tham khảo',
-    'plans_subtitle' => 'Mức giá dưới đây chỉ mang tính tham khảo. Chi phí thực tế phụ thuộc vào yêu cầu cụ thể của dự án.',
+    'plans_subtitle' => 'Các mức dưới đây là tham chiếu lập ngân sách, chưa phải báo giá hay cam kết thương mại. Chi phí chính thức, VAT, hạ tầng và điều khoản thanh toán được xác nhận sau khi làm rõ phạm vi.',
 
     'plans' => [
         [
@@ -112,7 +112,7 @@ return [
 
     'faqs' => [
         ['q' => 'Làm sao biết dự án của tôi thuộc phạm vi nào?', 'a' => 'Chúng tôi trao đổi trực tiếp để đánh giá phạm vi, độ phức tạp, rủi ro kỹ thuật và tiến độ mục tiêu. Từ đó đưa ra đề xuất chi phí và lộ trình phù hợp với bối cảnh dự án.'],
-        ['q' => 'Giá hiển thị có thể thay đổi không?', 'a' => 'Có. Giá hiển thị chỉ mang tính tham khảo. Chi phí thực tế phụ thuộc vào phạm vi chi tiết, lựa chọn công nghệ, tiến độ mục tiêu, quy mô đội ngũ và mức hỗ trợ sau triển khai.'],
+        ['q' => 'Giá hiển thị có thể thay đổi không?', 'a' => 'Có. Các mức hiển thị là tham chiếu lập ngân sách, không phải báo giá chính thức. Chi phí thực tế phụ thuộc vào phạm vi chi tiết, lựa chọn công nghệ, tiến độ mục tiêu, quy mô đội ngũ, VAT, hạ tầng và mức hỗ trợ sau triển khai.'],
         ['q' => 'Có làm dự án trọn gói không?', 'a' => 'Có, khi phạm vi, tiêu chí nghiệm thu và rủi ro kỹ thuật đã được xác định rõ. Với dự án còn cần khám phá hoặc thay đổi thường xuyên, mô hình theo thời gian và nguồn lực sẽ phù hợp hơn.'],
         ['q' => 'Có phí ẩn không?', 'a' => 'Không có phí ẩn. Chi phí hạ tầng (AWS, hosting, domain) được tách riêng và công khai từ đầu.'],
         ['q' => 'Cấu trúc thanh toán như thế nào?', 'a' => 'Thông thường xuất hóa đơn theo tháng hoặc theo mốc nghiệm thu. Với khách hàng doanh nghiệp, hai bên có thể thống nhất điều khoản riêng theo quy trình mua hàng.'],

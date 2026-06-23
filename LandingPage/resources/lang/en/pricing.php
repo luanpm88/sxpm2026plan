@@ -10,7 +10,7 @@ return [
     'section_faq' => 'FREQUENTLY ASKED',
 
     'plans_title' => 'Budget Reference Guide',
-    'plans_subtitle' => 'The ranges below are directional. Actual pricing depends on scope, complexity, timeline, team model, and support requirements.',
+    'plans_subtitle' => 'The ranges below are budget references, not an official quotation or commercial commitment. Final pricing, taxes, infrastructure costs, and payment terms are confirmed after scope review.',
 
     'plans' => [
         [
@@ -112,7 +112,7 @@ return [
 
     'faqs' => [
         ['q' => 'How do I know what scope my project falls into?', 'a' => 'We discuss the project context directly to assess scope, complexity, technical risk, and timeline. From there we provide pricing and delivery recommendations that fit the project.'],
-        ['q' => 'Can the displayed prices change?', 'a' => 'Yes. Prices are reference only. Actual pricing depends on: detailed scope, technology choices, timeline, team size, post-launch support.'],
+        ['q' => 'Can the displayed prices change?', 'a' => 'Yes. Displayed ranges are budget references, not an official quotation. Actual pricing depends on detailed scope, technology choices, timeline, team size, taxes, infrastructure costs, and post-launch support.'],
         ['q' => 'Can we do fixed-price projects?', 'a' => 'Yes, when scope, acceptance criteria, and technical risks are clear. For exploratory or frequently changing projects, a time-and-materials model is usually more suitable.'],
         ['q' => 'Are there hidden fees?', 'a' => 'No hidden fees. Infrastructure costs such as cloud, hosting, and domains are listed separately and discussed before implementation.'],
         ['q' => 'What is the payment structure?', 'a' => 'Usually monthly invoicing or milestone-based billing. Enterprise clients can align terms with their procurement process.'],

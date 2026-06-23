@@ -49,12 +49,15 @@ Expected:
 ## Last verified deploy
 
 - Date: 2026-06-23 ICT
-- Commit: `28e7c85` (`Block crawler indexing on demo`)
+- Commit: `8951a71` (`Clarify public pricing references`)
 - Verified live URL: `https://demo.hkincotech.com`
-- Verified routes: `/en`, `/vi/pricing`
+- Verified routes: `/en`, `/vi/pricing`, `/vi/solutions/sme-manufacturing`
 - Verified demo indexing guard:
   - `https://demo.hkincotech.com/robots.txt` returns `User-agent: *` and `Disallow: /`.
   - Demo host pages render `<meta name="robots" content="noindex, nofollow, noarchive, nosnippet">`.
+- Verified public pricing wording:
+  - Pricing and SME manufacturing pages state that displayed budget ranges are references, not official quotations or commercial commitments.
+  - Final pricing depends on confirmed scope, VAT/taxes, infrastructure costs, and commercial terms.
 - Verified logo asset on server: `/home/hkincotech/hkincotech/LandingPage/public/img/logo.svg`
 - Official logo / primary brand navy: `#183060`
 

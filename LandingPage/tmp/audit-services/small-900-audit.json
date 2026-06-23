@@ -1,0 +1,60 @@
+{
+  "icons": [
+    {
+      "deltaTop": 7
+    },
+    {
+      "deltaTop": 7
+    },
+    {
+      "deltaTop": 7
+    },
+    {
+      "deltaTop": 7
+    },
+    {
+      "deltaTop": 7
+    }
+  ],
+  "overflow": [],
+  "overflowCount": 0,
+  "scrollWidth": 885,
+  "stepPs": [
+    {
+      "clientHeight": 33,
+      "height": 33,
+      "lineHeight": "16.7232px",
+      "scrollHeight": 33,
+      "text": "Mục tiêu, quy trình, dữ liệu"
+    },
+    {
+      "clientHeight": 33,
+      "height": 33,
+      "lineHeight": "16.7232px",
+      "scrollHeight": 33,
+      "text": "Phạm vi, API, bảo mật"
+    },
+    {
+      "clientHeight": 33,
+      "height": 33,
+      "lineHeight": "16.7232px",
+      "scrollHeight": 33,
+      "text": "Thiết kế, lập trình, review"
+    },
+    {
+      "clientHeight": 33,
+      "height": 33,
+      "lineHeight": "16.7232px",
+      "scrollHeight": 33,
+      "text": "Demo, UAT, chất lượng"
+    },
+    {
+      "clientHeight": 33,
+      "height": 33,
+      "lineHeight": "16.7232px",
+      "scrollHeight": 33,
+      "text": "Release, support, cải tiến"
+    }
+  ],
+  "viewport": 885
+}

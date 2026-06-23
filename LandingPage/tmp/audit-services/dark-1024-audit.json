@@ -1,0 +1,33 @@
+{
+  "colors": [
+    {
+      "bg": "rgb(10, 19, 30)",
+      "border": "rgb(32, 48, 63)",
+      "color": "rgb(241, 245, 249)"
+    },
+    {
+      "bg": "rgb(10, 19, 30)",
+      "border": "rgb(32, 48, 63)",
+      "color": "rgb(241, 245, 249)"
+    },
+    {
+      "bg": "rgb(10, 19, 30)",
+      "border": "rgb(32, 48, 63)",
+      "color": "rgb(241, 245, 249)"
+    },
+    {
+      "bg": "rgb(10, 19, 30)",
+      "border": "rgb(32, 48, 63)",
+      "color": "rgb(241, 245, 249)"
+    },
+    {
+      "bg": "rgba(255, 255, 255, 0.08)",
+      "border": "rgb(248, 250, 252)",
+      "color": "rgb(241, 245, 249)"
+    }
+  ],
+  "overflow": [],
+  "overflowCount": 0,
+  "scrollWidth": 1009,
+  "viewport": 1009
+}

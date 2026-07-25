@@ -396,7 +396,7 @@
 
 
     {{-- 8. TESTIMONIALS --}}
-    <section id="testimonials" aria-labelledby="heading-testimonials" class="section-alt">
+    <section id="testimonials" aria-labelledby="heading-testimonials" class="section-alt" style="display:none;"> {{-- TẠM ẨN: chưa có dữ liệu khách hàng thật — bật lại khi có (xem docs/HIDDEN_SECTIONS.md) --}}
         <div class="container-v5">
             <div class="section-header">
                 <span class="section-label">{{ __('index.section_testimonials') }}</span>

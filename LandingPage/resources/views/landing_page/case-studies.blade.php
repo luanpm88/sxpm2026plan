@@ -136,8 +136,8 @@
         </div>
     </section>
 
-    <!-- Client Testimonials -->
-    <section style="background: var(--surface);">
+    <!-- Client Testimonials — TẠM ẨN: chưa có dữ liệu thật (xem docs/HIDDEN_SECTIONS.md) -->
+    <section style="background: var(--surface); display:none;">
         <div class="container-v5">
             <div class="section-header">
                 <span class="section-label">{{ __('case_studies.section_testimonials') }}</span>

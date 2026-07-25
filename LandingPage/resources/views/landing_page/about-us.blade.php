@@ -117,8 +117,8 @@
         </div>
     </section>
 
-    <!-- Leadership Team -->
-    <section>
+    <!-- Leadership Team — TẠM ẨN: chưa có dữ liệu thật (xem docs/HIDDEN_SECTIONS.md) -->
+    <section style="display:none;">
         <div class="container-v5">
             <div class="section-header">
                 <span class="section-label">{{ __('about.section_team') }}</span>

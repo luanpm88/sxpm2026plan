@@ -27,23 +27,34 @@
         "@@context": "https://schema.org",
         "@@type": "Organization",
         "name": "Hoàng Khang Incotech",
+        "legalName": "HOANG KHANG INFORMATION AND COMMUNICATION TECHNOLOGY SOLUTIONS COMPANY LIMITED",
+        "taxID": "0306146736",
         "url": "{{ url('/') }}",
         "logo": "{{ asset('img/logo.svg') }}",
-        "description": "Enterprise software engineering company based in Southeast Asia. 12+ years, 100+ engineers, 50+ enterprise clients.",
-        "foundingDate": "2012",
-        "numberOfEmployees": {
-            "@@type": "QuantitativeValue",
-            "minValue": 100
-        },
+        "image": "{{ asset('img/logo.svg') }}",
+        "description": "Enterprise software engineering company based in Ho Chi Minh City, Vietnam. Custom systems, SaaS platforms, applied AI, and long-term engineering ownership.",
+        "foundingDate": "2008-11-12",
+        "email": "info@hoangkhang.com.vn",
+        "telephone": "+842839847690",
         "address": {
             "@@type": "PostalAddress",
-            "streetAddress": "188 Duong So 1, Binh Hung Hoa, Binh Tan",
+            "streetAddress": "188 Đường số 1, Phường An Hội Đông",
             "addressLocality": "Ho Chi Minh City",
             "addressCountry": "VN"
         },
-        "sameAs": [],
+        "contactPoint": {
+            "@@type": "ContactPoint",
+            "telephone": "+84931103988",
+            "email": "info@hoangkhang.com.vn",
+            "contactType": "sales"
+        },
+        "sameAs": [
+            "https://www.facebook.com/hoangkhanginco/",
+            "https://www.youtube.com/@hoangkhangincotech",
+            "https://www.linkedin.com/company/79164457/"
+        ],
         "knowsAbout": ["Custom Software Development", "SaaS Platforms", "AI Solutions", "Cloud Architecture", "Manufacturing Software"],
-        "areaServed": ["Southeast Asia", "Global"]
+        "areaServed": ["Vietnam", "Southeast Asia", "Global"]
     }
     </script>
     <script type="application/ld+json">
@@ -350,6 +361,16 @@
                     <p class="footer-about">
                         {{ __('footer.about_desc') }}
                     </p>
+                    <ul class="footer-contact">
+                        <li><span class="material-symbols-rounded">location_on</span><span>{{ __('contact.hq_address') }}</span></li>
+                        <li><span class="material-symbols-rounded">call</span><span><a href="tel:+842839847690">(028) 3984 7690</a> · <a href="tel:+84931103988">0931 103 988</a></span></li>
+                        <li><span class="material-symbols-rounded">mail</span><span><a href="mailto:info@hoangkhang.com.vn">info@hoangkhang.com.vn</a></span></li>
+                    </ul>
+                    <div class="footer-social">
+                        <a href="https://www.facebook.com/hoangkhanginco/" target="_blank" rel="noopener" aria-label="Facebook"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M24 12.07C24 5.4 18.63 0 12 0S0 5.4 0 12.07C0 18.1 4.39 23.09 10.13 24v-8.44H7.08v-3.49h3.05V9.41c0-3.02 1.79-4.69 4.53-4.69 1.31 0 2.68.24 2.68.24v2.97h-1.5c-1.49 0-1.96.93-1.96 1.89v2.25h3.32l-.53 3.49h-2.79V24C19.61 23.09 24 18.1 24 12.07"/></svg></a>
+                        <a href="https://www.youtube.com/@hoangkhangincotech" target="_blank" rel="noopener" aria-label="YouTube"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M23.5 6.2a3.02 3.02 0 0 0-2.12-2.14C19.5 3.55 12 3.55 12 3.55s-7.5 0-9.38.51A3.02 3.02 0 0 0 .5 6.2 31.5 31.5 0 0 0 0 12a31.5 31.5 0 0 0 .5 5.8 3.02 3.02 0 0 0 2.12 2.14c1.88.51 9.38.51 9.38.51s7.5 0 9.38-.51a3.02 3.02 0 0 0 2.12-2.14A31.5 31.5 0 0 0 24 12a31.5 31.5 0 0 0-.5-5.8ZM9.6 15.6V8.4l6.2 3.6-6.2 3.6Z"/></svg></a>
+                        <a href="https://www.linkedin.com/company/79164457/" target="_blank" rel="noopener" aria-label="LinkedIn"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.03-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.45v6.29ZM5.34 7.43a2.06 2.06 0 1 1 0-4.13 2.06 2.06 0 0 1 0 4.13ZM7.12 20.45H3.55V9h3.57v11.45ZM22.22 0H1.77C.8 0 0 .78 0 1.73v20.53C0 23.22.8 24 1.77 24h20.45c.98 0 1.78-.78 1.78-1.74V1.73C24 .78 23.2 0 22.22 0Z"/></svg></a>
+                    </div>
                 </div>
 
                 <!-- Solutions -->
@@ -398,6 +419,7 @@
             </div>
 
             <div class="footer-divider">
+                <div style="opacity:.85; margin-bottom:.35rem;">{{ __('contact.legal_name') }} · {{ __('contact.tax_id_label') }}: {{ __('contact.tax_id') }}</div>
                 {{ __('footer.copyright') }}
             </div>
         </div>

@@ -51,6 +51,13 @@ return [
         'notify_name' => env('CONTACT_NOTIFY_NAME', 'Hoàng Khang Incotech'),
     ],
 
+    // Cloudflare Turnstile (spam protection on the contact form). When both keys
+    // are empty the widget is hidden and verification is skipped (graceful).
+    'turnstile' => [
+        'site_key' => env('TURNSTILE_SITE_KEY'),
+        'secret_key' => env('TURNSTILE_SECRET_KEY'),
+    ],
+
     'ga4' => [
         'id' => env('GA4_MEASUREMENT_ID'),
     ],

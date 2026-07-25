@@ -23,6 +23,12 @@ class ContactSubmissionController extends Controller
             'message' => ['required', 'string', 'max:5000'],
         ]);
 
+        if (! $this->passesTurnstile($request)) {
+            return back()
+                ->withInput()
+                ->withErrors(['contact_form' => __('contact.captcha_failed')]);
+        }
+
         $payload = [
             'submitted_at' => now()->toIso8601String(),
             'locale' => app()->getLocale(),
@@ -65,6 +71,42 @@ class ContactSubmissionController extends Controller
         }
 
         return back()->with('contact_success', __('contact.submit_success'));
+    }
+
+    /**
+     * Cloudflare Turnstile spam check. Graceful when unconfigured (returns true),
+     * and fails OPEN on a network error so a Cloudflare outage never drops a real
+     * lead — only an explicit "success:false" from Cloudflare blocks the submit.
+     */
+    private function passesTurnstile(Request $request): bool
+    {
+        $secret = trim((string) config('services.turnstile.secret_key', ''));
+
+        if ($secret === '') {
+            return true; // not configured yet
+        }
+
+        $token = (string) $request->input('cf-turnstile-response', '');
+        if ($token === '') {
+            return false; // widget present but not solved
+        }
+
+        try {
+            $response = Http::asForm()->timeout(10)
+                ->post('https://challenges.cloudflare.com/turnstile/v0/siteverify', [
+                    'secret' => $secret,
+                    'response' => $token,
+                    'remoteip' => $request->ip(),
+                ]);
+
+            return $response->json('success') === true;
+        } catch (\Throwable $e) {
+            Log::warning('Turnstile verify unreachable — allowing submission', [
+                'message' => $e->getMessage(),
+            ]);
+
+            return true; // fail open: never lose a lead to a CF outage
+        }
     }
 
     private function sendEmail(array $payload): array

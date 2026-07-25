@@ -56,6 +56,7 @@ return [
     'learn_more_subtitle' => 'Share operating context, system goals, and priority scope so the Hoang Khang team can recommend a practical delivery direction.',
     'submit_success'      => 'Thanks! Your request has been received. Our team will get back to you shortly.',
     'submit_failed'       => 'Sorry, we could not submit your request right now. Please try again in a moment.',
+    'captcha_failed'      => 'Please complete the anti-spam check and try again.',
     'integration_not_configured' => 'Contact form integration is not configured yet. Please set up Google Sheets or Telegram.',
 
     'project_types' => [

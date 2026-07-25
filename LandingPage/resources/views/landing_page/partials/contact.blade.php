@@ -93,6 +93,11 @@
                         @enderror
                     </div>
 
+                    @if(config('services.turnstile.site_key'))
+                        <script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
+                        <div class="cf-turnstile" data-sitekey="{{ config('services.turnstile.site_key') }}" data-theme="auto"></div>
+                    @endif
+
                     <button type="submit" style="background: var(--button-primary-bg); color: var(--button-primary-text); padding: 1rem 2rem; border: none; border-radius: 8px; font-weight: 600; font-size: 1rem; cursor: pointer; transition: all 0.3s ease;" onmouseover="this.style.backgroundColor='var(--button-primary-hover-bg)';" onmouseout="this.style.backgroundColor='var(--button-primary-bg)';">
                         {{ __('contact.send_message') }}
                     </button>

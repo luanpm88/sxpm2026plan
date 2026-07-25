@@ -119,7 +119,16 @@ class ContactSubmissionController extends Controller
 
         try {
             $name = (string) config('services.contact.notify_name', 'Contact');
-            Mail::to($to, $name)->send(new ContactLeadMail($payload));
+            $cc = array_values(array_filter(array_map(
+                'trim',
+                preg_split('/[,;]+/', (string) config('services.contact.notify_cc', '')) ?: []
+            )));
+
+            $mailer = Mail::to($to, $name);
+            if (! empty($cc)) {
+                $mailer->cc($cc);
+            }
+            $mailer->send(new ContactLeadMail($payload));
 
             return ['configured' => true, 'ok' => true];
         } catch (\Throwable $e) {

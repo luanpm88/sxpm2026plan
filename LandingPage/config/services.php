@@ -49,6 +49,8 @@ return [
     'contact' => [
         'notify_to' => env('CONTACT_NOTIFY_TO', 'info@hoangkhang.com.vn'),
         'notify_name' => env('CONTACT_NOTIFY_NAME', 'Hoàng Khang Incotech'),
+        // CC recipients (comma/semicolon separated) so no team member misses a lead.
+        'notify_cc' => env('CONTACT_NOTIFY_CC', 'luanpm@hoangkhang.com.vn,soft.support@hoangkhang.com.vn'),
     ],
 
     // Cloudflare Turnstile (spam protection on the contact form). When both keys

@@ -47,7 +47,7 @@ return [
 
     // Positioning Section
     'positioning_title' => 'Định vị giải pháp: năng lực phần mềm cho vận hành sản xuất',
-    'positioning_subtitle' => 'Chúng tôi không bán một mẫu phần mềm đóng gói. HKIncotech cùng doanh nghiệp chuẩn hóa nghiệp vụ, thiết kế kiến trúc và triển khai hệ thống theo mức độ trưởng thành vận hành.',
+    'positioning_subtitle' => 'Chúng tôi không bán một mẫu phần mềm đóng gói. Hoàng Khang Incotech cùng doanh nghiệp chuẩn hóa nghiệp vụ, thiết kế kiến trúc và triển khai hệ thống theo mức độ trưởng thành vận hành.',
 
     'positioning_context_heading' => 'Cách tiếp cận của trang giải pháp này',
     'positioning_context_p1' => 'Trang này mô tả một khung triển khai cho các nhà máy cần số hóa sản xuất, kho, đóng gói, chất lượng và báo cáo quản trị. Mỗi mô-đun được thiết kế để có thể tùy biến theo SOP thực tế nhưng vẫn giữ kiến trúc nhất quán.',
@@ -408,7 +408,7 @@ return [
     ],
 
     // Why Us Section
-    'why_us_title' => 'Vì sao HKIncotech phù hợp cho hệ thống sản xuất',
+    'why_us_title' => 'Vì sao Hoàng Khang Incotech phù hợp cho hệ thống sản xuất',
     'why_us_subtitle' => 'Chúng tôi tiếp cận bài toán nhà máy bằng kỷ luật kỹ thuật, quản trị triển khai và trách nhiệm vận hành dài hạn.',
     'why_us_kicker' => 'Năng lực triển khai',
 
@@ -460,7 +460,7 @@ return [
     ],
 
     'why_us_capability_title' => 'Hồ sơ năng lực cho ban lãnh đạo nhà máy',
-    'why_us_capability_desc' => 'HKIncotech kết hợp hiểu biết quy trình nhà máy, năng lực phát triển hệ thống doanh nghiệp và quản trị triển khai có cấu trúc. Mục tiêu là xây dựng nền tảng vận hành có thể duy trì, nghiệm thu được và mở rộng dài hạn, thay vì chỉ giao từng tính năng rời rạc.',
+    'why_us_capability_desc' => 'Hoàng Khang Incotech kết hợp hiểu biết quy trình nhà máy, năng lực phát triển hệ thống doanh nghiệp và quản trị triển khai có cấu trúc. Mục tiêu là xây dựng nền tảng vận hành có thể duy trì, nghiệm thu được và mở rộng dài hạn, thay vì chỉ giao từng tính năng rời rạc.',
     'why_us_capability_points' => [
         [
             'label' => 'Quy trình',
@@ -617,7 +617,7 @@ return [
 
     // CTA Section
     'cta_title' => 'Trao đổi lộ trình số hóa nhà máy',
-    'cta_description' => 'HKIncotech có thể cùng đội ngũ vận hành rà soát hiện trạng, xác định phạm vi ưu tiên và đề xuất lộ trình triển khai phù hợp với cách nhà máy đang vận hành.',
+    'cta_description' => 'Hoàng Khang Incotech có thể cùng đội ngũ vận hành rà soát hiện trạng, xác định phạm vi ưu tiên và đề xuất lộ trình triển khai phù hợp với cách nhà máy đang vận hành.',
     'cta_button' => 'Trao đổi lộ trình',
 
     // Solution Packages Section

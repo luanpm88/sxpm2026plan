@@ -118,10 +118,10 @@ return [
         ['q' => 'What is the payment structure?', 'a' => 'Usually monthly invoicing or milestone-based billing. Enterprise clients can align terms with their procurement process.'],
         ['q' => 'Can we scale the team up/down during the project?', 'a' => 'Absolutely. You can increase or decrease team size based on needs with advance notice.'],
         ['q' => 'Does pricing include post-launch support?', 'a' => 'Yes. Post-launch support duration varies by plan: 30 days (MVP), 90 days (Growth), 6-12 months (Enterprise).'],
-        ['q' => 'Who owns the code after the project?', 'a' => 'Source-code ownership is defined clearly in the agreement. For custom development engagements, HKIncotech hands over source code, documentation, and deployment guidance according to the agreed scope.'],
+        ['q' => 'Who owns the code after the project?', 'a' => 'Source-code ownership is defined clearly in the agreement. For custom development engagements, Hoàng Khang Incotech hands over source code, documentation, and deployment guidance according to the agreed scope.'],
     ],
 
     'cta_title' => 'Does your project have a specific scope?',
-    'cta_desc' => 'HKIncotech can clarify scope, complexity, team model, and delivery roadmap before proposing a realistic budget.',
+    'cta_desc' => 'Hoàng Khang Incotech can clarify scope, complexity, team model, and delivery roadmap before proposing a realistic budget.',
     'cta_button' => 'Discuss Pricing Scope',
 ];

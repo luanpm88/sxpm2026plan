@@ -1,5 +1,5 @@
 /* ==========================================
-   HKIncotech Landing Page - Finpay-Inspired Design
+   Hoàng Khang Incotech Landing Page - Finpay-Inspired Design
    Clean, modern fintech aesthetic
    ========================================== */
 
@@ -7,10 +7,10 @@
    CSS Variables & Theme (Notion-HK Hybrid Palette)
    ========================================== */
 :root {
-    /* ── HKIncotech Enterprise palette — Deep Navy + Ink ──
+    /* ── Hoàng Khang Incotech Enterprise palette — Deep Navy + Ink ──
        Discipline: ONE brand colour (navy). Blue is structural, never decorative.
        No orange / teal / purple / rainbow. Text is near-black for crisp authority. */
-    --primary: #183060;            /* official HKIncotech navy — logo, primary buttons, highlight text */
+    --primary: #183060;            /* official Hoàng Khang Incotech navy — logo, primary buttons, highlight text */
     --primary-light: #1a4585;      /* lifted navy — button hover, gradients */
     --primary-dark: #0F203D;       /* deepest navy — active/press, dark sections */
     --logo-color: var(--primary);  /* keep HK mark + INCOTECH wordmark synced with brand navy */
@@ -370,7 +370,7 @@ html[data-theme="dark"] header {
 
 .logo img,
 .logo svg {
-    height: 30px;
+    height: 38px;
     width: auto;
     display: block;
 }

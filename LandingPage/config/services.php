@@ -44,6 +44,13 @@ return [
         'chat_id' => env('TELEGRAM_CHAT_ID'),
     ],
 
+    // Where contact-form leads are emailed. Kept here so a lead is never missed:
+    // email is a first-class delivery channel (see ContactSubmissionController).
+    'contact' => [
+        'notify_to' => env('CONTACT_NOTIFY_TO', 'info@hoangkhang.com.vn'),
+        'notify_name' => env('CONTACT_NOTIFY_NAME', 'Hoàng Khang Incotech'),
+    ],
+
     'ga4' => [
         'id' => env('GA4_MEASUREMENT_ID'),
     ],

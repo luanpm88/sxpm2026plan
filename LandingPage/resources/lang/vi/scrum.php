@@ -174,7 +174,7 @@ return [
     ],
 
     // Journey Section
-    'journey_title' => 'Hành Trình Cùng HKIncotech',
+    'journey_title' => 'Hành Trình Cùng Hoàng Khang Incotech',
     'journey_subtitle' => '6 giai đoạn từ lúc khảo sát đến khi hệ thống đi vào vận hành.',
     'journey_phase_label' => 'GĐ',
     'journey' => [
@@ -205,7 +205,7 @@ return [
     ],
 
     // Why Choose Section
-    'why_title' => 'Cách HKIncotech tổ chức dự án Agile',
+    'why_title' => 'Cách Hoàng Khang Incotech tổ chức dự án Agile',
     'why_subtitle' => 'Quản trị sprint, kiểm soát chất lượng và bàn giao phần mềm theo từng giai đoạn rõ ràng.',
     'why_items' => [
         [

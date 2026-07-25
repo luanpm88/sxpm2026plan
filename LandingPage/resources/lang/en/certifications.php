@@ -50,7 +50,7 @@ return [
     'learning_stat4_label'=> 'Project-Based Engineering Mentorship',
 
     // CTA
-    'cta_title'  => 'Partner with HKIncotech',
+    'cta_title'  => 'Partner with Hoàng Khang Incotech',
     'cta_desc'   => 'An enterprise-grade engineering team with disciplined security, cloud, AI, and controlled delivery practices.',
     'cta_button' => 'Discuss a Project',
 

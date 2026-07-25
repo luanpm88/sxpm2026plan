@@ -1,7 +1,7 @@
 <?php
 
 return [
-    'about_title' => 'Về HKIncotech',
+    'about_title' => 'Về Hoàng Khang Incotech',
     'about_desc'  => 'Đối tác kỹ thuật thiết kế, phát triển và vận hành hệ thống phần mềm doanh nghiệp, nền tảng SaaS và AI ứng dụng.',
 
     'services_title' => 'Dịch vụ',
@@ -33,5 +33,5 @@ return [
 
     'learn_title' => 'Tìm hiểu',
 
-    'copyright' => '© 2026 HKIncotech. Bảo lưu mọi quyền.',
+    'copyright' => '© 2026 Hoàng Khang Incotech. Bảo lưu mọi quyền.',
 ];

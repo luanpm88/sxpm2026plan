@@ -505,7 +505,7 @@
             </div>
         </div>
 
-        <!-- Why Choose HKIncotech for SaaS -->
+        <!-- Why Choose Hoàng Khang Incotech for SaaS -->
         <div style="background: linear-gradient(135deg, var(--secondary-bg) 0%, var(--surface) 100%); border-radius: 16px; padding: 3rem; border: 1px solid var(--border);">
             <h3 style="font-size: 1.1rem; font-weight: 600; color: var(--text-dark); text-align: center; margin-bottom: 2rem;">{{ __('services.why_us.title') }}</h3>
             <div class="card-grid" style="--card-min: 300px; --card-max: 440px; --card-gap: 2rem;">

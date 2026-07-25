@@ -2,8 +2,8 @@
 
 return [
     'title'               => 'Liên hệ',
-    'title_accent'        => 'HKIncotech',
-    'subtitle'            => 'Chia sẻ bối cảnh dự án, mục tiêu vận hành và phạm vi ưu tiên để đội ngũ HKIncotech trao đổi hướng triển khai phù hợp.',
+    'title_accent'        => 'Hoàng Khang Incotech',
+    'subtitle'            => 'Chia sẻ bối cảnh dự án, mục tiêu vận hành và phạm vi ưu tiên để đội ngũ Hoàng Khang Incotech trao đổi hướng triển khai phù hợp.',
     'form_title'          => 'Gửi thông tin dự án',
     'send_message'        => 'Gửi yêu cầu',
     'name_label'          => 'Họ và tên',
@@ -37,8 +37,8 @@ return [
     'hours_response'      => 'Đội ngũ sẽ phản hồi theo mức độ ưu tiên và nội dung yêu cầu',
     'location_kicker'     => 'Điểm kết nối',
     'location_title'      => 'Đầu mối TP.HCM, phối hợp linh hoạt theo mô hình khách hàng',
-    'location_desc'       => 'HKIncotech tiếp nhận bài toán tại Việt Nam và phối hợp từ xa với các đội nghiệp vụ, kỹ thuật hoặc vận hành ở nhiều địa điểm. Trọng tâm là làm rõ bối cảnh, thống nhất phạm vi và duy trì nhịp trao đổi minh bạch trong suốt quá trình triển khai.',
-    'location_hq_label'   => 'Văn phòng HKIncotech',
+    'location_desc'       => 'Hoàng Khang Incotech tiếp nhận bài toán tại Việt Nam và phối hợp từ xa với các đội nghiệp vụ, kỹ thuật hoặc vận hành ở nhiều địa điểm. Trọng tâm là làm rõ bối cảnh, thống nhất phạm vi và duy trì nhịp trao đổi minh bạch trong suốt quá trình triển khai.',
+    'location_hq_label'   => 'Văn phòng Hoàng Khang Incotech',
     'location_client_label' => 'Đội ngũ khách hàng',
     'location_client_scope' => 'Ban điều hành, nghiệp vụ, IT',
     'location_delivery_label' => 'Nhóm triển khai',
@@ -76,11 +76,11 @@ return [
     ],
 
     'faqs' => [
-        ['q' => 'Làm thế nào để nhận báo giá dự án?',              'a' => 'Bạn có thể gửi thông tin qua form hoặc email sales@hkincotech.com. Chúng tôi sẽ trao đổi để làm rõ phạm vi, rủi ro kỹ thuật, mô hình đội ngũ và lộ trình triển khai trước khi đề xuất chi phí.'],
+        ['q' => 'Làm thế nào để nhận báo giá dự án?',              'a' => 'Bạn có thể gửi thông tin qua form hoặc email info@hoangkhang.com.vn. Chúng tôi sẽ trao đổi để làm rõ phạm vi, rủi ro kỹ thuật, mô hình đội ngũ và lộ trình triển khai trước khi đề xuất chi phí.'],
         ['q' => 'Thời gian thực hiện dự án thường là bao lâu?',     'a' => 'Thời gian phụ thuộc vào phạm vi, độ phức tạp nghiệp vụ, mức độ tích hợp và yêu cầu vận hành. Sau bước khảo sát, chúng tôi sẽ đề xuất lộ trình theo từng giai đoạn.'],
         ['q' => 'Bạn có hỗ trợ sau khi hoàn thành dự án không?',   'a' => 'Có, tất cả dự án đều bao gồm hỗ trợ sau khi hệ thống vận hành chính thức. Phạm vi và thời gian hỗ trợ được xác định theo từng gói hợp tác.'],
         ['q' => 'Bạn sử dụng công nghệ gì?',                        'a' => 'Chúng tôi lựa chọn công nghệ theo yêu cầu kiến trúc, khả năng vận hành và đội ngũ khách hàng. Các nền tảng thường dùng gồm React, Node.js, Python, Laravel, PostgreSQL, AWS/GCP, ứng dụng di động và AI.'],
-        ['q' => 'Bạn có thể làm việc với đội ngũ hiện tại không?', 'a' => 'Có. HKIncotech có thể phối hợp với đội nội bộ của khách hàng theo mô hình đội chuyên trách, tăng cường nhân sự hoặc cùng quản trị backlog kỹ thuật.'],
+        ['q' => 'Bạn có thể làm việc với đội ngũ hiện tại không?', 'a' => 'Có. Hoàng Khang Incotech có thể phối hợp với đội nội bộ của khách hàng theo mô hình đội chuyên trách, tăng cường nhân sự hoặc cùng quản trị backlog kỹ thuật.'],
         ['q' => 'Quyền sở hữu trí tuệ được xử lý như thế nào?',   'a' => 'Quyền sở hữu mã nguồn, tài liệu và tài sản dự án được quy định rõ trong hợp đồng. Chúng tôi có thể ký NDA và các thỏa thuận bảo mật theo yêu cầu.'],
     ],
 ];

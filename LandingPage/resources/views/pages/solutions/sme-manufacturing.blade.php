@@ -1,7 +1,7 @@
 @extends('layouts.main')
 
 @section('meta')
-    <title>{{ __('sme_manufacturing.hero_title') }} - HKIncotech</title>
+    <title>{{ __('sme_manufacturing.hero_title') }} - Hoàng Khang Incotech</title>
     <meta name="description" content="{{ __('sme_manufacturing.hero_description') }}">
 @endsection
 

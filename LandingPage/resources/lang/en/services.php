@@ -404,7 +404,7 @@ return [
 
     // CTA
     'cta_title' => 'Ready to Discuss Your Project Scope?',
-    'cta_desc' => 'Share the operating context, system goals, and priority constraints so HKIncotech can recommend a practical engineering approach.',
+    'cta_desc' => 'Share the operating context, system goals, and priority constraints so Hoàng Khang Incotech can recommend a practical engineering approach.',
     'cta_button' => 'Discuss Requirements',
     'learn_process' => 'Learn Detailed Process',
 ];

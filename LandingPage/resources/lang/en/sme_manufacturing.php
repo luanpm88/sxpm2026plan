@@ -408,7 +408,7 @@ return [
     ],
 
     // Why Us Section
-    'why_us_title' => 'Why HKIncotech Fits Manufacturing Systems',
+    'why_us_title' => 'Why Hoàng Khang Incotech Fits Manufacturing Systems',
     'why_us_subtitle' => 'We approach factory software through engineering discipline, delivery governance, and long-term operating responsibility.',
     'why_us_kicker' => 'Delivery capability',
 
@@ -460,7 +460,7 @@ return [
     ],
 
     'why_us_capability_title' => 'Capability Profile for Factory Leadership',
-    'why_us_capability_desc' => 'HKIncotech combines factory process understanding, custom software engineering capability, and structured delivery governance. The goal is to build an operating platform that can be maintained, accepted, and expanded over time, rather than delivering disconnected features.',
+    'why_us_capability_desc' => 'Hoàng Khang Incotech combines factory process understanding, custom software engineering capability, and structured delivery governance. The goal is to build an operating platform that can be maintained, accepted, and expanded over time, rather than delivering disconnected features.',
     'why_us_capability_points' => [
         [
             'label' => 'Process',
@@ -617,7 +617,7 @@ return [
 
     // CTA Section
     'cta_title' => 'Discuss a Factory Digitization Roadmap',
-    'cta_description' => 'HKIncotech can work with your operations team to assess the current state, identify priority scope, and propose an implementation roadmap aligned with the way your factory actually operates.',
+    'cta_description' => 'Hoàng Khang Incotech can work with your operations team to assess the current state, identify priority scope, and propose an implementation roadmap aligned with the way your factory actually operates.',
     'cta_button' => 'Discuss the roadmap',
 
     // Solution Packages Section

@@ -5,7 +5,7 @@ return [
     'hero_title'        => 'Mở rộng &',
     'hero_title_accent' => 'Hạ tầng',
     'hero_desc1'        => 'Lộ trình mở rộng hạ tầng theo từng giai đoạn, từ phiên bản đầu tiên đến hệ thống có lưu lượng lớn, giám sát liên tục và khả năng phục hồi tốt hơn.',
-    'hero_desc2'        => 'HKIncotech thiết kế kiến trúc để hệ thống có thể tăng trưởng mà vẫn kiểm soát được chi phí, hiệu năng, bảo mật và rủi ro vận hành.',
+    'hero_desc2'        => 'Hoàng Khang Incotech thiết kế kiến trúc để hệ thống có thể tăng trưởng mà vẫn kiểm soát được chi phí, hiệu năng, bảo mật và rủi ro vận hành.',
 
     // Phases section
     'phases_title'      => '6 giai đoạn mở rộng',
@@ -23,7 +23,7 @@ return [
 
     // CTA
     'cta_title'         => 'Cần lập lộ trình mở rộng hệ thống?',
-    'cta_desc'          => 'HKIncotech có thể cùng đội ngũ của bạn đánh giá hiện trạng, xác định nút thắt và xây dựng lộ trình hạ tầng phù hợp với tăng trưởng thực tế.',
+    'cta_desc'          => 'Hoàng Khang Incotech có thể cùng đội ngũ của bạn đánh giá hiện trạng, xác định nút thắt và xây dựng lộ trình hạ tầng phù hợp với tăng trưởng thực tế.',
     'cta_button'        => 'Trao đổi lộ trình',
 
     // Phase data

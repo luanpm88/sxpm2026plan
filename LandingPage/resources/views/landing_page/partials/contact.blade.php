@@ -148,9 +148,7 @@
                         <div>
                             <h3 style="font-weight: 600; color: var(--text-dark); margin-bottom: 0.5rem;">{{ __('contact.email_title') }}</h3>
                             <p style="color: var(--text-gray); line-height: 1.6;">
-                                {{ __('contact.email_inquiry_label') }}: <a href="mailto:hello@hkincotech.com" style="color: var(--primary); text-decoration: none; font-weight: 600;">hello@hkincotech.com</a><br>
-                                {{ __('contact.email_sales_label') }}: <a href="mailto:sales@hkincotech.com" style="color: var(--primary); text-decoration: none; font-weight: 600;">sales@hkincotech.com</a><br>
-                                {{ __('contact.email_support_label') }}: <a href="mailto:support@hkincotech.com" style="color: var(--primary); text-decoration: none; font-weight: 600;">support@hkincotech.com</a>
+                                <a href="mailto:info@hoangkhang.com.vn" style="color: var(--primary); text-decoration: none; font-weight: 600;">info@hoangkhang.com.vn</a>
                             </p>
                         </div>
                     </div>
@@ -255,10 +253,10 @@
                 {{ __('contact.learn_more_subtitle') }}
             </p>
             <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
-                <a href="https://calendly.com/hkincotech/consultation" style="background: var(--contrast-action-bg); color: var(--contrast-action-text); padding: 0.75rem 2rem; border-radius: 8px; font-weight: 600; text-decoration: none; transition: all 0.3s ease;" onmouseover="this.style.opacity='0.9';" onmouseout="this.style.opacity='1';">
+                <a href="{{ route('landing.contact') }}" style="background: var(--contrast-action-bg); color: var(--contrast-action-text); padding: 0.75rem 2rem; border-radius: 8px; font-weight: 600; text-decoration: none; transition: all 0.3s ease;" onmouseover="this.style.opacity='0.9';" onmouseout="this.style.opacity='1';">
                     <span>{{ __('contact.schedule_call') }}</span>
                 </a>
-                <a href="mailto:hello@hkincotech.com" style="background: var(--contrast-glass-bg-hover); color: var(--contrast-panel-text); padding: 0.75rem 2rem; border-radius: 8px; font-weight: 600; text-decoration: none; transition: all 0.3s ease;" onmouseover="this.style.backgroundColor='var(--contrast-glass-border)';" onmouseout="this.style.backgroundColor='var(--contrast-glass-bg-hover)';">
+                <a href="mailto:info@hoangkhang.com.vn" style="background: var(--contrast-glass-bg-hover); color: var(--contrast-panel-text); padding: 0.75rem 2rem; border-radius: 8px; font-weight: 600; text-decoration: none; transition: all 0.3s ease;" onmouseover="this.style.backgroundColor='var(--contrast-glass-border)';" onmouseout="this.style.backgroundColor='var(--contrast-glass-bg-hover)';">
                     <span>{{ __('contact.email_us') }}</span>
                 </a>
             </div>

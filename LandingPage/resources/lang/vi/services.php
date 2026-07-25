@@ -404,7 +404,7 @@ return [
 
     // CTA
     'cta_title' => 'Sẵn sàng trao đổi về phạm vi dự án?',
-    'cta_desc' => 'Chia sẻ bối cảnh vận hành, mục tiêu hệ thống và các ràng buộc ưu tiên để HKIncotech đề xuất hướng tiếp cận kỹ thuật phù hợp.',
+    'cta_desc' => 'Chia sẻ bối cảnh vận hành, mục tiêu hệ thống và các ràng buộc ưu tiên để Hoàng Khang Incotech đề xuất hướng tiếp cận kỹ thuật phù hợp.',
     'cta_button' => 'Trao đổi yêu cầu',
     'learn_process' => 'Tìm hiểu quy trình chi tiết',
 ];

@@ -16,7 +16,7 @@ return [
     'pain_4_kicker' => 'Ownership & handover',
     'pain_4_title' => 'The platform depends on a few key people',
     'pain_4_desc' => 'Documentation is thin, business logic is not explicit, and operations teams struggle to take ownership, making maintenance more expensive over time.',
-    'pain_note' => 'There are always other underlying causes. HKIncotech listens to the operating context, traces the data, and identifies the root issue before recommending an industry-aligned response.',
+    'pain_note' => 'There are always other underlying causes. Hoàng Khang Incotech listens to the operating context, traces the data, and identifies the root issue before recommending an industry-aligned response.',
     'section_pain' => 'OPERATIONAL RISKS',
 
     'services_title' => 'Five Core Software Delivery Capabilities',
@@ -227,10 +227,10 @@ return [
     'case3_metric3_label' => 'Adoption',
 
     // Testimonials
-    'testimonial1_quote' => 'The scheduling workflow became clearer and significantly faster. HKIncotech understood the operating domain quickly and worked with strong structure.',
+    'testimonial1_quote' => 'The scheduling workflow became clearer and significantly faster. Hoàng Khang Incotech understood the operating domain quickly and worked with strong structure.',
     'testimonial1_name' => 'Operations representative, education sector',
     'testimonial1_title' => 'Scheduling platform project',
-    'testimonial2_quote' => 'HKIncotech helped us restructure warehouse operations with clearer data, stronger controls, and a system that is easier to extend.',
+    'testimonial2_quote' => 'Hoàng Khang Incotech helped us restructure warehouse operations with clearer data, stronger controls, and a system that is easier to extend.',
     'testimonial2_name' => 'Technical representative, retail sector',
     'testimonial2_title' => 'Multi-branch warehouse project',
 
@@ -255,7 +255,7 @@ return [
     'testimonials_subtitle' => 'Feedback from our partners and clients',
 
     'cta_title' => 'Discuss Your Business Software Requirement',
-    'cta_subtitle' => 'Share the operating context, system goals, and priority scope so HKIncotech can recommend a practical engineering approach.',
+    'cta_subtitle' => 'Share the operating context, system goals, and priority scope so Hoàng Khang Incotech can recommend a practical engineering approach.',
     'cta_consultation' => 'Discuss Technical Requirements',
     'cta_pricing' => 'View Pricing & Plans',
 

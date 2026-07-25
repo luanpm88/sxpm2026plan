@@ -3,7 +3,7 @@
 return [
     'title'               => 'Start the',
     'title_accent'        => 'Conversation',
-    'subtitle'            => 'Share your operating context, goals, and priority scope so HKIncotech can discuss the right delivery direction with your team.',
+    'subtitle'            => 'Share your operating context, goals, and priority scope so Hoàng Khang Incotech can discuss the right delivery direction with your team.',
     'form_title'          => 'Send Project Context',
     'send_message'        => 'Send Request',
     'name_label'          => 'Full Name',
@@ -37,8 +37,8 @@ return [
     'hours_response'      => 'Our team responds according to request priority and technical context.',
     'location_kicker'     => 'Delivery point of contact',
     'location_title'      => 'Ho Chi Minh City point of contact, flexible client collaboration',
-    'location_desc'       => 'HKIncotech receives project context in Vietnam and coordinates with business, technical, and operations teams across locations. The focus is to clarify the operating context, align scope, and keep communication transparent through delivery.',
-    'location_hq_label'   => 'HKIncotech office',
+    'location_desc'       => 'Hoàng Khang Incotech receives project context in Vietnam and coordinates with business, technical, and operations teams across locations. The focus is to clarify the operating context, align scope, and keep communication transparent through delivery.',
+    'location_hq_label'   => 'Hoàng Khang Incotech office',
     'location_client_label' => 'Client stakeholders',
     'location_client_scope' => 'Leadership, business, IT',
     'location_delivery_label' => 'Delivery team',
@@ -76,11 +76,11 @@ return [
     ],
 
     'faqs' => [
-        ['q' => 'How do I get a project quote?',             'a' => "Share your context through the form or email sales@hkincotech.com. We'll clarify scope, risks, team model, and delivery roadmap before proposing cost."],
+        ['q' => 'How do I get a project quote?',             'a' => "Share your context through the form or email info@hoangkhang.com.vn. We'll clarify scope, risks, team model, and delivery roadmap before proposing cost."],
         ['q' => "What's your typical project timeline?",     'a' => 'Timeline depends on scope, business complexity, integrations, and operating requirements. After discovery, we propose a staged delivery roadmap.'],
         ['q' => 'Do you offer support after completion?',    'a' => 'Yes. Support scope and duration are defined by the engagement model, with extended support available when needed.'],
         ['q' => 'What technologies do you use?',             'a' => 'We choose technology according to architecture, operations, and client-team requirements. Common stacks include React, Node.js, Python, Laravel, PostgreSQL, AWS/GCP, mobile technologies, and applied AI.'],
-        ['q' => 'Can you work with my existing team?',       'a' => 'Yes. HKIncotech can work with client teams through a dedicated team, staff augmentation, or shared technical backlog model.'],
+        ['q' => 'Can you work with my existing team?',       'a' => 'Yes. Hoàng Khang Incotech can work with client teams through a dedicated team, staff augmentation, or shared technical backlog model.'],
         ['q' => 'How do you handle intellectual property?',  'a' => 'Source-code ownership, documentation, and project assets are defined clearly in the agreement. We can sign NDAs and security agreements as required.'],
     ],
 ];

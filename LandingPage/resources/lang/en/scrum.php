@@ -174,7 +174,7 @@ return [
     ],
 
     // Journey Section
-    'journey_title' => 'Your Journey with HKIncotech',
+    'journey_title' => 'Your Journey with Hoàng Khang Incotech',
     'journey_subtitle' => 'Six phases from discovery to controlled release and ongoing operation.',
     'journey_phase_label' => 'Phase',
     'journey' => [
@@ -205,7 +205,7 @@ return [
     ],
 
     // Why Choose Section
-    'why_title' => 'How HKIncotech Organizes Agile Delivery',
+    'why_title' => 'How Hoàng Khang Incotech Organizes Agile Delivery',
     'why_subtitle' => 'Sprint governance, quality control, and staged handover for custom software projects.',
     'why_items' => [
         [

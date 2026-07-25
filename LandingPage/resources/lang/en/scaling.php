@@ -23,7 +23,7 @@ return [
 
     // CTA
     'cta_title'         => 'Plan Your Scaling Architecture',
-    'cta_desc'          => 'HKIncotech can help assess the current system, identify scaling risks, and define the next infrastructure stage.',
+    'cta_desc'          => 'Hoàng Khang Incotech can help assess the current system, identify scaling risks, and define the next infrastructure stage.',
     'cta_button'        => 'Discuss Scaling Requirements',
 
     // Phase data

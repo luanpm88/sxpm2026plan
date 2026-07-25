@@ -3,7 +3,7 @@
         <div class="solution-cta-panel">
             <h2>{{ __('sme_manufacturing.cta_title') }}</h2>
             <p>{{ __('sme_manufacturing.cta_description') }}</p>
-            <a href="https://calendly.com/hkincotech/consultation" class="solution-cta-panel__button">
+            <a href="{{ route('landing.contact') }}" class="solution-cta-panel__button">
                 <span>{{ __('sme_manufacturing.cta_button') }}</span>
                 <span class="material-symbols-rounded" aria-hidden="true">arrow_forward</span>
             </a>

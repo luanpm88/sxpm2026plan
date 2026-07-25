@@ -118,10 +118,10 @@ return [
         ['q' => 'Cấu trúc thanh toán như thế nào?', 'a' => 'Thông thường xuất hóa đơn theo tháng hoặc theo mốc nghiệm thu. Với khách hàng doanh nghiệp, hai bên có thể thống nhất điều khoản riêng theo quy trình mua hàng.'],
         ['q' => 'Có thể tăng/giảm team trong quá trình làm không?', 'a' => 'Hoàn toàn được. Bạn có thể điều chỉnh quy mô đội ngũ theo nhu cầu với thông báo trước.'],
         ['q' => 'Giá có bao gồm hỗ trợ sau triển khai không?', 'a' => 'Có. Thời gian hỗ trợ tùy gói: 30 ngày cho phiên bản đầu tiên, 90 ngày cho giai đoạn tăng trưởng, hoặc 6-12 tháng cho phạm vi doanh nghiệp.'],
-        ['q' => 'Ai sở hữu mã nguồn sau dự án?', 'a' => 'Quyền sở hữu mã nguồn được quy định rõ trong hợp đồng. Với dự án phát triển theo yêu cầu, HKIncotech bàn giao mã nguồn, tài liệu và hướng dẫn triển khai theo phạm vi đã thống nhất.'],
+        ['q' => 'Ai sở hữu mã nguồn sau dự án?', 'a' => 'Quyền sở hữu mã nguồn được quy định rõ trong hợp đồng. Với dự án phát triển theo yêu cầu, Hoàng Khang Incotech bàn giao mã nguồn, tài liệu và hướng dẫn triển khai theo phạm vi đã thống nhất.'],
     ],
 
     'cta_title' => 'Dự án của bạn có phạm vi riêng?',
-    'cta_desc' => 'HKIncotech có thể cùng bạn làm rõ phạm vi, độ phức tạp, mô hình đội ngũ và lộ trình triển khai trước khi đề xuất ngân sách.',
+    'cta_desc' => 'Hoàng Khang Incotech có thể cùng bạn làm rõ phạm vi, độ phức tạp, mô hình đội ngũ và lộ trình triển khai trước khi đề xuất ngân sách.',
     'cta_button' => 'Trao đổi phạm vi báo giá',
 ];

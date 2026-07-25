@@ -54,6 +54,9 @@ return [
 
     'url' => env('APP_URL', 'http://localhost'),
 
+    'official_host' => env('OFFICIAL_HOST', 'software.hoangkhang.com.vn'),
+    'official_url' => env('OFFICIAL_URL', 'https://software.hoangkhang.com.vn'),
+
     /*
     |--------------------------------------------------------------------------
     | Application Timezone

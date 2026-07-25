@@ -29,7 +29,7 @@
     {{-- <section id="hero" class="onepage-section" style="background: linear-gradient(135deg, var(--secondary-bg) 0%, #f9fafb 100%);">
         <div class="container">
             <div style="text-align:center; max-width:700px; margin:0 auto;">
-                <h1 class="section-title">HKIncotech — Nâng tầm giải pháp số doanh nghiệp</h1>
+                <h1 class="section-title">Hoàng Khang Incotech — Nâng tầm giải pháp số doanh nghiệp</h1>
                 <div class="section-subtitle">Kinh nghiệm phát triển phần mềm theo yêu cầu, nền tảng SaaS, AI ứng dụng và hệ thống vận hành doanh nghiệp trong nhiều lĩnh vực.</div>
                 <a href="#services" class="nav-link" style="background:var(--primary);color: var(--contrast-panel-text);font-size:1.1rem;padding:14px 36px;margin-top:30px;display:inline-block;">Khám phá dịch vụ</a>
             </div>
@@ -66,7 +66,7 @@
     <section id="contact" class="onepage-section">
         <div class="container">
             <h2 class="section-title">Liên hệ & Đăng ký tư vấn</h2>
-            <div class="section-subtitle">Đội ngũ HKIncotech sẵn sàng đồng hành cùng doanh nghiệp bạn</div>
+            <div class="section-subtitle">Đội ngũ Hoàng Khang Incotech sẵn sàng đồng hành cùng doanh nghiệp bạn</div>
             @include('landing_page.partials.contact_form')
         </div>
     </section> --}}

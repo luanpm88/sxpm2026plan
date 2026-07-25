@@ -3,7 +3,7 @@
 return [
     'hero_title' => 'Client',
     'hero_title_highlight' => 'Case Studies',
-    'hero_desc' => 'Representative projects showing how HKIncotech approaches custom software delivery: understand the context, design the system, implement with control, and hand over for long-term operation.',
+    'hero_desc' => 'Representative projects showing how Hoàng Khang Incotech approaches custom software delivery: understand the context, design the system, implement with control, and hand over for long-term operation.',
     'section_work' => 'SELECTED WORK',
     'section_industries' => 'INDUSTRIES SERVED',
 
@@ -96,7 +96,7 @@ return [
     'testimonials_subtitle' => 'What our partners and clients say about working with us.',
 
     'testimonials' => [
-        ['name' => 'CEO, e-commerce company', 'text' => 'HKIncotech did not just implement requirements. The team asked the right questions, proposed improvements, and kept delivery transparent.'],
+        ['name' => 'CEO, e-commerce company', 'text' => 'Hoàng Khang Incotech did not just implement requirements. The team asked the right questions, proposed improvements, and kept delivery transparent.'],
         ['name' => 'Founder, fintech company', 'text' => 'Their security and data-control approach helped us structure the system correctly from the beginning.'],
         ['name' => 'Operations director, healthcare provider', 'text' => 'The team understood data privacy requirements and implemented the workflow carefully.'],
         ['name' => 'VP Product, logistics company', 'text' => 'The system was prepared well for expansion, from operating data to infrastructure planning.'],
@@ -105,6 +105,6 @@ return [
     ],
 
     'cta_title' => 'Discuss Your Business Context',
-    'cta_desc' => 'HKIncotech can help clarify scope, technical risk, and the right delivery roadmap for your system.',
+    'cta_desc' => 'Hoàng Khang Incotech can help clarify scope, technical risk, and the right delivery roadmap for your system.',
     'cta_button' => 'Contact the Team',
 ];

@@ -3,14 +3,14 @@
 return [
     // Hero Section
     'hero_title' => 'About',
-    'hero_title_accent' => 'HKIncotech',
-    'hero_desc' => 'HKIncotech is a custom software engineering company focused on enterprise systems, SaaS platforms, applied AI, and long-term operational ownership.',
+    'hero_title_accent' => 'Hoàng Khang Incotech',
+    'hero_desc' => 'Hoàng Khang Incotech is a custom software engineering company focused on enterprise systems, SaaS platforms, applied AI, and long-term operational ownership.',
     'section_story' => 'OUR STORY',
     'section_values' => 'OUR VALUES',
     'section_achievements' => 'ACCUMULATED CAPABILITY',
 
     // Company Story Section
-    'story_title' => 'HKIncotech Story',
+    'story_title' => 'Hoàng Khang Incotech Story',
     'story_subtitle' => 'From a focused engineering team to a custom software delivery partner',
     'story_start_title' => 'Start (2012)',
     'story_start_desc' => 'Started as an engineering team focused on custom software for concrete business operations.',
@@ -86,7 +86,7 @@ return [
     ],
 
     // CTA Section
-    'cta_title' => 'Build with HKIncotech',
-    'cta_desc' => 'From first release to complex operating systems, HKIncotech works with clients to deliver dependable software with clear ownership.',
+    'cta_title' => 'Build with Hoàng Khang Incotech',
+    'cta_desc' => 'From first release to complex operating systems, Hoàng Khang Incotech works with clients to deliver dependable software with clear ownership.',
     'cta_button' => 'Contact Us',
 ];

@@ -23,11 +23,11 @@
                 </div>
 
                 <div class="solution-action-row">
-                    <a href="https://calendly.com/hkincotech/consultation" class="btn-primary-v5">
+                    <a href="{{ route('landing.contact') }}" class="btn-primary-v5">
                         <span>{{ __('sme_manufacturing.hero_cta_consultation') }}</span>
                         <span class="material-symbols-rounded" aria-hidden="true">arrow_forward</span>
                     </a>
-                    <a href="https://calendly.com/hkincotech/consultation" class="btn-secondary-v5">
+                    <a href="{{ route('landing.contact') }}" class="btn-secondary-v5">
                         <span>{{ __('sme_manufacturing.hero_cta_assessment') }}</span>
                         <span class="material-symbols-rounded" aria-hidden="true">assessment</span>
                     </a>

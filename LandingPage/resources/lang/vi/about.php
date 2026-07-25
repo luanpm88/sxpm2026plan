@@ -3,8 +3,8 @@
 return [
     // Hero Section
     'hero_title' => 'Về',
-    'hero_title_accent' => 'HKIncotech',
-    'hero_desc' => 'HKIncotech là đối tác kỹ thuật thiết kế, phát triển và vận hành hệ thống phần mềm doanh nghiệp, nền tảng SaaS, AI ứng dụng và hạ tầng dài hạn.',
+    'hero_title_accent' => 'Hoàng Khang Incotech',
+    'hero_desc' => 'Hoàng Khang Incotech là đối tác kỹ thuật thiết kế, phát triển và vận hành hệ thống phần mềm doanh nghiệp, nền tảng SaaS, AI ứng dụng và hạ tầng dài hạn.',
     'section_story' => 'HÀNH TRÌNH',
     'section_values' => 'GIÁ TRỊ CỐT LÕI',
     'section_achievements' => 'NĂNG LỰC TÍCH LŨY',
@@ -86,7 +86,7 @@ return [
     ],
 
     // CTA Section
-    'cta_title' => 'Trao Đổi Với HKIncotech',
+    'cta_title' => 'Trao Đổi Với Hoàng Khang Incotech',
     'cta_desc' => 'Nếu doanh nghiệp cần một hệ thống phần mềm được thiết kế đúng nghiệp vụ và có khả năng vận hành lâu dài, hãy bắt đầu từ một cuộc trao đổi kỹ thuật rõ phạm vi.',
     'cta_button' => 'Liên hệ đội ngũ',
 ];

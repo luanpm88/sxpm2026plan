@@ -1,7 +1,7 @@
 <?php
 
 return [
-    'about_title' => 'About HKIncotech',
+    'about_title' => 'About Hoàng Khang Incotech',
     'about_desc'  => 'Engineering partner for enterprise software systems, SaaS platforms, applied AI, and long-term operating foundations.',
 
     'services_title' => 'Services',
@@ -33,5 +33,5 @@ return [
 
     'learn_title' => 'Learn',
 
-    'copyright' => '© 2026 HKIncotech. All rights reserved.',
+    'copyright' => '© 2026 Hoàng Khang Incotech. All rights reserved.',
 ];

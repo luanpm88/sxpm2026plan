@@ -2,10 +2,12 @@
 
 namespace App\Http\Controllers;
 
+use App\Mail\ContactLeadMail;
 use Illuminate\Http\RedirectResponse;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Http;
 use Illuminate\Support\Facades\Log;
+use Illuminate\Support\Facades\Mail;
 
 class ContactSubmissionController extends Controller
 {
@@ -37,7 +39,12 @@ class ContactSubmissionController extends Controller
             'user_agent' => (string) $request->userAgent(),
         ];
 
+        // Always record the lead first, so a customer is never lost even if every
+        // outbound channel fails (e.g. mail provider outage).
+        Log::channel('stack')->info('Contact lead received', $payload);
+
         $results = [
+            'email' => $this->sendEmail($payload),
             'sheet' => $this->sendToGoogleSheets($payload),
             'telegram' => $this->sendToTelegram($payload),
         ];
@@ -58,6 +65,29 @@ class ContactSubmissionController extends Controller
         }
 
         return back()->with('contact_success', __('contact.submit_success'));
+    }
+
+    private function sendEmail(array $payload): array
+    {
+        $to = trim((string) config('services.contact.notify_to', ''));
+
+        if ($to === '') {
+            return ['configured' => false, 'ok' => false];
+        }
+
+        try {
+            $name = (string) config('services.contact.notify_name', 'Contact');
+            Mail::to($to, $name)->send(new ContactLeadMail($payload));
+
+            return ['configured' => true, 'ok' => true];
+        } catch (\Throwable $e) {
+            Log::error('Contact email failed', [
+                'message' => $e->getMessage(),
+                'to' => $to,
+            ]);
+
+            return ['configured' => true, 'ok' => false];
+        }
     }
 
     private function sendToGoogleSheets(array $payload): array

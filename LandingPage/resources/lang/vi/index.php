@@ -227,10 +227,10 @@ return [
     'case3_metric3_label' => 'Mức độ áp dụng',
 
     // Testimonials
-    'testimonial1_quote' => 'Quy trình lập lịch được chuẩn hóa và rút ngắn đáng kể. Đội ngũ HKIncotech nắm bắt nghiệp vụ nhanh và làm việc rất có cấu trúc.',
+    'testimonial1_quote' => 'Quy trình lập lịch được chuẩn hóa và rút ngắn đáng kể. Đội ngũ Hoàng Khang Incotech nắm bắt nghiệp vụ nhanh và làm việc rất có cấu trúc.',
     'testimonial1_name' => 'Đại diện vận hành, lĩnh vực giáo dục',
     'testimonial1_title' => 'Dự án nền tảng lập lịch',
-    'testimonial2_quote' => 'HKIncotech giúp chúng tôi tái cấu trúc hệ thống kho theo hướng rõ dữ liệu, dễ mở rộng và dễ kiểm soát hơn.',
+    'testimonial2_quote' => 'Hoàng Khang Incotech giúp chúng tôi tái cấu trúc hệ thống kho theo hướng rõ dữ liệu, dễ mở rộng và dễ kiểm soát hơn.',
     'testimonial2_name' => 'Đại diện kỹ thuật, lĩnh vực bán lẻ',
     'testimonial2_title' => 'Dự án quản lý kho đa chi nhánh',
 
@@ -255,7 +255,7 @@ return [
     'testimonials_subtitle' => 'Chia sẻ từ các đối tác và khách hàng đã đồng hành cùng chúng tôi.',
 
     'cta_title' => 'Trao đổi về nhu cầu phần mềm của doanh nghiệp',
-    'cta_subtitle' => 'Chia sẻ bối cảnh vận hành, mục tiêu hệ thống và phạm vi ưu tiên để HKIncotech đề xuất hướng tiếp cận kỹ thuật phù hợp.',
+    'cta_subtitle' => 'Chia sẻ bối cảnh vận hành, mục tiêu hệ thống và phạm vi ưu tiên để Hoàng Khang Incotech đề xuất hướng tiếp cận kỹ thuật phù hợp.',
     'cta_consultation' => 'Trao đổi nhu cầu kỹ thuật',
     'cta_pricing' => 'Xem bảng giá',
 

@@ -7,6 +7,23 @@ use App\Http\Controllers\ContactSubmissionController;
 use App\Http\Controllers\SolutionController;
 
 /**
+ * SEO: host-aware robots.txt.
+ * The official product domain is fully crawlable; the demo/preview host (and any
+ * other host) stays out of the search index to avoid duplicate content.
+ */
+Route::get('/robots.txt', function (Request $request) {
+    $official = (string) config('app.official_host');
+
+    if ($official !== '' && $request->getHost() === $official) {
+        $body = "User-agent: *\nAllow: /\n\nSitemap: https://{$official}/sitemap.xml\n";
+    } else {
+        $body = "User-agent: *\nDisallow: /\n";
+    }
+
+    return response($body, 200, ['Content-Type' => 'text/plain; charset=UTF-8']);
+});
+
+/**
  * Root: detect locale from cookie / Accept-Language, then redirect.
  */
 Route::get('/', function (Request $request) {

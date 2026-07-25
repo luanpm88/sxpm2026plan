@@ -50,7 +50,7 @@ return [
     'learning_stat4_label'=> 'Kèm cặp kỹ sư theo dự án',
 
     // CTA
-    'cta_title'  => 'Hợp tác với HKIncotech',
+    'cta_title'  => 'Hợp tác với Hoàng Khang Incotech',
     'cta_desc'   => 'Đội ngũ kỹ thuật có kinh nghiệm triển khai hệ thống doanh nghiệp, bảo mật, cloud, AI và quy trình bàn giao có kiểm soát.',
     'cta_button' => 'Trao đổi dự án',
 

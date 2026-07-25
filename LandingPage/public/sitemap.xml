@@ -3,193 +3,193 @@
         xmlns:xhtml="http://www.w3.org/1999/xhtml">
 
   <url>
-    <loc>https://demo.hkincotech.com/en</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://demo.hkincotech.com/en"/>
-    <xhtml:link rel="alternate" hreflang="vi" href="https://demo.hkincotech.com/vi"/>
+    <loc>https://software.hoangkhang.com.vn/en</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://software.hoangkhang.com.vn/en"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://software.hoangkhang.com.vn/vi"/>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
 
   <url>
-    <loc>https://demo.hkincotech.com/vi</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://demo.hkincotech.com/en"/>
-    <xhtml:link rel="alternate" hreflang="vi" href="https://demo.hkincotech.com/vi"/>
+    <loc>https://software.hoangkhang.com.vn/vi</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://software.hoangkhang.com.vn/en"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://software.hoangkhang.com.vn/vi"/>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
 
   <url>
-    <loc>https://demo.hkincotech.com/en/services</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://demo.hkincotech.com/en/services"/>
-    <xhtml:link rel="alternate" hreflang="vi" href="https://demo.hkincotech.com/vi/services"/>
+    <loc>https://software.hoangkhang.com.vn/en/services</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://software.hoangkhang.com.vn/en/services"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://software.hoangkhang.com.vn/vi/services"/>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
 
   <url>
-    <loc>https://demo.hkincotech.com/vi/services</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://demo.hkincotech.com/en/services"/>
-    <xhtml:link rel="alternate" hreflang="vi" href="https://demo.hkincotech.com/vi/services"/>
+    <loc>https://software.hoangkhang.com.vn/vi/services</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://software.hoangkhang.com.vn/en/services"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://software.hoangkhang.com.vn/vi/services"/>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
 
   <url>
-    <loc>https://demo.hkincotech.com/en/scrum</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://demo.hkincotech.com/en/scrum"/>
-    <xhtml:link rel="alternate" hreflang="vi" href="https://demo.hkincotech.com/vi/scrum"/>
+    <loc>https://software.hoangkhang.com.vn/en/scrum</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://software.hoangkhang.com.vn/en/scrum"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://software.hoangkhang.com.vn/vi/scrum"/>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
 
   <url>
-    <loc>https://demo.hkincotech.com/vi/scrum</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://demo.hkincotech.com/en/scrum"/>
-    <xhtml:link rel="alternate" hreflang="vi" href="https://demo.hkincotech.com/vi/scrum"/>
+    <loc>https://software.hoangkhang.com.vn/vi/scrum</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://software.hoangkhang.com.vn/en/scrum"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://software.hoangkhang.com.vn/vi/scrum"/>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
 
   <url>
-    <loc>https://demo.hkincotech.com/en/tech-stack</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://demo.hkincotech.com/en/tech-stack"/>
-    <xhtml:link rel="alternate" hreflang="vi" href="https://demo.hkincotech.com/vi/tech-stack"/>
+    <loc>https://software.hoangkhang.com.vn/en/tech-stack</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://software.hoangkhang.com.vn/en/tech-stack"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://software.hoangkhang.com.vn/vi/tech-stack"/>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
 
   <url>
-    <loc>https://demo.hkincotech.com/vi/tech-stack</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://demo.hkincotech.com/en/tech-stack"/>
-    <xhtml:link rel="alternate" hreflang="vi" href="https://demo.hkincotech.com/vi/tech-stack"/>
+    <loc>https://software.hoangkhang.com.vn/vi/tech-stack</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://software.hoangkhang.com.vn/en/tech-stack"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://software.hoangkhang.com.vn/vi/tech-stack"/>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
 
   <url>
-    <loc>https://demo.hkincotech.com/en/about-us</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://demo.hkincotech.com/en/about-us"/>
-    <xhtml:link rel="alternate" hreflang="vi" href="https://demo.hkincotech.com/vi/about-us"/>
+    <loc>https://software.hoangkhang.com.vn/en/about-us</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://software.hoangkhang.com.vn/en/about-us"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://software.hoangkhang.com.vn/vi/about-us"/>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
 
   <url>
-    <loc>https://demo.hkincotech.com/vi/about-us</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://demo.hkincotech.com/en/about-us"/>
-    <xhtml:link rel="alternate" hreflang="vi" href="https://demo.hkincotech.com/vi/about-us"/>
+    <loc>https://software.hoangkhang.com.vn/vi/about-us</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://software.hoangkhang.com.vn/en/about-us"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://software.hoangkhang.com.vn/vi/about-us"/>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
 
   <url>
-    <loc>https://demo.hkincotech.com/en/case-studies</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://demo.hkincotech.com/en/case-studies"/>
-    <xhtml:link rel="alternate" hreflang="vi" href="https://demo.hkincotech.com/vi/case-studies"/>
+    <loc>https://software.hoangkhang.com.vn/en/case-studies</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://software.hoangkhang.com.vn/en/case-studies"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://software.hoangkhang.com.vn/vi/case-studies"/>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
 
   <url>
-    <loc>https://demo.hkincotech.com/vi/case-studies</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://demo.hkincotech.com/en/case-studies"/>
-    <xhtml:link rel="alternate" hreflang="vi" href="https://demo.hkincotech.com/vi/case-studies"/>
+    <loc>https://software.hoangkhang.com.vn/vi/case-studies</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://software.hoangkhang.com.vn/en/case-studies"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://software.hoangkhang.com.vn/vi/case-studies"/>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
 
   <url>
-    <loc>https://demo.hkincotech.com/en/pricing</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://demo.hkincotech.com/en/pricing"/>
-    <xhtml:link rel="alternate" hreflang="vi" href="https://demo.hkincotech.com/vi/pricing"/>
+    <loc>https://software.hoangkhang.com.vn/en/pricing</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://software.hoangkhang.com.vn/en/pricing"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://software.hoangkhang.com.vn/vi/pricing"/>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
 
   <url>
-    <loc>https://demo.hkincotech.com/vi/pricing</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://demo.hkincotech.com/en/pricing"/>
-    <xhtml:link rel="alternate" hreflang="vi" href="https://demo.hkincotech.com/vi/pricing"/>
+    <loc>https://software.hoangkhang.com.vn/vi/pricing</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://software.hoangkhang.com.vn/en/pricing"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://software.hoangkhang.com.vn/vi/pricing"/>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
 
   <url>
-    <loc>https://demo.hkincotech.com/en/certifications</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://demo.hkincotech.com/en/certifications"/>
-    <xhtml:link rel="alternate" hreflang="vi" href="https://demo.hkincotech.com/vi/certifications"/>
+    <loc>https://software.hoangkhang.com.vn/en/certifications</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://software.hoangkhang.com.vn/en/certifications"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://software.hoangkhang.com.vn/vi/certifications"/>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
 
   <url>
-    <loc>https://demo.hkincotech.com/vi/certifications</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://demo.hkincotech.com/en/certifications"/>
-    <xhtml:link rel="alternate" hreflang="vi" href="https://demo.hkincotech.com/vi/certifications"/>
+    <loc>https://software.hoangkhang.com.vn/vi/certifications</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://software.hoangkhang.com.vn/en/certifications"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://software.hoangkhang.com.vn/vi/certifications"/>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
 
   <url>
-    <loc>https://demo.hkincotech.com/en/contact</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://demo.hkincotech.com/en/contact"/>
-    <xhtml:link rel="alternate" hreflang="vi" href="https://demo.hkincotech.com/vi/contact"/>
+    <loc>https://software.hoangkhang.com.vn/en/contact</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://software.hoangkhang.com.vn/en/contact"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://software.hoangkhang.com.vn/vi/contact"/>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
 
   <url>
-    <loc>https://demo.hkincotech.com/vi/contact</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://demo.hkincotech.com/en/contact"/>
-    <xhtml:link rel="alternate" hreflang="vi" href="https://demo.hkincotech.com/vi/contact"/>
+    <loc>https://software.hoangkhang.com.vn/vi/contact</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://software.hoangkhang.com.vn/en/contact"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://software.hoangkhang.com.vn/vi/contact"/>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
 
   <url>
-    <loc>https://demo.hkincotech.com/en/scaling</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://demo.hkincotech.com/en/scaling"/>
-    <xhtml:link rel="alternate" hreflang="vi" href="https://demo.hkincotech.com/vi/scaling"/>
+    <loc>https://software.hoangkhang.com.vn/en/scaling</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://software.hoangkhang.com.vn/en/scaling"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://software.hoangkhang.com.vn/vi/scaling"/>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
 
   <url>
-    <loc>https://demo.hkincotech.com/vi/scaling</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://demo.hkincotech.com/en/scaling"/>
-    <xhtml:link rel="alternate" hreflang="vi" href="https://demo.hkincotech.com/vi/scaling"/>
+    <loc>https://software.hoangkhang.com.vn/vi/scaling</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://software.hoangkhang.com.vn/en/scaling"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://software.hoangkhang.com.vn/vi/scaling"/>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
 
   <url>
-    <loc>https://demo.hkincotech.com/en/blog/r_and_d</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://demo.hkincotech.com/en/blog/r_and_d"/>
-    <xhtml:link rel="alternate" hreflang="vi" href="https://demo.hkincotech.com/vi/blog/r_and_d"/>
+    <loc>https://software.hoangkhang.com.vn/en/blog/r_and_d</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://software.hoangkhang.com.vn/en/blog/r_and_d"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://software.hoangkhang.com.vn/vi/blog/r_and_d"/>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
 
   <url>
-    <loc>https://demo.hkincotech.com/vi/blog/r_and_d</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://demo.hkincotech.com/en/blog/r_and_d"/>
-    <xhtml:link rel="alternate" hreflang="vi" href="https://demo.hkincotech.com/vi/blog/r_and_d"/>
+    <loc>https://software.hoangkhang.com.vn/vi/blog/r_and_d</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://software.hoangkhang.com.vn/en/blog/r_and_d"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://software.hoangkhang.com.vn/vi/blog/r_and_d"/>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
 
   <url>
-    <loc>https://demo.hkincotech.com/en/solutions/sme-manufacturing</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://demo.hkincotech.com/en/solutions/sme-manufacturing"/>
-    <xhtml:link rel="alternate" hreflang="vi" href="https://demo.hkincotech.com/vi/solutions/sme-manufacturing"/>
+    <loc>https://software.hoangkhang.com.vn/en/solutions/sme-manufacturing</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://software.hoangkhang.com.vn/en/solutions/sme-manufacturing"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://software.hoangkhang.com.vn/vi/solutions/sme-manufacturing"/>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
 
   <url>
-    <loc>https://demo.hkincotech.com/vi/solutions/sme-manufacturing</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://demo.hkincotech.com/en/solutions/sme-manufacturing"/>
-    <xhtml:link rel="alternate" hreflang="vi" href="https://demo.hkincotech.com/vi/solutions/sme-manufacturing"/>
+    <loc>https://software.hoangkhang.com.vn/vi/solutions/sme-manufacturing</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://software.hoangkhang.com.vn/en/solutions/sme-manufacturing"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://software.hoangkhang.com.vn/vi/solutions/sme-manufacturing"/>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>

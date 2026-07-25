@@ -8,10 +8,10 @@
     "mainEntity": [
         {
             "@@type": "Question",
-            "name": "What does HKIncotech do?",
+            "name": "What does Hoàng Khang Incotech do?",
             "acceptedAnswer": {
                 "@@type": "Answer",
-                "text": "HKIncotech is an enterprise software engineering company based in Southeast Asia. We design, build, and operate enterprise software systems, SaaS platforms, applied AI solutions, and security controls for organizations."
+                "text": "Hoàng Khang Incotech is an enterprise software engineering company based in Southeast Asia. We design, build, and operate enterprise software systems, SaaS platforms, applied AI solutions, and security controls for organizations."
             }
         },
         {
@@ -19,12 +19,12 @@
             "name": "How long does it take to build an MVP?",
             "acceptedAnswer": {
                 "@@type": "Answer",
-                "text": "Timeline depends on scope, business complexity, integrations, and operating requirements. HKIncotech proposes a staged roadmap after discovery."
+                "text": "Timeline depends on scope, business complexity, integrations, and operating requirements. Hoàng Khang Incotech proposes a staged roadmap after discovery."
             }
         },
         {
             "@@type": "Question",
-            "name": "What technologies does HKIncotech use?",
+            "name": "What technologies does Hoàng Khang Incotech use?",
             "acceptedAnswer": {
                 "@@type": "Answer",
                 "text": "We choose technology according to architecture, maintainability, security, operating model, and growth requirements. Common stacks include React, Node.js, Python, Laravel, PostgreSQL, AWS/GCP, mobile technologies, and applied AI."
@@ -40,10 +40,10 @@
         },
         {
             "@@type": "Question",
-            "name": "What security certifications does HKIncotech have?",
+            "name": "What security certifications does Hoàng Khang Incotech have?",
             "acceptedAnswer": {
                 "@@type": "Answer",
-                "text": "HKIncotech references recognized standards such as ISO/IEC 27001, OWASP, NIST CSF, SOC 2, GDPR, PCI DSS, and HIPAA when framing security requirements, architecture reviews, and delivery controls. Formal certification or regulated compliance scope should be confirmed during project discovery."
+                "text": "Hoàng Khang Incotech references recognized standards such as ISO/IEC 27001, OWASP, NIST CSF, SOC 2, GDPR, PCI DSS, and HIPAA when framing security requirements, architecture reviews, and delivery controls. Formal certification or regulated compliance scope should be confirmed during project discovery."
             }
         }
     ]

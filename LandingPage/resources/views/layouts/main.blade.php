@@ -6,8 +6,8 @@
     @endphp
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="{{ $pageDescription ?? 'HKIncotech - Enterprise Software Engineering' }}">
-    <title>{{ $pageTitle ?? 'HKIncotech' }}</title>
+    <meta name="description" content="{{ $pageDescription ?? 'Hoàng Khang Incotech - Enterprise Software Engineering' }}">
+    <title>{{ $pageTitle ?? 'Hoàng Khang Incotech' }}</title>
     <meta name="keywords" content="enterprise software development Vietnam, custom software development Southeast Asia, SaaS development company, offshore development team Vietnam, MVP development service, cloud-native application development, AI integration enterprise software">
     <meta name="robots" content="{{ $isDemoHost ? 'noindex, nofollow, noarchive, nosnippet' : 'index, follow' }}">
     <link rel="canonical" href="{{ url()->current() }}">
@@ -26,7 +26,7 @@
     {
         "@@context": "https://schema.org",
         "@@type": "Organization",
-        "name": "HKIncotech",
+        "name": "Hoàng Khang Incotech",
         "url": "{{ url('/') }}",
         "logo": "{{ asset('img/logo.svg') }}",
         "description": "Enterprise software engineering company based in Southeast Asia. 12+ years, 100+ engineers, 50+ enterprise clients.",
@@ -50,22 +50,22 @@
     {
         "@@context": "https://schema.org",
         "@@type": "WebSite",
-        "name": "HKIncotech",
+        "name": "Hoàng Khang Incotech",
         "url": "{{ url('/') }}"
     }
     </script>
 
     <!-- OpenGraph -->
     <meta property="og:type"        content="website">
-    <meta property="og:title"       content="{{ $pageTitle ?? 'HKIncotech' }}">
-    <meta property="og:description" content="{{ $pageDescription ?? 'HKIncotech - Enterprise Software Engineering' }}">
+    <meta property="og:title"       content="{{ $pageTitle ?? 'Hoàng Khang Incotech' }}">
+    <meta property="og:description" content="{{ $pageDescription ?? 'Hoàng Khang Incotech - Enterprise Software Engineering' }}">
     <meta property="og:url"         content="{{ url()->current() }}">
     <meta property="og:image"       content="{{ asset('img/og-cover.png') }}">
-    <meta property="og:site_name"   content="HKIncotech">
+    <meta property="og:site_name"   content="Hoàng Khang Incotech">
     <!-- Twitter Card -->
     <meta name="twitter:card"        content="summary_large_image">
-    <meta name="twitter:title"       content="{{ $pageTitle ?? 'HKIncotech' }}">
-    <meta name="twitter:description" content="{{ $pageDescription ?? 'HKIncotech - Enterprise Software Engineering' }}">
+    <meta name="twitter:title"       content="{{ $pageTitle ?? 'Hoàng Khang Incotech' }}">
+    <meta name="twitter:description" content="{{ $pageDescription ?? 'Hoàng Khang Incotech - Enterprise Software Engineering' }}">
     <meta name="twitter:image"       content="{{ asset('img/og-cover.png') }}">
     <script>
         (function() {
@@ -111,9 +111,8 @@
     <!-- Header Navigation -->
     <header>
         <div class="header-container">
-            <a href="{{ route('landing.index') }}" class="logo" aria-label="HKIncotech">
+            <a href="{{ route('landing.index') }}" class="logo" aria-label="Hoàng Khang Incotech">
                 @include('partials.brand-logo')
-                <span>INCOTECH</span>
             </a>
             <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Toggle menu">
                 <span class="material-symbols-rounded">menu</span>
@@ -345,9 +344,8 @@
             <div class="footer-grid-5col">
                 <!-- Company Info -->
                 <div class="footer-section">
-                    <a href="{{ route('landing.index') }}" class="logo footer-logo" aria-label="HKIncotech">
+                    <a href="{{ route('landing.index') }}" class="logo footer-logo" aria-label="Hoàng Khang Incotech">
                         @include('partials.brand-logo')
-                        <span>INCOTECH</span>
                     </a>
                     <p class="footer-about">
                         {{ __('footer.about_desc') }}

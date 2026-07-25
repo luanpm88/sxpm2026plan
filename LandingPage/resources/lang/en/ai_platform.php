@@ -3,7 +3,7 @@
 return [
     'badge' => 'Research Initiative',
     'title' => 'AI Knowledge Platform: A Reasoning Layer for Enterprise Systems',
-    'intro' => 'The AI Knowledge Platform is HKIncotech\'s long-term research direction for applying AI as a controlled reasoning layer inside enterprise systems. Rather than treating AI as a standalone chatbot, we study how language models can read organizational data, understand context, retrieve reliable sources, and support decision-making with clear governance. When connected with HKSpace-style distributed architecture, this layer can help systems adapt to real operating needs without losing traceability.',
+    'intro' => 'The AI Knowledge Platform is Hoàng Khang Incotech\'s long-term research direction for applying AI as a controlled reasoning layer inside enterprise systems. Rather than treating AI as a standalone chatbot, we study how language models can read organizational data, understand context, retrieve reliable sources, and support decision-making with clear governance. When connected with HKSpace-style distributed architecture, this layer can help systems adapt to real operating needs without losing traceability.',
 
     'problem_title' => 'The Research Problem',
     'problem_desc' => 'Many organizations already have rich operational knowledge, but it is fragmented across documents, systems, teams, and informal experience. The challenge is not only storage; it is how knowledge is represented, retrieved, governed, and reused. Large language models create a new path: semantic understanding, contextual retrieval, and source-grounded reasoning over enterprise data. The research question is how to make that capability reliable enough for real business workflows.',

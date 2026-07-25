@@ -2,7 +2,8 @@
 
 @section('content')
     <!-- Hero -->
-    <section style="min-height: 60vh; display: flex; align-items: center; padding: 6rem 2rem; background: linear-gradient(135deg, var(--surface) 0%, var(--secondary-bg) 100%);">
+    <section style="min-height: 60vh; display: flex; align-items: center; padding: 6rem 2rem; background: linear-gradient(135deg, var(--surface) 0%, var(--secondary-bg) 100%); position: relative; overflow: hidden;">
+            @include('partials.hero-bg', ['flow' => 'rise'])
         <div class="container-v5">
             <div style="text-align: center; max-width: 900px; margin: 0 auto;">
                 <h1 style="font-size: 2.75rem; font-weight: 600; line-height: 1.15; margin-bottom: 1.5rem; color: var(--text-dark);">

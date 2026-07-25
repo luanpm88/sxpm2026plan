@@ -295,6 +295,8 @@ html[data-theme="dark"] .section-header__visual-icon {
     align-items: center;
     padding: 4.25rem 0 3.75rem;
     background: linear-gradient(135deg, var(--surface) 0%, var(--secondary-bg) 100%);
+    position: relative;
+    overflow: hidden;
 }
 
 .page-hero-compact__inner {
@@ -3587,6 +3589,8 @@ footer a:hover {
     list-style: none;
     display: grid;
     gap: 0.65rem;
+    margin: 0;
+    padding: 0;
 }
 
 .footer-section li {
@@ -5681,3 +5685,43 @@ html[data-theme="dark"] .pain-icon {
         padding: 0.25rem 0.55rem;
     }
 }
+
+/* ============================================================
+   Stylized hero background (partials/hero-bg) — theme-aware
+   ============================================================ */
+:root {
+    --hero-stream: #2f6abf;
+    --hero-dot: #183060;
+    --hero-glow: #2f6abf;
+    --hero-fade: #fafbfe;
+}
+html[data-theme="dark"] {
+    --hero-stream: #5b91d6;
+    --hero-dot: #9fb4ce;
+    --hero-glow: #5b91d6;
+    --hero-fade: #0c1522;
+}
+.hero-bg {
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+    pointer-events: none;
+    overflow: hidden;
+}
+.hero-bg svg { width: 100%; height: 100%; display: block; }
+.hero-bg .hero-bg__streams {
+    fill: none;
+    stroke: var(--hero-stream);
+    stroke-width: 1.15;
+    stroke-linecap: round;
+    opacity: .14;
+}
+.hero-bg .hero-bg__dot { fill: var(--hero-dot); fill-opacity: .05; }
+.hero-bg .hero-bg__glow0 { stop-color: var(--hero-glow); stop-opacity: .12; }
+.hero-bg .hero-bg__glow1 { stop-color: var(--hero-glow); stop-opacity: 0; }
+.hero-bg .hero-bg__fade0 { stop-color: var(--hero-fade); stop-opacity: .82; }
+.hero-bg .hero-bg__fade1 { stop-color: var(--hero-fade); stop-opacity: 0; }
+/* keep hero content above the background */
+.hero-bg + .container-v5,
+.hero-bg ~ .container-v5,
+.hero-bg ~ .page-hero-compact__inner { position: relative; z-index: 1; }

@@ -4,6 +4,7 @@
 
     <!-- Hero -->
     <section class="page-hero-compact">
+        @include('partials.hero-bg', ['flow' => 'wave'])
         <div class="container-v5">
             <div class="page-hero-compact__inner">
                 <h1 class="page-hero-compact__title">

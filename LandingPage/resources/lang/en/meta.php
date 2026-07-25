@@ -23,7 +23,7 @@ return [
 
     // About Us
     'about_us_title' => 'About Hoàng Khang Incotech — 12+ Years of Enterprise Software Delivery',
-    'about_us_description' => 'Founded in 2012, Hoàng Khang Incotech develops custom software, SaaS platforms, applied AI, and long-term engineering systems from Vietnam and Singapore.',
+    'about_us_description' => 'Founded in 2012, Hoàng Khang Incotech develops custom software, SaaS platforms, applied AI, and long-term engineering systems from Ho Chi Minh City, Vietnam.',
 
     // Case Studies
     'case_studies_title' => 'Client Case Studies — Selected Software Projects | Hoàng Khang Incotech',

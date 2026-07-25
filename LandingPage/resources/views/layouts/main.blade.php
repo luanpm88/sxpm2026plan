@@ -33,7 +33,7 @@
         "logo": "{{ asset('img/logo.svg') }}",
         "image": "{{ asset('img/logo.svg') }}",
         "description": "Enterprise software engineering company based in Ho Chi Minh City, Vietnam. Custom systems, SaaS platforms, applied AI, and long-term engineering ownership.",
-        "foundingDate": "2008-11-12",
+        "foundingDate": "2012",
         "email": "info@hoangkhang.com.vn",
         "telephone": "+842839847690",
         "address": {

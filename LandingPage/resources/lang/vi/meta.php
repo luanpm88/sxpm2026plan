@@ -39,7 +39,7 @@ return [
 
     // Contact
     'contact_title' => 'Liên Hệ — Trao Đổi Nhu Cầu Kỹ Thuật | Hoàng Khang Incotech',
-    'contact_description' => 'Trao đổi bối cảnh dự án, phạm vi triển khai và hướng tiếp cận kỹ thuật cùng đội ngũ Hoàng Khang Incotech. Văn phòng TP.HCM & Singapore.',
+    'contact_description' => 'Trao đổi bối cảnh dự án, phạm vi triển khai và hướng tiếp cận kỹ thuật cùng đội ngũ Hoàng Khang Incotech. Văn phòng tại TP. Hồ Chí Minh.',
 
     // Blog / R&D
     'blog_title' => 'Nghiên Cứu & Phát Triển — HKSpace & Nền Tảng AI | Hoàng Khang Incotech',

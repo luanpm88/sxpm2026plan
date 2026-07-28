@@ -5,31 +5,39 @@ THƯ NGỎ — Đối tác kỹ thuật cho hệ thống phần mềm doanh nghi
 
 Kính gửi Anh/Chị,
 
-Chúng tôi là Hoàng Khang Incotech — đội ngũ thiết kế, xây dựng và vận hành
-phần mềm cho doanh nghiệp. Điều gắn kết chúng tôi qua từng dự án là một quan
-niệm giản dị: phần mềm tốt không phải là thứ chạy được trong buổi demo, mà là
-thứ còn phục vụ ổn định sau nhiều năm — khi quy mô lớn dần và yêu cầu đổi thay.
+Chúng tôi là Hoàng Khang Incotech — đơn vị chuyên tư vấn, thiết kế, phát triển
+và vận hành các hệ thống phần mềm dành cho doanh nghiệp.
 
-Chúng tôi đồng hành cùng doanh nghiệp ở những phần việc cốt lõi: xây dựng nền
-tảng nội bộ và sản phẩm số, phát triển nền tảng SaaS, tích hợp dữ liệu giữa các
-hệ thống, ứng dụng AI vào quy trình nghiệp vụ và hiện đại hóa hạ tầng. Mỗi giải
-pháp được thiết kế vừa vặn với cách vận hành thật của tổ chức, thay vì áp một
-khuôn mẫu có sẵn.
+Chúng tôi tin rằng giá trị của một hệ thống không nằm ở những gì thể hiện trong
+buổi trình diễn, mà ở khả năng đồng hành cùng doanh nghiệp trong nhiều năm vận
+hành, mở rộng và đổi mới. Một hệ thống tốt phải đủ ổn định để trở thành nền tảng
+cho hoạt động hằng ngày, đồng thời đủ linh hoạt để thích ứng khi quy mô, quy
+trình hay mô hình kinh doanh thay đổi.
 
-Điều chúng tôi coi trọng nhất nằm ở cách làm việc. Dự án được triển khai theo
-quy trình SCRUM, chia thành các chặng ngắn có kết quả nhìn thấy được, để Anh/Chị
-luôn nắm rõ tiến độ và cùng định hướng trên đường đi. Phạm vi, tiến độ và chi phí
-được trao đổi minh bạch; mã nguồn, tài liệu và quyền vận hành được bàn giao rõ
-ràng, thuộc về doanh nghiệp.
+Thay vì yêu cầu doanh nghiệp thay đổi để phù hợp với phần mềm, chúng tôi bắt đầu
+từ chính cách doanh nghiệp đang vận hành. Mỗi giải pháp được thiết kế xoay quanh
+quy trình, dữ liệu và mục tiêu phát triển thực tế, nhằm tối ưu hiệu suất vận hành,
+giảm các công việc thủ công và tạo nền tảng cho tăng trưởng lâu dài.
+
+Chúng tôi đồng hành từ giai đoạn khảo sát, phân tích nghiệp vụ, thiết kế giải
+pháp, phát triển, tích hợp hệ thống đến triển khai và vận hành. Quá trình thực
+hiện được chia thành các giai đoạn rõ ràng với những kết quả có thể kiểm chứng,
+giúp doanh nghiệp luôn theo dõi được tiến độ, đánh giá chất lượng và điều chỉnh
+định hướng khi cần thiết.
+
+Chúng tôi cam kết minh bạch trong toàn bộ quá trình hợp tác. Phạm vi công việc,
+tiến độ, chi phí và các tiêu chí nghiệm thu được thống nhất ngay từ đầu. Sau khi
+hoàn thành, doanh nghiệp được bàn giao đầy đủ mã nguồn, tài liệu kỹ thuật và
+quyền vận hành để chủ động phát triển hệ thống trong tương lai.
 
 Năng lực nổi bật:
-- Nền tảng nội bộ, sản phẩm số & SaaS — thiết kế theo nghiệp vụ, chạy ổn định và mở rộng theo nhu cầu.
-- Tích hợp dữ liệu & AI ứng dụng — đưa dữ liệu và AI vào đúng những quy trình tạo ra giá trị.
-- Bàn giao minh bạch theo SCRUM — kiểm soát chất lượng từng vòng lặp, bàn giao trọn vẹn cho doanh nghiệp.
+- Phát triển phần mềm theo yêu cầu — phản ánh đúng quy trình và lợi thế vận hành của từng doanh nghiệp.
+- Tích hợp hệ thống & ứng dụng AI — kết nối dữ liệu, tự động hóa quy trình và nâng cao hiệu quả ra quyết định.
+- Triển khai minh bạch — từng giai đoạn đều có mục tiêu, kết quả và tiêu chí đánh giá rõ ràng, giúp giảm rủi ro và đảm bảo chất lượng.
 
-Nếu Anh/Chị đang cân nhắc xây mới, kế thừa hay mở rộng một hệ thống phần mềm,
-chúng tôi rất mong có dịp lắng nghe và trao đổi — bắt đầu từ chính bài toán mà
-doanh nghiệp đang quan tâm, không ràng buộc.
+Nếu Anh/Chị đang tìm kiếm một đối tác công nghệ để xây dựng mới, nâng cấp hoặc
+mở rộng hệ thống phần mềm, chúng tôi rất mong có cơ hội lắng nghe bài toán của
+doanh nghiệp và cùng trao đổi về giải pháp phù hợp.
 
 > Tìm hiểu năng lực triển khai: https://software.hoangkhang.com.vn/vi/services
 > Trao đổi nhu cầu kỹ thuật:     https://software.hoangkhang.com.vn/vi/contact

@@ -1,0 +1,49 @@
+HOÀNG KHANG INCOTECH
+Thiết kế · Xây dựng · Vận hành phần mềm doanh nghiệp
+
+THƯ NGỎ — Đối tác kỹ thuật cho hệ thống phần mềm doanh nghiệp
+
+Kính gửi Anh/Chị,
+
+Chúng tôi là Hoàng Khang Incotech — đội ngũ thiết kế, xây dựng và vận hành
+phần mềm cho doanh nghiệp. Điều gắn kết chúng tôi qua từng dự án là một quan
+niệm giản dị: phần mềm tốt không phải là thứ chạy được trong buổi demo, mà là
+thứ còn phục vụ ổn định sau nhiều năm — khi quy mô lớn dần và yêu cầu đổi thay.
+
+Chúng tôi đồng hành cùng doanh nghiệp ở những phần việc cốt lõi: xây dựng nền
+tảng nội bộ và sản phẩm số, phát triển nền tảng SaaS, tích hợp dữ liệu giữa các
+hệ thống, ứng dụng AI vào quy trình nghiệp vụ và hiện đại hóa hạ tầng. Mỗi giải
+pháp được thiết kế vừa vặn với cách vận hành thật của tổ chức, thay vì áp một
+khuôn mẫu có sẵn.
+
+Điều chúng tôi coi trọng nhất nằm ở cách làm việc. Dự án được triển khai theo
+quy trình SCRUM, chia thành các chặng ngắn có kết quả nhìn thấy được, để Anh/Chị
+luôn nắm rõ tiến độ và cùng định hướng trên đường đi. Phạm vi, tiến độ và chi phí
+được trao đổi minh bạch; mã nguồn, tài liệu và quyền vận hành được bàn giao rõ
+ràng, thuộc về doanh nghiệp.
+
+Năng lực nổi bật:
+- Nền tảng nội bộ, sản phẩm số & SaaS — thiết kế theo nghiệp vụ, chạy ổn định và mở rộng theo nhu cầu.
+- Tích hợp dữ liệu & AI ứng dụng — đưa dữ liệu và AI vào đúng những quy trình tạo ra giá trị.
+- Bàn giao minh bạch theo SCRUM — kiểm soát chất lượng từng vòng lặp, bàn giao trọn vẹn cho doanh nghiệp.
+
+Nếu Anh/Chị đang cân nhắc xây mới, kế thừa hay mở rộng một hệ thống phần mềm,
+chúng tôi rất mong có dịp lắng nghe và trao đổi — bắt đầu từ chính bài toán mà
+doanh nghiệp đang quan tâm, không ràng buộc.
+
+> Tìm hiểu năng lực triển khai: https://software.hoangkhang.com.vn/vi/services
+> Trao đổi nhu cầu kỹ thuật:     https://software.hoangkhang.com.vn/vi/contact
+> Quy trình làm việc:            https://software.hoangkhang.com.vn/vi/scrum
+> Giới thiệu công ty:            https://software.hoangkhang.com.vn/vi/about-us
+
+Trân trọng,
+Đội ngũ Hoàng Khang Incotech
+ĐT: (028) 3984 7690 · Hotline: 0931 103 988
+Email: info@hoangkhang.com.vn · Web: https://software.hoangkhang.com.vn/vi
+
+---
+Công ty TNHH Giải pháp CNTT và Truyền thông Hoàng Khang
+188 Đường số 1, Phường An Hội Đông, TP. Hồ Chí Minh · MST: 0306146736
+Xem bản web: {WEBVIEW_URL}
+Hủy nhận email: {UNSUBSCRIBE_URL}
+© 2026 Hoàng Khang Incotech.

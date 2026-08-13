@@ -145,7 +145,7 @@ return [
             ],
         ],
         'reference_tech_title' => 'Công nghệ tham chiếu',
-        'reference_tech_desc' => 'Tiếp nhận dữ liệu: Python workers với LangChain/LlamaIndex • Tìm kiếm vector: Weaviate/Milvus/pgvector • LLM: OpenAI/DeepSeek/Claude và mô hình nội bộ khi phù hợp • Dịch vụ API: FastAPI/Node.js • Quan sát vận hành: Langfuse/Prometheus • Phản hồi thời gian thực: SSE/WebSocket.',
+        'reference_tech_desc' => 'Tiếp nhận dữ liệu: Python workers với LangChain/LlamaIndex • Tìm kiếm vector: Weaviate/Milvus/pgvector • LLM: mô hình mở (Llama, Qwen, DeepSeek) và API thương mại khi phù hợp • Dịch vụ API: FastAPI/Node.js • Quan sát vận hành: Langfuse/Prometheus • Phản hồi thời gian thực: SSE/WebSocket.',
         'diagram_title' => 'Luồng tri thức AI',
         'diagram_data_title' => 'Nguồn dữ liệu',
         'diagram_data_desc' => 'Tài liệu · API',

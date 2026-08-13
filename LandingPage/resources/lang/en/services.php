@@ -145,7 +145,7 @@ return [
             ],
         ],
         'reference_tech_title' => 'Reference Tech Stack',
-        'reference_tech_desc' => 'Ingestion: Python (LangChain/LlamaIndex) workers • Vector DB: Weaviate/Milvus/pgvector • LLM: OpenAI/DeepSeek/Claude + local (Llama/Ollama) • Backend: FastAPI/Node.js • Observability: Langfuse/Prometheus • Streaming: SSE/WebSocket.',
+        'reference_tech_desc' => 'Ingestion: Python (LangChain/LlamaIndex) workers • Vector DB: Weaviate/Milvus/pgvector • LLM: open models (Llama, Qwen, DeepSeek) + commercial APIs when suitable • Backend: FastAPI/Node.js • Observability: Langfuse/Prometheus • Streaming: SSE/WebSocket.',
         'diagram_title' => 'AI Knowledge Flow',
         'diagram_data_title' => 'Data Sources',
         'diagram_data_desc' => 'Docs · APIs',

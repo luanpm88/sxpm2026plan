@@ -19,7 +19,7 @@ SSH_HOST="hkspace-ssd"
 APP_DIR="/home/hkincotech/hkincotech"   # git checkout (LandingPage/ lives inside)
 APP_USER="hkincotech"
 BRANCH="clean"
-URL="https://demo.hkincotech.com/en"
+URL="https://software.hoangkhang.com.vn/vi"
 
 REPO_ROOT="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
 cd "$REPO_ROOT"

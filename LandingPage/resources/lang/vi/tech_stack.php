@@ -102,10 +102,10 @@ return [
             'name' => 'AI ứng dụng',
             'icon' => 'psychology',
             'technologies' => [
-                'OpenAI GPT, Claude, Gemini APIs',
+                'Mô hình ngôn ngữ lớn (LLM) & Transformers',
                 'Custom ML models (TensorFlow, PyTorch)',
                 'Computer Vision & NLP',
-                'RAG & Vector databases (Pinecone)',
+                'RAG & Vector databases (FAISS, pgvector)',
                 'Model training & fine-tuning',
                 'AI ethics & responsible AI'
             ]

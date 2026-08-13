@@ -102,10 +102,10 @@ return [
             'name' => 'AI & Machine Learning',
             'icon' => 'psychology',
             'technologies' => [
-                'OpenAI GPT, Claude, Gemini APIs',
+                'Large Language Models (LLM) & Transformers',
                 'Custom ML models (TensorFlow, PyTorch)',
                 'Computer Vision & NLP',
-                'RAG & Vector databases (Pinecone)',
+                'RAG & Vector databases (FAISS, pgvector)',
                 'Model training & fine-tuning',
                 'AI ethics & responsible AI'
             ]

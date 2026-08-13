@@ -290,15 +290,17 @@
 
         <!-- Tech Badge Bar -->
         <div class="hero-tech-bar">
+            <span class="hero-tech-pill">TypeScript</span>
             <span class="hero-tech-pill">React</span>
             <span class="hero-tech-pill">Node.js</span>
             <span class="hero-tech-pill">Python</span>
-            <span class="hero-tech-pill">AWS</span>
-            <span class="hero-tech-pill">Kubernetes</span>
             <span class="hero-tech-pill">PostgreSQL</span>
-            <span class="hero-tech-pill">GPT-4</span>
-            <span class="hero-tech-pill">Flutter</span>
+            <span class="hero-tech-pill">Kubernetes</span>
+            <span class="hero-tech-pill">AWS</span>
             <span class="hero-tech-pill">Terraform</span>
+            <span class="hero-tech-pill">PyTorch</span>
+            <span class="hero-tech-pill">TensorFlow</span>
+            <span class="hero-tech-pill">Hugging Face</span>
             <span class="hero-tech-pill hero-tech-pill--more">{{ __('hero.tech_badge_more') }}</span>
         </div>
     </div>

@@ -86,7 +86,7 @@ return [
         ],
         [
             'title' => 'Database & Cache',
-            'techs' => ['PostgreSQL', 'MongoDB', 'Redis', 'Elasticsearch', 'Pinecone'],
+            'techs' => ['PostgreSQL', 'MongoDB', 'Redis', 'Elasticsearch', 'pgvector'],
         ],
         [
             'title' => 'Cloud & DevOps',
@@ -94,7 +94,7 @@ return [
         ],
         [
             'title' => 'AI & Machine Learning',
-            'techs' => ['OpenAI GPT-4', 'Claude', 'LangChain', 'TensorFlow', 'PyTorch'],
+            'techs' => ['Hugging Face', 'LangChain', 'PyTorch', 'TensorFlow', 'RAG · Vector DB'],
         ],
         [
             'title' => 'Security & Controls',
@@ -125,7 +125,7 @@ return [
             ],
             [
                 'title' => 'Vector DB & Search',
-                'desc' => 'Weaviate/Pinecone/PGVector, hybrid search, metadata filters, re-rank',
+                'desc' => 'Weaviate/Milvus/pgvector, hybrid search, metadata filters, re-rank',
             ],
             [
                 'title' => 'LLM Routing & Serving',
@@ -145,7 +145,7 @@ return [
             ],
         ],
         'reference_tech_title' => 'Reference Tech Stack',
-        'reference_tech_desc' => 'Ingestion: Python (LangChain/LlamaIndex) workers • Vector DB: Weaviate/Pinecone/PGVector • LLM: OpenAI/DeepSeek/Claude + local (Llama/Ollama) • Backend: FastAPI/Node.js • Observability: Langfuse/Prometheus • Streaming: SSE/WebSocket.',
+        'reference_tech_desc' => 'Ingestion: Python (LangChain/LlamaIndex) workers • Vector DB: Weaviate/Milvus/pgvector • LLM: OpenAI/DeepSeek/Claude + local (Llama/Ollama) • Backend: FastAPI/Node.js • Observability: Langfuse/Prometheus • Streaming: SSE/WebSocket.',
         'diagram_title' => 'AI Knowledge Flow',
         'diagram_data_title' => 'Data Sources',
         'diagram_data_desc' => 'Docs · APIs',

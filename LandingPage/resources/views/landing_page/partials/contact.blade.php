@@ -129,7 +129,7 @@
                             {{ __('contact.hq_address') }}<br>
                             <span style="font-size:.88rem;">{{ __('contact.tax_id_label') }}: {{ __('contact.tax_id') }}</span>
                         </p>
-                        <a class="ct-maplink" href="https://www.google.com/maps/search/?api=1&query=188%20Duong%20So%201%2C%20An%20Hoi%20Dong%2C%20Ho%20Chi%20Minh" target="_blank" rel="noopener">
+                        <a class="ct-maplink" href="https://maps.google.com/?cid=12996464806759206874" target="_blank" rel="noopener">
                             {{ __('contact.map_label') }} <span class="material-symbols-rounded" style="font-size:1.05rem;">arrow_outward</span>
                         </a>
                     </div>
@@ -184,7 +184,7 @@
         <div class="contact-location-panel">
             <div class="contact-location-map">
                 <iframe
-                    src="https://www.google.com/maps?q=188%20Duong%20So%201%2C%20An%20Hoi%20Dong%2C%20Ho%20Chi%20Minh%20City&output=embed"
+                    src="https://www.google.com/maps?q=10.8475931,106.6576869&z=17&hl=vi&output=embed"
                     style="position:absolute; inset:0; width:100%; height:100%; border:0;"
                     loading="lazy" referrerpolicy="no-referrer-when-downgrade"
                     title="{{ __('contact.legal_name') }} — {{ __('contact.hq_address') }}"></iframe>
